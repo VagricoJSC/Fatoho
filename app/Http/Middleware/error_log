@@ -1,0 +1,108 @@
+[22-Mar-2024 20:49:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustProxies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php on line 8
+[22-Mar-2024 20:49:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\TrimStrings" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php on line 7
+[22-Mar-2024 20:49:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[22-Mar-2024 20:49:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php on line 7
+[22-Mar-2024 20:49:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Middleware\Authenticate" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php on line 7
+[22-Mar-2024 20:49:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php on line 7
+[22-Mar-2024 20:49:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php on line 7
+[22-Mar-2024 21:52:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[22-Mar-2024 21:52:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustProxies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php on line 8
+[22-Mar-2024 21:52:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php on line 7
+[22-Mar-2024 21:52:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\TrimStrings" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php on line 7
+[22-Mar-2024 21:52:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php on line 7
+[22-Mar-2024 21:52:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php on line 7
+[22-Mar-2024 21:52:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Middleware\Authenticate" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php on line 7
+[28-Mar-2024 05:00:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php on line 7
+[28-Mar-2024 05:05:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php on line 7
+[28-Mar-2024 05:28:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php on line 7
+[28-Mar-2024 10:01:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php on line 7
+[28-Mar-2024 19:50:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php on line 7
+[28-Mar-2024 20:51:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[01-Apr-2024 11:20:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustHosts.php on line 7
+[01-Apr-2024 11:20:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\TrimStrings" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrimStrings.php on line 7
+[01-Apr-2024 11:20:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[01-Apr-2024 11:20:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustProxies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/TrustProxies.php on line 8
+[01-Apr-2024 11:20:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/EncryptCookies.php on line 7
+[01-Apr-2024 11:21:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Middleware\Authenticate" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/Authenticate.php on line 7
+[01-Apr-2024 11:22:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Middleware/CheckForMaintenanceMode.php on line 7
