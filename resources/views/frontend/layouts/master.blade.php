@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-	@include('frontend.layouts.head')	
-</head>
-<body class="js">
-	
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader-inner">
-			<div class="preloader-icon">
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-	</div>
-	<!-- End Preloader -->
-	
-	@include('frontend.layouts.notification')
-	<!-- Header -->
-	@include('frontend.layouts.header')
-	<!--/ End Header -->
-	@yield('main-content')
-	
-	@include('frontend.layouts.footer')
-
-</body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:06202c1a140d9d273b7d28c7fab8bbfd59ad9c8a30ba8b17697f9d7b7a78abf5
+size 501

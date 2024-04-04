@@ -1,22 +1,3 @@
-<?php
-
-namespace App\Models;
-use App\Models\Product;
-use Illuminate\Database\Eloquent\Model;
-
-class Brand extends Model
-{
-    protected $fillable=['title','slug','status'];
-
-    // public static function getProductByBrand($id){
-    //     return Product::where('brand_id',$id)->paginate(10);
-    // }
-    public function products(){
-        return $this->hasMany('App\Models\Product','brand_id','id')->where('status','active');
-    }
-    public static function getProductByBrand($slug){
-        // dd($slug);
-        return Brand::with('products')->where('slug',$slug)->first();
-        // return Product::where('cat_id',$id)->where('child_cat_id',null)->paginate(10);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d251def6236a3cc03158292d5106e7eda21d6e6e7cc76d9627c13e0c0a8341db
+size 677

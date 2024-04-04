@@ -1,14 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Wishlist extends Model
-{
-    protected $fillable=['user_id','product_id','cart_id','price','amount','quantity'];
-
-    public function product(){
-        return $this->belongsTo(Product::class,'product_id');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:75e4e8846574355e8c4c713284c2d0422f872d270ea5b0d483a92ad6b8c633e0
+size 292

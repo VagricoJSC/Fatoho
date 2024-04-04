@@ -1,25 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Coupon extends Model
-{
-    protected $fillable=['code','type','value','status'];
-
-    public static function findByCode($code){
-        return self::where('code',$code)->first();
-    }
-    public function discount($total){
-        if($this->type=="fixed"){
-            return $this->value;
-        }
-        elseif($this->type=="percent"){
-            return ($this->value /100)*$total;
-        }
-        else{
-            return 0;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16d223815e3fc331678bb865bda8677a31c780f5943898754800f69ae23e81fd
+size 528

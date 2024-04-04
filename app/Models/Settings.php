@@ -1,10 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Settings extends Model
-{
-    protected $fillable=['short_des','description','photo','address','phone','email','logo','bank'];
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d773c473e568d46908c65998c6b371b875f150ad08114c0e8284faa09ee763a
+size 205

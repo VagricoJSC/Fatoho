@@ -1,24 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Cart extends Model
-{
-    protected $fillable=['user_id','product_id','order_id','quantity','amount','price','status'];
-    
-    // public function product(){
-    //     return $this->hasOne('App\Models\Product','id','product_id');
-    // }
-    // public static function getAllProductFromCart(){
-    //     return Cart::with('product')->where('user_id',auth()->user()->id)->get();
-    // }
-    public function product()
-    {
-        return $this->belongsTo(Product::class, 'product_id');
-    }
-    public function order(){
-        return $this->belongsTo(Order::class,'order_id');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70254c4afdcbe7dd4134838330f860795845ef84d929666477a584bd5e7a7946
+size 666

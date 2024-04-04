@@ -1,18 +1,3 @@
-<?php
-
-namespace App\Http\Middleware;
-
-use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
-
-class TrimStrings extends Middleware
-{
-    /**
-     * The names of the attributes that should not be trimmed.
-     *
-     * @var array
-     */
-    protected $except = [
-        'password',
-        'password_confirmation',
-    ];
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:03b958f4ee40f3bbde9217c15d07efc6b287ef722d34f4cbab54ffa0b42bc9d2
+size 340
