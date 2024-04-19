@@ -3,7 +3,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; <a href="https://github.com/yeshiwas30/" target="_blank">yeshiwas E.</a> {{date('Y')}}</span>
+            <span>Copyright &copy; <a href="https://fatoho.com" target="_blank">Vagrico JSC</a> {{date('Y')}}</span>
           </div>
         </div>
       </footer>
