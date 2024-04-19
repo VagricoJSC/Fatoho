@@ -1,0 +1,36 @@
+[03-Apr-2024 21:52:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php on line 25
+[03-Apr-2024 21:52:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php on line 27
+[03-Apr-2024 21:52:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php on line 28
+[03-Apr-2024 21:52:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php on line 25
+[03-Apr-2024 21:52:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php on line 7
+[03-Apr-2024 21:52:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php on line 25
+[03-Apr-2024 21:52:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php on line 25
+[03-Apr-2024 21:53:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php on line 25
+[03-Apr-2024 21:53:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php on line 27

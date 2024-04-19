@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c16193e5fb12e8cc70c6d1e4d4b65eac739ebdc8f94a933a4ae8a3ac89de7ea6
-size 495
+<?php
+/**
+ * @package dompdf
+ * @link    https://github.com/dompdf/dompdf
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+namespace Dompdf\Positioner;
+
+use Dompdf\FrameDecorator\AbstractFrameDecorator;
+
+/**
+ * Dummy positioner
+ *
+ * @package dompdf
+ */
+class NullPositioner extends AbstractPositioner
+{
+
+    /**
+     * @param AbstractFrameDecorator $frame
+     */
+    function position(AbstractFrameDecorator $frame): void
+    {
+        return;
+    }
+}

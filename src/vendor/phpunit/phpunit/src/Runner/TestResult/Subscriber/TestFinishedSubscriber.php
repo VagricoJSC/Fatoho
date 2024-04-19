@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c50cfe7542dd2fd376610a7a559437f94ff949f2514173e00e7d0e1c438ca7a4
-size 678
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\Finished;
+use PHPUnit\Event\Test\FinishedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestFinishedSubscriber extends Subscriber implements FinishedSubscriber
+{
+    public function notify(Finished $event): void
+    {
+        $this->collector()->testFinished($event);
+    }
+}

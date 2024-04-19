@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:069e8dada16c07a3ad2e6402e8172554530dd42a36de67d05286ddaf97069404
-size 541
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestRunner;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface ConfiguredSubscriber extends Subscriber
+{
+    public function notify(Configured $event): void;
+}

@@ -1,0 +1,12 @@
+[03-Apr-2024 16:17:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\NotFoundExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php on line 8
+[03-Apr-2024 16:17:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualBindingBuilder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php on line 8
+[03-Apr-2024 16:17:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\Container" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 17

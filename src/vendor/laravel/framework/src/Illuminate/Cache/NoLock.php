@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da81c2be8ab51968d48596ce832d1094415f186ae35848be5596b20c48ca1702
-size 692
+<?php
+
+namespace Illuminate\Cache;
+
+class NoLock extends Lock
+{
+    /**
+     * Attempt to acquire the lock.
+     *
+     * @return bool
+     */
+    public function acquire()
+    {
+        return true;
+    }
+
+    /**
+     * Release the lock.
+     *
+     * @return bool
+     */
+    public function release()
+    {
+        return true;
+    }
+
+    /**
+     * Releases this lock in disregard of ownership.
+     *
+     * @return void
+     */
+    public function forceRelease()
+    {
+        //
+    }
+
+    /**
+     * Returns the owner value written into the driver for this lock.
+     *
+     * @return mixed
+     */
+    protected function getCurrentOwner()
+    {
+        return $this->owner;
+    }
+}

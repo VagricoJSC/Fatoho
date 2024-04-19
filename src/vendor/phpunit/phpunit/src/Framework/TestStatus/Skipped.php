@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60b9118a99663901c83a58eefd7b103022688d3c32ad247ffecd80c104a19c0d
-size 733
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\TestStatus;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Skipped extends Known
+{
+    /**
+     * @psalm-assert-if-true Skipped $this
+     */
+    public function isSkipped(): bool
+    {
+        return true;
+    }
+
+    public function asInt(): int
+    {
+        return 1;
+    }
+
+    public function asString(): string
+    {
+        return 'skipped';
+    }
+}

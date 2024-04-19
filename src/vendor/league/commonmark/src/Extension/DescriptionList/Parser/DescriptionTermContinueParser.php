@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7bb05e217611961b1c3ebf774906fe93f6c2fc71a902aaf051ba59d4801e502
-size 1545
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\DescriptionList\Parser;
+
+use League\CommonMark\Extension\DescriptionList\Node\DescriptionTerm;
+use League\CommonMark\Parser\Block\AbstractBlockContinueParser;
+use League\CommonMark\Parser\Block\BlockContinue;
+use League\CommonMark\Parser\Block\BlockContinueParserInterface;
+use League\CommonMark\Parser\Block\BlockContinueParserWithInlinesInterface;
+use League\CommonMark\Parser\Cursor;
+use League\CommonMark\Parser\InlineParserEngineInterface;
+
+final class DescriptionTermContinueParser extends AbstractBlockContinueParser implements BlockContinueParserWithInlinesInterface
+{
+    private DescriptionTerm $block;
+
+    private string $term;
+
+    public function __construct(string $term)
+    {
+        $this->block = new DescriptionTerm();
+        $this->term  = $term;
+    }
+
+    public function getBlock(): DescriptionTerm
+    {
+        return $this->block;
+    }
+
+    public function tryContinue(Cursor $cursor, BlockContinueParserInterface $activeBlockParser): ?BlockContinue
+    {
+        return BlockContinue::finished();
+    }
+
+    public function parseInlines(InlineParserEngineInterface $inlineParser): void
+    {
+        if ($this->term !== '') {
+            $inlineParser->parse($this->term, $this->block);
+        }
+    }
+}

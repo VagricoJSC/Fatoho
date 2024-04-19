@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7332f792803d58a1a10c169bfdbb1d6a045af35b236068a1a046a5dc4f7b64a8
-size 504
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class Application extends Type {
+    public function isApplication(): bool {
+        return true;
+    }
+}

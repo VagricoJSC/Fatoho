@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69eebfe9b8171f0564e5781bea77b4024fdf47755bb217d49c4c22edf7061201
-size 1357
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\TabCompletion\Matcher;
+
+/**
+ * A constant name tab completion Matcher.
+ *
+ * This matcher provides completion for all defined constants.
+ *
+ * @author Marc Garcia <markcial@gmail.com>
+ */
+class ConstantsMatcher extends AbstractMatcher
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function getMatches(array $tokens, array $info = []): array
+    {
+        $const = $this->getInput($tokens);
+
+        return \array_filter(\array_keys(\get_defined_constants()), function ($constant) use ($const) {
+            return AbstractMatcher::startsWith($const, $constant);
+        });
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function hasMatched(array $tokens): bool
+    {
+        $token = \array_pop($tokens);
+        $prevToken = \array_pop($tokens);
+
+        switch (true) {
+            case self::tokenIs($prevToken, self::T_NEW):
+            case self::tokenIs($prevToken, self::T_NS_SEPARATOR):
+                return false;
+            case self::hasToken([self::T_OPEN_TAG, self::T_STRING], $token):
+            case self::isOperator($token):
+                return true;
+        }
+
+        return false;
+    }
+}

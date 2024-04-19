@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ce05d82c966622252007bc6d2a15aa934816ed33dc35b568c2f44efbda31c7b
-size 702
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration\CodeCoverage\Report;
+
+use PHPUnit\TextUI\Configuration\File;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Php
+{
+    private readonly File $target;
+
+    public function __construct(File $target)
+    {
+        $this->target = $target;
+    }
+
+    public function target(): File
+    {
+        return $this->target;
+    }
+}

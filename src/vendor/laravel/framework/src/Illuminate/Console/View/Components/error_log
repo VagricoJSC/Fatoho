@@ -1,0 +1,48 @@
+[03-Apr-2024 21:50:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Warn.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Warn.php on line 7
+[03-Apr-2024 21:50:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/TwoColumnDetail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/TwoColumnDetail.php on line 7
+[03-Apr-2024 21:50:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php on line 9
+[03-Apr-2024 21:50:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Line.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Line.php on line 8
+[03-Apr-2024 21:50:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Info.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Info.php on line 7
+[03-Apr-2024 21:51:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Error.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Error.php on line 7
+[03-Apr-2024 21:51:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Confirm.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Confirm.php on line 5
+[03-Apr-2024 21:51:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Choice.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Choice.php on line 7
+[03-Apr-2024 21:51:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/BulletList.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/BulletList.php on line 7
+[03-Apr-2024 21:51:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/AskWithCompletion.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/AskWithCompletion.php on line 7
+[03-Apr-2024 21:51:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Ask.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Ask.php on line 5
+[03-Apr-2024 21:51:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\View\Components\Component" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Alert.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/View/Components/Alert.php on line 7

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c48e35e1b4467c1ca9db337e1cceffbe1a5000be74a36476c021dae5be77c32d
-size 1084
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\CssSelector\XPath\Extension;
+
+/**
+ * XPath expression translator abstract extension.
+ *
+ * This component is a port of the Python cssselect library,
+ * which is copyright Ian Bicking, @see https://github.com/SimonSapin/cssselect.
+ *
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ *
+ * @internal
+ */
+abstract class AbstractExtension implements ExtensionInterface
+{
+    public function getNodeTranslators(): array
+    {
+        return [];
+    }
+
+    public function getCombinationTranslators(): array
+    {
+        return [];
+    }
+
+    public function getFunctionTranslators(): array
+    {
+        return [];
+    }
+
+    public function getPseudoClassTranslators(): array
+    {
+        return [];
+    }
+
+    public function getAttributeMatchingTranslators(): array
+    {
+        return [];
+    }
+}

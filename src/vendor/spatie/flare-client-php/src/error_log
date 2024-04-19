@@ -1,0 +1,2 @@
+[01-Apr-2024 11:49:46 UTC] PHP Fatal error:  Trait "Spatie\FlareClient\Concerns\UsesTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/flare-client-php/src/Report.php on line 17
+[01-Apr-2024 11:49:53 UTC] PHP Fatal error:  Trait "Spatie\FlareClient\Concerns\HasContext" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/flare-client-php/src/Flare.php on line 25

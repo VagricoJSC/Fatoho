@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6145d51bac9eac2122200bf87b406cb6586c51171d6d292797eafc48d7042592
-size 1180
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class ApplicationName {
+    /** @var string */
+    private $name;
+
+    public function __construct(string $name) {
+        $this->ensureValidFormat($name);
+        $this->name = $name;
+    }
+
+    public function asString(): string {
+        return $this->name;
+    }
+
+    public function isEqual(ApplicationName $name): bool {
+        return $this->name === $name->name;
+    }
+
+    private function ensureValidFormat(string $name): void {
+        if (!\preg_match('#\w/\w#', $name)) {
+            throw new InvalidApplicationNameException(
+                \sprintf('Format of name "%s" is not valid - expected: vendor/packagename', $name),
+                InvalidApplicationNameException::InvalidFormat
+            );
+        }
+    }
+}

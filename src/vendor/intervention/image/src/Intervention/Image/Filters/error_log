@@ -1,0 +1,8 @@
+[23-Mar-2024 15:52:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Intervention\Image\Filters\FilterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php on line 7
+[03-Apr-2024 19:50:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Intervention\Image\Filters\FilterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php on line 7

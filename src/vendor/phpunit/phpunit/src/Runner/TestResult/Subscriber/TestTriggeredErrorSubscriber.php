@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:808dd7cc3e061e16f8b1d5ceaecce7540b994798febe5fdd8211797282019096
-size 714
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\ErrorTriggered;
+use PHPUnit\Event\Test\ErrorTriggeredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestTriggeredErrorSubscriber extends Subscriber implements ErrorTriggeredSubscriber
+{
+    public function notify(ErrorTriggered $event): void
+    {
+        $this->collector()->testTriggeredError($event);
+    }
+}

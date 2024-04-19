@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4af696d6648cd735daee367746245d8d7522fb730d381a6a26a0d7cd46c5630
-size 714
+<?php
+
+namespace Intervention\Image;
+
+use Illuminate\Support\ServiceProvider;
+
+class ImageServiceProviderLumen extends ServiceProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $app = $this->app;
+
+        // merge default config
+        $this->mergeConfigFrom(
+          __DIR__.'/../../config/config.php',
+          'image'
+        );
+
+        // set configuration
+        $app->configure('image');
+
+        // create image
+        $app->singleton('image',function ($app) {
+            return new ImageManager($app['config']->get('image'));
+        });
+
+        $app->alias('image', 'Intervention\Image\ImageManager');
+    }
+}

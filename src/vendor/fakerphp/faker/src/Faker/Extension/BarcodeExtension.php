@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e89ceaf5203a79686c9c379e4213c0631c42c30a7c0e3e653003ee2d1623a04
-size 844
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface BarcodeExtension extends Extension
+{
+    /**
+     * Get a random EAN13 barcode.
+     *
+     * @example '4006381333931'
+     */
+    public function ean13(): string;
+
+    /**
+     * Get a random EAN8 barcode.
+     *
+     * @example '73513537'
+     */
+    public function ean8(): string;
+
+    /**
+     * Get a random ISBN-10 code
+     *
+     * @see http://en.wikipedia.org/wiki/International_Standard_Book_Number
+     *
+     * @example '4881416324'
+     */
+    public function isbn10(): string;
+
+    /**
+     * Get a random ISBN-13 code
+     *
+     * @see http://en.wikipedia.org/wiki/International_Standard_Book_Number
+     *
+     * @example '9790404436093'
+     */
+    public function isbn13(): string;
+}

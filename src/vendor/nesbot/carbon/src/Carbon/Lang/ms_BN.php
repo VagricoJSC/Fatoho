@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ab6ad65a96c209db768376d5084cfe3208ee21360989468f4784a146cc86901
-size 547
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/ms.php', [
+    'formats' => [
+        'LT' => 'h:mm a',
+        'LTS' => 'h:mm:ss a',
+        'L' => 'D/MM/yy',
+        'LL' => 'D MMM YYYY',
+        'LLL' => 'D MMMM YYYY, h:mm a',
+        'LLLL' => 'dd MMMM YYYY, h:mm a',
+    ],
+    'meridiem' => ['a', 'p'],
+]);

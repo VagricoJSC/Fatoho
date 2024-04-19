@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cf9681fc29077cc96929e2f1798ff3d299b91f2f0f2936cb8a433741276cefc
-size 280
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class LabelTooLong implements Reason
+{
+    public function code() : int
+    {
+        return 245;
+    }
+
+    public function description() : string
+    {
+        return 'Domain "label" is longer than 63 characters';
+    }
+}

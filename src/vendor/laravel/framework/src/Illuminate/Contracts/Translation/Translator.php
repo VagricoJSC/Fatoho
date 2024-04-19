@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d680a3155f868fd7a9e3082eb15c3c293f9c566990d89795a2c309d58bc58019
-size 923
+<?php
+
+namespace Illuminate\Contracts\Translation;
+
+interface Translator
+{
+    /**
+     * Get the translation for a given key.
+     *
+     * @param  string  $key
+     * @param  array  $replace
+     * @param  string|null  $locale
+     * @return mixed
+     */
+    public function get($key, array $replace = [], $locale = null);
+
+    /**
+     * Get a translation according to an integer value.
+     *
+     * @param  string  $key
+     * @param  \Countable|int|array  $number
+     * @param  array  $replace
+     * @param  string|null  $locale
+     * @return string
+     */
+    public function choice($key, $number, array $replace = [], $locale = null);
+
+    /**
+     * Get the default locale being used.
+     *
+     * @return string
+     */
+    public function getLocale();
+
+    /**
+     * Set the default locale.
+     *
+     * @param  string  $locale
+     * @return void
+     */
+    public function setLocale($locale);
+}

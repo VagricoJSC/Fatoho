@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd7864811f8c05a31573fb2272200516467e7d97380c6ca54c339b7287c221b9
-size 181
+<?php
+
+namespace Illuminate\Mail\Mailables;
+
+use Illuminate\Mail\Attachment as BaseAttachment;
+
+class Attachment extends BaseAttachment
+{
+    // Here for namespace consistency...
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b97e36f62a6dc80f4d1dc24f02d693d8e743fe0096d999ac130a586585ee310
-size 746
+<?php
+/**
+ * Whoops - php errors for cool kids
+ * @author Filipe Dobreira <http://github.com/filp>
+ */
+
+namespace Whoops\Handler;
+
+use Whoops\Inspector\InspectorInterface;
+use Whoops\RunInterface;
+
+interface HandlerInterface
+{
+    /**
+     * @return int|null A handler may return nothing, or a Handler::HANDLE_* constant
+     */
+    public function handle();
+
+    /**
+     * @param  RunInterface  $run
+     * @return void
+     */
+    public function setRun(RunInterface $run);
+
+    /**
+     * @param  \Throwable $exception
+     * @return void
+     */
+    public function setException($exception);
+
+    /**
+     * @param  InspectorInterface $inspector
+     * @return void
+     */
+    public function setInspector(InspectorInterface $inspector);
+}

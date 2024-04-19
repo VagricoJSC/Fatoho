@@ -1,0 +1,24 @@
+[23-Mar-2024 12:09:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsNan.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsNan.php on line 17
+[23-Mar-2024 12:09:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsInfinite.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsInfinite.php on line 17
+[23-Mar-2024 12:10:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsFinite.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsFinite.php on line 17
+[03-Apr-2024 17:24:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsNan.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsNan.php on line 17
+[03-Apr-2024 17:24:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsInfinite.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsInfinite.php on line 17
+[03-Apr-2024 17:24:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsFinite.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Constraint/Math/IsFinite.php on line 17

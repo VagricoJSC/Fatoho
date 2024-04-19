@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4edbb7cc9d3eff17b0b98c5d6a94e564ef117a3ebc0dcf651ec4b2f553ef5a7c
-size 1160
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestRunner;
+
+use function sprintf;
+use PHPUnit\Event\Event;
+use PHPUnit\Event\Telemetry;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class BootstrapFinished implements Event
+{
+    private readonly Telemetry\Info $telemetryInfo;
+    private readonly string $filename;
+
+    public function __construct(Telemetry\Info $telemetryInfo, string $filename)
+    {
+        $this->telemetryInfo = $telemetryInfo;
+        $this->filename      = $filename;
+    }
+
+    public function telemetryInfo(): Telemetry\Info
+    {
+        return $this->telemetryInfo;
+    }
+
+    public function filename(): string
+    {
+        return $this->filename;
+    }
+
+    public function asString(): string
+    {
+        return sprintf(
+            'Bootstrap Finished (%s)',
+            $this->filename
+        );
+    }
+}

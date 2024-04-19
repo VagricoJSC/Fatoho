@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:669cf248b19521c4ba49ecebf3d391b55d33af865bb8e1ea1a69e244a5674e31
-size 1385
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class RequiresSetting extends Metadata
+{
+    private readonly string $setting;
+    private readonly string $value;
+
+    protected function __construct(int $level, string $setting, string $value)
+    {
+        parent::__construct($level);
+
+        $this->setting = $setting;
+        $this->value   = $value;
+    }
+
+    public function isRequiresSetting(): bool
+    {
+        return true;
+    }
+
+    public function setting(): string
+    {
+        return $this->setting;
+    }
+
+    public function value(): string
+    {
+        return $this->value;
+    }
+}

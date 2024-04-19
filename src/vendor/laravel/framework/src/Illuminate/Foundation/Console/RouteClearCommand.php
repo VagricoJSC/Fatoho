@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d5a76e89289780289368f586613f40a998f47620f74331e6999478030b34a71
-size 1166
+<?php
+
+namespace Illuminate\Foundation\Console;
+
+use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'route:clear')]
+class RouteClearCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'route:clear';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Remove the route cache file';
+
+    /**
+     * The filesystem instance.
+     *
+     * @var \Illuminate\Filesystem\Filesystem
+     */
+    protected $files;
+
+    /**
+     * Create a new route clear command instance.
+     *
+     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @return void
+     */
+    public function __construct(Filesystem $files)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        $this->files->delete($this->laravel->getCachedRoutesPath());
+
+        $this->components->info('Route cache cleared successfully.');
+    }
+}

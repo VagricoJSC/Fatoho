@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a1670da6b57a02d1e794173e288ca7eb0f7ac1b1b87b5a0b99072b617100c2f
-size 534
+<?php
+
+namespace Spatie\FlareClient\Glows;
+
+class GlowRecorder
+{
+    const GLOW_LIMIT = 30;
+
+    /** @var array<int, Glow> */
+    protected array $glows = [];
+
+    public function record(Glow $glow): void
+    {
+        $this->glows[] = $glow;
+
+        $this->glows = array_slice($this->glows, static::GLOW_LIMIT * -1, static::GLOW_LIMIT);
+    }
+
+    /** @return array<int, Glow> */
+    public function glows(): array
+    {
+        return $this->glows;
+    }
+
+    public function reset(): void
+    {
+        $this->glows = [];
+    }
+}

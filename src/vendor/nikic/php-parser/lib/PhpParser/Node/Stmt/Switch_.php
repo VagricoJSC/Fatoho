@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:982e58185b852490d5ba41f9a70adbad4c2dffcca3c07aa493ea68b345d251f2
-size 808
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Switch_ extends Node\Stmt
+{
+    /** @var Node\Expr Condition */
+    public $cond;
+    /** @var Case_[] Case list */
+    public $cases;
+
+    /**
+     * Constructs a case node.
+     *
+     * @param Node\Expr $cond       Condition
+     * @param Case_[]   $cases      Case list
+     * @param array     $attributes Additional attributes
+     */
+    public function __construct(Node\Expr $cond, array $cases, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->cond = $cond;
+        $this->cases = $cases;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['cond', 'cases'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Switch';
+    }
+}

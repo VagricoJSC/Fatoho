@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57c4781a6128a0fb6e763e1e660c6b3fa4779823154cf35791f35db935710d5c
-size 476
+<?php
+
+namespace Illuminate\Validation\Rules;
+
+use Illuminate\Support\Traits\Conditionable;
+
+class Exists
+{
+    use Conditionable, DatabaseRule;
+
+    /**
+     * Convert the rule to a validation string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return rtrim(sprintf('exists:%s,%s,%s',
+            $this->table,
+            $this->column,
+            $this->formatWheres()
+        ), ',');
+    }
+}

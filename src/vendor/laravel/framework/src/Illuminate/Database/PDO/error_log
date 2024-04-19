@@ -1,0 +1,24 @@
+[03-Apr-2024 18:31:05 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Driver\AbstractSQLServerDriver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SqlServerDriver.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SqlServerDriver.php on line 7
+[03-Apr-2024 18:31:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\DBAL\Driver\ServerInfoAwareConnection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SqlServerConnection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SqlServerConnection.php on line 12
+[03-Apr-2024 18:31:13 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Driver\AbstractSQLiteDriver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SQLiteDriver.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/SQLiteDriver.php on line 8
+[03-Apr-2024 18:31:17 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Driver\AbstractPostgreSQLDriver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/PostgresDriver.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/PostgresDriver.php on line 8
+[03-Apr-2024 18:31:21 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Driver\AbstractMySQLDriver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/MySqlDriver.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/MySqlDriver.php on line 8
+[03-Apr-2024 18:31:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\DBAL\Driver\ServerInfoAwareConnection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/Connection.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PDO/Connection.php on line 16

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0f3e7611e998da43e13377d515af332a1c4a73d31fa6b9f77a86d5ecda5d875
-size 512
+<?php
+
+/**
+ * This file is part of the ramsey/collection library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Collection;
+
+/**
+ * `GenericArray` represents a standard array object.
+ *
+ * @extends AbstractArray<mixed>
+ */
+class GenericArray extends AbstractArray
+{
+}

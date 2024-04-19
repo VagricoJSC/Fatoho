@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:385767869e14899dae694ed0b54f82bc3050a4a9c60a94d55fcf0bc34f4b4a1d
-size 702
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Test\TestSize;
+
+/**
+ * @psalm-immutable
+ */
+final class Medium extends Known
+{
+    /**
+     * @psalm-assert-if-true Medium $this
+     */
+    public function isMedium(): bool
+    {
+        return true;
+    }
+
+    public function isGreaterThan(TestSize $other): bool
+    {
+        return $other->isSmall();
+    }
+
+    public function asString(): string
+    {
+        return 'medium';
+    }
+}

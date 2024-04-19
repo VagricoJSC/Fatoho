@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a10249c392696497c815b919f3c2fcf2c395b87c087793c155cca3826efdd147
-size 390
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/global-state.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\GlobalState;
+
+final class RuntimeException extends \RuntimeException implements Exception
+{
+}

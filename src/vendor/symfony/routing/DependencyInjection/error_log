@@ -1,0 +1,1 @@
+[22-Mar-2024 23:49:23 UTC] PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24

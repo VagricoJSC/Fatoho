@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a9934c9859626c9bd5d52abd2ecb94e5cd09e42998f3f3bd052fb2c2e8203dc
-size 221
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class Mod extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_Mod';
+    }
+}

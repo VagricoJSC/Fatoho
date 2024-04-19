@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b409ec134ea888a072c9f18581934eed5510a5a40dd44119beefa8ab4b238c69
-size 719
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Transport;
+
+use Symfony\Component\Mailer\Exception\IncompleteDsnException;
+use Symfony\Component\Mailer\Exception\UnsupportedSchemeException;
+
+/**
+ * @author Konstantin Myakshin <molodchick@gmail.com>
+ */
+interface TransportFactoryInterface
+{
+    /**
+     * @throws UnsupportedSchemeException
+     * @throws IncompleteDsnException
+     */
+    public function create(Dsn $dsn): TransportInterface;
+
+    public function supports(Dsn $dsn): bool;
+}

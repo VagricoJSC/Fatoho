@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92b27aa9b54218eab3410aa7c640701e57b8176f2650841e3b405221099b2bf5
-size 643
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/cli-parser.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CliParser;
+
+use function sprintf;
+use RuntimeException;
+
+final class AmbiguousOptionException extends RuntimeException implements Exception
+{
+    public function __construct(string $option)
+    {
+        parent::__construct(
+            sprintf(
+                'Option "%s" is ambiguous',
+                $option
+            )
+        );
+    }
+}

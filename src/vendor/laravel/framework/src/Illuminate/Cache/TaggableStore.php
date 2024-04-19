@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d20d40593aa6fa52ce0dffe7339db7393914ccafac2600f4c703af689b22a565
-size 421
+<?php
+
+namespace Illuminate\Cache;
+
+use Illuminate\Contracts\Cache\Store;
+
+abstract class TaggableStore implements Store
+{
+    /**
+     * Begin executing a new tags operation.
+     *
+     * @param  array|mixed  $names
+     * @return \Illuminate\Cache\TaggedCache
+     */
+    public function tags($names)
+    {
+        return new TaggedCache($this, new TagSet($this, is_array($names) ? $names : func_get_args()));
+    }
+}

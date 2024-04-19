@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f61b42389368a5ce44c32eff6ec9ae37e9dc27cb0af8a0b8518d12aa8138ba1b
-size 1037
+<?php
+
+namespace Illuminate\Contracts\Encryption;
+
+interface Encrypter
+{
+    /**
+     * Encrypt the given value.
+     *
+     * @param  mixed  $value
+     * @param  bool  $serialize
+     * @return string
+     *
+     * @throws \Illuminate\Contracts\Encryption\EncryptException
+     */
+    public function encrypt($value, $serialize = true);
+
+    /**
+     * Decrypt the given value.
+     *
+     * @param  string  $payload
+     * @param  bool  $unserialize
+     * @return mixed
+     *
+     * @throws \Illuminate\Contracts\Encryption\DecryptException
+     */
+    public function decrypt($payload, $unserialize = true);
+
+    /**
+     * Get the encryption key that the encrypter is currently using.
+     *
+     * @return string
+     */
+    public function getKey();
+}

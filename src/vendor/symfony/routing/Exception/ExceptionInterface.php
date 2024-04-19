@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11d497f363a0da509d67147827a6a96c346fd9eb2c383ea58da36f3f184343da
-size 430
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Exception;
+
+/**
+ * ExceptionInterface.
+ *
+ * @author Alexandre Salomé <alexandre.salome@gmail.com>
+ */
+interface ExceptionInterface extends \Throwable
+{
+}

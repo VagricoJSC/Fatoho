@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:457e7a3efb106a1b32eb559871c1a2020bbf0f1398fcd394739552d854e99ebe
-size 440
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+class Confirm extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $question
+     * @param  bool  $default
+     * @return bool
+     */
+    public function render($question, $default = false)
+    {
+        return $this->usingQuestionHelper(
+            fn () => $this->output->confirm($question, $default),
+        );
+    }
+}

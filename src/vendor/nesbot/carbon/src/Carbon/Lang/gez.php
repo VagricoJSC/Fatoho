@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c52dd06c2731d8a8e5b78276d453dcf860544cadade53dfd3666d66db907593
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/gez_ER.php';

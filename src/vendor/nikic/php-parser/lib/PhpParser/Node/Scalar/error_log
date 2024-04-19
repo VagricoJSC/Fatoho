@@ -1,0 +1,48 @@
+[23-Mar-2024 14:55:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php on line 8
+[23-Mar-2024 14:55:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php on line 7
+[23-Mar-2024 14:55:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php on line 8
+[23-Mar-2024 14:55:43 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php on line 7
+[23-Mar-2024 14:55:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php on line 8
+[23-Mar-2024 14:56:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php on line 7
+[01-Apr-2024 16:20:15 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php on line 8
+[01-Apr-2024 16:20:18 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php on line 7
+[01-Apr-2024 16:20:20 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php on line 8
+[01-Apr-2024 16:20:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php on line 7
+[01-Apr-2024 16:20:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php on line 8
+[01-Apr-2024 16:20:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php on line 7

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a6aaeb9667b4ab1f140a4c8cd15bafa93641675b3439fb3d128a520445383e8
-size 225
+theme: jekyll-theme-cayman
+
+# Setup
+title: Laravel File Manager
+description: It's like Dropbox for your Laravel app.
+google_analytics: UA-92410814-4
+
+# About/contact
+author:
+  name: UniSharp
+  url: https://github.com/UniSharp

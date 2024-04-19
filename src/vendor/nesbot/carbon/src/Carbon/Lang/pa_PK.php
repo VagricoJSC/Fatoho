@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04f048b3c5e6c7428ed09fcf9a25eb52d5aa58ad8c5f3bc4c13465f0b3f75bf7
-size 1188
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/en.php', [
+    'formats' => [
+        'L' => 'DD/MM/YYYY',
+    ],
+    'months' => ['جنوري', 'فروري', 'مارچ', 'اپريل', 'مٓی', 'جون', 'جولاي', 'اگست', 'ستمبر', 'اكتوبر', 'نومبر', 'دسمبر'],
+    'months_short' => ['جنوري', 'فروري', 'مارچ', 'اپريل', 'مٓی', 'جون', 'جولاي', 'اگست', 'ستمبر', 'اكتوبر', 'نومبر', 'دسمبر'],
+    'weekdays' => ['اتوار', 'پير', 'منگل', 'بدھ', 'جمعرات', 'جمعه', 'هفته'],
+    'weekdays_short' => ['اتوار', 'پير', 'منگل', 'بدھ', 'جمعرات', 'جمعه', 'هفته'],
+    'weekdays_min' => ['اتوار', 'پير', 'منگل', 'بدھ', 'جمعرات', 'جمعه', 'هفته'],
+    'day_of_first_week_of_year' => 1,
+    'meridiem' => ['ص', 'ش'],
+]);

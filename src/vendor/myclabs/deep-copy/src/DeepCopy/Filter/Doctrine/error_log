@@ -1,0 +1,12 @@
+[03-Apr-2024 18:14:06 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\Filter\Filter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineProxyFilter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineProxyFilter.php on line 10
+[03-Apr-2024 18:14:09 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\Filter\Filter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineCollectionFilter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineCollectionFilter.php on line 11
+[03-Apr-2024 20:40:33 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\Filter\Filter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineEmptyCollectionFilter.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineEmptyCollectionFilter.php on line 12

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3226ca3e2ca3f4134848d00be239b0f248421e2e54ed3b29c7164961a8716611
-size 427
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Finder\Exception;
+
+/**
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ */
+class AccessDeniedException extends \UnexpectedValueException
+{
+}

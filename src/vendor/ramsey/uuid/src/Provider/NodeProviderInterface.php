@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eae93a71ba3438d993c8281f9158ba24d6c9357ae8a9b74f0b7a4c4a10ffea3f
-size 652
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Provider;
+
+use Ramsey\Uuid\Type\Hexadecimal;
+
+/**
+ * A node provider retrieves or generates a node ID
+ */
+interface NodeProviderInterface
+{
+    /**
+     * Returns a node ID
+     *
+     * @return Hexadecimal The node ID as a hexadecimal string
+     */
+    public function getNode(): Hexadecimal;
+}

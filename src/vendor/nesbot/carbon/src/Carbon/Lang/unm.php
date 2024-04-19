@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d672386d40724c5c1b2c39043ca332c24a830dd15d4947e8cebd7fe97a0bb83d
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/unm_US.php';

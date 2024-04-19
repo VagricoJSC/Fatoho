@@ -1,0 +1,38 @@
+[03-Apr-2024 18:19:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php on line 13
+[03-Apr-2024 18:19:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php on line 10
+[03-Apr-2024 18:19:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php on line 19
+[03-Apr-2024 18:19:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php on line 17
+[03-Apr-2024 18:19:29 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php on line 20
+[03-Apr-2024 18:19:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php on line 22
+[03-Apr-2024 18:19:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Scheduling\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php on line 12
+[03-Apr-2024 18:19:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\EventMutex" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php on line 8
+[03-Apr-2024 20:39:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php on line 11
+[03-Apr-2024 20:39:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php on line 7
+[03-Apr-2024 20:39:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\SchedulingMutex" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php on line 8

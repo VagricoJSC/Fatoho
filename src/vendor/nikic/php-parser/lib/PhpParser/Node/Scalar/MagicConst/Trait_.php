@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acc4a0f40bdc9dd91e884a9c93b1c07c3e0e9d946105ea1f898540f629f63951
-size 315
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar\MagicConst;
+
+use PhpParser\Node\Scalar\MagicConst;
+
+class Trait_ extends MagicConst
+{
+    public function getName() : string {
+        return '__TRAIT__';
+    }
+    
+    public function getType() : string {
+        return 'Scalar_MagicConst_Trait';
+    }
+}

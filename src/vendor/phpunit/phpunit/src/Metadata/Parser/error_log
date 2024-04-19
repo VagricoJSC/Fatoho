@@ -1,0 +1,32 @@
+[23-Mar-2024 12:21:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php on line 17
+[23-Mar-2024 12:21:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php on line 17
+[23-Mar-2024 12:21:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php on line 73
+[23-Mar-2024 12:21:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php on line 35
+[03-Apr-2024 17:03:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php on line 17
+[03-Apr-2024 17:04:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php on line 17
+[03-Apr-2024 17:04:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php on line 73
+[03-Apr-2024 17:04:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php on line 35

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:386d047bf901b8e2741e98572160511c13361cd62ddb86a702287b6d91e56a68
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/yuw_PG.php';

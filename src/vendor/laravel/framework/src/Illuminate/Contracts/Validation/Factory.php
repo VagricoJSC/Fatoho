@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6e1b3ff125b6f65cc13e503c6f212baf60f532fe6ecbb9cad9b84ef19949bd0
-size 1184
+<?php
+
+namespace Illuminate\Contracts\Validation;
+
+interface Factory
+{
+    /**
+     * Create a new Validator instance.
+     *
+     * @param  array  $data
+     * @param  array  $rules
+     * @param  array  $messages
+     * @param  array  $attributes
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    public function make(array $data, array $rules, array $messages = [], array $attributes = []);
+
+    /**
+     * Register a custom validator extension.
+     *
+     * @param  string  $rule
+     * @param  \Closure|string  $extension
+     * @param  string|null  $message
+     * @return void
+     */
+    public function extend($rule, $extension, $message = null);
+
+    /**
+     * Register a custom implicit validator extension.
+     *
+     * @param  string  $rule
+     * @param  \Closure|string  $extension
+     * @param  string|null  $message
+     * @return void
+     */
+    public function extendImplicit($rule, $extension, $message = null);
+
+    /**
+     * Register a custom implicit validator message replacer.
+     *
+     * @param  string  $rule
+     * @param  \Closure|string  $replacer
+     * @return void
+     */
+    public function replacer($rule, $replacer);
+}

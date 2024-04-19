@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81c811a1c5b5f81be729ed30d28f20aa9b6874990e5c73ccda48908d5cbaffde
-size 1165
+<?php
+
+namespace Illuminate\Foundation;
+
+use Illuminate\Support\Manager;
+
+class MaintenanceModeManager extends Manager
+{
+    /**
+     * Create an instance of the file based maintenance driver.
+     *
+     * @return \Illuminate\Foundation\FileBasedMaintenanceMode
+     */
+    protected function createFileDriver(): FileBasedMaintenanceMode
+    {
+        return new FileBasedMaintenanceMode();
+    }
+
+    /**
+     * Create an instance of the cache based maintenance driver.
+     *
+     * @return \Illuminate\Foundation\CacheBasedMaintenanceMode
+     *
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
+    protected function createCacheDriver(): CacheBasedMaintenanceMode
+    {
+        return new CacheBasedMaintenanceMode(
+            $this->container->make('cache'),
+            $this->config->get('app.maintenance.store') ?: $this->config->get('cache.default'),
+            'illuminate:foundation:down'
+        );
+    }
+
+    /**
+     * Get the default driver name.
+     *
+     * @return string
+     */
+    public function getDefaultDriver(): string
+    {
+        return $this->config->get('app.maintenance.driver', 'file');
+    }
+}

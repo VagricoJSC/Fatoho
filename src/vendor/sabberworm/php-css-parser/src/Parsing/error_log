@@ -1,0 +1,20 @@
+[23-Mar-2024 05:29:01 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Parsing\SourceException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedTokenException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedTokenException.php on line 8
+[23-Mar-2024 05:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Parsing\UnexpectedTokenException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedEOFException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedEOFException.php on line 10
+[23-Mar-2024 05:29:16 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Parsing\SourceException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/OutputException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/OutputException.php on line 8
+[28-Mar-2024 10:14:07 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Parsing\UnexpectedTokenException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedEOFException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/UnexpectedEOFException.php on line 10
+[28-Mar-2024 10:20:12 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Parsing\SourceException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/OutputException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Parsing/OutputException.php on line 8

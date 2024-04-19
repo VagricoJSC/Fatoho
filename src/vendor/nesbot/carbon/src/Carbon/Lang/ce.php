@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99e733afef3dde6aa3b6b05e1014883c16c148fef3e4112b8f7ed1461e5a63f7
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/ce_RU.php';

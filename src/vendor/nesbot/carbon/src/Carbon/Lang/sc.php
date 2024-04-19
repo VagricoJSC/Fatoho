@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20e988fa6b77f6eb1034f2e308410b15e798ef93eacedb000abfbf55b32c422b
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/sc_IT.php';

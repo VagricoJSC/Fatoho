@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cdcb3eae1b46a95ed81a6bf5fed2f034dc558f61bb08b541d75ba349744700d
-size 275
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return require __DIR__.'/sr_Latn_ME.php';

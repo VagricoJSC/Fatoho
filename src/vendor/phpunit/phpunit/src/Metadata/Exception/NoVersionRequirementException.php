@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c948d3906c424d330ecd9b14bff1cf5d49b1c6af75f2f3d25d3b7803ad716f1
-size 397
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+use RuntimeException;
+
+final class NoVersionRequirementException extends RuntimeException implements Exception
+{
+}

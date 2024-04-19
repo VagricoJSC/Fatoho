@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d8c95220c42f648c8bf10146f77997f4a23cf619ab4e5e0e76713f8cc79f7f6
-size 218
+# Curve25519 Data Structures
+
+These are PHP implementation of the [structs used in the ref10 curve25519 code](https://github.com/jedisct1/libsodium/blob/master/src/libsodium/include/sodium/private/curve25519_ref10.h).

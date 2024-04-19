@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:910e8c81b3088a769bca5e7a297a6e29889b2ee68ada7477616b008e228689d1
-size 348
+<?php
+
+namespace Faker\Provider\el_CY;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'cablenet.com.cy', 'cytanet.com.cy', 'primehome.com'];
+    protected static $tld = ['com.cy', 'com.cy', 'com.cy', 'com.cy', 'com.cy', 'com.cy', 'biz', 'info', 'net', 'org'];
+}

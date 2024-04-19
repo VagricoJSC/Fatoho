@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48cd7b36ee38034567ffa45de26c4141ff4757cb2430be0e2739c3b531473869
-size 320
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class SmallerOrEqual extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '<=';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_SmallerOrEqual';
+    }
+}

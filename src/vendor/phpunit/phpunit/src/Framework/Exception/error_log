@@ -1,0 +1,128 @@
+[23-Mar-2024 12:07:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php on line 17
+[23-Mar-2024 12:11:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassException.php on line 17
+[23-Mar-2024 12:12:18 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php on line 15
+[23-Mar-2024 12:12:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php on line 17
+[23-Mar-2024 12:12:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php on line 15
+[23-Mar-2024 12:12:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php on line 15
+[23-Mar-2024 12:13:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php on line 15
+[23-Mar-2024 12:13:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\CodeCoverageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php on line 15
+[23-Mar-2024 12:13:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php on line 15
+[23-Mar-2024 12:13:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php on line 17
+[23-Mar-2024 12:13:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php on line 24
+[23-Mar-2024 12:13:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php on line 42
+[23-Mar-2024 12:13:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Error.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Error.php on line 15
+[23-Mar-2024 12:13:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php on line 15
+[23-Mar-2024 12:13:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php on line 15
+[23-Mar-2024 12:13:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php on line 15
+[03-Apr-2024 16:58:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassException.php on line 17
+[03-Apr-2024 16:58:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php on line 15
+[03-Apr-2024 16:59:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php on line 17
+[03-Apr-2024 16:59:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php on line 15
+[03-Apr-2024 16:59:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php on line 15
+[03-Apr-2024 16:59:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php on line 15
+[03-Apr-2024 16:59:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php on line 24
+[03-Apr-2024 16:59:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php on line 42
+[03-Apr-2024 16:59:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Error.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/Error.php on line 15
+[03-Apr-2024 16:59:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php on line 15
+[03-Apr-2024 16:59:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php on line 15
+[03-Apr-2024 16:59:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php on line 15
+[03-Apr-2024 17:05:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php on line 17
+[03-Apr-2024 17:05:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php on line 15
+[03-Apr-2024 17:05:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\CodeCoverageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php on line 15
+[03-Apr-2024 17:05:45 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php on line 17

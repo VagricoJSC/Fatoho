@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a75e8e5656093b0b5838b6be3486d4e12338f7ad8f6bd8fceacb43f5adf92a79
-size 786
+<?php
+
+namespace Faker\Provider\th_TH;
+
+class Color extends \Faker\Provider\Color
+{
+    protected static $safeColorNames = [
+        'ขาว', 'ชมพู', 'ดำ', 'น้ำตาล', 'น้ำเงิน', 'ฟ้า', 'ม่วง', 'ส้ม', 'เขียว', 'เขียวอ่อน', 'เหลือง', 'แดง',
+    ];
+
+    protected static $allColorNames = [
+        'กากี', 'ขาว', 'คราม', 'ชมพู', 'ดำ', 'ทอง', 'นาค', 'น้ำตาล',
+        'น้ำเงิน', 'ฟ้า', 'ม่วง', 'ส้ม', 'เขียว', 'เขียวอ่อน',
+        'เงิน', 'เทา', 'เหลือง', 'เหลืองอ่อน', 'แดง', '่ขี้ม้า',
+    ];
+}

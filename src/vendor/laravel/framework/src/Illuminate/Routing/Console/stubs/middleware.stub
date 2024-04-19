@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:747094677c389589cf2e3d11782ef938db7f98f0de4bfd7e8531b738acf06974
-size 422
+<?php
+
+namespace {{ namespace }};
+
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class {{ class }}
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        return $next($request);
+    }
+}

@@ -1,3 +1,71 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ac60d2939c1dae931950776df0fafe0bd329b5aa205f4e5836dcd5456e76e32
-size 1630
+<?php
+
+namespace Illuminate\Foundation\Auth;
+
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+
+trait ConfirmsPasswords
+{
+    use RedirectsUsers;
+
+    /**
+     * Display the password confirmation view.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showConfirmForm()
+    {
+        return view('auth.passwords.confirm');
+    }
+
+    /**
+     * Confirm the given user's password.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    public function confirm(Request $request)
+    {
+        $request->validate($this->rules(), $this->validationErrorMessages());
+
+        $this->resetPasswordConfirmationTimeout($request);
+
+        return $request->wantsJson()
+                    ? new JsonResponse([], 204)
+                    : redirect()->intended($this->redirectPath());
+    }
+
+    /**
+     * Reset the password confirmation timeout.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     */
+    protected function resetPasswordConfirmationTimeout(Request $request)
+    {
+        $request->session()->put('auth.password_confirmed_at', time());
+    }
+
+    /**
+     * Get the password confirmation validation rules.
+     *
+     * @return array
+     */
+    protected function rules()
+    {
+        return [
+            'password' => 'required|current_password:web',
+        ];
+    }
+
+    /**
+     * Get the password confirmation validation error messages.
+     *
+     * @return array
+     */
+    protected function validationErrorMessages()
+    {
+        return [];
+    }
+}

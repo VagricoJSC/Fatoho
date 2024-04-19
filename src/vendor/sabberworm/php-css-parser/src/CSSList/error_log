@@ -1,0 +1,20 @@
+[23-Mar-2024 05:38:57 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\CSSList\CSSList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/KeyFrame.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/KeyFrame.php on line 8
+[23-Mar-2024 05:38:59 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\CSSList\CSSBlockList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/Document.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/Document.php on line 17
+[23-Mar-2024 05:39:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/CSSList.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/CSSList.php on line 32
+[23-Mar-2024 05:39:09 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\CSSList\CSSList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/CSSBlockList.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/CSSBlockList.php on line 19
+[23-Mar-2024 05:39:11 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\CSSList\CSSBlockList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/AtRuleBlockList.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/CSSList/AtRuleBlockList.php on line 11

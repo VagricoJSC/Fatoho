@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89eed68b2ddd85f5e78e5e0d98df9933f8bcc733a896459a3375def5aa4a11fc
-size 407
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class GreyscaleCommand extends AbstractCommand
+{
+    /**
+     * Turns an image into a greyscale version
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        return $image->getCore()->modulateImage(100, 0, 100);
+    }
+}

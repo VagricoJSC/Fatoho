@@ -1,0 +1,8 @@
+[23-Mar-2024 11:42:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php on line 24
+[23-Mar-2024 11:42:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php on line 24

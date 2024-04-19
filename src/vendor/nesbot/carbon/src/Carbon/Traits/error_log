@@ -1,0 +1,16 @@
+[23-Mar-2024 12:37:04 UTC] PHP Fatal error:  Trait "Carbon\Traits\ObjectInitialisation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Serialization.php on line 35
+[23-Mar-2024 12:37:07 UTC] PHP Fatal error:  Trait "Carbon\Traits\IntervalRounding" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Rounding.php on line 27
+[23-Mar-2024 12:37:11 UTC] PHP Fatal error:  Trait "Carbon\Traits\Localization" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27
+[23-Mar-2024 12:37:19 UTC] PHP Fatal error:  Trait "Carbon\Traits\Cast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Mutability.php on line 22
+[23-Mar-2024 12:37:36 UTC] PHP Fatal error:  Trait "Carbon\Traits\Mixin" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Macro.php on line 19
+[23-Mar-2024 12:38:03 UTC] PHP Fatal error:  Trait "Carbon\Traits\Boundaries" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 527
+[23-Mar-2024 12:38:05 UTC] PHP Fatal error:  Trait "Carbon\Traits\ObjectInitialisation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 36
+[23-Mar-2024 12:38:07 UTC] PHP Fatal error:  Trait "Carbon\Traits\ToStringFormat" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Converter.php on line 36
+[01-Apr-2024 15:13:04 UTC] PHP Fatal error:  Trait "Carbon\Traits\ObjectInitialisation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Serialization.php on line 35
+[01-Apr-2024 15:13:08 UTC] PHP Fatal error:  Trait "Carbon\Traits\IntervalRounding" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Rounding.php on line 27
+[01-Apr-2024 15:13:12 UTC] PHP Fatal error:  Trait "Carbon\Traits\Localization" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27
+[01-Apr-2024 15:13:22 UTC] PHP Fatal error:  Trait "Carbon\Traits\Cast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Mutability.php on line 22
+[01-Apr-2024 15:13:40 UTC] PHP Fatal error:  Trait "Carbon\Traits\Mixin" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Macro.php on line 19
+[01-Apr-2024 15:14:01 UTC] PHP Fatal error:  Trait "Carbon\Traits\Boundaries" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 527
+[01-Apr-2024 15:14:04 UTC] PHP Fatal error:  Trait "Carbon\Traits\ObjectInitialisation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 36
+[01-Apr-2024 15:14:09 UTC] PHP Fatal error:  Trait "Carbon\Traits\ToStringFormat" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/Traits/Converter.php on line 36

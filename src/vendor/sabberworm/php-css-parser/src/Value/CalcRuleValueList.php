@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6ad6b356772a0755117d076f803a088db8791dee083cdcad5aea78b6c6a53b8
-size 441
+<?php
+
+namespace Sabberworm\CSS\Value;
+
+use Sabberworm\CSS\OutputFormat;
+
+class CalcRuleValueList extends RuleValueList
+{
+    /**
+     * @param int $iLineNo
+     */
+    public function __construct($iLineNo = 0)
+    {
+        parent::__construct(',', $iLineNo);
+    }
+
+    /**
+     * @return string
+     */
+    public function render(OutputFormat $oOutputFormat)
+    {
+        return $oOutputFormat->implode(' ', $this->aComponents);
+    }
+}

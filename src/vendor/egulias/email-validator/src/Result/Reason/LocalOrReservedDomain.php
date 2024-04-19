@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:636dbe75d1bb099e3dab2cd45ef41ae6add0614c8c9e359738db1fe356302f36
-size 295
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class LocalOrReservedDomain implements Reason
+{
+    public function code() : int
+    {
+        return 153;
+    }
+
+    public function description() : string
+    {
+        return 'Local, mDNS or reserved domain (RFC2606, RFC6762)';
+    }
+}

@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3678f87a206ab69c673a3b804d4ca018c0251af0e20d3dbf8c087f8e5b3bf94
-size 1654
+<?php declare(strict_types=1);
+
+namespace PhpParser\Builder;
+
+use PhpParser\Builder;
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+
+class TraitUse implements Builder
+{
+    protected $traits = [];
+    protected $adaptations = [];
+
+    /**
+     * Creates a trait use builder.
+     *
+     * @param Node\Name|string ...$traits Names of used traits
+     */
+    public function __construct(...$traits) {
+        foreach ($traits as $trait) {
+            $this->and($trait);
+        }
+    }
+
+    /**
+     * Adds used trait.
+     *
+     * @param Node\Name|string $trait Trait name
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function and($trait) {
+        $this->traits[] = BuilderHelpers::normalizeName($trait);
+        return $this;
+    }
+
+    /**
+     * Adds trait adaptation.
+     *
+     * @param Stmt\TraitUseAdaptation|Builder\TraitUseAdaptation $adaptation Trait adaptation
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function with($adaptation) {
+        $adaptation = BuilderHelpers::normalizeNode($adaptation);
+
+        if (!$adaptation instanceof Stmt\TraitUseAdaptation) {
+            throw new \LogicException('Adaptation must have type TraitUseAdaptation');
+        }
+
+        $this->adaptations[] = $adaptation;
+        return $this;
+    }
+
+    /**
+     * Returns the built node.
+     *
+     * @return Node The built node
+     */
+    public function getNode() : Node {
+        return new Stmt\TraitUse($this->traits, $this->adaptations);
+    }
+}

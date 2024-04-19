@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5b8a3e0f905db35f43f66c1dd37aa31741892b356e79fc8ae89afed6be12263
-size 910
+<?php
+
+namespace Illuminate\Redis;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\Arr;
+use Illuminate\Support\ServiceProvider;
+
+class RedisServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('redis', function ($app) {
+            $config = $app->make('config')->get('database.redis', []);
+
+            return new RedisManager($app, Arr::pull($config, 'client', 'phpredis'), $config);
+        });
+
+        $this->app->bind('redis.connection', function ($app) {
+            return $app['redis']->connection();
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['redis', 'redis.connection'];
+    }
+}

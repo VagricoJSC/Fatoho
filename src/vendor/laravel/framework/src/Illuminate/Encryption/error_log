@@ -1,0 +1,8 @@
+[03-Apr-2024 16:13:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Encryption\Encrypter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php on line 11
+[03-Apr-2024 17:07:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php on line 9

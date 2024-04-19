@@ -1,0 +1,8 @@
+[23-Mar-2024 12:34:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Util\PHP\DefaultPhpProcess" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/PHP/WindowsPhpProcess.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/PHP/WindowsPhpProcess.php on line 20
+[23-Mar-2024 12:35:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Util\PHP\AbstractPhpProcess" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/PHP/DefaultPhpProcess.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/PHP/DefaultPhpProcess.php on line 34

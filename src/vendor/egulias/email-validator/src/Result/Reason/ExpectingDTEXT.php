@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5dfd710af651979734003cf4d8710791e52318cef28a7fb322943a648c0aa25
-size 254
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class ExpectingDTEXT implements Reason
+{
+    public function code() : int
+    {
+        return 129;
+    }
+
+    public function description() : string
+    {
+        return 'Expecting DTEXT';
+    }
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:245cd2ad4808ee7bc3a43a3a94cd72ce72a925fdf40ea2e6f8887406dc17cbda
-size 589
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\HtmlToTextConverter;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class DefaultHtmlToTextConverter implements HtmlToTextConverterInterface
+{
+    public function convert(string $html, string $charset): string
+    {
+        return strip_tags(preg_replace('{<(head|style)\b.*?</\1>}is', '', $html));
+    }
+}

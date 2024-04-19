@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddd55173421c03ffdafc493b3ca10faa7e87de81a960614bab327f482a088e30
-size 443
+<?php
+
+namespace Pusher;
+
+/**
+ * HTTP error responses.
+ * getCode() will return the response HTTP status code,
+ * and getMessage() will return the response body.
+ */
+class ApiErrorException extends PusherException
+{
+    /**
+     * Returns the string representation of the exception.
+     *
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return "(Status {$this->getCode()}) {$this->getMessage()}";
+    }
+}

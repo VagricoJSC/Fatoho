@@ -1,0 +1,16 @@
+[23-Mar-2024 04:06:59 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php on line 15
+[23-Mar-2024 04:07:08 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php on line 15
+[23-Mar-2024 04:07:12 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php on line 15
+[23-Mar-2024 04:07:15 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php on line 15

@@ -1,0 +1,480 @@
+[23-Mar-2024 14:18:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[23-Mar-2024 14:18:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[23-Mar-2024 14:18:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[23-Mar-2024 14:18:39 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 33
+[23-Mar-2024 14:18:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[23-Mar-2024 14:18:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 31
+[23-Mar-2024 14:19:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 30
+[23-Mar-2024 14:19:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[23-Mar-2024 14:19:09 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[23-Mar-2024 14:19:11 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[23-Mar-2024 14:19:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[23-Mar-2024 14:19:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[23-Mar-2024 14:19:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php on line 21
+[23-Mar-2024 14:19:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php on line 32
+[23-Mar-2024 14:19:41 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\StreamHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 28
+[23-Mar-2024 14:19:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php on line 35
+[23-Mar-2024 14:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php on line 32
+[23-Mar-2024 14:19:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php on line 32
+[23-Mar-2024 14:19:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php on line 26
+[23-Mar-2024 14:19:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php on line 28
+[23-Mar-2024 14:20:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php on line 28
+[23-Mar-2024 14:20:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php on line 89
+[23-Mar-2024 14:20:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php on line 38
+[23-Mar-2024 14:20:25 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php on line 27
+[23-Mar-2024 14:20:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php on line 25
+[23-Mar-2024 14:20:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php on line 29
+[23-Mar-2024 14:20:35 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php on line 23
+[23-Mar-2024 14:20:41 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php on line 35
+[23-Mar-2024 14:20:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php on line 23
+[23-Mar-2024 14:20:51 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php on line 23
+[23-Mar-2024 14:20:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php on line 22
+[23-Mar-2024 14:21:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php on line 28
+[23-Mar-2024 14:21:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php on line 20
+[23-Mar-2024 14:21:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php on line 23
+[23-Mar-2024 14:21:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php on line 29
+[23-Mar-2024 14:21:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php on line 35
+[23-Mar-2024 14:21:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php on line 19
+[23-Mar-2024 14:21:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php on line 23
+[23-Mar-2024 14:21:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php on line 26
+[23-Mar-2024 14:21:47 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php on line 32
+[23-Mar-2024 14:21:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php on line 27
+[23-Mar-2024 14:21:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php on line 23
+[23-Mar-2024 14:21:55 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php on line 40
+[23-Mar-2024 14:22:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php on line 30
+[23-Mar-2024 14:22:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php on line 24
+[23-Mar-2024 14:22:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php on line 25
+[23-Mar-2024 14:22:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php on line 60
+[23-Mar-2024 14:22:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php on line 48
+[23-Mar-2024 14:22:27 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php on line 28
+[23-Mar-2024 14:22:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php on line 25
+[23-Mar-2024 14:22:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\BufferHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php on line 39
+[23-Mar-2024 14:22:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php on line 25
+[23-Mar-2024 14:22:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php on line 38
+[23-Mar-2024 14:22:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php on line 28
+[23-Mar-2024 14:22:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php on line 27
+[23-Mar-2024 14:22:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php on line 29
+[23-Mar-2024 14:22:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php on line 22
+[23-Mar-2024 14:23:03 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php on line 21
+[23-Mar-2024 14:23:11 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php on line 24
+[23-Mar-2024 14:23:13 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php on line 25
+[03-Apr-2024 16:50:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[03-Apr-2024 16:50:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[03-Apr-2024 16:50:37 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[03-Apr-2024 16:50:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 33
+[03-Apr-2024 16:50:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[03-Apr-2024 16:50:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 31
+[03-Apr-2024 16:50:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 30
+[03-Apr-2024 16:50:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[03-Apr-2024 16:51:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[03-Apr-2024 16:51:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[03-Apr-2024 16:51:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[03-Apr-2024 16:51:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[03-Apr-2024 16:51:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php on line 21
+[03-Apr-2024 16:51:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php on line 32
+[03-Apr-2024 16:51:25 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\StreamHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 28
+[03-Apr-2024 16:51:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php on line 35
+[03-Apr-2024 16:51:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php on line 32
+[03-Apr-2024 16:51:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php on line 32
+[03-Apr-2024 16:51:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php on line 26
+[03-Apr-2024 16:51:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php on line 28
+[03-Apr-2024 16:51:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php on line 28
+[03-Apr-2024 16:52:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php on line 89
+[03-Apr-2024 16:52:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php on line 38
+[03-Apr-2024 16:52:09 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php on line 27
+[03-Apr-2024 16:52:15 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php on line 25
+[03-Apr-2024 16:52:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php on line 29
+[03-Apr-2024 16:52:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php on line 23
+[03-Apr-2024 16:52:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php on line 35
+[03-Apr-2024 16:52:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php on line 23
+[03-Apr-2024 16:52:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php on line 23
+[03-Apr-2024 16:52:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php on line 22
+[03-Apr-2024 16:52:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php on line 28
+[03-Apr-2024 16:52:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php on line 20
+[03-Apr-2024 16:52:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php on line 23
+[03-Apr-2024 16:52:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php on line 29
+[03-Apr-2024 16:53:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php on line 35
+[03-Apr-2024 16:53:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php on line 19
+[03-Apr-2024 16:53:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php on line 23
+[03-Apr-2024 16:53:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php on line 26
+[03-Apr-2024 16:53:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php on line 32
+[03-Apr-2024 16:53:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php on line 27
+[03-Apr-2024 16:53:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php on line 23
+[03-Apr-2024 16:53:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php on line 40
+[03-Apr-2024 16:53:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php on line 30
+[03-Apr-2024 16:53:49 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php on line 24
+[03-Apr-2024 16:53:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php on line 25
+[03-Apr-2024 16:53:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php on line 60
+[03-Apr-2024 16:54:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php on line 48
+[03-Apr-2024 16:54:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php on line 28
+[03-Apr-2024 16:54:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php on line 25
+[03-Apr-2024 16:54:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\BufferHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php on line 39
+[03-Apr-2024 16:54:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php on line 25
+[03-Apr-2024 16:54:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php on line 38
+[03-Apr-2024 16:54:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php on line 28
+[03-Apr-2024 16:54:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php on line 27
+[03-Apr-2024 16:54:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php on line 29
+[03-Apr-2024 16:54:39 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php on line 22
+[03-Apr-2024 16:54:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php on line 21
+[03-Apr-2024 16:54:47 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php on line 24
+[03-Apr-2024 16:54:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php on line 25

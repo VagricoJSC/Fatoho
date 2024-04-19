@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38348ebc0eeb93ca6a113862403a16f3c12d554282ca891a6496024ecfd06819
-size 483
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class BrightnessCommand extends AbstractCommand
+{
+    /**
+     * Changes image brightness
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $level = $this->argument(0)->between(-100, 100)->required()->value();
+
+        return $image->getCore()->modulateImage(100 + $level, 100, 100);
+    }
+}

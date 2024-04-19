@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8f3fcfbba6378d0c94b8e00295eb2b873523c255216c4f6bf738bb77eb43483
-size 524
+<?php
+
+declare(strict_types=1);
+
+namespace GuzzleHttp\Psr7;
+
+use Psr\Http\Message\StreamInterface;
+
+/**
+ * Stream decorator that prevents a stream from being seeked.
+ */
+final class NoSeekStream implements StreamInterface
+{
+    use StreamDecoratorTrait;
+
+    /** @var StreamInterface */
+    private $stream;
+
+    public function seek($offset, $whence = SEEK_SET): void
+    {
+        throw new \RuntimeException('Cannot seek a NoSeekStream');
+    }
+
+    public function isSeekable(): bool
+    {
+        return false;
+    }
+}

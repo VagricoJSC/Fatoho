@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fb805d1a55b75b6bdd3e25d17552bb1a946af216c59616996ad02534916df6f
-size 112
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="dev-master@">
+  <file src="src/Invoker.php">
+    <MissingConstructor occurrences="1">
+      <code>$timeout</code>
+    </MissingConstructor>
+  </file>
+</files>

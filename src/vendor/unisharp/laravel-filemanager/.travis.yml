@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7bff9b1bf9ac6fd89eb7977d7b7dd5da6e7c00b1728025b8794a99359ab5287
-size 284
+language: php
+
+php:
+  - 8.0
+  - 7.4
+  - 5.6
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: 7.4
+    - php: 5.6
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source
+
+script:
+  - vendor/bin/phpunit --verbose

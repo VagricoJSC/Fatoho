@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f07cd42fab87142a531330660bdf151771d7b3cec0108cfd20d0bce30361a2be
-size 764
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer;
+
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
+use Symfony\Component\Mime\RawMessage;
+
+/**
+ * Interface for mailers able to send emails synchronous and/or asynchronous.
+ *
+ * Implementations must support synchronous and asynchronous sending.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface MailerInterface
+{
+    /**
+     * @throws TransportExceptionInterface
+     */
+    public function send(RawMessage $message, Envelope $envelope = null): void;
+}

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b329bbf76aa3cbd008745b50e3e6b2fee53211edcbf984ee6f430ad1146c21fc
-size 798
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Messenger;
+
+use Symfony\Component\Mailer\SentMessage;
+use Symfony\Component\Mailer\Transport\TransportInterface;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class MessageHandler
+{
+    private TransportInterface $transport;
+
+    public function __construct(TransportInterface $transport)
+    {
+        $this->transport = $transport;
+    }
+
+    public function __invoke(SendEmailMessage $message): ?SentMessage
+    {
+        return $this->transport->send($message->getMessage(), $message->getEnvelope());
+    }
+}

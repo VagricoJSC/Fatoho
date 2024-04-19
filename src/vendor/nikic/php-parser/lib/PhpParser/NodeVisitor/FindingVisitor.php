@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef1eb54c4d4b9b92bedc026abb37be7a3ceb9b8d349a1440dda7617ef5f75f64
-size 1135
+<?php declare(strict_types=1);
+
+namespace PhpParser\NodeVisitor;
+
+use PhpParser\Node;
+use PhpParser\NodeVisitorAbstract;
+
+/**
+ * This visitor can be used to find and collect all nodes satisfying some criterion determined by
+ * a filter callback.
+ */
+class FindingVisitor extends NodeVisitorAbstract
+{
+    /** @var callable Filter callback */
+    protected $filterCallback;
+    /** @var Node[] Found nodes */
+    protected $foundNodes;
+
+    public function __construct(callable $filterCallback) {
+        $this->filterCallback = $filterCallback;
+    }
+
+    /**
+     * Get found nodes satisfying the filter callback.
+     *
+     * Nodes are returned in pre-order.
+     *
+     * @return Node[] Found nodes
+     */
+    public function getFoundNodes() : array {
+        return $this->foundNodes;
+    }
+
+    public function beforeTraverse(array $nodes) {
+        $this->foundNodes = [];
+
+        return null;
+    }
+
+    public function enterNode(Node $node) {
+        $filterCallback = $this->filterCallback;
+        if ($filterCallback($node)) {
+            $this->foundNodes[] = $node;
+        }
+
+        return null;
+    }
+}

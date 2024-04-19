@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf2b4eabfedbfd6e8f17e35e3df6d8b4e942d6841c25d3154d4f22e3d8c28389
-size 1188
+[22-Mar-2024 18:49:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php on line 7
+[22-Mar-2024 21:51:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php on line 7
+[28-Mar-2024 04:52:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php on line 7
+[01-Apr-2024 11:20:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Http/Kernel.php on line 7

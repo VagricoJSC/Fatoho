@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9f166ae3a5b96a41a3ad081ee5c64273532a9b8de653662eb7eacf49e6676fe
-size 307
+<?php
+
+return [
+    'paypal_transaction_declined'     => 'Unable To Process Payment As Your Transaction Was Declined On PayPal',
+    'paypal_transaction_not_verified' => 'Unable To Verify Transaction From PayPal',
+    'paypal_connection_error'         => 'Unable To Connect To PayPal. Please Try Again',
+];

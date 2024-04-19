@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02b84275adef2654041704378b8b76b6d669af1295336b548b2c880a0492678a
-size 727
+<?php
+
+namespace App\Rules;
+
+use Illuminate\Contracts\Validation\Rule;
+use Hash;
+class MatchOldPassword implements Rule
+{
+    /**
+     * Create a new rule instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Determine if the validation rule passes.
+     *
+     * @param  string  $attribute
+     * @param  mixed  $value
+     * @return bool
+     */
+    public function passes($attribute, $value)
+    {
+        return Hash::check($value,auth()->user()->password);
+    }
+
+    /**
+     * Get the validation error message.
+     *
+     * @return string
+     */
+    public function message()
+    {
+        return 'Current password must match with old password';
+    }
+}

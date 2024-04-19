@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33b34f262b7aa2137146355ff9e2ae0df9bfdcdf3d96538bedeb6c297bc9aa1f
-size 595
+<?php declare(strict_types = 1);
+namespace TheSeer\Tokenizer;
+
+class NamespaceUri {
+
+    /** @var string */
+    private $value;
+
+    public function __construct(string $value) {
+        $this->ensureValidUri($value);
+        $this->value = $value;
+    }
+
+    public function asString(): string {
+        return $this->value;
+    }
+
+    private function ensureValidUri($value): void {
+        if (\strpos($value, ':') === false) {
+            throw new NamespaceUriException(
+                \sprintf("Namespace URI '%s' must contain at least one colon", $value)
+            );
+        }
+    }
+}

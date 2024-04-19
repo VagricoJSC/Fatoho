@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:657b05db6f95236102a9e37099b781a1ff3ab0cf1bec13aabb6b95215eb07eab
-size 764
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\TeamCity;
+
+use PHPUnit\Event\InvalidArgumentException;
+use PHPUnit\Event\Test\Skipped;
+use PHPUnit\Event\Test\SkippedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestSkippedSubscriber extends Subscriber implements SkippedSubscriber
+{
+    /**
+     * @throws InvalidArgumentException
+     */
+    public function notify(Skipped $event): void
+    {
+        $this->logger()->testSkipped($event);
+    }
+}

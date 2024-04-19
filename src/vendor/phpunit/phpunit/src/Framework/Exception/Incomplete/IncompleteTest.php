@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:630f899da05a65c447838893c758c0f7ec0fe47f3886156bd037e8fcee3e38ed
-size 443
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use Throwable;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface IncompleteTest extends Throwable
+{
+}

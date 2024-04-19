@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39a26453ff66a1d11d0a138cc978507ed9f9d1e863d78d4acd883d00e8d6f6f9
-size 564
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class DestroyCommand extends AbstractCommand
+{
+    /**
+     * Destroys current image core and frees up memory
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        // destroy image core
+        imagedestroy($image->getCore());
+
+        // destroy backups
+        foreach ($image->getBackups() as $backup) {
+            imagedestroy($backup);
+        }
+
+        return true;
+    }
+}

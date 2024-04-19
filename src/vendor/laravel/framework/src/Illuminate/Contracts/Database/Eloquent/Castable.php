@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e91d6103dba577cefa13dcbe78f0b9ce6d8c0d6d20f74acc59a978022d616e57
-size 388
+<?php
+
+namespace Illuminate\Contracts\Database\Eloquent;
+
+interface Castable
+{
+    /**
+     * Get the name of the caster class to use when casting from / to this cast target.
+     *
+     * @param  array  $arguments
+     * @return class-string<CastsAttributes|CastsInboundAttributes>|CastsAttributes|CastsInboundAttributes
+     */
+    public static function castUsing(array $arguments);
+}

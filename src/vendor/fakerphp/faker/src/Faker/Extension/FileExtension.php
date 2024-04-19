@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a98776af72a2d74d2f2a86b4ba194dd5ee980acf563abdd6c10eaea857ffd5c7
-size 547
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface FileExtension extends Extension
+{
+    /**
+     * Get a random MIME type
+     *
+     * @example 'video/avi'
+     */
+    public function mimeType(): string;
+
+    /**
+     * Get a random file extension (without a dot)
+     *
+     * @example avi
+     */
+    public function extension(): string;
+
+    /**
+     * Get a full path to a new real file on the system.
+     */
+    public function filePath(): string;
+}

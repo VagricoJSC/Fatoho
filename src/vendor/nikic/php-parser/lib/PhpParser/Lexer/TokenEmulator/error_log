@@ -1,0 +1,104 @@
+[23-Mar-2024 14:55:03 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php on line 8
+[23-Mar-2024 14:55:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php on line 7
+[23-Mar-2024 14:55:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php on line 14
+[23-Mar-2024 14:55:12 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NumericLiteralSeparatorEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NumericLiteralSeparatorEmulator.php on line 7
+[23-Mar-2024 15:02:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php on line 7
+[23-Mar-2024 15:02:13 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php on line 7
+[23-Mar-2024 15:02:16 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php on line 5
+[23-Mar-2024 15:02:21 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php on line 7
+[23-Mar-2024 15:02:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FlexibleDocStringEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FlexibleDocStringEmulator.php on line 7
+[23-Mar-2024 15:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php on line 7
+[23-Mar-2024 15:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php on line 7
+[23-Mar-2024 15:02:37 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/CoaleseEqualTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/CoaleseEqualTokenEmulator.php on line 7
+[23-Mar-2024 15:02:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php on line 7
+[01-Apr-2024 16:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php on line 7
+[01-Apr-2024 16:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php on line 8
+[01-Apr-2024 16:19:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php on line 5
+[01-Apr-2024 16:19:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php on line 7
+[01-Apr-2024 16:20:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php on line 7
+[01-Apr-2024 16:20:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php on line 7
+[01-Apr-2024 17:10:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php on line 7
+[01-Apr-2024 17:10:46 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php on line 14
+[01-Apr-2024 17:10:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NumericLiteralSeparatorEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NumericLiteralSeparatorEmulator.php on line 7
+[01-Apr-2024 17:10:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php on line 7
+[01-Apr-2024 17:10:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FlexibleDocStringEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FlexibleDocStringEmulator.php on line 7
+[01-Apr-2024 17:11:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php on line 7
+[01-Apr-2024 17:11:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/CoaleseEqualTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/CoaleseEqualTokenEmulator.php on line 7

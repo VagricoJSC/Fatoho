@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:772037ed416cece635583567b8f0a95dd37a89d70d49c777b19ec85fd272e847
-size 526
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+/**
+ * @psalm-immutable
+ */
+final class InterfaceUnit extends CodeUnit
+{
+    /**
+     * @psalm-assert-if-true InterfaceUnit $this
+     */
+    public function isInterface(): bool
+    {
+        return true;
+    }
+}

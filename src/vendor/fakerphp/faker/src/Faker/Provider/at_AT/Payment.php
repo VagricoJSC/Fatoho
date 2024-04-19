@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3b8cbf66c1ba21e710975894bb63dcae9660cf7cf1ebdfd41088ca18c9702e7
-size 233
+<?php
+
+namespace Faker\Provider\at_AT;
+
+/**
+ * @deprecated at_AT is not an existing locale, use {@link \Faker\Provider\de_AT\Payment}.
+ * @see \Faker\Provider\de_AT\Payment
+ */
+class Payment extends \Faker\Provider\de_AT\Payment
+{
+}

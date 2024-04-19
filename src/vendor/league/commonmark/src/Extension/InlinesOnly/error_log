@@ -1,0 +1,8 @@
+[01-Apr-2024 15:52:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/InlinesOnly/ChildRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/InlinesOnly/ChildRenderer.php on line 24
+[01-Apr-2024 15:52:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/InlinesOnly/InlinesOnlyExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/InlinesOnly/InlinesOnlyExtension.php on line 24

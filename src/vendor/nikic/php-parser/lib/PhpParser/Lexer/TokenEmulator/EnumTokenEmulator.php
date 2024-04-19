@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88a31ab4ddd114a3ed5d4bb1311fc802d7e908c729856504fa11c76b0bcfc54d
-size 701
+<?php declare(strict_types=1);
+
+namespace PhpParser\Lexer\TokenEmulator;
+
+use PhpParser\Lexer\Emulative;
+
+final class EnumTokenEmulator extends KeywordEmulator
+{
+    public function getPhpVersion(): string
+    {
+        return Emulative::PHP_8_1;
+    }
+
+    public function getKeywordString(): string
+    {
+        return 'enum';
+    }
+
+    public function getKeywordToken(): int
+    {
+        return \T_ENUM;
+    }
+
+    protected function isKeywordContext(array $tokens, int $pos): bool
+    {
+        return parent::isKeywordContext($tokens, $pos)
+            && isset($tokens[$pos + 2])
+            && $tokens[$pos + 1][0] === \T_WHITESPACE
+            && $tokens[$pos + 2][0] === \T_STRING;
+    }
+}

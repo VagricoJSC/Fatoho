@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66451e9155242e6ddf36ef3b1068ef9c537fe9575884d17b8c9fff0660bdb6ba
-size 330
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Components;
+
+/**
+ * @internal
+ */
+final class Raw extends Element
+{
+    /**
+     * Get the string representation of the element.
+     */
+    public function toString(): string
+    {
+        return is_array($this->content) ? implode('', $this->content) : $this->content;
+    }
+}

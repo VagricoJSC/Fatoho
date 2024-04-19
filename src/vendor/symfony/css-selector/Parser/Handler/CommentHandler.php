@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bd4c4332ad74f7e06994c4c22001d0047b87f05bf99ae96470f80a707cbb5f0
-size 1101
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\CssSelector\Parser\Handler;
+
+use Symfony\Component\CssSelector\Parser\Reader;
+use Symfony\Component\CssSelector\Parser\TokenStream;
+
+/**
+ * CSS selector comment handler.
+ *
+ * This component is a port of the Python cssselect library,
+ * which is copyright Ian Bicking, @see https://github.com/SimonSapin/cssselect.
+ *
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ *
+ * @internal
+ */
+class CommentHandler implements HandlerInterface
+{
+    public function handle(Reader $reader, TokenStream $stream): bool
+    {
+        if ('/*' !== $reader->getSubstring(2)) {
+            return false;
+        }
+
+        $offset = $reader->getOffset('*/');
+
+        if (false === $offset) {
+            $reader->moveToEnd();
+        } else {
+            $reader->moveForward($offset + 2);
+        }
+
+        return true;
+    }
+}

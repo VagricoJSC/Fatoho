@@ -1,0 +1,20 @@
+[23-Mar-2024 12:28:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php on line 18
+[23-Mar-2024 12:28:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php on line 15
+[23-Mar-2024 12:28:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php on line 18
+[23-Mar-2024 12:28:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/ReflectionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/ReflectionException.php on line 17
+[23-Mar-2024 12:28:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/ExtensionsNotConfiguredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Exception/ExtensionsNotConfiguredException.php on line 17

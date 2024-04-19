@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8312aa1556e4ad909adce60c35a1d1a8d42031c110c72641c1b7f25223a4f044
-size 380
+<?php
+
+namespace Illuminate\Database\Events;
+
+class NoPendingMigrations
+{
+    /**
+     * The migration method that was called.
+     *
+     * @var string
+     */
+    public $method;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $method
+     * @return void
+     */
+    public function __construct($method)
+    {
+        $this->method = $method;
+    }
+}

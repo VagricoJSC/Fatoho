@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:307898bb7eacbf85bd756ed142b680698cef3fdc8fa24e6de70a294159e0afef
-size 412
+<?php
+
+namespace Faker\Provider\es_ES;
+
+class Color extends \Faker\Provider\Color
+{
+    protected static $safeColorNames = [
+        'amarillo',
+        'azul marino',
+        'azul',
+        'blanco',
+        'celeste',
+        'gris',
+        'lima',
+        'magenta',
+        'marrón',
+        'morado',
+        'negro',
+        'plata',
+        'turquesa',
+        'verde',
+        'verde oliva',
+    ];
+}

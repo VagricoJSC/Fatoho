@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8fc14bc091a7741426e45106c89a80fdded0440f025d79f75bbb9673614667d
-size 515
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\Attributes;
+
+use Attribute;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+#[Attribute(Attribute::TARGET_METHOD)]
+final class Test
+{
+}

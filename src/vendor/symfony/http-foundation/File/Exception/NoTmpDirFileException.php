@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dc3beb3d038b52105a89d8f68442f7750b62fbe9dc57cee83d102f84a139047
-size 485
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an UPLOAD_ERR_NO_TMP_DIR error occurred with UploadedFile.
+ *
+ * @author Florent Mata <florentmata@gmail.com>
+ */
+class NoTmpDirFileException extends FileException
+{
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebb692e7888bdf8dfc6364b5090719c4bcc25df8eff7de6d8435fd8474cd0f01
-size 841
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class ColorizeCommand extends AbstractCommand
+{
+    /**
+     * Changes balance of different RGB color channels
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $red = $this->argument(0)->between(-100, 100)->required()->value();
+        $green = $this->argument(1)->between(-100, 100)->required()->value();
+        $blue = $this->argument(2)->between(-100, 100)->required()->value();
+
+        // normalize colorize levels
+        $red = round($red * 2.55);
+        $green = round($green * 2.55);
+        $blue = round($blue * 2.55);
+
+        // apply filter
+        return imagefilter($image->getCore(), IMG_FILTER_COLORIZE, $red, $green, $blue);
+    }
+}

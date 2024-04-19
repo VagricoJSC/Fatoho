@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cfc0eabf4e12ef637e37a7fbd1e729625034e0ca12750432dea7ab7715da951
-size 321
+<?php
+
+namespace Faker\Provider\es_PE;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '+51 9## ### ###',
+        '+51 9########',
+        '9## ### ###',
+        '9########',
+        '+51 1## ####',
+        '+51 1######',
+        '1## ####',
+        '1######',
+    ];
+}

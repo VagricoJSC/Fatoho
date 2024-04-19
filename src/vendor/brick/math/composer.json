@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c48d36176d4a72c5a662281af27d3255ce6b3277708e94534af401ce9df195c4
-size 710
+{
+    "name": "brick/math",
+    "description": "Arbitrary-precision arithmetic library",
+    "type": "library",
+    "keywords": [
+        "Brick",
+        "Math",
+        "Arbitrary-precision",
+        "Arithmetic",
+        "BigInteger",
+        "BigDecimal",
+        "BigRational",
+        "Bignum"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "php-coveralls/php-coveralls": "^2.2",
+        "vimeo/psalm": "4.25.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brick\\Math\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brick\\Math\\Tests\\": "tests/"
+        }
+    }
+}

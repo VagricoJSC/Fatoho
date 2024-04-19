@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0bf44c67be75048caa38f6bbe0c6817d1c11a9204e2ea9cc2cc497e99fb5252
-size 1079
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use InvalidArgumentException as BaseInvalidArgumentException;
+use Throwable;
+
+class UnknownGetterException extends BaseInvalidArgumentException implements InvalidArgumentException
+{
+    /**
+     * The getter.
+     *
+     * @var string
+     */
+    protected $getter;
+
+    /**
+     * Constructor.
+     *
+     * @param string         $getter   getter name
+     * @param int            $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($getter, $code = 0, Throwable $previous = null)
+    {
+        $this->getter = $getter;
+
+        parent::__construct("Unknown getter '$getter'", $code, $previous);
+    }
+
+    /**
+     * Get the getter.
+     *
+     * @return string
+     */
+    public function getGetter(): string
+    {
+        return $this->getter;
+    }
+}

@@ -1,0 +1,20 @@
+[03-Apr-2024 16:08:45 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Localizable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php on line 15
+[03-Apr-2024 16:08:48 UTC] PHP Fatal error:  Trait "Illuminate\Queue\SerializesModels" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Notification.php on line 7
+[03-Apr-2024 16:08:52 UTC] PHP Fatal error:  Trait "Illuminate\Notifications\HasDatabaseNotifications" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php on line 5
+[03-Apr-2024 16:09:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/DatabaseNotification.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/DatabaseNotification.php on line 8
+[03-Apr-2024 16:09:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Manager" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php on line 12
+[03-Apr-2024 17:08:12 UTC] PHP Fatal error:  Trait "Illuminate\Queue\InteractsWithQueue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/SendQueuedNotifications.php on line 14
+[03-Apr-2024 17:08:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationServiceProvider.php on line 9
+[03-Apr-2024 17:08:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Collection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/DatabaseNotificationCollection.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/DatabaseNotificationCollection.php on line 7

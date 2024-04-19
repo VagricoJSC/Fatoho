@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25d4d1653af7a3365076635a2e877c4fb9898d289b991b0c62a284984c8e561c
-size 431
+<?php
+/**
+ * Mockery
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://github.com/padraic/mockery/blob/master/LICENSE
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to padraic@php.net so we can send you a copy immediately.
+ *
+ * @category   Mockery
+ * @package    Mockery
+ * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
+ */
+
+namespace Mockery\Exception;
+
+class InvalidArgumentException extends \InvalidArgumentException
+{
+}

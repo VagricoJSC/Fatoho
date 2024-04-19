@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82ec8833774db90204c02abda99fdcf5925d9b2568feaf1b14fb2e17653e9b25
-size 619
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap.php"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+  <testsuites>
+    <testsuite name="hamcrest-php">
+      <directory suffix="Test.php">.</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">../hamcrest</directory>
+    </whitelist>
+  </filter>
+</phpunit>

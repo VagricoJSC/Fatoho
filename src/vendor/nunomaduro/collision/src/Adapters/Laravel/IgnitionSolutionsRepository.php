@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1df554ba75bd5cb8bb2ca14746aa2f69716936588df6592f2b8be8af9426fdc1
-size 1047
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Adapters\Laravel;
+
+use NunoMaduro\Collision\Contracts\SolutionsRepository;
+use Spatie\Ignition\Contracts\SolutionProviderRepository;
+use Throwable;
+
+/**
+ * @internal
+ */
+final class IgnitionSolutionsRepository implements SolutionsRepository
+{
+    /**
+     * Holds an instance of ignition solutions provider repository.
+     *
+     * @var \Spatie\Ignition\Contracts\SolutionProviderRepository
+     */
+    protected $solutionProviderRepository;
+
+    /**
+     * IgnitionSolutionsRepository constructor.
+     */
+    public function __construct(SolutionProviderRepository $solutionProviderRepository)
+    {
+        $this->solutionProviderRepository = $solutionProviderRepository;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFromThrowable(Throwable $throwable): array
+    {
+        return $this->solutionProviderRepository->getSolutionsForThrowable($throwable);
+    }
+}

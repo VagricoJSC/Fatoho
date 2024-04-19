@@ -1,0 +1,32 @@
+[03-Apr-2024 21:46:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsStringable.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsStringable.php on line 9
+[03-Apr-2024 21:47:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEnumCollection.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEnumCollection.php on line 10
+[03-Apr-2024 21:47:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEnumArrayObject.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEnumArrayObject.php on line 10
+[03-Apr-2024 21:47:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEncryptedCollection.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEncryptedCollection.php on line 10
+[03-Apr-2024 21:47:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEncryptedArrayObject.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEncryptedArrayObject.php on line 9
+[03-Apr-2024 21:47:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsCollection.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsCollection.php on line 9
+[03-Apr-2024 21:47:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Eloquent\Castable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsArrayObject.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsArrayObject.php on line 8
+[03-Apr-2024 21:47:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/ArrayObject.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/ArrayObject.php on line 14

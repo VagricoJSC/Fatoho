@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7fd6aa0a7677d1fbc6d4a32eaf87bfe7cfed2753234b986ddb516a7bb155ef6
-size 559
+<?php
+
+namespace Illuminate\View;
+
+class AppendableAttributeValue
+{
+    /**
+     * The attribute value.
+     *
+     * @var mixed
+     */
+    public $value;
+
+    /**
+     * Create a new appendable attribute value.
+     *
+     * @param  mixed  $value
+     * @return void
+     */
+    public function __construct($value)
+    {
+        $this->value = $value;
+    }
+
+    /**
+     * Get the string value.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string) $this->value;
+    }
+}

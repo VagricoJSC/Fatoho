@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a1ca4c298fa5e1bdb69ac908b55f98dbae0faa7c25f933e26398f63ecc1b974
-size 387
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+use Throwable;
+
+final class UnableToProvideChecksum extends RuntimeException implements FilesystemException
+{
+    public function __construct(string $reason, string $path, ?Throwable $previous = null)
+    {
+        parent::__construct("Unable to get checksum for $path: $reason", 0, $previous);
+    }
+}

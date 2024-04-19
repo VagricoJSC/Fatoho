@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd9f13ae71bb66b7b5ad900bf1cb87f769869d4689169a31869dbb05b1bea682
-size 720
+<?php
+namespace DeepCopy\TypeFilter\Spl;
+
+use DeepCopy\DeepCopy;
+use DeepCopy\TypeFilter\TypeFilter;
+
+/**
+ * In PHP 7.4 the storage of an ArrayObject isn't returned as
+ * ReflectionProperty. So we deep copy its array copy.
+ */
+final class ArrayObjectFilter implements TypeFilter
+{
+    /**
+     * @var DeepCopy
+     */
+    private $copier;
+
+    public function __construct(DeepCopy $copier)
+    {
+        $this->copier = $copier;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function apply($arrayObject)
+    {
+        $clone = clone $arrayObject;
+        foreach ($arrayObject->getArrayCopy() as $k => $v) {
+            $clone->offsetSet($k, $this->copier->copy($v));
+        }
+
+        return $clone;
+    }
+}
+

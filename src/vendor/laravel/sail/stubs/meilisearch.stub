@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d222a7d0b97e7e3416d4b19364288d66f2150dab03a7f8366be0de0f6898b42b
-size 428
+meilisearch:
+    image: 'getmeili/meilisearch:latest'
+    ports:
+        - '${FORWARD_MEILISEARCH_PORT:-7700}:7700'
+    volumes:
+        - 'sail-meilisearch:/meili_data'
+    networks:
+        - sail
+    healthcheck:
+        test: ["CMD", "wget", "--no-verbose", "--spider",  "http://localhost:7700/health"]
+        retries: 3
+        timeout: 5s

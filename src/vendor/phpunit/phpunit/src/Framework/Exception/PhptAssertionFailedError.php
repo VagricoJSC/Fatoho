@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80b9e87fb9848f17d06017ac970ad32e974b072255de7bd78c25625883d24737
-size 1323
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+/**
+ * @psalm-immutable
+ *
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class PhptAssertionFailedError extends AssertionFailedError
+{
+    private readonly string $syntheticFile;
+    private readonly int $syntheticLine;
+    private readonly array $syntheticTrace;
+    private readonly string $diff;
+
+    public function __construct(string $message, int $code, string $file, int $line, array $trace, string $diff)
+    {
+        parent::__construct($message, $code);
+
+        $this->syntheticFile  = $file;
+        $this->syntheticLine  = $line;
+        $this->syntheticTrace = $trace;
+        $this->diff           = $diff;
+    }
+
+    public function syntheticFile(): string
+    {
+        return $this->syntheticFile;
+    }
+
+    public function syntheticLine(): int
+    {
+        return $this->syntheticLine;
+    }
+
+    public function syntheticTrace(): array
+    {
+        return $this->syntheticTrace;
+    }
+
+    public function diff(): string
+    {
+        return $this->diff;
+    }
+}

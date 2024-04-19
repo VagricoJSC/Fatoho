@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4292c0bb52394e806d812d6c0393f660db9e0bcc20c515cdd70f499c9b077bc
-size 661
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation;
+
+use Symfony\Contracts\Translation\LocaleAwareInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
+use Symfony\Contracts\Translation\TranslatorTrait;
+
+/**
+ * IdentityTranslator does not translate anything.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class IdentityTranslator implements TranslatorInterface, LocaleAwareInterface
+{
+    use TranslatorTrait;
+}

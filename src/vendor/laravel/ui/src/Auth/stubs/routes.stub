@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e86aead199b98dcecc0cbb79e163a39ea71a342338f37ddd3388b583e7fba48
-size 108
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

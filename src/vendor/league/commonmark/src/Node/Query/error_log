@@ -1,0 +1,8 @@
+[01-Apr-2024 15:18:40 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Node\Query\ExpressionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Query/OrExpr.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Query/OrExpr.php on line 21
+[01-Apr-2024 15:18:48 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Node\Query\ExpressionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Query/AndExpr.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Query/AndExpr.php on line 21

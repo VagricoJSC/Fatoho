@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:927fc936b9dc94a94155d57e0ed1de6b4ad5aaaa11a3057f5b1f781b94f32111
-size 1449
+<?php
+
+declare(strict_types=1);
+
+namespace League\MimeTypeDetection;
+
+use const PATHINFO_EXTENSION;
+
+class ExtensionMimeTypeDetector implements MimeTypeDetector
+{
+    /**
+     * @var ExtensionToMimeTypeMap
+     */
+    private $extensions;
+
+    public function __construct(ExtensionToMimeTypeMap $extensions = null)
+    {
+        $this->extensions = $extensions ?: new GeneratedExtensionToMimeTypeMap();
+    }
+
+    public function detectMimeType(string $path, $contents): ?string
+    {
+        return $this->detectMimeTypeFromPath($path);
+    }
+
+    public function detectMimeTypeFromPath(string $path): ?string
+    {
+        $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+
+        return $this->extensions->lookupMimeType($extension);
+    }
+
+    public function detectMimeTypeFromFile(string $path): ?string
+    {
+        return $this->detectMimeTypeFromPath($path);
+    }
+
+    public function detectMimeTypeFromBuffer(string $contents): ?string
+    {
+        return null;
+    }
+}

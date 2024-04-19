@@ -1,0 +1,60 @@
+[23-Mar-2024 12:27:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php on line 18
+[23-Mar-2024 12:27:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ReflectionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ReflectionException.php on line 17
+[23-Mar-2024 12:27:34 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php on line 18
+[23-Mar-2024 12:27:36 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php on line 18
+[23-Mar-2024 12:27:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/NoIgnoredEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/NoIgnoredEventException.php on line 17
+[23-Mar-2024 12:27:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php on line 17
+[23-Mar-2024 12:27:47 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php on line 17
+[23-Mar-2024 12:27:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php on line 18
+[23-Mar-2024 12:27:57 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php on line 15
+[23-Mar-2024 12:28:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryCannotBeCreatedException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryCannotBeCreatedException.php on line 18
+[23-Mar-2024 12:28:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php on line 18
+[23-Mar-2024 12:28:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotImplementExtensionInterfaceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotImplementExtensionInterfaceException.php on line 19
+[23-Mar-2024 12:28:13 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExistException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExistException.php on line 18
+[23-Mar-2024 12:28:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeInstantiatedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeInstantiatedException.php on line 19
+[23-Mar-2024 12:28:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php on line 18

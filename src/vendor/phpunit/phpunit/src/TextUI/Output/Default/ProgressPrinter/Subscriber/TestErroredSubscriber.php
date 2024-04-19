@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfcf897f4680c6b34f52ec57ad3fc3d0727eb9f5b507a30bef72545ad9a7a689
-size 686
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output\Default\ProgressPrinter;
+
+use PHPUnit\Event\Test\Errored;
+use PHPUnit\Event\Test\ErroredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestErroredSubscriber extends Subscriber implements ErroredSubscriber
+{
+    public function notify(Errored $event): void
+    {
+        $this->printer()->testErrored($event);
+    }
+}

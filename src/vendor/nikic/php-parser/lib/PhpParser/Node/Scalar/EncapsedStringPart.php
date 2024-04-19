@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aabaace3b17ee591fa6751621d461e54d11c5d61e4f4feb34bece155a5aaa9ca
-size 84
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar;
+
+use PhpParser\Node\Scalar;
+
+class EncapsedStringPart extends Scalar
+{
+    /** @var string String value */
+    public $value;
+
+    /**
+     * Constructs a node representing a string part of an encapsed string.
+     *
+     * @param string $value      String value
+     * @param array  $attributes Additional attributes
+     */
+    public function __construct(string $value, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->value = $value;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['value'];
+    }
+    
+    public function getType() : string {
+        return 'Scalar_EncapsedStringPart';
+    }
+}

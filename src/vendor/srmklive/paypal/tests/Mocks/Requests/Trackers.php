@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:976931c07f83320c53066f3911e1ba855a38d78e3863e7bc949f340f601e7e6c
-size 860
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait Trackers
+{
+    /**
+     * @return array
+     */
+    private function mockUpdateTrackingDetailsParams(): array
+    {
+        return Utils::jsonDecode('{
+  "transaction_id": "8MC585209K746392H",
+  "tracking_number": "443844607820",
+  "status": "SHIPPED",
+  "carrier": "FEDEX"
+}', true);
+    }
+
+    /**
+     * @return array
+     */
+    private function mockCreateTrackinginBatchesParams(): array
+    {
+        return Utils::jsonDecode('{
+  "trackers": [
+    {
+      "transaction_id": "8MC585209K746392H",
+      "tracking_number": "443844607820",
+      "status": "SHIPPED",
+      "carrier": "FEDEX"
+    },
+    {
+      "transaction_id": "53Y56775AE587553X",
+      "tracking_number": "443844607821",
+      "status": "SHIPPED",
+      "carrier": "FEDEX"
+    }
+  ]
+}', true);
+    }
+}

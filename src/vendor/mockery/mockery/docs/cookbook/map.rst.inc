@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b78bd7b5a1e2db4eefb3661cf398d10a031767160bec37d043eaa52187503c08
-size 275
+* :doc:`/cookbook/default_expectations`
+* :doc:`/cookbook/detecting_mock_objects`
+* :doc:`/cookbook/not_calling_the_constructor`
+* :doc:`/cookbook/mocking_hard_dependencies`
+* :doc:`/cookbook/class_constants`
+* :doc:`/cookbook/big_parent_class`
+* :doc:`/cookbook/mockery_on`

@@ -1,0 +1,4 @@
+[03-Apr-2024 20:33:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php on line 7

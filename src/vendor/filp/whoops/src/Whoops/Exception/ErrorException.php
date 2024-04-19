@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6449000a9029c8cc8565be3ea5f98cbfcd2dbc87b9025e70e8a74b268ca6d97b
-size 355
+<?php
+/**
+ * Whoops - php errors for cool kids
+ * @author Filipe Dobreira <http://github.com/filp>
+ */
+
+namespace Whoops\Exception;
+
+use ErrorException as BaseErrorException;
+
+/**
+ * Wraps ErrorException; mostly used for typing (at least now)
+ * to easily cleanup the stack trace of redundant info.
+ */
+class ErrorException extends BaseErrorException
+{
+}

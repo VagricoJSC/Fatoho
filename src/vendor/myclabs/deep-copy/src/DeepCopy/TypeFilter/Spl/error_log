@@ -1,0 +1,12 @@
+[03-Apr-2024 18:14:26 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\TypeFilter\TypeFilter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php on line 13
+[03-Apr-2024 18:14:29 UTC] PHP Fatal error:  Uncaught Error: Class "DeepCopy\TypeFilter\Spl\SplDoublyLinkedListFilter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedList.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedList.php on line 8
+[03-Apr-2024 18:14:33 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\TypeFilter\TypeFilter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/ArrayObjectFilter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/ArrayObjectFilter.php on line 11

@@ -1,0 +1,16 @@
+[23-Mar-2024 14:23:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php on line 24
+[23-Mar-2024 14:23:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php on line 39
+[03-Apr-2024 20:41:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php on line 24
+[03-Apr-2024 20:41:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php on line 39

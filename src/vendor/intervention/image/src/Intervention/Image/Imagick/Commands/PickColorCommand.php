@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb9c7593540e8099f83f7be83e768d686b3e17417b79827933760c58745f9a9b
-size 798
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+use Intervention\Image\Imagick\Color;
+
+class PickColorCommand extends AbstractCommand
+{
+    /**
+     * Read color information from a certain position
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $x = $this->argument(0)->type('digit')->required()->value();
+        $y = $this->argument(1)->type('digit')->required()->value();
+        $format = $this->argument(2)->type('string')->value('array');
+
+        // pick color
+        $color = new Color($image->getCore()->getImagePixelColor($x, $y));
+
+        // format to output
+        $this->setOutput($color->format($format));
+
+        return true;
+    }
+}

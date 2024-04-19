@@ -1,0 +1,16 @@
+[22-Mar-2024 23:42:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Comparator\Comparator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/NumberComparator.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/NumberComparator.php on line 35
+[22-Mar-2024 23:42:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Comparator\Comparator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/DateComparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/DateComparator.php on line 19
+[03-Apr-2024 08:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Comparator\Comparator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/NumberComparator.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/NumberComparator.php on line 35
+[03-Apr-2024 08:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Comparator\Comparator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/DateComparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/finder/Comparator/DateComparator.php on line 19

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:082e14438e53a6a18a9a8a20bfe128e6f15ff5118fe4c4424c4ce9414cdedf30
-size 880
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Transport\Smtp\Auth;
+
+use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
+
+/**
+ * Handles PLAIN authentication.
+ *
+ * @author Chris Corbyn
+ */
+class PlainAuthenticator implements AuthenticatorInterface
+{
+    public function getAuthKeyword(): string
+    {
+        return 'PLAIN';
+    }
+
+    /**
+     * @see https://www.ietf.org/rfc/rfc4954.txt
+     */
+    public function authenticate(EsmtpTransport $client): void
+    {
+        $client->executeCommand(sprintf("AUTH PLAIN %s\r\n", base64_encode($client->getUsername().\chr(0).$client->getUsername().\chr(0).$client->getPassword())), [235]);
+    }
+}

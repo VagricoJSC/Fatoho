@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa6de26853504c5dad54102fdf2e10f3f7a603d4dc5bd5c3ca90348e661fc824
-size 416
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Mathias Arlaud <mathias.arlaud@gmail.com>
+ */
+class UnexpectedSessionUsageException extends \LogicException
+{
+}

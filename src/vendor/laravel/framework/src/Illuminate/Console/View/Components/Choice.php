@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d356a3e0e504a207feba1ab33a2db03619dc4ef6a01ee8e1465dabbe790041a4
-size 816
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Question\ChoiceQuestion;
+
+class Choice extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $question
+     * @param  array<array-key, string>  $choices
+     * @param  mixed  $default
+     * @param  int  $attempts
+     * @param  bool  $multiple
+     * @return mixed
+     */
+    public function render($question, $choices, $default = null, $attempts = null, $multiple = false)
+    {
+        return $this->usingQuestionHelper(
+            fn () => $this->output->askQuestion(
+                (new ChoiceQuestion($question, $choices, $default))
+                    ->setMaxAttempts($attempts)
+                    ->setMultiselect($multiple)
+            ),
+        );
+    }
+}

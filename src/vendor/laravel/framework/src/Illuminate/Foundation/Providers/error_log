@@ -1,0 +1,20 @@
+[03-Apr-2024 20:36:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php on line 26
+[03-Apr-2024 20:36:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php on line 10
+[03-Apr-2024 20:36:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php on line 9
+[03-Apr-2024 20:36:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php on line 9
+[03-Apr-2024 20:36:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php on line 98

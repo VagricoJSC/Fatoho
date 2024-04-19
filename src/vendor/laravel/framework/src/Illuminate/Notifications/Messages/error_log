@@ -1,0 +1,5 @@
+[03-Apr-2024 18:45:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Messages\SimpleMessage" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Messages/MailMessage.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Messages/MailMessage.php on line 13
+[03-Apr-2024 20:34:54 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Messages/BroadcastMessage.php on line 7

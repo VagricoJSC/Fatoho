@@ -1,0 +1,6 @@
+[23-Mar-2024 16:46:00 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 19
+[23-Mar-2024 16:46:05 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/Structure.php on line 18
+[23-Mar-2024 16:46:11 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[01-Apr-2024 14:14:07 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 19
+[01-Apr-2024 14:14:08 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/Structure.php on line 18
+[01-Apr-2024 14:14:19 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:819fee56e8a04b9212ae992695fc9d5855e11f2a9f8c2be3123270e502c21f0a
-size 615
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\Inflector\Rules\Turkish;
+
+use Doctrine\Inflector\Rules\Pattern;
+
+final class Uninflected
+{
+    /** @return Pattern[] */
+    public static function getSingular(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    public static function getPlural(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    private static function getDefault(): iterable
+    {
+        yield new Pattern('lunes');
+        yield new Pattern('rompecabezas');
+        yield new Pattern('crisis');
+    }
+}

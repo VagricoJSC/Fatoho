@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbe5a0f0fadb0d2e1357e5114cf2ee15ee494ea844d9130d423adca5a42b35c5
-size 262
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class IPV6DoubleColon extends Warning
+{
+    public const CODE = 73;
+
+    public function __construct()
+    {
+        $this->message = 'Double colon found after IPV6 tag';
+        $this->rfcNumber = 5322;
+    }
+}

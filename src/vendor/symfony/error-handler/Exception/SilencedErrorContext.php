@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e33af184b58829ac6dec4b3cc82f758460dfb95e7049b4201b800cb3ea1d9b0
-size 1457
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\ErrorHandler\Exception;
+
+/**
+ * Data Object that represents a Silenced Error.
+ *
+ * @author Grégoire Pineau <lyrixx@lyrixx.info>
+ */
+class SilencedErrorContext implements \JsonSerializable
+{
+    public $count = 1;
+
+    private int $severity;
+    private string $file;
+    private int $line;
+    private array $trace;
+
+    public function __construct(int $severity, string $file, int $line, array $trace = [], int $count = 1)
+    {
+        $this->severity = $severity;
+        $this->file = $file;
+        $this->line = $line;
+        $this->trace = $trace;
+        $this->count = $count;
+    }
+
+    public function getSeverity(): int
+    {
+        return $this->severity;
+    }
+
+    public function getFile(): string
+    {
+        return $this->file;
+    }
+
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    public function getTrace(): array
+    {
+        return $this->trace;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return [
+            'severity' => $this->severity,
+            'file' => $this->file,
+            'line' => $this->line,
+            'trace' => $this->trace,
+            'count' => $this->count,
+        ];
+    }
+}

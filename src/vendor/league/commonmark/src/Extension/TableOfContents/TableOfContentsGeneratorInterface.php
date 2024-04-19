@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45ec858395ed6f630ec3d43c7e5e3606de5f3ea1cbddcc9e2b47dc76776e5c6d
-size 558
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\TableOfContents;
+
+use League\CommonMark\Extension\TableOfContents\Node\TableOfContents;
+use League\CommonMark\Node\Block\Document;
+
+interface TableOfContentsGeneratorInterface
+{
+    public function generate(Document $document): ?TableOfContents;
+}

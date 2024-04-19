@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b866189097c22a5b54d511b71b94f5bb34f9b1519e69d0228dff555a216b44fe
-size 762
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class OpacityCommand extends AbstractCommand
+{
+    /**
+     * Defines opacity of an image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $transparency = $this->argument(0)->between(0, 100)->required()->value();
+
+        // get size of image
+        $size = $image->getSize();
+
+        // build temp alpha mask
+        $mask_color = sprintf('rgba(0, 0, 0, %.1F)', $transparency / 100);
+        $mask = $image->getDriver()->newImage($size->width, $size->height, $mask_color);
+
+        // mask image
+        $image->mask($mask->getCore(), true);
+
+        return true;
+    }
+}

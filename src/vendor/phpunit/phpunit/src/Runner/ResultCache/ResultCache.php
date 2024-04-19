@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17b21c16b53e7e95310d3d77937cbf1afad436631575fc8dd789e305238952e6
-size 763
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\ResultCache;
+
+use PHPUnit\Framework\TestStatus\TestStatus;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface ResultCache
+{
+    public function setStatus(string $id, TestStatus $status): void;
+
+    public function status(string $id): TestStatus;
+
+    public function setTime(string $id, float $time): void;
+
+    public function time(string $id): float;
+
+    public function load(): void;
+
+    public function persist(): void;
+}

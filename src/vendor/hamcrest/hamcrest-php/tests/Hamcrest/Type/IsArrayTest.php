@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e04f874806f79adf7236cef4323ce0868d0119456d93869b489006e9ae10809
-size 937
+<?php
+namespace Hamcrest\Type;
+
+class IsArrayTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Type\IsArray::arrayValue();
+    }
+
+    public function testEvaluatesToTrueIfArgumentMatchesType()
+    {
+        assertThat(array('5', 5), arrayValue());
+        assertThat(array(), arrayValue());
+    }
+
+    public function testEvaluatesToFalseIfArgumentDoesntMatchType()
+    {
+        assertThat(false, not(arrayValue()));
+        assertThat(5, not(arrayValue()));
+        assertThat('foo', not(arrayValue()));
+    }
+
+    public function testHasAReadableDescription()
+    {
+        $this->assertDescription('an array', arrayValue());
+    }
+
+    public function testDecribesActualTypeInMismatchMessage()
+    {
+        $this->assertMismatchDescription('was null', arrayValue(), null);
+        $this->assertMismatchDescription('was a string "foo"', arrayValue(), 'foo');
+    }
+}

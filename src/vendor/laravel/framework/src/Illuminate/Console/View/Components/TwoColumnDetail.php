@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e56271da2b5d6edb0e63f00b3322fb986c5a81643515e013014a4453bc86534d
-size 1029
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Output\OutputInterface;
+
+class TwoColumnDetail extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $first
+     * @param  string|null  $second
+     * @param  int  $verbosity
+     * @return void
+     */
+    public function render($first, $second = null, $verbosity = OutputInterface::VERBOSITY_NORMAL)
+    {
+        $first = $this->mutate($first, [
+            Mutators\EnsureDynamicContentIsHighlighted::class,
+            Mutators\EnsureNoPunctuation::class,
+            Mutators\EnsureRelativePaths::class,
+        ]);
+
+        $second = $this->mutate($second, [
+            Mutators\EnsureDynamicContentIsHighlighted::class,
+            Mutators\EnsureNoPunctuation::class,
+            Mutators\EnsureRelativePaths::class,
+        ]);
+
+        $this->renderView('two-column-detail', [
+            'first' => $first,
+            'second' => $second,
+        ], $verbosity);
+    }
+}

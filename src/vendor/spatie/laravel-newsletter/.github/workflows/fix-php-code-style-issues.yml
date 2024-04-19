@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:960661e20edc212f486c924d74a76d889eae51bad3ce01ee90504cc66c7fe100
-size 480
+name: Fix PHP code style issues
+
+on:
+  push:
+    paths:
+      - '**.php'
+
+jobs:
+  php-code-styling:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Fix PHP code style issues
+        uses: aglipanci/laravel-pint-action@1.0.0
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Fix styling

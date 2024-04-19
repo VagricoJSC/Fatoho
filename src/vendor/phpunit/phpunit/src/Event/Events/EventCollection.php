@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f55da705d2144fc60db7b460f34d308b41d37bcd5e5e8e4942b3102f51578e5
-size 1313
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+use function count;
+use Countable;
+use IteratorAggregate;
+
+/**
+ * @template-implements IteratorAggregate<int, Event>
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class EventCollection implements Countable, IteratorAggregate
+{
+    /**
+     * @psalm-var list<Event>
+     */
+    private array $events = [];
+
+    public function add(Event ...$events): void
+    {
+        foreach ($events as $event) {
+            $this->events[] = $event;
+        }
+    }
+
+    /**
+     * @psalm-return list<Event>
+     */
+    public function asArray(): array
+    {
+        return $this->events;
+    }
+
+    public function count(): int
+    {
+        return count($this->events);
+    }
+
+    public function isEmpty(): bool
+    {
+        return $this->count() === 0;
+    }
+
+    public function isNotEmpty(): bool
+    {
+        return $this->count() > 0;
+    }
+
+    public function getIterator(): EventCollectionIterator
+    {
+        return new EventCollectionIterator($this);
+    }
+}

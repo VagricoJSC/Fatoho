@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:799788626b80979bb15e2f7ce05086d4f04d5fde3468cb388aaeddb930da1d97
-size 372
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dda865e2a162a744236aa52887577315bf0ada200d31ebaa550f91ab5b8707a
-size 456
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use InvalidArgumentException as BaseInvalidArgumentException;
+
+class UnitException extends BaseInvalidArgumentException implements InvalidArgumentException
+{
+    //
+}

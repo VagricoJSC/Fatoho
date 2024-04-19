@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca9abe2dce9eb7e9952438f955495270244e90ee5d04151998f7543fc5dbeb7e
-size 1901
+<?php
+
+namespace Illuminate\Database\Eloquent\Casts;
+
+use Illuminate\Contracts\Database\Eloquent\Castable;
+use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Crypt;
+
+class AsEncryptedCollection implements Castable
+{
+    /**
+     * Get the caster class to use when casting from / to this cast target.
+     *
+     * @param  array  $arguments
+     * @return \Illuminate\Contracts\Database\Eloquent\CastsAttributes<\Illuminate\Support\Collection<array-key, mixed>, iterable>
+     */
+    public static function castUsing(array $arguments)
+    {
+        return new class implements CastsAttributes
+        {
+            public function get($model, $key, $value, $attributes)
+            {
+                if (isset($attributes[$key])) {
+                    return new Collection(json_decode(Crypt::decryptString($attributes[$key]), true));
+                }
+
+                return null;
+            }
+
+            public function set($model, $key, $value, $attributes)
+            {
+                if (! is_null($value)) {
+                    return [$key => Crypt::encryptString(json_encode($value))];
+                }
+
+                return null;
+            }
+        };
+    }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1778f53be69996443ed68d409d1747f4dedf3d4dd014f566c19babd43e729625
-size 1530
+[22-Mar-2024 18:48:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php on line 8
+[22-Mar-2024 19:30:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php on line 8
+[28-Mar-2024 03:47:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php on line 8
+[01-Apr-2024 09:37:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php on line 8
+[02-Apr-2024 18:57:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Console/Kernel.php on line 8

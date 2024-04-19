@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8f7e38b4f6ef5b31b75c4b12386949a02df1c8ef1906f024468c080afa327e0
-size 637
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class Eval_ extends Expr
+{
+    /** @var Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs an eval() node.
+     *
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_Eval';
+    }
+}

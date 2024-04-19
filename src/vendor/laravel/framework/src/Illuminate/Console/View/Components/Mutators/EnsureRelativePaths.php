@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d596befb8a4eab1edee77929c0ae5775b4d405a0d807e016b01e30c6ba153396
-size 446
+<?php
+
+namespace Illuminate\Console\View\Components\Mutators;
+
+class EnsureRelativePaths
+{
+    /**
+     * Ensures the given string only contains relative paths.
+     *
+     * @param  string  $string
+     * @return string
+     */
+    public function __invoke($string)
+    {
+        if (function_exists('app') && app()->has('path.base')) {
+            $string = str_replace(base_path().'/', '', $string);
+        }
+
+        return $string;
+    }
+}

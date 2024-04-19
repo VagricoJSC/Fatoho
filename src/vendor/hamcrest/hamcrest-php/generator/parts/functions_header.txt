@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40c619e8dbbe2e495dff2e249f7d22382571f00f77b0f343e30622c9e993e35d
-size 654
+
+if (!function_exists('assertThat')) {
+    /**
+     * Make an assertion and throw {@link Hamcrest_AssertionError} if it fails.
+     *
+     * Example:
+     * <pre>
+     * //With an identifier
+     * assertThat("assertion identifier", $apple->flavour(), equalTo("tasty"));
+     * //Without an identifier
+     * assertThat($apple->flavour(), equalTo("tasty"));
+     * //Evaluating a boolean expression
+     * assertThat("some error", $a > $b);
+     * </pre>
+     */
+    function assertThat()
+    {
+        $args = func_get_args();
+        call_user_func_array(
+            array('Hamcrest\MatcherAssert', 'assertThat'),
+            $args
+        );
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28f2100d3b1b40c777924535dc5e914af187053a1467a48a4ecf321bf22ded91
-size 231
+<?php
+namespace Hamcrest\Core;
+
+class SampleBaseClass
+{
+
+    private $_arg;
+
+    public function __construct($arg)
+    {
+        $this->_arg = $arg;
+    }
+
+    public function __toString()
+    {
+        return $this->_arg;
+    }
+}

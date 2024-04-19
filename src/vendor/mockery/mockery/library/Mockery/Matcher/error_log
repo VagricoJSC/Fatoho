@@ -1,0 +1,136 @@
+[23-Mar-2024 13:37:01 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php on line 23
+[23-Mar-2024 13:37:03 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php on line 23
+[23-Mar-2024 13:37:10 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php on line 23
+[23-Mar-2024 13:37:14 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php on line 23
+[23-Mar-2024 13:37:16 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php on line 23
+[23-Mar-2024 13:37:19 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php on line 23
+[23-Mar-2024 13:37:25 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php on line 26
+[23-Mar-2024 13:37:27 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php on line 23
+[23-Mar-2024 13:37:36 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php on line 23
+[23-Mar-2024 13:37:41 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php on line 23
+[23-Mar-2024 13:37:45 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php on line 23
+[23-Mar-2024 13:37:47 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php on line 23
+[23-Mar-2024 13:37:53 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php on line 23
+[23-Mar-2024 13:38:03 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php on line 23
+[23-Mar-2024 13:38:05 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php on line 23
+[23-Mar-2024 13:38:09 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php on line 23
+[23-Mar-2024 13:38:12 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php on line 23
+[03-Apr-2024 16:21:20 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php on line 23
+[03-Apr-2024 16:21:24 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php on line 23
+[03-Apr-2024 16:21:28 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php on line 23
+[03-Apr-2024 16:22:49 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php on line 23
+[03-Apr-2024 16:22:52 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php on line 23
+[03-Apr-2024 16:22:57 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php on line 23
+[03-Apr-2024 16:23:01 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php on line 26
+[03-Apr-2024 16:23:06 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php on line 23
+[03-Apr-2024 16:23:12 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php on line 23
+[03-Apr-2024 16:23:16 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php on line 23
+[03-Apr-2024 16:23:20 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php on line 23
+[03-Apr-2024 16:23:24 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php on line 23
+[03-Apr-2024 16:23:28 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php on line 23
+[03-Apr-2024 16:23:39 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php on line 23
+[03-Apr-2024 16:23:40 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php on line 23
+[03-Apr-2024 16:23:44 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php on line 23
+[03-Apr-2024 16:23:48 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php on line 23

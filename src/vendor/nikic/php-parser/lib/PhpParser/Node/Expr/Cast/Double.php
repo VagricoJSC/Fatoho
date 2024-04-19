@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2922bd29ace168eb14f925d440a7b8c03937d212192b5157e5212833a8aae41c
-size 401
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\Cast;
+
+use PhpParser\Node\Expr\Cast;
+
+class Double extends Cast
+{
+    // For use in "kind" attribute
+    const KIND_DOUBLE = 1; // "double" syntax
+    const KIND_FLOAT = 2;  // "float" syntax
+    const KIND_REAL = 3; // "real" syntax
+
+    public function getType() : string {
+        return 'Expr_Cast_Double';
+    }
+}

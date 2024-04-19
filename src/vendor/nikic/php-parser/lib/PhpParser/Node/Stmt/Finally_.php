@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9a6ad6d9a6cfafd701729e83c88a8b035f514d5e0ef9f6e4fa0243a51962b03
-size 670
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Finally_ extends Node\Stmt
+{
+    /** @var Node\Stmt[] Statements */
+    public $stmts;
+
+    /**
+     * Constructs a finally node.
+     *
+     * @param Node\Stmt[] $stmts      Statements
+     * @param array       $attributes Additional attributes
+     */
+    public function __construct(array $stmts = [], array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->stmts = $stmts;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['stmts'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Finally';
+    }
+}

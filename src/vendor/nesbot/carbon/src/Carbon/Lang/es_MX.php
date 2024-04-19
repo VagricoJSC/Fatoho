@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02407f480dbe5d5d50906f761e6074ef35853563987c9da7a9599ea97ed736ba
-size 463
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - RAP    bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/es.php', [
+    'diff_before_yesterday' => 'antier',
+    'first_day_of_week' => 0,
+    'day_of_first_week_of_year' => 1,
+]);

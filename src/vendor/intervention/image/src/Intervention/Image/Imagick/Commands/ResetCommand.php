@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:888d0041d6557957e0906ebc9a04766ac898b4f71680ebf11c90bc3d496d513f
-size 919
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+use Intervention\Image\Exception\RuntimeException;
+
+class ResetCommand extends AbstractCommand
+{
+    /**
+     * Resets given image to its backup state
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $backupName = $this->argument(0)->value();
+
+        $backup = $image->getBackup($backupName);
+
+        if ($backup instanceof \Imagick) {
+
+            // destroy current core
+            $image->getCore()->clear();
+
+            // clone backup
+            $backup = clone $backup;
+
+            // reset to new resource
+            $image->setCore($backup);
+
+            return true;
+        }
+
+        throw new RuntimeException(
+            "Backup not available. Call backup({$backupName}) before reset()."
+        );
+    }
+}

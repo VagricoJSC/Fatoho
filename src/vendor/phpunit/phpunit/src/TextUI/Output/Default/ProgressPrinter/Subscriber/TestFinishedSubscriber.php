@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47cdfc02ef92761846d78888fd1878e94f7508bafdc8cdb74688e3e030eaa96a
-size 686
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output\Default\ProgressPrinter;
+
+use PHPUnit\Event\Test\Finished;
+use PHPUnit\Event\Test\FinishedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestFinishedSubscriber extends Subscriber implements FinishedSubscriber
+{
+    public function notify(Finished $event): void
+    {
+        $this->printer()->testFinished();
+    }
+}

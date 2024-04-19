@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c45ff8160494d20047893da572dc6cd281f42131e2093a76d5af2afa0332f02
-size 615
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Converter\Time;
+
+/**
+ * @deprecated DegradedTimeConverter is no longer necessary for converting
+ *     time on 32-bit systems. Transition to {@see GenericTimeConverter}.
+ *
+ * @psalm-immutable
+ */
+class DegradedTimeConverter extends BigNumberTimeConverter
+{
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c50c2434ade229f9a4e436f54463ed9a4f7807f1bda72078b309a84db16ca677
-size 1590
+[22-Mar-2024 18:48:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php on line 8
+[22-Mar-2024 19:05:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php on line 8
+[28-Mar-2024 03:44:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php on line 8
+[01-Apr-2024 08:32:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php on line 8
+[02-Apr-2024 20:31:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Exceptions/Handler.php on line 8

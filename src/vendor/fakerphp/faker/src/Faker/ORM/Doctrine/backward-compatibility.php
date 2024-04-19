@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c8c6849b06a47a33a7dd289b5c71404dc94a8ac7eec1ef1d6109de23684a552
-size 406
+<?php
+
+declare(strict_types=1);
+
+if (!class_exists('Doctrine\Common\Persistence\Mapping\ClassMetadata')) {
+    class_alias(\Doctrine\Persistence\Mapping\ClassMetadata::class, 'Doctrine\Common\Persistence\Mapping\ClassMetadata');
+}
+
+if (!class_exists('Doctrine\Common\Persistence\ObjectManager')) {
+    class_alias(\Doctrine\Persistence\ObjectManager::class, 'Doctrine\Common\Persistence\ObjectManager');
+}

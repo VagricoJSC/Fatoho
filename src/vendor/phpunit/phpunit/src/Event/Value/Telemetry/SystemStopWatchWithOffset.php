@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b92428f4984328fbb923af3d047deece80dd84e554fef06fc7081d7932c4c03
-size 984
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Telemetry;
+
+use function hrtime;
+use PHPUnit\Event\InvalidArgumentException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class SystemStopWatchWithOffset implements StopWatch
+{
+    private ?HRTime $offset;
+
+    public function __construct(HRTime $offset)
+    {
+        $this->offset = $offset;
+    }
+
+    /**
+     * @throws InvalidArgumentException
+     */
+    public function current(): HRTime
+    {
+        if ($this->offset !== null) {
+            $offset = $this->offset;
+
+            $this->offset = null;
+
+            return $offset;
+        }
+
+        return HRTime::fromSecondsAndNanoseconds(...hrtime());
+    }
+}

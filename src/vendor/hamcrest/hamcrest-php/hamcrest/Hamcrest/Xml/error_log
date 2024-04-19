@@ -1,0 +1,8 @@
+[27-Mar-2024 00:45:51 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php on line 17
+[03-Apr-2024 15:41:04 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php on line 17

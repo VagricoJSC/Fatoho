@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c4b993ce7a99076c12c8aa71e205d1bab75d30be6309849682973fb033402e5
-size 1138
+<?php
+
+namespace Illuminate\Database\Events;
+
+class QueryExecuted
+{
+    /**
+     * The SQL query that was executed.
+     *
+     * @var string
+     */
+    public $sql;
+
+    /**
+     * The array of query bindings.
+     *
+     * @var array
+     */
+    public $bindings;
+
+    /**
+     * The number of milliseconds it took to execute the query.
+     *
+     * @var float
+     */
+    public $time;
+
+    /**
+     * The database connection instance.
+     *
+     * @var \Illuminate\Database\Connection
+     */
+    public $connection;
+
+    /**
+     * The database connection name.
+     *
+     * @var string
+     */
+    public $connectionName;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $sql
+     * @param  array  $bindings
+     * @param  float|null  $time
+     * @param  \Illuminate\Database\Connection  $connection
+     * @return void
+     */
+    public function __construct($sql, $bindings, $time, $connection)
+    {
+        $this->sql = $sql;
+        $this->time = $time;
+        $this->bindings = $bindings;
+        $this->connection = $connection;
+        $this->connectionName = $connection->getName();
+    }
+}

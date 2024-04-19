@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3acfe81cf9dd36ea0550f3c60bf5128499a9d22ad0c4d16a9f1c3f5ba0d39933
-size 735
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+use Symfony\Component\Translation\PluralizationRules;
+
+// @codeCoverageIgnoreStart
+if (class_exists(PluralizationRules::class)) {
+    PluralizationRules::set(static function ($number) {
+        return PluralizationRules::get($number, 'sr');
+    }, 'sr_Cyrl_XK');
+}
+// @codeCoverageIgnoreEnd
+
+return array_replace_recursive(require __DIR__.'/sr_Cyrl_BA.php', [
+    'weekdays' => ['недеља', 'понедељак', 'уторак', 'среда', 'четвртак', 'петак', 'субота'],
+]);

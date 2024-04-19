@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7035b0997e9afd1348012bc2fcbd7d4781cc4f586aa0a5bce96400765b967c94
-size 894
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\HtmlToTextConverter;
+
+use League\HTMLToMarkdown\HtmlConverter;
+use League\HTMLToMarkdown\HtmlConverterInterface;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class LeagueHtmlToMarkdownConverter implements HtmlToTextConverterInterface
+{
+    public function __construct(
+        private HtmlConverterInterface $converter = new HtmlConverter([
+            'hard_break' => true,
+            'strip_tags' => true,
+            'remove_nodes' => 'head style',
+        ]),
+    ) {
+    }
+
+    public function convert(string $html, string $charset): string
+    {
+        return $this->converter->convert($html);
+    }
+}

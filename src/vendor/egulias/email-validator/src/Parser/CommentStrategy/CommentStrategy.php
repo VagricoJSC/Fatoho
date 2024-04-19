@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32b0d465b22c62ad64fb25e556603bd9539b2a702ad62ca4f42676451a213ed4
-size 525
+<?php
+
+namespace Egulias\EmailValidator\Parser\CommentStrategy;
+
+use Egulias\EmailValidator\EmailLexer;
+use Egulias\EmailValidator\Result\Result;
+use Egulias\EmailValidator\Warning\Warning;
+
+interface CommentStrategy
+{
+    /**
+     * Return "true" to continue, "false" to exit
+     */
+    public function exitCondition(EmailLexer $lexer, int $openedParenthesis): bool;
+
+    public function endOfLoopValidations(EmailLexer $lexer): Result;
+
+    /**
+     * @return Warning[]
+     */
+    public function getWarnings(): array;
+}

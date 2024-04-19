@@ -1,0 +1,72 @@
+[22-Mar-2024 23:48:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RuntimeException.php on line 14
+[22-Mar-2024 23:48:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteNotFoundException.php on line 19
+[22-Mar-2024 23:48:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php on line 14
+[22-Mar-2024 23:48:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php on line 21
+[22-Mar-2024 23:48:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\ResourceNotFoundException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/NoConfigurationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/NoConfigurationException.php on line 19
+[22-Mar-2024 23:48:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php on line 20
+[22-Mar-2024 23:48:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php on line 21
+[22-Mar-2024 23:49:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidParameterException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidParameterException.php on line 19
+[22-Mar-2024 23:49:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidArgumentException.php on line 14
+[03-Apr-2024 08:11:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RuntimeException.php on line 14
+[03-Apr-2024 08:11:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteNotFoundException.php on line 19
+[03-Apr-2024 08:11:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php on line 21
+[03-Apr-2024 08:11:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\ResourceNotFoundException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/NoConfigurationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/NoConfigurationException.php on line 19
+[03-Apr-2024 08:11:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php on line 20
+[03-Apr-2024 08:12:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php on line 21
+[03-Apr-2024 08:12:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidParameterException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidParameterException.php on line 19
+[03-Apr-2024 08:12:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/InvalidArgumentException.php on line 14
+[03-Apr-2024 08:32:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php on line 14

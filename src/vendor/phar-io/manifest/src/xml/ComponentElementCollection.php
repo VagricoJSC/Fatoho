@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:232aaa73469d489b7c7d7c351f186c6ebcd12d44ce90e9b71b84bf085c1902ff
-size 604
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class ComponentElementCollection extends ElementCollection {
+    public function current(): ComponentElement {
+        return new ComponentElement(
+            $this->getCurrentElement()
+        );
+    }
+}

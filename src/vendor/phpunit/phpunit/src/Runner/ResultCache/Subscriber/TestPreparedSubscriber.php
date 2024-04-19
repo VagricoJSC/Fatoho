@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17b2b690f4b2f3b4ee9c2f0ef58d0b1eac92f960dfd667318cfd7d601d4851f3
-size 673
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\ResultCache;
+
+use PHPUnit\Event\Test\Prepared;
+use PHPUnit\Event\Test\PreparedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestPreparedSubscriber extends Subscriber implements PreparedSubscriber
+{
+    public function notify(Prepared $event): void
+    {
+        $this->handler()->testPrepared($event);
+    }
+}

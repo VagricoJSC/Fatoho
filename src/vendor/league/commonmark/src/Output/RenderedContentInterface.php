@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c73d99a53f609b8e51de9ea744357aea697a0a05070313a9936b224ae00dd1b
-size 588
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Output;
+
+use League\CommonMark\Node\Block\Document;
+
+interface RenderedContentInterface extends \Stringable
+{
+    /**
+     * @psalm-mutation-free
+     */
+    public function getDocument(): Document;
+
+    /**
+     * @psalm-mutation-free
+     */
+    public function getContent(): string;
+}

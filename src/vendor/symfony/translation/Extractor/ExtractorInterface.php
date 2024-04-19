@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78c72f8a245e930f52bc6898c6650bf620d5edf11ed32898403542f8206c0c40
-size 1043
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Extractor;
+
+use Symfony\Component\Translation\MessageCatalogue;
+
+/**
+ * Extracts translation messages from a directory or files to the catalogue.
+ * New found messages are injected to the catalogue using the prefix.
+ *
+ * @author Michel Salib <michelsalib@hotmail.com>
+ */
+interface ExtractorInterface
+{
+    /**
+     * Extracts translation messages from files, a file or a directory to the catalogue.
+     *
+     * @param string|iterable<string> $resource Files, a file or a directory
+     */
+    public function extract(string|iterable $resource, MessageCatalogue $catalogue);
+
+    /**
+     * Sets the prefix that should be used for new found messages.
+     */
+    public function setPrefix(string $prefix);
+}

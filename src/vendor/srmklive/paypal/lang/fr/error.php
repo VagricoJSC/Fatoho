@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a168ec936a564cfafc0894cb8decda455700c5ea485f135f370b06b6fe608ee
-size 346
+<?php
+
+return [
+    'paypal_transaction_declined'     => 'Impossible de traiter le paiement car votre transaction a été refusée sur PayPal',
+    'paypal_transaction_not_verified' => 'Impossible de vérifier la transaction depuis PayPal',
+    'paypal_connection_error'         => 'Impossible de se connecter à PayPal. Veuillez réessayer',
+];

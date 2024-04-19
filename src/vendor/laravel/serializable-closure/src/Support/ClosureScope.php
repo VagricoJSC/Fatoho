@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f572fd7333540f2d9866e8627c05db532c89d59015bb2d1101d73883fd4a5019
-size 378
+<?php
+
+namespace Laravel\SerializableClosure\Support;
+
+use SplObjectStorage;
+
+class ClosureScope extends SplObjectStorage
+{
+    /**
+     * The number of serializations in current scope.
+     *
+     * @var int
+     */
+    public $serializations = 0;
+
+    /**
+     * The number of closures that have to be serialized.
+     *
+     * @var int
+     */
+    public $toSerialize = 0;
+}

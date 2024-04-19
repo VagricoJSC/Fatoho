@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:011ab72ef5a38205a8bba331db57b6aed8730cdaaa03a82873a1a193786a222c
-size 385
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/diff.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Diff;
+
+class InvalidArgumentException extends \InvalidArgumentException implements Exception
+{
+}

@@ -1,0 +1,16 @@
+[03-Apr-2024 18:18:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php on line 5
+[03-Apr-2024 18:18:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php on line 5
+[03-Apr-2024 18:18:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php on line 5
+[03-Apr-2024 18:18:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php on line 5

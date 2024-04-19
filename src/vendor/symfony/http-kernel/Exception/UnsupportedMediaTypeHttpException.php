@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7ed7245234e445668a40633403b513dc1446714c35bed311c70550a96b3c0b7
-size 609
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Ben Ramsey <ben@benramsey.com>
+ */
+class UnsupportedMediaTypeHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(415, $message, $previous, $headers, $code);
+    }
+}

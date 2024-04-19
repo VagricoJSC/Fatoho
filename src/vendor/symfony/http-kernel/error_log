@@ -1,0 +1,68 @@
+[22-Mar-2024 20:01:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php on line 25
+[22-Mar-2024 20:01:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php on line 55
+[22-Mar-2024 20:01:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php on line 51
+[22-Mar-2024 20:01:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[22-Mar-2024 21:19:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[22-Mar-2024 21:20:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 31
+[22-Mar-2024 21:20:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php on line 25
+[22-Mar-2024 21:20:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php on line 55
+[22-Mar-2024 21:21:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php on line 51
+[22-Mar-2024 21:24:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 31
+[28-Mar-2024 07:47:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php on line 51
+[28-Mar-2024 08:10:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php on line 25
+[01-Apr-2024 09:21:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Kernel.php on line 55
+[01-Apr-2024 10:00:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernel.php on line 51
+[01-Apr-2024 10:28:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/KernelInterface.php on line 25
+[01-Apr-2024 10:28:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[01-Apr-2024 10:53:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 31

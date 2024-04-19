@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4f43243217b2f31c8ab824a5b3765020344a964bfa549c1526748900883f643
-size 534
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Fragment;
+
+/**
+ * Implements the SSI rendering strategy.
+ *
+ * @author Sebastian Krebs <krebs.seb@gmail.com>
+ */
+class SsiFragmentRenderer extends AbstractSurrogateFragmentRenderer
+{
+    public function getName(): string
+    {
+        return 'ssi';
+    }
+}

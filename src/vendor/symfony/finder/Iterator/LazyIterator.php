@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae33bc32d083ff619e8dbeaca29a8628653ba67e99ec8acfd661a2d5e3458bda
-size 686
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Finder\Iterator;
+
+/**
+ * @author Jérémy Derussé <jeremy@derusse.com>
+ *
+ * @internal
+ */
+class LazyIterator implements \IteratorAggregate
+{
+    private \Closure $iteratorFactory;
+
+    public function __construct(callable $iteratorFactory)
+    {
+        $this->iteratorFactory = $iteratorFactory(...);
+    }
+
+    public function getIterator(): \Traversable
+    {
+        yield from ($this->iteratorFactory)();
+    }
+}

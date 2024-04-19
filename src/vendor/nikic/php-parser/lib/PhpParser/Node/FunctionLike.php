@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c0ff871b2dd43dfcff87ab151397ec9fb061e137a413f1073a12a57e9ffebff
-size 731
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+use PhpParser\Node;
+
+interface FunctionLike extends Node
+{
+    /**
+     * Whether to return by reference
+     *
+     * @return bool
+     */
+    public function returnsByRef() : bool;
+
+    /**
+     * List of parameters
+     *
+     * @return Param[]
+     */
+    public function getParams() : array;
+
+    /**
+     * Get the declared return type or null
+     *
+     * @return null|Identifier|Name|ComplexType
+     */
+    public function getReturnType();
+
+    /**
+     * The function body
+     *
+     * @return Stmt[]|null
+     */
+    public function getStmts();
+
+    /**
+     * Get PHP attribute groups.
+     *
+     * @return AttributeGroup[]
+     */
+    public function getAttrGroups() : array;
+}

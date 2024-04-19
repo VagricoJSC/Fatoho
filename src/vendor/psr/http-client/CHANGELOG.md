@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b23804ba8bb7226ab80b5a68dd0b3d1e9291f4b999385c44f60c40c6585628f
-size 505
+# Changelog
+
+All notable changes to this project will be documented in this file, in reverse chronological order by release.
+
+## 1.0.1
+
+Allow installation with PHP 8. No code changes.
+
+## 1.0.0
+
+First stable release. No changes since 0.3.0.
+
+## 0.3.0
+
+Added Interface suffix on exceptions
+ 
+## 0.2.0 
+
+All exceptions are in `Psr\Http\Client` namespace
+
+## 0.1.0
+
+First release

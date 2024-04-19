@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9752d116435ef7f03432752fe057ac361341f45b204baeb03eab9abe4516bb72
-size 408
+<?php
+
+namespace Illuminate\Contracts\Validation;
+
+use Closure;
+
+interface ValidationRule
+{
+    /**
+     * Run the validation rule.
+     *
+     * @param  string  $attribute
+     * @param  mixed  $value
+     * @param  \Closure(string): \Illuminate\Translation\PotentiallyTranslatedString  $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void;
+}

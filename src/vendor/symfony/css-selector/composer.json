@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:713106fd8f52f970903f0b7222197dee7fcbf19a86c409f1e2e3552c5f9034a2
-size 811
+{
+    "name": "symfony/css-selector",
+    "type": "library",
+    "description": "Converts CSS selectors to XPath expressions",
+    "keywords": [],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Jean-François Simon",
+            "email": "jeanfrancois.simon@sensiolabs.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\CssSelector\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}

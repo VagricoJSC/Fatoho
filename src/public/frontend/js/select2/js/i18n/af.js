@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b92f7da21ef07a3a5ab2377e5e988963351378f5b933cd0c7f4fa3c17e2e461b
-size 866
+/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
+
+!function(){if(jQuery&&jQuery.fn&&jQuery.fn.select2&&jQuery.fn.select2.amd)var e=jQuery.fn.select2.amd;e.define("select2/i18n/af",[],function(){return{errorLoading:function(){return"Die resultate kon nie gelaai word nie."},inputTooLong:function(e){var n=e.input.length-e.maximum,r="Verwyders asseblief "+n+" character";return 1!=n&&(r+="s"),r},inputTooShort:function(e){return"Voer asseblief "+(e.minimum-e.input.length)+" of meer karakters"},loadingMore:function(){return"Meer resultate word gelaai…"},maximumSelected:function(e){var n="Kies asseblief net "+e.maximum+" item";return 1!=e.maximum&&(n+="s"),n},noResults:function(){return"Geen resultate gevind"},searching:function(){return"Besig…"},removeAllItems:function(){return"Verwyder alle items"}}}),e.define,e.require}();

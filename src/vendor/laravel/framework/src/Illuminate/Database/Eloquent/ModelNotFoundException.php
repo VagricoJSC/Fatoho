@@ -1,3 +1,69 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57cdd6a28037394a59e8009e6f8ca973be35f5171266269ae4bafb3a1ff6453b
-size 1419
+<?php
+
+namespace Illuminate\Database\Eloquent;
+
+use Illuminate\Database\RecordsNotFoundException;
+use Illuminate\Support\Arr;
+
+/**
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ */
+class ModelNotFoundException extends RecordsNotFoundException
+{
+    /**
+     * Name of the affected Eloquent model.
+     *
+     * @var class-string<TModel>
+     */
+    protected $model;
+
+    /**
+     * The affected model IDs.
+     *
+     * @var array<int, int|string>
+     */
+    protected $ids;
+
+    /**
+     * Set the affected Eloquent model and instance ids.
+     *
+     * @param  class-string<TModel>  $model
+     * @param  array<int, int|string>|int|string  $ids
+     * @return $this
+     */
+    public function setModel($model, $ids = [])
+    {
+        $this->model = $model;
+        $this->ids = Arr::wrap($ids);
+
+        $this->message = "No query results for model [{$model}]";
+
+        if (count($this->ids) > 0) {
+            $this->message .= ' '.implode(', ', $this->ids);
+        } else {
+            $this->message .= '.';
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the affected Eloquent model.
+     *
+     * @return class-string<TModel>
+     */
+    public function getModel()
+    {
+        return $this->model;
+    }
+
+    /**
+     * Get the affected Eloquent model IDs.
+     *
+     * @return array<int, int|string>
+     */
+    public function getIds()
+    {
+        return $this->ids;
+    }
+}

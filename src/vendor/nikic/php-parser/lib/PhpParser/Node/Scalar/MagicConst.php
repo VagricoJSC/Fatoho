@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8204dfa8d51f8ad09447624c58102f0ead7bd5f05f62816f2f2ccd275015a736
-size 602
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar;
+
+use PhpParser\Node\Scalar;
+
+abstract class MagicConst extends Scalar
+{
+    /**
+     * Constructs a magic constant node.
+     *
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(array $attributes = []) {
+        $this->attributes = $attributes;
+    }
+
+    public function getSubNodeNames() : array {
+        return [];
+    }
+
+    /**
+     * Get name of magic constant.
+     *
+     * @return string Name of magic constant
+     */
+    abstract public function getName() : string;
+}

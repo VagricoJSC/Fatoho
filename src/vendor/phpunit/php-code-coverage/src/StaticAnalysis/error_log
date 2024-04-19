@@ -1,0 +1,20 @@
+[23-Mar-2024 04:07:25 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\StaticAnalysis\FileAnalyser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/ParsingFileAnalyser.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/ParsingFileAnalyser.php on line 36
+[23-Mar-2024 04:07:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/IgnoredLinesFindingVisitor.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/IgnoredLinesFindingVisitor.php on line 26
+[23-Mar-2024 04:07:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/ExecutableLinesFindingVisitor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/ExecutableLinesFindingVisitor.php on line 30
+[23-Mar-2024 04:07:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/CodeUnitFindingVisitor.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/CodeUnitFindingVisitor.php on line 36
+[23-Mar-2024 04:07:45 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\StaticAnalysis\FileAnalyser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/CachingFileAnalyser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/StaticAnalysis/CachingFileAnalyser.php on line 25

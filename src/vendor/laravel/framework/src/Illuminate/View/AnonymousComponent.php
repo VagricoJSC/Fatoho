@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77b174ccbaf4653a487a48186f294600bdf91d246ece8ac71dfcf014729e7463
-size 1165
+<?php
+
+namespace Illuminate\View;
+
+class AnonymousComponent extends Component
+{
+    /**
+     * The component view.
+     *
+     * @var string
+     */
+    protected $view;
+
+    /**
+     * The component data.
+     *
+     * @var array
+     */
+    protected $data = [];
+
+    /**
+     * Create a new anonymous component instance.
+     *
+     * @param  string  $view
+     * @param  array  $data
+     * @return void
+     */
+    public function __construct($view, $data)
+    {
+        $this->view = $view;
+        $this->data = $data;
+    }
+
+    /**
+     * Get the view / view contents that represent the component.
+     *
+     * @return string
+     */
+    public function render()
+    {
+        return $this->view;
+    }
+
+    /**
+     * Get the data that should be supplied to the view.
+     *
+     * @return array
+     */
+    public function data()
+    {
+        $this->attributes = $this->attributes ?: $this->newAttributeBag();
+
+        return array_merge(
+            ($this->data['attributes'] ?? null)?->getAttributes() ?: [],
+            $this->attributes->getAttributes(),
+            $this->data,
+            ['attributes' => $this->attributes]
+        );
+    }
+}

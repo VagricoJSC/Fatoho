@@ -1,3 +1,73 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53e625189432032a6fc2551b3ce4eb198371c8c12be78d01ed7dd51da6d8ed83
-size 1573
+<?php
+
+namespace Sabberworm\CSS\RuleSet;
+
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Property\AtRule;
+
+/**
+ * A RuleSet constructed by an unknown at-rule. `@font-face` rules are rendered into AtRuleSet objects.
+ */
+class AtRuleSet extends RuleSet implements AtRule
+{
+    /**
+     * @var string
+     */
+    private $sType;
+
+    /**
+     * @var string
+     */
+    private $sArgs;
+
+    /**
+     * @param string $sType
+     * @param string $sArgs
+     * @param int $iLineNo
+     */
+    public function __construct($sType, $sArgs = '', $iLineNo = 0)
+    {
+        parent::__construct($iLineNo);
+        $this->sType = $sType;
+        $this->sArgs = $sArgs;
+    }
+
+    /**
+     * @return string
+     */
+    public function atRuleName()
+    {
+        return $this->sType;
+    }
+
+    /**
+     * @return string
+     */
+    public function atRuleArgs()
+    {
+        return $this->sArgs;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->render(new OutputFormat());
+    }
+
+    /**
+     * @return string
+     */
+    public function render(OutputFormat $oOutputFormat)
+    {
+        $sArgs = $this->sArgs;
+        if ($sArgs) {
+            $sArgs = ' ' . $sArgs;
+        }
+        $sResult = "@{$this->sType}$sArgs{$oOutputFormat->spaceBeforeOpeningBrace()}{";
+        $sResult .= parent::render($oOutputFormat);
+        $sResult .= '}';
+        return $sResult;
+    }
+}

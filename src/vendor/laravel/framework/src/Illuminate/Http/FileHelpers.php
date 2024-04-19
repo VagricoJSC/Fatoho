@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63e53f59e4fa29d70d819442fccd545efe4a7a4002cacfda9055b0c9c0d98d4b
-size 1204
+<?php
+
+namespace Illuminate\Http;
+
+use Illuminate\Support\Str;
+
+trait FileHelpers
+{
+    /**
+     * The cache copy of the file's hash name.
+     *
+     * @var string
+     */
+    protected $hashName = null;
+
+    /**
+     * Get the fully qualified path to the file.
+     *
+     * @return string
+     */
+    public function path()
+    {
+        return $this->getRealPath();
+    }
+
+    /**
+     * Get the file's extension.
+     *
+     * @return string
+     */
+    public function extension()
+    {
+        return $this->guessExtension();
+    }
+
+    /**
+     * Get a filename for the file.
+     *
+     * @param  string|null  $path
+     * @return string
+     */
+    public function hashName($path = null)
+    {
+        if ($path) {
+            $path = rtrim($path, '/').'/';
+        }
+
+        $hash = $this->hashName ?: $this->hashName = Str::random(40);
+
+        if ($extension = $this->guessExtension()) {
+            $extension = '.'.$extension;
+        }
+
+        return $path.$hash.$extension;
+    }
+}

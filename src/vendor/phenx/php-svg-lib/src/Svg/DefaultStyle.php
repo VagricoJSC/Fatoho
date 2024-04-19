@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7cea5f12db05b9994997ecbcd066fda92fa210934185bcd1c898c4d961e773cd
-size 720
+<?php
+/**
+ * @package php-svg-lib
+ * @link    http://github.com/PhenX/php-svg-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license GNU LGPLv3+ http://www.gnu.org/copyleft/lesser.html
+ */
+
+namespace Svg;
+
+class DefaultStyle extends Style
+{
+    public $color = [0, 0, 0, 1];
+    public $opacity = 1.0;
+    public $display = 'inline';
+
+    public $fill = [0, 0, 0, 1];
+    public $fillOpacity = 1.0;
+    public $fillRule = 'nonzero';
+
+    public $stroke = 'none';
+    public $strokeOpacity = 1.0;
+    public $strokeLinecap = 'butt';
+    public $strokeLinejoin = 'miter';
+    public $strokeMiterlimit = 4;
+    public $strokeWidth = 1.0;
+    public $strokeDasharray = 0;
+    public $strokeDashoffset = 0;
+}

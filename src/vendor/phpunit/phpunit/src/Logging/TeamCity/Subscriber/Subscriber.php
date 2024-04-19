@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8913e321c5e7a350f240ee06e882780d3672194760c96be0350fc1660b7afc44
-size 655
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\TeamCity;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+abstract class Subscriber
+{
+    private readonly TeamCityLogger $logger;
+
+    public function __construct(TeamCityLogger $logger)
+    {
+        $this->logger = $logger;
+    }
+
+    protected function logger(): TeamCityLogger
+    {
+        return $this->logger;
+    }
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c3ae91b7ef9dc115bbc443bb8103c58044fc94c7292ab948d5760e4ae5643d4
-size 616
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class PostCondition extends Metadata
+{
+    public function isPostCondition(): bool
+    {
+        return true;
+    }
+}

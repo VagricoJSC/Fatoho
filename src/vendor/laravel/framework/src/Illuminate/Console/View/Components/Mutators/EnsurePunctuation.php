@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf56a2868b972ec2a01afda00dbfb9bf968a41217ab9ea764cbb9b63eba3a584
-size 400
+<?php
+
+namespace Illuminate\Console\View\Components\Mutators;
+
+class EnsurePunctuation
+{
+    /**
+     * Ensures the given string ends with punctuation.
+     *
+     * @param  string  $string
+     * @return string
+     */
+    public function __invoke($string)
+    {
+        if (! str($string)->endsWith(['.', '?', '!', ':'])) {
+            return "$string.";
+        }
+
+        return $string;
+    }
+}

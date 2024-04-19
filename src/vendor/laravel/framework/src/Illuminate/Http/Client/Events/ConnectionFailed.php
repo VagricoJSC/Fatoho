@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cefdcb27b5ddd5cf5c77a172e3f4219440af977ba5c0277b382fb1ca96158c3c
-size 464
+<?php
+
+namespace Illuminate\Http\Client\Events;
+
+use Illuminate\Http\Client\Request;
+
+class ConnectionFailed
+{
+    /**
+     * The request instance.
+     *
+     * @var \Illuminate\Http\Client\Request
+     */
+    public $request;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Http\Client\Request  $request
+     * @return void
+     */
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+}

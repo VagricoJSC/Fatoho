@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cff9d266d813ae2ae74839eda7d499f6d7d6725337c30c1e0c1ccd9b8e1aef3
-size 274
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class DomainTooLong implements Reason
+{
+    public function code() : int
+    {
+        return 244;
+    }
+
+    public function description() : string
+    {
+        return 'Domain is longer than 253 characters';
+    }
+}

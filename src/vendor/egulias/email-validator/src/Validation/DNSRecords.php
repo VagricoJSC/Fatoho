@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b032a0b1a10561abe567664b2c9bbe42c43f47d86fbfa77a3cae0001b8832bdc
-size 461
+<?php
+
+namespace Egulias\EmailValidator\Validation;
+
+class DNSRecords
+{
+
+    /**
+     * @var array $records
+     */
+    private $records = [];
+
+    /**
+     * @var bool $error
+     */
+    private $error = false;
+
+    /**
+     * @param array $records
+     * @param bool $error
+     */
+    public function __construct(array $records, bool $error = false)
+    {
+        $this->records = $records;
+        $this->error = $error;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRecords(): array
+    {
+        return $this->records;
+    }
+
+    public function withError(): bool
+    {
+        return $this->error;
+    }
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8242d2c4389cacd06a5d5f04b86ac93b49f079017b5cc793d08132e888076d1
-size 618
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+class AssertionFailedError extends Exception implements SelfDescribing
+{
+    /**
+     * Wrapper for getMessage() which is declared as final.
+     */
+    public function toString(): string
+    {
+        return $this->getMessage();
+    }
+}

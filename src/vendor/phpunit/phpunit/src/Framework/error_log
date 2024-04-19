@@ -1,0 +1,24 @@
+[23-Mar-2024 04:00:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\Reorderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php on line 57
+[23-Mar-2024 04:00:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestCase.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestCase.php on line 110
+[23-Mar-2024 04:00:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestSuite" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php on line 19
+[03-Apr-2024 09:51:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\Reorderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php on line 57
+[03-Apr-2024 09:51:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestCase.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/TestCase.php on line 110
+[03-Apr-2024 09:51:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestSuite" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php on line 19

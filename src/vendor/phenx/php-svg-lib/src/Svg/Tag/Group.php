@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:deaf9b53e4838372a8556c1a931bf5e2442f779be67d227e40162bcb25c67a84
-size 669
+<?php
+/**
+ * @package php-svg-lib
+ * @link    http://github.com/PhenX/php-svg-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license GNU LGPLv3+ http://www.gnu.org/copyleft/lesser.html
+ */
+
+namespace Svg\Tag;
+
+use Svg\Style;
+
+class Group extends AbstractTag
+{
+    protected function before($attributes)
+    {
+        $surface = $this->document->getSurface();
+
+        $surface->save();
+
+        $style = $this->makeStyle($attributes);
+
+        $this->setStyle($style);
+        $surface->setStyle($style);
+
+        $this->applyTransform($attributes);
+    }
+
+    protected function after()
+    {
+        $this->document->getSurface()->restore();
+    }
+} 

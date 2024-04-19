@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e916d5636221ed6c40424999623cfa72ae5c907b314233670c77f2756710d557
-size 486
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Util;
+
+use RuntimeException;
+use SebastianBergmann\CodeCoverage\Exception;
+
+final class DirectoryCouldNotBeCreatedException extends RuntimeException implements Exception
+{
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:862052b67ab42e8f94889d598178d7ade20bf288523728000dce99aaca038bbc
-size 604
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Test\TestStatus;
+
+/**
+ * @psalm-immutable
+ */
+final class Failure extends Known
+{
+    /**
+     * @psalm-assert-if-true Failure $this
+     */
+    public function isFailure(): bool
+    {
+        return true;
+    }
+
+    public function asString(): string
+    {
+        return 'failure';
+    }
+}

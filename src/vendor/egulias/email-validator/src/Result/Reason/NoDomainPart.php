@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eabf2f7236302447a16dc814bf3fbf66118954c1ac8f2bcd76e69714d66e3d5e
-size 257
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class NoDomainPart implements Reason
+{
+    public function code() : int
+    {
+        return 131;
+    }
+
+    public function description() : string
+    {
+        return 'No domain part found';
+    }
+}

@@ -1,0 +1,8 @@
+[03-Apr-2024 18:42:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php on line 8
+[03-Apr-2024 20:35:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php on line 8

@@ -1,0 +1,8 @@
+[23-Mar-2024 04:14:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Providers/PayPalServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Providers/PayPalServiceProvider.php on line 13
+[03-Apr-2024 09:38:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Providers/PayPalServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Providers/PayPalServiceProvider.php on line 13

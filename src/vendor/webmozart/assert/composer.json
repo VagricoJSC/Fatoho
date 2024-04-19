@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8142d71ea1542bda1b518a1c5b18b390b33f639cfbaa22eba5af96f00fa9b24
-size 956
+{
+    "name": "webmozart/assert",
+    "description": "Assertions to validate method input/output with nice error messages.",
+    "license": "MIT",
+    "keywords": [
+        "assert",
+        "check",
+        "validate"
+    ],
+    "authors": [
+        {
+            "name": "Bernhard Schussek",
+            "email": "bschussek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "ext-ctype": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5.13"
+    },
+    "conflict": {
+        "phpstan/phpstan": "<0.12.20",
+        "vimeo/psalm": "<4.6.1 || 4.6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webmozart\\Assert\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webmozart\\Assert\\Tests\\": "tests/",
+            "Webmozart\\Assert\\Bin\\": "bin/src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.10-dev"
+        }
+    }
+}

@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98d5523c206515edcc63912f6eaa516f163866a4405d7eb14e0a8a06292709fc
-size 971
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Transport;
+
+/**
+ * Uses several Transports using a failover algorithm.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class FailoverTransport extends RoundRobinTransport
+{
+    private ?TransportInterface $currentTransport = null;
+
+    protected function getNextTransport(): ?TransportInterface
+    {
+        if (null === $this->currentTransport || $this->isTransportDead($this->currentTransport)) {
+            $this->currentTransport = parent::getNextTransport();
+        }
+
+        return $this->currentTransport;
+    }
+
+    protected function getInitialCursor(): int
+    {
+        return 0;
+    }
+
+    protected function getNameSymbol(): string
+    {
+        return 'failover';
+    }
+}

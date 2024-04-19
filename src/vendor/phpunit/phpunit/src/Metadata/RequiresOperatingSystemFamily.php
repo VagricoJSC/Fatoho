@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e2150c4d09786ad026842a86983795f1d17971624c14396f230eab9c82857c1
-size 1222
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class RequiresOperatingSystemFamily extends Metadata
+{
+    private readonly string $operatingSystemFamily;
+
+    protected function __construct(int $level, string $operatingSystemFamily)
+    {
+        parent::__construct($level);
+
+        $this->operatingSystemFamily = $operatingSystemFamily;
+    }
+
+    public function isRequiresOperatingSystemFamily(): bool
+    {
+        return true;
+    }
+
+    public function operatingSystemFamily(): string
+    {
+        return $this->operatingSystemFamily;
+    }
+}

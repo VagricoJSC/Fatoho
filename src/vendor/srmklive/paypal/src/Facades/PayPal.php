@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0113018d1e3357455cdee313c62a64ee5a0b0b9d2bf1aaf97a5291f514d06b9d
-size 426
+<?php
+
+namespace Srmklive\PayPal\Facades;
+
+/*
+ * Class Facade
+ * @package Srmklive\PayPal\Facades
+ * @see Srmklive\PayPal\ExpressCheckout
+ */
+
+use Illuminate\Support\Facades\Facade;
+
+class PayPal extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'Srmklive\PayPal\PayPalFacadeAccessor';
+    }
+}

@@ -1,0 +1,36 @@
+[23-Mar-2024 12:20:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php on line 18
+[23-Mar-2024 12:20:11 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php on line 18
+[23-Mar-2024 12:20:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php on line 20
+[23-Mar-2024 12:20:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 18
+[23-Mar-2024 12:20:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php on line 20
+[23-Mar-2024 12:20:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php on line 20
+[23-Mar-2024 12:20:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php on line 20
+[23-Mar-2024 12:20:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php on line 20
+[23-Mar-2024 12:20:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php on line 20

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:219d729ecd903e93a03853e6887e2f146e3354ac5f1c858d7f763d33046d06e9
-size 678
+<?php
+
+namespace Spatie\LaravelIgnition\Facades;
+
+use Illuminate\Support\Facades\Facade;
+use Spatie\LaravelIgnition\Support\SentReports;
+
+/**
+ * @method static void glow(string $name, string $messageLevel = \Spatie\FlareClient\Enums\MessageLevels::INFO, array $metaData = [])
+ * @method static void context($key, $value)
+ * @method static void group(string $groupName, array $properties)
+ *
+ * @see \Spatie\FlareClient\Flare
+ */
+class Flare extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return \Spatie\FlareClient\Flare::class;
+    }
+
+    public static function sentReports(): SentReports
+    {
+        return app(SentReports::class);
+    }
+}

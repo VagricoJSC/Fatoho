@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccc83721ac0af61ab4feb13a0f548d948ebd956fb8c9248920ddf6909ac84395
-size 425
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Exception;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class RuntimeException extends \RuntimeException implements ExceptionInterface
+{
+}

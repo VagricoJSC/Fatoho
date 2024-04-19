@@ -1,0 +1,8 @@
+[01-Apr-2024 16:15:06 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Mention\Generator\MentionGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Mention/Generator/CallbackGenerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Mention/Generator/CallbackGenerator.php on line 19
+[01-Apr-2024 17:11:30 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Mention\Generator\MentionGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php on line 19

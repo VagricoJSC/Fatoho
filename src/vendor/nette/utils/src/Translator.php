@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e307e67d7a8148e8ebeaa683e3764b3b6b816a31107eac95bb8dca76fb540de8
-size 428
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Localization;
+
+
+/**
+ * Translator adapter.
+ */
+interface Translator
+{
+	/**
+	 * Translates the given string.
+	 */
+	function translate(string|\Stringable $message, mixed ...$parameters): string|\Stringable;
+}
+
+
+interface_exists(ITranslator::class);

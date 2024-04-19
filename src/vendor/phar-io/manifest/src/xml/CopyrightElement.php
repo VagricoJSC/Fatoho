@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0c09bfb14779defe4cd4a5fd1f11796e488999148ed7dc5cd3a63d8c3466ce2
-size 780
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class CopyrightElement extends ManifestElement {
+    public function getAuthorElements(): AuthorElementCollection {
+        return new AuthorElementCollection(
+            $this->getChildrenByName('author')
+        );
+    }
+
+    public function getLicenseElement(): LicenseElement {
+        return new LicenseElement(
+            $this->getChildByName('license')
+        );
+    }
+}

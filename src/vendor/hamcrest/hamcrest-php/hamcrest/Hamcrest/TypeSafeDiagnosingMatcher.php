@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad646e2d826b6222a6d9364daf59b2d4d2ac1f8df9cc3fc9852abf2ce9e009ac
-size 841
+<?php
+namespace Hamcrest;
+
+/**
+ * Convenient base class for Matchers that require a value of a specific type.
+ * This simply checks the type and then casts.
+ */
+
+abstract class TypeSafeDiagnosingMatcher extends TypeSafeMatcher
+{
+
+    final public function matchesSafely($item)
+    {
+        return $this->matchesSafelyWithDiagnosticDescription($item, new NullDescription());
+    }
+
+    final public function describeMismatchSafely($item, Description $mismatchDescription)
+    {
+        $this->matchesSafelyWithDiagnosticDescription($item, $mismatchDescription);
+    }
+
+    // -- Protected Methods
+
+    /**
+     * Subclasses should implement these. The item will already have been checked for
+     * the specific type.
+     */
+    abstract protected function matchesSafelyWithDiagnosticDescription($item, Description $mismatchDescription);
+}

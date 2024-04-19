@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cd515d6994bf311c54b488e01da7bffe89849937fea41e88a42c14b30b51b98
-size 354
+<?php
+
+namespace Illuminate\Foundation\Events;
+
+class LocaleUpdated
+{
+    /**
+     * The new locale.
+     *
+     * @var string
+     */
+    public $locale;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $locale
+     * @return void
+     */
+    public function __construct($locale)
+    {
+        $this->locale = $locale;
+    }
+}

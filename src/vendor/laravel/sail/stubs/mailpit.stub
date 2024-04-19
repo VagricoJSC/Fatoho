@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c3a2b6e4d1bab04efaba9ab632ba4ec9164c0d95502991a1d99ab55498fb3cf
-size 189
+mailpit:
+    image: 'axllent/mailpit:latest'
+    ports:
+        - '${FORWARD_MAILPIT_PORT:-1025}:1025'
+        - '${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025'
+    networks:
+        - sail

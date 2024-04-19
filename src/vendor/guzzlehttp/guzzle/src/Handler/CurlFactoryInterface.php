@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45c39beffa0038ce2c728b955d70f2fd3f21e345a12b322f120ba3e6cfc781ea
-size 657
+<?php
+
+namespace GuzzleHttp\Handler;
+
+use Psr\Http\Message\RequestInterface;
+
+interface CurlFactoryInterface
+{
+    /**
+     * Creates a cURL handle resource.
+     *
+     * @param RequestInterface $request Request
+     * @param array            $options Transfer options
+     *
+     * @throws \RuntimeException when an option cannot be applied
+     */
+    public function create(RequestInterface $request, array $options): EasyHandle;
+
+    /**
+     * Release an easy handle, allowing it to be reused or closed.
+     *
+     * This function must call unset on the easy handle's "handle" property.
+     */
+    public function release(EasyHandle $easy): void;
+}

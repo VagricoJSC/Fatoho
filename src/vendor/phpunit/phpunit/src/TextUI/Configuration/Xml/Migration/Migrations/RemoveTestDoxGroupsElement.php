@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f06e47285c0d4863a111e1ff98d8c638638a7e81c53743bbfc734de79758361
-size 798
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use DOMDocument;
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class RemoveTestDoxGroupsElement implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $node = $document->getElementsByTagName('testdoxGroups')->item(0);
+
+        if (!$node instanceof DOMElement || $node->parentNode === null) {
+            return;
+        }
+
+        $node->parentNode->removeChild($node);
+    }
+}

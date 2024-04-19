@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dee989d64ad0f61edb9e0b85ad3341d17da23d5255afe6f7b7c023af2d3b12cc
-size 967
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+use Intervention\Image\Exception\RuntimeException;
+
+class ResetCommand extends AbstractCommand
+{
+    /**
+     * Resets given image to its backup state
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $backupName = $this->argument(0)->value();
+        $backup = $image->getBackup($backupName);
+        
+        if (is_resource($backup) || $backup instanceof \GdImage) {
+
+            // destroy current resource
+            imagedestroy($image->getCore());
+
+            // clone backup
+            $backup = $image->getDriver()->cloneCore($backup);
+
+            // reset to new resource
+            $image->setCore($backup);
+
+            return true;
+        }
+
+        throw new RuntimeException(
+            "Backup not available. Call backup() before reset()."
+        );
+    }
+}

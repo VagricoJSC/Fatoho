@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1cb6fba007e13a1c5286e076bcab7ea88796248723d84207ee76ea51f100e9d
-size 785
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Console\Output;
+
+/**
+ * ConsoleOutputInterface is the interface implemented by ConsoleOutput class.
+ * This adds information about stderr and section output stream.
+ *
+ * @author Dariusz Górecki <darek.krk@gmail.com>
+ */
+interface ConsoleOutputInterface extends OutputInterface
+{
+    /**
+     * Gets the OutputInterface for errors.
+     */
+    public function getErrorOutput(): OutputInterface;
+
+    public function setErrorOutput(OutputInterface $error);
+
+    public function section(): ConsoleSectionOutput;
+}

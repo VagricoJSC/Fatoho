@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1aeb693b390fee9ae01cf4aedea39555d6ad6fc8bc8759e284cb3e99b70c630
-size 285
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class DomainAcceptsNoMail implements Reason
+{
+    public function code() : int
+    {
+        return 154;
+    }
+
+    public function description() : string
+    {
+        return 'Domain accepts no mail (Null MX, RFC7505)';
+    }
+}

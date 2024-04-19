@@ -1,0 +1,4 @@
+[03-Apr-2024 18:28:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php on line 8

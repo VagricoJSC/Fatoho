@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8aeeb454441e9a6305ede675d50c823864ee24b681e00c932bc6008477ff655
-size 259
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class ObsoleteDTEXT extends Warning
+{
+    public const CODE = 71;
+
+    public function __construct()
+    {
+        $this->rfcNumber = 5322;
+        $this->message = 'Obsolete DTEXT in domain literal';
+    }
+}

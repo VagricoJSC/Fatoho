@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d5ae41410b8f653f6fcda9caf92ec0ae4feb8f70c3dcb072392610dbdde6e94
-size 798
+<?php
+
+namespace Spatie\FlareClient\Http\Exceptions;
+
+use Exception;
+use Spatie\FlareClient\Http\Response;
+
+class BadResponseCode extends Exception
+{
+    public Response $response;
+
+    /**
+     * @var array<int, mixed>
+     */
+    public array $errors = [];
+
+    public static function createForResponse(Response $response): self
+    {
+        $exception = new self(static::getMessageForResponse($response));
+
+        $exception->response = $response;
+
+        $bodyErrors = isset($response->getBody()['errors']) ? $response->getBody()['errors'] : [];
+
+        $exception->errors = $bodyErrors;
+
+        return $exception;
+    }
+
+    public static function getMessageForResponse(Response $response): string
+    {
+        return "Response code {$response->getHttpResponseCode()} returned";
+    }
+}

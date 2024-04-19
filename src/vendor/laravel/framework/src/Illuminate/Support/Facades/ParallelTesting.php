@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36a0dd996e46778c1b4052201d3bb65c278b988ccf827b556b239ae41c15de51
-size 1252
+<?php
+
+namespace Illuminate\Support\Facades;
+
+/**
+ * @method static void resolveOptionsUsing(\Closure|null $resolver)
+ * @method static void resolveTokenUsing(\Closure|null $resolver)
+ * @method static void setUpProcess(callable $callback)
+ * @method static void setUpTestCase(callable $callback)
+ * @method static void setUpTestDatabase(callable $callback)
+ * @method static void tearDownProcess(callable $callback)
+ * @method static void tearDownTestCase(callable $callback)
+ * @method static void callSetUpProcessCallbacks()
+ * @method static void callSetUpTestCaseCallbacks(\Illuminate\Foundation\Testing\TestCase $testCase)
+ * @method static void callSetUpTestDatabaseCallbacks(string $database)
+ * @method static void callTearDownProcessCallbacks()
+ * @method static void callTearDownTestCaseCallbacks(\Illuminate\Foundation\Testing\TestCase $testCase)
+ * @method static mixed option(string $option)
+ * @method static string|false token()
+ *
+ * @see \Illuminate\Testing\ParallelTesting
+ */
+class ParallelTesting extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return \Illuminate\Testing\ParallelTesting::class;
+    }
+}

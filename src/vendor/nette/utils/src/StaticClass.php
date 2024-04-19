@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5209356576a7476ea7cdbc0beee22a3e6b0736b1b977b41f0ca4dbccbf72461e
-size 550
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette;
+
+
+/**
+ * Static class.
+ */
+trait StaticClass
+{
+	/**
+	 * @return never
+	 * @throws \Error
+	 */
+	final public function __construct()
+	{
+		throw new \Error('Class ' . static::class . ' is static and cannot be instantiated.');
+	}
+
+
+	/**
+	 * Call to undefined static method.
+	 * @throws MemberAccessException
+	 */
+	public static function __callStatic(string $name, array $args): mixed
+	{
+		Utils\ObjectHelpers::strictStaticCall(static::class, $name);
+	}
+}

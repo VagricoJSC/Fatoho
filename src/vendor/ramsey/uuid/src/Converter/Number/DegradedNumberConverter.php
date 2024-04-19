@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e8a4292e62a988cc9cf447c72924d2a81c8983ff131ce9a81d46ed4caadb487
-size 622
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Converter\Number;
+
+/**
+ * @deprecated DegradedNumberConverter is no longer necessary for converting
+ *     numbers on 32-bit systems. Transition to {@see GenericNumberConverter}.
+ *
+ * @psalm-immutable
+ */
+class DegradedNumberConverter extends BigNumberConverter
+{
+}

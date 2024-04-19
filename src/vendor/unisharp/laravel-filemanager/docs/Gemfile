@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a0d7777b7e0210c4785e75f01ecebea2c529a175a42db7bede9c074fc6c32a9
-size 73
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7499d7e6db37e2ec9f63312caa848959d153a40fb8354c15cec591870d75112d
-size 659
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node\Stmt;
+
+class InlineHTML extends Stmt
+{
+    /** @var string String */
+    public $value;
+
+    /**
+     * Constructs an inline HTML node.
+     *
+     * @param string $value      String
+     * @param array  $attributes Additional attributes
+     */
+    public function __construct(string $value, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->value = $value;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['value'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_InlineHTML';
+    }
+}

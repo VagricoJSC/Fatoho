@@ -1,0 +1,40 @@
+[23-Mar-2024 04:01:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 12
+[23-Mar-2024 04:01:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php on line 4
+[23-Mar-2024 04:01:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php on line 4
+[23-Mar-2024 04:01:36 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 4
+[23-Mar-2024 04:01:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 4
+[03-Apr-2024 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php on line 4
+[03-Apr-2024 09:50:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php on line 4
+[03-Apr-2024 09:51:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 4
+[03-Apr-2024 09:51:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 4
+[03-Apr-2024 13:49:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 12

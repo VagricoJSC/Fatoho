@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c401e8a6bb4a990a0fb46a0910e62b33b2938ea43f079264d2b20781f0d3bc28
-size 484
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an UPLOAD_ERR_FORM_SIZE error occurred with UploadedFile.
+ *
+ * @author Florent Mata <florentmata@gmail.com>
+ */
+class FormSizeFileException extends FileException
+{
+}

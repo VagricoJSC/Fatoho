@@ -1,0 +1,40 @@
+[22-Mar-2024 23:40:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/ListCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/ListCommand.php on line 26
+[22-Mar-2024 23:40:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/LazyCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/LazyCommand.php on line 27
+[22-Mar-2024 23:40:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/HelpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/HelpCommand.php on line 26
+[22-Mar-2024 23:40:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/DumpCompletionCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/DumpCompletionCommand.php on line 28
+[22-Mar-2024 23:40:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/CompleteCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/CompleteCommand.php on line 33
+[03-Apr-2024 07:46:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/ListCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/ListCommand.php on line 26
+[03-Apr-2024 07:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/LazyCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/LazyCommand.php on line 27
+[03-Apr-2024 07:46:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/HelpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/HelpCommand.php on line 26
+[03-Apr-2024 07:46:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/CompleteCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/CompleteCommand.php on line 33
+[03-Apr-2024 08:23:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/DumpCompletionCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Command/DumpCompletionCommand.php on line 28

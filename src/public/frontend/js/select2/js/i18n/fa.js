@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45c64b71ad8791dcd797e8580037277b0cc4d9b4b94a266c3d15750304ab3832
-size 1023
+/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
+
+!function(){if(jQuery&&jQuery.fn&&jQuery.fn.select2&&jQuery.fn.select2.amd)var n=jQuery.fn.select2.amd;n.define("select2/i18n/fa",[],function(){return{errorLoading:function(){return"امکان بارگذاری نتایج وجود ندارد."},inputTooLong:function(n){return"لطفاً "+(n.input.length-n.maximum)+" کاراکتر را حذف نمایید"},inputTooShort:function(n){return"لطفاً تعداد "+(n.minimum-n.input.length)+" کاراکتر یا بیشتر وارد نمایید"},loadingMore:function(){return"در حال بارگذاری نتایج بیشتر..."},maximumSelected:function(n){return"شما تنها می‌توانید "+n.maximum+" آیتم را انتخاب نمایید"},noResults:function(){return"هیچ نتیجه‌ای یافت نشد"},searching:function(){return"در حال جستجو..."},removeAllItems:function(){return"همه موارد را حذف کنید"}}}),n.define,n.require}();

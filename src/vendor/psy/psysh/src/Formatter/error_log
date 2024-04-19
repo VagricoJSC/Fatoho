@@ -1,0 +1,32 @@
+[23-Mar-2024 02:18:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 23
+[23-Mar-2024 02:18:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/Formatter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/Formatter.php on line 19
+[23-Mar-2024 02:18:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php on line 20
+[23-Mar-2024 02:18:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php on line 20
+[01-Apr-2024 13:28:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 23
+[01-Apr-2024 13:28:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/Formatter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/Formatter.php on line 19
+[01-Apr-2024 13:28:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php on line 20
+[01-Apr-2024 13:29:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php on line 20

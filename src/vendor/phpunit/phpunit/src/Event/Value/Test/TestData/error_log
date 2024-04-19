@@ -1,0 +1,9 @@
+[03-Apr-2024 20:46:29 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\TestData\TestDataCollection::getIterator(): PHPUnit\Event\TestData\TestDataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\TestData\TestDataCollectionIterator is not available in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/TestDataCollection.php on line 82
+[03-Apr-2024 20:46:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php on line 17
+[03-Apr-2024 20:46:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php on line 17

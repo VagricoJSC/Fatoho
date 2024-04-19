@@ -1,0 +1,72 @@
+[23-Mar-2024 02:18:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/TypeErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/TypeErrorException.php on line 17
+[23-Mar-2024 02:18:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php on line 14
+[23-Mar-2024 02:19:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ThrowUpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ThrowUpException.php on line 17
+[23-Mar-2024 02:19:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/RuntimeException.php on line 17
+[23-Mar-2024 02:19:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Error" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ParseErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ParseErrorException.php on line 17
+[23-Mar-2024 02:19:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/FatalErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/FatalErrorException.php on line 17
+[23-Mar-2024 02:19:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ErrorException.php on line 17
+[23-Mar-2024 02:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/DeprecatedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/DeprecatedException.php on line 17
+[23-Mar-2024 02:19:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/BreakException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/BreakException.php on line 17
+[01-Apr-2024 13:28:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php on line 14
+[01-Apr-2024 13:28:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/TypeErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/TypeErrorException.php on line 17
+[01-Apr-2024 13:28:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ThrowUpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ThrowUpException.php on line 17
+[01-Apr-2024 13:28:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/RuntimeException.php on line 17
+[01-Apr-2024 13:28:16 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Error" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ParseErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ParseErrorException.php on line 17
+[01-Apr-2024 13:28:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/FatalErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/FatalErrorException.php on line 17
+[01-Apr-2024 13:28:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/ErrorException.php on line 17
+[01-Apr-2024 13:28:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/DeprecatedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/DeprecatedException.php on line 17
+[01-Apr-2024 13:28:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/BreakException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Exception/BreakException.php on line 17

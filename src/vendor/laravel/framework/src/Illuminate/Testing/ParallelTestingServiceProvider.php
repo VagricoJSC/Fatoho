@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc5bbe4a7aafe5fad509e641bace30d47d86dcbe5a2058d5713ab5934db49a61
-size 849
+<?php
+
+namespace Illuminate\Testing;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Testing\Concerns\TestDatabases;
+
+class ParallelTestingServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    use TestDatabases;
+
+    /**
+     * Boot the application's service providers.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->bootTestDatabase();
+        }
+    }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->app->singleton(ParallelTesting::class, function () {
+                return new ParallelTesting($this->app);
+            });
+        }
+    }
+}

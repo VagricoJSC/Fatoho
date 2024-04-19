@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70e8d7f03af3e36e026535fd3db156bc70e223d4433ec3ae3398fde78ee34d00
-size 617
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Zuza Software Foundation (Translate.org.za) Dwayne Bailey dwayne@translate.org.za
+ */
+return array_replace_recursive(require __DIR__.'/en.php', [
+    'formats' => [
+        'LT' => 'HH:mm',
+        'LTS' => 'HH:mm:ss',
+        'L' => 'DD/MM/YY',
+        'LL' => 'MMMM DD, YYYY',
+        'LLL' => 'DD MMM HH:mm',
+        'LLLL' => 'MMMM DD, YYYY HH:mm',
+    ],
+    'day_of_first_week_of_year' => 1,
+]);

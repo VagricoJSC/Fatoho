@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04d7e0c1206075b4e80dfbcb6ba25d7de845421bdb31f85882daba905cbc407d
-size 363
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - information from native speaker Pablo Saratxaga pablo@mandrakesoft.com
+ */
+return require __DIR__.'/pap.php';

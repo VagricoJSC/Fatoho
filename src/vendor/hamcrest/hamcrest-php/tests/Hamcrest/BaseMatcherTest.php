@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8df7468cada6e8ec7bf5f14af75705dd75a7e69c360203a7eb1fb5649be4c4e1
-size 535
+<?php
+namespace Hamcrest;
+
+/* Test-specific subclass only */
+class BaseMatcherTest extends \Hamcrest\BaseMatcher
+{
+
+    public function matches($item)
+    {
+        throw new \RuntimeException();
+    }
+
+    public function describeTo(\Hamcrest\Description $description)
+    {
+        $description->appendText('SOME DESCRIPTION');
+    }
+
+    public function testDescribesItselfWithToStringMethod()
+    {
+        $someMatcher = new \Hamcrest\SomeMatcher();
+        $this->assertEquals('SOME DESCRIPTION', (string) $someMatcher);
+    }
+}

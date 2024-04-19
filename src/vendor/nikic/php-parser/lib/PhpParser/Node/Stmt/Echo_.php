@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d6f02629b9372d002690177fe6f9977fd260cbd9a9d7b9938e56866ae79f528
-size 659
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Echo_ extends Node\Stmt
+{
+    /** @var Node\Expr[] Expressions */
+    public $exprs;
+
+    /**
+     * Constructs an echo node.
+     *
+     * @param Node\Expr[] $exprs      Expressions
+     * @param array       $attributes Additional attributes
+     */
+    public function __construct(array $exprs, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->exprs = $exprs;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['exprs'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Echo';
+    }
+}

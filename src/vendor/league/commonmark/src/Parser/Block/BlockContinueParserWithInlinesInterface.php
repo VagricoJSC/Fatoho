@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8265f37d7cbe75ff90044fe2505b9f7b91efdb9ed3b2a0e0c89b0d8304e40b81
-size 617
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Parser\Block;
+
+use League\CommonMark\Parser\InlineParserEngineInterface;
+
+interface BlockContinueParserWithInlinesInterface extends BlockContinueParserInterface
+{
+    /**
+     * Parse any inlines inside of the current block
+     */
+    public function parseInlines(InlineParserEngineInterface $inlineParser): void;
+}

@@ -1,0 +1,156 @@
+[03-Apr-2024 18:53:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php on line 30
+[03-Apr-2024 18:53:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php:86
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php on line 86
+[03-Apr-2024 18:53:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php on line 23
+[03-Apr-2024 18:53:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php on line 51
+[03-Apr-2024 18:53:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php:84
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php on line 84
+[03-Apr-2024 18:53:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php on line 69
+[03-Apr-2024 18:53:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php on line 39
+[03-Apr-2024 18:53:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php:103
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php on line 103
+[03-Apr-2024 18:53:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php on line 29
+[03-Apr-2024 18:53:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php:184
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php on line 184
+[03-Apr-2024 18:54:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php on line 35
+[03-Apr-2024 18:54:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php on line 28
+[03-Apr-2024 18:54:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php on line 21
+[03-Apr-2024 18:54:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php on line 57
+[03-Apr-2024 18:54:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php on line 47
+[03-Apr-2024 18:54:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php on line 16
+[03-Apr-2024 18:54:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php on line 22
+[03-Apr-2024 18:54:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php on line 23
+[03-Apr-2024 18:54:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php on line 43
+[03-Apr-2024 18:54:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php on line 59
+[03-Apr-2024 18:54:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php on line 39
+[03-Apr-2024 18:54:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php on line 35
+[03-Apr-2024 18:54:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php on line 85
+[03-Apr-2024 18:54:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php on line 24
+[03-Apr-2024 18:54:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php on line 36
+[03-Apr-2024 18:55:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php on line 60
+[03-Apr-2024 18:55:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php on line 40
+[03-Apr-2024 18:55:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php:90
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php on line 90
+[03-Apr-2024 18:55:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php on line 109
+[03-Apr-2024 18:55:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php on line 16
+[03-Apr-2024 18:55:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php on line 24
+[03-Apr-2024 18:55:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php on line 20
+[03-Apr-2024 18:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php on line 58
+[03-Apr-2024 18:55:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php on line 52
+[03-Apr-2024 18:55:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php on line 36
+[03-Apr-2024 18:55:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php on line 49
+[03-Apr-2024 18:55:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php on line 70
+[03-Apr-2024 18:55:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php on line 24
+[03-Apr-2024 18:55:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php on line 134

@@ -1,0 +1,1 @@
+[01-Apr-2024 16:03:40 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Validation\ValidatesRequests" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Http/Controllers/ExecuteSolutionController.php on line 11

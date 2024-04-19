@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c7130a181ca5957c87f836da20c8d5fedf8cf8c167f327f77497088e5886f54
-size 1080
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use function assert;
+use DOMDocument;
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class RenameBeStrictAboutCoversAnnotationAttribute implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $root = $document->documentElement;
+
+        assert($root instanceof DOMElement);
+
+        if ($root->hasAttribute('beStrictAboutCoverageMetadata')) {
+            return;
+        }
+
+        if (!$root->hasAttribute('beStrictAboutCoversAnnotation')) {
+            return;
+        }
+
+        $root->setAttribute('beStrictAboutCoverageMetadata', $root->getAttribute('beStrictAboutCoversAnnotation'));
+        $root->removeAttribute('beStrictAboutCoversAnnotation');
+    }
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67ca516d0734b658077ab985f93638b9fec6d51032b3d5f229e6bf7f52fa8eed
-size 337
+<?php
+
+namespace Faker\Provider\en_UG;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '+256 7## ### ###',
+        '+2567########',
+        '+256 4## ### ###',
+        '+2564########',
+        '07## ### ###',
+        '07########',
+        '04## ### ###',
+        '04########',
+    ];
+}

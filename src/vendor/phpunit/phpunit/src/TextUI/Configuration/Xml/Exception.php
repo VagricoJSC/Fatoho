@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55f9972cbba3b5d4b59fa8ed88bfb38eca175813dd4bdd97ca8fff2fd5dbf539
-size 498
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class Exception extends RuntimeException implements \PHPUnit\Exception
+{
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0a8a3049ba0f6dc617f14b60456448e0402a4ead2be41b7cfecfa41efc4981b
-size 808
+<?php
+
+namespace Illuminate\Database\Events;
+
+use Illuminate\Contracts\Database\Events\MigrationEvent as MigrationEventContract;
+use Illuminate\Database\Migrations\Migration;
+
+abstract class MigrationEvent implements MigrationEventContract
+{
+    /**
+     * A migration instance.
+     *
+     * @var \Illuminate\Database\Migrations\Migration
+     */
+    public $migration;
+
+    /**
+     * The migration method that was called.
+     *
+     * @var string
+     */
+    public $method;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Database\Migrations\Migration  $migration
+     * @param  string  $method
+     * @return void
+     */
+    public function __construct(Migration $migration, $method)
+    {
+        $this->method = $method;
+        $this->migration = $migration;
+    }
+}

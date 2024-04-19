@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ab7f7e7b3c8659e570f96108dd45bbd29c4e23ab50dc2b579e854c7e5cedfab
-size 621
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation;
+
+/**
+ * RequestMatcherInterface is an interface for strategies to match a Request.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface RequestMatcherInterface
+{
+    /**
+     * Decides whether the rule(s) implemented by the strategy matches the supplied request.
+     */
+    public function matches(Request $request): bool;
+}

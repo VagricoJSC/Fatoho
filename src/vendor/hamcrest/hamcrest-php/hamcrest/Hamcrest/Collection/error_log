@@ -1,0 +1,16 @@
+[27-Mar-2024 00:49:03 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsTraversableWithSize.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsTraversableWithSize.php on line 14
+[27-Mar-2024 00:49:07 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsEmptyTraversable.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsEmptyTraversable.php on line 13
+[03-Apr-2024 17:12:20 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsTraversableWithSize.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsTraversableWithSize.php on line 14
+[03-Apr-2024 17:12:25 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsEmptyTraversable.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsEmptyTraversable.php on line 13

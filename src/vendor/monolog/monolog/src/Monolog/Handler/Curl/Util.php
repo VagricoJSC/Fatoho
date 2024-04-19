@@ -1,3 +1,69 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a0e4f4a7d20d9edabe1f3ca76806a3a7b1b5cfc226b6b45e0cc17ac2d6b0898
-size 1794
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Handler\Curl;
+
+use CurlHandle;
+
+/**
+ * This class is marked as internal and it is not under the BC promise of the package.
+ *
+ * @internal
+ */
+final class Util
+{
+    /** @var array<int> */
+    private static array $retriableErrorCodes = [
+        CURLE_COULDNT_RESOLVE_HOST,
+        CURLE_COULDNT_CONNECT,
+        CURLE_HTTP_NOT_FOUND,
+        CURLE_READ_ERROR,
+        CURLE_OPERATION_TIMEOUTED,
+        CURLE_HTTP_POST_ERROR,
+        CURLE_SSL_CONNECT_ERROR,
+    ];
+
+    /**
+     * Executes a CURL request with optional retries and exception on failure
+     *
+     * @param  CurlHandle  $ch curl handler
+     * @return bool|string @see curl_exec
+     */
+    public static function execute(CurlHandle $ch, int $retries = 5, bool $closeAfterDone = true)
+    {
+        while ($retries--) {
+            $curlResponse = curl_exec($ch);
+            if ($curlResponse === false) {
+                $curlErrno = curl_errno($ch);
+
+                if (false === in_array($curlErrno, self::$retriableErrorCodes, true) || $retries === 0) {
+                    $curlError = curl_error($ch);
+
+                    if ($closeAfterDone) {
+                        curl_close($ch);
+                    }
+
+                    throw new \RuntimeException(sprintf('Curl error (code %d): %s', $curlErrno, $curlError));
+                }
+
+                continue;
+            }
+
+            if ($closeAfterDone) {
+                curl_close($ch);
+            }
+
+            return $curlResponse;
+        }
+
+        return false;
+    }
+}

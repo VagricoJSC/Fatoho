@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c93a7317428ba2a9302ed9225f7f7dc5efcd31042b0b547dbd0d6f2b10bd765
-size 1368
+<?php
+/**
+ * @package php-svg-lib
+ * @link    http://github.com/PhenX/php-svg-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license GNU LGPLv3+ http://www.gnu.org/copyleft/lesser.html
+ */
+
+namespace Svg\Tag;
+
+use Svg\Style;
+
+class Rect extends Shape
+{
+    protected $x = 0;
+    protected $y = 0;
+    protected $width = 0;
+    protected $height = 0;
+    protected $rx = 0;
+    protected $ry = 0;
+
+    public function start($attributes)
+    {
+        $width = $this->document->getWidth();
+        $height = $this->document->getHeight();
+
+        if (isset($attributes['x'])) {
+            $this->x = $this->convertSize($attributes['x'], $width);
+        }
+        if (isset($attributes['y'])) {
+            $this->y = $this->convertSize($attributes['y'], $height);
+        }
+
+        if (isset($attributes['width'])) {
+            $this->width = $this->convertSize($attributes['width'], $width);
+        }
+        if (isset($attributes['height'])) {
+            $this->height = $this->convertSize($attributes['height'], $height);
+        }
+
+        if (isset($attributes['rx'])) {
+            $this->rx = $attributes['rx'];
+        }
+        if (isset($attributes['ry'])) {
+            $this->ry = $attributes['ry'];
+        }
+
+        $this->document->getSurface()->rect($this->x, $this->y, $this->width, $this->height, $this->rx, $this->ry);
+    }
+} 

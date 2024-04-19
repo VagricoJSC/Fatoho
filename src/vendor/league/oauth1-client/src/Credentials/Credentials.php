@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:517f6ac3022862830e87dc45ea19afe028d0063c1b2d66ee2c336be285f08427
-size 800
+<?php
+
+namespace League\OAuth1\Client\Credentials;
+
+abstract class Credentials implements CredentialsInterface
+{
+    /**
+     * The credentials identifier.
+     *
+     * @var string
+     */
+    protected $identifier;
+
+    /**
+     * The credentials secret.
+     *
+     * @var string
+     */
+    protected $secret;
+
+    /**
+     * @inheritDoc
+     */
+    public function getIdentifier()
+    {
+        return $this->identifier;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setIdentifier($identifier)
+    {
+        $this->identifier = $identifier;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getSecret()
+    {
+        return $this->secret;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setSecret($secret)
+    {
+        $this->secret = $secret;
+    }
+}

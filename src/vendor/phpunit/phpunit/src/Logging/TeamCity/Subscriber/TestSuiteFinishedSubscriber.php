@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74a08d0c73cfb9c82795617763441de71ed11e234003bfc91bdd8ad074e6d7d4
-size 690
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\TeamCity;
+
+use PHPUnit\Event\TestSuite\Finished;
+use PHPUnit\Event\TestSuite\FinishedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestSuiteFinishedSubscriber extends Subscriber implements FinishedSubscriber
+{
+    public function notify(Finished $event): void
+    {
+        $this->logger()->testSuiteFinished($event);
+    }
+}

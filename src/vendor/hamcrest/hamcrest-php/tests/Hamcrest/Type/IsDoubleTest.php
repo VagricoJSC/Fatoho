@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ccf4be60f326d436434b7f76cc7bd7fdef8f14bc890dcf69d81d12a46eecd6c
-size 950
+<?php
+namespace Hamcrest\Type;
+
+class IsDoubleTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Type\IsDouble::doubleValue();
+    }
+
+    public function testEvaluatesToTrueIfArgumentMatchesType()
+    {
+        assertThat((float) 5.2, floatValue());
+        assertThat((double) 5.3, doubleValue());
+    }
+
+    public function testEvaluatesToFalseIfArgumentDoesntMatchType()
+    {
+        assertThat(false, not(doubleValue()));
+        assertThat(5, not(doubleValue()));
+        assertThat('foo', not(doubleValue()));
+    }
+
+    public function testHasAReadableDescription()
+    {
+        $this->assertDescription('a double', doubleValue());
+    }
+
+    public function testDecribesActualTypeInMismatchMessage()
+    {
+        $this->assertMismatchDescription('was null', doubleValue(), null);
+        $this->assertMismatchDescription('was a string "foo"', doubleValue(), 'foo');
+    }
+}

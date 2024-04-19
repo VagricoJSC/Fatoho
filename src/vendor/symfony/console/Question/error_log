@@ -1,0 +1,16 @@
+[22-Mar-2024 23:33:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Question\Question" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ConfirmationQuestion.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ConfirmationQuestion.php on line 19
+[22-Mar-2024 23:33:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Question\Question" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ChoiceQuestion.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ChoiceQuestion.php on line 21
+[03-Apr-2024 07:31:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Question\Question" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ChoiceQuestion.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ChoiceQuestion.php on line 21
+[03-Apr-2024 08:13:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Question\Question" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ConfirmationQuestion.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Question/ConfirmationQuestion.php on line 19

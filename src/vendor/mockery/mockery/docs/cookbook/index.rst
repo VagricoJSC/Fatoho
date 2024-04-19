@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a592762f64a621555d476c739ea270dfe7186bd2dec635dcfbd576e31608ebf7
-size 273
+Cookbook
+========
+
+.. toctree::
+    :hidden:
+
+    default_expectations
+    detecting_mock_objects
+    not_calling_the_constructor
+    mocking_hard_dependencies
+    class_constants
+    big_parent_class
+    mockery_on
+    mocking_class_within_class
+
+.. include:: map.rst.inc

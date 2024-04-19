@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:330b3de3182b2b61e7d53a9f9eb210f37535f8f86cb955b065b8da102bb7a818
-size 912
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions\SolutionProviders;
+
+use Illuminate\Database\QueryException;
+use Spatie\Ignition\Contracts\HasSolutionsForThrowable;
+use Spatie\LaravelIgnition\Solutions\SuggestUsingCorrectDbNameSolution;
+use Throwable;
+
+class DefaultDbNameSolutionProvider implements HasSolutionsForThrowable
+{
+    const MYSQL_UNKNOWN_DATABASE_CODE = 1049;
+
+    public function canSolve(Throwable $throwable): bool
+    {
+        if (! $throwable instanceof QueryException) {
+            return false;
+        }
+
+        if ($throwable->getCode() !== self::MYSQL_UNKNOWN_DATABASE_CODE) {
+            return false;
+        }
+
+        if (! in_array(env('DB_DATABASE'), ['homestead', 'laravel'])) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function getSolutions(Throwable $throwable): array
+    {
+        return [new SuggestUsingCorrectDbNameSolution()];
+    }
+}

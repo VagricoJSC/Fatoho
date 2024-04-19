@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2053ea7607b479ededa4b00a9bdb61e0531e03b955bb1756b67b6f21d61b5357
-size 531
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+
+final class SymbolicLinkEncountered extends RuntimeException implements FilesystemException
+{
+    private string $location;
+
+    public function location(): string
+    {
+        return $this->location;
+    }
+
+    public static function atLocation(string $pathName): SymbolicLinkEncountered
+    {
+        $e = new static("Unsupported symbolic link encountered at location $pathName");
+        $e->location = $pathName;
+
+        return $e;
+    }
+}

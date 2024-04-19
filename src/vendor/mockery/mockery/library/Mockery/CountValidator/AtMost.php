@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:454918f95d19655f18ac1b1d5470383d4c5cb0a73c32b9f3d5b64e08c7529a2a
-size 1307
+<?php
+/**
+ * Mockery
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://github.com/padraic/mockery/blob/master/LICENSE
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to padraic@php.net so we can send you a copy immediately.
+ *
+ * @category   Mockery
+ * @package    Mockery
+ * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
+ */
+
+namespace Mockery\CountValidator;
+
+use Mockery;
+
+class AtMost extends CountValidatorAbstract
+{
+    /**
+     * Validate the call count against this validator
+     *
+     * @param int $n
+     * @return bool
+     */
+    public function validate($n)
+    {
+        if ($this->_limit < $n) {
+            $exception = new Mockery\Exception\InvalidCountException(
+                'Method ' . (string) $this->_expectation
+                . ' from ' . $this->_expectation->getMock()->mockery_getName()
+                . ' should be called' . PHP_EOL
+                . ' at most ' . $this->_limit . ' times but called ' . $n
+                . ' times.'
+            );
+            $exception->setMock($this->_expectation->getMock())
+                ->setMethodName((string) $this->_expectation)
+                ->setExpectedCountComparative('<=')
+                ->setExpectedCount($this->_limit)
+                ->setActualCount($n);
+            throw $exception;
+        }
+    }
+}

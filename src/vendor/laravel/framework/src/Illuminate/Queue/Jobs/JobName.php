@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:686bb30db704333273719768ad22e312bb13fee5e4e65624673ddd65f7867915
-size 670
+<?php
+
+namespace Illuminate\Queue\Jobs;
+
+use Illuminate\Support\Str;
+
+class JobName
+{
+    /**
+     * Parse the given job name into a class / method array.
+     *
+     * @param  string  $job
+     * @return array
+     */
+    public static function parse($job)
+    {
+        return Str::parseCallback($job, 'fire');
+    }
+
+    /**
+     * Get the resolved name of the queued job class.
+     *
+     * @param  string  $name
+     * @param  array  $payload
+     * @return string
+     */
+    public static function resolve($name, $payload)
+    {
+        if (! empty($payload['displayName'])) {
+            return $payload['displayName'];
+        }
+
+        return $name;
+    }
+}

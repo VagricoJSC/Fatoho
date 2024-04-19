@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8fb6bcb0126c1cc9c0030c4a4d0f571139cd8da74bc99a4eb0bb47d478f76bd
-size 1105
+<?php
+
+namespace UniSharp\LaravelFilemanager\Middlewares;
+
+use Closure;
+use Illuminate\Support\Str;
+use UniSharp\LaravelFilemanager\Lfm;
+
+class MultiUser
+{
+    private $helper;
+
+    public function __construct()
+    {
+        $this->helper = app(Lfm::class);
+    }
+
+    public function handle($request, Closure $next)
+    {
+        if ($this->helper->allowFolderType('user')) {
+            $previous_dir = $request->input('working_dir');
+            $working_dir = $this->helper->getRootFolder('user');
+
+            if ($previous_dir == null) {
+                $request->merge(compact('working_dir'));
+            } elseif (! $this->validDir($previous_dir)) {
+                $request->replace(compact('working_dir'));
+            }
+        }
+
+        return $next($request);
+    }
+
+    private function validDir($previous_dir)
+    {
+        if (Str::startsWith($previous_dir, $this->helper->getRootFolder('share'))) {
+            return true;
+        }
+
+        if (Str::startsWith($previous_dir, $this->helper->getRootFolder('user'))) {
+            return true;
+        }
+
+        return false;
+    }
+}

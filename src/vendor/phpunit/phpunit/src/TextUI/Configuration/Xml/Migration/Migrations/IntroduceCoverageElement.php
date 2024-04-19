@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2c34c2066aa18283fe2b7393368816d25cdfb583a77c78172358492a04cb9a3
-size 747
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use DOMDocument;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class IntroduceCoverageElement implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $coverage = $document->createElement('coverage');
+
+        $document->documentElement->insertBefore(
+            $coverage,
+            $document->documentElement->firstChild
+        );
+    }
+}

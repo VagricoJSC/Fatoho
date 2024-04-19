@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16a8048561c95b925c180d688a453a4e97d55759aced16a2441057420a60f04b
-size 517
+<?php
+
+namespace Illuminate\Contracts\Console;
+
+interface Application
+{
+    /**
+     * Run an Artisan console command by name.
+     *
+     * @param  string  $command
+     * @param  array  $parameters
+     * @param  \Symfony\Component\Console\Output\OutputInterface|null  $outputBuffer
+     * @return int
+     */
+    public function call($command, array $parameters = [], $outputBuffer = null);
+
+    /**
+     * Get the output from the last command.
+     *
+     * @return string
+     */
+    public function output();
+}

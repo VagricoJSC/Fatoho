@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06f3448c2e219f3ab8b0f99a5fd080c2e8aaa04a0bcb1928040be617392c8f43
-size 699
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration\Logging\TestDox;
+
+use PHPUnit\TextUI\Configuration\File;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Html
+{
+    private readonly File $target;
+
+    public function __construct(File $target)
+    {
+        $this->target = $target;
+    }
+
+    public function target(): File
+    {
+        return $this->target;
+    }
+}

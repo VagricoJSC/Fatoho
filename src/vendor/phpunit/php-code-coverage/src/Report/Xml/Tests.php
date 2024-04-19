@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7fdc58842066b44c4ea8ad4e9d5a1ff28d02122835273577cfdb1283e0e11e7
-size 1215
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Report\Xml;
+
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for phpunit/php-code-coverage
+ */
+final class Tests
+{
+    private readonly DOMElement $contextNode;
+
+    public function __construct(DOMElement $context)
+    {
+        $this->contextNode = $context;
+    }
+
+    public function addTest(string $test, array $result): void
+    {
+        $node = $this->contextNode->appendChild(
+            $this->contextNode->ownerDocument->createElementNS(
+                'https://schema.phpunit.de/coverage/1.0',
+                'test'
+            )
+        );
+
+        $node->setAttribute('name', $test);
+        $node->setAttribute('size', $result['size']);
+        $node->setAttribute('status', $result['status']);
+    }
+}

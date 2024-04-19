@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c9fb1750aceb66fa1cb5c3fdfd28c30fbef9269eed8f1e15b056b722c5e2540
-size 267
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class UnclosedQuotedString implements Reason
+{
+    public function code() : int
+    {
+        return 145;
+    }
+
+    public function description() : string
+    {
+        return "Unclosed quoted string";
+    }
+}

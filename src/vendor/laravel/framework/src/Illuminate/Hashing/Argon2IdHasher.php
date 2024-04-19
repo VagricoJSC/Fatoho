@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53329212e0ed818213b2d2e231a6f16e21cbaa7a1e53bc9d9695c28043fa57fd
-size 1222
+<?php
+
+namespace Illuminate\Hashing;
+
+use RuntimeException;
+
+class Argon2IdHasher extends ArgonHasher
+{
+    /**
+     * Check the given plain value against a hash.
+     *
+     * @param  string  $value
+     * @param  string|null  $hashedValue
+     * @param  array  $options
+     * @return bool
+     *
+     * @throws \RuntimeException
+     */
+    public function check($value, $hashedValue, array $options = [])
+    {
+        if ($this->verifyAlgorithm && $this->info($hashedValue)['algoName'] !== 'argon2id') {
+            throw new RuntimeException('This password does not use the Argon2id algorithm.');
+        }
+
+        if (is_null($hashedValue) || strlen($hashedValue) === 0) {
+            return false;
+        }
+
+        return password_verify($value, $hashedValue);
+    }
+
+    /**
+     * Get the algorithm that should be used for hashing.
+     *
+     * @return int
+     */
+    protected function algorithm()
+    {
+        return PASSWORD_ARGON2ID;
+    }
+}

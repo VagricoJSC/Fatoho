@@ -1,0 +1,318 @@
+[23-Mar-2024 03:57:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php on line 17
+[23-Mar-2024 03:57:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php on line 17
+[23-Mar-2024 03:57:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php on line 17
+[23-Mar-2024 03:57:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Uses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Uses.php on line 17
+[23-Mar-2024 03:57:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php on line 17
+[23-Mar-2024 03:57:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php on line 17
+[23-Mar-2024 03:57:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Test.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Test.php on line 17
+[23-Mar-2024 03:57:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php on line 17
+[23-Mar-2024 03:57:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php on line 17
+[23-Mar-2024 03:57:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php on line 17
+[23-Mar-2024 03:58:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php on line 17
+[23-Mar-2024 03:58:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php on line 19
+[23-Mar-2024 03:58:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php on line 19
+[23-Mar-2024 03:58:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php on line 19
+[23-Mar-2024 03:58:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php on line 17
+[23-Mar-2024 03:58:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php on line 17
+[23-Mar-2024 03:58:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php on line 17
+[23-Mar-2024 03:58:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php on line 17
+[23-Mar-2024 03:58:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php on line 17
+[23-Mar-2024 03:58:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php on line 17
+[23-Mar-2024 03:58:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php on line 17
+[23-Mar-2024 03:58:51 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Metadata\MetadataCollection::getIterator(): PHPUnit\Metadata\MetadataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Metadata\MetadataCollectionIterator is not available in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/MetadataCollection.php on line 88
+[23-Mar-2024 03:59:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Group.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Group.php on line 17
+[23-Mar-2024 03:59:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php on line 17
+[23-Mar-2024 03:59:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php on line 17
+[23-Mar-2024 03:59:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php on line 17
+[23-Mar-2024 03:59:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php on line 17
+[23-Mar-2024 03:59:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php on line 17
+[23-Mar-2024 03:59:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php on line 17
+[23-Mar-2024 03:59:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php on line 17
+[23-Mar-2024 03:59:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php on line 17
+[23-Mar-2024 03:59:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php on line 17
+[23-Mar-2024 03:59:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php on line 17
+[23-Mar-2024 03:59:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Covers.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Covers.php on line 17
+[23-Mar-2024 03:59:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php on line 17
+[23-Mar-2024 03:59:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Before.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Before.php on line 17
+[23-Mar-2024 03:59:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php on line 17
+[23-Mar-2024 04:00:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php on line 17
+[23-Mar-2024 04:00:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php on line 17
+[23-Mar-2024 04:00:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/After.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/After.php on line 17
+[30-Mar-2024 06:43:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php on line 17
+[03-Apr-2024 08:42:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Covers.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Covers.php on line 17
+[03-Apr-2024 08:42:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Before.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Before.php on line 17
+[03-Apr-2024 09:52:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php on line 17
+[03-Apr-2024 09:52:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php on line 17
+[03-Apr-2024 09:52:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php on line 17
+[03-Apr-2024 09:52:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Uses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Uses.php on line 17
+[03-Apr-2024 09:52:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php on line 17
+[03-Apr-2024 09:52:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php on line 17
+[03-Apr-2024 09:52:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Test.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Test.php on line 17
+[03-Apr-2024 09:52:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php on line 17
+[03-Apr-2024 09:52:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php on line 17
+[03-Apr-2024 09:52:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php on line 17
+[03-Apr-2024 09:52:45 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php on line 17
+[03-Apr-2024 09:52:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php on line 19
+[03-Apr-2024 09:52:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php on line 19
+[03-Apr-2024 09:52:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php on line 19
+[03-Apr-2024 09:53:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php on line 17
+[03-Apr-2024 09:53:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php on line 17
+[03-Apr-2024 09:53:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php on line 17
+[03-Apr-2024 09:53:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php on line 17
+[03-Apr-2024 09:53:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php on line 17
+[03-Apr-2024 09:53:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php on line 17
+[03-Apr-2024 09:53:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php on line 17
+[03-Apr-2024 09:53:32 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Metadata\MetadataCollection::getIterator(): PHPUnit\Metadata\MetadataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Metadata\MetadataCollectionIterator is not available in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/MetadataCollection.php on line 88
+[03-Apr-2024 09:53:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Group.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/Group.php on line 17
+[03-Apr-2024 09:53:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php on line 17
+[03-Apr-2024 09:53:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php on line 17
+[03-Apr-2024 09:53:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php on line 17
+[03-Apr-2024 09:53:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php on line 17
+[03-Apr-2024 09:54:02 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php on line 17
+[03-Apr-2024 09:54:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php on line 17
+[03-Apr-2024 09:54:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php on line 17
+[03-Apr-2024 09:54:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php on line 17
+[03-Apr-2024 09:54:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php on line 17
+[03-Apr-2024 09:54:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php on line 17
+[03-Apr-2024 09:54:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php on line 17
+[03-Apr-2024 09:54:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php on line 17
+[03-Apr-2024 09:54:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/After.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/After.php on line 17
+[03-Apr-2024 13:49:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php on line 17
+[03-Apr-2024 13:49:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php on line 17

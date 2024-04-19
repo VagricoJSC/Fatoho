@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5633a4821f1d92f373e76bb8b47d799bf14d91cc4e13117e09580e88ab58d045
-size 677
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+class UnionType extends ComplexType
+{
+    /** @var (Identifier|Name|IntersectionType)[] Types */
+    public $types;
+
+    /**
+     * Constructs a union type.
+     *
+     * @param (Identifier|Name|IntersectionType)[] $types      Types
+     * @param array               $attributes Additional attributes
+     */
+    public function __construct(array $types, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->types = $types;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['types'];
+    }
+    
+    public function getType() : string {
+        return 'UnionType';
+    }
+}

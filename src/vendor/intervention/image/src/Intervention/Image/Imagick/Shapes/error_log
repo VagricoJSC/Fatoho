@@ -1,0 +1,20 @@
+[03-Apr-2024 20:55:28 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php on line 9
+[03-Apr-2024 20:55:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php on line 9
+[03-Apr-2024 20:55:34 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php on line 9
+[03-Apr-2024 20:55:37 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php on line 9
+[03-Apr-2024 20:55:41 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Imagick\Shapes\EllipseShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php on line 7

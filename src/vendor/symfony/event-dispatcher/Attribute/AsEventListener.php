@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce76948753a8746f2a8f90c60bd5b03618e3f807b3e9641ef910e9b5f26c49a0
-size 724
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\EventDispatcher\Attribute;
+
+/**
+ * Service tag to autoconfigure event listeners.
+ *
+ * @author Alexander M. Turek <me@derrabus.de>
+ */
+#[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD | \Attribute::IS_REPEATABLE)]
+class AsEventListener
+{
+    public function __construct(
+        public ?string $event = null,
+        public ?string $method = null,
+        public int $priority = 0,
+        public ?string $dispatcher = null,
+    ) {
+    }
+}

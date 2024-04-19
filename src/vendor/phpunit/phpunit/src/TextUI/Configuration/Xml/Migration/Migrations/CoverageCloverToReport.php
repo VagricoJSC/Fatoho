@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99a6efa20f77f2386ff960a8f5f6b7ebb97169252b988782bfe90afc511ac3a7
-size 832
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class CoverageCloverToReport extends LogToReportMigration
+{
+    protected function forType(): string
+    {
+        return 'coverage-clover';
+    }
+
+    protected function toReportFormat(DOMElement $logNode): DOMElement
+    {
+        $clover = $logNode->ownerDocument->createElement('clover');
+
+        $clover->setAttribute('outputFile', $logNode->getAttribute('target'));
+
+        return $clover;
+    }
+}

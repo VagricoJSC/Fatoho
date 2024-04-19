@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da78e6673815994929d32b387c2d31305827fd54f5b6ea5cc6f787066eed77d3
-size 1075
+<?php
+
+namespace Illuminate\Process\Exceptions;
+
+use Illuminate\Contracts\Process\ProcessResult;
+use Symfony\Component\Console\Exception\RuntimeException;
+
+class ProcessFailedException extends RuntimeException
+{
+    /**
+     * The process result instance.
+     *
+     * @var \Illuminate\Contracts\Process\ProcessResult
+     */
+    public $result;
+
+    /**
+     * Create a new exception instance.
+     *
+     * @param  \Illuminate\Contracts\Process\ProcessResult  $result
+     * @return void
+     */
+    public function __construct(ProcessResult $result)
+    {
+        $this->result = $result;
+
+        parent::__construct(
+            sprintf('The process "%s" failed.', $result->command()),
+            $result->exitCode() ?? 1,
+        );
+    }
+}

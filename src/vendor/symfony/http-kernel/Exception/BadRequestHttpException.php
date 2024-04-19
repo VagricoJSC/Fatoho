@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a8750f15ea7eae0d49de666940a221db57090dc157f831093d889ac02c64ede
-size 599
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Ben Ramsey <ben@benramsey.com>
+ */
+class BadRequestHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(400, $message, $previous, $headers, $code);
+    }
+}

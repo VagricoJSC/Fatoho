@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4de04bf5bd7a5f072f0487c1ca39c1e3b2b354197402c201b546ac20739e6b7e
-size 672
+<?php
+/**
+ * @package php-svg-lib
+ * @link    http://github.com/PhenX/php-svg-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license GNU LGPLv3+ http://www.gnu.org/copyleft/lesser.html
+ */
+
+namespace Svg\Tag;
+
+use Svg\Style;
+
+class ClipPath extends AbstractTag
+{
+    protected function before($attributes)
+    {
+        $surface = $this->document->getSurface();
+
+        $surface->save();
+
+        $style = $this->makeStyle($attributes);
+
+        $this->setStyle($style);
+        $surface->setStyle($style);
+
+        $this->applyTransform($attributes);
+    }
+
+    protected function after()
+    {
+        $this->document->getSurface()->restore();
+    }
+} 

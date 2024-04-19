@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3280078ea7a0cac316b3b1c531e4600f62fa3e4fab747d166dd49c82df38dce3
-size 780
+<?php
+
+namespace Illuminate\Notifications;
+
+trait HasDatabaseNotifications
+{
+    /**
+     * Get the entity's notifications.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
+     */
+    public function notifications()
+    {
+        return $this->morphMany(DatabaseNotification::class, 'notifiable')->latest();
+    }
+
+    /**
+     * Get the entity's read notifications.
+     *
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public function readNotifications()
+    {
+        return $this->notifications()->read();
+    }
+
+    /**
+     * Get the entity's unread notifications.
+     *
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public function unreadNotifications()
+    {
+        return $this->notifications()->unread();
+    }
+}

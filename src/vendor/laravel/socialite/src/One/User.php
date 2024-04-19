@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3da7f76304d9c408bcc718a54fa8395d7b189616ba4bf578d8912675f7bbbb0
-size 619
+<?php
+
+namespace Laravel\Socialite\One;
+
+use Laravel\Socialite\AbstractUser;
+
+class User extends AbstractUser
+{
+    /**
+     * The user's access token.
+     *
+     * @var string
+     */
+    public $token;
+
+    /**
+     * The user's access token secret.
+     *
+     * @var string
+     */
+    public $tokenSecret;
+
+    /**
+     * Set the token on the user.
+     *
+     * @param  string  $token
+     * @param  string  $tokenSecret
+     * @return $this
+     */
+    public function setToken($token, $tokenSecret)
+    {
+        $this->token = $token;
+        $this->tokenSecret = $tokenSecret;
+
+        return $this;
+    }
+}

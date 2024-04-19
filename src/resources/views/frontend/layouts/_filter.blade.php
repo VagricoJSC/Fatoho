@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:adc20c537926a7cfbec7b79ee62977815a69e144cc25d99a6ff6198fcc4d9d94
-size 300
+@if(isset($category_lists))
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    @foreach($category_lists as $category)
+    {{-- {{$category}} --}}
+<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#hello" role="tab">{{$category->title}}</a></li>
+    @endforeach
+</ul>
+@endif

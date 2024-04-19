@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27f8f6e0bf1680787ce8becab16e3786c82e2abcc2d2ec72b557ca360c7711c8
-size 430
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\DescriptionList\Node;
+
+use League\CommonMark\Node\Block\AbstractBlock;
+
+class DescriptionList extends AbstractBlock
+{
+}

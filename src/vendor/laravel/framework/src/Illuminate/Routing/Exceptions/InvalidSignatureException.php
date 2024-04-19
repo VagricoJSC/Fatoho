@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13b7caa79e4519b7ef5cb4ad1aae821cc55e3200bf0ec619a8a3a1420f21be67
-size 351
+<?php
+
+namespace Illuminate\Routing\Exceptions;
+
+use Symfony\Component\HttpKernel\Exception\HttpException;
+
+class InvalidSignatureException extends HttpException
+{
+    /**
+     * Create a new exception instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct(403, 'Invalid signature.');
+    }
+}

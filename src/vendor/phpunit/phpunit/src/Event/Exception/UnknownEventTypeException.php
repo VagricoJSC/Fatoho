@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81117d8e9bbab854604d1a58cd4e6dff28c63c327cad68afd08f3b4cfa4b1a26
-size 503
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+use RuntimeException;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class UnknownEventTypeException extends RuntimeException implements Exception
+{
+}

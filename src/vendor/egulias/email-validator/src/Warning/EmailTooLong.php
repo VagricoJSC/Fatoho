@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10b3ed541c98e4195ee0a98cbd8d0819be2fda53795921fe5e8a9af76aecf18e
-size 293
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+use Egulias\EmailValidator\EmailParser;
+
+class EmailTooLong extends Warning
+{
+    public const CODE = 66;
+
+    public function __construct()
+    {
+        $this->message = 'Email is too long, exceeds ' . EmailParser::EMAIL_MAX_LENGTH;
+    }
+}

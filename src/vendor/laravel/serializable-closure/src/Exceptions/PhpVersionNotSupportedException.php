@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac152d5135a8448d1def7f237902b06f219162170df61e74e2aa233976294936
-size 372
+<?php
+
+namespace Laravel\SerializableClosure\Exceptions;
+
+use Exception;
+
+class PhpVersionNotSupportedException extends Exception
+{
+    /**
+     * Create a new exception instance.
+     *
+     * @param  string  $message
+     * @return void
+     */
+    public function __construct($message = 'PHP 7.3 is not supported.')
+    {
+        parent::__construct($message);
+    }
+}

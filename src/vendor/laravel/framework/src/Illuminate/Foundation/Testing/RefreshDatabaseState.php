@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfd69e7e5b43768e2e3e25908c2d868c6e51ca9b53d4bc0cf245241a8f1debee
-size 516
+<?php
+
+namespace Illuminate\Foundation\Testing;
+
+class RefreshDatabaseState
+{
+    /**
+     * Indicates if the test database has been migrated.
+     *
+     * @var bool
+     */
+    public static $migrated = false;
+
+    /**
+     * Indicates if a lazy refresh hook has been invoked.
+     *
+     * @var bool
+     */
+    public static $lazilyRefreshed = false;
+}

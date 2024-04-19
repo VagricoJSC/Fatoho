@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b93f162a956686edadff0cabc59273312c9bb05f876e416d6817bfb58987aa0c
-size 308
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar\MagicConst;
+
+use PhpParser\Node\Scalar\MagicConst;
+
+class Dir extends MagicConst
+{
+    public function getName() : string {
+        return '__DIR__';
+    }
+    
+    public function getType() : string {
+        return 'Scalar_MagicConst_Dir';
+    }
+}

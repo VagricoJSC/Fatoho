@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:508294cdaa683cb6e1d3c21b96f7e4e0d00deb384f969374c1487257980e869c
-size 720
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class ResizeCommand extends AbstractCommand
+{
+    /**
+     * Resizes image dimensions
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $width = $this->argument(0)->value();
+        $height = $this->argument(1)->value();
+        $constraints = $this->argument(2)->type('closure')->value();
+
+        // resize box
+        $resized = $image->getSize()->resize($width, $height, $constraints);
+
+        // modify image
+        $image->getCore()->scaleImage($resized->getWidth(), $resized->getHeight());
+
+        return true;
+    }
+}

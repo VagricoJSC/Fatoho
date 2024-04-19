@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4219a42a9ae67e644b6e738774f75421dbb29f9144576b3533295e8b84e8fc9d
-size 827
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait CatalogProducts
+{
+    /**
+     * @return array
+     */
+    private function createProductParams(): array
+    {
+        return Utils::jsonDecode('{
+          "name": "Video Streaming Service",
+          "description": "Video streaming service",
+          "type": "SERVICE",
+          "category": "SOFTWARE",
+          "image_url": "https://example.com/streaming.jpg",
+          "home_url": "https://example.com/home"
+        }', true);
+    }
+
+    /**
+     * @return array
+     */
+    private function updateProductParams(): array
+    {
+        return Utils::jsonDecode('[
+          {
+            "op": "replace",
+            "path": "/description",
+            "value": "Premium video streaming service"
+          }
+        ]', true);
+    }
+}

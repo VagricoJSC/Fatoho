@@ -1,0 +1,8 @@
+[23-Mar-2024 03:50:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Logger.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Logger.php on line 35
+[03-Apr-2024 09:50:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Logger.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Logger.php on line 35

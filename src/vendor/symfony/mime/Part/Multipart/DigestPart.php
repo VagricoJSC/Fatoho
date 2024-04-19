@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef0b86564517d7f7e1cf79abaa9a675339a6af7bf43ad4467eed00d85860840f
-size 694
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Part\Multipart;
+
+use Symfony\Component\Mime\Part\AbstractMultipartPart;
+use Symfony\Component\Mime\Part\MessagePart;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+final class DigestPart extends AbstractMultipartPart
+{
+    public function __construct(MessagePart ...$parts)
+    {
+        parent::__construct(...$parts);
+    }
+
+    public function getMediaSubtype(): string
+    {
+        return 'digest';
+    }
+}

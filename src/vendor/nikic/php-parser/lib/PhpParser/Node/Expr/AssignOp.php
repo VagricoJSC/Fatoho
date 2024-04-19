@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e05947ed6756ca0d4c21d0f20880a625c3358aca342f0f241a134ec9e67770b5
-size 726
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+abstract class AssignOp extends Expr
+{
+    /** @var Expr Variable */
+    public $var;
+    /** @var Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs a compound assignment operation node.
+     *
+     * @param Expr  $var        Variable
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $var, Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var', 'expr'];
+    }
+}

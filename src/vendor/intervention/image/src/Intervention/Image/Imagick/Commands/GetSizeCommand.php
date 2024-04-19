@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48cf747d48628ed6793a8722f865b523b87f15046805d5f718412cd98ea584f6
-size 589
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+use Intervention\Image\Size;
+
+class GetSizeCommand extends AbstractCommand
+{
+    /**
+     * Reads size of given image instance in pixels
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        /** @var \Imagick $core */
+        $core = $image->getCore();
+
+        $this->setOutput(new Size(
+            $core->getImageWidth(),
+            $core->getImageHeight()
+        ));
+
+        return true;
+    }
+}

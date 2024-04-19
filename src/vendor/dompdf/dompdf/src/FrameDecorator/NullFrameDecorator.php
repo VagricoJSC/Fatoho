@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a23432e903970961e03c222f4dbc7f08609a2d5a812f39927b8c3bbbb50e8d2
-size 726
+<?php
+/**
+ * @package dompdf
+ * @link    https://github.com/dompdf/dompdf
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+namespace Dompdf\FrameDecorator;
+
+use Dompdf\Dompdf;
+use Dompdf\Frame;
+
+/**
+ * Dummy decorator
+ *
+ * @package dompdf
+ */
+class NullFrameDecorator extends AbstractFrameDecorator
+{
+    /**
+     * NullFrameDecorator constructor.
+     * @param Frame $frame
+     * @param Dompdf $dompdf
+     */
+    function __construct(Frame $frame, Dompdf $dompdf)
+    {
+        parent::__construct($frame, $dompdf);
+        $style = $this->_frame->get_style();
+        $style->width = 0;
+        $style->height = 0;
+        $style->margin = 0;
+        $style->padding = 0;
+    }
+}

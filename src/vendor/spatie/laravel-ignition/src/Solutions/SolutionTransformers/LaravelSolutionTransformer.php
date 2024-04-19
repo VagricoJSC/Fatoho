@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b0c8299613b18ece6d041d94ad8ea8f85481d771afbbf6e8e7d256d8293b5e6
-size 1734
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions\SolutionTransformers;
+
+use Spatie\Ignition\Contracts\RunnableSolution;
+use Spatie\Ignition\Solutions\SolutionTransformer;
+use Spatie\LaravelIgnition\Http\Controllers\ExecuteSolutionController;
+use Throwable;
+
+class LaravelSolutionTransformer extends SolutionTransformer
+{
+    /** @return array<string|mixed> */
+    public function toArray(): array
+    {
+        $baseProperties = parent::toArray();
+
+        if (! $this->isRunnable()) {
+            return $baseProperties;
+        }
+
+        /** @var RunnableSolution $solution Type shenanigans */
+        $solution = $this->solution;
+
+        $runnableProperties = [
+            'is_runnable' => true,
+            'action_description' => $solution->getSolutionActionDescription(),
+            'run_button_text' => $solution->getRunButtonText(),
+            'execute_endpoint' => $this->executeEndpoint(),
+            'run_parameters' => $solution->getRunParameters(),
+        ];
+
+        return array_merge($baseProperties, $runnableProperties);
+    }
+
+    protected function isRunnable(): bool
+    {
+        if (! $this->solution instanceof RunnableSolution) {
+            return false;
+        }
+
+        if (! $this->executeEndpoint()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    protected function executeEndpoint(): ?string
+    {
+        try {
+            // The action class needs to be prefixed with a `\` to Laravel from trying
+            // to add its own global namespace from RouteServiceProvider::$namespace.
+
+            return action('\\'.ExecuteSolutionController::class);
+        } catch (Throwable $exception) {
+            report($exception);
+
+            return null;
+        }
+    }
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:503f33461107fdb59331eb9dc1ee26b1346c856f434b78c4a2ac9d2765168fdf
-size 361
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-invoker.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Invoker;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

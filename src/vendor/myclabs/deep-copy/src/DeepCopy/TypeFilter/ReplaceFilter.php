@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d5b34b6a45d88c993bfb63d51f88521e76e4a2ef3cb1e102e0b67bdf8428dcb5
-size 524
+<?php
+
+namespace DeepCopy\TypeFilter;
+
+/**
+ * @final
+ */
+class ReplaceFilter implements TypeFilter
+{
+    /**
+     * @var callable
+     */
+    protected $callback;
+
+    /**
+     * @param callable $callable Will be called to get the new value for each element to replace
+     */
+    public function __construct(callable $callable)
+    {
+        $this->callback = $callable;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function apply($element)
+    {
+        return call_user_func($this->callback, $element);
+    }
+}

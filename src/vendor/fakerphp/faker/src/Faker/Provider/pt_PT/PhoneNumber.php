@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6d51abc3c0759e23ff52d123e811c64aa46f142148b90aff40e225eb794dc77
-size 1118
+<?php
+
+namespace Faker\Provider\pt_PT;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    /**
+     * @see http://en.wikipedia.org/wiki/Telephone_numbers_in_Portugal
+     */
+    protected static $formats = [
+        '+351 91#######',
+        '+351 92#######',
+        '+351 93#######',
+        '+351 96#######',
+        '+351 21#######',
+        '+351 22#######',
+        '+351 23#######',
+        '+351 24#######',
+        '+351 25#######',
+        '+351 26#######',
+        '+351 27#######',
+        '+351 28#######',
+        '+351 29#######',
+        '91#######',
+        '92#######',
+        '93#######',
+        '96#######',
+        '21#######',
+        '22#######',
+        '23#######',
+        '24#######',
+        '25#######',
+        '26#######',
+        '27#######',
+        '28#######',
+        '29#######',
+    ];
+
+    protected static $mobileNumberPrefixes = [
+        '91#######',
+        '92#######',
+        '93#######',
+        '96#######',
+    ];
+
+    public static function mobileNumber()
+    {
+        return static::numerify(static::randomElement(static::$mobileNumberPrefixes));
+    }
+}

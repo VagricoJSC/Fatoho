@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05c088052168ab0b57eb84433f483965d17f37e5b52f0cf0053a444596ce66cd
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/miq_NI.php';

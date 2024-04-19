@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b11bb5d95e1db67a9652e95ad59b4b58ba44e379132c2c68bcde29aed36f6064
-size 1010
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Loader;
+
+use Symfony\Component\Config\Loader\FileLoader;
+use Symfony\Component\Routing\RouteCollection;
+
+/**
+ * GlobFileLoader loads files from a glob pattern.
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+class GlobFileLoader extends FileLoader
+{
+    public function load(mixed $resource, string $type = null): mixed
+    {
+        $collection = new RouteCollection();
+
+        foreach ($this->glob($resource, false, $globResource) as $path => $info) {
+            $collection->addCollection($this->import($path));
+        }
+
+        $collection->addResource($globResource);
+
+        return $collection;
+    }
+
+    public function supports(mixed $resource, string $type = null): bool
+    {
+        return 'glob' === $type;
+    }
+}

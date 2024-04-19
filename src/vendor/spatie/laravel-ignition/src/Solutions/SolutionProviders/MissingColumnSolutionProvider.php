@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac581f3016ccc1127cc3b9a28a30287918cc8f0738325867783c50187c5e9f2c
-size 985
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions\SolutionProviders;
+
+use Illuminate\Database\QueryException;
+use Spatie\Ignition\Contracts\HasSolutionsForThrowable;
+use Spatie\LaravelIgnition\Solutions\RunMigrationsSolution;
+use Throwable;
+
+class MissingColumnSolutionProvider implements HasSolutionsForThrowable
+{
+    /**
+     * See https://dev.mysql.com/doc/refman/8.0/en/server-error-reference.html#error_er_bad_field_error.
+     */
+    const MYSQL_BAD_FIELD_CODE = '42S22';
+
+    public function canSolve(Throwable $throwable): bool
+    {
+        if (! $throwable instanceof QueryException) {
+            return false;
+        }
+
+        return  $this->isBadTableErrorCode($throwable->getCode());
+    }
+
+    protected function isBadTableErrorCode(string $code): bool
+    {
+        return $code === static::MYSQL_BAD_FIELD_CODE;
+    }
+
+    public function getSolutions(Throwable $throwable): array
+    {
+        return [new RunMigrationsSolution('A column was not found')];
+    }
+}

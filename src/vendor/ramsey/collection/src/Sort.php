@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be125a8913cb53e132dfaba919050f7333c13a1b238af9a5022e98f2c6906841
-size 621
+<?php
+
+/**
+ * This file is part of the ramsey/collection library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Collection;
+
+/**
+ * Collection sorting
+ */
+enum Sort: string
+{
+    /**
+     * Sort items in a collection in ascending order.
+     */
+    case Ascending = 'asc';
+
+    /**
+     * Sort items in a collection in descending order.
+     */
+    case Descending = 'desc';
+}

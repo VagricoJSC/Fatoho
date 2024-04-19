@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50ca813a4ccba228b50c803f2163255e04e10653e2ff73278f954eac7d6564a9
-size 1421
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\DependencyInjection;
+
+use Psr\Log\LoggerInterface;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpKernel\Log\Logger;
+
+/**
+ * Registers the default logger if necessary.
+ *
+ * @author Kévin Dunglas <dunglas@gmail.com>
+ */
+class LoggerPass implements CompilerPassInterface
+{
+    public function process(ContainerBuilder $container)
+    {
+        $container->setAlias(LoggerInterface::class, 'logger')
+            ->setPublic(false);
+
+        if ($container->has('logger')) {
+            return;
+        }
+
+        $container->register('logger', Logger::class)
+            ->setArguments([null, null, null, new Reference(RequestStack::class)])
+            ->setPublic(false);
+    }
+}

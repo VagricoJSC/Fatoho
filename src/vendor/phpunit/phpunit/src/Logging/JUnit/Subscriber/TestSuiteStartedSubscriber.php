@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cf11845490619a347f37ea3735e8322a8d310f7ae598fe5ebe2ab76fc56e160
-size 681
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\JUnit;
+
+use PHPUnit\Event\TestSuite\Started;
+use PHPUnit\Event\TestSuite\StartedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestSuiteStartedSubscriber extends Subscriber implements StartedSubscriber
+{
+    public function notify(Started $event): void
+    {
+        $this->logger()->testSuiteStarted($event);
+    }
+}

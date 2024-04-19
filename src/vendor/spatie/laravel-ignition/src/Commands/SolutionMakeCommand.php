@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da2f9ee9b7bfcd5d5d15518b192830e37952e0dd8204f1a2f246886e435d4182
-size 876
+<?php
+
+namespace Spatie\LaravelIgnition\Commands;
+
+use Illuminate\Console\GeneratorCommand;
+use Symfony\Component\Console\Input\InputOption;
+
+class SolutionMakeCommand extends GeneratorCommand
+{
+    protected $name = 'ignition:make-solution';
+
+    protected $description = 'Create a new custom Ignition solution class';
+
+    protected $type = 'Solution';
+
+    protected function getStub(): string
+    {
+        return $this->option('runnable')
+            ? __DIR__.'/stubs/runnable-solution.stub'
+            : __DIR__.'/stubs/solution.stub';
+    }
+
+    protected function getDefaultNamespace($rootNamespace)
+    {
+        return "{$rootNamespace}\\Solutions";
+    }
+
+    /** @return array<int, mixed> */
+    protected function getOptions(): array
+    {
+        return [
+            ['runnable', null, InputOption::VALUE_NONE, 'Create runnable solution'],
+        ];
+    }
+}

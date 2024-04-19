@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad0d7fba918488bf7f2b4950ce7c17e3962ed6aafd2b39b9e746ff09d5552220
-size 680
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Reader;
+
+use Symfony\Component\Translation\MessageCatalogue;
+
+/**
+ * TranslationReader reads translation messages from translation files.
+ *
+ * @author Tobias Nyholm <tobias.nyholm@gmail.com>
+ */
+interface TranslationReaderInterface
+{
+    /**
+     * Reads translation messages from a directory to the catalogue.
+     */
+    public function read(string $directory, MessageCatalogue $catalogue);
+}

@@ -1,0 +1,8 @@
+[28-Mar-2024 10:49:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ArgumentResolver/ServiceValueResolver.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ArgumentResolver/ServiceValueResolver.php on line 26
+[29-Mar-2024 01:36:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ArgumentResolver/SessionValueResolver.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ArgumentResolver/SessionValueResolver.php on line 25

@@ -1,0 +1,72 @@
+[22-Mar-2024 23:35:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\TableCell" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/TableSeparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/TableSeparator.php on line 19
+[22-Mar-2024 23:36:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\QuestionHelper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php on line 26
+[22-Mar-2024 23:36:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/QuestionHelper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/QuestionHelper.php on line 35
+[22-Mar-2024 23:36:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/ProcessHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/ProcessHelper.php on line 26
+[22-Mar-2024 23:36:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/InputAwareHelper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/InputAwareHelper.php on line 22
+[22-Mar-2024 23:36:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Helper\HelperInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/Helper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/Helper.php on line 22
+[22-Mar-2024 23:36:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/FormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/FormatterHelper.php on line 21
+[22-Mar-2024 23:36:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DescriptorHelper.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DescriptorHelper.php on line 27
+[22-Mar-2024 23:36:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DebugFormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DebugFormatterHelper.php on line 21
+[03-Apr-2024 07:15:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Helper\HelperInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/Helper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/Helper.php on line 22
+[03-Apr-2024 07:46:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\TableCell" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/TableSeparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/TableSeparator.php on line 19
+[03-Apr-2024 07:46:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/QuestionHelper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/QuestionHelper.php on line 35
+[03-Apr-2024 07:46:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/ProcessHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/ProcessHelper.php on line 26
+[03-Apr-2024 07:47:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/InputAwareHelper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/InputAwareHelper.php on line 22
+[03-Apr-2024 07:47:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/FormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/FormatterHelper.php on line 21
+[03-Apr-2024 07:47:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DescriptorHelper.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DescriptorHelper.php on line 27
+[03-Apr-2024 08:23:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\QuestionHelper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php on line 26
+[03-Apr-2024 08:23:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DebugFormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Helper/DebugFormatterHelper.php on line 21

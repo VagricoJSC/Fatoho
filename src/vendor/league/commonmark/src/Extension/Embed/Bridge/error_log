@@ -1,0 +1,8 @@
+[30-Mar-2024 03:25:52 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Embed\EmbedAdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php on line 20
+[01-Apr-2024 16:13:37 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Embed\EmbedAdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php on line 20

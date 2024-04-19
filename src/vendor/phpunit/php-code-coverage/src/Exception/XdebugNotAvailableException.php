@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52bbb9e9b875a29e65f4834cbfca9486a3d9274d6b4437594b602e391b9241f1
-size 596
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Driver;
+
+use RuntimeException;
+use SebastianBergmann\CodeCoverage\Exception;
+
+final class XdebugNotAvailableException extends RuntimeException implements Exception
+{
+    public function __construct()
+    {
+        parent::__construct('The Xdebug extension is not available');
+    }
+}

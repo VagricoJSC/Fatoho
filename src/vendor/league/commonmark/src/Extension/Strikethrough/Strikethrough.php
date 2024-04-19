@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1890fecb021c2ceb75bf8c07abbdfe8904825da2b7de4550490da930f3d71a4d
-size 916
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com> and uAfrica.com (http://uafrica.com)
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\Strikethrough;
+
+use League\CommonMark\Node\Inline\AbstractInline;
+use League\CommonMark\Node\Inline\DelimitedInterface;
+
+final class Strikethrough extends AbstractInline implements DelimitedInterface
+{
+    private string $delimiter;
+
+    public function __construct(string $delimiter = '~~')
+    {
+        parent::__construct();
+
+        $this->delimiter = $delimiter;
+    }
+
+    public function getOpeningDelimiter(): string
+    {
+        return $this->delimiter;
+    }
+
+    public function getClosingDelimiter(): string
+    {
+        return $this->delimiter;
+    }
+}

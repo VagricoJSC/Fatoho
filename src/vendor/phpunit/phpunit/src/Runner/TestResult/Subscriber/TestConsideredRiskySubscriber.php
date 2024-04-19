@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6c41c6ada37c2d165b89f0b366137c13a2a86afd0b15d755ccbbd8997f1fed9
-size 720
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\ConsideredRisky;
+use PHPUnit\Event\Test\ConsideredRiskySubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestConsideredRiskySubscriber extends Subscriber implements ConsideredRiskySubscriber
+{
+    public function notify(ConsideredRisky $event): void
+    {
+        $this->collector()->testConsideredRisky($event);
+    }
+}

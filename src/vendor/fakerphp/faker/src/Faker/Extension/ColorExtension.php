@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c63e2a686255388c8879a07eda5a273039ef0eaf734b26f44849999b7c24a46
-size 1133
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface ColorExtension extends Extension
+{
+    /**
+     * @example '#fa3cc2'
+     */
+    public function hexColor(): string;
+
+    /**
+     * @example '#ff0044'
+     */
+    public function safeHexColor(): string;
+
+    /**
+     * @example 'array(0,255,122)'
+     *
+     * @return int[]
+     */
+    public function rgbColorAsArray(): array;
+
+    /**
+     * @example '0,255,122'
+     */
+    public function rgbColor(): string;
+
+    /**
+     * @example 'rgb(0,255,122)'
+     */
+    public function rgbCssColor(): string;
+
+    /**
+     * @example 'rgba(0,255,122,0.8)'
+     */
+    public function rgbaCssColor(): string;
+
+    /**
+     * @example 'blue'
+     */
+    public function safeColorName(): string;
+
+    /**
+     * @example 'NavajoWhite'
+     */
+    public function colorName(): string;
+
+    /**
+     * @example '340,50,20'
+     */
+    public function hslColor(): string;
+
+    /**
+     * @example array(340, 50, 20)
+     *
+     * @return int[]
+     */
+    public function hslColorAsArray(): array;
+}

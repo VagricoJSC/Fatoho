@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7af9b021427bde9d3709087b6f8640d1332022bd90e7fb2676933bf6fb846b6c
-size 541
+<?php
+
+namespace Illuminate\Contracts\View;
+
+use Illuminate\Contracts\Support\Renderable;
+
+interface View extends Renderable
+{
+    /**
+     * Get the name of the view.
+     *
+     * @return string
+     */
+    public function name();
+
+    /**
+     * Add a piece of data to the view.
+     *
+     * @param  string|array  $key
+     * @param  mixed  $value
+     * @return $this
+     */
+    public function with($key, $value = null);
+
+    /**
+     * Get the array of view data.
+     *
+     * @return array
+     */
+    public function getData();
+}

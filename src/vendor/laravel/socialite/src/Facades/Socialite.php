@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccbc965b2e2259d7e4a339b19468fcb634a7a04b7f847838de07bc40da41788b
-size 581
+<?php
+
+namespace Laravel\Socialite\Facades;
+
+use Illuminate\Support\Facades\Facade;
+use Laravel\Socialite\Contracts\Factory;
+
+/**
+ * @method static \Laravel\Socialite\Contracts\Provider driver(string $driver = null)
+ *
+ * @see \Laravel\Socialite\SocialiteManager
+ */
+class Socialite extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return Factory::class;
+    }
+}

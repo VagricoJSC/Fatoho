@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:732bce8200e40a5cd5749f811cbfad54cc7e6b2d22e77c24a989c873d9d0f155
-size 405
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Reference;
+
+interface ReferenceableInterface
+{
+    public function getReference(): ReferenceInterface;
+}

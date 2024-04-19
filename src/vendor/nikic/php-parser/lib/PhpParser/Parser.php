@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bd7d9e6f51a9fe774e6024645df4ac14cac698f1fb3f1c97b47925a070890bb
-size 765
+<?php declare(strict_types=1);
+
+namespace PhpParser;
+
+interface Parser
+{
+    /**
+     * Parses PHP code into a node tree.
+     *
+     * @param string $code The source code to parse
+     * @param ErrorHandler|null $errorHandler Error handler to use for lexer/parser errors, defaults
+     *                                        to ErrorHandler\Throwing.
+     *
+     * @return Node\Stmt[]|null Array of statements (or null non-throwing error handler is used and
+     *                          the parser was unable to recover from an error).
+     */
+    public function parse(string $code, ErrorHandler $errorHandler = null);
+}

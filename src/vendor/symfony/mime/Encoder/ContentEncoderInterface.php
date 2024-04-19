@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd8a74c3377ca67e16044bc7f1cce9ccb310da1642a69ed5d76c53aa2402e0d2
-size 668
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Encoder;
+
+/**
+ * @author Chris Corbyn
+ */
+interface ContentEncoderInterface extends EncoderInterface
+{
+    /**
+     * Encodes the stream to a Generator.
+     *
+     * @param resource $stream
+     */
+    public function encodeByteStream($stream, int $maxLineLength = 0): iterable;
+
+    /**
+     * Gets the MIME name of this content encoding scheme.
+     */
+    public function getName(): string;
+}

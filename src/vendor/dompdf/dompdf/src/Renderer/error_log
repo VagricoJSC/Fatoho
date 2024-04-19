@@ -1,0 +1,56 @@
+[23-Mar-2024 03:41:26 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Text.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Text.php on line 17
+[23-Mar-2024 03:41:28 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableRowGroup.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableRowGroup.php on line 16
+[23-Mar-2024 03:41:33 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableCell.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableCell.php on line 17
+[23-Mar-2024 03:41:36 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/ListBullet.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/ListBullet.php on line 20
+[23-Mar-2024 03:41:40 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Inline.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Inline.php on line 17
+[23-Mar-2024 03:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Image.php on line 18
+[23-Mar-2024 03:41:47 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Block.php on line 18
+[01-Apr-2024 12:43:42 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Text.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Text.php on line 17
+[01-Apr-2024 12:59:10 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableRowGroup.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableRowGroup.php on line 16
+[01-Apr-2024 12:59:13 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableCell.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/TableCell.php on line 17
+[01-Apr-2024 12:59:16 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/ListBullet.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/ListBullet.php on line 20
+[01-Apr-2024 12:59:20 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Inline.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Inline.php on line 17
+[01-Apr-2024 12:59:24 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Image.php on line 18
+[01-Apr-2024 12:59:37 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/Renderer/Block.php on line 18

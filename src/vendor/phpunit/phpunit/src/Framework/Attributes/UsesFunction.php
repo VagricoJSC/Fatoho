@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5abcca609a4640384077a7d9a73a67b4fb2849dcd8c225b0585ff497aa222f1
-size 959
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\Attributes;
+
+use Attribute;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+#[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
+final class UsesFunction
+{
+    /**
+     * @psalm-var non-empty-string
+     */
+    private readonly string $functionName;
+
+    /**
+     * @psalm-param non-empty-string $functionName
+     */
+    public function __construct(string $functionName)
+    {
+        $this->functionName = $functionName;
+    }
+
+    /**
+     * @psalm-return non-empty-string
+     */
+    public function functionName(): string
+    {
+        return $this->functionName;
+    }
+}

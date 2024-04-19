@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1f30d552cd94d31e573f07660304d6867244a0beeaf1ac9f9101ee7c13bd26f
-size 599
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Test;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface TestStubForIntersectionOfInterfacesCreatedSubscriber extends Subscriber
+{
+    public function notify(TestStubForIntersectionOfInterfacesCreated $event): void;
+}

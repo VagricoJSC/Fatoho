@@ -1,0 +1,56 @@
+[22-Mar-2024 23:37:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/RuntimeException.php on line 17
+[22-Mar-2024 23:37:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Exception\CommandNotFoundException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/NamespaceNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/NamespaceNotFoundException.php on line 19
+[22-Mar-2024 23:37:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/MissingInputException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/MissingInputException.php on line 19
+[22-Mar-2024 23:38:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/LogicException.php on line 17
+[22-Mar-2024 23:38:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidArgumentException.php on line 17
+[22-Mar-2024 23:38:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidOptionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidOptionException.php on line 19
+[22-Mar-2024 23:38:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/CommandNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/CommandNotFoundException.php on line 19
+[03-Apr-2024 08:12:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/RuntimeException.php on line 17
+[03-Apr-2024 08:12:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Exception\CommandNotFoundException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/NamespaceNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/NamespaceNotFoundException.php on line 19
+[03-Apr-2024 08:13:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/MissingInputException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/MissingInputException.php on line 19
+[03-Apr-2024 08:13:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/LogicException.php on line 17
+[03-Apr-2024 08:13:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidOptionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidOptionException.php on line 19
+[03-Apr-2024 08:13:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/InvalidArgumentException.php on line 17
+[03-Apr-2024 08:13:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/CommandNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Exception/CommandNotFoundException.php on line 19

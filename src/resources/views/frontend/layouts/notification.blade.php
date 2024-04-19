@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a0e3a3bdd9bdfcaa62d373e2536bd3946a10ab2401ee19f9b749c15c5def095
-size 462
+@if(session('success'))
+    <div class="alert alert-success alert-dismissable fade show text-center">
+        <button class="close" data-dismiss="alert" aria-label="Close">×</button>
+        {{session('success')}}
+    </div>
+@endif
+
+
+@if(session('error'))
+    <div class="alert alert-danger alert-dismissable fade show text-center">
+        <button class="close" data-dismiss="alert" aria-label="Close">×</button>
+        {{session('error')}}
+    </div>
+@endif

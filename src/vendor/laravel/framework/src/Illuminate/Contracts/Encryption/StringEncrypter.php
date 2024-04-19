@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c7b5f181a672a4b4d14e7e4fe4f53075aed68161239d8f05e16019ccab1c9e2
-size 570
+<?php
+
+namespace Illuminate\Contracts\Encryption;
+
+interface StringEncrypter
+{
+    /**
+     * Encrypt a string without serialization.
+     *
+     * @param  string  $value
+     * @return string
+     *
+     * @throws \Illuminate\Contracts\Encryption\EncryptException
+     */
+    public function encryptString($value);
+
+    /**
+     * Decrypt the given string without unserialization.
+     *
+     * @param  string  $payload
+     * @return string
+     *
+     * @throws \Illuminate\Contracts\Encryption\DecryptException
+     */
+    public function decryptString($payload);
+}

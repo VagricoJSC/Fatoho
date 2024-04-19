@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:209fcccf8cc5c3933d74d56ba05d75f2ba351491caab679c1ce495bb94ac1dc0
-size 565
+<?php
+namespace Hamcrest;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+
+/**
+ * BaseClass for all Matcher implementations.
+ *
+ * @see Hamcrest\Matcher
+ */
+abstract class BaseMatcher implements Matcher
+{
+
+    public function describeMismatch($item, Description $description)
+    {
+        $description->appendText('was ')->appendValue($item);
+    }
+
+    public function __toString()
+    {
+        return StringDescription::toString($this);
+    }
+
+    public function __invoke()
+    {
+        return call_user_func_array(array($this, 'matches'), func_get_args());
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ded4601d9c76365adf06fa0218d9ffeef2ad94a26e5aebbb02406a038a99fda6
-size 401
+<?php
+
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+
+interface ValidatorInterface
+{
+    /**
+     * Validate a given rule against a route and request.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @param  \Illuminate\Http\Request  $request
+     * @return bool
+     */
+    public function matches(Route $route, Request $request);
+}

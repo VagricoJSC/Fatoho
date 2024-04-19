@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1df6350d3ba1d764b8cb7afbc43d6589d6a6e2872f566381ef723ce58555d65
-size 595
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Exception;
+
+use RuntimeException as PhpRuntimeException;
+
+/**
+ * Thrown to indicate that attempting to fetch or create a node ID encountered an error
+ */
+class NodeException extends PhpRuntimeException implements UuidExceptionInterface
+{
+}

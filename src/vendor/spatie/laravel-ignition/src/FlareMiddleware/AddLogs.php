@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:494e58ebb7e033d86cdd0145349f9eb4324fe46a7e913b39f6169308bc7af3d4
-size 559
+<?php
+
+namespace Spatie\LaravelIgnition\FlareMiddleware;
+
+use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
+use Spatie\FlareClient\Report;
+use Spatie\LaravelIgnition\Recorders\LogRecorder\LogRecorder;
+
+class AddLogs implements FlareMiddleware
+{
+    protected LogRecorder $logRecorder;
+
+    public function __construct()
+    {
+        $this->logRecorder = app(LogRecorder::class);
+    }
+
+    public function handle(Report $report, $next)
+    {
+        $report->group('logs', $this->logRecorder->getLogMessages());
+
+        return $next($report);
+    }
+}

@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e0f6e10c488a24bdc8df66fdb6eb7c073bcce6c73e158beaebc549b74cf7429
-size 848
+<?php
+/**
+ * @package dompdf
+ * @link    https://github.com/dompdf/dompdf
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+namespace Dompdf\Renderer;
+
+use Dompdf\Frame;
+
+/**
+ * Renders block frames
+ *
+ * @package dompdf
+ */
+class TableRowGroup extends Block
+{
+
+    /**
+     * @param Frame $frame
+     */
+    function render(Frame $frame)
+    {
+        $style = $frame->get_style();
+
+        $this->_set_opacity($frame->get_opacity($style->opacity));
+
+        $border_box = $frame->get_border_box();
+
+        $this->_render_border($frame, $border_box);
+        $this->_render_outline($frame, $border_box);
+
+        $id = $frame->get_node()->getAttribute("id");
+        if (strlen($id) > 0) {
+            $this->_canvas->add_named_dest($id);
+        }
+
+        $this->debugBlockLayout($frame, "red");
+    }
+}

@@ -1,0 +1,24 @@
+[23-Mar-2024 13:46:45 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Person.php on line 5
+[23-Mar-2024 13:46:47 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Payment.php on line 5
+[23-Mar-2024 13:46:51 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Address.php on line 5
+[03-Apr-2024 20:00:17 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Person.php on line 5
+[03-Apr-2024 20:00:21 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Payment.php on line 5
+[03-Apr-2024 20:00:26 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/sr_RS/Address.php on line 5

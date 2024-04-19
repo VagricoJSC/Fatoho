@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20793a001db58c4c6f375f6b874052a4299c1b5695d4cc42758044187fb28d55
-size 841
+{
+    "name": "symfony/deprecation-contracts",
+    "type": "library",
+    "description": "A generic function and convention to trigger deprecation notices",
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Grekas",
+            "email": "p@tchwork.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "files": [
+            "function.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-main": "3.3-dev"
+        },
+        "thanks": {
+            "name": "symfony/contracts",
+            "url": "https://github.com/symfony/contracts"
+        }
+    }
+}

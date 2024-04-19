@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3248c6749f956246a5517fb5e959caba02e76819e48e2cfa6e4175f4a87c37fc
-size 629
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - IBM Globalization Center of Competency, Yamato Software Laboratory  bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/en.php', [
+    'formats' => [
+        'LT' => 'HH:mm',
+        'LTS' => 'HH:mm:ss',
+        'L' => 'DD/MM/YY',
+        'LL' => 'MMMM DD, YYYY',
+        'LLL' => 'DD MMM HH:mm',
+        'LLLL' => 'MMMM DD, YYYY HH:mm',
+    ],
+    'day_of_first_week_of_year' => 1,
+]);

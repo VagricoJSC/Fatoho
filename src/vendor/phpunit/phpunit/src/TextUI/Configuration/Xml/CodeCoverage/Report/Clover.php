@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e624e31b5f9ded8e133e809ae48b79d4b559832c6f7cbe1ebeb468b399d2cf0
-size 705
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration\CodeCoverage\Report;
+
+use PHPUnit\TextUI\Configuration\File;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Clover
+{
+    private readonly File $target;
+
+    public function __construct(File $target)
+    {
+        $this->target = $target;
+    }
+
+    public function target(): File
+    {
+        return $this->target;
+    }
+}

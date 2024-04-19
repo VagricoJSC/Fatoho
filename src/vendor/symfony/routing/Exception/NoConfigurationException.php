@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:896a7d7c58d7198c8cb626b6226537c951a389fd2834b52838015bdfb59b4651
-size 465
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Exception;
+
+/**
+ * Exception thrown when no routes are configured.
+ *
+ * @author Yonel Ceruto <yonelceruto@gmail.com>
+ */
+class NoConfigurationException extends ResourceNotFoundException
+{
+}

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7559ea9b1a2a07be01dba599a4cea9d82e9f8eac9752a6d03c90b74a8f9ea1b3
-size 539
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Part\Multipart;
+
+use Symfony\Component\Mime\Part\AbstractMultipartPart;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+final class MixedPart extends AbstractMultipartPart
+{
+    public function getMediaSubtype(): string
+    {
+        return 'mixed';
+    }
+}

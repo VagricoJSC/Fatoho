@@ -1,0 +1,5 @@
+[03-Apr-2024 18:42:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Http\Resources\PotentiallyMissing" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php on line 5
+[03-Apr-2024 18:42:09 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Resources/DelegatesToResource.php on line 9

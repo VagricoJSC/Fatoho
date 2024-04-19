@@ -1,0 +1,20 @@
+[26-Mar-2024 23:54:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/RFCValidation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/RFCValidation.php on line 11
+[26-Mar-2024 23:54:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Validation\RFCValidation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/NoRFCWarningsValidation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/NoRFCWarningsValidation.php on line 9
+[26-Mar-2024 23:54:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/MultipleValidationWithAnd.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/MultipleValidationWithAnd.php on line 11
+[26-Mar-2024 23:54:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php on line 11
+[26-Mar-2024 23:54:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/DNSCheckValidation.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Validation/DNSCheckValidation.php on line 14

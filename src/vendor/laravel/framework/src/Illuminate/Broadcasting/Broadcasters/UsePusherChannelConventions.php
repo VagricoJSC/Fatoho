@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87b778c3deed86ec104ac5a311a2bdb745cdb6e76a068c178caef0f873395334
-size 821
+<?php
+
+namespace Illuminate\Broadcasting\Broadcasters;
+
+use Illuminate\Support\Str;
+
+trait UsePusherChannelConventions
+{
+    /**
+     * Return true if the channel is protected by authentication.
+     *
+     * @param  string  $channel
+     * @return bool
+     */
+    public function isGuardedChannel($channel)
+    {
+        return Str::startsWith($channel, ['private-', 'presence-']);
+    }
+
+    /**
+     * Remove prefix from channel name.
+     *
+     * @param  string  $channel
+     * @return string
+     */
+    public function normalizeChannelName($channel)
+    {
+        foreach (['private-encrypted-', 'private-', 'presence-'] as $prefix) {
+            if (Str::startsWith($channel, $prefix)) {
+                return Str::replaceFirst($prefix, '', $channel);
+            }
+        }
+
+        return $channel;
+    }
+}

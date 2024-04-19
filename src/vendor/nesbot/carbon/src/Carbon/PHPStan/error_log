@@ -1,0 +1,31 @@
+[23-Mar-2024 12:38:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodsClassReflectionExtension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php on line 27
+[23-Mar-2024 12:38:35 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "PHPStan\Reflection\Php\BuiltinMethodReflection" does not exist in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php:20
+Stack trace:
+#0 /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php(20): ReflectionMethod->__construct('PHPStan\\Reflect...', 'getReflection')
+#1 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php on line 20
+[23-Mar-2024 12:38:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\Php\BuiltinMethodReflection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/AbstractMacro.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/AbstractMacro.php on line 33
+[30-Mar-2024 08:03:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "PHPStan\Reflection\Php\BuiltinMethodReflection" does not exist in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php:20
+Stack trace:
+#0 /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php(20): ReflectionMethod->__construct('PHPStan\\Reflect...', 'getReflection')
+#1 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php on line 20
+[01-Apr-2024 15:12:36 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodsClassReflectionExtension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php on line 27
+[01-Apr-2024 15:12:37 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "PHPStan\Reflection\Php\BuiltinMethodReflection" does not exist in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php:20
+Stack trace:
+#0 /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php(20): ReflectionMethod->__construct('PHPStan\\Reflect...', 'getReflection')
+#1 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/Macro.php on line 20
+[01-Apr-2024 15:12:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\Php\BuiltinMethodReflection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/AbstractMacro.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nesbot/carbon/src/Carbon/PHPStan/AbstractMacro.php on line 33

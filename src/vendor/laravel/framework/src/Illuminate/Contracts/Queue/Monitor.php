@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00953d24d8bee59482cb48d8096f1df21ec3807f49c37c2ca048692ec7e0c9d2
-size 672
+<?php
+
+namespace Illuminate\Contracts\Queue;
+
+interface Monitor
+{
+    /**
+     * Register a callback to be executed on every iteration through the queue loop.
+     *
+     * @param  mixed  $callback
+     * @return void
+     */
+    public function looping($callback);
+
+    /**
+     * Register a callback to be executed when a job fails after the maximum number of retries.
+     *
+     * @param  mixed  $callback
+     * @return void
+     */
+    public function failing($callback);
+
+    /**
+     * Register a callback to be executed when a daemon queue is stopping.
+     *
+     * @param  mixed  $callback
+     * @return void
+     */
+    public function stopping($callback);
+}

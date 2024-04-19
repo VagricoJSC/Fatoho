@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c855d6a5c355e27cbef6afe63dd4e431fe5b3c6fe76611e27876318a53b5374
-size 304
+# Security Policy
+
+## Supported Versions
+
+Only the latest released version of Whoops is supported.
+To facilitate upgrades we almost never make backwards-incompatible changes.
+
+## Reporting a Vulnerability
+
+Please report vulnerabilities over email, by sending an email to `denis` at `sokolov` dot `cc`.
+
+

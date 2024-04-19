@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:964454864369dced22ec08a2ab4cf9bec6b950d52b69b89dc1d3e8f5c58099f5
-size 775
+/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
+
+!function(){if(jQuery&&jQuery.fn&&jQuery.fn.select2&&jQuery.fn.select2.amd)var n=jQuery.fn.select2.amd;n.define("select2/i18n/tr",[],function(){return{errorLoading:function(){return"Sonuç yüklenemedi"},inputTooLong:function(n){return n.input.length-n.maximum+" karakter daha girmelisiniz"},inputTooShort:function(n){return"En az "+(n.minimum-n.input.length)+" karakter daha girmelisiniz"},loadingMore:function(){return"Daha fazla…"},maximumSelected:function(n){return"Sadece "+n.maximum+" seçim yapabilirsiniz"},noResults:function(){return"Sonuç bulunamadı"},searching:function(){return"Aranıyor…"},removeAllItems:function(){return"Tüm öğeleri kaldır"}}}),n.define,n.require}();

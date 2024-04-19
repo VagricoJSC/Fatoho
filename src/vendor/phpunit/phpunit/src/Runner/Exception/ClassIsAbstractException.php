@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c06418b877bcb182f9ba4468c457e6ff48d7e7feba940a2e85d1d4030b6e01a7
-size 768
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner;
+
+use function sprintf;
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ClassIsAbstractException extends RuntimeException implements Exception
+{
+    public function __construct(string $className, string $file)
+    {
+        parent::__construct(
+            sprintf(
+                'Class %s declared in %s is abstract',
+                $className,
+                $file
+            )
+        );
+    }
+}

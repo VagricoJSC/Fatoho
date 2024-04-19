@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:782c6f3af47a47c284e4572437b3704718f850f2e9367a7cd805a303abde8151
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/ks_IN.php';

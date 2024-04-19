@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c70af5036d212ea86394d55d6e6bd572b181a3ff94e0a11f93bfaec3c9b02b83
-size 669
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Attribute;
+
+/**
+ * Service tag to autoconfigure controllers.
+ */
+#[\Attribute(\Attribute::TARGET_CLASS)]
+class AsController
+{
+    public function __construct()
+    {
+    }
+}

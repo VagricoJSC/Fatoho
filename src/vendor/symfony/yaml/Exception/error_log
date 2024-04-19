@@ -1,0 +1,12 @@
+[22-Mar-2024 22:28:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Yaml\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/RuntimeException.php on line 19
+[22-Mar-2024 22:28:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Yaml\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/ParseException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/ParseException.php on line 19
+[22-Mar-2024 22:29:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Yaml\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/DumpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/yaml/Exception/DumpException.php on line 19

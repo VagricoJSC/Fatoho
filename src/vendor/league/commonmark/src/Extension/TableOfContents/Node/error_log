@@ -1,0 +1,8 @@
+[01-Apr-2024 16:15:52 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Extension\CommonMark\Node\Block\ListBlock" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Node/TableOfContents.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Node/TableOfContents.php on line 18
+[01-Apr-2024 17:11:08 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Node/TableOfContentsPlaceholder.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Node/TableOfContentsPlaceholder.php on line 18

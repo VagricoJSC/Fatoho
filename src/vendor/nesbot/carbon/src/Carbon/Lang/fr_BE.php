@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:585812686ef9f0c45e2068366236aa55ee4ee371e8baa1cb84c1f9b7efa27b15
-size 465
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - RAP    bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/fr.php', [
+    'months_short' => ['jan', 'fév', 'mar', 'avr', 'mai', 'jun', 'jui', 'aoû', 'sep', 'oct', 'nov', 'déc'],
+]);

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:810a4d9a6ea1af8590f15c365f803cd056048d973ff040012ec8b637ac340b52
-size 825
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Exception;
+
+use Symfony\Contracts\HttpClient\ResponseInterface;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class HttpTransportException extends TransportException
+{
+    private ResponseInterface $response;
+
+    public function __construct(string $message, ResponseInterface $response, int $code = 0, \Throwable $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+
+        $this->response = $response;
+    }
+
+    public function getResponse(): ResponseInterface
+    {
+        return $this->response;
+    }
+}

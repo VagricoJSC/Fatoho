@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fb63d498aeee90e066a16f6ecf8246e8eb36752ed2e85f4ef3e35ce0ccb8b68
-size 570
+<?php
+
+namespace Illuminate\Database\Schema;
+
+use Illuminate\Support\Fluent;
+
+/**
+ * @method $this algorithm(string $algorithm) Specify an algorithm for the index (MySQL/PostgreSQL)
+ * @method $this language(string $language) Specify a language for the full text index (PostgreSQL)
+ * @method $this deferrable(bool $value = true) Specify that the unique index is deferrable (PostgreSQL)
+ * @method $this initiallyImmediate(bool $value = true) Specify the default time to check the unique index constraint (PostgreSQL)
+ */
+class IndexDefinition extends Fluent
+{
+    //
+}

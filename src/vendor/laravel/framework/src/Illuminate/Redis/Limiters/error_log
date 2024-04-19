@@ -1,0 +1,2 @@
+[03-Apr-2024 18:49:57 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/DurationLimiterBuilder.php on line 8
+[03-Apr-2024 20:34:11 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/ConcurrencyLimiterBuilder.php on line 8

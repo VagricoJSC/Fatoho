@@ -1,0 +1,32 @@
+[26-Mar-2024 23:55:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/LocalPart.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/LocalPart.php on line 16
+[26-Mar-2024 23:55:23 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\DomainPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php on line 11
+[26-Mar-2024 23:55:27 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\LocalPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php on line 9
+[26-Mar-2024 23:55:31 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php on line 17
+[26-Mar-2024 23:55:35 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php on line 14
+[26-Mar-2024 23:55:40 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DomainPart.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DomainPart.php on line 26
+[26-Mar-2024 23:55:43 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php on line 24
+[26-Mar-2024 23:55:47 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/Comment.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/Comment.php on line 14

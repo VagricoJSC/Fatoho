@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73ea2ab747c70a341fa8f7758d307d2269ef2a071d2d9b84f25ca9ae8f869e9e
-size 888
+<?php
+
+namespace Spatie\Ignition\Solutions;
+
+use Illuminate\Contracts\Support\Arrayable;
+use Spatie\Ignition\Contracts\Solution;
+
+/** @implements Arrayable<string, array<string,string>|string|false> */
+class SolutionTransformer implements Arrayable
+{
+    protected Solution $solution;
+
+    public function __construct(Solution $solution)
+    {
+        $this->solution = $solution;
+    }
+
+    /** @return array<string, array<string,string>|string|false> */
+    public function toArray(): array
+    {
+        return [
+            'class' => get_class($this->solution),
+            'title' => $this->solution->getSolutionTitle(),
+            'links' => $this->solution->getDocumentationLinks(),
+            'description' => $this->solution->getSolutionDescription(),
+            'is_runnable' => false,
+        ];
+    }
+}

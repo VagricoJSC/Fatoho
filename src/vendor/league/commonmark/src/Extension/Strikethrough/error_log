@@ -1,0 +1,20 @@
+[28-Mar-2024 22:59:01 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughDelimiterProcessor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughDelimiterProcessor.php on line 20
+[01-Apr-2024 15:51:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughRenderer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughRenderer.php on line 22
+[01-Apr-2024 15:51:28 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/Strikethrough.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/Strikethrough.php on line 19
+[01-Apr-2024 16:05:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ExtensionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughExtension.php on line 19
+[01-Apr-2024 16:05:09 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughDelimiterProcessor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/Strikethrough/StrikethroughDelimiterProcessor.php on line 20

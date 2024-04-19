@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17ea28b474d47611819c2938a6535c8569525aecae5ffef5e92ff318da706250
-size 271
+<?php
+
+namespace UniSharp\LaravelFilemanager\Exceptions;
+
+class FileSizeExceedConfigurationMaximumException extends \Exception
+{
+    public function __construct($file_size)
+    {
+        $this->message = trans('laravel-filemanager::lfm.error-size') . $file_size;
+    }
+}

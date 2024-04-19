@@ -1,0 +1,8 @@
+[23-Mar-2024 04:25:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Parser\ParserInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 12
+[01-Apr-2024 12:55:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Parser\ParserInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 12

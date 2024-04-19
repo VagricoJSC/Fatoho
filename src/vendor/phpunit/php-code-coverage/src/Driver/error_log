@@ -1,0 +1,8 @@
+[23-Mar-2024 04:10:16 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php on line 35
+[23-Mar-2024 04:10:32 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php on line 27

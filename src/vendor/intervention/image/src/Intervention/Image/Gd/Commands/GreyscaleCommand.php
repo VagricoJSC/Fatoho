@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f13632b830fa07a155af5da35304bb347619efe8ef1f768656c063b983cf1c25
-size 409
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class GreyscaleCommand extends AbstractCommand
+{
+    /**
+     * Turns an image into a greyscale version
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        return imagefilter($image->getCore(), IMG_FILTER_GRAYSCALE);
+    }
+}

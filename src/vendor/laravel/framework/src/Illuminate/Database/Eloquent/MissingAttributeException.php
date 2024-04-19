@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4672ecc84a5a3419a639548d18c607d216a640b5b6fb05fa60febd025b61953
-size 564
+<?php
+
+namespace Illuminate\Database\Eloquent;
+
+use OutOfBoundsException;
+
+class MissingAttributeException extends OutOfBoundsException
+{
+    /**
+     * Create a new missing attribute exception instance.
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  string  $key
+     * @return void
+     */
+    public function __construct($model, $key)
+    {
+        parent::__construct(sprintf(
+            'The attribute [%s] either does not exist or was not retrieved for model [%s].',
+            $key, get_class($model)
+        ));
+    }
+}

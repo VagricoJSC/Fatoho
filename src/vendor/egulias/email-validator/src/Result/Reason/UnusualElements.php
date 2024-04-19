@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57fac831a43dcd7bced760f44e5a1cab491f682feed5ad179cd6c778847efbe9
-size 503
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class UnusualElements implements Reason
+{
+    /**
+     * @var string $element
+     */
+    private $element = '';
+
+    public function __construct(string $element)
+    {
+        $this->element = $element;
+    }
+
+    public function code() : int
+    {
+        return 201;
+    }
+
+    public function description() : string
+    {
+        return 'Unusual element found, wourld render invalid in majority of cases. Element found: ' . $this->element;
+    }
+}

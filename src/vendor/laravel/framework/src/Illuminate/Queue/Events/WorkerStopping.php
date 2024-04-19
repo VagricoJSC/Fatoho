@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f93af1f1c4cf84970070ee2ac74a602a58089942ad7053b83cbf7f95a3982594
-size 621
+<?php
+
+namespace Illuminate\Queue\Events;
+
+class WorkerStopping
+{
+    /**
+     * The worker exit status.
+     *
+     * @var int
+     */
+    public $status;
+
+    /**
+     * The worker options.
+     *
+     * @var \Illuminate\Queue\WorkerOptions|null
+     */
+    public $workerOptions;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  int  $status
+     * @param  \Illuminate\Queue\WorkerOptions|null  $workerOptions
+     * @return void
+     */
+    public function __construct($status = 0, $workerOptions = null)
+    {
+        $this->status = $status;
+        $this->workerOptions = $workerOptions;
+    }
+}

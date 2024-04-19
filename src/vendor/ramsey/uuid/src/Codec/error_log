@@ -1,0 +1,40 @@
+[23-Mar-2024 02:07:57 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php on line 49
+[23-Mar-2024 02:08:00 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php on line 51
+[23-Mar-2024 02:08:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Codec\CodecInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/StringCodec.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/StringCodec.php on line 38
+[23-Mar-2024 02:08:08 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php on line 46
+[23-Mar-2024 02:08:11 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php on line 31
+[01-Apr-2024 13:22:09 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php on line 49
+[01-Apr-2024 13:22:12 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php on line 51
+[01-Apr-2024 13:22:20 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php on line 46
+[01-Apr-2024 13:22:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Codec\CodecInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/StringCodec.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/StringCodec.php on line 38
+[01-Apr-2024 13:22:25 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php on line 31

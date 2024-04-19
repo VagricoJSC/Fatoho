@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bd93dbd1864ea9c1d98fc23ee61807ed13b799a54cb3a565d947c7a85018196
-size 1510
+<?php
+
+namespace Spatie\LaravelIgnition\Renderers;
+
+use Spatie\FlareClient\Flare;
+use Spatie\Ignition\Config\IgnitionConfig;
+use Spatie\Ignition\Contracts\SolutionProviderRepository;
+use Spatie\Ignition\Ignition;
+use Spatie\LaravelIgnition\ContextProviders\LaravelContextProviderDetector;
+use Spatie\LaravelIgnition\Solutions\SolutionTransformers\LaravelSolutionTransformer;
+use Spatie\LaravelIgnition\Support\LaravelDocumentationLinkFinder;
+use Throwable;
+
+class ErrorPageRenderer
+{
+    public function render(Throwable $throwable): void
+    {
+        $viteJsAutoRefresh = '';
+
+        if (class_exists('Illuminate\Foundation\Vite')) {
+            $vite = app(\Illuminate\Foundation\Vite::class);
+
+            if (is_file($vite->hotFile())) {
+                $viteJsAutoRefresh = $vite->__invoke([]);
+            }
+        }
+
+        app(Ignition::class)
+            ->resolveDocumentationLink(
+                fn (Throwable $throwable) => (new LaravelDocumentationLinkFinder())->findLinkForThrowable($throwable)
+            )
+            ->setFlare(app(Flare::class))
+            ->setConfig(app(IgnitionConfig::class))
+            ->setSolutionProviderRepository(app(SolutionProviderRepository::class))
+            ->setContextProviderDetector(new LaravelContextProviderDetector())
+            ->setSolutionTransformerClass(LaravelSolutionTransformer::class)
+            ->applicationPath(base_path())
+            ->addCustomHtmlToHead($viteJsAutoRefresh)
+            ->renderException($throwable);
+    }
+}

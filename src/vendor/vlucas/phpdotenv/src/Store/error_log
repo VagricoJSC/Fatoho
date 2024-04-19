@@ -1,0 +1,16 @@
+[23-Mar-2024 04:24:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Store\StoreInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/StringStore.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/StringStore.php on line 7
+[23-Mar-2024 04:24:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Store\StoreInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/FileStore.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/FileStore.php on line 10
+[01-Apr-2024 12:56:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Store\StoreInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/StringStore.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/StringStore.php on line 7
+[01-Apr-2024 12:56:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Store\StoreInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/FileStore.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Store/FileStore.php on line 10

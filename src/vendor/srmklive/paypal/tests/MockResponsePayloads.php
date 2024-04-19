@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b6b5086495cad3ce58f3a019f6b1169552aa20d93db1bbf710f5eb515b0bed9
-size 1306
+<?php
+
+namespace Srmklive\PayPal\Tests;
+
+trait MockResponsePayloads
+{
+    use Mocks\Responses\BillingPlans;
+    use Mocks\Responses\CatalogProducts;
+    use Mocks\Responses\Disputes;
+    use Mocks\Responses\DisputesActions;
+    use Mocks\Responses\Identity;
+    use Mocks\Responses\Invoices;
+    use Mocks\Responses\InvoicesSearch;
+    use Mocks\Responses\InvoicesTemplates;
+    use Mocks\Responses\Orders;
+    use Mocks\Responses\PartnerReferrals;
+    use Mocks\Responses\PaymentExperienceWebProfiles;
+    use Mocks\Responses\PaymentAuthorizations;
+    use Mocks\Responses\PaymentCaptures;
+    use Mocks\Responses\PaymentRefunds;
+    use Mocks\Responses\Payouts;
+    use Mocks\Responses\ReferencedPayouts;
+    use Mocks\Responses\Reporting;
+    use Mocks\Responses\Subscriptions;
+    use Mocks\Responses\Trackers;
+    use Mocks\Responses\WebHooks;
+
+    /**
+     * @return array
+     */
+    private function mockAccessTokenResponse(): array
+    {
+        return [
+            'scope'         => 'some_scope',
+            'access_token'  => 'some_access_token',
+            'token_type'    => 'Bearer',
+            'app_id'        => 'APP-80W284485P519543T',
+            'expires_in'    => 32400,
+            'nonce'         => 'some_nonce',
+        ];
+    }
+}

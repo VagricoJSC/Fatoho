@@ -1,0 +1,16 @@
+[23-Mar-2024 11:59:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegisteredSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegisteredSubscriber.php on line 17
+[23-Mar-2024 11:59:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegistered.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegistered.php on line 21
+[03-Apr-2024 19:54:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegisteredSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegisteredSubscriber.php on line 17
+[03-Apr-2024 19:54:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegistered.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Events/Test/ComparatorRegistered.php on line 21

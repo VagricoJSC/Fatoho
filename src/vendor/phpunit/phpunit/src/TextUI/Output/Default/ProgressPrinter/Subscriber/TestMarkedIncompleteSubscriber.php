@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40997d03d7bf2266f2be66ade1c1c6904aa83eeff55abf2e724c67da281c45d0
-size 734
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output\Default\ProgressPrinter;
+
+use PHPUnit\Event\Test\MarkedIncomplete;
+use PHPUnit\Event\Test\MarkedIncompleteSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestMarkedIncompleteSubscriber extends Subscriber implements MarkedIncompleteSubscriber
+{
+    public function notify(MarkedIncomplete $event): void
+    {
+        $this->printer()->testMarkedIncomplete();
+    }
+}

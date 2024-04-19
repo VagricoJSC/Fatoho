@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b5abe4a446444cb2023440ebce15107378a0e8904f125547979cdd81cd9bac7
-size 781
+<?php
+
+namespace Illuminate\Contracts\Database\Eloquent;
+
+interface SupportsPartialRelations
+{
+    /**
+     * Indicate that the relation is a single result of a larger one-to-many relationship.
+     *
+     * @param  string|null  $column
+     * @param  string|\Closure|null  $aggregate
+     * @param  string  $relation
+     * @return $this
+     */
+    public function ofMany($column = 'id', $aggregate = 'MAX', $relation = null);
+
+    /**
+     * Determine whether the relationship is a one-of-many relationship.
+     *
+     * @return bool
+     */
+    public function isOneOfMany();
+
+    /**
+     * Get the one of many inner join subselect query builder instance.
+     *
+     * @return \Illuminate\Database\Eloquent\Builder|void
+     */
+    public function getOneOfManySubQuery();
+}

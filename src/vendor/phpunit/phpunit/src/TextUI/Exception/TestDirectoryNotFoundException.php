@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0d2acc0c563107e06b405d9188730c45f0e1702f9b00712c0781c768df9c48d
-size 721
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI;
+
+use function sprintf;
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestDirectoryNotFoundException extends RuntimeException implements Exception
+{
+    public function __construct(string $path)
+    {
+        parent::__construct(
+            sprintf(
+                'Test directory "%s" not found',
+                $path
+            )
+        );
+    }
+}

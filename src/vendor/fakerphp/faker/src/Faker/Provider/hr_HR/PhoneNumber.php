@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6237a90664235720ee982335c9130603a1f777e4b75292596e833915f68b18d1
-size 279
+<?php
+
+namespace Faker\Provider\hr_HR;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '+385 91 ### ####',
+        '+385 92 ### ####',
+        '+385 95 ### ####',
+        '+385 98 ### ####',
+        '+385 99 ### ####',
+    ];
+}

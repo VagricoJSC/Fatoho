@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f39ad7b1288466ddf4f3241939afdd772a340a17ae345e4b64b43d264a2a75a
-size 392
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Contracts;
+
+use Spatie\Ignition\Contracts\Solution;
+use Throwable;
+
+/**
+ * @internal
+ */
+interface SolutionsRepository
+{
+    /**
+     * Gets the solutions from the given `$throwable`.
+     *
+     * @return array<int, Solution>
+     */
+    public function getFromThrowable(Throwable $throwable): array;
+}

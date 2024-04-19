@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:305b3d0d91dd8540fcbdb191cb017b8b5fdec066822371f8a7dedae7d7502875
-size 520
+<?php
+
+namespace Illuminate\Contracts\Foundation;
+
+interface CachesConfiguration
+{
+    /**
+     * Determine if the application configuration is cached.
+     *
+     * @return bool
+     */
+    public function configurationIsCached();
+
+    /**
+     * Get the path to the configuration cache file.
+     *
+     * @return string
+     */
+    public function getCachedConfigPath();
+
+    /**
+     * Get the path to the cached services.php file.
+     *
+     * @return string
+     */
+    public function getCachedServicesPath();
+}

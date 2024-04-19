@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13017bcac2d15ee251855463326e62b3406dfbf42c89c761840a31797e7777c4
-size 578
+<?php
+
+namespace Illuminate\Database\Concerns;
+
+trait ParsesSearchPath
+{
+    /**
+     * Parse the Postgres "search_path" configuration value into an array.
+     *
+     * @param  string|array|null  $searchPath
+     * @return array
+     */
+    protected function parseSearchPath($searchPath)
+    {
+        if (is_string($searchPath)) {
+            preg_match_all('/[^\s,"\']+/', $searchPath, $matches);
+
+            $searchPath = $matches[0];
+        }
+
+        return array_map(function ($schema) {
+            return trim($schema, '\'"');
+        }, $searchPath ?? []);
+    }
+}

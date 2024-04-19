@@ -1,0 +1,8 @@
+[22-Mar-2024 22:25:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php on line 20
+[22-Mar-2024 22:26:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php on line 17

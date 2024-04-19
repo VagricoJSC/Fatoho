@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d780034dbeffa1441199cd6294e903ae88da282922a18fbbb15cf7b07436fdd0
-size 846
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\Mention\Generator;
+
+use League\CommonMark\Extension\Mention\Mention;
+use League\CommonMark\Node\Inline\AbstractInline;
+
+final class StringTemplateLinkGenerator implements MentionGeneratorInterface
+{
+    private string $urlTemplate;
+
+    public function __construct(string $urlTemplate)
+    {
+        $this->urlTemplate = $urlTemplate;
+    }
+
+    public function generateMention(Mention $mention): ?AbstractInline
+    {
+        $mention->setUrl(\sprintf($this->urlTemplate, $mention->getIdentifier()));
+
+        return $mention;
+    }
+}

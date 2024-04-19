@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf951bd0b0f653083113a938fe6cb3665e9ca5ec5db355e5d6f3862291c32b4d
-size 813
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon;
+
+if (!class_exists(LazyTranslator::class, false)) {
+    class LazyTranslator extends AbstractTranslator
+    {
+        /**
+         * Returns the translation.
+         *
+         * @param string|null $id
+         * @param array       $parameters
+         * @param string|null $domain
+         * @param string|null $locale
+         *
+         * @return string
+         */
+        public function trans($id, array $parameters = [], $domain = null, $locale = null)
+        {
+            return $this->translate($id, $parameters, $domain, $locale);
+        }
+    }
+}

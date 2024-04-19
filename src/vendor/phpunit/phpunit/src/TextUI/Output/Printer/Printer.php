@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9e2e46244562a503f4a9edf66a25d06f391b113c57fd7e29a36dd00c3df249a
-size 495
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output;
+
+/**
+ * @internal This interface is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Printer
+{
+    public function print(string $buffer): void;
+
+    public function flush(): void;
+}

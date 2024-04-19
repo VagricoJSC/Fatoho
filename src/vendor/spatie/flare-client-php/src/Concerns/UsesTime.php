@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41ab80ce52caa0809d88926942ea6c611fa73b6266cf175f3c7f6f8abbc6c79f
-size 411
+<?php
+
+namespace Spatie\FlareClient\Concerns;
+
+use Spatie\FlareClient\Time\SystemTime;
+use Spatie\FlareClient\Time\Time;
+
+trait UsesTime
+{
+    public static Time $time;
+
+    public static function useTime(Time $time): void
+    {
+        self::$time = $time;
+    }
+
+    public function getCurrentTime(): int
+    {
+        $time = self::$time ?? new SystemTime();
+
+        return $time->getCurrentTime();
+    }
+}

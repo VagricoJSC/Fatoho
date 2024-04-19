@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1664faf201ca8c9578b4fe3fb1eb7d01b8d16969f5ceaa1d5328ddce155067f3
-size 321
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Kunal Marwaha
+ * - Alim Boyaq
+ */
+return require __DIR__.'/ug.php';

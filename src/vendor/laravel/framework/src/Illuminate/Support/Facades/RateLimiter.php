@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d1b6809c7f6ab5cf02dc31119b722ce7a34e64b07af05c9d3ccf1d4daedc13d
-size 1179
+<?php
+
+namespace Illuminate\Support\Facades;
+
+/**
+ * @method static \Illuminate\Cache\RateLimiter for(string $name, \Closure $callback)
+ * @method static \Closure limiter(string $name)
+ * @method static mixed attempt(string $key, int $maxAttempts, \Closure $callback, int $decaySeconds = 60)
+ * @method static bool tooManyAttempts(string $key, int $maxAttempts)
+ * @method static int hit(string $key, int $decaySeconds = 60)
+ * @method static mixed attempts(string $key)
+ * @method static mixed resetAttempts(string $key)
+ * @method static int remaining(string $key, int $maxAttempts)
+ * @method static int retriesLeft(string $key, int $maxAttempts)
+ * @method static void clear(string $key)
+ * @method static int availableIn(string $key)
+ * @method static string cleanRateLimiterKey(string $key)
+ *
+ * @see \Illuminate\Cache\RateLimiter
+ */
+class RateLimiter extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return \Illuminate\Cache\RateLimiter::class;
+    }
+}

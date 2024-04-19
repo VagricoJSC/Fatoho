@@ -1,0 +1,8 @@
+[23-Mar-2024 02:00:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[01-Apr-2024 14:01:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php on line 7

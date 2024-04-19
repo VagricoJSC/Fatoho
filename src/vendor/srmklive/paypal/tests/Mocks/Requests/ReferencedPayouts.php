@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7943029b778f2ac453439b4bfb4567dc0fe3b4ffd60e2b432541709ebe4fc1f5
-size 734
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait ReferencedPayouts
+{
+    /**
+     * @return array
+     */
+    private function mockCreateReferencedBatchPayoutParams(): array
+    {
+        return Utils::jsonDecode('{
+  "referenced_payouts": [
+    {
+      "reference_id": "2KP03934U4415543C",
+      "reference_type": "TRANSACTION_ID"
+    },
+    {
+      "reference_id": "8TA4226978212399L",
+      "reference_type": "TRANSACTION_ID"
+    }
+  ]
+}', true);
+    }
+
+    /**
+     * @return array
+     */
+    private function mockCreateReferencedBatchPayoutItemParams(): array
+    {
+        return Utils::jsonDecode('{
+  "reference_id": "CAPTURETXNID",
+  "reference_type": "TRANSACTION_ID"
+}', true);
+    }
+}

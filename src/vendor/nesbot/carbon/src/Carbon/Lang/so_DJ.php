@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:688ab803b9cae497632d9df9af3bc54f0b013da8c14261080d28bd705a1d32ef
-size 422
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Ge'ez Frontier Foundation    locales@geez.org
+ */
+return array_replace_recursive(require __DIR__.'/so.php', [
+    'formats' => [
+        'L' => 'DD.MM.YYYY',
+    ],
+]);

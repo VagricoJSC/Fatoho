@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4c6574c65fdbf34eefeee9cfbd6f94949b6029e6ca64013f4f3a3f575adc50e
-size 464
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Exception;
+
+/**
+ * Exception interface for all exceptions thrown by the component.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface ExceptionInterface extends \Throwable
+{
+}

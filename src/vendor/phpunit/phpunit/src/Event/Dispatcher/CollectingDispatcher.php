@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fd3e958c7f9ea2f15d2ff58516dbaae1f78b6d09258b78cfba526a12fc0074f
-size 824
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class CollectingDispatcher implements Dispatcher
+{
+    private EventCollection $events;
+
+    public function __construct()
+    {
+        $this->events = new EventCollection;
+    }
+
+    public function dispatch(Event $event): void
+    {
+        $this->events->add($event);
+    }
+
+    public function flush(): EventCollection
+    {
+        $events = $this->events;
+
+        $this->events = new EventCollection;
+
+        return $events;
+    }
+}

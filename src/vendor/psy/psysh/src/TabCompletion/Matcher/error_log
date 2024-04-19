@@ -1,0 +1,136 @@
+[23-Mar-2024 16:15:11 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php on line 21
+[23-Mar-2024 16:15:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php on line 24
+[23-Mar-2024 16:21:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php on line 14
+[23-Mar-2024 16:21:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php on line 24
+[23-Mar-2024 16:21:13 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php on line 21
+[23-Mar-2024 16:21:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php on line 21
+[23-Mar-2024 16:21:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php on line 21
+[23-Mar-2024 16:21:23 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php on line 21
+[23-Mar-2024 16:21:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php on line 14
+[23-Mar-2024 16:21:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php on line 21
+[23-Mar-2024 16:21:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php on line 24
+[23-Mar-2024 16:21:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php on line 21
+[23-Mar-2024 16:21:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php on line 22
+[23-Mar-2024 16:21:47 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php on line 14
+[23-Mar-2024 16:21:51 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php on line 22
+[23-Mar-2024 16:22:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php on line 14
+[23-Mar-2024 16:22:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php on line 25
+[01-Apr-2024 15:56:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php on line 21
+[01-Apr-2024 15:56:49 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php on line 24
+[01-Apr-2024 15:56:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php on line 24
+[01-Apr-2024 15:57:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php on line 21
+[01-Apr-2024 15:57:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php on line 21
+[01-Apr-2024 15:57:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php on line 21
+[01-Apr-2024 15:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php on line 21
+[01-Apr-2024 15:57:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php on line 21
+[01-Apr-2024 15:57:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php on line 21
+[01-Apr-2024 15:57:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php on line 24
+[01-Apr-2024 15:57:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php on line 22
+[01-Apr-2024 15:57:30 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php on line 22
+[01-Apr-2024 15:57:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php on line 25
+[01-Apr-2024 16:03:49 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php on line 14
+[01-Apr-2024 16:03:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php on line 14
+[01-Apr-2024 16:03:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php on line 14
+[01-Apr-2024 16:04:01 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php on line 14

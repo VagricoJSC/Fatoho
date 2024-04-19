@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08c04644cc3fa02556b3b7a626d2c1e612226cb2892ae42b5d6760fd2e2379d4
-size 819
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\RequestMatcher;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestMatcherInterface;
+
+/**
+ * Checks the Request URL path info matches a regular expression.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class PathRequestMatcher implements RequestMatcherInterface
+{
+    public function __construct(private string $regexp)
+    {
+    }
+
+    public function matches(Request $request): bool
+    {
+        return preg_match('{'.$this->regexp.'}', rawurldecode($request->getPathInfo()));
+    }
+}

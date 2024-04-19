@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f42f248ae8f30822a0b1126102c96aedb1564e33417ba2e0b17ecda2515464e
-size 542
+<?php
+
+namespace Illuminate\Queue\Events;
+
+class Looping
+{
+    /**
+     * The connection name.
+     *
+     * @var string
+     */
+    public $connectionName;
+
+    /**
+     * The queue name.
+     *
+     * @var string
+     */
+    public $queue;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $connectionName
+     * @param  string  $queue
+     * @return void
+     */
+    public function __construct($connectionName, $queue)
+    {
+        $this->queue = $queue;
+        $this->connectionName = $connectionName;
+    }
+}

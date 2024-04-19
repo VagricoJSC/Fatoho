@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73659315194b14e52c630a42ef17ed298f2426e1a43ac95b6b11268f906834e7
-size 1126
+{
+    "name": "sebastian/object-reflector",
+    "description": "Allows reflection of object attributes, including inherited and non-public ones",
+    "homepage": "https://github.com/sebastianbergmann/object-reflector/",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sebastian Bergmann",
+            "email": "sebastian@phpunit.de"
+        }
+    ],
+    "prefer-stable": true,
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/_fixture/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "3.0-dev"
+        }
+    }
+}

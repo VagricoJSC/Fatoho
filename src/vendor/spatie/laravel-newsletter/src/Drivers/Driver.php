@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea91b7dd599cac6c939260ffd4c580eeba283ceee85636a542b1f40361b50fe0
-size 878
+<?php
+
+namespace Spatie\Newsletter\Drivers;
+
+use Spatie\Newsletter\Support\Lists;
+
+interface Driver
+{
+    public static function make(array $arguments, Lists $lists);
+
+    public function getApi();
+
+    public function subscribe(
+        string $email,
+        array $properties = [],
+        string $listName = '',
+        array $options = []
+    );
+
+    public function subscribeOrUpdate(
+        string $email,
+        array $properties = [],
+        string $listName = '',
+        array $options = []
+    );
+
+    public function unsubscribe(string $email, string $listName = '');
+
+    public function delete(string $email, string $listName = '');
+
+    public function getMember(string $email, string $listName = '');
+
+    public function hasMember(string $email, string $listName = ''): bool;
+
+    public function isSubscribed(string $email, string $listName = ''): bool;
+}

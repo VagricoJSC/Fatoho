@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:917f532ade3124e254db70ea0c6268e448a8b5b12cc2acece40d7048e957fe84
-size 1237
+<?php
+
+namespace Illuminate\Foundation\Testing;
+
+use Faker\Factory;
+use Faker\Generator;
+
+trait WithFaker
+{
+    /**
+     * The Faker instance.
+     *
+     * @var \Faker\Generator
+     */
+    protected $faker;
+
+    /**
+     * Setup up the Faker instance.
+     *
+     * @return void
+     */
+    protected function setUpFaker()
+    {
+        $this->faker = $this->makeFaker();
+    }
+
+    /**
+     * Get the default Faker instance for a given locale.
+     *
+     * @param  string|null  $locale
+     * @return \Faker\Generator
+     */
+    protected function faker($locale = null)
+    {
+        return is_null($locale) ? $this->faker : $this->makeFaker($locale);
+    }
+
+    /**
+     * Create a Faker instance for the given locale.
+     *
+     * @param  string|null  $locale
+     * @return \Faker\Generator
+     */
+    protected function makeFaker($locale = null)
+    {
+        $locale ??= config('app.faker_locale', Factory::DEFAULT_LOCALE);
+
+        if (isset($this->app) && $this->app->bound(Generator::class)) {
+            return $this->app->make(Generator::class, ['locale' => $locale]);
+        }
+
+        return Factory::create($locale);
+    }
+}

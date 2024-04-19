@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:757bb8b34546dc5facd7909446cdf475b3583640922dffe1fcec76ff083de2f1
-size 760
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions;
+
+use Spatie\Ignition\Contracts\Solution;
+
+class SuggestLivewireMethodNameSolution implements Solution
+{
+    public function __construct(
+        protected string $methodName,
+        protected string $componentClass,
+        protected string $suggested
+    ) {
+    }
+
+    public function getSolutionTitle(): string
+    {
+        return "Possible typo `{$this->componentClass}::{$this->methodName}`";
+    }
+
+    public function getDocumentationLinks(): array
+    {
+        return [];
+    }
+
+    public function getSolutionDescription(): string
+    {
+        return "Did you mean `{$this->componentClass}::{$this->suggested}`?";
+    }
+
+    public function isRunnable(): bool
+    {
+        return false;
+    }
+}

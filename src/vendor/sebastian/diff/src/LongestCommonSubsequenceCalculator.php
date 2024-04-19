@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9af345eb90d2e99dafb2dc47eb568b6411e70f07c3ee70caa9c0c8d4a8f7e9b8
-size 486
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/diff.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Diff;
+
+interface LongestCommonSubsequenceCalculator
+{
+    /**
+     * Calculates the longest common subsequence of two arrays.
+     */
+    public function calculate(array $from, array $to): array;
+}

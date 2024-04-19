@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cd9c6b3ca2c04495b10fd55dbb8d4d1fef53adad41eab9c05eac121358f597e
-size 1185
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\DependencyInjection;
+
+use Symfony\Component\DependencyInjection\Compiler\MergeExtensionConfigurationPass as BaseMergeExtensionConfigurationPass;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+
+/**
+ * Ensures certain extensions are always loaded.
+ *
+ * @author Kris Wallsmith <kris@symfony.com>
+ */
+class MergeExtensionConfigurationPass extends BaseMergeExtensionConfigurationPass
+{
+    private array $extensions;
+
+    /**
+     * @param string[] $extensions
+     */
+    public function __construct(array $extensions)
+    {
+        $this->extensions = $extensions;
+    }
+
+    public function process(ContainerBuilder $container)
+    {
+        foreach ($this->extensions as $extension) {
+            if (!\count($container->getExtensionConfig($extension))) {
+                $container->loadFromExtension($extension, []);
+            }
+        }
+
+        parent::process($container);
+    }
+}

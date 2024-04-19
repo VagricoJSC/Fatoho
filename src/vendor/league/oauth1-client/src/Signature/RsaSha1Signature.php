@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fb770f4e4b84402a9980bd274efd50634b40584d53cb5a30a6b40a330d236e4
-size 820
+<?php
+
+namespace League\OAuth1\Client\Signature;
+
+use League\OAuth1\Client\Credentials\RsaClientCredentials;
+
+class RsaSha1Signature extends Signature implements SignatureInterface
+{
+    use EncodesUrl;
+
+    /**
+     * @inheritDoc
+     */
+    public function method()
+    {
+        return 'RSA-SHA1';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function sign($uri, array $parameters = [], $method = 'POST')
+    {
+        $url = $this->createUrl($uri);
+        $baseString = $this->baseString($url, $method, $parameters);
+
+        /** @var RsaClientCredentials $clientCredentials */
+        $clientCredentials = $this->clientCredentials;
+        $privateKey = $clientCredentials->getRsaPrivateKey();
+
+        openssl_sign($baseString, $signature, $privateKey);
+
+        return base64_encode($signature);
+    }
+}

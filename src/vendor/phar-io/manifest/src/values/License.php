@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51ac15d65def4c0f9525897b6a4794fcf006e9011a6aa64c5e64ea3320f83587
-size 764
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class License {
+    /** @var string */
+    private $name;
+
+    /** @var Url */
+    private $url;
+
+    public function __construct(string $name, Url $url) {
+        $this->name = $name;
+        $this->url  = $url;
+    }
+
+    public function getName(): string {
+        return $this->name;
+    }
+
+    public function getUrl(): Url {
+        return $this->url;
+    }
+}

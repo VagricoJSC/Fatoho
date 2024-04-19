@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0677f42c12ff384b545d6358473f7505ab4d3f59617f7d3a4aca1a615732f35
-size 576
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Processor;
+
+use Monolog\LogRecord;
+
+/**
+ * An optional interface to allow labelling Monolog processors.
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+interface ProcessorInterface
+{
+    /**
+     * @return LogRecord The processed record
+     */
+    public function __invoke(LogRecord $record);
+}

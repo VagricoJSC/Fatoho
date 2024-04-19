@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:244feb2a7e8fc4b3eb06fc895534cf5c7e30b4db984a805fdadba3963e79778e
-size 986
+<?php
+
+namespace Illuminate\Session;
+
+use SessionHandlerInterface;
+
+class NullSessionHandler implements SessionHandlerInterface
+{
+    /**
+     * {@inheritdoc}
+     *
+     * @return bool
+     */
+    public function open($savePath, $sessionName): bool
+    {
+        return true;
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return bool
+     */
+    public function close(): bool
+    {
+        return true;
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return string
+     */
+    public function read($sessionId): string
+    {
+        return '';
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return bool
+     */
+    public function write($sessionId, $data): bool
+    {
+        return true;
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return bool
+     */
+    public function destroy($sessionId): bool
+    {
+        return true;
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return int
+     */
+    public function gc($lifetime): int
+    {
+        return 0;
+    }
+}

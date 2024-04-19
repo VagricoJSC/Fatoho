@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5534a430242f78d685e8a2f2a5cc4db1bef3cbf5dd627e556422a19abc5a17c4
-size 829
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use const PHP_EOL;
+use function sprintf;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ComparisonMethodDoesNotAcceptParameterTypeException extends Exception
+{
+    public function __construct(string $className, string $methodName, string $type)
+    {
+        parent::__construct(
+            sprintf(
+                '%s is not an accepted argument type for comparison method %s::%s().',
+                $type,
+                $className,
+                $methodName
+            )
+        );
+    }
+
+    public function __toString(): string
+    {
+        return $this->getMessage() . PHP_EOL;
+    }
+}

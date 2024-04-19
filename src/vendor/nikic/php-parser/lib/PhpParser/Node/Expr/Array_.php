@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23b09b9ca53f91e616febe3d3f3e779aab249dd5600f6d0db28d67d67e994f57
-size 831
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class Array_ extends Expr
+{
+    // For use in "kind" attribute
+    const KIND_LONG = 1;  // array() syntax
+    const KIND_SHORT = 2; // [] syntax
+
+    /** @var (ArrayItem|null)[] Items */
+    public $items;
+
+    /**
+     * Constructs an array node.
+     *
+     * @param (ArrayItem|null)[] $items      Items of the array
+     * @param array       $attributes Additional attributes
+     */
+    public function __construct(array $items = [], array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->items = $items;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['items'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_Array';
+    }
+}

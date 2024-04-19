@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5bb910f6e337517a135532901b7c49cb28bed44c09823ed6f60868336664683
-size 898
+<?php
+
+namespace Spatie\Ignition\Contracts;
+
+use Throwable;
+
+interface SolutionProviderRepository
+{
+    /**
+     * @param class-string<HasSolutionsForThrowable>|HasSolutionsForThrowable $solutionProvider
+     *
+     * @return $this
+     */
+    public function registerSolutionProvider(string $solutionProvider): self;
+
+    /**
+     * @param array<class-string<HasSolutionsForThrowable>|HasSolutionsForThrowable> $solutionProviders
+     *
+     * @return $this
+     */
+    public function registerSolutionProviders(array $solutionProviders): self;
+
+    /**
+     * @param Throwable $throwable
+     *
+     * @return array<int, Solution>
+     */
+    public function getSolutionsForThrowable(Throwable $throwable): array;
+
+    /**
+     * @param class-string<Solution> $solutionClass
+     *
+     * @return null|Solution
+     */
+    public function getSolutionForClass(string $solutionClass): ?Solution;
+}

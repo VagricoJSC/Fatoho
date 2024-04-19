@@ -1,0 +1,16 @@
+[22-Mar-2024 22:33:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Client\ClientExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/RequestExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/RequestExceptionInterface.php on line 14
+[22-Mar-2024 22:33:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Client\ClientExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/NetworkExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/NetworkExceptionInterface.php on line 14
+[01-Apr-2024 12:14:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Client\ClientExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/RequestExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/RequestExceptionInterface.php on line 14
+[01-Apr-2024 12:14:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Client\ClientExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/NetworkExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/http-client/src/NetworkExceptionInterface.php on line 14

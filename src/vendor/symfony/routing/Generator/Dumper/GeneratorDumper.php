@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:338c75d7911a1462f3d10a6c8052d7776d0c7242525ef6ffc81ac66267da9e60
-size 777
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Generator\Dumper;
+
+use Symfony\Component\Routing\RouteCollection;
+
+/**
+ * GeneratorDumper is the base class for all built-in generator dumpers.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+abstract class GeneratorDumper implements GeneratorDumperInterface
+{
+    private RouteCollection $routes;
+
+    public function __construct(RouteCollection $routes)
+    {
+        $this->routes = $routes;
+    }
+
+    public function getRoutes(): RouteCollection
+    {
+        return $this->routes;
+    }
+}

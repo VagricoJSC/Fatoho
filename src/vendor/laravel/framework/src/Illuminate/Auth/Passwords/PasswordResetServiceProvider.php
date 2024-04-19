@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea7596c58dbd26defb13f4daf201cc3a4f4de41702cf41cb26363f83c33977da
-size 1010
+<?php
+
+namespace Illuminate\Auth\Passwords;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\ServiceProvider;
+
+class PasswordResetServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->registerPasswordBroker();
+    }
+
+    /**
+     * Register the password broker instance.
+     *
+     * @return void
+     */
+    protected function registerPasswordBroker()
+    {
+        $this->app->singleton('auth.password', function ($app) {
+            return new PasswordBrokerManager($app);
+        });
+
+        $this->app->bind('auth.password.broker', function ($app) {
+            return $app->make('auth.password')->broker();
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['auth.password', 'auth.password.broker'];
+    }
+}

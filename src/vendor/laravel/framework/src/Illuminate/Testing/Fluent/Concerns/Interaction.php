@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9825a6d453769a99b1bd356fa2730327e2c2baab84732564d8e13528e6007da8
-size 1473
+<?php
+
+namespace Illuminate\Testing\Fluent\Concerns;
+
+use Illuminate\Support\Str;
+use PHPUnit\Framework\Assert as PHPUnit;
+
+trait Interaction
+{
+    /**
+     * The list of interacted properties.
+     *
+     * @var array
+     */
+    protected $interacted = [];
+
+    /**
+     * Marks the property as interacted.
+     *
+     * @param  string  $key
+     * @return void
+     */
+    protected function interactsWith(string $key): void
+    {
+        $prop = Str::before($key, '.');
+
+        if (! in_array($prop, $this->interacted, true)) {
+            $this->interacted[] = $prop;
+        }
+    }
+
+    /**
+     * Asserts that all properties have been interacted with.
+     *
+     * @return void
+     */
+    public function interacted(): void
+    {
+        PHPUnit::assertSame(
+            [],
+            array_diff(array_keys($this->prop()), $this->interacted),
+            $this->path
+                ? sprintf('Unexpected properties were found in scope [%s].', $this->path)
+                : 'Unexpected properties were found on the root level.'
+        );
+    }
+
+    /**
+     * Disables the interaction check.
+     *
+     * @return $this
+     */
+    public function etc(): self
+    {
+        $this->interacted = array_keys($this->prop());
+
+        return $this;
+    }
+
+    /**
+     * Retrieve a prop within the current scope using "dot" notation.
+     *
+     * @param  string|null  $key
+     * @return mixed
+     */
+    abstract protected function prop(string $key = null);
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58907f816f5ed5021329335891d4c0bfa88b8fa21e15c5177c830c27a2b4e62b
-size 661
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\ResultCache;
+
+use PHPUnit\Event\Test\Failed;
+use PHPUnit\Event\Test\FailedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestFailedSubscriber extends Subscriber implements FailedSubscriber
+{
+    public function notify(Failed $event): void
+    {
+        $this->handler()->testFailed($event);
+    }
+}

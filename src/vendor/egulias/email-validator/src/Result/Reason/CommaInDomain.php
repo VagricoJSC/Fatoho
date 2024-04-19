@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00d63bbe3bc10a9d7c797a391a83df47030e5808ca4d2912658b5ddee75d946e
-size 277
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class CommaInDomain implements Reason
+{
+    public function code() : int
+    {
+        return 200;
+    }
+
+    public function description() : string
+    {
+        return "Comma ',' is not allowed in domain part";
+    }
+}

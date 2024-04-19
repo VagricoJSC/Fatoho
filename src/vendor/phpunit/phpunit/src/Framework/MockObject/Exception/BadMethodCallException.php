@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:364c21e691281d8391289174e90053ca5a188cb38c25c327e0406db558a05c01
-size 483
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\MockObject;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class BadMethodCallException extends \BadMethodCallException implements Exception
+{
+}

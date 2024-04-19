@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d00ec2147d1dd13dbfd99b98af8031c5065a826392bc36315b0be6e331885eba
-size 1183
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Test\Constraint;
+
+use PHPUnit\Framework\Constraint\Constraint;
+use Symfony\Component\Mime\RawMessage;
+
+final class EmailHasHeader extends Constraint
+{
+    private string $headerName;
+
+    public function __construct(string $headerName)
+    {
+        $this->headerName = $headerName;
+    }
+
+    public function toString(): string
+    {
+        return sprintf('has header "%s"', $this->headerName);
+    }
+
+    /**
+     * @param RawMessage $message
+     */
+    protected function matches($message): bool
+    {
+        if (RawMessage::class === $message::class) {
+            throw new \LogicException('Unable to test a message header on a RawMessage instance.');
+        }
+
+        return $message->getHeaders()->has($this->headerName);
+    }
+
+    /**
+     * @param RawMessage $message
+     */
+    protected function failureDescription($message): string
+    {
+        return 'the Email '.$this->toString();
+    }
+}

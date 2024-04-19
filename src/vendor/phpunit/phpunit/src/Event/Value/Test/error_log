@@ -1,0 +1,18 @@
+[23-Mar-2024 11:55:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php on line 31
+[23-Mar-2024 11:55:15 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\Code\TestCollection::getIterator(): PHPUnit\Event\Code\TestCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\Code\TestCollectionIterator is not available in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestCollection.php on line 56
+[23-Mar-2024 11:55:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php on line 17
+[03-Apr-2024 19:54:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php on line 31
+[03-Apr-2024 19:55:01 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\Code\TestCollection::getIterator(): PHPUnit\Event\Code\TestCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\Code\TestCollectionIterator is not available in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestCollection.php on line 56
+[03-Apr-2024 19:55:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php on line 17

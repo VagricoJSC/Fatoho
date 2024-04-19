@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:627fc40fdf1cfd92635493fd1b320edcdafcf48155f3075cafd057e7ebafe408
-size 256
+<?php
+
+namespace Illuminate\Cache\RateLimiting;
+
+class Unlimited extends GlobalLimit
+{
+    /**
+     * Create a new limit instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct(PHP_INT_MAX);
+    }
+}

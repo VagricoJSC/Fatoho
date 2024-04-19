@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30639ae022f58301402dde2d9c5c62f2be1226af8e60e58d36931f0d481d1641
-size 1121
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\FrontMatter\Data;
+
+use League\CommonMark\Extension\FrontMatter\Exception\InvalidFrontMatterException;
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
+
+final class SymfonyYamlFrontMatterParser implements FrontMatterDataParserInterface
+{
+    /**
+     * {@inheritDoc}
+     */
+    public function parse(string $frontMatter)
+    {
+        if (! \class_exists(Yaml::class)) {
+            throw new \RuntimeException('Failed to parse yaml: "symfony/yaml" library is missing');
+        }
+
+        try {
+            return Yaml::parse($frontMatter);
+        } catch (ParseException $ex) {
+            throw InvalidFrontMatterException::wrap($ex);
+        }
+    }
+}

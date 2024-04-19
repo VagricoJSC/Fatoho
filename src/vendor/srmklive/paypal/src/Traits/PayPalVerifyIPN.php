@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16522af6f8d477026a5431e27ddeffea45477240a4911c3e32b1d8a10e723f7b
-size 1697
+<?php
+
+namespace Srmklive\PayPal\Traits;
+
+trait PayPalVerifyIPN
+{
+    protected $webhook_id;
+
+    public function setWebHookID(string $webhook_id): \Srmklive\PayPal\Services\PayPal
+    {
+        $this->webhook_id = $webhook_id;
+
+        return $this;
+    }
+
+    /**
+     * Verify incoming IPN through a web hook id.
+     *
+     * @throws \Throwable
+     *
+     * @return array|\Psr\Http\Message\StreamInterface|string
+     */
+    public function verifyIPN(\Illuminate\Http\Request $request)
+    {
+        $headers = array_change_key_case($request->headers->all(), CASE_UPPER);
+
+        if (!isset($headers['PAYPAL-AUTH-ALGO'][0]) ||
+            !isset($headers['PAYPAL-TRANSMISSION-ID'][0]) ||
+            !isset($headers['PAYPAL-CERT-URL'][0]) ||
+            !isset($headers['PAYPAL-TRANSMISSION-SIG'][0]) ||
+            !isset($headers['PAYPAL-TRANSMISSION-TIME'][0]) ||
+            !isset($this->webhook_id)
+        ) {
+            \Log::error('Invalid headers or webhook id supplied for paypal webhook');
+
+            return response()->json([
+                'status'  => 'error',
+                'message' => 'Invalid headers or web hook id provided',
+            ]);
+        }
+
+        $params = $request->all();
+
+        $payload = [
+            'auth_algo'         => $headers['PAYPAL-AUTH-ALGO'][0],
+            'cert_url'          => $headers['PAYPAL-CERT-URL'][0],
+            'transmission_id'   => $headers['PAYPAL-TRANSMISSION-ID'][0],
+            'transmission_sig'  => $headers['PAYPAL-TRANSMISSION-SIG'][0],
+            'transmission_time' => $headers['PAYPAL-TRANSMISSION-TIME'][0],
+            'webhook_id'        => $this->webhook_id,
+            'webhook_event'     => $params,
+        ];
+
+        return $this->verifyWebHook($payload);
+    }
+}

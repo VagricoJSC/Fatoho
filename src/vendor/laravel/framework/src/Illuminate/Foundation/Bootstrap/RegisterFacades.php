@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad2e1ab13a04030de28930d239fcc77f484e7124e31ac4f33c452fa4db9c40b5
-size 731
+<?php
+
+namespace Illuminate\Foundation\Bootstrap;
+
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Foundation\AliasLoader;
+use Illuminate\Foundation\PackageManifest;
+use Illuminate\Support\Facades\Facade;
+
+class RegisterFacades
+{
+    /**
+     * Bootstrap the given application.
+     *
+     * @param  \Illuminate\Contracts\Foundation\Application  $app
+     * @return void
+     */
+    public function bootstrap(Application $app)
+    {
+        Facade::clearResolvedInstances();
+
+        Facade::setFacadeApplication($app);
+
+        AliasLoader::getInstance(array_merge(
+            $app->make('config')->get('app.aliases', []),
+            $app->make(PackageManifest::class)->aliases()
+        ))->register();
+    }
+}

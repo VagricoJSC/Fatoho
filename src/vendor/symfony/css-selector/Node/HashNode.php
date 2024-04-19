@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05288af6b5edd7d167a0be4a4592251c7093f7757481a8597553ebdcdfa5c521
-size 1265
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\CssSelector\Node;
+
+/**
+ * Represents a "<selector>#<id>" node.
+ *
+ * This component is a port of the Python cssselect library,
+ * which is copyright Ian Bicking, @see https://github.com/SimonSapin/cssselect.
+ *
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ *
+ * @internal
+ */
+class HashNode extends AbstractNode
+{
+    private NodeInterface $selector;
+    private string $id;
+
+    public function __construct(NodeInterface $selector, string $id)
+    {
+        $this->selector = $selector;
+        $this->id = $id;
+    }
+
+    public function getSelector(): NodeInterface
+    {
+        return $this->selector;
+    }
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
+
+    public function getSpecificity(): Specificity
+    {
+        return $this->selector->getSpecificity()->plus(new Specificity(1, 0, 0));
+    }
+
+    public function __toString(): string
+    {
+        return sprintf('%s[%s#%s]', $this->getNodeName(), $this->selector, $this->id);
+    }
+}

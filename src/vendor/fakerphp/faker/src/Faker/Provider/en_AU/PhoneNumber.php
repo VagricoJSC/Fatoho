@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7d768595f46bfb45ddad673e428a5f4795fe862f55f8378ce491a34af5e38e6
-size 1413
+<?php
+
+namespace Faker\Provider\en_AU;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        // Local calls
+        '#### ####',
+        '####-####',
+        '####.####',
+        '########',
+
+        // National dialing
+        '0{{areaCode}} #### ####',
+        '0{{areaCode}}-####-####',
+        '0{{areaCode}}.####.####',
+        '0{{areaCode}}########',
+
+        // Optional parenthesis
+        '(0{{areaCode}}) #### ####',
+        '(0{{areaCode}})-####-####',
+        '(0{{areaCode}}).####.####',
+        '(0{{areaCode}})########',
+
+        // International drops the 0
+        '+61 {{areaCode}} #### ####',
+        '+61-{{areaCode}}-####-####',
+        '+61.{{areaCode}}.####.####',
+        '+61{{areaCode}}########',
+    ];
+
+    // 04 Mobile telephones (Australia-wide) mostly commonly written 4 - 3 - 3 instead of 2 - 4 - 4
+    protected static $mobileFormats = [
+        '04## ### ###',
+        '04##-###-###',
+        '04##.###.###',
+        '+61 4## ### ###',
+        '+61-4##-###-###',
+        '+61.4##.###.###',
+    ];
+
+    protected static $areacodes = [
+        '2', '3', '7', '8',
+    ];
+
+    public static function mobileNumber()
+    {
+        return static::numerify(static::randomElement(static::$mobileFormats));
+    }
+
+    public static function areaCode()
+    {
+        return static::numerify(static::randomElement(static::$areacodes));
+    }
+}

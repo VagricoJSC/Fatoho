@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:739546fa26406af482c13922bd6ed4f1f5dccaaa5ad5ae55fe89f19ac09a4b41
-size 983
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Version.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Version;
+
+class AndVersionConstraintGroup extends AbstractVersionConstraint {
+    /** @var VersionConstraint[] */
+    private $constraints = [];
+
+    /**
+     * @param VersionConstraint[] $constraints
+     */
+    public function __construct(string $originalValue, array $constraints) {
+        parent::__construct($originalValue);
+
+        $this->constraints = $constraints;
+    }
+
+    public function complies(Version $version): bool {
+        foreach ($this->constraints as $constraint) {
+            if (!$constraint->complies($version)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}

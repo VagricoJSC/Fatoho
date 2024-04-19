@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72c421fd266221568ddb8eff61c0d35daf77d7899dd8b963913d39d0eff46eec
-size 703
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Adapters\Phpunit\Printers;
+
+use Throwable;
+
+/**
+ * @internal
+ *
+ * @mixin DefaultPrinter
+ */
+final class ReportablePrinter
+{
+    /**
+     * Creates a new Printer instance.
+     */
+    public function __construct(private readonly DefaultPrinter $printer)
+    {
+        // ..
+    }
+
+    /**
+     * Calls the original method, but reports any errors to the reporter.
+     */
+    public function __call(string $name, array $arguments): mixed
+    {
+        try {
+            return $this->printer->$name(...$arguments);
+        } catch (Throwable $throwable) {
+            $this->printer->report($throwable);
+        }
+
+        exit(1);
+    }
+}

@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bdb56ef57fc3b42f4ddec653d5735a205e274b8acabfba050a53dab7446bbb6
-size 1697
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com> and uAfrica.com (http://uafrica.com)
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\Strikethrough;
+
+use League\CommonMark\Delimiter\DelimiterInterface;
+use League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface;
+use League\CommonMark\Node\Inline\AbstractStringContainer;
+
+final class StrikethroughDelimiterProcessor implements DelimiterProcessorInterface
+{
+    public function getOpeningCharacter(): string
+    {
+        return '~';
+    }
+
+    public function getClosingCharacter(): string
+    {
+        return '~';
+    }
+
+    public function getMinLength(): int
+    {
+        return 2;
+    }
+
+    public function getDelimiterUse(DelimiterInterface $opener, DelimiterInterface $closer): int
+    {
+        $min = \min($opener->getLength(), $closer->getLength());
+
+        return $min >= 2 ? $min : 0;
+    }
+
+    public function process(AbstractStringContainer $opener, AbstractStringContainer $closer, int $delimiterUse): void
+    {
+        $strikethrough = new Strikethrough(\str_repeat('~', $delimiterUse));
+
+        $tmp = $opener->next();
+        while ($tmp !== null && $tmp !== $closer) {
+            $next = $tmp->next();
+            $strikethrough->appendChild($tmp);
+            $tmp = $next;
+        }
+
+        $opener->insertAfter($strikethrough);
+    }
+}

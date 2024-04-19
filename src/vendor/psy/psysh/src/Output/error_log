@@ -1,0 +1,32 @@
+[23-Mar-2024 02:17:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ShellOutput.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ShellOutput.php on line 21
+[23-Mar-2024 02:17:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ProcOutputPager.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ProcOutputPager.php on line 24
+[23-Mar-2024 02:17:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/PassthruPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/PassthruPager.php on line 20
+[23-Mar-2024 02:17:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/OutputPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/OutputPager.php on line 20
+[01-Apr-2024 13:29:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ShellOutput.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ShellOutput.php on line 21
+[01-Apr-2024 13:29:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ProcOutputPager.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/ProcOutputPager.php on line 24
+[01-Apr-2024 13:29:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/PassthruPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/PassthruPager.php on line 20
+[01-Apr-2024 13:29:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/OutputPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Output/OutputPager.php on line 20

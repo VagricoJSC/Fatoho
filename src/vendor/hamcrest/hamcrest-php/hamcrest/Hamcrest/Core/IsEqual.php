@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6918247bff1495515899e6a965ce1a6e1593ac5c2c1ba9d38d0dac3b8cff495
-size 835
+<?php
+namespace Hamcrest\Core;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+use Hamcrest\BaseMatcher;
+use Hamcrest\Description;
+
+/**
+ * Is the value equal to another value, as tested by the use of the "=="
+ * comparison operator?
+ */
+class IsEqual extends BaseMatcher
+{
+
+    private $_item;
+
+    public function __construct($item)
+    {
+        $this->_item = $item;
+    }
+
+    public function matches($arg)
+    {
+        return (($arg == $this->_item) && ($this->_item == $arg));
+    }
+
+    public function describeTo(Description $description)
+    {
+        $description->appendValue($this->_item);
+    }
+
+    /**
+     * Is the value equal to another value, as tested by the use of the "=="
+     * comparison operator?
+     *
+     * @factory
+     */
+    public static function equalTo($item)
+    {
+        return new self($item);
+    }
+}

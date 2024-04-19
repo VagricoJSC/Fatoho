@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:976586efc2525f0e43d75ac6a5ad692ad1e0e3b51898dd6ee7e5b5dea3833c00
-size 846
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark;
+
+use League\CommonMark\Output\RenderedContentInterface;
+
+/**
+ * Interface for a service which converts Markdown to HTML.
+ *
+ * @deprecated since 2.2; use {@link ConverterInterface} instead
+ */
+interface MarkdownConverterInterface
+{
+    /**
+     * Converts Markdown to HTML.
+     *
+     * @deprecated since 2.2; use {@link ConverterInterface::convert()} instead
+     *
+     * @throws \RuntimeException
+     */
+    public function convertToHtml(string $markdown): RenderedContentInterface;
+}

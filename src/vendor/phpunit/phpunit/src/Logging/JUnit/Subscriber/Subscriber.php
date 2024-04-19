@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:188cc163332a7f1b4f7e574a6ac922682eb4d1854e0c40c8a1150699bf5ae615
-size 652
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\JUnit;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+abstract class Subscriber
+{
+    private readonly JunitXmlLogger $logger;
+
+    public function __construct(JunitXmlLogger $logger)
+    {
+        $this->logger = $logger;
+    }
+
+    protected function logger(): JunitXmlLogger
+    {
+        return $this->logger;
+    }
+}

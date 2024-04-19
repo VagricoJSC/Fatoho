@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5edec69057205d9b6be61a6161cb21ae3f516765e6beee79b48944029754a5d0
-size 829
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\CacheClearer;
+
+/**
+ * ChainCacheClearer.
+ *
+ * @author Dustin Dobervich <ddobervich@gmail.com>
+ *
+ * @final
+ */
+class ChainCacheClearer implements CacheClearerInterface
+{
+    private iterable $clearers;
+
+    /**
+     * @param iterable<mixed, CacheClearerInterface> $clearers
+     */
+    public function __construct(iterable $clearers = [])
+    {
+        $this->clearers = $clearers;
+    }
+
+    public function clear(string $cacheDir)
+    {
+        foreach ($this->clearers as $clearer) {
+            $clearer->clear($cacheDir);
+        }
+    }
+}

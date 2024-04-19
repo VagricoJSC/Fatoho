@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eba821056df840f2523c4552df1159c35164e5cf73abddae8be3e35b1b88174
-size 639
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class PostDec extends Expr
+{
+    /** @var Expr Variable */
+    public $var;
+
+    /**
+     * Constructs a post decrement node.
+     *
+     * @param Expr  $var        Variable
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $var, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_PostDec';
+    }
+}

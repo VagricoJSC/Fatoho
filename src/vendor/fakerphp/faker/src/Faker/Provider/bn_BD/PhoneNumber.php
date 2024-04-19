@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21f0f15a74d8e1ac48f30776393f560896aec95e51215f524d840198921d81a1
-size 263
+<?php
+
+namespace Faker\Provider\bn_BD;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    public function phoneNumber()
+    {
+        $number = '+880';
+        $number .= static::randomNumber(7);
+
+        return Utils::getBanglaNumber($number);
+    }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b0734a0ccbab2571cd355207e44723b6f9d4015e2257171e44fbdc5da79af5b
-size 517
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Telemetry;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface MemoryMeter
+{
+    public function memoryUsage(): MemoryUsage;
+
+    public function peakMemoryUsage(): MemoryUsage;
+}

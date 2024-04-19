@@ -1,0 +1,48 @@
+[23-Mar-2024 15:48:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php on line 7
+[23-Mar-2024 15:48:56 UTC] PHP Fatal error:  Uncaught Error: Class "League\Container\ServiceProvider\AbstractServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php on line 7
+[23-Mar-2024 15:49:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php on line 7
+[23-Mar-2024 15:49:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php on line 8
+[23-Mar-2024 15:49:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php on line 9
+[23-Mar-2024 15:49:26 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\File" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Image.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Image.php on line 56
+[03-Apr-2024 15:07:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php on line 7
+[03-Apr-2024 15:07:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php on line 9
+[03-Apr-2024 15:07:48 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\File" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Image.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Image.php on line 56
+[03-Apr-2024 17:20:57 UTC] PHP Fatal error:  Uncaught Error: Class "League\Container\ServiceProvider\AbstractServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php on line 7
+[03-Apr-2024 17:21:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php on line 7
+[03-Apr-2024 17:21:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php on line 8

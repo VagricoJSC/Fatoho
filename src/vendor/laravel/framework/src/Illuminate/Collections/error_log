@@ -1,0 +1,7 @@
+[03-Apr-2024 16:18:00 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Collections/LazyCollection.php on line 23
+[03-Apr-2024 16:18:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 20
+[03-Apr-2024 16:18:16 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 20
+[03-Apr-2024 16:18:22 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Collections/Arr.php on line 10

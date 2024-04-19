@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8dd4143d1aca069df14155c2379eabab99d2f6233dda5b1ce4dcf755071b3ab5
-size 273
+<?php
+
+namespace Sabberworm\CSS\Parsing;
+
+/**
+ * Thrown if the CSS parser encounters end of file it did not expect.
+ *
+ * Extends `UnexpectedTokenException` in order to preserve backwards compatibility.
+ */
+class UnexpectedEOFException extends UnexpectedTokenException
+{
+}

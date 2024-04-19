@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3551159dfd838e5699815c4a6733316f16eb5d12c86b9e7bfeceb4af142985e3
-size 184
+adapter: github
+issue_tracker: github
+meta-header: "Copyright (c) 2009-2015 hamcrest.org"
+table-pr:
+    fixed_tickets: ['Fixed Tickets', '']
+    license: ['License', MIT]
+base: master

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fcca050c7c7d99107df1f9ff60599ab599cc33500727c523dfbf102afe90b2c
-size 956
+<?php
+
+namespace Faker\Provider\ko_KR;
+
+class Company extends \Faker\Provider\Company
+{
+    protected static $formats = [
+        '{{companyPrefix}}{{firstName}}',
+        '{{companyPrefix}}{{firstName}}{{companySuffix}}',
+        '{{firstName}}{{companySuffix}}',
+        '{{firstName}}{{companySuffix}}',
+        '{{firstName}}{{companySuffix}}',
+        '{{firstName}}{{companySuffix}}',
+    ];
+
+    protected static $companyPrefix = ['(주)', '(주)', '(주)', '(유)'];
+
+    protected static $companySuffix = [
+        '전자', '건설', '식품', '인터넷', '그룹', '은행', '보험', '제약', '금융', '네트웍스', '기획', '미디어', '연구소', '모바일', '스튜디오', '캐피탈',
+    ];
+
+    public static function companyPrefix()
+    {
+        return static::randomElement(static::$companyPrefix);
+    }
+
+    public static function companySuffix()
+    {
+        return static::randomElement(static::$companySuffix);
+    }
+}

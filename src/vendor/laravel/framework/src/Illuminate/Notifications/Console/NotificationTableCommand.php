@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8843836956229a2155d0aa9b95f9a0f6c6488af5852c50a427d7fb354569676
-size 1096
+<?php
+
+namespace Illuminate\Notifications\Console;
+
+use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Composer;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'notifications:table')]
+class NotificationTableCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'notifications:table';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Create a migration for the notifications table';
+
+    /**
+     * The filesystem instance.
+     *
+     * @var \Illuminate\Filesystem\Filesystem
+     */
+    protected $files;
+
+    /**
+     * @var \Illuminate\Support\Composer
+     *
+     * @deprecated Will be removed in a future Laravel version.
+     */
+    protected $composer;
+
+    /**
+     * Create a new notifications table command instance.
+     *
+     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @param  \Illuminate\Support\Composer  $composer
+     * @return void
+     */
+    public function __construct(Filesystem $files, Composer $composer)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+        $this->composer = $composer;
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        $fullPath = $this->createBaseMigration();
+
+        $this->files->put($fullPath, $this->files->get(__DIR__.'/stubs/notifications.stub'));
+
+        $this->components->info('Migration created successfully.');
+    }
+
+    /**
+     * Create a base migration file for the notifications.
+     *
+     * @return string
+     */
+    protected function createBaseMigration()
+    {
+        $name = 'create_notifications_table';
+
+        $path = $this->laravel->databasePath().'/migrations';
+
+        return $this->laravel['migration.creator']->create($name, $path);
+    }
+}

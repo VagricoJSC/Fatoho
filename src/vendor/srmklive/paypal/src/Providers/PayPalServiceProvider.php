@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7ce2d575b8e087a2c0704051851a9737e0a7296cff62d2cdb8daf2f15e57577
-size 1452
+<?php
+
+namespace Srmklive\PayPal\Providers;
+
+/*
+ * Class PayPalServiceProvider
+ * @package Srmklive\PayPal
+ */
+
+use Illuminate\Support\ServiceProvider;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
+
+class PayPalServiceProvider extends ServiceProvider
+{
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // Publish config files
+        $this->publishes([
+            __DIR__.'/../../config/config.php' => config_path('paypal.php'),
+        ]);
+
+        // Publish Lang Files
+        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'paypal');
+    }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->registerPayPal();
+
+        $this->mergeConfig();
+    }
+
+    /**
+     * Register the application bindings.
+     *
+     * @return void
+     */
+    private function registerPayPal()
+    {
+        $this->app->singleton('paypal_client', static function () {
+            return new PayPalClient();
+        });
+    }
+
+    /**
+     * Merges user's and paypal's configs.
+     *
+     * @return void
+     */
+    private function mergeConfig()
+    {
+        $this->mergeConfigFrom(
+            __DIR__.'/../../config/config.php',
+            'paypal'
+        );
+    }
+}

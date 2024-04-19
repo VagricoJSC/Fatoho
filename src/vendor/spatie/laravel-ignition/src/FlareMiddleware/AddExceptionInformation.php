@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db1d500e957b37f9c672eb9ad72b9f3e7508acf28e9a79fecc5383e321e0246e
-size 1487
+<?php
+
+namespace Spatie\LaravelIgnition\FlareMiddleware;
+
+use Illuminate\Database\QueryException;
+use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
+use Spatie\FlareClient\Report;
+
+class AddExceptionInformation implements FlareMiddleware
+{
+    public function handle(Report $report, $next)
+    {
+        $throwable = $report->getThrowable();
+
+        $this->addUserDefinedContext($report);
+
+        if (! $throwable instanceof QueryException) {
+            return $next($report);
+        }
+
+        $report->group('exception', [
+            'raw_sql' => $throwable->getSql(),
+        ]);
+
+        return $next($report);
+    }
+
+    private function addUserDefinedContext(Report $report): void
+    {
+        $throwable = $report->getThrowable();
+
+        if ($throwable === null) {
+            return;
+        }
+
+        if (! method_exists($throwable, 'context')) {
+            return;
+        }
+
+        $context = $throwable->context();
+
+        if (! is_array($context)) {
+            return;
+        }
+
+        foreach ($context as $key => $value) {
+            $report->context($key, $value);
+        }
+    }
+}

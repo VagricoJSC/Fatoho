@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0659384de52b72ae99879e8d21dcbf58712b41ded33c88bd07acfe26203c4637
-size 1173
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\EventListener;
+
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
+use Symfony\Component\HttpKernel\KernelEvents;
+
+/**
+ * Validates Requests.
+ *
+ * @author Magnus Nordlander <magnus@fervo.se>
+ *
+ * @final
+ */
+class ValidateRequestListener implements EventSubscriberInterface
+{
+    /**
+     * Performs the validation.
+     */
+    public function onKernelRequest(RequestEvent $event)
+    {
+        if (!$event->isMainRequest()) {
+            return;
+        }
+        $request = $event->getRequest();
+
+        if ($request::getTrustedProxies()) {
+            $request->getClientIps();
+        }
+
+        $request->getHost();
+    }
+
+    public static function getSubscribedEvents(): array
+    {
+        return [
+            KernelEvents::REQUEST => [
+                ['onKernelRequest', 256],
+            ],
+        ];
+    }
+}

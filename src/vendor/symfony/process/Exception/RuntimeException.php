@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a030facd29abdb91ecaf44baf3f0f9dd210e3085e1928f153a721229a253d84
-size 481
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Process\Exception;
+
+/**
+ * RuntimeException for the Process Component.
+ *
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ */
+class RuntimeException extends \RuntimeException implements ExceptionInterface
+{
+}

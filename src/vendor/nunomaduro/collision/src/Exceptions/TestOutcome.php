@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d638f055d58fac9415c3630492ba297b3855ea49d0787205753bab35277fffe
-size 189
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Exceptions;
+
+use PHPUnit\Framework\Exception;
+
+/**
+ * @internal
+ */
+final class TestOutcome extends Exception
+{
+    // ...
+}

@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:116682b79cfb8c268a080f6d91a289ff221ac0dea433c0e0e9a949a28c345329
-size 843
+<?php
+
+namespace Egulias\EmailValidator\Result;
+
+use Egulias\EmailValidator\Result\Reason\Reason;
+
+class InvalidEmail implements Result
+{
+    /**
+     * @var string
+     */
+    private string $token;
+
+    /**
+     * @var Reason
+     */
+    protected Reason $reason;
+
+    public function __construct(Reason $reason, string $token)
+    {
+        $this->token = $token;
+        $this->reason = $reason;
+    }
+
+    public function isValid(): bool
+    {
+        return false;
+    }
+
+    public function isInvalid(): bool
+    {
+        return true;
+    }
+
+    public function description(): string
+    {
+        return $this->reason->description() . " in char " . $this->token;
+    }
+
+    public function code(): int
+    {
+        return $this->reason->code();
+    }
+
+    public function reason(): Reason
+    {
+        return $this->reason;
+    }
+}

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efb318cc50eca7d859113fa9424ff760e09bd055ffcf730dd713a339d1e6f94d
-size 823
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class AssignRef extends Expr
+{
+    /** @var Expr Variable reference is assigned to */
+    public $var;
+    /** @var Expr Variable which is referenced */
+    public $expr;
+
+    /**
+     * Constructs an assignment node.
+     *
+     * @param Expr  $var        Variable
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $var, Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var', 'expr'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_AssignRef';
+    }
+}

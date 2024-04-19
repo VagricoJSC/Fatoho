@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb4c5dd578a2c015710d9d0ed6c9d7c59bd889fe1abe1eb87c4e48af1b38320e
-size 1136
+<?php
+
+namespace Egulias\EmailValidator\Validation\Extra;
+
+use \Spoofchecker;
+use Egulias\EmailValidator\EmailLexer;
+use Egulias\EmailValidator\Result\SpoofEmail;
+use Egulias\EmailValidator\Result\InvalidEmail;
+use Egulias\EmailValidator\Validation\EmailValidation;
+
+class SpoofCheckValidation implements EmailValidation
+{
+    /**
+     * @var InvalidEmail|null
+     */
+    private $error;
+
+    public function __construct()
+    {
+        if (!extension_loaded('intl')) {
+            throw new \LogicException(sprintf('The %s class requires the Intl extension.', __CLASS__));
+        }
+    }
+
+    /**
+     * @psalm-suppress InvalidArgument
+     */
+    public function isValid(string $email, EmailLexer $emailLexer) : bool
+    {
+        $checker = new Spoofchecker();
+        $checker->setChecks(Spoofchecker::SINGLE_SCRIPT);
+
+        if ($checker->isSuspicious($email)) {
+            $this->error = new SpoofEmail();
+        }
+
+        return $this->error === null;
+    }
+
+    /**
+     * @return InvalidEmail
+     */
+    public function getError() : ?InvalidEmail
+    {
+        return $this->error;
+    }
+
+    public function getWarnings() : array
+    {
+        return [];
+    }
+}

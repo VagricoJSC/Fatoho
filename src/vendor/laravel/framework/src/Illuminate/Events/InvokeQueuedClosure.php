@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e833f98f7ffc91d56decf790a531036992edceae5b90f2e4e04d7a83532a0d8
-size 831
+<?php
+
+namespace Illuminate\Events;
+
+class InvokeQueuedClosure
+{
+    /**
+     * Handle the event.
+     *
+     * @param  \Laravel\SerializableClosure\SerializableClosure  $closure
+     * @param  array  $arguments
+     * @return void
+     */
+    public function handle($closure, array $arguments)
+    {
+        call_user_func($closure->getClosure(), ...$arguments);
+    }
+
+    /**
+     * Handle a job failure.
+     *
+     * @param  \Laravel\SerializableClosure\SerializableClosure  $closure
+     * @param  array  $arguments
+     * @param  array  $catchCallbacks
+     * @param  \Throwable  $exception
+     * @return void
+     */
+    public function failed($closure, array $arguments, array $catchCallbacks, $exception)
+    {
+        $arguments[] = $exception;
+
+        collect($catchCallbacks)->each->__invoke(...$arguments);
+    }
+}

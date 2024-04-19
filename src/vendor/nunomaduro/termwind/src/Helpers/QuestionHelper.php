@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:207a9964f57de689f6c73c5decd2c20d0f2fee4704ac5614c0f48d1b82ebcd5d
-size 615
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Helpers;
+
+use Symfony\Component\Console\Formatter\OutputFormatter;
+use Symfony\Component\Console\Helper\SymfonyQuestionHelper;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\Question;
+
+/**
+ * @internal
+ */
+final class QuestionHelper extends SymfonyQuestionHelper
+{
+    /**
+     * {@inheritdoc}
+     */
+    protected function writePrompt(OutputInterface $output, Question $question): void
+    {
+        $text = OutputFormatter::escapeTrailingBackslash($question->getQuestion());
+        $output->write($text);
+    }
+}

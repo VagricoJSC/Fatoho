@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:888cdcc032b2b23a2587472d92357a0c3779021e104becfe83e8c95b8b8e480d
-size 762
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface AddressExtension extends Extension
+{
+    /**
+     * @example '791 Crist Parks, Sashabury, IL 86039-9874'
+     */
+    public function address(): string;
+
+    /**
+     * Randomly return a real city name.
+     */
+    public function city(): string;
+
+    /**
+     * @example 86039-9874
+     */
+    public function postcode(): string;
+
+    /**
+     * @example 'Crist Parks'
+     */
+    public function streetName(): string;
+
+    /**
+     * @example '791 Crist Parks'
+     */
+    public function streetAddress(): string;
+
+    /**
+     * Randomly return a building number.
+     */
+    public function buildingNumber(): string;
+}

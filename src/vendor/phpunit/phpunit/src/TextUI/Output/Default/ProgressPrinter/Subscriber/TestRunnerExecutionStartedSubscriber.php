@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dabc88cdd663eb2dc62f2778bf58f6831b337f67025aad61badb853920390f00
-size 764
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output\Default\ProgressPrinter;
+
+use PHPUnit\Event\TestRunner\ExecutionStarted;
+use PHPUnit\Event\TestRunner\ExecutionStartedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestRunnerExecutionStartedSubscriber extends Subscriber implements ExecutionStartedSubscriber
+{
+    public function notify(ExecutionStarted $event): void
+    {
+        $this->printer()->testRunnerExecutionStarted($event);
+    }
+}

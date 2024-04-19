@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:189b04dde1ac4e47fa13234313317e75cebefe038919f0c021091c5a9fca2012
-size 1053
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt\TraitUseAdaptation;
+
+use PhpParser\Node;
+
+class Precedence extends Node\Stmt\TraitUseAdaptation
+{
+    /** @var Node\Name[] Overwritten traits */
+    public $insteadof;
+
+    /**
+     * Constructs a trait use precedence adaptation node.
+     *
+     * @param Node\Name              $trait       Trait name
+     * @param string|Node\Identifier $method      Method name
+     * @param Node\Name[]            $insteadof   Overwritten traits
+     * @param array                  $attributes  Additional attributes
+     */
+    public function __construct(Node\Name $trait, $method, array $insteadof, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->trait = $trait;
+        $this->method = \is_string($method) ? new Node\Identifier($method) : $method;
+        $this->insteadof = $insteadof;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['trait', 'method', 'insteadof'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_TraitUseAdaptation_Precedence';
+    }
+}

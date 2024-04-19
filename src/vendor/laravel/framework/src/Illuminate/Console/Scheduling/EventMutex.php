@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0297df78a07d4271a33f5f910458dc552e984c88b9227c30f67e145110eb6a85
-size 685
+<?php
+
+namespace Illuminate\Console\Scheduling;
+
+interface EventMutex
+{
+    /**
+     * Attempt to obtain an event mutex for the given event.
+     *
+     * @param  \Illuminate\Console\Scheduling\Event  $event
+     * @return bool
+     */
+    public function create(Event $event);
+
+    /**
+     * Determine if an event mutex exists for the given event.
+     *
+     * @param  \Illuminate\Console\Scheduling\Event  $event
+     * @return bool
+     */
+    public function exists(Event $event);
+
+    /**
+     * Clear the event mutex for the given event.
+     *
+     * @param  \Illuminate\Console\Scheduling\Event  $event
+     * @return void
+     */
+    public function forget(Event $event);
+}

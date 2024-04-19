@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fb537aca1e59b3685910eefb5940828b7712709b29170c2e2a2e5252bf74649
-size 814
+<?php
+
+namespace Illuminate\Pipeline;
+
+use Illuminate\Contracts\Pipeline\Hub as PipelineHubContract;
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\ServiceProvider;
+
+class PipelineServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton(
+            PipelineHubContract::class,
+            Hub::class
+        );
+
+        $this->app->bind('pipeline', fn ($app) => new Pipeline($app));
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [
+            PipelineHubContract::class,
+            'pipeline',
+        ];
+    }
+}

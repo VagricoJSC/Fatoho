@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:566a1397dd38a17e81f21ff83e888e8f4cbb5a1497f7d13e11747e4a4f23d2e4
-size 682
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class PhpExtensionRequirement implements Requirement {
+    /** @var string */
+    private $extension;
+
+    public function __construct(string $extension) {
+        $this->extension = $extension;
+    }
+
+    public function asString(): string {
+        return $this->extension;
+    }
+}

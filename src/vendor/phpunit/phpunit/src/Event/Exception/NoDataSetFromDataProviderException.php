@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:307bc7caddb22c21460c8c85734cd1df964bd660967ae901a1dd2dc330a05fe1
-size 550
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestData;
+
+use PHPUnit\Event\Exception;
+use RuntimeException;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class NoDataSetFromDataProviderException extends RuntimeException implements Exception
+{
+}

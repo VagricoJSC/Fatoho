@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2d7b51365e580ae19705acd65a254505aa2f929b935ea205b39f0b4e2190669
-size 222
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Schema;
+
+
+interface DynamicParameter
+{
+}

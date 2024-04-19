@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5e71250c6cb10ce58a9e3c6e81c351128d01f0dddaecff14c4affab88508651
-size 762
+<?php
+
+namespace Illuminate\Console;
+
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+class BufferedConsoleOutput extends ConsoleOutput
+{
+    /**
+     * The current buffer.
+     *
+     * @var string
+     */
+    protected $buffer = '';
+
+    /**
+     * Empties the buffer and returns its content.
+     *
+     * @return string
+     */
+    public function fetch()
+    {
+        return tap($this->buffer, function () {
+            $this->buffer = '';
+        });
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function doWrite(string $message, bool $newline)
+    {
+        $this->buffer .= $message;
+
+        if ($newline) {
+            $this->buffer .= \PHP_EOL;
+        }
+
+        return parent::doWrite($message, $newline);
+    }
+}

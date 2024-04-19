@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3af144944f52da3cb21a77e015b2534fdf41d337c14adf37d5d6f83a35e646b9
-size 342
+<?php
+
+namespace Illuminate\Routing\Contracts;
+
+use Illuminate\Routing\Route;
+
+interface CallableDispatcher
+{
+    /**
+     * Dispatch a request to a given callable.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @param  callable  $callable
+     * @return mixed
+     */
+    public function dispatch(Route $route, $callable);
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:097115d415458d38f1265f165fb37d0ab2afb1973ddec75d3064c291e1f373e0
-size 473
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class GammaCommand extends AbstractCommand
+{
+    /**
+     * Applies gamma correction to a given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $gamma = $this->argument(0)->type('numeric')->required()->value();
+
+        return $image->getCore()->gammaImage($gamma);
+    }
+}

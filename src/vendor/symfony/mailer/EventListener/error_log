@@ -1,0 +1,16 @@
+[22-Mar-2024 23:44:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php on line 24
+[22-Mar-2024 23:44:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php on line 24
+[22-Mar-2024 23:44:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessageListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/MessageListener.php on line 28
+[22-Mar-2024 23:44:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php on line 24

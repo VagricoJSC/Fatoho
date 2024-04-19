@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22ccdb36e189fa9bd4a5c56148af990a4c57d228bb8d9327e9ef4b0372fb5ce2
-size 717
+<?php
+
+namespace Illuminate\Queue\Events;
+
+class JobRetryRequested
+{
+    /**
+     * The job instance.
+     *
+     * @var \stdClass
+     */
+    public $job;
+
+    /**
+     * The decoded job payload.
+     *
+     * @var array|null
+     */
+    protected $payload = null;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \stdClass  $job
+     * @return void
+     */
+    public function __construct($job)
+    {
+        $this->job = $job;
+    }
+
+    /**
+     * The job payload.
+     *
+     * @return array
+     */
+    public function payload()
+    {
+        if (is_null($this->payload)) {
+            $this->payload = json_decode($this->job->payload, true);
+        }
+
+        return $this->payload;
+    }
+}

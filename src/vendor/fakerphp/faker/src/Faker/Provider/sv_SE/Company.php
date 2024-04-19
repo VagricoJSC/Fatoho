@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dd978bfef040691ca9622f0e413aa00dbec9b36e4c065dbfdc3515672ce734d
-size 1065
+<?php
+
+namespace Faker\Provider\sv_SE;
+
+class Company extends \Faker\Provider\Company
+{
+    protected static $formats = [
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{firstName}} {{lastName}} {{companySuffix}}',
+        '{{lastName}} & {{lastName}} {{companySuffix}}',
+        '{{lastName}} & {{lastName}}',
+        '{{lastName}} och {{lastName}}',
+        '{{lastName}} och {{lastName}} {{companySuffix}}',
+    ];
+
+    protected static $companySuffix = ['AB', 'HB'];
+
+    protected static $jobTitles = ['Automationsingenjör', 'Bagare', 'Digital Designer', 'Ekonom', 'Ekonomichef', 'Elektronikingenjör', 'Försäljare', 'Försäljningschef', 'Innovationsdirektör', 'Investeringsdirektör', 'Journalist', 'Kock', 'Kulturstrateg', 'Läkare', 'Lokförare', 'Mäklare', 'Programmerare', 'Projektledare', 'Sjuksköterska', 'Utvecklare', 'UX Designer', 'Webbutvecklare'];
+
+    public function jobTitle()
+    {
+        return static::randomElement(static::$jobTitles);
+    }
+}

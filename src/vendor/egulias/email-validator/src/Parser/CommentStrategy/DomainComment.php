@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3e553cdee413ace33de338955499c2bbb367804f945bdd0013652269101b919
-size 1050
+<?php
+
+namespace Egulias\EmailValidator\Parser\CommentStrategy;
+
+use Egulias\EmailValidator\EmailLexer;
+use Egulias\EmailValidator\Result\Result;
+use Egulias\EmailValidator\Result\ValidEmail;
+use Egulias\EmailValidator\Result\InvalidEmail;
+use Egulias\EmailValidator\Result\Reason\ExpectingATEXT;
+
+class DomainComment implements CommentStrategy
+{
+    public function exitCondition(EmailLexer $lexer, int $openedParenthesis): bool
+    {
+        if (($openedParenthesis === 0 && $lexer->isNextToken(EmailLexer::S_DOT))) { // || !$internalLexer->moveNext()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function endOfLoopValidations(EmailLexer $lexer): Result
+    {
+        //test for end of string
+        if (!$lexer->isNextToken(EmailLexer::S_DOT)) {
+            return new InvalidEmail(new ExpectingATEXT('DOT not found near CLOSEPARENTHESIS'), $lexer->current->value);
+        }
+        //add warning
+        //Address is valid within the message but cannot be used unmodified for the envelope
+        return new ValidEmail();
+    }
+
+    public function getWarnings(): array
+    {
+        return [];
+    }
+}

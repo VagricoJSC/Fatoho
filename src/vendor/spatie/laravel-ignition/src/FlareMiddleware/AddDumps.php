@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ce8ed7d4517af8d293eec5516130c633cd706f03a67edb753af95781f902a8b
-size 583
+<?php
+
+namespace Spatie\LaravelIgnition\FlareMiddleware;
+
+use Closure;
+use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
+use Spatie\FlareClient\Report;
+use Spatie\LaravelIgnition\Recorders\DumpRecorder\DumpRecorder;
+
+class AddDumps implements FlareMiddleware
+{
+    protected DumpRecorder $dumpRecorder;
+
+    public function __construct()
+    {
+        $this->dumpRecorder = app(DumpRecorder::class);
+    }
+
+    public function handle(Report $report, Closure $next)
+    {
+        $report->group('dumps', $this->dumpRecorder->getDumps());
+
+        return $next($report);
+    }
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb46084cd676f2207e6ff44ec2b50acae85993b8f288901c6b232c0896a2f890
-size 547
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class NullPrinter implements Printer
+{
+    public function print(string $buffer): void
+    {
+    }
+
+    public function flush(): void
+    {
+    }
+}

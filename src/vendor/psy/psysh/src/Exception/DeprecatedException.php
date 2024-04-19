@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01fa0e8bb2f9f57733675eb4094811463971227e5561b154f8dc053359b3ccab
-size 382
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\Exception;
+
+/**
+ * A DeprecatedException for Psy.
+ */
+class DeprecatedException extends RuntimeException
+{
+    // This space intentionally left blank.
+}

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cbc3343c9c67d284b7404f21b079be1e47b5760269585b4dcb8d4c3ad6970f51
-size 590
+<?php
+
+namespace Illuminate\Queue\Events;
+
+class JobProcessing
+{
+    /**
+     * The connection name.
+     *
+     * @var string
+     */
+    public $connectionName;
+
+    /**
+     * The job instance.
+     *
+     * @var \Illuminate\Contracts\Queue\Job
+     */
+    public $job;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $connectionName
+     * @param  \Illuminate\Contracts\Queue\Job  $job
+     * @return void
+     */
+    public function __construct($connectionName, $job)
+    {
+        $this->job = $job;
+        $this->connectionName = $connectionName;
+    }
+}

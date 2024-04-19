@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69101779ff51a21a9b70abe6dd6417c7ad0a9f3b1cac85a06b25dd4aba5f43f3
-size 482
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an UPLOAD_ERR_INI_SIZE error occurred with UploadedFile.
+ *
+ * @author Florent Mata <florentmata@gmail.com>
+ */
+class IniSizeFileException extends FileException
+{
+}

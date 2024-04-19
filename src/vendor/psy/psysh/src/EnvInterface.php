@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3b352ebcec214dfcd2142ac077d6411a091b21d04685d64668b524c00213411
-size 443
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy;
+
+/**
+ * Abstraction around environment variables.
+ */
+interface EnvInterface
+{
+    /**
+     * Get an environment variable by name.
+     *
+     * @return string|null
+     */
+    public function get(string $key);
+}

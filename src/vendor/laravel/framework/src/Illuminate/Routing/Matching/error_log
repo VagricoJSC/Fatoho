@@ -1,0 +1,16 @@
+[03-Apr-2024 18:51:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php on line 8
+[03-Apr-2024 18:51:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php on line 8
+[03-Apr-2024 18:51:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php on line 8
+[03-Apr-2024 18:51:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php on line 8

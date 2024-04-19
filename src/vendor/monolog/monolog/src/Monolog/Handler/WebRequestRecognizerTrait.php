@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60ca14bb1e155764482d99bcd909d9162c9d4299b76ecd5577ece44f311ad23f
-size 504
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Handler;
+
+trait WebRequestRecognizerTrait
+{
+    /**
+     * Checks if PHP's serving a web request
+     */
+    protected function isWebRequest(): bool
+    {
+        return 'cli' !== \PHP_SAPI && 'phpdbg' !== \PHP_SAPI;
+    }
+}

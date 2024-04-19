@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:330923223ba065cbef4ce4707cfbab5c239b7654fcdb80ebf7ed633dbfacb3a0
-size 593
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Ben Ramsey <ben@benramsey.com>
+ */
+class GoneHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(410, $message, $previous, $headers, $code);
+    }
+}

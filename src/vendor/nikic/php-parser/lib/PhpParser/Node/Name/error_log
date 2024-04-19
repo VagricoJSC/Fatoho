@@ -1,0 +1,16 @@
+[23-Mar-2024 14:55:51 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Name" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php on line 5
+[23-Mar-2024 14:55:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Name" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php on line 5
+[01-Apr-2024 16:23:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Name" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php on line 5
+[01-Apr-2024 16:24:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Name" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php on line 5

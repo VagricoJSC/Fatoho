@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f71edaa35ce1e7c48b0aa88d6c8c994ee3a80513f3c60271a7a20a40a5af1691
-size 736
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Processor;
+
+use Monolog\LogRecord;
+
+/**
+ * Injects value of gethostname in all records
+ */
+class HostnameProcessor implements ProcessorInterface
+{
+    private static string $host;
+
+    public function __construct()
+    {
+        self::$host = (string) gethostname();
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function __invoke(LogRecord $record): LogRecord
+    {
+        $record->extra['hostname'] = self::$host;
+
+        return $record;
+    }
+}

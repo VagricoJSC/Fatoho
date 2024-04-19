@@ -1,0 +1,7 @@
+[03-Apr-2024 16:13:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Events/NullDispatcher.php on line 8
+[03-Apr-2024 16:13:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php on line 8
+[03-Apr-2024 16:13:36 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php on line 20
+[03-Apr-2024 16:13:40 UTC] PHP Fatal error:  Trait "Illuminate\Queue\InteractsWithQueue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php on line 11

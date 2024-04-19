@@ -1,0 +1,16 @@
+[22-Mar-2024 23:43:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/TagHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/TagHeader.php on line 19
+[22-Mar-2024 23:43:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/MetadataHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/MetadataHeader.php on line 19
+[03-Apr-2024 07:15:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/TagHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/TagHeader.php on line 19
+[03-Apr-2024 07:48:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/MetadataHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Header/MetadataHeader.php on line 19

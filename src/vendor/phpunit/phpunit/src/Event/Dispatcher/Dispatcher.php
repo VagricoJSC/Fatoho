@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bcf6c2748def119f6aa315ac52d7d8985c019b163d72c53d78c12dd112f2adb
-size 512
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+/**
+ * @internal This interface is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Dispatcher
+{
+    /**
+     * @throws UnknownEventTypeException
+     */
+    public function dispatch(Event $event): void;
+}

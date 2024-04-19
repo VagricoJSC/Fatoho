@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:518b05404ab9362b4fc01515e303fb71970ad77989368dada781ec49b3483553
-size 210
+<?php
+
+declare(strict_types=1);
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This class is experimental and does not fall under our BC promise
+ */
+final class ExtensionNotFound extends \LogicException
+{
+}

@@ -1,0 +1,8 @@
+[03-Apr-2024 20:36:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\ControllerDispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php on line 9
+[03-Apr-2024 20:36:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\CallableDispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php on line 8

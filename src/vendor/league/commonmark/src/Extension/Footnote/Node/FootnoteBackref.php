@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4a5d63b3c8ae3ed305e20a986de461f3e3bbf7316307ed19318ddedbc1c4a43
-size 1014
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ * (c) Rezo Zero / Ambroise Maupate
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Extension\Footnote\Node;
+
+use League\CommonMark\Node\Inline\AbstractInline;
+use League\CommonMark\Reference\ReferenceInterface;
+use League\CommonMark\Reference\ReferenceableInterface;
+
+/**
+ * Link from the footnote on the bottom of the document back to the reference
+ */
+final class FootnoteBackref extends AbstractInline implements ReferenceableInterface
+{
+    /** @psalm-readonly */
+    private ReferenceInterface $reference;
+
+    public function __construct(ReferenceInterface $reference)
+    {
+        parent::__construct();
+
+        $this->reference = $reference;
+    }
+
+    public function getReference(): ReferenceInterface
+    {
+        return $this->reference;
+    }
+}

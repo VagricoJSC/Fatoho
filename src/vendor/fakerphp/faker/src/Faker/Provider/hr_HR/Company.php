@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d2d4e3b0c6830877d1a22376420b57ec2e26758eabbb9b3487b6a70a88aaeef
-size 706
+<?php
+
+namespace Faker\Provider\hr_HR;
+
+class Company extends \Faker\Provider\Company
+{
+    protected static $formats = [
+        '{{lastName}} {{companySuffix}}',
+        '{{companyPrefix}} {{lastName}}',
+        '{{companyPrefix}} {{firstName}}',
+    ];
+
+    protected static $companySuffix = [
+        'd.o.o.', 'j.d.o.o.', 'Security',
+    ];
+
+    protected static $companyPrefix = [
+        'Autoškola', 'Cvjećarnica', 'Informatički obrt', 'Kamenorezački obrt', 'Kladionice', 'Market', 'Mesnica', 'Prijevoznički obrt', 'Suvenirnica', 'Turistička agencija', 'Voćarna',
+    ];
+
+    public static function companyPrefix()
+    {
+        return static::randomElement(static::$companyPrefix);
+    }
+}

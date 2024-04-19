@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c30b2acce0eae6d95e325f4c3d7fd62fde7e8aaf720b5e694c442051afd5904
-size 562
+<?php
+
+namespace Sabberworm\CSS\Parsing;
+
+class SourceException extends \Exception
+{
+    /**
+     * @var int
+     */
+    private $iLineNo;
+
+    /**
+     * @param string $sMessage
+     * @param int $iLineNo
+     */
+    public function __construct($sMessage, $iLineNo = 0)
+    {
+        $this->iLineNo = $iLineNo;
+        if (!empty($iLineNo)) {
+            $sMessage .= " [line no: $iLineNo]";
+        }
+        parent::__construct($sMessage);
+    }
+
+    /**
+     * @return int
+     */
+    public function getLineNo()
+    {
+        return $this->iLineNo;
+    }
+}

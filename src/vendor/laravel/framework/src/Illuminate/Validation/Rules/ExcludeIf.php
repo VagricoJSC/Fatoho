@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea6ee9f8a7d39b7f6ae54858d5fbd0fa7bd1be8cf0fa0efd8ec944d7a13496f4
-size 1085
+<?php
+
+namespace Illuminate\Validation\Rules;
+
+use Closure;
+use InvalidArgumentException;
+
+class ExcludeIf
+{
+    /**
+     * The condition that validates the attribute.
+     *
+     * @var \Closure|bool
+     */
+    public $condition;
+
+    /**
+     * Create a new exclude validation rule based on a condition.
+     *
+     * @param  \Closure|bool  $condition
+     * @return void
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function __construct($condition)
+    {
+        if ($condition instanceof Closure || is_bool($condition)) {
+            $this->condition = $condition;
+        } else {
+            throw new InvalidArgumentException('The provided condition must be a callable or boolean.');
+        }
+    }
+
+    /**
+     * Convert the rule to a validation string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        if (is_callable($this->condition)) {
+            return call_user_func($this->condition) ? 'exclude' : '';
+        }
+
+        return $this->condition ? 'exclude' : '';
+    }
+}

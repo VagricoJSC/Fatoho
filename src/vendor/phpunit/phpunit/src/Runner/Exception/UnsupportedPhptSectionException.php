@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b15829b4318ff761e58fd6030831017ea8804bb6e83400c9c379bd9d8a65394
-size 740
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner;
+
+use function sprintf;
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class UnsupportedPhptSectionException extends RuntimeException implements Exception
+{
+    public function __construct(string $section)
+    {
+        parent::__construct(
+            sprintf(
+                'PHPUnit does not support PHPT %s sections',
+                $section
+            )
+        );
+    }
+}

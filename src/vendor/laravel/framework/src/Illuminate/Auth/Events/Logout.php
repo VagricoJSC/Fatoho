@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69723d8c775281d3dd154b22f11ffc9f7c09258569a11870d4203b89f9eaeecf
-size 647
+<?php
+
+namespace Illuminate\Auth\Events;
+
+use Illuminate\Queue\SerializesModels;
+
+class Logout
+{
+    use SerializesModels;
+
+    /**
+     * The authentication guard name.
+     *
+     * @var string
+     */
+    public $guard;
+
+    /**
+     * The authenticated user.
+     *
+     * @var \Illuminate\Contracts\Auth\Authenticatable
+     */
+    public $user;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $guard
+     * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
+     * @return void
+     */
+    public function __construct($guard, $user)
+    {
+        $this->user = $user;
+        $this->guard = $guard;
+    }
+}

@@ -1,0 +1,364 @@
+[22-Mar-2024 18:42:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php on line 7
+[22-Mar-2024 18:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_112147_create_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_112147_create_categories_table.php on line 7
+[22-Mar-2024 18:42:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php on line 7
+[22-Mar-2024 18:42:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[22-Mar-2024 18:42:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php on line 7
+[22-Mar-2024 18:42:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php on line 7
+[22-Mar-2024 18:42:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php on line 7
+[22-Mar-2024 18:42:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php on line 7
+[22-Mar-2024 18:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[22-Mar-2024 18:42:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php on line 7
+[22-Mar-2024 18:43:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php on line 7
+[22-Mar-2024 18:43:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php on line 7
+[22-Mar-2024 18:43:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php on line 7
+[22-Mar-2024 18:43:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php on line 7
+[22-Mar-2024 18:43:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php on line 7
+[22-Mar-2024 18:43:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php on line 7
+[22-Mar-2024 18:43:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php on line 7
+[22-Mar-2024 18:43:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php on line 7
+[22-Mar-2024 18:43:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[22-Mar-2024 18:43:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php on line 7
+[22-Mar-2024 18:43:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php on line 7
+[22-Mar-2024 21:31:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php on line 7
+[22-Mar-2024 21:31:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php on line 7
+[22-Mar-2024 21:31:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php on line 7
+[22-Mar-2024 21:31:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php on line 7
+[22-Mar-2024 21:31:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php on line 7
+[22-Mar-2024 21:31:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php on line 7
+[22-Mar-2024 21:31:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php on line 7
+[22-Mar-2024 21:31:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php on line 7
+[22-Mar-2024 21:31:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php on line 7
+[22-Mar-2024 21:32:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php on line 7
+[22-Mar-2024 21:32:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php on line 7
+[22-Mar-2024 21:32:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_112147_create_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_112147_create_categories_table.php on line 7
+[22-Mar-2024 21:32:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php on line 7
+[22-Mar-2024 21:32:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php on line 7
+[22-Mar-2024 21:32:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[22-Mar-2024 21:50:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php on line 7
+[22-Mar-2024 21:50:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php on line 7
+[22-Mar-2024 21:50:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php on line 7
+[22-Mar-2024 21:50:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php on line 7
+[22-Mar-2024 21:50:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[22-Mar-2024 21:50:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[28-Mar-2024 08:51:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[28-Mar-2024 08:53:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php on line 7
+[28-Mar-2024 09:14:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php on line 7
+[28-Mar-2024 09:16:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php on line 7
+[28-Mar-2024 10:14:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php on line 7
+[28-Mar-2024 10:48:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php on line 7
+[28-Mar-2024 11:05:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[28-Mar-2024 11:10:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php on line 7
+[28-Mar-2024 11:12:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php on line 7
+[28-Mar-2024 11:49:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php on line 7
+[28-Mar-2024 11:52:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php on line 7
+[28-Mar-2024 12:44:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php on line 7
+[28-Mar-2024 22:29:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php on line 7
+[28-Mar-2024 22:30:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php on line 7
+[29-Mar-2024 21:56:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php on line 7
+[29-Mar-2024 22:37:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php on line 7
+[29-Mar-2024 22:45:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php on line 7
+[30-Mar-2024 00:19:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php on line 7
+[30-Mar-2024 00:25:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php on line 7
+[30-Mar-2024 04:25:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[30-Mar-2024 10:19:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php on line 7
+[30-Mar-2024 10:56:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[30-Mar-2024 14:00:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_131727_create_post_comments_table.php on line 7
+[30-Mar-2024 14:17:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php on line 7
+[30-Mar-2024 14:23:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php on line 7
+[30-Mar-2024 14:33:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_24_074930_create_product_reviews_table.php on line 7
+[01-Apr-2024 05:32:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[01-Apr-2024 06:17:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php on line 7
+[01-Apr-2024 12:41:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[02-Apr-2024 13:24:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php on line 7
+[02-Apr-2024 14:54:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php on line 7
+[02-Apr-2024 16:24:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php on line 7
+[02-Apr-2024 19:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[03-Apr-2024 02:01:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_041623_create_notifications_table.php on line 7
+[03-Apr-2024 02:48:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073132_create_post_categories_table.php on line 7
+[03-Apr-2024 07:01:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2023_06_21_164432_create_jobs_table.php on line 7
+[03-Apr-2024 07:01:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_08_01_143408_create_settings_table.php on line 7
+[03-Apr-2024 07:01:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_23_143757_create_wishlists_table.php on line 7
+[03-Apr-2024 07:01:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_16_053240_create_coupons_table.php on line 7
+[03-Apr-2024 07:01:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_102626_create_carts_table.php on line 7
+[03-Apr-2024 07:01:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_15_054356_create_orders_table.php on line 7
+[03-Apr-2024 07:01:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_14_023748_create_shippings_table.php on line 7
+[03-Apr-2024 07:01:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_13_151329_create_messages_table.php on line 7
+[03-Apr-2024 07:01:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_083638_create_posts_table.php on line 7
+[03-Apr-2024 07:01:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_12_073701_create_post_tags_table.php on line 7
+[03-Apr-2024 07:02:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_11_063857_create_products_table.php on line 7
+[03-Apr-2024 07:02:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_025334_create_banners_table.php on line 7
+[03-Apr-2024 07:02:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2020_07_10_021010_create_brands_table.php on line 7
+[03-Apr-2024 07:02:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/database/migrations/2014_10_12_000000_create_users_table.php on line 7

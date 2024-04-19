@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97645033b6934ec7fe6bc87b38dca279c3578cf2d771e7e415ede7e4ca708fc8
-size 648
+<?php
+
+namespace Illuminate\Contracts\Mail;
+
+interface MailQueue
+{
+    /**
+     * Queue a new e-mail message for sending.
+     *
+     * @param  \Illuminate\Contracts\Mail\Mailable|string|array  $view
+     * @param  string|null  $queue
+     * @return mixed
+     */
+    public function queue($view, $queue = null);
+
+    /**
+     * Queue a new e-mail message for sending after (n) seconds.
+     *
+     * @param  \DateTimeInterface|\DateInterval|int  $delay
+     * @param  \Illuminate\Contracts\Mail\Mailable|string|array  $view
+     * @param  string|null  $queue
+     * @return mixed
+     */
+    public function later($delay, $view, $queue = null);
+}

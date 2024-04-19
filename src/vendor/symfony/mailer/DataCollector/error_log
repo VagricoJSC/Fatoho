@@ -1,0 +1,4 @@
+[22-Mar-2024 23:45:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\DataCollector\DataCollector" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DataCollector/MessageDataCollector.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DataCollector/MessageDataCollector.php on line 23

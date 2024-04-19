@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3d6c6816c024f603d5273987c22bdccc84dc77e3bb2a3c8b8dc4fa20adc72c0
-size 1053
+@if ($paginator->hasPages())
+    <nav>
+        <ul class="pagination">
+            {{-- Previous Page Link --}}
+            @if ($paginator->onFirstPage())
+                <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">@lang('pagination.previous')</span>
+                </li>
+            @else
+                <li class="page-item">
+                    <a class="page-link" href="{{ $paginator->previousPageUrl() }}" rel="prev">@lang('pagination.previous')</a>
+                </li>
+            @endif
+
+            {{-- Next Page Link --}}
+            @if ($paginator->hasMorePages())
+                <li class="page-item">
+                    <a class="page-link" href="{{ $paginator->nextPageUrl() }}" rel="next">@lang('pagination.next')</a>
+                </li>
+            @else
+                <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">@lang('pagination.next')</span>
+                </li>
+            @endif
+        </ul>
+    </nav>
+@endif

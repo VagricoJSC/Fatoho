@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5277e96fea93d4d3771ee27cfd1a21bb1dc898e8b077c65098b9cb74d17eb163
-size 855
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Schema;
+
+use Nette;
+
+
+/**
+ * Validation error.
+ */
+class ValidationException extends Nette\InvalidStateException
+{
+	/** @var Message[] */
+	private $messages;
+
+
+	/**
+	 * @param  Message[]  $messages
+	 */
+	public function __construct(?string $message, array $messages = [])
+	{
+		parent::__construct($message ?: $messages[0]->toString());
+		$this->messages = $messages;
+	}
+
+
+	/**
+	 * @return string[]
+	 */
+	public function getMessages(): array
+	{
+		$res = [];
+		foreach ($this->messages as $message) {
+			$res[] = $message->toString();
+		}
+
+		return $res;
+	}
+
+
+	/**
+	 * @return Message[]
+	 */
+	public function getMessageObjects(): array
+	{
+		return $this->messages;
+	}
+}

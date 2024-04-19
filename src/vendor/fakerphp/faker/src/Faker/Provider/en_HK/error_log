@@ -1,0 +1,12 @@
+[23-Mar-2024 14:08:20 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/PhoneNumber.php on line 5
+[23-Mar-2024 14:09:33 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/Internet.php on line 5
+[23-Mar-2024 14:09:36 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/en_HK/Address.php on line 5

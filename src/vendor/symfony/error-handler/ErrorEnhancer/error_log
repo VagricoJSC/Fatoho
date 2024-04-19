@@ -1,0 +1,4 @@
+[28-Mar-2024 10:25:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22

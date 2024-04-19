@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb022f767f92704eaec37fdda9d3825308d428828213af312afbb841727f905f
-size 356
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+/**
+ * Used on SERVFAIL, TIMEOUT or other runtime and network errors
+ */
+class UnableToGetDNSRecord extends NoDNSRecord
+{
+    public function code() : int
+    {
+        return 3;
+    }
+
+    public function description() : string
+    {
+        return 'Unable to get DNS records for the host';
+    }
+}

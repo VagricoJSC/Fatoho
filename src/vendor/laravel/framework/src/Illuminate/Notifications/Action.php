@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d17560bbbf03bd7fde0d1df12c856321c542cfbee6b397f2ac8b1f4006ace9d5
-size 479
+<?php
+
+namespace Illuminate\Notifications;
+
+class Action
+{
+    /**
+     * The action text.
+     *
+     * @var string
+     */
+    public $text;
+
+    /**
+     * The action URL.
+     *
+     * @var string
+     */
+    public $url;
+
+    /**
+     * Create a new action instance.
+     *
+     * @param  string  $text
+     * @param  string  $url
+     * @return void
+     */
+    public function __construct($text, $url)
+    {
+        $this->url = $url;
+        $this->text = $text;
+    }
+}

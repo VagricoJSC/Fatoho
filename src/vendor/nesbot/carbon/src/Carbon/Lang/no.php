@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32108f81b1cb994f323977f0cf5cf46fc73fab0e018caa4e7dc462df494df3c9
-size 622
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Daniel S. Billing
+ * - Paul
+ * - Jimmie Johansson
+ * - Jens Herlevsen
+ */
+return array_replace_recursive(require __DIR__.'/nb.php', [
+    'formats' => [
+        'LLL' => 'D. MMMM YYYY HH:mm',
+        'LLLL' => 'dddd, D. MMMM YYYY [kl.] HH:mm',
+    ],
+    'calendar' => [
+        'nextWeek' => 'på dddd [kl.] LT',
+        'lastWeek' => '[i] dddd[s kl.] LT',
+    ],
+]);

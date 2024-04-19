@@ -1,0 +1,16 @@
+[01-Apr-2024 13:00:29 UTC] PHP Fatal error:  Uncaught Error: Interface "League\OAuth1\Client\Signature\SignatureInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/Signature.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/Signature.php on line 8
+[01-Apr-2024 13:00:32 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Signature\Signature" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/RsaSha1Signature.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/RsaSha1Signature.php on line 7
+[01-Apr-2024 13:00:36 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Signature\Signature" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/PlainTextSignature.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/PlainTextSignature.php on line 5
+[01-Apr-2024 13:00:41 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Signature\Signature" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/HmacSha1Signature.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Signature/HmacSha1Signature.php on line 5

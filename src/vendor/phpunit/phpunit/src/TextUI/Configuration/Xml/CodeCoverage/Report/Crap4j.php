@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7107b7f24c2ddb3ac382d73849bd392480610ef2cdd580308f1a8b9309a9c7d
-size 874
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration\CodeCoverage\Report;
+
+use PHPUnit\TextUI\Configuration\File;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Crap4j
+{
+    private readonly File $target;
+    private readonly int $threshold;
+
+    public function __construct(File $target, int $threshold)
+    {
+        $this->target    = $target;
+        $this->threshold = $threshold;
+    }
+
+    public function target(): File
+    {
+        return $this->target;
+    }
+
+    public function threshold(): int
+    {
+        return $this->threshold;
+    }
+}

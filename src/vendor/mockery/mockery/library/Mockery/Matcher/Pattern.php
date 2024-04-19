@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:790cd85bd098dc72d1f209c3c84c6f4ef4cc2b7d478523e37898a8c5e4b8430e
-size 853
+<?php
+/**
+ * Mockery
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://github.com/padraic/mockery/blob/master/LICENSE
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to padraic@php.net so we can send you a copy immediately.
+ *
+ * @category   Mockery
+ * @package    Mockery
+ * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
+ */
+
+namespace Mockery\Matcher;
+
+class Pattern extends MatcherAbstract
+{
+    /**
+     * Check if the actual value matches the expected pattern.
+     *
+     * @param mixed $actual
+     * @return bool
+     */
+    public function match(&$actual)
+    {
+        return preg_match($this->_expected, (string) $actual) >= 1;
+    }
+
+    /**
+     * Return a string representation of this Matcher
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return '<Pattern>';
+    }
+}

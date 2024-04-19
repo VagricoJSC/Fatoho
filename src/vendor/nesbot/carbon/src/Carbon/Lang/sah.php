@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:028c875550b81059511f21dae1029ac67ebc7f2ed0365fa4c84a8eea13e28abf
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/sah_RU.php';

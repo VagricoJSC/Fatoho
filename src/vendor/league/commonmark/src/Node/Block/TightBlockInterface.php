@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d20f690fff1fa658232beb009400e5fc7112a25688d522119eb91596ffd84926
-size 434
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Node\Block;
+
+interface TightBlockInterface
+{
+    public function isTight(): bool;
+
+    public function setTight(bool $tight): void;
+}

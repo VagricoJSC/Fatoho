@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fecf77cdc139a812929adbf75d59701247be48d44822f16adb68853c04634252
-size 826
+<?php
+
+namespace Spatie\FlareClient\FlareMiddleware;
+
+use Closure;
+use Spatie\FlareClient\Report;
+use Spatie\Ignition\Contracts\SolutionProviderRepository;
+
+class AddSolutions implements FlareMiddleware
+{
+    protected SolutionProviderRepository $solutionProviderRepository;
+
+    public function __construct(SolutionProviderRepository $solutionProviderRepository)
+    {
+        $this->solutionProviderRepository = $solutionProviderRepository;
+    }
+
+    public function handle(Report $report, Closure $next)
+    {
+        if ($throwable = $report->getThrowable()) {
+            $solutions = $this->solutionProviderRepository->getSolutionsForThrowable($throwable);
+
+            foreach ($solutions as $solution) {
+                $report->addSolution($solution);
+            }
+        }
+
+        return $next($report);
+    }
+}

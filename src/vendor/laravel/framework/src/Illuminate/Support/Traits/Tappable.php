@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f71eabf4d36b4c16c61cfdac15a5dcbe364478f1465e48478850367fab50a31
-size 355
+<?php
+
+namespace Illuminate\Support\Traits;
+
+trait Tappable
+{
+    /**
+     * Call the given Closure with this instance then return the instance.
+     *
+     * @param  callable|null  $callback
+     * @return $this|\Illuminate\Support\HigherOrderTapProxy
+     */
+    public function tap($callback = null)
+    {
+        return tap($this, $callback);
+    }
+}

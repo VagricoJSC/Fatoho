@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e129934c3d5d55026fcb5c7f4254265aa5384a07d9fb3952148600e3b0fec20
-size 818
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Console\Command;
+
+/**
+ * Interface for command reacting to signal.
+ *
+ * @author Grégoire Pineau <lyrixx@lyrix.info>
+ */
+interface SignalableCommandInterface
+{
+    /**
+     * Returns the list of signals to subscribe.
+     */
+    public function getSubscribedSignals(): array;
+
+    /**
+     * The method will be called when the application is signaled.
+     */
+    public function handleSignal(int $signal): void;
+}

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7461b8e0a38b79531c395ee5c642ac406a8103f3d0d285290c90facd5411ab87
-size 869
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Case_ extends Node\Stmt
+{
+    /** @var null|Node\Expr Condition (null for default) */
+    public $cond;
+    /** @var Node\Stmt[] Statements */
+    public $stmts;
+
+    /**
+     * Constructs a case node.
+     *
+     * @param null|Node\Expr $cond       Condition (null for default)
+     * @param Node\Stmt[]    $stmts      Statements
+     * @param array          $attributes Additional attributes
+     */
+    public function __construct($cond, array $stmts = [], array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->cond = $cond;
+        $this->stmts = $stmts;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['cond', 'stmts'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Case';
+    }
+}

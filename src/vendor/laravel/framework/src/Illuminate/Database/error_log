@@ -1,0 +1,35 @@
+[03-Apr-2024 16:14:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php on line 15
+[03-Apr-2024 16:14:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php on line 13
+[03-Apr-2024 16:14:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php on line 13
+[03-Apr-2024 16:14:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php on line 14
+[03-Apr-2024 16:14:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php on line 20
+[03-Apr-2024 16:15:04 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Grammar.php on line 9
+[03-Apr-2024 16:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php on line 13
+[03-Apr-2024 16:15:28 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php on line 19
+[03-Apr-2024 16:15:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\ConnectionResolverInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php on line 5
+[03-Apr-2024 16:15:40 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsConcurrencyErrors" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 30
+[03-Apr-2024 16:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ConfigurationUrlParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php on line 7

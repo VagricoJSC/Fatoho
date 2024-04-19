@@ -1,0 +1,40 @@
+[23-Mar-2024 16:34:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php on line 45
+[23-Mar-2024 16:34:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php on line 33
+[23-Mar-2024 16:34:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php on line 36
+[23-Mar-2024 16:34:56 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php on line 31
+[23-Mar-2024 16:42:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php on line 25
+[01-Apr-2024 14:15:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php on line 45
+[01-Apr-2024 14:15:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php on line 33
+[01-Apr-2024 14:15:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php on line 36
+[01-Apr-2024 14:15:54 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php on line 31
+[01-Apr-2024 14:15:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php on line 25

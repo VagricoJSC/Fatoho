@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed1809baeb0feb97ecc8b8d92308f38031cab1594d130145a3ccb17af25dbaa0
-size 462
+<?php
+
+namespace Illuminate\Cache;
+
+class LuaScripts
+{
+    /**
+     * Get the Lua script to atomically release a lock.
+     *
+     * KEYS[1] - The name of the lock
+     * ARGV[1] - The owner key of the lock instance trying to release it
+     *
+     * @return string
+     */
+    public static function releaseLock()
+    {
+        return <<<'LUA'
+if redis.call("get",KEYS[1]) == ARGV[1] then
+    return redis.call("del",KEYS[1])
+else
+    return 0
+end
+LUA;
+    }
+}

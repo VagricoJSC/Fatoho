@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4d014b4001618b6ae7840fed04f58b75c90e8f3f4f8f57bba2ffd8d436fd53b
-size 927
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Provider;
+
+use Symfony\Component\Translation\TranslatorBag;
+use Symfony\Component\Translation\TranslatorBagInterface;
+
+interface ProviderInterface
+{
+    public function __toString(): string;
+
+    /**
+     * Translations available in the TranslatorBag only must be created.
+     * Translations available in both the TranslatorBag and on the provider
+     * must be overwritten.
+     * Translations available on the provider only must be kept.
+     */
+    public function write(TranslatorBagInterface $translatorBag): void;
+
+    public function read(array $domains, array $locales): TranslatorBag;
+
+    public function delete(TranslatorBagInterface $translatorBag): void;
+}

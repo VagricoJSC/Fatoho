@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8269f0803b27922033a844069b50de2ab22f826d8d182d4353d71b50df2190e
-size 326
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class UnOpenedComment implements Reason
+{
+    public function code() : int
+    {
+        return 152;
+    }
+
+    public function description(): string
+    {
+        return 'Missing opening comment parentheses - https://tools.ietf.org/html/rfc5322#section-3.2.2';
+    }
+}

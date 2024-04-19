@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cfa4744f819a10c17f1d34fc870259a193571501f4f374a9eb70d7110f6939a
-size 715
+<?php
+
+namespace Illuminate\Contracts\Foundation;
+
+interface MaintenanceMode
+{
+    /**
+     * Take the application down for maintenance.
+     *
+     * @param  array  $payload
+     * @return void
+     */
+    public function activate(array $payload): void;
+
+    /**
+     * Take the application out of maintenance.
+     *
+     * @return void
+     */
+    public function deactivate(): void;
+
+    /**
+     * Determine if the application is currently down for maintenance.
+     *
+     * @return bool
+     */
+    public function active(): bool;
+
+    /**
+     * Get the data array which was provided when the application was placed into maintenance.
+     *
+     * @return array
+     */
+    public function data(): array;
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:968d68fa723ca7b11218f6f1389cb3a65f53dcc1ecd28924dc662acd93fd2053
-size 591
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Exceptions;
+
+use InvalidArgumentException;
+
+/**
+ * @internal
+ */
+final class StyleNotFound extends InvalidArgumentException
+{
+    /**
+     * Creates a new style not found instance.
+     */
+    private function __construct(string $message)
+    {
+        parent::__construct($message, 0, $this->getPrevious());
+    }
+
+    /**
+     * Creates a new style not found instance from the given style.
+     */
+    public static function fromStyle(string $style): self
+    {
+        return new self(sprintf('Style [%s] not found.', $style));
+    }
+}

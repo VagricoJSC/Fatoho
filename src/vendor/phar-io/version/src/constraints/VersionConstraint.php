@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bca7760306bf0f885f6cb0667a24b6a5575109684d837ea9c1f330679c27aa15
-size 493
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Version.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Version;
+
+interface VersionConstraint {
+    public function complies(Version $version): bool;
+
+    public function asString(): string;
+}

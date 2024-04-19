@@ -1,0 +1,9 @@
+[03-Apr-2024 18:36:57 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php on line 19
+[03-Apr-2024 18:37:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\HtmlDumper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php on line 12
+[03-Apr-2024 18:37:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Request" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php on line 16

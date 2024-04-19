@@ -1,0 +1,4 @@
+[23-Mar-2024 14:07:01 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/et_EE/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/et_EE/Person.php on line 5

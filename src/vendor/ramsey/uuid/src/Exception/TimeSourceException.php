@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5aa7bea332b9d4cbbf6774359ec0d628593580178c89b0330ffa8c0a3205487
-size 580
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Exception;
+
+use RuntimeException as PhpRuntimeException;
+
+/**
+ * Thrown to indicate that the source of time encountered an error
+ */
+class TimeSourceException extends PhpRuntimeException implements UuidExceptionInterface
+{
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e481419a1fd5902590e15736e5eba9a1acdeff50b8419b37c16ab5917d75e77
-size 475
+<?php
+
+namespace Illuminate\Auth\Events;
+
+use Illuminate\Queue\SerializesModels;
+
+class Verified
+{
+    use SerializesModels;
+
+    /**
+     * The verified user.
+     *
+     * @var \Illuminate\Contracts\Auth\MustVerifyEmail
+     */
+    public $user;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Contracts\Auth\MustVerifyEmail  $user
+     * @return void
+     */
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
+}

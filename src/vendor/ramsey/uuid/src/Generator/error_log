@@ -1,0 +1,80 @@
+[23-Mar-2024 02:05:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php on line 46
+[23-Mar-2024 02:05:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php on line 30
+[23-Mar-2024 02:06:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php on line 26
+[23-Mar-2024 02:06:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php on line 28
+[23-Mar-2024 02:06:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php on line 27
+[23-Mar-2024 02:06:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php on line 31
+[23-Mar-2024 02:06:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php on line 41
+[23-Mar-2024 02:06:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php on line 27
+[23-Mar-2024 02:06:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\DceSecurityGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php on line 37
+[23-Mar-2024 02:06:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php on line 60
+[01-Apr-2024 13:12:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php on line 46
+[01-Apr-2024 13:12:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php on line 30
+[01-Apr-2024 13:12:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php on line 26
+[01-Apr-2024 13:12:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php on line 28
+[01-Apr-2024 13:12:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php on line 27
+[01-Apr-2024 13:12:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php on line 31
+[01-Apr-2024 13:13:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php on line 41
+[01-Apr-2024 13:13:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php on line 27
+[01-Apr-2024 13:13:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\DceSecurityGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php on line 37
+[01-Apr-2024 13:13:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php on line 60

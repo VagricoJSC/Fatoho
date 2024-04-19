@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:733d9e69bd6d5af87cefd67cb66f197b268577916fe1d3248b57e5baca74034a
-size 537
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestRunner;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface FinishedSubscriber extends Subscriber
+{
+    public function notify(Finished $event): void;
+}

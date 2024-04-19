@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fc1f8df9a1c760d283807a66804632d51dd7af71523478db83c63a2ed60ad74
-size 695
+<?php
+/**
+ * @package dompdf
+ * @link    https://github.com/dompdf/dompdf
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+namespace Dompdf\FrameReflower;
+
+use Dompdf\Frame;
+use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
+
+/**
+ * Dummy reflower
+ *
+ * @package dompdf
+ */
+class NullFrameReflower extends AbstractFrameReflower
+{
+
+    /**
+     * NullFrameReflower constructor.
+     * @param Frame $frame
+     */
+    function __construct(Frame $frame)
+    {
+        parent::__construct($frame);
+    }
+
+    /**
+     * @param BlockFrameDecorator|null $block
+     */
+    function reflow(BlockFrameDecorator $block = null)
+    {
+        return;
+    }
+
+}

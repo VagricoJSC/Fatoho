@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32ac68ac3add4f804b5ecc2428a8e8b67aca13e9beff0a84d9c603e2958dd0b9
-size 1387
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use InvalidArgumentException as BaseInvalidArgumentException;
+use Throwable;
+
+class InvalidDateException extends BaseInvalidArgumentException implements InvalidArgumentException
+{
+    /**
+     * The invalid field.
+     *
+     * @var string
+     */
+    private $field;
+
+    /**
+     * The invalid value.
+     *
+     * @var mixed
+     */
+    private $value;
+
+    /**
+     * Constructor.
+     *
+     * @param string         $field
+     * @param mixed          $value
+     * @param int            $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($field, $value, $code = 0, Throwable $previous = null)
+    {
+        $this->field = $field;
+        $this->value = $value;
+        parent::__construct($field.' : '.$value.' is not a valid value.', $code, $previous);
+    }
+
+    /**
+     * Get the invalid field.
+     *
+     * @return string
+     */
+    public function getField()
+    {
+        return $this->field;
+    }
+
+    /**
+     * Get the invalid value.
+     *
+     * @return mixed
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
+}

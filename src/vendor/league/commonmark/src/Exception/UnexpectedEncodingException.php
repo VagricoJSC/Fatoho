@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae6629fb68268f8dfceac8ac886e4f6d05fa87ddd659f9b6dda11263b75ae187
-size 413
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Exception;
+
+final class UnexpectedEncodingException extends \RuntimeException
+{
+}

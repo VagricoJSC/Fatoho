@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:327a85caa3bc665059513c0ad8934acf1db15bbc4e27a52bdab997804ab76713
-size 511
+<?php
+
+namespace Illuminate\Database\Query;
+
+class IndexHint
+{
+    /**
+     * The type of query hint.
+     *
+     * @var string
+     */
+    public $type;
+
+    /**
+     * The name of the index.
+     *
+     * @var string
+     */
+    public $index;
+
+    /**
+     * Create a new index hint instance.
+     *
+     * @param  string  $type
+     * @param  string  $index
+     * @return void
+     */
+    public function __construct($type, $index)
+    {
+        $this->type = $type;
+        $this->index = $index;
+    }
+}

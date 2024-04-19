@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63919e802a7077af799b5d5ede00659bf39487ae857e084bc4e84b054b43bc58
-size 535
+<?php
+namespace Hamcrest;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+
+/**
+ * The ability of an object to describe itself.
+ */
+interface SelfDescribing
+{
+
+    /**
+     * Generates a description of the object.  The description may be part
+     * of a description of a larger object of which this is just a component,
+     * so it should be worded appropriately.
+     *
+     * @param \Hamcrest\Description $description
+     *   The description to be built or appended to.
+     */
+    public function describeTo(Description $description);
+}

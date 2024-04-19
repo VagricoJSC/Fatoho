@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad39807f8e8b1e410f1641c11859167865d2d8f0adb133886b796c74a31c9ce2
-size 546
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\VersionUpdater;
+
+use Psy\Shell;
+
+/**
+ * A version checker stub which always thinks the current version is up to date.
+ */
+class NoopChecker implements Checker
+{
+    public function isLatest(): bool
+    {
+        return true;
+    }
+
+    public function getLatest(): string
+    {
+        return Shell::VERSION;
+    }
+}

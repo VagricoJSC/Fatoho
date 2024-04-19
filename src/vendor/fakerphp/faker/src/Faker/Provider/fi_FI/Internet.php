@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3363cdb8233d2a0e12dbe488a9a485a97aa2bb04b6456f73b4bb25ced1f070ce
-size 309
+<?php
+
+namespace Faker\Provider\fi_FI;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'jippii.fi', 'luukku.com'];
+    protected static $tld = ['com', 'com', 'com', 'com', 'com', 'com', 'biz', 'info', 'net', 'org', 'fi'];
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:082cc69c40a07b7f6a1cc6437b7ae43d1104bd4887b1e787681811fbf5f174ba
-size 684
+<?php
+
+declare(strict_types=1);
+
+namespace PHPSTORM_META;
+
+override(\Nette\Utils\Arrays::get(0), elementType(0));
+override(\Nette\Utils\Arrays::getRef(0), elementType(0));
+override(\Nette\Utils\Arrays::grep(0), type(0));
+override(\Nette\Utils\Arrays::toObject(0), type(1));
+
+expectedArguments(\Nette\Utils\Image::resize(), 2, \Nette\Utils\Image::ShrinkOnly, \Nette\Utils\Image::Stretch, \Nette\Utils\Image::OrSmaller, \Nette\Utils\Image::OrBigger, \Nette\Utils\Image::Cover);
+expectedArguments(\Nette\Utils\Image::calculateSize(), 4, \Nette\Utils\Image::ShrinkOnly, \Nette\Utils\Image::Stretch, \Nette\Utils\Image::OrSmaller, \Nette\Utils\Image::OrBigger, \Nette\Utils\Image::Cover);

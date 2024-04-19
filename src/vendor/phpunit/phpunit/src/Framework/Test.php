@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:433ae6e0691452b183a3dcdc6961d0d59a9130af018231621544d72d7148d400
-size 482
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use Countable;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface Test extends Countable
+{
+    public function run(): void;
+}

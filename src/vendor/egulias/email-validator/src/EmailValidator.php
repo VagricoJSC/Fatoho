@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f2b10a4084a5a933cbe935cd0b8d4a3bee029072c1933ddf9eff1396e1dd19b
-size 1236
+<?php
+
+namespace Egulias\EmailValidator;
+
+use Egulias\EmailValidator\Result\InvalidEmail;
+use Egulias\EmailValidator\Validation\EmailValidation;
+
+class EmailValidator
+{
+    /**
+     * @var EmailLexer
+     */
+    private $lexer;
+
+    /**
+     * @var Warning\Warning[]
+     */
+    private $warnings = [];
+
+    /**
+     * @var ?InvalidEmail
+     */
+    private $error;
+
+    public function __construct()
+    {
+        $this->lexer = new EmailLexer();
+    }
+
+    /**
+     * @param string          $email
+     * @param EmailValidation $emailValidation
+     * @return bool
+     */
+    public function isValid(string $email, EmailValidation $emailValidation)
+    {
+        $isValid = $emailValidation->isValid($email, $this->lexer);
+        $this->warnings = $emailValidation->getWarnings();
+        $this->error = $emailValidation->getError();
+
+        return $isValid;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function hasWarnings()
+    {
+        return !empty($this->warnings);
+    }
+
+    /**
+     * @return array
+     */
+    public function getWarnings()
+    {
+        return $this->warnings;
+    }
+
+    /**
+     * @return InvalidEmail|null
+     */
+    public function getError()
+    {
+        return $this->error;
+    }
+}

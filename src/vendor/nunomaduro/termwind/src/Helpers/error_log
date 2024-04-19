@@ -1,0 +1,8 @@
+[23-Mar-2024 02:27:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php on line 15
+[03-Apr-2024 09:25:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php on line 15

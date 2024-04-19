@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b78476f6a35efc8da2bdd625f70cddee110b336110008f044c5c7c50beb16ab
-size 1087
+{
+    "name": "sebastian/environment",
+    "description": "Provides functionality to handle HHVM/PHP environments",
+    "keywords": ["environment","hhvm","xdebug"],
+    "homepage": "https://github.com/sebastianbergmann/environment",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sebastian Bergmann",
+            "email": "sebastian@phpunit.de"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "suggest": {
+        "ext-posix": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "6.0-dev"
+        }
+    }
+}

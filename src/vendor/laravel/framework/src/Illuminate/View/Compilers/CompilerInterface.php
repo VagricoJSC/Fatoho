@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30b6545002a62720ec21e8650e373e783b2b3efff1cc8292e3965b2bada386b8
-size 560
+<?php
+
+namespace Illuminate\View\Compilers;
+
+interface CompilerInterface
+{
+    /**
+     * Get the path to the compiled version of a view.
+     *
+     * @param  string  $path
+     * @return string
+     */
+    public function getCompiledPath($path);
+
+    /**
+     * Determine if the given view is expired.
+     *
+     * @param  string  $path
+     * @return bool
+     */
+    public function isExpired($path);
+
+    /**
+     * Compile the view at the given path.
+     *
+     * @param  string  $path
+     * @return void
+     */
+    public function compile($path);
+}

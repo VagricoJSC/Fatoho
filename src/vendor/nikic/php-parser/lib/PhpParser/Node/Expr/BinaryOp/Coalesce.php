@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d29ebd37a4fe2288352c120bbf306005c7a235c120f2315ec569afdb08090bfb
-size 308
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class Coalesce extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '??';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_Coalesce';
+    }
+}

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20e77a7adefa5ce5fd33df6d34ed26fa1769353cb7567d6fda9d5d5cb5d3a8e1
-size 589
+<?php
+
+declare(strict_types=1);
+
+namespace Dotenv\Store;
+
+final class StringStore implements StoreInterface
+{
+    /**
+     * The file content.
+     *
+     * @var string
+     */
+    private $content;
+
+    /**
+     * Create a new string store instance.
+     *
+     * @param string $content
+     *
+     * @return void
+     */
+    public function __construct(string $content)
+    {
+        $this->content = $content;
+    }
+
+    /**
+     * Read the content of the environment file(s).
+     *
+     * @return string
+     */
+    public function read()
+    {
+        return $this->content;
+    }
+}

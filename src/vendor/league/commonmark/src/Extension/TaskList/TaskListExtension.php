@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:505a11e2f2dd68306ecc5392e82deaf84249d557bc4ffb13cb265aab008ae8d7
-size 761
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\TaskList;
+
+use League\CommonMark\Environment\EnvironmentBuilderInterface;
+use League\CommonMark\Extension\ExtensionInterface;
+
+final class TaskListExtension implements ExtensionInterface
+{
+    public function register(EnvironmentBuilderInterface $environment): void
+    {
+        $environment->addInlineParser(new TaskListItemMarkerParser(), 35);
+        $environment->addRenderer(TaskListItemMarker::class, new TaskListItemMarkerRenderer());
+    }
+}

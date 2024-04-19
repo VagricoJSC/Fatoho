@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34bdf0c61855358046972692a23451ce2ec139a3731687285e7a065d1ea7b3df
-size 941
+<?php
+
+namespace GuzzleHttp\Promise;
+
+final class Is
+{
+    /**
+     * Returns true if a promise is pending.
+     *
+     * @return bool
+     */
+    public static function pending(PromiseInterface $promise)
+    {
+        return $promise->getState() === PromiseInterface::PENDING;
+    }
+
+    /**
+     * Returns true if a promise is fulfilled or rejected.
+     *
+     * @return bool
+     */
+    public static function settled(PromiseInterface $promise)
+    {
+        return $promise->getState() !== PromiseInterface::PENDING;
+    }
+
+    /**
+     * Returns true if a promise is fulfilled.
+     *
+     * @return bool
+     */
+    public static function fulfilled(PromiseInterface $promise)
+    {
+        return $promise->getState() === PromiseInterface::FULFILLED;
+    }
+
+    /**
+     * Returns true if a promise is rejected.
+     *
+     * @return bool
+     */
+    public static function rejected(PromiseInterface $promise)
+    {
+        return $promise->getState() === PromiseInterface::REJECTED;
+    }
+}

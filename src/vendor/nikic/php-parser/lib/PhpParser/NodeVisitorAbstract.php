@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eca428fcb22637ba5cdd172eecd2ec98bdc2267b259f1cef114cddf4594d5eb7
-size 447
+<?php declare(strict_types=1);
+
+namespace PhpParser;
+
+/**
+ * @codeCoverageIgnore
+ */
+class NodeVisitorAbstract implements NodeVisitor
+{
+    public function beforeTraverse(array $nodes) {
+        return null;
+    }
+
+    public function enterNode(Node $node) {
+        return null;
+    }
+
+    public function leaveNode(Node $node) {
+        return null;
+    }
+
+    public function afterTraverse(array $nodes) {
+        return null;
+    }
+}

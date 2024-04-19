@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1aeacf914a959ff09e59f05b415035c33ad1e256a32788964ac684e6c0cd6ce5
-size 596
+<?php
+
+namespace Illuminate\Http\Exceptions;
+
+use Symfony\Component\HttpKernel\Exception\HttpException;
+use Throwable;
+
+class PostTooLargeException extends HttpException
+{
+    /**
+     * Create a new "post too large" exception instance.
+     *
+     * @param  string  $message
+     * @param  \Throwable|null  $previous
+     * @param  array  $headers
+     * @param  int  $code
+     * @return void
+     */
+    public function __construct($message = '', Throwable $previous = null, array $headers = [], $code = 0)
+    {
+        parent::__construct(413, $message, $previous, $headers, $code);
+    }
+}

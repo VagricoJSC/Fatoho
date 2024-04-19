@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d97100f8468086c807780645aca479643cc480c244a10bc186ef46809f4886ea
-size 575
+<?php
+
+namespace Illuminate\Database;
+
+interface ConnectionResolverInterface
+{
+    /**
+     * Get a database connection instance.
+     *
+     * @param  string|null  $name
+     * @return \Illuminate\Database\ConnectionInterface
+     */
+    public function connection($name = null);
+
+    /**
+     * Get the default connection name.
+     *
+     * @return string
+     */
+    public function getDefaultConnection();
+
+    /**
+     * Set the default connection name.
+     *
+     * @param  string  $name
+     * @return void
+     */
+    public function setDefaultConnection($name);
+}

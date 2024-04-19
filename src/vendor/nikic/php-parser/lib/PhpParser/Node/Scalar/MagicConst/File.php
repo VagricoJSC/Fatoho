@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:193588e4def45171d96be57e0e4aff5740208c0fe3f85c88331452c1a8795347
-size 311
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar\MagicConst;
+
+use PhpParser\Node\Scalar\MagicConst;
+
+class File extends MagicConst
+{
+    public function getName() : string {
+        return '__FILE__';
+    }
+    
+    public function getType() : string {
+        return 'Scalar_MagicConst_File';
+    }
+}

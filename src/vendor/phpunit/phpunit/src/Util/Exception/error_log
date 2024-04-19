@@ -1,0 +1,64 @@
+[23-Mar-2024 12:36:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php on line 18
+[23-Mar-2024 12:36:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php on line 18
+[23-Mar-2024 12:36:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/NoTestCaseObjectOnCallStackException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/NoTestCaseObjectOnCallStackException.php on line 17
+[23-Mar-2024 12:36:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php on line 18
+[23-Mar-2024 12:36:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidSocketException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidSocketException.php on line 18
+[23-Mar-2024 12:36:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php on line 17
+[23-Mar-2024 12:36:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php on line 18
+[23-Mar-2024 12:36:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/DirectoryDoesNotExistException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/DirectoryDoesNotExistException.php on line 18
+[03-Apr-2024 13:54:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php on line 18
+[03-Apr-2024 13:54:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php on line 18
+[03-Apr-2024 13:54:48 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php on line 18
+[03-Apr-2024 13:54:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidSocketException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidSocketException.php on line 18
+[03-Apr-2024 13:54:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php on line 17
+[03-Apr-2024 13:55:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php on line 18
+[03-Apr-2024 13:55:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/DirectoryDoesNotExistException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/DirectoryDoesNotExistException.php on line 18
+[03-Apr-2024 17:21:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/NoTestCaseObjectOnCallStackException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Exception/NoTestCaseObjectOnCallStackException.php on line 17

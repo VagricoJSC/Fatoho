@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:610f31ecca5756d9499ba689d153616dae7725150844897cd63c72f3909c0966
-size 413
+<?php
+
+namespace Illuminate\View\Compilers\Concerns;
+
+trait CompilesComments
+{
+    /**
+     * Compile Blade comments into an empty string.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    protected function compileComments($value)
+    {
+        $pattern = sprintf('/%s--(.*?)--%s/s', $this->contentTags[0], $this->contentTags[1]);
+
+        return preg_replace($pattern, '', $value);
+    }
+}

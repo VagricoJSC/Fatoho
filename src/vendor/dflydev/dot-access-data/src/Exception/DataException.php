@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:320a773d265b35c482e4b293613bd1632569e2a40baffe4965a6b138300c9a23
-size 415
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is a part of dflydev/dot-access-data.
+ *
+ * (c) Dragonfly Development Inc.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Dflydev\DotAccessData\Exception;
+
+/**
+ * Base runtime exception type thrown by this library
+ */
+class DataException extends \RuntimeException
+{
+}

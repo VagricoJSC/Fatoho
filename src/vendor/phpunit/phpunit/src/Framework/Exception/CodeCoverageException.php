@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c65265ea5a096d3f1d11421d772a7280c26b219f1bb7e212337ec52f42feef1e
-size 430
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+class CodeCoverageException extends Exception
+{
+}

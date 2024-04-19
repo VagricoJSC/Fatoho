@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78994af6bf72a47be68b4faf85952faba51b8fd514f9cde9e3c05636cbfc441f
-size 781
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait DisputesActions
+{
+    /**
+     * @return array
+     */
+    protected function acceptDisputeClaimParams(): array
+    {
+        return Utils::jsonDecode('{
+  "note": "Full refund to the customer.",
+  "accept_claim_type": "REFUND"
+}', true);
+    }
+
+    /**
+     * @return array
+     */
+    protected function acceptDisputeResolutionParams(): array
+    {
+        return Utils::jsonDecode('{
+  "note": "I am ok with the refund offered."
+}', true);
+    }
+
+    /**
+     * @return array
+     */
+    protected function acknowledgeItemReturnedParams(): array
+    {
+        return Utils::jsonDecode('{
+  "note": "I have received the item back.",
+  "acknowledgement_type": "ITEM_RECEIVED"
+}', true);
+    }
+}

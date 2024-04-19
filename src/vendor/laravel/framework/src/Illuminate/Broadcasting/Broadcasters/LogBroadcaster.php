@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cabb09404572b411596f41423c7c0afcbeeafc46a1d73e622f11709b6f5739b
-size 1084
+<?php
+
+namespace Illuminate\Broadcasting\Broadcasters;
+
+use Psr\Log\LoggerInterface;
+
+class LogBroadcaster extends Broadcaster
+{
+    /**
+     * The logger implementation.
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger;
+
+    /**
+     * Create a new broadcaster instance.
+     *
+     * @param  \Psr\Log\LoggerInterface  $logger
+     * @return void
+     */
+    public function __construct(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function auth($request)
+    {
+        //
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function validAuthenticationResponse($request, $result)
+    {
+        //
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function broadcast(array $channels, $event, array $payload = [])
+    {
+        $channels = implode(', ', $this->formatChannels($channels));
+
+        $payload = json_encode($payload, JSON_PRETTY_PRINT);
+
+        $this->logger->info('Broadcasting ['.$event.'] on channels ['.$channels.'] with payload:'.PHP_EOL.$payload);
+    }
+}

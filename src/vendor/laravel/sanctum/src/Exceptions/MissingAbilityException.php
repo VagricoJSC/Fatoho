@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49b227dfead8e2ae6c8342a1c1ad185f3cef7e377287a8768f919e1060076db5
-size 834
+<?php
+
+namespace Laravel\Sanctum\Exceptions;
+
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Support\Arr;
+
+class MissingAbilityException extends AuthorizationException
+{
+    /**
+     * The abilities that the user did not have.
+     *
+     * @var array
+     */
+    protected $abilities;
+
+    /**
+     * Create a new missing scope exception.
+     *
+     * @param  array|string  $abilities
+     * @param  string  $message
+     * @return void
+     */
+    public function __construct($abilities = [], $message = 'Invalid ability provided.')
+    {
+        parent::__construct($message);
+
+        $this->abilities = Arr::wrap($abilities);
+    }
+
+    /**
+     * Get the abilities that the user did not have.
+     *
+     * @return array
+     */
+    public function abilities()
+    {
+        return $this->abilities;
+    }
+}

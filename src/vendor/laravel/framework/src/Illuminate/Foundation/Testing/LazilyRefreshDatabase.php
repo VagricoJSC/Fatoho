@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61b05f115a438823d682437f0ea529ae3d2a05fcc75d34be02e4f85f030bc251
-size 1015
+<?php
+
+namespace Illuminate\Foundation\Testing;
+
+trait LazilyRefreshDatabase
+{
+    use RefreshDatabase {
+        refreshDatabase as baseRefreshDatabase;
+    }
+
+    /**
+     * Define hooks to migrate the database before and after each test.
+     *
+     * @return void
+     */
+    public function refreshDatabase()
+    {
+        $database = $this->app->make('db');
+
+        $database->beforeExecuting(function () {
+            if (RefreshDatabaseState::$lazilyRefreshed) {
+                return;
+            }
+
+            RefreshDatabaseState::$lazilyRefreshed = true;
+
+            $this->baseRefreshDatabase();
+        });
+
+        $this->beforeApplicationDestroyed(function () {
+            RefreshDatabaseState::$lazilyRefreshed = false;
+        });
+    }
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6a6d967f09348f891402727f936c3e6451022a496f68812ab1c50eafdd7cfb6
-size 747
+<?php
+
+namespace Illuminate\Hashing;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\ServiceProvider;
+
+class HashServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('hash', function ($app) {
+            return new HashManager($app);
+        });
+
+        $this->app->singleton('hash.driver', function ($app) {
+            return $app['hash']->driver();
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['hash', 'hash.driver'];
+    }
+}

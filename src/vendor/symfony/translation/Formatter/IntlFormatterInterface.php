@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2f663b58f25540e758adc1c05dff128c2a8de8f03abd3fa0f759097dfc0e529
-size 690
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Formatter;
+
+/**
+ * Formats ICU message patterns.
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+interface IntlFormatterInterface
+{
+    /**
+     * Formats a localized message using rules defined by ICU MessageFormat.
+     *
+     * @see http://icu-project.org/apiref/icu4c/classMessageFormat.html#details
+     */
+    public function formatIntl(string $message, string $locale, array $parameters = []): string;
+}

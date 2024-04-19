@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dacfa7be3df9a79c72d0b8f119b5baab91f7ecdf596425b3ce7b38120d6dc2e7
-size 465
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Node;
+
+/**
+ * Interface for a node which contains raw, unprocessed markup (like HTML)
+ */
+interface RawMarkupContainerInterface extends StringContainerInterface
+{
+}

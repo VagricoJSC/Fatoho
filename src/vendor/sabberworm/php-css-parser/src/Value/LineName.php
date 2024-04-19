@@ -1,3 +1,65 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0642cbb44d2aa618fa2610f1406d4d52b47df59fa56d1117c1d69614e05317b9
-size 1801
+<?php
+
+namespace Sabberworm\CSS\Value;
+
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\UnexpectedEOFException;
+use Sabberworm\CSS\Parsing\UnexpectedTokenException;
+
+class LineName extends ValueList
+{
+    /**
+     * @param array<int, RuleValueList|CSSFunction|CSSString|LineName|Size|URL|string> $aComponents
+     * @param int $iLineNo
+     */
+    public function __construct(array $aComponents = [], $iLineNo = 0)
+    {
+        parent::__construct($aComponents, ' ', $iLineNo);
+    }
+
+    /**
+     * @return LineName
+     *
+     * @throws UnexpectedTokenException
+     * @throws UnexpectedEOFException
+     */
+    public static function parse(ParserState $oParserState)
+    {
+        $oParserState->consume('[');
+        $oParserState->consumeWhiteSpace();
+        $aNames = [];
+        do {
+            if ($oParserState->getSettings()->bLenientParsing) {
+                try {
+                    $aNames[] = $oParserState->parseIdentifier();
+                } catch (UnexpectedTokenException $e) {
+                    if (!$oParserState->comes(']')) {
+                        throw $e;
+                    }
+                }
+            } else {
+                $aNames[] = $oParserState->parseIdentifier();
+            }
+            $oParserState->consumeWhiteSpace();
+        } while (!$oParserState->comes(']'));
+        $oParserState->consume(']');
+        return new LineName($aNames, $oParserState->currentLine());
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->render(new OutputFormat());
+    }
+
+    /**
+     * @return string
+     */
+    public function render(OutputFormat $oOutputFormat)
+    {
+        return '[' . parent::render(OutputFormat::createCompact()) . ']';
+    }
+}

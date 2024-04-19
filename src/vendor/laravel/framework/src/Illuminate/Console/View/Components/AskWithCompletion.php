@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8536a3d9812e52b4b80cd388ce8e40141238a35e9bad8c41557e154b028c1c4b
-size 751
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Question\Question;
+
+class AskWithCompletion extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $question
+     * @param  array|callable  $choices
+     * @param  string  $default
+     * @return mixed
+     */
+    public function render($question, $choices, $default = null)
+    {
+        $question = new Question($question, $default);
+
+        is_callable($choices)
+            ? $question->setAutocompleterCallback($choices)
+            : $question->setAutocompleterValues($choices);
+
+        return $this->usingQuestionHelper(
+            fn () => $this->output->askQuestion($question)
+        );
+    }
+}

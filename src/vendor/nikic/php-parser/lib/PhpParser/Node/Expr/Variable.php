@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68bf2e74636906d2a0e20e983869ec73ebf14df97773861a6dd72bd5e383fc26
-size 637
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class Variable extends Expr
+{
+    /** @var string|Expr Name */
+    public $name;
+
+    /**
+     * Constructs a variable node.
+     *
+     * @param string|Expr $name       Name
+     * @param array       $attributes Additional attributes
+     */
+    public function __construct($name, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->name = $name;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['name'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_Variable';
+    }
+}

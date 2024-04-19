@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed24c0740766202f279a9a8d3ad8f4f2df13d2b512d33aca329783ad49354ab6
-size 1436
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Console\Event;
+
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+/**
+ * @author marie <marie@users.noreply.github.com>
+ */
+final class ConsoleSignalEvent extends ConsoleEvent
+{
+    private int $handlingSignal;
+
+    public function __construct(Command $command, InputInterface $input, OutputInterface $output, int $handlingSignal)
+    {
+        parent::__construct($command, $input, $output);
+        $this->handlingSignal = $handlingSignal;
+    }
+
+    public function getHandlingSignal(): int
+    {
+        return $this->handlingSignal;
+    }
+}

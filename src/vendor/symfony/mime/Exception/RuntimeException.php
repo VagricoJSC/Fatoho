@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f857a42552e45ea652e9bceaae2f1759624459056f1dafe441d98f7675ea2eb8
-size 423
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Exception;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class RuntimeException extends \RuntimeException implements ExceptionInterface
+{
+}

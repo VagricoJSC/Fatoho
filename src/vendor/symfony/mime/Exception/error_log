@@ -1,0 +1,20 @@
+[22-Mar-2024 22:26:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/RuntimeException.php on line 17
+[22-Mar-2024 22:26:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/RfcComplianceException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/RfcComplianceException.php on line 17
+[22-Mar-2024 22:27:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/LogicException.php on line 17
+[22-Mar-2024 22:27:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/InvalidArgumentException.php on line 17
+[22-Mar-2024 22:27:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Exception\RfcComplianceException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/AddressEncoderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Exception/AddressEncoderException.php on line 17

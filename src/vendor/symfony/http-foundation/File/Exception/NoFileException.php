@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1520c3cd59a5cc4a2be07de7e5cdaa59b694e86efcde77463d7b8bcfc3023f28
-size 476
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an UPLOAD_ERR_NO_FILE error occurred with UploadedFile.
+ *
+ * @author Florent Mata <florentmata@gmail.com>
+ */
+class NoFileException extends FileException
+{
+}

@@ -1,0 +1,8 @@
+[23-Mar-2024 02:16:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Sudo/SudoVisitor.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Sudo/SudoVisitor.php on line 36
+[01-Apr-2024 12:31:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Sudo/SudoVisitor.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Sudo/SudoVisitor.php on line 36

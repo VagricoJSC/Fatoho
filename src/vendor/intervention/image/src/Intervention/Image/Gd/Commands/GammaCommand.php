@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efb2b417796960241a813d37620a5efba1d4478d97beab2ef87f27f683d4a4d4
-size 478
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class GammaCommand extends AbstractCommand
+{
+    /**
+     * Applies gamma correction to a given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $gamma = $this->argument(0)->type('numeric')->required()->value();
+
+        return imagegammacorrect($image->getCore(), 1, $gamma);
+    }
+}

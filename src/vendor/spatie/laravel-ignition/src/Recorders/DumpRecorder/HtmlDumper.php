@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cb0b9a1e552e0d8f7d3b6f5fc27c9437aa3f9993c0f624e40d20145ac601a52
-size 914
+<?php
+
+namespace Spatie\LaravelIgnition\Recorders\DumpRecorder;
+
+use Symfony\Component\VarDumper\Cloner\Data;
+use Symfony\Component\VarDumper\Cloner\VarCloner;
+use Symfony\Component\VarDumper\Dumper\HtmlDumper as BaseHtmlDumper;
+
+class HtmlDumper extends BaseHtmlDumper
+{
+    protected $dumpHeader = '';
+
+    public function dumpVariable($variable): string
+    {
+        $cloner = new VarCloner();
+
+        $clonedData = $cloner->cloneVar($variable)->withMaxDepth(3);
+
+        return $this->dump($clonedData);
+    }
+
+    public function dump(Data $data, $output = null, array $extraDisplayOptions = []): string
+    {
+        return (string)parent::dump($data, true, [
+            'maxDepth' => 3,
+            'maxStringLength' => 160,
+        ]);
+    }
+}

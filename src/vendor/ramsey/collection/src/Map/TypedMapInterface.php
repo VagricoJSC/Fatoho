@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a92567d2cdf0c11f0681bd6087f1a8d48caaa6d05607b81a0d94235e6cf397c
-size 803
+<?php
+
+/**
+ * This file is part of the ramsey/collection library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Collection\Map;
+
+/**
+ * A `TypedMapInterface` represents a map of elements where key and value are
+ * typed.
+ *
+ * @template K of array-key
+ * @template T
+ * @extends MapInterface<K, T>
+ */
+interface TypedMapInterface extends MapInterface
+{
+    /**
+     * Return the type used on the key.
+     */
+    public function getKeyType(): string;
+
+    /**
+     * Return the type forced on the values.
+     */
+    public function getValueType(): string;
+}

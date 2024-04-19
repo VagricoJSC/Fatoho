@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eefb9d0ec46f5158187354cabd6e7d824bb7ee77cce5f1a58cd6b9576737cac1
-size 874
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Runtime;
+
+use PHPUnit\Runner\Version;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class PHPUnit
+{
+    private readonly string $versionId;
+    private readonly string $releaseSeries;
+
+    public function __construct()
+    {
+        $this->versionId     = Version::id();
+        $this->releaseSeries = Version::series();
+    }
+
+    public function versionId(): string
+    {
+        return $this->versionId;
+    }
+
+    public function releaseSeries(): string
+    {
+        return $this->releaseSeries;
+    }
+}

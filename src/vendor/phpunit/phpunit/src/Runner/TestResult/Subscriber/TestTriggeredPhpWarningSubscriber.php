@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e7607fb977de3605a7b3ad2988257610b531d165fd945f5e601016537dd35b6
-size 744
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\PhpWarningTriggered;
+use PHPUnit\Event\Test\PhpWarningTriggeredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestTriggeredPhpWarningSubscriber extends Subscriber implements PhpWarningTriggeredSubscriber
+{
+    public function notify(PhpWarningTriggered $event): void
+    {
+        $this->collector()->testTriggeredPhpWarning($event);
+    }
+}

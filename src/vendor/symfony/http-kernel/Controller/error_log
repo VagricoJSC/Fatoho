@@ -1,0 +1,8 @@
+[28-Mar-2024 10:29:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Controller\ControllerResolverInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/TraceableControllerResolver.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/TraceableControllerResolver.php on line 20
+[28-Mar-2024 21:07:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Controller\ControllerResolverInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ControllerResolver.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-kernel/Controller/ControllerResolver.php on line 24

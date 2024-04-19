@@ -1,0 +1,4 @@
+[22-Mar-2024 23:32:52 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Tester/CommandTester.php on line 23
+[22-Mar-2024 23:33:02 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Tester/ApplicationTester.php on line 27
+[03-Apr-2024 07:48:28 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Tester/CommandTester.php on line 23
+[03-Apr-2024 08:24:24 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Tester/ApplicationTester.php on line 27

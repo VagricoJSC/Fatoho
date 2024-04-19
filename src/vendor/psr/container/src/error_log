@@ -1,0 +1,8 @@
+[22-Mar-2024 22:32:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[01-Apr-2024 12:14:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8

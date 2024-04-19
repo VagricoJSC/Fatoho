@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45cf8952a85469ee478508720a9f2009cb32f173043d8246bc005a7aed5b3c74
-size 652
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class BitwiseNot extends Expr
+{
+    /** @var Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs a bitwise not node.
+     *
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_BitwiseNot';
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4038526c8c84e87a7b4a336ad2655d746c6c919a875705bd7ccca88dcc87bf87
-size 405
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Exception;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class AddressEncoderException extends RfcComplianceException
+{
+}

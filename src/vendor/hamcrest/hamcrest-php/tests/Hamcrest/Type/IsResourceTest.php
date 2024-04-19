@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39253f45bc1eb5c255605784a27c54a02be9f1dd8823951f1ce1260d4cd74f66
-size 922
+<?php
+namespace Hamcrest\Type;
+
+class IsResourceTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Type\IsResource::resourceValue();
+    }
+
+    public function testEvaluatesToTrueIfArgumentMatchesType()
+    {
+        assertThat(tmpfile(), resourceValue());
+    }
+
+    public function testEvaluatesToFalseIfArgumentDoesntMatchType()
+    {
+        assertThat(false, not(resourceValue()));
+        assertThat(5, not(resourceValue()));
+        assertThat('foo', not(resourceValue()));
+    }
+
+    public function testHasAReadableDescription()
+    {
+        $this->assertDescription('a resource', resourceValue());
+    }
+
+    public function testDecribesActualTypeInMismatchMessage()
+    {
+        $this->assertMismatchDescription('was null', resourceValue(), null);
+        $this->assertMismatchDescription('was a string "foo"', resourceValue(), 'foo');
+    }
+}

@@ -1,0 +1,12 @@
+[01-Apr-2024 13:36:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/TestCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/TestCommand.php on line 13
+[01-Apr-2024 13:36:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\GeneratorCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/SolutionProviderMakeCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/SolutionProviderMakeCommand.php on line 7
+[01-Apr-2024 13:36:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\GeneratorCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/SolutionMakeCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Commands/SolutionMakeCommand.php on line 8

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5078ecad1207a5a0c3e5b3a5d59bfcf394f1519be60b5b238f13033a889a8064
-size 905
+<?php
+namespace Hamcrest\Type;
+
+class IsObjectTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Type\IsObject::objectValue();
+    }
+
+    public function testEvaluatesToTrueIfArgumentMatchesType()
+    {
+        assertThat(new \stdClass, objectValue());
+    }
+
+    public function testEvaluatesToFalseIfArgumentDoesntMatchType()
+    {
+        assertThat(false, not(objectValue()));
+        assertThat(5, not(objectValue()));
+        assertThat('foo', not(objectValue()));
+    }
+
+    public function testHasAReadableDescription()
+    {
+        $this->assertDescription('an object', objectValue());
+    }
+
+    public function testDecribesActualTypeInMismatchMessage()
+    {
+        $this->assertMismatchDescription('was null', objectValue(), null);
+        $this->assertMismatchDescription('was a string "foo"', objectValue(), 'foo');
+    }
+}

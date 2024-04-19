@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b3530fa07a7679c78c2729d32819131a6034ba853c9e22ffad4c21a2e908635
-size 698
+<?php
+
+namespace DummyNamespace;
+
+use Spatie\Ignition\Contracts\RunnableSolution;
+
+class DummyClass implements RunnableSolution
+{
+    public function getSolutionTitle(): string
+    {
+        return '';
+    }
+
+    public function getDocumentationLinks(): array
+    {
+        return [];
+    }
+
+    public function getSolutionActionDescription(): string
+    {
+        return '';
+    }
+
+    public function getRunButtonText(): string
+    {
+        return '';
+    }
+
+    public function getSolutionDescription(): string
+    {
+        return '';
+    }
+
+    public function getRunParameters(): array
+    {
+        return [];
+    }
+
+    public function run(array $parameters = [])
+    {
+        //
+    }
+}

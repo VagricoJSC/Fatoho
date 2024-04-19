@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae7e909a849ac96bf9b0b3053619ca1fdf4980763869785366272387a34dd959
-size 410
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage;
+
+final class InvalidArgumentException extends \InvalidArgumentException implements Exception
+{
+}

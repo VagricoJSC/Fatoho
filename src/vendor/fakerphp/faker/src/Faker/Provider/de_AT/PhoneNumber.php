@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63255f54d8e1b2ccbaf72d415122d44dcff8929571012e764a922856111cca76
-size 455
+<?php
+
+namespace Faker\Provider\de_AT;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '0650 #######',
+        '0660 #######',
+        '0664 #######',
+        '0676 #######',
+        '0677 #######',
+        '0678 #######',
+        '0699 #######',
+        '0680 #######',
+        '+43 #### ####',
+        '+43 #### ####-##',
+    ];
+
+    protected static $e164Formats = [
+        '+43##########',
+    ];
+}

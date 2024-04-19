@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe17835832abebacf4c1d364e6bbdb1500ece7f56f08081a092622ad5f24ec53
-size 1304
+@foreach($comments as $comment)
+{{-- {{dd($comments)}} --}}
+@php $dep = $depth-1; @endphp
+<div class="display-comment"   @if($comment->parent_id != null) style="margin-left:40px;" @endif>
+    <div class="comment-list">
+        <div class="single-comment">
+            @if($comment->user_info['photo'])
+                <img src="{{$comment->user_info['photo']}}" alt="#">
+            @else 
+                <img src="{{asset('backend/img/avatar.png')}}" alt="">
+            @endif
+            <div class="content">
+                {{-- {{$post}} --}}
+            <h4>{{$comment->user_info['name']}} <span>At {{$comment->created_at->format('g: i a')}} On {{$comment->created_at->format('M d Y')}}</span></h4>
+                <p>{{$comment->comment}}</p>
+                @if($dep)
+                <div class="button">
+                    <a href="#" class="btn btn-reply reply" data-id="{{$comment->id}}"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                    <a href="" class="btn btn-reply cancel" style="display: none;" ><i class="fa fa-trash" aria-hidden="true"></i>Cancel</a>
+                </div>
+                @endif
+            </div>
+        </div>
+    </div>
+    @include('frontend.pages.comment', ['comments' => $comment->replies, 'depth' => $dep])
+
+</div>    
+@endforeach

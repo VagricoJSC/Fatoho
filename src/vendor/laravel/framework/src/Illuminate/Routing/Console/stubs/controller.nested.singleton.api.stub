@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c332272a58d16aed7198117e996fb01b3055ae1c05cf00af4942ca9c8283f3b
-size 896
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use {{ namespacedParentModel }};
+
+class {{ class }} extends Controller
+{
+    /**
+     * Store the newly created resource in storage.
+     */
+    public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): never
+    {
+        abort(404);
+    }
+
+    /**
+     * Display the resource.
+     */
+    public function show({{ parentModel }} ${{ parentModelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Update the resource in storage.
+     */
+    public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Remove the resource from storage.
+     */
+    public function destroy({{ parentModel }} ${{ parentModelVariable }}): never
+    {
+        abort(404);
+    }
+}

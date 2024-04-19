@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93e075cd13e7c95047ef83bb9c45b778746ad626a3b0003bc9d28015f609cfc3
-size 235
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class BitwiseXor extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_BitwiseXor';
+    }
+}

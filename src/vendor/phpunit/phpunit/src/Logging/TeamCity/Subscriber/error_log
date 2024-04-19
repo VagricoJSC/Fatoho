@@ -1,0 +1,80 @@
+[23-Mar-2024 12:19:18 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php on line 18
+[23-Mar-2024 12:19:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php on line 18
+[23-Mar-2024 12:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php on line 19
+[23-Mar-2024 12:19:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 18
+[23-Mar-2024 12:19:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php on line 18
+[23-Mar-2024 12:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php on line 19
+[23-Mar-2024 12:19:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php on line 19
+[23-Mar-2024 12:19:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php on line 19
+[23-Mar-2024 12:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php on line 19
+[23-Mar-2024 12:19:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php on line 19
+[03-Apr-2024 17:21:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php on line 19
+[03-Apr-2024 17:22:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php on line 18
+[03-Apr-2024 17:22:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php on line 19
+[03-Apr-2024 17:22:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php on line 19
+[03-Apr-2024 17:22:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php on line 19
+[03-Apr-2024 20:44:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php on line 18
+[03-Apr-2024 20:44:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php on line 18
+[03-Apr-2024 20:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 18
+[03-Apr-2024 20:44:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php on line 19
+[03-Apr-2024 20:45:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php on line 19

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14c8cb57ace582b939116aca0af9f441490d47fb2b1245d8e45234c547b67c29
-size 221
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class Pow extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_Pow';
+    }
+}

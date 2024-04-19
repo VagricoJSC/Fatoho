@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88f92819119c90d36509cf7959abb4b311a60c7a5c8059535153a48ce2851e4c
-size 1802
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\CliArguments;
+
+use function getcwd;
+use function is_dir;
+use function is_file;
+use function realpath;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class XmlConfigurationFileFinder
+{
+    public function find(Configuration $configuration): string|false
+    {
+        $useDefaultConfiguration = $configuration->useDefaultConfiguration();
+
+        if ($configuration->hasConfigurationFile()) {
+            if (is_dir($configuration->configurationFile())) {
+                $candidate = $this->configurationFileInDirectory($configuration->configurationFile());
+
+                if ($candidate) {
+                    return $candidate;
+                }
+
+                return false;
+            }
+
+            return $configuration->configurationFile();
+        }
+
+        if ($useDefaultConfiguration) {
+            $candidate = $this->configurationFileInDirectory(getcwd());
+
+            if ($candidate) {
+                return $candidate;
+            }
+        }
+
+        return false;
+    }
+
+    private function configurationFileInDirectory(string $directory): string|false
+    {
+        $candidates = [
+            $directory . '/phpunit.xml',
+            $directory . '/phpunit.dist.xml',
+            $directory . '/phpunit.xml.dist',
+        ];
+
+        foreach ($candidates as $candidate) {
+            if (is_file($candidate)) {
+                return realpath($candidate);
+            }
+        }
+
+        return false;
+    }
+}

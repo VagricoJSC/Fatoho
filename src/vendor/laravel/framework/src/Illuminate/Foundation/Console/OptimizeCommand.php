@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:759ce5f0b380ef983c097307c021c742fa98ae6287bc0cfeee14fd6e113266bd
-size 1149
+<?php
+
+namespace Illuminate\Foundation\Console;
+
+use Illuminate\Console\Command;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'optimize')]
+class OptimizeCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'optimize';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Cache the framework bootstrap files';
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        $this->components->info('Caching the framework bootstrap files');
+
+        collect([
+            'config' => fn () => $this->callSilent('config:cache') == 0,
+            'routes' => fn () => $this->callSilent('route:cache') == 0,
+        ])->each(fn ($task, $description) => $this->components->task($description, $task));
+
+        $this->newLine();
+    }
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:936ffc34404254479511e84ecaf42cb7bd373f30caba628156a4c7eee483abd4
-size 631
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Driver;
+
+use function sprintf;
+use RuntimeException;
+use SebastianBergmann\CodeCoverage\Exception;
+
+final class WriteOperationFailedException extends RuntimeException implements Exception
+{
+    public function __construct(string $path)
+    {
+        parent::__construct(sprintf('Cannot write to "%s"', $path));
+    }
+}

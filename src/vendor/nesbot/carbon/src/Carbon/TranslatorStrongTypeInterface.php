@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e28eb9dca10da89fdd6fab13eb580cdce38682574bb890623f392eee8441e7a1
-size 577
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon;
+
+use Symfony\Component\Translation\MessageCatalogueInterface;
+
+/**
+ * Mark translator using strong type from symfony/translation >= 6.
+ */
+interface TranslatorStrongTypeInterface
+{
+    public function getFromCatalogue(MessageCatalogueInterface $catalogue, string $id, string $domain = 'messages');
+}

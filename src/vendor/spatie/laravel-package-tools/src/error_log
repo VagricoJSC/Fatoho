@@ -1,0 +1,8 @@
+[22-Mar-2024 23:52:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-package-tools/src/PackageServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-package-tools/src/PackageServiceProvider.php on line 12
+[01-Apr-2024 12:21:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-package-tools/src/PackageServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-package-tools/src/PackageServiceProvider.php on line 12

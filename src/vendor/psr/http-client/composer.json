@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ac2435b7bf0fd6ded53a95d2a8914d8a326f1902b512314391226ee52911af5
-size 727
+{
+    "name": "psr/http-client",
+    "description": "Common interface for HTTP clients",
+    "keywords": ["psr", "psr-18", "http", "http-client"],
+    "homepage": "https://github.com/php-fig/http-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP-FIG",
+            "homepage": "http://www.php-fig.org/"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psr\\Http\\Client\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

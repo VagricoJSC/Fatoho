@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c066ed450a569b4da5972412f729702cfa47fd235122ef73f8298cf9a5e72d71
-size 766
+{
+    "name": "symfony/finder",
+    "type": "library",
+    "description": "Finds files and directories via an intuitive fluent interface",
+    "keywords": [],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "symfony/filesystem": "^6.0"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Finder\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}

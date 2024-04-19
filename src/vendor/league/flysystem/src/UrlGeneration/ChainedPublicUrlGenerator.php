@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:096152e42f5c44319251edb91ef94e6347b71d3b7bc81e1285714e6bdad6bc68
-size 747
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem\UrlGeneration;
+
+use League\Flysystem\Config;
+use League\Flysystem\UnableToGeneratePublicUrl;
+
+final class ChainedPublicUrlGenerator implements PublicUrlGenerator
+{
+    /**
+     * @param PublicUrlGenerator[] $generators
+     */
+    public function __construct(private iterable $generators)
+    {
+    }
+
+    public function publicUrl(string $path, Config $config): string
+    {
+        foreach ($this->generators as $generator) {
+            try {
+                return $generator->publicUrl($path, $config);
+            } catch (UnableToGeneratePublicUrl) {
+            }
+        }
+
+        throw new UnableToGeneratePublicUrl('No supported public url generator found.', $path);
+    }
+}

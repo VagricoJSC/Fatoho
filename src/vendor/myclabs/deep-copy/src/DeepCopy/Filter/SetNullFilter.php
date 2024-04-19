@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcdc6d198c7fe864c10aa6d03d71fc23c05650a3f8eef0dcaffb840fbda5cf3a
-size 482
+<?php
+
+namespace DeepCopy\Filter;
+
+use DeepCopy\Reflection\ReflectionHelper;
+
+/**
+ * @final
+ */
+class SetNullFilter implements Filter
+{
+    /**
+     * Sets the object property to null.
+     *
+     * {@inheritdoc}
+     */
+    public function apply($object, $property, $objectCopier)
+    {
+        $reflectionProperty = ReflectionHelper::getProperty($object, $property);
+
+        $reflectionProperty->setAccessible(true);
+        $reflectionProperty->setValue($object, null);
+    }
+}

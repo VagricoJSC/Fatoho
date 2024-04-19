@@ -1,0 +1,8 @@
+[03-Apr-2024 08:11:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/translation/Test/ProviderTestCase.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/translation/Test/ProviderTestCase.php on line 31
+[03-Apr-2024 08:11:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php on line 34

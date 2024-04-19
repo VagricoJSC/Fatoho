@@ -1,0 +1,24 @@
+[01-Apr-2024 16:05:15 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php on line 21
+[01-Apr-2024 16:05:17 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php on line 21
+[01-Apr-2024 16:05:21 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php on line 27
+[01-Apr-2024 16:05:31 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\TableOfContentsGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php on line 33
+[01-Apr-2024 16:05:34 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php on line 26
+[01-Apr-2024 16:05:38 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php on line 27

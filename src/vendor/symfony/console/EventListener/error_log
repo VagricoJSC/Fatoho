@@ -1,0 +1,4 @@
+[22-Mar-2024 23:37:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/EventListener/ErrorListener.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/EventListener/ErrorListener.php on line 25

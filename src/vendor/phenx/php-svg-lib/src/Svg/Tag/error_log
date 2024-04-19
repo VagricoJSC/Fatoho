@@ -1,0 +1,144 @@
+[23-Mar-2024 15:18:03 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/UseTag.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/UseTag.php on line 11
+[23-Mar-2024 15:18:08 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Text.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Text.php on line 13
+[23-Mar-2024 15:56:48 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/StyleTag.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/StyleTag.php on line 13
+[23-Mar-2024 15:56:52 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Stop.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Stop.php on line 11
+[23-Mar-2024 15:56:57 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Shape.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Shape.php on line 13
+[23-Mar-2024 15:56:59 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Rect.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Rect.php on line 13
+[23-Mar-2024 15:57:03 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/RadialGradient.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/RadialGradient.php on line 11
+[23-Mar-2024 15:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polyline.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polyline.php on line 11
+[23-Mar-2024 15:57:11 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polygon.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polygon.php on line 11
+[23-Mar-2024 15:57:15 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Path.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Path.php on line 13
+[23-Mar-2024 15:57:20 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/LinearGradient.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/LinearGradient.php on line 15
+[23-Mar-2024 15:57:24 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Line.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Line.php on line 13
+[23-Mar-2024 15:57:28 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Image.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Image.php on line 13
+[23-Mar-2024 15:57:31 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Group.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Group.php on line 13
+[23-Mar-2024 15:57:35 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Ellipse.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Ellipse.php on line 13
+[23-Mar-2024 15:57:42 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/ClipPath.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/ClipPath.php on line 13
+[23-Mar-2024 15:57:44 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Circle.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Circle.php on line 13
+[23-Mar-2024 15:57:47 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Group" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Anchor.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Anchor.php on line 11
+[01-Apr-2024 15:15:06 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/UseTag.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/UseTag.php on line 11
+[01-Apr-2024 15:15:10 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Text.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Text.php on line 13
+[01-Apr-2024 15:15:13 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/StyleTag.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/StyleTag.php on line 13
+[01-Apr-2024 15:15:16 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Stop.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Stop.php on line 11
+[01-Apr-2024 15:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Rect.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Rect.php on line 13
+[01-Apr-2024 15:15:25 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Shape.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Shape.php on line 13
+[01-Apr-2024 15:15:28 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/RadialGradient.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/RadialGradient.php on line 11
+[01-Apr-2024 15:15:32 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polyline.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polyline.php on line 11
+[01-Apr-2024 15:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polygon.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Polygon.php on line 11
+[01-Apr-2024 15:15:40 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Path.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Path.php on line 13
+[01-Apr-2024 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/LinearGradient.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/LinearGradient.php on line 15
+[01-Apr-2024 15:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Line.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Line.php on line 13
+[01-Apr-2024 15:15:52 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Image.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Image.php on line 13
+[01-Apr-2024 15:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Group.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Group.php on line 13
+[01-Apr-2024 15:16:00 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Ellipse.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Ellipse.php on line 13
+[01-Apr-2024 15:16:05 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/ClipPath.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/ClipPath.php on line 13
+[01-Apr-2024 15:16:08 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Circle.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Circle.php on line 13
+[01-Apr-2024 15:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Group" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Anchor.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phenx/php-svg-lib/src/Svg/Tag/Anchor.php on line 11

@@ -1,0 +1,104 @@
+[23-Mar-2024 04:02:09 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/RequiresElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/RequiresElement.php on line 12
+[23-Mar-2024 04:02:14 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/PhpElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/PhpElement.php on line 12
+[23-Mar-2024 04:02:23 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/LicenseElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/LicenseElement.php on line 12
+[23-Mar-2024 04:02:28 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php on line 12
+[23-Mar-2024 04:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php on line 12
+[23-Mar-2024 04:02:38 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElement.php on line 12
+[23-Mar-2024 04:02:44 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php on line 12
+[23-Mar-2024 04:02:48 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ContainsElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ContainsElement.php on line 12
+[23-Mar-2024 04:02:55 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php on line 12
+[23-Mar-2024 04:02:56 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElement.php on line 12
+[23-Mar-2024 04:02:59 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/BundlesElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/BundlesElement.php on line 12
+[23-Mar-2024 04:03:07 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php on line 12
+[23-Mar-2024 04:03:07 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElement.php on line 12
+[03-Apr-2024 08:35:56 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/PhpElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/PhpElement.php on line 12
+[03-Apr-2024 08:36:00 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElement.php on line 12
+[03-Apr-2024 10:17:34 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/RequiresElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/RequiresElement.php on line 12
+[03-Apr-2024 10:17:44 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/LicenseElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/LicenseElement.php on line 12
+[03-Apr-2024 10:17:48 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php on line 12
+[03-Apr-2024 10:17:52 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php on line 12
+[03-Apr-2024 10:18:00 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php on line 12
+[03-Apr-2024 10:18:04 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ContainsElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ContainsElement.php on line 12
+[03-Apr-2024 10:18:09 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php on line 12
+[03-Apr-2024 10:18:12 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/ComponentElement.php on line 12
+[03-Apr-2024 10:18:16 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/BundlesElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/BundlesElement.php on line 12
+[03-Apr-2024 10:18:20 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php on line 12
+[03-Apr-2024 10:18:24 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElement.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phar-io/manifest/src/xml/AuthorElement.php on line 12

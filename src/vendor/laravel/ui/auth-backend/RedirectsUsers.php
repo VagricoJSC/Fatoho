@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d869752671699cb72985cd14bb093ecaf39425af1718f48b9703919e0a438cc
-size 399
+<?php
+
+namespace Illuminate\Foundation\Auth;
+
+trait RedirectsUsers
+{
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        if (method_exists($this, 'redirectTo')) {
+            return $this->redirectTo();
+        }
+
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+    }
+}

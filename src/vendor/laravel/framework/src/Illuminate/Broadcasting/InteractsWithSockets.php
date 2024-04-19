@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c25031fb1a7d0c5fa6bd0953adb9aeb5a8dff2ea24a1347c7b9ba490dae7e33f
-size 669
+<?php
+
+namespace Illuminate\Broadcasting;
+
+use Illuminate\Support\Facades\Broadcast;
+
+trait InteractsWithSockets
+{
+    /**
+     * The socket ID for the user that raised the event.
+     *
+     * @var string|null
+     */
+    public $socket;
+
+    /**
+     * Exclude the current user from receiving the broadcast.
+     *
+     * @return $this
+     */
+    public function dontBroadcastToCurrentUser()
+    {
+        $this->socket = Broadcast::socket();
+
+        return $this;
+    }
+
+    /**
+     * Broadcast the event to everyone.
+     *
+     * @return $this
+     */
+    public function broadcastToEveryone()
+    {
+        $this->socket = null;
+
+        return $this;
+    }
+}

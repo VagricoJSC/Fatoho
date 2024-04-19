@@ -1,0 +1,12 @@
+[23-Mar-2024 05:28:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php on line 18
+[23-Mar-2024 05:28:27 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php on line 26
+[23-Mar-2024 05:28:31 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php on line 11

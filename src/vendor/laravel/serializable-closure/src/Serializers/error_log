@@ -1,0 +1,16 @@
+[23-Mar-2024 03:47:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\SerializableClosure\Contracts\Serializable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Signed.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Signed.php on line 9
+[23-Mar-2024 03:47:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\SerializableClosure\Contracts\Serializable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Native.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Native.php on line 17
+[01-Apr-2024 13:49:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\SerializableClosure\Contracts\Serializable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Signed.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Signed.php on line 9
+[01-Apr-2024 13:49:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\SerializableClosure\Contracts\Serializable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Native.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/serializable-closure/src/Serializers/Native.php on line 17

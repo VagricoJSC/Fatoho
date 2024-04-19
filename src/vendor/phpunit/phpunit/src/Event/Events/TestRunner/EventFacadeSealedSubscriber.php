@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:707413b335ebeb21cd6678f8a3f8127de8dfffadf216a7c02836c8eb2f7501a6
-size 555
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestRunner;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface EventFacadeSealedSubscriber extends Subscriber
+{
+    public function notify(EventFacadeSealed $event): void;
+}

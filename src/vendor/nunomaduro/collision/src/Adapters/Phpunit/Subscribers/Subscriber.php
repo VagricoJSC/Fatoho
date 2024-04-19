@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:692fe99663f49ed224d65b6ba66b4d69b9e362a26a59d97e2c992b8cfc12065d
-size 830
+<?php
+
+declare(strict_types=1);
+
+/**
+ * This file is part of Collision.
+ *
+ * (c) Nuno Maduro <enunomaduro@gmail.com>
+ *
+ *  For the full copyright and license information, please view the LICENSE
+ *  file that was distributed with this source code.
+ */
+
+namespace NunoMaduro\Collision\Adapters\Phpunit\Subscribers;
+
+use NunoMaduro\Collision\Adapters\Phpunit\Printers\ReportablePrinter;
+
+/**
+ * @internal
+ */
+abstract class Subscriber
+{
+    /**
+     * The printer instance.
+     */
+    private ReportablePrinter $printer;
+
+    /**
+     * Creates a new subscriber.
+     */
+    public function __construct(ReportablePrinter $printer)
+    {
+        $this->printer = $printer;
+    }
+
+    /**
+     * Returns the printer instance.
+     */
+    protected function printer(): ReportablePrinter
+    {
+        return $this->printer;
+    }
+}

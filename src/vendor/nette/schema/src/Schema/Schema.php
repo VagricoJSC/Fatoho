@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:613b337762e3978f979e6b1ea8a70de9d85e3db437859bfa1c61cc9fbfbf662e
-size 586
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Schema;
+
+
+interface Schema
+{
+	/**
+	 * Normalization.
+	 * @return mixed
+	 */
+	function normalize($value, Context $context);
+
+	/**
+	 * Merging.
+	 * @return mixed
+	 */
+	function merge($value, $base);
+
+	/**
+	 * Validation and finalization.
+	 * @return mixed
+	 */
+	function complete($value, Context $context);
+
+	/**
+	 * @return mixed
+	 */
+	function completeDefault(Context $context);
+}

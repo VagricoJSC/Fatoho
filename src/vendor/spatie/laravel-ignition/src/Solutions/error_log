@@ -1,0 +1,40 @@
+[01-Apr-2024 13:35:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\RunnableSolution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/LivewireDiscoverSolution.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/LivewireDiscoverSolution.php on line 8
+[01-Apr-2024 13:59:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestUsingCorrectDbNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestUsingCorrectDbNameSolution.php on line 7
+[01-Apr-2024 13:59:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\RunnableSolution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/UseDefaultValetDbCredentialsSolution.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/UseDefaultValetDbCredentialsSolution.php on line 8
+[01-Apr-2024 13:59:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestLivewirePropertyNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestLivewirePropertyNameSolution.php on line 7
+[01-Apr-2024 13:59:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestLivewireMethodNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestLivewireMethodNameSolution.php on line 7
+[01-Apr-2024 13:59:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestCorrectVariableNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestCorrectVariableNameSolution.php on line 7
+[01-Apr-2024 13:59:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestImportSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/SuggestImportSolution.php on line 7
+[01-Apr-2024 14:00:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\RunnableSolution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/RunMigrationsSolution.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/RunMigrationsSolution.php on line 8
+[01-Apr-2024 14:00:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\RunnableSolution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/MakeViewVariableOptionalSolution.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/MakeViewVariableOptionalSolution.php on line 9
+[01-Apr-2024 14:00:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\RunnableSolution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/GenerateAppKeySolution.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/laravel-ignition/src/Solutions/GenerateAppKeySolution.php on line 8

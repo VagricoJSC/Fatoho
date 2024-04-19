@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1defaae9d01dd1e2affc0049be4daa56e6224e33c49c4be04da654138f6744c6
-size 1592
+[![PHPUnit tests](https://github.com/dompdf/php-font-lib/actions/workflows/phpunit.yml/badge.svg)](https://github.com/dompdf/php-font-lib/actions/workflows/phpunit.yml)
+
+# PHP Font Lib
+
+This library can be used to:
+ * Read TrueType, OpenType (with TrueType glyphs), WOFF font files
+ * Extract basic info (name, style, etc)
+ * Extract advanced info (horizontal metrics, glyph names, glyph shapes, etc)
+ * Make an Adobe Font Metrics (AFM) file from a font
+
+You can find a demo GUI [here](http://pxd.me/php-font-lib/www/font_explorer.html).
+
+This project was initiated by the need to read font files in the [DOMPDF project](https://github.com/dompdf/dompdf).
+
+Usage Example
+-------------
+
+```
+$font = \FontLib\Font::load('../../fontfile.ttf');
+$font->parse();  // for getFontWeight() to work this call must be done first!
+echo $font->getFontName() .'<br>';
+echo $font->getFontSubfamily() .'<br>';
+echo $font->getFontSubfamilyID() .'<br>';
+echo $font->getFontFullName() .'<br>';
+echo $font->getFontVersion() .'<br>';
+echo $font->getFontWeight() .'<br>';
+echo $font->getFontPostscriptName() .'<br>';
+```

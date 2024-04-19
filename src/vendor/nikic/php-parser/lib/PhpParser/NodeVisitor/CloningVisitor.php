@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:018df93e22741603c5558acf363b37c30b55dc27c2703e5854b84a2e3a081ffd
-size 502
+<?php declare(strict_types=1);
+
+namespace PhpParser\NodeVisitor;
+
+use PhpParser\Node;
+use PhpParser\NodeVisitorAbstract;
+
+/**
+ * Visitor cloning all nodes and linking to the original nodes using an attribute.
+ *
+ * This visitor is required to perform format-preserving pretty prints.
+ */
+class CloningVisitor extends NodeVisitorAbstract
+{
+    public function enterNode(Node $origNode) {
+        $node = clone $origNode;
+        $node->setAttribute('origNode', $origNode);
+        return $node;
+    }
+}

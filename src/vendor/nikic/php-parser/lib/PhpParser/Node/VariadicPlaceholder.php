@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:530d8cabb35f674fa12c812f1f879943e1658e944975c7a14abac3de1fd6be12
-size 653
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+use PhpParser\NodeAbstract;
+
+/**
+ * Represents the "..." in "foo(...)" of the first-class callable syntax.
+ */
+class VariadicPlaceholder extends NodeAbstract {
+    /**
+     * Create a variadic argument placeholder (first-class callable syntax).
+     *
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(array $attributes = []) {
+        $this->attributes = $attributes;
+    }
+
+    public function getType(): string {
+        return 'VariadicPlaceholder';
+    }
+
+    public function getSubNodeNames(): array {
+        return [];
+    }
+}

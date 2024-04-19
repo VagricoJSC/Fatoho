@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7958621ce02ea09acd5526a520ae6bc5fa4aed98fbe7e395f9701cd98ccca05e
-size 556
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+
+final class UnreadableFileEncountered extends RuntimeException implements FilesystemException
+{
+    /**
+     * @var string
+     */
+    private $location;
+
+    public function location(): string
+    {
+        return $this->location;
+    }
+
+    public static function atLocation(string $location): UnreadableFileEncountered
+    {
+        $e = new static("Unreadable file encountered at location {$location}.");
+        $e->location = $location;
+
+        return $e;
+    }
+}

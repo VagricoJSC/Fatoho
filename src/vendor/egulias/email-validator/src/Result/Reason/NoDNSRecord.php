@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b923f0b33ec4c274451c853e10be1e3c863237c5a7edff5199742c7bc6e97a41
-size 281
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class NoDNSRecord implements Reason 
+{
+    public function code() : int
+    {
+        return 5;
+    }
+
+    public function description() : string
+    {
+        return 'No MX or A DSN record was found for this email';
+    }
+}

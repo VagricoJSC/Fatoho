@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0633a413083b1f0348010ac701e722f47c0bd4964633ee50534898e91001a4d8
-size 300
+<?php
+
+namespace Faker\Provider\bn_BD;
+
+class Utils
+{
+    public static function getBanglaNumber($number)
+    {
+        $english = range(0, 10);
+        $bangla = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+
+        return str_replace($english, $bangla, $number);
+    }
+}

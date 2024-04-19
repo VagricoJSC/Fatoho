@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6fa8a69cd3350655ef48b4be2c5b29b93d5af9d0b1439089c8e529e530e76bc
-size 689
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\FrontMatter\Data;
+
+use League\CommonMark\Extension\FrontMatter\Exception\InvalidFrontMatterException;
+
+interface FrontMatterDataParserInterface
+{
+    /**
+     * @return mixed|null The parsed data (which may be null, if the input represents a null value)
+     *
+     * @throws InvalidFrontMatterException if parsing fails
+     * @throws \RuntimeException if other errors occur
+     */
+    public function parse(string $frontMatter);
+}

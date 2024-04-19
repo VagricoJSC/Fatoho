@@ -1,0 +1,45 @@
+[03-Apr-2024 18:29:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php on line 7
+[03-Apr-2024 18:29:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php on line 5
+[03-Apr-2024 18:30:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php on line 7
+[03-Apr-2024 18:30:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php on line 7
+[03-Apr-2024 18:30:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php on line 7
+[03-Apr-2024 18:30:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php on line 10
+[03-Apr-2024 18:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php on line 5
+[03-Apr-2024 18:30:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php on line 13
+[03-Apr-2024 18:30:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php on line 15
+[03-Apr-2024 18:30:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php on line 35
+[03-Apr-2024 18:30:37 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php on line 14
+[03-Apr-2024 20:37:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\ColumnDefinition" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php on line 7

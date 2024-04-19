@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:516d984de7b74f92b230d07986499fbcc4b07e17510066270da323dab22df37a
-size 350
+<?php
+
+namespace PHPSTORM_META;
+
+override(\Mockery::mock(0), map(["" => "@"]));
+override(\Mockery::spy(0), map(["" => "@"]));
+override(\Mockery::namedMock(0), map(["" => "@"]));
+override(\Mockery::instanceMock(0), map(["" => "@"]));
+override(\mock(0), map(["" => "@"]));
+override(\spy(0), map(["" => "@"]));
+override(\namedMock(0), map(["" => "@"]));

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ce30db23b09b9c37e726696c5ff8bdf1529fcc00700f4aeb872baf3277c504c
-size 330
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+interface Exception extends \PHPUnit\Exception
+{
+}

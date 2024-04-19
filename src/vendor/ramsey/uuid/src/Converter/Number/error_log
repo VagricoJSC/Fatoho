@@ -1,0 +1,24 @@
+[23-Mar-2024 16:34:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php on line 27
+[23-Mar-2024 16:42:04 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Converter\Number\BigNumberConverter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php on line 23
+[23-Mar-2024 16:42:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php on line 28
+[01-Apr-2024 14:16:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php on line 27
+[01-Apr-2024 14:16:13 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Converter\Number\BigNumberConverter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php on line 23
+[01-Apr-2024 14:16:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php on line 28

@@ -1,0 +1,4 @@
+[03-Apr-2024 20:34:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php on line 11

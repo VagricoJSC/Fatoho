@@ -1,0 +1,16 @@
+[23-Mar-2024 11:59:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Dispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/SubscribableDispatcher.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/SubscribableDispatcher.php on line 15
+[23-Mar-2024 12:00:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\SubscribableDispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/DirectDispatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/DirectDispatcher.php on line 21
+[23-Mar-2024 12:00:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\SubscribableDispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/DeferringDispatcher.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/DeferringDispatcher.php on line 15
+[23-Mar-2024 12:00:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Dispatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/CollectingDispatcher.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Dispatcher/CollectingDispatcher.php on line 15

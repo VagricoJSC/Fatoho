@@ -1,0 +1,132 @@
+[22-Mar-2024 19:59:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php on line 21
+[22-Mar-2024 20:00:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[22-Mar-2024 20:00:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php on line 21
+[22-Mar-2024 20:00:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php on line 22
+[22-Mar-2024 21:15:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php on line 19
+[22-Mar-2024 21:15:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php on line 14
+[22-Mar-2024 21:15:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[22-Mar-2024 21:15:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php on line 18
+[22-Mar-2024 21:15:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26
+[22-Mar-2024 21:16:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[22-Mar-2024 21:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php on line 27
+[22-Mar-2024 21:16:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php on line 21
+[22-Mar-2024 21:16:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php on line 21
+[22-Mar-2024 21:16:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php on line 22
+[22-Mar-2024 21:16:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[22-Mar-2024 21:23:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php on line 27
+[22-Mar-2024 21:23:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[22-Mar-2024 21:24:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php on line 14
+[22-Mar-2024 21:24:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[22-Mar-2024 21:24:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php on line 18
+[22-Mar-2024 21:24:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php on line 19
+[22-Mar-2024 21:24:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26
+[01-Apr-2024 09:59:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/FileBag.php on line 22
+[01-Apr-2024 10:27:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[01-Apr-2024 10:27:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/InputBag.php on line 21
+[01-Apr-2024 10:43:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ServerBag.php on line 21
+[01-Apr-2024 10:53:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/StreamedResponse.php on line 27
+[01-Apr-2024 10:53:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RequestMatcher.php on line 14
+[01-Apr-2024 10:53:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[01-Apr-2024 11:15:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[01-Apr-2024 11:15:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpFoundation\trigger_deprecation() in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ExpressionRequestMatcher.php on line 18
+[01-Apr-2024 11:15:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/ChainRequestMatcher.php on line 19
+[01-Apr-2024 11:15:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26

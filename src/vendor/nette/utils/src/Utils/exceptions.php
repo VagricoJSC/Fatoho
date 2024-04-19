@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44cf61610ce0a3ecfc9b958dfa185b4bf4bc11aef2dd6b901a243a8ba48c5aae
-size 775
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Utils;
+
+
+/**
+ * The exception that is thrown when an image error occurs.
+ */
+class ImageException extends \Exception
+{
+}
+
+
+/**
+ * The exception that indicates invalid image file.
+ */
+class UnknownImageFileException extends ImageException
+{
+}
+
+
+/**
+ * The exception that indicates error of JSON encoding/decoding.
+ */
+class JsonException extends \JsonException
+{
+}
+
+
+/**
+ * The exception that indicates error of the last Regexp execution.
+ */
+class RegexpException extends \Exception
+{
+}
+
+
+/**
+ * The exception that indicates assertion error.
+ */
+class AssertionException extends \Exception
+{
+}

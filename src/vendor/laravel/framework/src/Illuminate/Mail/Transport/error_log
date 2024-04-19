@@ -1,0 +1,16 @@
+[03-Apr-2024 18:44:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php on line 13
+[03-Apr-2024 18:44:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php on line 13
+[03-Apr-2024 18:44:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php on line 11
+[03-Apr-2024 18:44:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php on line 11

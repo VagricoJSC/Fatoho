@@ -1,0 +1,1 @@
+[03-Apr-2024 18:56:05 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Fluent\Concerns\Has" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Testing/Fluent/AssertableJson.php on line 13

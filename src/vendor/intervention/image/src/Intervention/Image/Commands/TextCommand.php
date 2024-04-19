@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af2cd571ede5ee7cee8e1d74f3d1325e6f6531eef4bbeeb5f4a8acba36af93d1
-size 831
+<?php
+
+namespace Intervention\Image\Commands;
+
+use Closure;
+
+class TextCommand extends AbstractCommand
+{
+    /**
+     * Write text on given image
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $text = $this->argument(0)->required()->value();
+        $x = $this->argument(1)->type('numeric')->value(0);
+        $y = $this->argument(2)->type('numeric')->value(0);
+        $callback = $this->argument(3)->type('closure')->value();
+
+        $fontclassname = sprintf('\Intervention\Image\%s\Font',
+            $image->getDriver()->getDriverName());
+
+        $font = new $fontclassname($text);
+
+        if ($callback instanceof Closure) {
+            $callback($font);
+        }
+
+        $font->applyToImage($image, $x, $y);
+
+        return true;
+    }
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8a65df088f49b1a8e4251b8dff927480507783e441e79a155245ca55c2aa278
-size 700
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use function sprintf;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class UnknownClassOrInterfaceException extends InvalidArgumentException
+{
+    public function __construct(string $name)
+    {
+        parent::__construct(
+            sprintf(
+                'Class or interface "%s" does not exist',
+                $name
+            )
+        );
+    }
+}

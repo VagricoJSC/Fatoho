@@ -1,0 +1,4 @@
+[03-Apr-2024 20:38:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Pagination\Paginator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Contracts/Pagination/LengthAwarePaginator.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Contracts/Pagination/LengthAwarePaginator.php on line 5

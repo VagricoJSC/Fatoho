@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:591e5fdef7c2b4ae64dd0acd6be7240e0a197a1a4000e9bfde7e37c24094ef8e
-size 1026
+<?php
+
+namespace Illuminate\Console\Events;
+
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+class CommandStarting
+{
+    /**
+     * The command name.
+     *
+     * @var string
+     */
+    public $command;
+
+    /**
+     * The console input implementation.
+     *
+     * @var \Symfony\Component\Console\Input\InputInterface|null
+     */
+    public $input;
+
+    /**
+     * The command output implementation.
+     *
+     * @var \Symfony\Component\Console\Output\OutputInterface|null
+     */
+    public $output;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $command
+     * @param  \Symfony\Component\Console\Input\InputInterface  $input
+     * @param  \Symfony\Component\Console\Output\OutputInterface  $output
+     * @return void
+     */
+    public function __construct($command, InputInterface $input, OutputInterface $output)
+    {
+        $this->input = $input;
+        $this->output = $output;
+        $this->command = $command;
+    }
+}

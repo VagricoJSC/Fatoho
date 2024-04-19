@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71d043db751207cbee4b354cb36d8409ccfedc677162acb152deac8375442b1e
-size 459
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Dieter Sting
+ * - François B
+ * - Gaspard Bucher
+ * - Maxime VALY
+ * - JD Isaacks
+ */
+return array_replace_recursive(require __DIR__.'/fr.php', [
+    'formats' => [
+        'L' => 'DD.MM.YYYY',
+    ],
+]);

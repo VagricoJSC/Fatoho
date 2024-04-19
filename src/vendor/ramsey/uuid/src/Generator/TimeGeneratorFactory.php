@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42e06b508de0adbc49c34539c4ff48680c9c8e80ddcfc540adc8a6eaa358a668
-size 1161
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Generator;
+
+use Ramsey\Uuid\Converter\TimeConverterInterface;
+use Ramsey\Uuid\Provider\NodeProviderInterface;
+use Ramsey\Uuid\Provider\TimeProviderInterface;
+
+/**
+ * TimeGeneratorFactory retrieves a default time generator, based on the
+ * environment
+ */
+class TimeGeneratorFactory
+{
+    public function __construct(
+        private NodeProviderInterface $nodeProvider,
+        private TimeConverterInterface $timeConverter,
+        private TimeProviderInterface $timeProvider
+    ) {
+    }
+
+    /**
+     * Returns a default time generator, based on the current environment
+     */
+    public function getGenerator(): TimeGeneratorInterface
+    {
+        return new DefaultTimeGenerator(
+            $this->nodeProvider,
+            $this->timeConverter,
+            $this->timeProvider
+        );
+    }
+}

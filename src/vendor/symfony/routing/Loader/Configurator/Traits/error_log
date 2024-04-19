@@ -1,0 +1,2 @@
+[23-Mar-2024 11:42:58 UTC] PHP Fatal error:  Trait "Symfony\Component\Routing\Loader\Configurator\Traits\LocalizedRouteTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Loader/Configurator/Traits/AddTrait.php on line 22
+[03-Apr-2024 15:07:12 UTC] PHP Fatal error:  Trait "Symfony\Component\Routing\Loader\Configurator\Traits\LocalizedRouteTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Loader/Configurator/Traits/AddTrait.php on line 22

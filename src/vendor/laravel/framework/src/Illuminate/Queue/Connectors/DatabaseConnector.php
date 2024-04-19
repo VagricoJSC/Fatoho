@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec177427ffc2e723a7a4a8e346035eb56ed62aef9904175839b8475d742e7e2b
-size 1088
+<?php
+
+namespace Illuminate\Queue\Connectors;
+
+use Illuminate\Database\ConnectionResolverInterface;
+use Illuminate\Queue\DatabaseQueue;
+
+class DatabaseConnector implements ConnectorInterface
+{
+    /**
+     * Database connections.
+     *
+     * @var \Illuminate\Database\ConnectionResolverInterface
+     */
+    protected $connections;
+
+    /**
+     * Create a new connector instance.
+     *
+     * @param  \Illuminate\Database\ConnectionResolverInterface  $connections
+     * @return void
+     */
+    public function __construct(ConnectionResolverInterface $connections)
+    {
+        $this->connections = $connections;
+    }
+
+    /**
+     * Establish a queue connection.
+     *
+     * @param  array  $config
+     * @return \Illuminate\Contracts\Queue\Queue
+     */
+    public function connect(array $config)
+    {
+        return new DatabaseQueue(
+            $this->connections->connection($config['connection'] ?? null),
+            $config['table'],
+            $config['queue'],
+            $config['retry_after'] ?? 60,
+            $config['after_commit'] ?? null
+        );
+    }
+}

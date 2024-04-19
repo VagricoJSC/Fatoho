@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:929cecf57a626fc07bc184ff766d4cc65d1fb0ddbae330e479bc31da6e1c1912
-size 910
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Provider;
+
+use Symfony\Component\Translation\TranslatorBag;
+use Symfony\Component\Translation\TranslatorBagInterface;
+
+/**
+ * @author Mathieu Santostefano <msantostefano@protonmail.com>
+ */
+class NullProvider implements ProviderInterface
+{
+    public function __toString(): string
+    {
+        return 'null';
+    }
+
+    public function write(TranslatorBagInterface $translatorBag, bool $override = false): void
+    {
+    }
+
+    public function read(array $domains, array $locales): TranslatorBag
+    {
+        return new TranslatorBag();
+    }
+
+    public function delete(TranslatorBagInterface $translatorBag): void
+    {
+    }
+}

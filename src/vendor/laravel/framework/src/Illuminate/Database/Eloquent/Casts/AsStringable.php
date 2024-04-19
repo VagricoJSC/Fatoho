@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ae22081df936de85a5abb753176429210640850599c13335104e426e00c55ce
-size 951
+<?php
+
+namespace Illuminate\Database\Eloquent\Casts;
+
+use Illuminate\Contracts\Database\Eloquent\Castable;
+use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
+use Illuminate\Support\Str;
+
+class AsStringable implements Castable
+{
+    /**
+     * Get the caster class to use when casting from / to this cast target.
+     *
+     * @param  array  $arguments
+     * @return \Illuminate\Contracts\Database\Eloquent\CastsAttributes<\Illuminate\Support\Stringable, string|\Stringable>
+     */
+    public static function castUsing(array $arguments)
+    {
+        return new class implements CastsAttributes
+        {
+            public function get($model, $key, $value, $attributes)
+            {
+                return isset($value) ? Str::of($value) : null;
+            }
+
+            public function set($model, $key, $value, $attributes)
+            {
+                return isset($value) ? (string) $value : null;
+            }
+        };
+    }
+}

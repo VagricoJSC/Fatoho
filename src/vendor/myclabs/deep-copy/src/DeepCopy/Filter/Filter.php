@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc37ee2bfdf3c8bbbc8fdcc855f105b62a5afb7b257d4d8ab2e8d8b42c9e7170
-size 348
+<?php
+
+namespace DeepCopy\Filter;
+
+/**
+ * Filter to apply to a property while copying an object
+ */
+interface Filter
+{
+    /**
+     * Applies the filter to the object.
+     *
+     * @param object   $object
+     * @param string   $property
+     * @param callable $objectCopier
+     */
+    public function apply($object, $property, $objectCopier);
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4dc55eb56f1889e2db2eecc250fbb1260ffa42cb2e5ac14f77272a916b5b078
-size 506
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Exception;
+
+/**
+ * Exception thrown when a parameter is not valid.
+ *
+ * @author Alexandre Salomé <alexandre.salome@gmail.com>
+ */
+class InvalidParameterException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

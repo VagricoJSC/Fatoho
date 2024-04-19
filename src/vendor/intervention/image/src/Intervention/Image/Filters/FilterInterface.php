@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd4b221b515089de6b892f237017bc12b3a7d067e31cc4044d0d3e36d796e4ec
-size 303
+<?php
+
+namespace Intervention\Image\Filters;
+
+use Intervention\Image\Image;
+
+interface FilterInterface
+{
+    /**
+     * Applies filter to given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return \Intervention\Image\Image
+     */
+    public function applyFilter(Image $image);
+}

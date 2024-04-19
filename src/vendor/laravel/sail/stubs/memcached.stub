@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51201683bacef9df9cf0fe47b18ede675280664dbb1ad33753386b852cbdd58e
-size 132
+memcached:
+    image: 'memcached:alpine'
+    ports:
+        - '${FORWARD_MEMCACHED_PORT:-11211}:11211'
+    networks:
+        - sail

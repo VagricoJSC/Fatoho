@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1f6d8be90bdefc905e4e264b823916e7fb07b55451d1cd99690d10cb87654ff
-size 749
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\TestStatus;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Deprecation extends Known
+{
+    /**
+     * @psalm-assert-if-true Deprecation $this
+     */
+    public function isDeprecation(): bool
+    {
+        return true;
+    }
+
+    public function asInt(): int
+    {
+        return 4;
+    }
+
+    public function asString(): string
+    {
+        return 'deprecation';
+    }
+}

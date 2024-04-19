@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1fd5583190a2226234294b8cce3fb38137f828cd1c493d08ad556cd47ad36a6
-size 665
+<?php
+
+namespace Illuminate\Support;
+
+class HigherOrderTapProxy
+{
+    /**
+     * The target being tapped.
+     *
+     * @var mixed
+     */
+    public $target;
+
+    /**
+     * Create a new tap proxy instance.
+     *
+     * @param  mixed  $target
+     * @return void
+     */
+    public function __construct($target)
+    {
+        $this->target = $target;
+    }
+
+    /**
+     * Dynamically pass method calls to the target.
+     *
+     * @param  string  $method
+     * @param  array  $parameters
+     * @return mixed
+     */
+    public function __call($method, $parameters)
+    {
+        $this->target->{$method}(...$parameters);
+
+        return $this->target;
+    }
+}

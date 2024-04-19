@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59f7e4eae86613ba276d66dc3b5b0109a06efd8dfe137c5d4ec8189407d74619
-size 499
+<?php
+
+namespace Illuminate\Http\Middleware;
+
+use Closure;
+
+class FrameGuard
+{
+    /**
+     * Handle the given request and get the response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function handle($request, Closure $next)
+    {
+        $response = $next($request);
+
+        $response->headers->set('X-Frame-Options', 'SAMEORIGIN', false);
+
+        return $response;
+    }
+}

@@ -1,0 +1,16 @@
+[01-Apr-2024 15:50:16 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarkerRenderer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarkerRenderer.php on line 22
+[01-Apr-2024 15:50:20 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Inline\InlineParserInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarkerParser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarkerParser.php on line 22
+[01-Apr-2024 15:50:27 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarker.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListItemMarker.php on line 18
+[01-Apr-2024 15:50:33 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ExtensionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TaskList/TaskListExtension.php on line 19

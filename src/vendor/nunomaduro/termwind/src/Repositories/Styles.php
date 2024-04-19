@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a1d3b631599b8e167bd0faec36ccccafd2d9cc2c48b3c2d5da32c27f27f7261
-size 1231
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Repositories;
+
+use Closure;
+use Termwind\ValueObjects\Style;
+use Termwind\ValueObjects\Styles as StylesValueObject;
+
+/**
+ * @internal
+ */
+final class Styles
+{
+    /**
+     * @var array<string, Style>
+     */
+    private static array $storage = [];
+
+    /**
+     * Creates a new style from the given arguments.
+     *
+     * @param (Closure(StylesValueObject $element, string|int ...$arguments): StylesValueObject)|null $callback
+     * @return Style
+     */
+    public static function create(string $name, Closure $callback = null): Style
+    {
+        self::$storage[$name] = $style = new Style(
+            $callback ?? static fn (StylesValueObject $styles) => $styles
+        );
+
+        return $style;
+    }
+
+    /**
+     * Removes all existing styles.
+     */
+    public static function flush(): void
+    {
+        self::$storage = [];
+    }
+
+    /**
+     * Checks a style with the given name exists.
+     */
+    public static function has(string $name): bool
+    {
+        return array_key_exists($name, self::$storage);
+    }
+
+    /**
+     * Gets the style with the given name.
+     */
+    public static function get(string $name): Style
+    {
+        return self::$storage[$name];
+    }
+}

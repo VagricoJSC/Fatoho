@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e84e7b237475a174e0e459103a90cbdfb3d648398a7150fdbd08eabe99ac46fd
-size 348
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class QuotedString extends Warning
+{
+    public const CODE = 11;
+
+    /**
+     * @param scalar $prevToken
+     * @param scalar $postToken
+     */
+    public function __construct($prevToken, $postToken)
+    {
+        $this->message = "Quoted String found between $prevToken and $postToken";
+    }
+}

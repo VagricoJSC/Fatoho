@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2af05f981a7734dd66486eb22e2709f5d4bc9687d68a56807a9b717e48048e5
-size 757
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+class UsersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $data=array(
+            array(
+                'name'=>'Admin',
+                'email'=>'admin@gmail.com',
+                'password'=>Hash::make('1111'),
+                'role'=>'admin',
+                'status'=>'active'
+            ),
+            array(
+                'name'=>'User',
+                'email'=>'user@gmail.com',
+                'password'=>Hash::make('1111'),
+                'role'=>'user',
+                'status'=>'active'
+            ),
+        );
+
+        DB::table('users')->insert($data);
+    }
+}

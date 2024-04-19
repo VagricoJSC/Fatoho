@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7c11871af255fa221314d26f476dc5eb04e89ff13f666126efb9ab9287f0794
-size 461
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class SharpenCommand extends AbstractCommand
+{
+    /**
+     * Sharpen image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $amount = $this->argument(0)->between(0, 100)->value(10);
+
+        return $image->getCore()->unsharpMaskImage(1, 1, $amount / 6.25, 0);
+    }
+}

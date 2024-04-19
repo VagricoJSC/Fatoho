@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d1fedcda247f0e5fb4f105b1912971e94932564c128bd8f3a5a86e7b24709ed
-size 1339
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/complexity.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Complexity;
+
+/**
+ * @psalm-immutable
+ */
+final class Complexity
+{
+    private string $name;
+    private int $cyclomaticComplexity;
+
+    public function __construct(string $name, int $cyclomaticComplexity)
+    {
+        $this->name                 = $name;
+        $this->cyclomaticComplexity = $cyclomaticComplexity;
+    }
+
+    public function name(): string
+    {
+        return $this->name;
+    }
+
+    public function cyclomaticComplexity(): int
+    {
+        return $this->cyclomaticComplexity;
+    }
+}

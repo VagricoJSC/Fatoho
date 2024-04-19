@@ -1,0 +1,96 @@
+[22-Mar-2024 23:42:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Transports.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Transports.php on line 24
+[22-Mar-2024 23:42:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php on line 19
+[22-Mar-2024 23:42:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransport.php on line 34
+[22-Mar-2024 23:42:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php on line 25
+[22-Mar-2024 23:42:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransportFactory.php on line 19
+[22-Mar-2024 23:42:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransport.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransport.php on line 21
+[22-Mar-2024 23:42:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php on line 24
+[22-Mar-2024 23:42:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\RoundRobinTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/FailoverTransport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/FailoverTransport.php on line 19
+[22-Mar-2024 23:43:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportFactoryInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php on line 22
+[22-Mar-2024 23:43:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransport.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransport.php on line 31
+[22-Mar-2024 23:43:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php on line 25
+[22-Mar-2024 23:43:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractHttpTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php on line 25
+[03-Apr-2024 07:32:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Transports.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/Transports.php on line 24
+[03-Apr-2024 07:32:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransport.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransport.php on line 21
+[03-Apr-2024 08:15:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php on line 19
+[03-Apr-2024 08:15:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/SendmailTransport.php on line 34
+[03-Apr-2024 08:15:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php on line 25
+[03-Apr-2024 08:15:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NullTransportFactory.php on line 19
+[03-Apr-2024 08:15:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php on line 24
+[03-Apr-2024 08:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\RoundRobinTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/FailoverTransport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/FailoverTransport.php on line 19
+[03-Apr-2024 08:15:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportFactoryInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php on line 22
+[03-Apr-2024 08:15:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransport.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractTransport.php on line 31
+[03-Apr-2024 08:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php on line 25
+[03-Apr-2024 08:15:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractHttpTransport" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php on line 25

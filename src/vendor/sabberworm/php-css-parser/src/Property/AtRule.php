@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce60882b132c150c437e0f2d5793731d3b388f8b1177973c8c76bd5c44fde9e6
-size 801
+<?php
+
+namespace Sabberworm\CSS\Property;
+
+use Sabberworm\CSS\Comment\Commentable;
+use Sabberworm\CSS\Renderable;
+
+interface AtRule extends Renderable, Commentable
+{
+    /**
+     * Since there are more set rules than block rules,
+     * we’re whitelisting the block rules and have anything else be treated as a set rule.
+     *
+     * @var string
+     */
+    const BLOCK_RULES = 'media/document/supports/region-style/font-feature-values';
+
+    /**
+     * … and more font-specific ones (to be used inside font-feature-values)
+     *
+     * @var string
+     */
+    const SET_RULES = 'font-face/counter-style/page/swash/styleset/annotation';
+
+    /**
+     * @return string|null
+     */
+    public function atRuleName();
+
+    /**
+     * @return string|null
+     */
+    public function atRuleArgs();
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf517add83095cdd80d8d0cafd4bf5b91fdc6354dba6958b9be4cbc4053a6c11
-size 453
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Event;
+
+/**
+ * Triggered whenever a request is fully processed.
+ *
+ * @author Benjamin Eberlei <kontakt@beberlei.de>
+ */
+final class FinishRequestEvent extends KernelEvent
+{
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:767a6cb92f3e169ac5b8dd5119eb79d9eb4be6dfd23e9340f8e301788278d8f2
-size 563
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestRunner;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface ExtensionBootstrappedSubscriber extends Subscriber
+{
+    public function notify(ExtensionBootstrapped $event): void;
+}

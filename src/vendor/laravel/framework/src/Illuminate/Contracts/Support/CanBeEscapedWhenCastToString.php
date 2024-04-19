@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5258583536b1ed008cbb2779c6780816fe1c5b64faae786e0887608531870463
-size 329
+<?php
+
+namespace Illuminate\Contracts\Support;
+
+interface CanBeEscapedWhenCastToString
+{
+    /**
+     * Indicate that the object's string representation should be escaped when __toString is invoked.
+     *
+     * @param  bool  $escape
+     * @return $this
+     */
+    public function escapeWhenCastingToString($escape = true);
+}

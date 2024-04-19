@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:828f52dceca2117ce4e64db951ff60c4167c247530b8756d2f97ec990d1f9719
-size 547
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Parser;
+
+use League\CommonMark\Node\Block\Document;
+
+interface MarkdownParserInterface
+{
+    /**
+     * @throws \RuntimeException
+     */
+    public function parse(string $input): Document;
+}

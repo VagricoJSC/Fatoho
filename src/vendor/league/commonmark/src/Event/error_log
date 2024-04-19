@@ -1,0 +1,20 @@
+[01-Apr-2024 12:50:50 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php on line 18
+[01-Apr-2024 12:50:54 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php on line 21
+[01-Apr-2024 12:50:59 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php on line 22
+[01-Apr-2024 12:51:02 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php on line 21
+[01-Apr-2024 12:51:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/AbstractEvent.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Event/AbstractEvent.php on line 30

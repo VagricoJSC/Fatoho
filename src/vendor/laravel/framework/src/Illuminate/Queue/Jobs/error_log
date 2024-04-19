@@ -1,0 +1,22 @@
+[03-Apr-2024 18:46:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php on line 8
+[03-Apr-2024 18:46:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php on line 9
+[03-Apr-2024 18:46:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php on line 9
+[03-Apr-2024 18:46:21 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php on line 10
+[03-Apr-2024 18:46:25 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJobRecord.php on line 7
+[03-Apr-2024 18:46:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php on line 9
+[03-Apr-2024 18:46:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php on line 10

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2baea68af38c7e15324f677c6319dc212898c47813cca3d5f5089f9791779e2
-size 438
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage;
+
+use RuntimeException;
+
+final class DeadCodeDetectionNotSupportedException extends RuntimeException implements Exception
+{
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77a552319508e39df728bde73d80531dac2a258688a506319538c4cb673bd430
-size 701
+<?php
+
+namespace Spatie\FlareClient\FlareMiddleware;
+
+use Spatie\FlareClient\Report;
+
+class CensorRequestBodyFields implements FlareMiddleware
+{
+    protected array $fieldNames = [];
+
+    public function __construct(array $fieldNames)
+    {
+        $this->fieldNames = $fieldNames;
+    }
+
+    public function handle(Report $report, $next)
+    {
+        $context = $report->allContext();
+
+        foreach ($this->fieldNames as $fieldName) {
+            if (isset($context['request_data']['body'][$fieldName])) {
+                $context['request_data']['body'][$fieldName] = '<CENSORED>';
+            }
+        }
+
+        $report->userProvidedContext($context);
+
+        return $next($report);
+    }
+}

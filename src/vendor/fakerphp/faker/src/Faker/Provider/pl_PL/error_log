@@ -1,0 +1,64 @@
+[23-Mar-2024 13:50:12 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Text" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Text.php on line 5
+[23-Mar-2024 13:51:37 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/PhoneNumber.php on line 5
+[23-Mar-2024 13:51:39 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Person.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Person.php on line 10
+[23-Mar-2024 13:51:44 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Payment.php on line 5
+[23-Mar-2024 13:51:49 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/LicensePlate.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/LicensePlate.php on line 12
+[23-Mar-2024 13:51:52 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Internet.php on line 5
+[23-Mar-2024 13:51:55 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Company.php on line 5
+[23-Mar-2024 13:52:00 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Address.php on line 5
+[03-Apr-2024 20:04:29 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Text" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Text.php on line 5
+[03-Apr-2024 20:04:33 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/PhoneNumber.php on line 5
+[03-Apr-2024 20:04:39 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Person.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Person.php on line 10
+[03-Apr-2024 20:04:48 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Base" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/LicensePlate.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/LicensePlate.php on line 12
+[03-Apr-2024 20:04:48 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Payment.php on line 5
+[03-Apr-2024 20:04:49 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Internet.php on line 5
+[03-Apr-2024 20:04:55 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Company.php on line 5
+[03-Apr-2024 20:04:57 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Provider/pl_PL/Address.php on line 5

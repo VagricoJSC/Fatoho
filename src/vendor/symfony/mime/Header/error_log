@@ -1,0 +1,32 @@
+[22-Mar-2024 22:26:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/UnstructuredHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/UnstructuredHeader.php on line 19
+[22-Mar-2024 22:26:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/PathHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/PathHeader.php on line 22
+[22-Mar-2024 22:26:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/ParameterizedHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/ParameterizedHeader.php on line 19
+[22-Mar-2024 22:26:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/MailboxListHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/MailboxListHeader.php on line 22
+[22-Mar-2024 22:26:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/MailboxHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/MailboxHeader.php on line 22
+[22-Mar-2024 22:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/IdentificationHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/IdentificationHeader.php on line 22
+[22-Mar-2024 22:26:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/DateHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/DateHeader.php on line 19
+[22-Mar-2024 22:26:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Header\HeaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/AbstractHeader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Header/AbstractHeader.php on line 21

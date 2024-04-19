@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb0504a3728308238a3020759407b2d74d2ab9a60a8c5d49e99e4547be739637
-size 1169
+<?php
+
+namespace League\OAuth1\Client\Signature;
+
+use League\OAuth1\Client\Credentials\ClientCredentialsInterface;
+use League\OAuth1\Client\Credentials\CredentialsInterface;
+
+abstract class Signature implements SignatureInterface
+{
+    /**
+     * The client credentials.
+     *
+     * @var ClientCredentialsInterface
+     */
+    protected $clientCredentials;
+
+    /**
+     * The (temporary or token) credentials.
+     *
+     * @var CredentialsInterface
+     */
+    protected $credentials;
+
+    /**
+     * @inheritDoc
+     */
+    public function __construct(ClientCredentialsInterface $clientCredentials)
+    {
+        $this->clientCredentials = $clientCredentials;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setCredentials(CredentialsInterface $credentials)
+    {
+        $this->credentials = $credentials;
+    }
+
+    /**
+     * Generate a signing key.
+     *
+     * @return string
+     */
+    protected function key()
+    {
+        $key = rawurlencode($this->clientCredentials->getSecret()) . '&';
+
+        if ($this->credentials !== null) {
+            $key .= rawurlencode($this->credentials->getSecret());
+        }
+
+        return $key;
+    }
+}

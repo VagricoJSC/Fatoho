@@ -1,0 +1,104 @@
+[23-Mar-2024 03:42:52 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php on line 18
+[23-Mar-2024 03:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php on line 19
+[23-Mar-2024 03:42:59 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php on line 17
+[23-Mar-2024 03:43:03 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php on line 18
+[23-Mar-2024 03:43:10 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php on line 20
+[23-Mar-2024 03:43:11 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php on line 19
+[23-Mar-2024 03:43:18 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php on line 17
+[23-Mar-2024 03:43:19 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\ListBullet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php on line 19
+[23-Mar-2024 03:43:24 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php on line 17
+[23-Mar-2024 03:43:29 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php on line 18
+[23-Mar-2024 03:43:32 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php on line 19
+[23-Mar-2024 03:43:37 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php on line 18
+[23-Mar-2024 03:43:39 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Frame" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 27
+[01-Apr-2024 12:56:58 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php on line 18
+[01-Apr-2024 12:57:01 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php on line 19
+[01-Apr-2024 12:57:04 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php on line 17
+[01-Apr-2024 12:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php on line 18
+[01-Apr-2024 12:57:14 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php on line 20
+[01-Apr-2024 12:57:18 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php on line 19
+[01-Apr-2024 12:57:21 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php on line 17
+[01-Apr-2024 12:57:24 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\ListBullet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php on line 19
+[01-Apr-2024 12:57:30 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php on line 17
+[01-Apr-2024 12:57:34 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php on line 18
+[01-Apr-2024 12:57:38 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php on line 19
+[01-Apr-2024 12:57:42 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php on line 18
+[01-Apr-2024 12:57:44 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Frame" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 27

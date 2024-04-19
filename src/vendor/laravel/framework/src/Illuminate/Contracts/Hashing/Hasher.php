@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ce0c5de03b7c863f988577b2ee3bc5d3c57e01ccce09ee1cc16557a26c43a6c
-size 946
+<?php
+
+namespace Illuminate\Contracts\Hashing;
+
+interface Hasher
+{
+    /**
+     * Get information about the given hashed value.
+     *
+     * @param  string  $hashedValue
+     * @return array
+     */
+    public function info($hashedValue);
+
+    /**
+     * Hash the given value.
+     *
+     * @param  string  $value
+     * @param  array  $options
+     * @return string
+     */
+    public function make($value, array $options = []);
+
+    /**
+     * Check the given plain value against a hash.
+     *
+     * @param  string  $value
+     * @param  string  $hashedValue
+     * @param  array  $options
+     * @return bool
+     */
+    public function check($value, $hashedValue, array $options = []);
+
+    /**
+     * Check if the given hash has been hashed using the given options.
+     *
+     * @param  string  $hashedValue
+     * @param  array  $options
+     * @return bool
+     */
+    public function needsRehash($hashedValue, array $options = []);
+}

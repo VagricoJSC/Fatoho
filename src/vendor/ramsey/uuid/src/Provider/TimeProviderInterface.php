@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3431c0df2bc16f78dd4d18a1ea11ca10dd06c63bb9787b1e56ae4b160cb3103f
-size 566
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Provider;
+
+use Ramsey\Uuid\Type\Time;
+
+/**
+ * A time provider retrieves the current time
+ */
+interface TimeProviderInterface
+{
+    /**
+     * Returns a time object
+     */
+    public function getTime(): Time;
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5dc11c60a12a37c842a325908f83610f0c0456a0efe6189330e1b5d707d91e5
-size 299
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class Plus extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '+';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_Plus';
+    }
+}

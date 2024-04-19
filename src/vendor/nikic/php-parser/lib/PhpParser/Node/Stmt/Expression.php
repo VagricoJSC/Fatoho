@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f60d9c98244467319fe31d428604880199c863b1b9d174f563be389615db5a9d
-size 726
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+/**
+ * Represents statements of type "expr;"
+ */
+class Expression extends Node\Stmt
+{
+    /** @var Node\Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs an expression statement.
+     *
+     * @param Node\Expr $expr       Expression
+     * @param array     $attributes Additional attributes
+     */
+    public function __construct(Node\Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Expression';
+    }
+}

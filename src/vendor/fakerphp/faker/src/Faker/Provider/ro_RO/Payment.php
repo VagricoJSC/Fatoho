@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b20716ca70abe7e9761814fe6e12b939196108aac299f428950071640fb475db
-size 682
+<?php
+
+namespace Faker\Provider\ro_RO;
+
+class Payment extends \Faker\Provider\Payment
+{
+    /**
+     * International Bank Account Number (IBAN)
+     *
+     * @see http://en.wikipedia.org/wiki/International_Bank_Account_Number
+     *
+     * @param string $prefix      for generating bank account number of a specific bank
+     * @param string $countryCode ISO 3166-1 alpha-2 country code
+     * @param int    $length      total length without country code and 2 check digits
+     *
+     * @return string
+     */
+    public static function bankAccountNumber($prefix = '', $countryCode = 'RO', $length = null)
+    {
+        return static::iban($countryCode, $prefix, $length);
+    }
+}

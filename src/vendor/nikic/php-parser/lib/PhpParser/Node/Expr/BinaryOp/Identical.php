@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ced953f3ed73a5eaa3709a9be78be68a6b73767e7918ed031f075178ba73b36b
-size 311
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class Identical extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '===';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_Identical';
+    }
+}

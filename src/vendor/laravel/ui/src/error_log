@@ -1,0 +1,32 @@
+[23-Mar-2024 01:22:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiServiceProvider.php on line 8
+[23-Mar-2024 01:22:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiCommand.php on line 8
+[23-Mar-2024 01:22:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/ControllersCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/ControllersCommand.php on line 10
+[23-Mar-2024 01:22:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/AuthCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/AuthCommand.php on line 8
+[01-Apr-2024 11:33:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiCommand.php on line 8
+[01-Apr-2024 11:33:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/AuthCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/AuthCommand.php on line 8
+[01-Apr-2024 11:51:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/UiServiceProvider.php on line 8
+[01-Apr-2024 11:51:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/ControllersCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/ui/src/ControllersCommand.php on line 10

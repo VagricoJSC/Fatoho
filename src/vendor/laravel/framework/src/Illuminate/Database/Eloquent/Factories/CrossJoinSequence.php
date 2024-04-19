@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d726f0c30731cfaa239e1c3eb0419add9a9029b9f5f3ded6648560949e426705
-size 541
+<?php
+
+namespace Illuminate\Database\Eloquent\Factories;
+
+use Illuminate\Support\Arr;
+
+class CrossJoinSequence extends Sequence
+{
+    /**
+     * Create a new cross join sequence instance.
+     *
+     * @param  array  ...$sequences
+     * @return void
+     */
+    public function __construct(...$sequences)
+    {
+        $crossJoined = array_map(
+            function ($a) {
+                return array_merge(...$a);
+            },
+            Arr::crossJoin(...$sequences),
+        );
+
+        parent::__construct(...$crossJoined);
+    }
+}

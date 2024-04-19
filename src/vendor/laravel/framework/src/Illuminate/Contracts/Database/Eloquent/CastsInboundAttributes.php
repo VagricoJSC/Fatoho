@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a63405d12303438201412df6e5a0e1cae9fdfaa426b54f970d0a7f0c29640fc
-size 478
+<?php
+
+namespace Illuminate\Contracts\Database\Eloquent;
+
+use Illuminate\Database\Eloquent\Model;
+
+interface CastsInboundAttributes
+{
+    /**
+     * Transform the attribute to its underlying model values.
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $attributes
+     * @return mixed
+     */
+    public function set(Model $model, string $key, mixed $value, array $attributes);
+}

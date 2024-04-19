@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d55cfd91f4f869a1a797824d1fdb3c1f9c2ca9015361149cc6455673b2abbdd
-size 677
+<!DOCTYPE html>
+<html lang="en">
+
+@include('backend.layouts.head')
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    @include('backend.layouts.sidebar')
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        @include('backend.layouts.header')
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        @yield('main-content')
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+      @include('backend.layouts.footer')
+
+</body>
+
+</html>

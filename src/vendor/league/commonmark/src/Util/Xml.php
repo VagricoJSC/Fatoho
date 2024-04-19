@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8988a2d00962bf77ffb7fa31181f4aca34daea8fc896fcc2fecea440e9aba4a3
-size 738
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * Original code based on the CommonMark JS reference parser (https://bitly.com/commonmark-js)
+ *  - (c) John MacFarlane
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Util;
+
+/**
+ * Utility class for handling/generating XML and HTML
+ *
+ * @psalm-immutable
+ */
+final class Xml
+{
+    /**
+     * @psalm-pure
+     */
+    public static function escape(string $string): string
+    {
+        return \str_replace(['&', '<', '>', '"'], ['&amp;', '&lt;', '&gt;', '&quot;'], $string);
+    }
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b870bc1f5d9c80286cb1a70187cb253043711d39486ca296b86b34338606c4f
-size 330
+<?php
+
+namespace Faker\Provider\en_IN;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'yahoo.co.in', 'rediffmail.com'];
+    protected static $tld = ['com', 'com', 'com', 'com', 'com', 'com', 'in', 'in', 'in', 'ac.in', 'net', 'org', 'co.in'];
+}

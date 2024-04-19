@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d157ae0e3f34ade0fc215e9ee22498297c74d5ecb01847c5be9e493a30328a4e
-size 1098
+<?php
+namespace Hamcrest\Arrays;
+
+use Hamcrest\AbstractMatcherTest;
+
+class IsArrayContainingKeyValuePairTest extends AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return IsArrayContainingKeyValuePair::hasKeyValuePair('irrelevant', 'irrelevant');
+    }
+
+    public function testMatchesArrayContainingMatchingKeyAndValue()
+    {
+        $array = array('a'=>1, 'b'=>2);
+
+        $this->assertMatches(hasKeyValuePair(equalTo('a'), equalTo(1)), $array, 'matcherA');
+        $this->assertMatches(hasKeyValuePair(equalTo('b'), equalTo(2)), $array, 'matcherB');
+        $this->assertMismatchDescription(
+            'array was ["a" => <1>, "b" => <2>]',
+            hasKeyValuePair(equalTo('c'), equalTo(3)),
+            $array
+        );
+    }
+
+    public function testDoesNotMatchNull()
+    {
+        $this->assertMismatchDescription('was null', hasKeyValuePair(anything(), anything()), null);
+    }
+
+    public function testHasReadableDescription()
+    {
+        $this->assertDescription('array containing ["a" => <2>]', hasKeyValuePair(equalTo('a'), equalTo(2)));
+    }
+}

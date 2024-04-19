@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a5ab7e17a497e453f6c7e2e7c2410fb09a32e180308bf0baca59a038f74561a
-size 528
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Exceptions;
+
+use RuntimeException;
+
+/**
+ * @internal
+ */
+final class ShouldNotHappen extends RuntimeException
+{
+    /**
+     * @var string
+     */
+    private const MESSAGE = 'This should not happen, please open an issue on collision repository: %s';
+
+    /**
+     * Creates a new Exception instance.
+     */
+    public function __construct()
+    {
+        parent::__construct(sprintf(self::MESSAGE, 'https://github.com/nunomaduro/collision/issues/new'));
+    }
+}

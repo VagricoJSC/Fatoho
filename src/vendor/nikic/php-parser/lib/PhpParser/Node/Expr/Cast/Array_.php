@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57abcdd5c84c9cd70a03c2a2f567fcd44aed4c978f58c8b7ec5bc6ee52228a67
-size 210
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\Cast;
+
+use PhpParser\Node\Expr\Cast;
+
+class Array_ extends Cast
+{
+    public function getType() : string {
+        return 'Expr_Cast_Array';
+    }
+}

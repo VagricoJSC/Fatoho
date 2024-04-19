@@ -1,0 +1,8 @@
+[23-Mar-2024 02:29:27 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Handler\CurlFactoryInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 20
+[03-Apr-2024 09:23:32 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Handler\CurlFactoryInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 20

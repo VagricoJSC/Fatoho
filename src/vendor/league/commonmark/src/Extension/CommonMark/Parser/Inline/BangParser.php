@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0905276f104abf891891c4da50ee88cbbf527d53af7787e57703221e09f01d2
-size 1380
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * Original code based on the CommonMark JS reference parser (https://bitly.com/commonmark-js)
+ *  - (c) John MacFarlane
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\CommonMark\Parser\Inline;
+
+use League\CommonMark\Delimiter\Delimiter;
+use League\CommonMark\Node\Inline\Text;
+use League\CommonMark\Parser\Inline\InlineParserInterface;
+use League\CommonMark\Parser\Inline\InlineParserMatch;
+use League\CommonMark\Parser\InlineParserContext;
+
+final class BangParser implements InlineParserInterface
+{
+    public function getMatchDefinition(): InlineParserMatch
+    {
+        return InlineParserMatch::string('![');
+    }
+
+    public function parse(InlineParserContext $inlineContext): bool
+    {
+        $cursor = $inlineContext->getCursor();
+        $cursor->advanceBy(2);
+
+        $node = new Text('![', ['delim' => true]);
+        $inlineContext->getContainer()->appendChild($node);
+
+        // Add entry to stack for this opener
+        $delimiter = new Delimiter('!', 1, $node, true, false, $cursor->getPosition());
+        $inlineContext->getDelimiterStack()->push($delimiter);
+
+        return true;
+    }
+}

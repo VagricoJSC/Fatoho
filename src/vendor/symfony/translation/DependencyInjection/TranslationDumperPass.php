@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74f9697224bb98965637b962ba9e36ddfa7be3664fefb5f63de348ef5806c9d6
-size 1085
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\DependencyInjection;
+
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
+
+/**
+ * Adds tagged translation.formatter services to translation writer.
+ */
+class TranslationDumperPass implements CompilerPassInterface
+{
+    public function process(ContainerBuilder $container)
+    {
+        if (!$container->hasDefinition('translation.writer')) {
+            return;
+        }
+
+        $definition = $container->getDefinition('translation.writer');
+
+        foreach ($container->findTaggedServiceIds('translation.dumper', true) as $id => $attributes) {
+            $definition->addMethodCall('addDumper', [$attributes[0]['alias'], new Reference($id)]);
+        }
+    }
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53f74b6be772a7edaab8450e18376ade3502b135490fcc0bd0d82101f42be472
-size 493
+name: PHPStan
+
+on:
+  push:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+
+jobs:
+  phpstan:
+    name: phpstan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+
+      - name: Install composer dependencies
+        uses: ramsey/composer-install@v1
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan --error-format=github

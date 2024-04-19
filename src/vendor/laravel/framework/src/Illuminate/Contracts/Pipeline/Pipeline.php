@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b8069f3856fb215b34114cc5a8d5109a7d11f33f5cee8628af339b07041305b
-size 759
+<?php
+
+namespace Illuminate\Contracts\Pipeline;
+
+use Closure;
+
+interface Pipeline
+{
+    /**
+     * Set the traveler object being sent on the pipeline.
+     *
+     * @param  mixed  $traveler
+     * @return $this
+     */
+    public function send($traveler);
+
+    /**
+     * Set the stops of the pipeline.
+     *
+     * @param  dynamic|array  $stops
+     * @return $this
+     */
+    public function through($stops);
+
+    /**
+     * Set the method to call on the stops.
+     *
+     * @param  string  $method
+     * @return $this
+     */
+    public function via($method);
+
+    /**
+     * Run the pipeline with a final destination callback.
+     *
+     * @param  \Closure  $destination
+     * @return mixed
+     */
+    public function then(Closure $destination);
+}

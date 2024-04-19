@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:732e0cdf4ccc52dc9ab24c6c62a0c2ec67091e78e48579d0e3b4b2ec484c1702
-size 1167
+{
+    "name": "laravel/ui",
+    "description": "Laravel UI utilities and presets.",
+    "keywords": ["laravel", "ui"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/console": "^9.21|^10.0",
+        "illuminate/filesystem": "^9.21|^10.0",
+        "illuminate/support": "^9.21|^10.0",
+        "illuminate/validation": "^9.21|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Ui\\": "src/",
+            "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Laravel\\Ui\\UiServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,48 @@
+[22-Mar-2024 23:37:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php on line 19
+[22-Mar-2024 23:37:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php on line 20
+[22-Mar-2024 23:37:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php on line 21
+[22-Mar-2024 23:37:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatter.php on line 22
+[22-Mar-2024 23:37:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php on line 17
+[22-Mar-2024 23:37:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatter.php on line 17
+[03-Apr-2024 08:13:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php on line 20
+[03-Apr-2024 08:13:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php on line 21
+[03-Apr-2024 08:13:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/OutputFormatter.php on line 22
+[03-Apr-2024 08:13:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php on line 17
+[03-Apr-2024 08:13:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/NullOutputFormatter.php on line 17
+[03-Apr-2024 08:32:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php on line 19

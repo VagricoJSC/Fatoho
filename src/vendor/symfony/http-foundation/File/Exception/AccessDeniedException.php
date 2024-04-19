@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06a685cbdd2e55ea7288f4c431dc539c215a427b5301cc1624fa35fa353c77dc
-size 602
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when the access on a file was denied.
+ *
+ * @author Bernhard Schussek <bschussek@gmail.com>
+ */
+class AccessDeniedException extends FileException
+{
+    public function __construct(string $path)
+    {
+        parent::__construct(sprintf('The file %s could not be accessed', $path));
+    }
+}

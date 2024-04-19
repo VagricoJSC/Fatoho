@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51522f3a50f769ef5b4090241ab773af18c93ebf9e7675639a9a3a2c9940e0a8
-size 488
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Output\OutputInterface;
+
+class Warn extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $string
+     * @param  int  $verbosity
+     * @return void
+     */
+    public function render($string, $verbosity = OutputInterface::VERBOSITY_NORMAL)
+    {
+        with(new Line($this->output))
+            ->render('warn', $string, $verbosity);
+    }
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d5cf4a13be62dfcae84187faaee4d8c4f1671c171a8f8c3376a00ae829ece36
-size 478
+<?php
+
+declare(strict_types=1);
+
+namespace Faker\Extension;
+
+use Faker\Generator;
+
+/**
+ * A helper trait to be used with GeneratorAwareExtension.
+ */
+trait GeneratorAwareExtensionTrait
+{
+    /**
+     * @var Generator|null
+     */
+    private $generator;
+
+    /**
+     * @return static
+     */
+    public function withGenerator(Generator $generator): Extension
+    {
+        $instance = clone $this;
+
+        $instance->generator = $generator;
+
+        return $instance;
+    }
+}

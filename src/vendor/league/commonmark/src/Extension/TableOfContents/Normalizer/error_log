@@ -1,0 +1,12 @@
+[01-Apr-2024 17:11:13 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php on line 20
+[01-Apr-2024 17:11:20 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php on line 19
+[01-Apr-2024 17:11:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php on line 20

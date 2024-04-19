@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:941cba62942fe1408c82f817cfbf42e534f2b0e3327480bb7faee6f3d6dd5b0d
-size 501
+<?php
+
+namespace Spatie\LaravelIgnition\Recorders\DumpRecorder;
+
+class MultiDumpHandler
+{
+    /** @var array<int, callable|null> */
+    protected array $handlers = [];
+
+    public function dump(mixed $value): void
+    {
+        foreach ($this->handlers as $handler) {
+            if ($handler) {
+                $handler($value);
+            }
+        }
+    }
+
+    public function addHandler(callable $callable = null): self
+    {
+        $this->handlers[] = $callable;
+
+        return $this;
+    }
+}

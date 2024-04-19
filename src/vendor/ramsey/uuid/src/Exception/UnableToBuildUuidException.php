@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5fea5124a2c542c2df4db4fdf279281c748d18eb5e11997b97f3f0fb1e3b595
-size 578
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Exception;
+
+use RuntimeException as PhpRuntimeException;
+
+/**
+ * Thrown to indicate a builder is unable to build a UUID
+ */
+class UnableToBuildUuidException extends PhpRuntimeException implements UuidExceptionInterface
+{
+}

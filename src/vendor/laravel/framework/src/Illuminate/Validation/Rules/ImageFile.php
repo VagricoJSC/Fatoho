@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50fc2855b4c630618e32c8f3d2213ad49b797a38086b5d67d485f62eb38c94e0
-size 508
+<?php
+
+namespace Illuminate\Validation\Rules;
+
+class ImageFile extends File
+{
+    /**
+     * Create a new image file rule instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->rules('image');
+    }
+
+    /**
+     * The dimension constraints for the uploaded file.
+     *
+     * @param  \Illuminate\Validation\Rules\Dimensions  $dimensions
+     */
+    public function dimensions($dimensions)
+    {
+        $this->rules($dimensions);
+
+        return $this;
+    }
+}

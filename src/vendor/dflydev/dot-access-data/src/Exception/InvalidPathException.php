@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4dc1a3979d717adb26a0fd9a3a35fd5b7edaedffed23f06515e8b4602844e79
-size 430
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is a part of dflydev/dot-access-data.
+ *
+ * (c) Dragonfly Development Inc.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Dflydev\DotAccessData\Exception;
+
+/**
+ * Thrown when trying to access an invalid path in the data array
+ */
+class InvalidPathException extends DataException
+{
+}

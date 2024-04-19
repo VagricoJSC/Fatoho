@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:511455c4321630daa60d82e9453523877f80c6acfe7f6721a1d13fb7187f4352
-size 492
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Exception;
+
+/**
+ * Thrown when a resource does not exist.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class NotFoundResourceException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

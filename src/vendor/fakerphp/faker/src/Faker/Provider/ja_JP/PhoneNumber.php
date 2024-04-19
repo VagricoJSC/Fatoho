@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d9ae218411bcf632984e2a606df43f5a2abbe765b05a94ab255fdaf5718092c
-size 430
+<?php
+
+namespace Faker\Provider\ja_JP;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    /**
+     * @see http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/number_shitei.html#kotei-denwa
+     */
+    protected static $formats = [
+        '080-####-####',
+        '090-####-####',
+        '0#-####-####',
+        '0####-#-####',
+        '0###-##-####',
+        '0##-###-####',
+        '0##0-###-###',
+    ];
+}

@@ -1,0 +1,24 @@
+[23-Mar-2024 02:18:13 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php on line 21
+[23-Mar-2024 02:18:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php on line 24
+[23-Mar-2024 02:18:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\ExecutionLoop\Listener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php on line 19
+[01-Apr-2024 13:04:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php on line 21
+[01-Apr-2024 13:04:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php on line 24
+[01-Apr-2024 13:04:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\ExecutionLoop\Listener" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php on line 19

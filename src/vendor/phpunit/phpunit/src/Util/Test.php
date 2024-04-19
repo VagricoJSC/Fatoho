@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:528565531d2f0428e7d5cb11295fb09003eee3cab7aadd44820d9997fa61d836
-size 946
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Util;
+
+use function str_starts_with;
+use PHPUnit\Metadata\Parser\Registry;
+use ReflectionMethod;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class Test
+{
+    public static function isTestMethod(ReflectionMethod $method): bool
+    {
+        if (!$method->isPublic()) {
+            return false;
+        }
+
+        if (str_starts_with($method->getName(), 'test')) {
+            return true;
+        }
+
+        $metadata = Registry::parser()->forMethod(
+            $method->getDeclaringClass()->getName(),
+            $method->getName()
+        );
+
+        return $metadata->isTest()->isNotEmpty();
+    }
+}

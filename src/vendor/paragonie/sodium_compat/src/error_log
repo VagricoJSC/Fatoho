@@ -1,0 +1,8 @@
+[23-Mar-2024 01:01:41 UTC] PHP Fatal error:  Uncaught Error: Class "ParagonIE_Sodium_Core_Util" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/File.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/File.php on line 9
+[03-Apr-2024 07:22:53 UTC] PHP Fatal error:  Uncaught Error: Class "ParagonIE_Sodium_Core_Util" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/File.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/File.php on line 9

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5d348eae7a34429f82ff10164e02cd5ce100130c14cbfbcb22fe605e6ecd0d0
-size 520
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - sheriffmarley
+ * - Timo
+ * - Michael Hohl
+ * - Namoshek
+ * - Bernhard Baumrock (BernhardBaumrock)
+ */
+return array_replace_recursive(require __DIR__.'/de.php', [
+    'months' => [
+        0 => 'Jänner',
+    ],
+    'months_short' => [
+        0 => 'Jän',
+    ],
+]);

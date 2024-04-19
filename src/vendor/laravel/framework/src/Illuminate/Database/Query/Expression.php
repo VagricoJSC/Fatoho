@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9aae6e9a2d995872099b03e5edf38eff1b4ab3512e992068d202d27be18ca4b
-size 761
+<?php
+
+namespace Illuminate\Database\Query;
+
+use Illuminate\Contracts\Database\Query\Expression as ExpressionContract;
+use Illuminate\Database\Grammar;
+
+class Expression implements ExpressionContract
+{
+    /**
+     * The value of the expression.
+     *
+     * @var string|int|float
+     */
+    protected $value;
+
+    /**
+     * Create a new raw query expression.
+     *
+     * @param  string|int|float  $value
+     * @return void
+     */
+    public function __construct($value)
+    {
+        $this->value = $value;
+    }
+
+    /**
+     * Get the value of the expression.
+     *
+     * @param  \Illuminate\Database\Grammar  $grammar
+     * @return string|int|float
+     */
+    public function getValue(Grammar $grammar)
+    {
+        return $this->value;
+    }
+}

@@ -1,3 +1,89 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2429a105706a59c6c4152f313a7d65617f41a3c3f21992900c31785ab2ee58ec
-size 2258
+<?php
+
+namespace Illuminate\View;
+
+use Illuminate\Contracts\Support\Htmlable;
+
+class ComponentSlot implements Htmlable
+{
+    /**
+     * The slot attribute bag.
+     *
+     * @var \Illuminate\View\ComponentAttributeBag
+     */
+    public $attributes;
+
+    /**
+     * The slot contents.
+     *
+     * @var string
+     */
+    protected $contents;
+
+    /**
+     * Create a new slot instance.
+     *
+     * @param  string  $contents
+     * @param  array  $attributes
+     * @return void
+     */
+    public function __construct($contents = '', $attributes = [])
+    {
+        $this->contents = $contents;
+
+        $this->withAttributes($attributes);
+    }
+
+    /**
+     * Set the extra attributes that the slot should make available.
+     *
+     * @param  array  $attributes
+     * @return $this
+     */
+    public function withAttributes(array $attributes)
+    {
+        $this->attributes = new ComponentAttributeBag($attributes);
+
+        return $this;
+    }
+
+    /**
+     * Get the slot's HTML string.
+     *
+     * @return string
+     */
+    public function toHtml()
+    {
+        return $this->contents;
+    }
+
+    /**
+     * Determine if the slot is empty.
+     *
+     * @return bool
+     */
+    public function isEmpty()
+    {
+        return $this->contents === '';
+    }
+
+    /**
+     * Determine if the slot is not empty.
+     *
+     * @return bool
+     */
+    public function isNotEmpty()
+    {
+        return ! $this->isEmpty();
+    }
+
+    /**
+     * Get the slot's HTML string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->toHtml();
+    }
+}

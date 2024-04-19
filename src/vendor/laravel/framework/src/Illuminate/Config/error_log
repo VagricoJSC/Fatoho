@@ -1,0 +1,1 @@
+[03-Apr-2024 16:20:28 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Config/Repository.php on line 10

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72d17669b42ca7440cc7b8a5a8009d82b7944f55eaba11f31fd4d0d1c3e6dc99
-size 528
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Extension\FrontMatter;
+
+use League\CommonMark\Extension\FrontMatter\Input\MarkdownInputWithFrontMatter;
+
+interface FrontMatterParserInterface
+{
+    public function parse(string $markdownContent): MarkdownInputWithFrontMatter;
+}

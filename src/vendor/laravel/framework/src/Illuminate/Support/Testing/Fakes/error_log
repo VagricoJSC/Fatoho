@@ -1,0 +1,28 @@
+[03-Apr-2024 21:33:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\QueueManager" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php on line 14
+[03-Apr-2024 21:33:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\PendingMail" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php on line 8
+[03-Apr-2024 21:33:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Bus\PendingChain" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php on line 9
+[03-Apr-2024 21:33:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\PendingBatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php on line 8
+[03-Apr-2024 21:33:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php on line 17
+[03-Apr-2024 21:33:21 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php on line 16
+[03-Apr-2024 21:33:29 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php on line 14
+[03-Apr-2024 21:33:35 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php on line 14
+[03-Apr-2024 21:33:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php on line 12
+[03-Apr-2024 21:33:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\Batch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php on line 10

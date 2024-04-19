@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dca88fe15257253068dc22f07563b5b3aba76fe5f71ab43678f91d4f6a5e0e3b
-size 870
+{
+  "name":         "paragonie/random_compat",
+  "description":  "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+  "keywords": [
+    "csprng",
+    "random",
+    "polyfill",
+    "pseudorandom"
+  ],
+  "license":      "MIT",
+  "type":         "library",
+  "authors": [
+    {
+      "name":     "Paragon Initiative Enterprises",
+      "email":    "security@paragonie.com",
+      "homepage": "https://paragonie.com"
+    }
+  ],
+  "support": {
+    "issues":     "https://github.com/paragonie/random_compat/issues",
+    "email":      "info@paragonie.com",
+    "source":     "https://github.com/paragonie/random_compat"
+  },
+  "require": {
+    "php": ">= 7"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^1",
+    "phpunit/phpunit": "4.*|5.*"
+  },
+  "suggest": {
+    "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+  }
+}

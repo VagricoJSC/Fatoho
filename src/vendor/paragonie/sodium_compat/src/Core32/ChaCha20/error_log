@@ -1,0 +1,8 @@
+[23-Mar-2024 16:14:07 UTC] PHP Fatal error:  Uncaught Error: Class "ParagonIE_Sodium_Core32_ChaCha20_Ctx" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/Core32/ChaCha20/IetfCtx.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/Core32/ChaCha20/IetfCtx.php on line 10
+[23-Mar-2024 16:14:12 UTC] PHP Fatal error:  Uncaught Error: Class "ParagonIE_Sodium_Core32_Util" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/Core32/ChaCha20/Ctx.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/paragonie/sodium_compat/src/Core32/ChaCha20/Ctx.php on line 10

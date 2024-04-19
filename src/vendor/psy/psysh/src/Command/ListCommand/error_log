@@ -1,0 +1,64 @@
+[23-Mar-2024 16:14:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php on line 21
+[23-Mar-2024 16:22:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php on line 19
+[23-Mar-2024 16:22:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php on line 19
+[23-Mar-2024 16:22:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php on line 19
+[23-Mar-2024 16:22:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php on line 20
+[23-Mar-2024 16:22:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php on line 20
+[23-Mar-2024 16:22:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php on line 20
+[23-Mar-2024 16:23:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php on line 20
+[01-Apr-2024 14:13:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php on line 21
+[01-Apr-2024 14:13:13 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php on line 19
+[01-Apr-2024 14:13:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php on line 19
+[01-Apr-2024 14:13:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php on line 19
+[01-Apr-2024 14:13:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php on line 20
+[01-Apr-2024 14:13:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php on line 20
+[01-Apr-2024 14:13:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php on line 20
+[01-Apr-2024 14:13:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php on line 20

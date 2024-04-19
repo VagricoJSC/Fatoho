@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b546128633d71f88c7834595917a65683bf5415a5add0eeba398571c2f63ccc0
-size 406
+<?php
+
+namespace Illuminate\Database\Console\Seeds;
+
+use Illuminate\Database\Eloquent\Model;
+
+trait WithoutModelEvents
+{
+    /**
+     * Prevent model events from being dispatched by the given callback.
+     *
+     * @param  callable  $callback
+     * @return callable
+     */
+    public function withoutModelEvents(callable $callback)
+    {
+        return fn () => Model::withoutEvents($callback);
+    }
+}

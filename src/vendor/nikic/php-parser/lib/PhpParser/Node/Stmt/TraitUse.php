@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:147ab388f8439479b974d025a876907b5203078c28c8e81dd489c092cfdd8026
-size 889
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class TraitUse extends Node\Stmt
+{
+    /** @var Node\Name[] Traits */
+    public $traits;
+    /** @var TraitUseAdaptation[] Adaptations */
+    public $adaptations;
+
+    /**
+     * Constructs a trait use node.
+     *
+     * @param Node\Name[]          $traits      Traits
+     * @param TraitUseAdaptation[] $adaptations Adaptations
+     * @param array                $attributes  Additional attributes
+     */
+    public function __construct(array $traits, array $adaptations = [], array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->traits = $traits;
+        $this->adaptations = $adaptations;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['traits', 'adaptations'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_TraitUse';
+    }
+}

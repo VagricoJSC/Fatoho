@@ -1,0 +1,14 @@
+[03-Apr-2024 16:12:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Filesystem\Factory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php on line 28
+[03-Apr-2024 16:12:58 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php on line 41
+[03-Apr-2024 16:13:01 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 17
+[03-Apr-2024 16:13:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Filesystem\FilesystemAdapter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php on line 10
+[03-Apr-2024 17:08:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php on line 7

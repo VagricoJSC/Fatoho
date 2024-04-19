@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12f6388a4e80ed4b2982ad3acc0a85beb2a5482178ce293aa1e1b4a9ef26c9ef
-size 986
+{
+    "name": "symfony/event-dispatcher-contracts",
+    "type": "library",
+    "description": "Generic abstractions related to dispatching event",
+    "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Grekas",
+            "email": "p@tchwork.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "psr/event-dispatcher": "^1"
+    },
+    "suggest": {
+        "symfony/event-dispatcher-implementation": ""
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Contracts\\EventDispatcher\\": "" }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-main": "3.3-dev"
+        },
+        "thanks": {
+            "name": "symfony/contracts",
+            "url": "https://github.com/symfony/contracts"
+        }
+    }
+}

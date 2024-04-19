@@ -1,0 +1,4 @@
+[23-Mar-2024 16:27:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php on line 29

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70d52fb1df20c33a8e2fde720f7614fc6f09c21d147171f8f38058a8a44e3d17
-size 446
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Command;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Command
+{
+    public function execute(): Result;
+}

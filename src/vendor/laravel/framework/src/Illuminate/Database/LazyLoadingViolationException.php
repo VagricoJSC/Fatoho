@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8a3044e0abc2a16fd29251f7c0db852e94cb7a02d38bfaa6c41c10b3072a780
-size 769
+<?php
+
+namespace Illuminate\Database;
+
+use RuntimeException;
+
+class LazyLoadingViolationException extends RuntimeException
+{
+    /**
+     * The name of the affected Eloquent model.
+     *
+     * @var string
+     */
+    public $model;
+
+    /**
+     * The name of the relation.
+     *
+     * @var string
+     */
+    public $relation;
+
+    /**
+     * Create a new exception instance.
+     *
+     * @param  object  $model
+     * @param  string  $relation
+     * @return static
+     */
+    public function __construct($model, $relation)
+    {
+        $class = get_class($model);
+
+        parent::__construct("Attempted to lazy load [{$relation}] on model [{$class}] but lazy loading is disabled.");
+
+        $this->model = $class;
+        $this->relation = $relation;
+    }
+}

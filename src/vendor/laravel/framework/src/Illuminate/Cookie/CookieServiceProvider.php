@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4aef7d874dae3713b52d632990d790fd8f0a67a1dc1c60a48c4edb54ff426994
-size 565
+<?php
+
+namespace Illuminate\Cookie;
+
+use Illuminate\Support\ServiceProvider;
+
+class CookieServiceProvider extends ServiceProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('cookie', function ($app) {
+            $config = $app->make('config')->get('session');
+
+            return (new CookieJar)->setDefaultPathAndDomain(
+                $config['path'], $config['domain'], $config['secure'], $config['same_site'] ?? null
+            );
+        });
+    }
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9cde32211ec251c661882154ed530cdc6fd8266c31dce24860b7ef0c6c7005a
-size 352
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/en.php', [
+    'first_day_of_week' => 6,
+    'weekend' => [5, 6],
+]);

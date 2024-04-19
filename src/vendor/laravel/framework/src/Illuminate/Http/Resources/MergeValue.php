@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b44cf8c177acd2b054236f686438e81214ac4f217e0c3c6e63f5db946ed60510
-size 675
+<?php
+
+namespace Illuminate\Http\Resources;
+
+use Illuminate\Support\Collection;
+use JsonSerializable;
+
+class MergeValue
+{
+    /**
+     * The data to be merged.
+     *
+     * @var array
+     */
+    public $data;
+
+    /**
+     * Create a new merge value instance.
+     *
+     * @param  \Illuminate\Support\Collection|\JsonSerializable|array  $data
+     * @return void
+     */
+    public function __construct($data)
+    {
+        if ($data instanceof Collection) {
+            $this->data = $data->all();
+        } elseif ($data instanceof JsonSerializable) {
+            $this->data = $data->jsonSerialize();
+        } else {
+            $this->data = $data;
+        }
+    }
+}

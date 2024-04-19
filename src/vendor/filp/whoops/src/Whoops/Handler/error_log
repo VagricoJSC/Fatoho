@@ -1,0 +1,48 @@
+[23-Mar-2024 16:37:59 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php on line 17
+[23-Mar-2024 16:38:06 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php on line 18
+[23-Mar-2024 16:38:08 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php on line 20
+[23-Mar-2024 16:39:49 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php on line 16
+[23-Mar-2024 16:39:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php on line 15
+[23-Mar-2024 16:40:11 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php on line 16
+[01-Apr-2024 14:14:40 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php on line 17
+[01-Apr-2024 14:14:44 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php on line 18
+[01-Apr-2024 14:14:51 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php on line 20
+[01-Apr-2024 14:14:52 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php on line 16
+[01-Apr-2024 14:15:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Handler\HandlerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php on line 15
+[01-Apr-2024 14:15:05 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php on line 16

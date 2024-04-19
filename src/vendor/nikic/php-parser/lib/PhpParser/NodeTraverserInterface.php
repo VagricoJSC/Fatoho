@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26a6379d56fe546a707c92287ee15284a29d398ba4f6042af19fbae165acfb87
-size 598
+<?php declare(strict_types=1);
+
+namespace PhpParser;
+
+interface NodeTraverserInterface
+{
+    /**
+     * Adds a visitor.
+     *
+     * @param NodeVisitor $visitor Visitor to add
+     */
+    public function addVisitor(NodeVisitor $visitor);
+
+    /**
+     * Removes an added visitor.
+     *
+     * @param NodeVisitor $visitor
+     */
+    public function removeVisitor(NodeVisitor $visitor);
+
+    /**
+     * Traverses an array of nodes using the registered visitors.
+     *
+     * @param Node[] $nodes Array of nodes
+     *
+     * @return Node[] Traversed array of nodes
+     */
+    public function traverse(array $nodes) : array;
+}

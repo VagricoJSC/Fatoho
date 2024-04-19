@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3c75a6719c889039d1955b4f4fae62e00d35578c48cc48991b4bede5cda2a0e
-size 368
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-text-template.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Template;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

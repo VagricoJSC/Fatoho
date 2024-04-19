@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e8fe120389df204a1a9d61044c3970c9c1d914dc000f57b74ff95d22a2c5439
-size 735
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Generator;
+
+/**
+ * A random generator generates strings of random binary data
+ */
+interface RandomGeneratorInterface
+{
+    /**
+     * Generates a string of randomized binary data
+     *
+     * @param int<1, max> $length The number of bytes of random binary data to generate
+     *
+     * @return string A binary string
+     */
+    public function generate(int $length): string;
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d67c7405a2379e9482050dc88f17539afe75157a991fa57b1338aa3b53d7370
-size 613
+<?php
+
+namespace Illuminate\Mail\Events;
+
+use Symfony\Component\Mime\Email;
+
+class MessageSending
+{
+    /**
+     * The Symfony Email instance.
+     *
+     * @var \Symfony\Component\Mime\Email
+     */
+    public $message;
+
+    /**
+     * The message data.
+     *
+     * @var array
+     */
+    public $data;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Symfony\Component\Mime\Email  $message
+     * @param  array  $data
+     * @return void
+     */
+    public function __construct(Email $message, array $data = [])
+    {
+        $this->data = $data;
+        $this->message = $message;
+    }
+}

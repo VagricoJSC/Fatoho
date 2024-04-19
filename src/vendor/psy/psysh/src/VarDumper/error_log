@@ -1,0 +1,16 @@
+[23-Mar-2024 02:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Dumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Dumper.php on line 21
+[23-Mar-2024 02:16:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\VarCloner" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Cloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Cloner.php on line 22
+[01-Apr-2024 12:37:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Dumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Dumper.php on line 21
+[01-Apr-2024 12:37:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\VarCloner" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Cloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VarDumper/Cloner.php on line 22

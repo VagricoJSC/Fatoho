@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1216ec6f7806fc48de5494321ce79335cba8f134201b8bea68b5e29033752111
-size 882
+      <tr>
+       <td class="{{lines_level}}">{{name}}</td>
+       <td class="{{lines_level}} big">{{lines_bar}}</td>
+       <td class="{{lines_level}} small"><div align="right">{{lines_executed_percent}}</div></td>
+       <td class="{{lines_level}} small"><div align="right">{{lines_number}}</div></td>
+       <td class="{{methods_level}} big">{{methods_bar}}</td>
+       <td class="{{methods_level}} small"><div align="right">{{methods_tested_percent}}</div></td>
+       <td class="{{methods_level}} small"><div align="right">{{methods_number}}</div></td>
+       <td class="{{methods_level}} small">{{crap}}</td>
+       <td class="{{classes_level}} big">{{classes_bar}}</td>
+       <td class="{{classes_level}} small"><div align="right">{{classes_tested_percent}}</div></td>
+       <td class="{{classes_level}} small"><div align="right">{{classes_number}}</div></td>
+      </tr>
+

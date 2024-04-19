@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0188ae77acbcf05a8a1aacddc7e9f3cae54a63c54594e302cdab81f64bd1f56
-size 699
+<?php
+namespace Hamcrest;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+
+/**
+ * Null implementation of {@link Hamcrest\Description}.
+ */
+class NullDescription implements Description
+{
+
+    public function appendText($text)
+    {
+        return $this;
+    }
+
+    public function appendDescriptionOf(SelfDescribing $value)
+    {
+        return $this;
+    }
+
+    public function appendValue($value)
+    {
+        return $this;
+    }
+
+    public function appendValueList($start, $separator, $end, $values)
+    {
+        return $this;
+    }
+
+    public function appendList($start, $separator, $end, $values)
+    {
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return '';
+    }
+}

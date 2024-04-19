@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0045c2d485ad9e4def80d5a40c09d9f8fd7f8e409b5781b8174e23862dff7c0
-size 595
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class AuthorElementCollection extends ElementCollection {
+    public function current(): AuthorElement {
+        return new AuthorElement(
+            $this->getCurrentElement()
+        );
+    }
+}

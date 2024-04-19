@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:429d41655dfe9f669ffa9a75a8e2c5dd63173db3ae645520d3515e0abdb64629
-size 847
+<?php
+
+namespace Faker\Provider\nb_NO;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    /**
+     * @var array Norwegian phone number formats
+     */
+    protected static $formats = [
+        '+47#########',
+        '+47 ## ## ## ##',
+        '## ## ## ##',
+        '## ## ## ##',
+        '########',
+        '########',
+        '9## ## ###',
+        '4## ## ###',
+        '9#######',
+        '4#######',
+    ];
+
+    /**
+     * @var array Norweign mobile number formats
+     */
+    protected static $mobileFormats = [
+        '+474#######',
+        '+479#######',
+        '9## ## ###',
+        '4## ## ###',
+        '9#######',
+        '4#######',
+    ];
+
+    public function mobileNumber()
+    {
+        $format = static::randomElement(static::$mobileFormats);
+
+        return self::numerify($this->generator->parse($format));
+    }
+}

@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c6a2e7cd4cfe41ee13b960f57910b71c248ae9b19d3df8bc6a404e9fe91b49b
-size 1229
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+
+/**
+ * @internal
+ */
+trait ProxyArrayAccessToProperties
+{
+    private function formatPropertyName(string $offset): string
+    {
+        return str_replace('_', '', lcfirst(ucwords($offset, '_')));
+    }
+
+    /**
+     * @param mixed $offset
+     *
+     * @return bool
+     */
+    public function offsetExists($offset): bool
+    {
+        $property = $this->formatPropertyName((string) $offset);
+
+        return isset($this->{$property});
+    }
+
+    /**
+     * @param mixed $offset
+     *
+     * @return mixed
+     */
+    #[\ReturnTypeWillChange]
+    public function offsetGet($offset)
+    {
+        $property = $this->formatPropertyName((string) $offset);
+
+        return $this->{$property};
+    }
+
+    /**
+     * @param mixed $offset
+     * @param mixed $value
+     */
+    #[\ReturnTypeWillChange]
+    public function offsetSet($offset, $value): void
+    {
+        throw new RuntimeException('Properties can not be manipulated');
+    }
+
+    /**
+     * @param mixed $offset
+     */
+    #[\ReturnTypeWillChange]
+    public function offsetUnset($offset): void
+    {
+        throw new RuntimeException('Properties can not be manipulated');
+    }
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3a25abf6890c8f66f02183c3a38cfeff71b6e3340f78c2d42e04accf0ed5415
-size 720
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\TeamCity;
+
+use PHPUnit\Event\TestRunner\ExecutionFinished;
+use PHPUnit\Event\TestRunner\ExecutionFinishedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestRunnerExecutionFinishedSubscriber extends Subscriber implements ExecutionFinishedSubscriber
+{
+    public function notify(ExecutionFinished $event): void
+    {
+        $this->logger()->flush();
+    }
+}

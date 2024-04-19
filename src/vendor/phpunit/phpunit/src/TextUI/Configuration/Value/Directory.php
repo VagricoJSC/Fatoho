@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64ed7bec22c6f565b97aa48bbc3637cf99f84222aae67028afb22fde8c3a169f
-size 655
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Configuration;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Directory
+{
+    private readonly string $path;
+
+    public function __construct(string $path)
+    {
+        $this->path = $path;
+    }
+
+    public function path(): string
+    {
+        return $this->path;
+    }
+}

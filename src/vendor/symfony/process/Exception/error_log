@@ -1,0 +1,48 @@
+[22-Mar-2024 23:46:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/RuntimeException.php on line 19
+[22-Mar-2024 23:46:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessTimedOutException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessTimedOutException.php on line 21
+[22-Mar-2024 23:46:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessSignaledException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessSignaledException.php on line 21
+[22-Mar-2024 23:46:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessFailedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessFailedException.php on line 21
+[22-Mar-2024 23:46:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/LogicException.php on line 19
+[22-Mar-2024 23:46:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/InvalidArgumentException.php on line 19
+[03-Apr-2024 08:12:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/RuntimeException.php on line 19
+[03-Apr-2024 08:12:29 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessTimedOutException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessTimedOutException.php on line 21
+[03-Apr-2024 08:12:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessSignaledException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessSignaledException.php on line 21
+[03-Apr-2024 08:12:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessFailedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/ProcessFailedException.php on line 21
+[03-Apr-2024 08:12:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/LogicException.php on line 19
+[03-Apr-2024 08:12:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/process/Exception/InvalidArgumentException.php on line 19

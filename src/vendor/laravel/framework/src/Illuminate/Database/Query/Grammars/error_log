@@ -1,0 +1,20 @@
+[03-Apr-2024 21:48:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Grammars\Grammar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php on line 9
+[03-Apr-2024 21:48:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Grammars\Grammar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php on line 9
+[03-Apr-2024 21:48:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Grammars\Grammar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php on line 9
+[03-Apr-2024 21:48:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Grammars\Grammar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php on line 8
+[03-Apr-2024 21:48:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Grammar" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php on line 12

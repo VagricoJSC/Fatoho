@@ -1,0 +1,224 @@
+[23-Mar-2024 02:20:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php on line 28
+[23-Mar-2024 02:20:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php on line 34
+[23-Mar-2024 02:20:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php on line 33
+[23-Mar-2024 02:21:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php on line 33
+[23-Mar-2024 02:21:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php on line 31
+[23-Mar-2024 02:21:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php on line 27
+[23-Mar-2024 02:21:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php on line 26
+[23-Mar-2024 02:21:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php on line 29
+[23-Mar-2024 02:22:06 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php on line 30
+[23-Mar-2024 02:22:06 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php on line 22
+[23-Mar-2024 02:22:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php on line 24
+[23-Mar-2024 02:22:11 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php on line 29
+[23-Mar-2024 02:22:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php on line 30
+[23-Mar-2024 02:22:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php on line 21
+[23-Mar-2024 02:22:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php on line 32
+[23-Mar-2024 02:22:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php on line 26
+[23-Mar-2024 02:22:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/InstanceOfPass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/InstanceOfPass.php on line 29
+[23-Mar-2024 02:22:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php on line 28
+[23-Mar-2024 02:22:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php on line 30
+[23-Mar-2024 02:22:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php on line 19
+[23-Mar-2024 02:22:50 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php on line 21
+[23-Mar-2024 02:22:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php on line 20
+[23-Mar-2024 02:22:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php on line 22
+[23-Mar-2024 02:23:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php on line 19
+[23-Mar-2024 02:23:06 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php on line 27
+[23-Mar-2024 02:23:09 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php on line 28
+[23-Mar-2024 02:23:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php on line 24
+[23-Mar-2024 02:23:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php on line 22
+[01-Apr-2024 12:31:46 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php on line 26
+[01-Apr-2024 13:14:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php on line 28
+[01-Apr-2024 13:14:29 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php on line 34
+[01-Apr-2024 13:14:34 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php on line 33
+[01-Apr-2024 13:14:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php on line 33
+[01-Apr-2024 13:14:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php on line 31
+[01-Apr-2024 13:14:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php on line 27
+[01-Apr-2024 13:14:51 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php on line 26
+[01-Apr-2024 13:14:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php on line 29
+[01-Apr-2024 13:15:01 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php on line 30
+[01-Apr-2024 13:15:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php on line 22
+[01-Apr-2024 13:15:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php on line 24
+[01-Apr-2024 13:15:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php on line 29
+[01-Apr-2024 13:15:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php on line 30
+[01-Apr-2024 13:15:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php on line 21
+[01-Apr-2024 13:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php on line 32
+[01-Apr-2024 13:15:29 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/InstanceOfPass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/InstanceOfPass.php on line 29
+[01-Apr-2024 13:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php on line 28
+[01-Apr-2024 13:15:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php on line 19
+[01-Apr-2024 13:15:43 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php on line 30
+[01-Apr-2024 13:15:46 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php on line 21
+[01-Apr-2024 13:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php on line 20
+[01-Apr-2024 13:15:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php on line 22
+[01-Apr-2024 13:15:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php on line 19
+[01-Apr-2024 13:16:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php on line 27
+[01-Apr-2024 13:16:05 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php on line 28
+[01-Apr-2024 13:16:11 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php on line 24
+[01-Apr-2024 13:16:14 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php on line 22

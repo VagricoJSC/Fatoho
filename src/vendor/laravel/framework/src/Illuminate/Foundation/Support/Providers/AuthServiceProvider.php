@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6764a49b492673612d8aac514f9773168537cb06216e7ea6ce1ec7792a994192
-size 1005
+<?php
+
+namespace Illuminate\Foundation\Support\Providers;
+
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+
+class AuthServiceProvider extends ServiceProvider
+{
+    /**
+     * The policy mappings for the application.
+     *
+     * @var array<class-string, class-string>
+     */
+    protected $policies = [];
+
+    /**
+     * Register the application's policies.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->booting(function () {
+            $this->registerPolicies();
+        });
+    }
+
+    /**
+     * Register the application's policies.
+     *
+     * @return void
+     */
+    public function registerPolicies()
+    {
+        foreach ($this->policies() as $model => $policy) {
+            Gate::policy($model, $policy);
+        }
+    }
+
+    /**
+     * Get the policies defined on the provider.
+     *
+     * @return array<class-string, class-string>
+     */
+    public function policies()
+    {
+        return $this->policies;
+    }
+}

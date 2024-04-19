@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd617471b9fa1f642a92667e5ddf8c4e8c421adba18d5535eec7e5e3f98740a
-size 765
+<?php
+
+namespace Illuminate\Database\Events;
+
+class SchemaLoaded
+{
+    /**
+     * The database connection instance.
+     *
+     * @var \Illuminate\Database\Connection
+     */
+    public $connection;
+
+    /**
+     * The database connection name.
+     *
+     * @var string
+     */
+    public $connectionName;
+
+    /**
+     * The path to the schema dump.
+     *
+     * @var string
+     */
+    public $path;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Database\Connection  $connection
+     * @param  string  $path
+     * @return void
+     */
+    public function __construct($connection, $path)
+    {
+        $this->connection = $connection;
+        $this->connectionName = $connection->getName();
+        $this->path = $path;
+    }
+}

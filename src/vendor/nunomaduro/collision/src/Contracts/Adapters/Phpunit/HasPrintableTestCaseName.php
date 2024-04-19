@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9574091310812e3690e4b5e2d39af3fbd1d17b82a5b3c3c3d0e5251c1dfbab1
-size 537
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\Contracts\Adapters\Phpunit;
+
+/**
+ * @internal
+ */
+interface HasPrintableTestCaseName
+{
+    /**
+     * The printable test case name.
+     */
+    public static function getPrintableTestCaseName(): string;
+
+    /**
+     * The printable test case method name.
+     */
+    public function getPrintableTestCaseMethodName(): string;
+
+    /**
+     * The "latest" printable test case method name.
+     */
+    public static function getLatestPrintableTestCaseMethodName(): string;
+}

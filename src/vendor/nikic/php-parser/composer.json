@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:780b6d2d3e7ccc05a21df9fed43a2bfa0a3507f95672ffc57710dbf2cf51fed3
-size 859
+{
+    "name": "nikic/php-parser",
+    "type": "library",
+    "description": "A PHP parser written in PHP",
+    "keywords": [
+        "php",
+        "parser"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Nikita Popov"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-tokenizer": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0",
+        "ircmaxell/php-yacc": "^0.0.7"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.9-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpParser\\": "lib/PhpParser"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpParser\\": "test/PhpParser/"
+        }
+    },
+    "bin": [
+        "bin/php-parse"
+    ]
+}

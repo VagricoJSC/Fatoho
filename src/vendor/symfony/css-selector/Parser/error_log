@@ -1,0 +1,4 @@
+[28-Mar-2024 09:47:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/css-selector/Parser/Parser.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/css-selector/Parser/Parser.php on line 28

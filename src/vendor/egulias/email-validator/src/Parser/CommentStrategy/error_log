@@ -1,0 +1,8 @@
+[27-Mar-2024 00:49:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php on line 12
+[27-Mar-2024 00:49:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php on line 11

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:938256fea0fb863fab75518287221cf0ac6ad070de3daa6a307512327f91fd3e
-size 246
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class EmptyReason implements Reason
+{
+    public function code() : int
+    {
+        return 0;
+    }
+
+    public function description() : string
+    {
+        return 'Empty reason';
+    }
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44cb78c1941e2a5ec2698f1ca2eca39d01c7221e5e261e8d2c9e61e58dde578e
-size 733
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing;
+
+/**
+ * RouteCompilerInterface is the interface that all RouteCompiler classes must implement.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface RouteCompilerInterface
+{
+    /**
+     * Compiles the current route instance.
+     *
+     * @throws \LogicException If the Route cannot be compiled because the
+     *                         path or host pattern is invalid
+     */
+    public static function compile(Route $route): CompiledRoute;
+}

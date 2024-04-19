@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3d21d3abab120c2488eaf5850182d2a6c64e42c27723500a58c980d658da8b6
-size 563
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation;
+
+if (!\function_exists(t::class)) {
+    /**
+     * @author Nate Wiebe <nate@northern.co>
+     */
+    function t(string $message, array $parameters = [], string $domain = null): TranslatableMessage
+    {
+        return new TranslatableMessage($message, $parameters, $domain);
+    }
+}

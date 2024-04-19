@@ -1,0 +1,1 @@
+[03-Apr-2024 18:37:25 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Events/PublishingStubs.php on line 5

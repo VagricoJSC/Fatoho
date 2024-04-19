@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd006830d72d77760608318e8b6a57fb482ab671248f468a4c476336c643f7b7
-size 678
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+use Throwable;
+
+class UnableToCheckExistence extends RuntimeException implements FilesystemOperationFailed
+{
+    final public function __construct(string $message = "", int $code = 0, ?Throwable $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
+
+    public static function forLocation(string $path, Throwable $exception = null): static
+    {
+        return new static("Unable to check existence for: {$path}", 0, $exception);
+    }
+
+    public function operation(): string
+    {
+        return FilesystemOperationFailed::OPERATION_EXISTENCE_CHECK;
+    }
+}

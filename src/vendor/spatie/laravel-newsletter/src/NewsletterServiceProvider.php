@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fe5bf5cbaa010f134fe20aff1e709238cc2b9f9a42cf60d8f534d8d915911ed
-size 864
+<?php
+
+namespace Spatie\Newsletter;
+
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Spatie\Newsletter\Drivers\Driver;
+use Spatie\Newsletter\Support\Lists;
+
+class NewsletterServiceProvider extends PackageServiceProvider
+{
+    public function configurePackage(Package $package): void
+    {
+        $package
+            ->name('laravel-newsletter')
+            ->hasConfigFile();
+    }
+
+    public function bootingPackage()
+    {
+        $this->app->singleton('newsletter', function () {
+            /** @var class-string<Driver> $driverClass */
+            $driverClass = config('newsletter.driver');
+
+            $arguments = config('newsletter.driver_arguments');
+            $lists = Lists::createFromConfig(config('newsletter'));
+
+            return $driverClass::make($arguments, $lists);
+        });
+    }
+}

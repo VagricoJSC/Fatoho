@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b92e7fba97d423d94126c22d48210674dcd777e2b589ba40f1d5f64bcfc57f92
-size 958
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\ExecutionLoop;
+
+use Psy\Shell;
+
+/**
+ * Abstract Execution Loop Listener class.
+ */
+abstract class AbstractListener implements Listener
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function beforeRun(Shell $shell)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function beforeLoop(Shell $shell)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function onInput(Shell $shell, string $input)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function onExecute(Shell $shell, string $code)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function afterLoop(Shell $shell)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function afterRun(Shell $shell)
+    {
+    }
+}

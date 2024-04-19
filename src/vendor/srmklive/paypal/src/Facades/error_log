@@ -1,0 +1,8 @@
+[23-Mar-2024 04:14:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Facades/PayPal.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Facades/PayPal.php on line 13
+[03-Apr-2024 09:38:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Facades/PayPal.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/srmklive/paypal/src/Facades/PayPal.php on line 13

@@ -1,0 +1,68 @@
+[23-Mar-2024 11:52:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php on line 17
+[23-Mar-2024 11:52:47 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php on line 17
+[23-Mar-2024 11:52:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php on line 17
+[23-Mar-2024 11:52:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php on line 17
+[23-Mar-2024 11:53:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php on line 17
+[23-Mar-2024 11:53:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php on line 15
+[23-Mar-2024 11:53:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php on line 17
+[23-Mar-2024 11:53:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php on line 18
+[23-Mar-2024 11:53:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php on line 18
+[23-Mar-2024 11:53:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/MoreThanOneDataSetFromDataProviderException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/MoreThanOneDataSetFromDataProviderException.php on line 18
+[23-Mar-2024 11:53:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php on line 17
+[23-Mar-2024 11:53:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php on line 17
+[23-Mar-2024 11:53:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php on line 17
+[23-Mar-2024 11:53:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php on line 15
+[23-Mar-2024 11:53:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php on line 12
+[23-Mar-2024 11:53:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php on line 17
+[23-Mar-2024 11:53:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php on line 17

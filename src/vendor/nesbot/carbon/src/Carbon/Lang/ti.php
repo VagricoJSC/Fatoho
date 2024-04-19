@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:131974d1fcd2f0349000cd003b5451e4f94500eaed93683fe02714879420c13c
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/ti_ER.php';

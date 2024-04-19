@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1959f6d2c6c8165d557c7682fb111d7c622ffd69681ea1e3f3173ab4fef20aef
-size 1148
+CHANGELOG
+=========
+
+6.2
+---
+
+ * Add `File`
+ * Deprecate `Email::attachPart()`, use `addPart()` instead
+ * Deprecate calling `Message::setBody()` without arguments
+
+6.1
+---
+
+ * Add `DataPart::getFilename()` and `DataPart::getContentType()`
+
+6.0
+---
+
+ * Remove `Address::fromString()`, use `Address::create()` instead
+ * Remove `Serializable` interface from `RawMessage`
+
+5.2.0
+-----
+
+ * Add support for DKIM
+ * Deprecated `Address::fromString()`, use `Address::create()` instead
+
+4.4.0
+-----
+
+ * [BC BREAK] Removed `NamedAddress` (`Address` now supports a name)
+ * Added PHPUnit constraints
+ * Added `AbstractPart::asDebugString()`
+ * Added `Address::fromString()`
+
+4.3.3
+-----
+
+ * [BC BREAK] Renamed method `Headers::getAll()` to `Headers::all()`.
+
+4.3.0
+-----
+
+ * Introduced the component as experimental

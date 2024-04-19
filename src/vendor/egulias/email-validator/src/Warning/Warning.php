@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41e00b3178a9ec9bdb53b54f06df373ef4c989144a02a897a24a0630c4534541
-size 787
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+abstract class Warning
+{
+    /**
+     * @var int CODE
+     */
+    public const CODE = 0;
+
+    /**
+     * @var string
+     */
+    protected $message = '';
+
+    /**
+     * @var int
+     */
+    protected $rfcNumber = 0;
+
+    /**
+     * @return string
+     */
+    public function message()
+    {
+        return $this->message;
+    }
+
+    /**
+     * @return int
+     */
+    public function code()
+    {
+        return self::CODE;
+    }
+
+    /**
+     * @return int
+     */
+    public function RFCNumber()
+    {
+        return $this->rfcNumber;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->message() . " rfc: " .  $this->rfcNumber . "internal code: " . strval(static::CODE);
+    }
+}

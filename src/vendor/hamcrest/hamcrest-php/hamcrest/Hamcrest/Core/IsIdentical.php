@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3895ff9dc8e955e759d0e1ff0b039684f319d350f8634c3d0b2e0680f469379
-size 708
+<?php
+namespace Hamcrest\Core;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+use Hamcrest\Description;
+
+/**
+ * The same as {@link Hamcrest\Core\IsSame} but with slightly different
+ * semantics.
+ */
+class IsIdentical extends IsSame
+{
+
+    private $_value;
+
+    public function __construct($value)
+    {
+        parent::__construct($value);
+        $this->_value = $value;
+    }
+
+    public function describeTo(Description $description)
+    {
+        $description->appendValue($this->_value);
+    }
+
+    /**
+     * Tests of the value is identical to $value as tested by the "===" operator.
+     *
+     * @factory
+     */
+    public static function identicalTo($value)
+    {
+        return new self($value);
+    }
+}

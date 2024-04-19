@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:544ff00903c31875eb4e77adb800ed519791a4813ff4985009c36dfb83bd09c9
-size 74
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class PropertyProperty extends Node\Stmt
+{
+    /** @var Node\VarLikeIdentifier Name */
+    public $name;
+    /** @var null|Node\Expr Default */
+    public $default;
+
+    /**
+     * Constructs a class property node.
+     *
+     * @param string|Node\VarLikeIdentifier $name       Name
+     * @param null|Node\Expr                $default    Default value
+     * @param array                         $attributes Additional attributes
+     */
+    public function __construct($name, Node\Expr $default = null, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->name = \is_string($name) ? new Node\VarLikeIdentifier($name) : $name;
+        $this->default = $default;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['name', 'default'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_PropertyProperty';
+    }
+}

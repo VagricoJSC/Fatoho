@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a012e2a478898f1d2e860b837a5ce338a3276f8286756f7be60daf925085754f
-size 679
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+class NullableType extends ComplexType
+{
+    /** @var Identifier|Name Type */
+    public $type;
+
+    /**
+     * Constructs a nullable type (wrapping another type).
+     *
+     * @param string|Identifier|Name $type       Type
+     * @param array                  $attributes Additional attributes
+     */
+    public function __construct($type, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->type = \is_string($type) ? new Identifier($type) : $type;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['type'];
+    }
+    
+    public function getType() : string {
+        return 'NullableType';
+    }
+}

@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10926a7fd563c1ec07098fbd5037e728f1138c8eb9d8c47343a1a58e4d7cdfc6
-size 930
+<?php
+
+namespace Illuminate\Database\Eloquent;
+
+use RuntimeException;
+
+class InvalidCastException extends RuntimeException
+{
+    /**
+     * The name of the affected Eloquent model.
+     *
+     * @var string
+     */
+    public $model;
+
+    /**
+     * The name of the column.
+     *
+     * @var string
+     */
+    public $column;
+
+    /**
+     * The name of the cast type.
+     *
+     * @var string
+     */
+    public $castType;
+
+    /**
+     * Create a new exception instance.
+     *
+     * @param  object  $model
+     * @param  string  $column
+     * @param  string  $castType
+     * @return static
+     */
+    public function __construct($model, $column, $castType)
+    {
+        $class = get_class($model);
+
+        parent::__construct("Call to undefined cast [{$castType}] on column [{$column}] in model [{$class}].");
+
+        $this->model = $class;
+        $this->column = $column;
+        $this->castType = $castType;
+    }
+}

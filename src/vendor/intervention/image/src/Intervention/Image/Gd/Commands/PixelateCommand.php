@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:240250a6f655b9e0ec802e45f3278972ac5d73ae0956ffcbd66c39fa3ae299dd
-size 488
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class PixelateCommand extends AbstractCommand
+{
+    /**
+     * Applies a pixelation effect to a given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $size = $this->argument(0)->type('digit')->value(10);
+
+        return imagefilter($image->getCore(), IMG_FILTER_PIXELATE, $size, true);
+    }
+}

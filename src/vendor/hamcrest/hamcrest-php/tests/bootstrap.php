@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce6bfccbc1c99785f9369998f44dd73ac7a7d7ceddfd985f095533447d14eb82
-size 220
+<?php
+
+error_reporting(E_ALL | E_STRICT);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+if (defined('E_DEPRECATED')) {
+    error_reporting(error_reporting() | E_DEPRECATED);
+}
+
+Hamcrest\Util::registerGlobalFunctions();

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01e884745dc0133ce762944ec75d5553e05ffca2696cc45c445aa482bfccff89
-size 597
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Ben Ramsey <ben@benramsey.com>
+ */
+class ConflictHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(409, $message, $previous, $headers, $code);
+    }
+}

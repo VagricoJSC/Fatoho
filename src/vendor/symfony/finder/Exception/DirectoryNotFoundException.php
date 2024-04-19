@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba32193716dbfb31862aa71672721f227f34d22c1405c976dba7b5861cb65934
-size 419
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Finder\Exception;
+
+/**
+ * @author Andreas Erhard <andreas.erhard@i-med.ac.at>
+ */
+class DirectoryNotFoundException extends \InvalidArgumentException
+{
+}

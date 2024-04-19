@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9dcd950129ebfa675418c5aa617e302f801fec09622e2a9bcad5746d88638f9
-size 636
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class PreDec extends Expr
+{
+    /** @var Expr Variable */
+    public $var;
+
+    /**
+     * Constructs a pre decrement node.
+     *
+     * @param Expr  $var        Variable
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $var, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var'];
+    }
+
+    public function getType() : string {
+        return 'Expr_PreDec';
+    }
+}

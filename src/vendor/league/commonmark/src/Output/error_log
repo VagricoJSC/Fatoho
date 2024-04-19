@@ -1,0 +1,4 @@
+[01-Apr-2024 12:51:44 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Output\RenderedContentInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Output/RenderedContent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Output/RenderedContent.php on line 18

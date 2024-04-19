@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebabd85969eb95f240d3d6303799f5355383ff37086af73fd9c66161d4c2db26
-size 419
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Exception;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class LogicException extends \LogicException implements ExceptionInterface
+{
+}

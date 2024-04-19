@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f50126a183caf799003b2c5bc8f17eebb66c0add99e4214c62a44451b83792c4
-size 614
+<?php
+
+/**
+ * This file is part of the ramsey/collection library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Collection\Exception;
+
+use InvalidArgumentException as PhpInvalidArgumentException;
+
+/**
+ * Thrown to indicate an argument is not of the expected type.
+ */
+class InvalidArgumentException extends PhpInvalidArgumentException implements CollectionException
+{
+}

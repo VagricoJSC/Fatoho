@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d447860715436f347f5e259773907862ebc49766c148af756494272d9dea3a1
-size 493
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Exception;
+
+/**
+ * Thrown when a resource cannot be loaded.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class InvalidResourceException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

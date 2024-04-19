@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:548d30dfba7dacb0073433d1b3a44f5ae2601dd104bf06e809dd8f8e944dddf4
-size 365
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/complexity.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Complexity;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

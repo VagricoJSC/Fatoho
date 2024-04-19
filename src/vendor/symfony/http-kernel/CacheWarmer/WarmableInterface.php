@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:681ca8a327881a362d23650fa7cad4030fac0adaa637ed95ba2276f6ed38df83
-size 826
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\CacheWarmer;
+
+/**
+ * Interface for classes that support warming their cache.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface WarmableInterface
+{
+    /**
+     * Warms up the cache.
+     *
+     * @return string[] A list of classes or files to preload on PHP 7.4+
+     */
+    public function warmUp(string $cacheDir);
+}

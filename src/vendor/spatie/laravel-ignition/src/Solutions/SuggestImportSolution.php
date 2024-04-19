@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92a1d1784bb23c20b725a7d82d22fafd2b8f9285c88b08d414870d2e08392bf3
-size 620
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions;
+
+use Spatie\Ignition\Contracts\Solution;
+
+class SuggestImportSolution implements Solution
+{
+    protected string $class;
+
+    public function __construct(string $class = '')
+    {
+        $this->class = $class;
+    }
+
+    public function getSolutionTitle(): string
+    {
+        return 'A class import is missing';
+    }
+
+    public function getSolutionDescription(): string
+    {
+        return 'You have a missing class import. Try importing this class: `'.$this->class.'`.';
+    }
+
+    public function getDocumentationLinks(): array
+    {
+        return [];
+    }
+}

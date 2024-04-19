@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:962b81f95270bbc5d56e20060b501c12b4d25398ed137b66011e2c61aa830ace
-size 317
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class NotIdentical extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '!==';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_NotIdentical';
+    }
+}

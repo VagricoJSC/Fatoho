@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65108dbd7622c7be915af250b472a77d9fe02a29416aebb89090774487bd4330
-size 1493
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This is part of the league/commonmark package.
+ *
+ * (c) Martin Hasoň <martin.hason@gmail.com>
+ * (c) Webuni s.r.o. <info@webuni.cz>
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\Table;
+
+use League\CommonMark\Node\Node;
+use League\CommonMark\Renderer\ChildNodeRendererInterface;
+use League\CommonMark\Renderer\NodeRendererInterface;
+use League\CommonMark\Util\HtmlElement;
+use League\CommonMark\Xml\XmlNodeRendererInterface;
+
+final class TableRenderer implements NodeRendererInterface, XmlNodeRendererInterface
+{
+    /**
+     * @param Table $node
+     *
+     * {@inheritDoc}
+     *
+     * @psalm-suppress MoreSpecificImplementedParamType
+     */
+    public function render(Node $node, ChildNodeRendererInterface $childRenderer): \Stringable
+    {
+        Table::assertInstanceOf($node);
+
+        $attrs = $node->data->get('attributes');
+
+        $separator = $childRenderer->getInnerSeparator();
+
+        $children = $childRenderer->renderNodes($node->children());
+
+        return new HtmlElement('table', $attrs, $separator . \trim($children) . $separator);
+    }
+
+    public function getXmlTagName(Node $node): string
+    {
+        return 'table';
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getXmlAttributes(Node $node): array
+    {
+        return [];
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9215b93b8a8bf336fb1b77232da07c00c7a14080958adf2144ec9dad997a0d58
-size 2575
+<?php
+
+namespace Illuminate\Database\Query\Processors;
+
+class MySqlProcessor extends Processor
+{
+    /**
+     * Process the results of a column listing query.
+     *
+     * @param  array  $results
+     * @return array
+     */
+    public function processColumnListing($results)
+    {
+        return array_map(function ($result) {
+            return ((object) $result)->column_name;
+        }, $results);
+    }
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b2c52e3317ece3d60e3a4b4431c5c543dc934d5aaf57769159d6f51cb2f76a5
-size 525
+<?php
+
+namespace Laravel\Sanctum;
+
+use Laravel\Sanctum\Contracts\HasAbilities;
+
+class TransientToken implements HasAbilities
+{
+    /**
+     * Determine if the token has a given ability.
+     *
+     * @param  string  $ability
+     * @return bool
+     */
+    public function can($ability)
+    {
+        return true;
+    }
+
+    /**
+     * Determine if the token is missing a given ability.
+     *
+     * @param  string  $ability
+     * @return bool
+     */
+    public function cant($ability)
+    {
+        return false;
+    }
+}

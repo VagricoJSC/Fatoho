@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:530b8cfe5d383621690760fdbad5583a3e072760c0c7420bf7d17bd47686da58
-size 738
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\PhpNoticeTriggered;
+use PHPUnit\Event\Test\PhpNoticeTriggeredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestTriggeredPhpNoticeSubscriber extends Subscriber implements PhpNoticeTriggeredSubscriber
+{
+    public function notify(PhpNoticeTriggered $event): void
+    {
+        $this->collector()->testTriggeredPhpNotice($event);
+    }
+}

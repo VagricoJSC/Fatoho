@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f19b68c90413e7d09851a7e64d6d5bc990c60331d84783ac3fd1454a21425c9
-size 660
+<div class="frames-description <?php echo $has_frames_tabs ? 'frames-description-application' : '' ?>">
+  <?php if ($has_frames_tabs): ?>
+    <a href="#" id="application-frames-tab" class="frames-tab <?php echo $active_frames_tab == 'application' ? 'frames-tab-active' : '' ?>">
+        Application frames (<?php echo $frames->countIsApplication() ?>)
+    </a>
+    <a href="#" id="all-frames-tab" class="frames-tab <?php echo $active_frames_tab == 'all' ? 'frames-tab-active' : '' ?>">
+      All frames (<?php echo count($frames) ?>)
+    </a>
+  <?php else: ?>
+    <span>
+        Stack frames (<?php echo count($frames) ?>)
+    </span>
+  <?php endif; ?>
+</div>

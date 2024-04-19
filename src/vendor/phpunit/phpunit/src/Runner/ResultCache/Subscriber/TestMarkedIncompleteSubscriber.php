@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4435e72f017d9a6e3e6db3664260f16fd8f544399745328ef91a629bf8f84cb8
-size 721
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\ResultCache;
+
+use PHPUnit\Event\Test\MarkedIncomplete;
+use PHPUnit\Event\Test\MarkedIncompleteSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestMarkedIncompleteSubscriber extends Subscriber implements MarkedIncompleteSubscriber
+{
+    public function notify(MarkedIncomplete $event): void
+    {
+        $this->handler()->testMarkedIncomplete($event);
+    }
+}

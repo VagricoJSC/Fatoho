@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47853372d98b78939e4c27faf4d86553e561f13dd21b3bfa37350df01ab830a7
-size 592
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Driver;
+
+use RuntimeException;
+use SebastianBergmann\CodeCoverage\Exception;
+
+final class PcovNotAvailableException extends RuntimeException implements Exception
+{
+    public function __construct()
+    {
+        parent::__construct('The PCOV extension is not available');
+    }
+}

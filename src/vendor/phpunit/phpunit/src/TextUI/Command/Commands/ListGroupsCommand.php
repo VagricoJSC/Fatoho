@@ -1,3 +1,80 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d1f0bd7fb37e23386018a26dc02abc27d87d11c74d6c809e3bfc8aef15b6c5a
-size 2384
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Command;
+
+use function sort;
+use function sprintf;
+use function str_starts_with;
+use PHPUnit\Framework\TestSuite;
+use PHPUnit\TextUI\Configuration\Registry;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ListGroupsCommand implements Command
+{
+    private readonly TestSuite $suite;
+
+    public function __construct(TestSuite $suite)
+    {
+        $this->suite = $suite;
+    }
+
+    public function execute(): Result
+    {
+        $buffer = $this->warnAboutConflictingOptions();
+        $buffer .= 'Available test group(s):' . PHP_EOL;
+
+        $groups = $this->suite->getGroups();
+        sort($groups);
+
+        foreach ($groups as $group) {
+            if (str_starts_with($group, '__phpunit_')) {
+                continue;
+            }
+
+            $buffer .= sprintf(
+                ' - %s' . PHP_EOL,
+                $group
+            );
+        }
+
+        return Result::from($buffer);
+    }
+
+    private function warnAboutConflictingOptions(): string
+    {
+        $buffer = '';
+
+        $configuration = Registry::get();
+
+        if ($configuration->hasFilter()) {
+            $buffer .= 'The --filter and --list-groups options cannot be combined, --filter is ignored' . PHP_EOL;
+        }
+
+        if ($configuration->hasGroups()) {
+            $buffer .= 'The --group and --list-groups options cannot be combined, --group is ignored' . PHP_EOL;
+        }
+
+        if ($configuration->hasExcludeGroups()) {
+            $buffer .= 'The --exclude-group and --list-groups options cannot be combined, --exclude-group is ignored' . PHP_EOL;
+        }
+
+        if ($configuration->includeTestSuite() !== '') {
+            $buffer .= 'The --testsuite and --list-groups options cannot be combined, --exclude-group is ignored' . PHP_EOL;
+        }
+
+        if (!empty($buffer)) {
+            $buffer .= PHP_EOL;
+        }
+
+        return $buffer;
+    }
+}

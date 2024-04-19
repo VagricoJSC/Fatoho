@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:914e39d71ea979136658e3c29e43f4f52a7ebb8421eefd20f48f1a776466e096
-size 495
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI;
+
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ExtensionsNotConfiguredException extends RuntimeException implements Exception
+{
+}

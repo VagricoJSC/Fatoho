@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b4bfe8a7dd911c383b4bf47ecafcd5dc78b902ca4d77e93c2d823e6eb2ec918
-size 660
+<?php
+
+namespace Illuminate\Foundation\Events;
+
+class PublishingStubs
+{
+    use Dispatchable;
+
+    /**
+     * The stubs being published.
+     *
+     * @var array
+     */
+    public $stubs = [];
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  array  $stubs
+     * @return void
+     */
+    public function __construct(array $stubs)
+    {
+        $this->stubs = $stubs;
+    }
+
+    /**
+     * Add a new stub to be published.
+     *
+     * @param  string  $path
+     * @param  string  $name
+     * @return $this
+     */
+    public function add(string $path, string $name)
+    {
+        $this->stubs[$path] = $name;
+
+        return $this;
+    }
+}

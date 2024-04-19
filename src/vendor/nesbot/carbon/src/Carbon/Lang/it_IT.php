@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60bf0a40e582de2ca5c587a8b613013645d9369169fbd26af8f90dcfc26bed3f
-size 324
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - RAP    bug-glibc-locales@gnu.org
+ */
+return require __DIR__.'/it.php';

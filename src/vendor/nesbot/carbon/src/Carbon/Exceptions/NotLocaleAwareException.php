@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:999272b5198e01832e315e61d94233449ca5403309aa6e729554a92bb34f7be6
-size 956
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use InvalidArgumentException as BaseInvalidArgumentException;
+use Throwable;
+
+class NotLocaleAwareException extends BaseInvalidArgumentException implements InvalidArgumentException
+{
+    /**
+     * Constructor.
+     *
+     * @param mixed          $object
+     * @param int            $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($object, $code = 0, Throwable $previous = null)
+    {
+        $dump = \is_object($object) ? \get_class($object) : \gettype($object);
+
+        parent::__construct("$dump does neither implements Symfony\Contracts\Translation\LocaleAwareInterface nor getLocale() method.", $code, $previous);
+    }
+}

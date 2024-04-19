@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0489cf7e747d3a8ea4f446001e3ea05786d3e71af7ce96840e17a374741585ae
-size 525
+<?php
+
+namespace Illuminate\Database;
+
+use RuntimeException;
+
+class ClassMorphViolationException extends RuntimeException
+{
+    /**
+     * The name of the affected Eloquent model.
+     *
+     * @var string
+     */
+    public $model;
+
+    /**
+     * Create a new exception instance.
+     *
+     * @param  object  $model
+     */
+    public function __construct($model)
+    {
+        $class = get_class($model);
+
+        parent::__construct("No morph map defined for model [{$class}].");
+
+        $this->model = $class;
+    }
+}

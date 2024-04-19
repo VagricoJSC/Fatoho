@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a8d36d532bfcd7bb6fcb50e316d022a6c12c659e08e9e4a32abbdc838b2fe33
-size 334
+<?php
+
+namespace Spatie\Ignition\Contracts;
+
+interface ConfigManager
+{
+    /** @return array<string, mixed> */
+    public function load(): array;
+
+    /** @param array<string, mixed> $options */
+    public function save(array $options): bool;
+
+    /** @return array<string, mixed> */
+    public function getPersistentInfo(): array;
+}

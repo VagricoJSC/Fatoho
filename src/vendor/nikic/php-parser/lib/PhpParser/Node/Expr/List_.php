@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ec555c4e1ac143255cf6209ec8be871f914ca825671394fad4c24573ee329b3
-size 879
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class List_ extends Expr
+{
+    /** @var (ArrayItem|null)[] List of items to assign to */
+    public $items;
+
+    /**
+     * Constructs a list() destructuring node.
+     *
+     * @param (ArrayItem|null)[] $items      List of items to assign to
+     * @param array              $attributes Additional attributes
+     */
+    public function __construct(array $items, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->items = $items;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['items'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_List';
+    }
+}

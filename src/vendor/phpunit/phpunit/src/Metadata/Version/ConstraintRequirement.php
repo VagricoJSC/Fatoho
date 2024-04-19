@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2c2fda8912da3e4c4539013cab949f2208f5234a209189b828c358798ddbe3d
-size 1323
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata\Version;
+
+use function preg_replace;
+use PharIo\Version\Version;
+use PharIo\Version\VersionConstraint;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class ConstraintRequirement extends Requirement
+{
+    private readonly VersionConstraint $constraint;
+
+    public function __construct(VersionConstraint $constraint)
+    {
+        $this->constraint = $constraint;
+    }
+
+    /**
+     * @psalm-suppress ImpureMethodCall
+     */
+    public function isSatisfiedBy(string $version): bool
+    {
+        return $this->constraint->complies(
+            new Version($this->sanitize($version))
+        );
+    }
+
+    /**
+     * @psalm-suppress ImpureMethodCall
+     */
+    public function asString(): string
+    {
+        return $this->constraint->asString();
+    }
+
+    private function sanitize(string $version): string
+    {
+        return preg_replace(
+            '/^(\d+\.\d+(?:.\d+)?).*$/',
+            '$1',
+            $version
+        );
+    }
+}

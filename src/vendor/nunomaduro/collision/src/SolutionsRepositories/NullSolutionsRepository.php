@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d142bf6f5f45fc292ce827cb39c8020999f88f636fab5f22406c55025b5ced0
-size 411
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision\SolutionsRepositories;
+
+use NunoMaduro\Collision\Contracts\SolutionsRepository;
+use Throwable;
+
+/**
+ * @internal
+ */
+final class NullSolutionsRepository implements SolutionsRepository
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function getFromThrowable(Throwable $throwable): array
+    {
+        return [];
+    }
+}

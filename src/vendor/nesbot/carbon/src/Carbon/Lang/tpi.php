@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:300291c2297745d45bc03a0e1b0d84dfb93ccc5d5ecce064723463ec0b97178a
-size 335
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/tpi_PG.php';

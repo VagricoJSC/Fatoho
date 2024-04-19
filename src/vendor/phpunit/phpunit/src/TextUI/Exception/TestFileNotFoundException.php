@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3194120b0ae9fffdb77e91e1c0ea4c4da667ae33c77c7eb986e1fe67f172f154
-size 711
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI;
+
+use function sprintf;
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestFileNotFoundException extends RuntimeException implements Exception
+{
+    public function __construct(string $path)
+    {
+        parent::__construct(
+            sprintf(
+                'Test file "%s" not found',
+                $path
+            )
+        );
+    }
+}

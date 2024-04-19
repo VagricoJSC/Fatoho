@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bbb84df2dd05ae0728d7b7e9f4d65f3221aa84694766a94f70da1ad2a179bc0
-size 550
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage;
+
+use RuntimeException;
+
+final class NoCodeCoverageDriverAvailableException extends RuntimeException implements Exception
+{
+    public function __construct()
+    {
+        parent::__construct('No code coverage driver available');
+    }
+}

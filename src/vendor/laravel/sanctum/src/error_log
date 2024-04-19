@@ -1,0 +1,32 @@
+[22-Mar-2024 23:55:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Sanctum\Contracts\HasAbilities" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/TransientToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/TransientToken.php on line 7
+[22-Mar-2024 23:55:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php on line 14
+[22-Mar-2024 23:55:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/PersonalAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/PersonalAccessToken.php on line 8
+[22-Mar-2024 23:55:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/NewAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/NewAccessToken.php on line 8
+[03-Apr-2024 07:32:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Sanctum\Contracts\HasAbilities" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/TransientToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/TransientToken.php on line 7
+[03-Apr-2024 07:32:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/PersonalAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/PersonalAccessToken.php on line 8
+[03-Apr-2024 07:32:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/NewAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/NewAccessToken.php on line 8
+[03-Apr-2024 08:16:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php on line 14

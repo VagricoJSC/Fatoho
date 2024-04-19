@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:722d431c540d6b729249952872d291d92fa083966b4c778b38860057774a3b64
-size 449
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\MockObject;
+
+use Throwable;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Exception extends Throwable
+{
+}

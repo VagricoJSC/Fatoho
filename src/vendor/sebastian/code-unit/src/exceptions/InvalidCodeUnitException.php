@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06a13fcf09834fbdaf784b234cc7c902fba998898379db329351c58c3ccf52c6
-size 414
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+use RuntimeException;
+
+final class InvalidCodeUnitException extends RuntimeException implements Exception
+{
+}

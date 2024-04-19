@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05b133fc0f69ab39b59b9fb4fcec2ae8881005bf34ece46803fddeacd49eb00d
-size 827
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Console\Completion;
+
+/**
+ * Represents a single suggested value.
+ *
+ * @author Wouter de Jong <wouter@wouterj.nl>
+ */
+class Suggestion implements \Stringable
+{
+    public function __construct(
+        private readonly string $value,
+        private readonly string $description = ''
+    ) {
+    }
+
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function __toString(): string
+    {
+        return $this->getValue();
+    }
+}

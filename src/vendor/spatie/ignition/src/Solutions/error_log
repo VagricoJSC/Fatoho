@@ -1,0 +1,24 @@
+[23-Mar-2024 04:12:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestImportSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestImportSolution.php on line 7
+[23-Mar-2024 04:12:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestCorrectVariableNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestCorrectVariableNameSolution.php on line 7
+[23-Mar-2024 04:12:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SolutionTransformer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SolutionTransformer.php on line 9
+[01-Apr-2024 13:01:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestImportSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestImportSolution.php on line 7
+[01-Apr-2024 13:01:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Spatie\Ignition\Contracts\Solution" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestCorrectVariableNameSolution.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SuggestCorrectVariableNameSolution.php on line 7
+[01-Apr-2024 13:01:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SolutionTransformer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/spatie/ignition/src/Solutions/SolutionTransformer.php on line 9

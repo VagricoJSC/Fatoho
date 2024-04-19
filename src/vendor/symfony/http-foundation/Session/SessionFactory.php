@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6be6c82f43278b2196b9d815bac1f3e5cdb0c95220351b09b21c74588495b219
-size 1309
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\Session;
+
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpFoundation\Session\Storage\SessionStorageFactoryInterface;
+
+// Help opcache.preload discover always-needed symbols
+class_exists(Session::class);
+
+/**
+ * @author Jérémy Derussé <jeremy@derusse.com>
+ */
+class SessionFactory implements SessionFactoryInterface
+{
+    private RequestStack $requestStack;
+    private SessionStorageFactoryInterface $storageFactory;
+    private ?\Closure $usageReporter;
+
+    public function __construct(RequestStack $requestStack, SessionStorageFactoryInterface $storageFactory, callable $usageReporter = null)
+    {
+        $this->requestStack = $requestStack;
+        $this->storageFactory = $storageFactory;
+        $this->usageReporter = null === $usageReporter ? null : $usageReporter(...);
+    }
+
+    public function createSession(): SessionInterface
+    {
+        return new Session($this->storageFactory->createStorage($this->requestStack->getMainRequest()), null, null, $this->usageReporter);
+    }
+}

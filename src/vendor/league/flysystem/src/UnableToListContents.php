@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1be7c94466ff78fa851196569922cbf73e5c1b90b9f7a85c9e9782786d648ea6
-size 650
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+use Throwable;
+
+final class UnableToListContents extends RuntimeException implements FilesystemOperationFailed
+{
+    public static function atLocation(string $location, bool $deep, Throwable $previous): UnableToListContents
+    {
+        $message = "Unable to list contents for '$location', " . ($deep ? 'deep' : 'shallow') . " listing\n\n"
+            . 'Reason: ' . $previous->getMessage();
+
+        return new UnableToListContents($message, 0, $previous);
+    }
+
+    public function operation(): string
+    {
+        return self::OPERATION_LIST_CONTENTS;
+    }
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ad8bec5466f78651f7ebc81eec5a0e041d2b83f4c84a3f673d4ba9ef0cc5c4f
-size 750
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\VarDumper\Caster;
+
+/**
+ * Represents a single backtrace frame as returned by debug_backtrace() or Exception->getTrace().
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+class FrameStub extends EnumStub
+{
+    public $keepArgs;
+    public $inTraceStub;
+
+    public function __construct(array $frame, bool $keepArgs = true, bool $inTraceStub = false)
+    {
+        $this->value = $frame;
+        $this->keepArgs = $keepArgs;
+        $this->inTraceStub = $inTraceStub;
+    }
+}

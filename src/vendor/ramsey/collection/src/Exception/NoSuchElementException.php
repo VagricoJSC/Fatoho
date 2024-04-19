@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80be00ddb841b33b22d1dfc33849aa1c585ec73d303e7953c7747b8a1ed020c5
-size 567
+<?php
+
+/**
+ * This file is part of the ramsey/collection library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Collection\Exception;
+
+use RuntimeException;
+
+/**
+ * Thrown when attempting to access an element that does not exist.
+ */
+class NoSuchElementException extends RuntimeException implements CollectionException
+{
+}

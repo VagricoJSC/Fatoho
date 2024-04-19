@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29bef4e40f744f261b3241e3e2b88bd490909e04fc5d248c23d6b4a08e314e92
-size 511
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+final class PortableVisibilityGuard
+{
+    public static function guardAgainstInvalidInput(string $visibility): void
+    {
+        if ($visibility !== Visibility::PUBLIC && $visibility !== Visibility::PRIVATE) {
+            $className = Visibility::class;
+            throw InvalidVisibilityProvided::withVisibility(
+                $visibility,
+                "either {$className}::PUBLIC or {$className}::PRIVATE"
+            );
+        }
+    }
+}

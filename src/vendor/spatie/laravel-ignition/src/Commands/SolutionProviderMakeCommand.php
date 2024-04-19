@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a4534bfc6c3294f331c1378d2e0d95e0c5507aea3422727a3ef9a282e72506e
-size 579
+<?php
+
+namespace Spatie\LaravelIgnition\Commands;
+
+use Illuminate\Console\GeneratorCommand;
+
+class SolutionProviderMakeCommand extends GeneratorCommand
+{
+    protected $name = 'ignition:make-solution-provider';
+
+    protected $description = 'Create a new custom Ignition solution provider class';
+
+    protected $type = 'Solution Provider';
+
+    protected function getStub(): string
+    {
+        return __DIR__.'/stubs/solution-provider.stub';
+    }
+
+    protected function getDefaultNamespace($rootNamespace)
+    {
+        return "{$rootNamespace}\\SolutionProviders";
+    }
+}

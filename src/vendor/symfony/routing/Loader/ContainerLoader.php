@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0779ade808dadbf8a5eb1de6b86dc269d5c70b21a54375f71a5d41fb20c82339
-size 985
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Loader;
+
+use Psr\Container\ContainerInterface;
+
+/**
+ * A route loader that executes a service from a PSR-11 container to load the routes.
+ *
+ * @author Ryan Weaver <ryan@knpuniversity.com>
+ */
+class ContainerLoader extends ObjectLoader
+{
+    private ContainerInterface $container;
+
+    public function __construct(ContainerInterface $container, string $env = null)
+    {
+        $this->container = $container;
+        parent::__construct($env);
+    }
+
+    public function supports(mixed $resource, string $type = null): bool
+    {
+        return 'service' === $type && \is_string($resource);
+    }
+
+    protected function getObject(string $id): object
+    {
+        return $this->container->get($id);
+    }
+}

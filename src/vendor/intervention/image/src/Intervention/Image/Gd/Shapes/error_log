@@ -1,0 +1,20 @@
+[03-Apr-2024 20:52:58 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php on line 9
+[03-Apr-2024 20:53:01 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php on line 9
+[03-Apr-2024 20:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/LineShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/LineShape.php on line 9
+[03-Apr-2024 20:53:09 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\AbstractShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/EllipseShape.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/EllipseShape.php on line 9
+[03-Apr-2024 20:53:13 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Gd\Shapes\EllipseShape" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/CircleShape.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/CircleShape.php on line 7

@@ -1,0 +1,4 @@
+[23-Mar-2024 12:33:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php on line 17

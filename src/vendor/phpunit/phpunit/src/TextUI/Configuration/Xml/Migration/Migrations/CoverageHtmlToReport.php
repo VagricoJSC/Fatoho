@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7adc79c7f8ec2dd10a4af80051e7f2b7a12489bb75c7f06ad51a7067fce27bb
-size 913
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class CoverageHtmlToReport extends LogToReportMigration
+{
+    protected function forType(): string
+    {
+        return 'coverage-html';
+    }
+
+    protected function toReportFormat(DOMElement $logNode): DOMElement
+    {
+        $html = $logNode->ownerDocument->createElement('html');
+        $html->setAttribute('outputDirectory', $logNode->getAttribute('target'));
+
+        $this->migrateAttributes($logNode, $html, ['lowUpperBound', 'highLowerBound']);
+
+        return $html;
+    }
+}

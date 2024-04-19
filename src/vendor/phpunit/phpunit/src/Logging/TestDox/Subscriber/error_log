@@ -1,0 +1,120 @@
+[23-Mar-2024 12:17:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestSkippedSubscriber.php on line 18
+[23-Mar-2024 12:17:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPreparedSubscriber.php on line 18
+[23-Mar-2024 12:17:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPassedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPassedSubscriber.php on line 18
+[23-Mar-2024 12:18:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestMarkedIncompleteSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestMarkedIncompleteSubscriber.php on line 18
+[23-Mar-2024 12:18:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFinishedSubscriber.php on line 19
+[23-Mar-2024 12:18:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFailedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFailedSubscriber.php on line 18
+[23-Mar-2024 12:18:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestErroredSubscriber.php on line 18
+[23-Mar-2024 12:18:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestStubSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestStubSubscriber.php on line 18
+[23-Mar-2024 12:18:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedPartialMockObjectSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedPartialMockObjectSubscriber.php on line 18
+[23-Mar-2024 12:18:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestProxySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestProxySubscriber.php on line 18
+[23-Mar-2024 12:18:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectSubscriber.php on line 18
+[23-Mar-2024 12:18:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectFromWsdlSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectFromWsdlSubscriber.php on line 18
+[23-Mar-2024 12:18:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForTraitSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForTraitSubscriber.php on line 18
+[23-Mar-2024 12:18:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForAbstractClassSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForAbstractClassSubscriber.php on line 18
+[23-Mar-2024 12:18:45 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestConsideredRiskySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestConsideredRiskySubscriber.php on line 18
+[03-Apr-2024 17:22:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestSkippedSubscriber.php on line 18
+[03-Apr-2024 17:22:45 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPreparedSubscriber.php on line 18
+[03-Apr-2024 17:22:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPassedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestPassedSubscriber.php on line 18
+[03-Apr-2024 17:22:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFinishedSubscriber.php on line 19
+[03-Apr-2024 17:22:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFailedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestFailedSubscriber.php on line 18
+[03-Apr-2024 17:23:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestErroredSubscriber.php on line 18
+[03-Apr-2024 20:44:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestMarkedIncompleteSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestMarkedIncompleteSubscriber.php on line 18
+[03-Apr-2024 20:44:11 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestStubSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestStubSubscriber.php on line 18
+[03-Apr-2024 20:44:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestProxySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedTestProxySubscriber.php on line 18
+[03-Apr-2024 20:44:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedPartialMockObjectSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedPartialMockObjectSubscriber.php on line 18
+[03-Apr-2024 20:44:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectSubscriber.php on line 18
+[03-Apr-2024 20:44:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectFromWsdlSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectFromWsdlSubscriber.php on line 18
+[03-Apr-2024 20:44:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForTraitSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForTraitSubscriber.php on line 18
+[03-Apr-2024 20:44:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForAbstractClassSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestCreatedMockObjectForAbstractClassSubscriber.php on line 18
+[03-Apr-2024 20:44:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TestDox\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestConsideredRiskySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/TestDox/Subscriber/TestConsideredRiskySubscriber.php on line 18

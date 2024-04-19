@@ -1,0 +1,8 @@
+[22-Mar-2024 22:35:08 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/graham-campbell/result-type/src/Success.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/graham-campbell/result-type/src/Success.php on line 24
+[22-Mar-2024 22:35:16 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/graham-campbell/result-type/src/Error.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/graham-campbell/result-type/src/Error.php on line 24

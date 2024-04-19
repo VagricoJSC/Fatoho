@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0de177ea5945de8336b71ef1ed58c663977883f0eead473f94a1e0719476999
-size 514
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+/**
+ * @psalm-immutable
+ */
+final class ClassUnit extends CodeUnit
+{
+    /**
+     * @psalm-assert-if-true ClassUnit $this
+     */
+    public function isClass(): bool
+    {
+        return true;
+    }
+}

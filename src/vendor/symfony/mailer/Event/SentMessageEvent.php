@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a53d15eb200ef8379965c3f33b0f07c833eab452b2ede38fb0aaeb113ad71ca7
-size 637
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Event;
+
+use Symfony\Component\Mailer\SentMessage;
+use Symfony\Contracts\EventDispatcher\Event;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+final class SentMessageEvent extends Event
+{
+    public function __construct(private SentMessage $message)
+    {
+    }
+
+    public function getMessage(): SentMessage
+    {
+        return $this->message;
+    }
+}

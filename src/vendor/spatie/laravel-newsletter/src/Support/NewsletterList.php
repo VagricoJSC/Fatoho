@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66551db8f45aebae2fccbc723ab4c8ece68949f87cb19df439ee15b273a8151d
-size 447
+<?php
+
+namespace Spatie\Newsletter\Support;
+
+class NewsletterList
+{
+    public string $name;
+
+    public array $properties = [];
+
+    public function __construct(string $name, array $properties)
+    {
+        $this->name = $name;
+        $this->properties = $properties;
+    }
+
+    public function getId(): string
+    {
+        return $this->properties['id'];
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+}

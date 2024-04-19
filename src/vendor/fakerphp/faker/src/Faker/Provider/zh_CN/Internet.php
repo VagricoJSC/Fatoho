@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77c046ab5c480c09870495f560ade28257f2b7fe5c121184cf30526c41b13bd2
-size 677
+<?php
+
+namespace Faker\Provider\zh_CN;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = [
+        'gmail.com', 'yahoo.com', 'hotmail.com', '126.com', '163.com', 'qq.com', 'sohu.com', 'sina.com',
+    ];
+    protected static $tld = [
+        'com', 'com', 'com', 'com', 'com', 'com', 'biz', 'info', 'net', 'org', 'cn',
+        'com.cn', 'edu.cn', 'net.cn', 'biz.cn', 'gov.cn', 'org.cn',
+    ];
+
+    protected static $userNameFormats = [
+        '{{word}}.{{word}}',
+        '{{word}}_{{word}}',
+        '{{word}}##',
+        '?{{word}}',
+    ];
+    protected static $emailFormats = [
+        '{{userName}}@{{freeEmailDomain}}',
+    ];
+}

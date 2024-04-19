@@ -1,0 +1,16 @@
+[23-Mar-2024 03:46:40 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Flysystem\FilesystemAdapter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/LocalFilesystemAdapter.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/LocalFilesystemAdapter.php on line 49
+[23-Mar-2024 03:46:47 UTC] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/FallbackMimeTypeDetector.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/FallbackMimeTypeDetector.php on line 11
+[01-Apr-2024 12:48:52 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Flysystem\FilesystemAdapter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/LocalFilesystemAdapter.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/LocalFilesystemAdapter.php on line 49
+[01-Apr-2024 12:48:56 UTC] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/FallbackMimeTypeDetector.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/flysystem/src/Local/FallbackMimeTypeDetector.php on line 11

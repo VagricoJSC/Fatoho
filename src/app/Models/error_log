@@ -1,0 +1,276 @@
+[22-Mar-2024 18:48:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php on line 7
+[22-Mar-2024 18:48:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php on line 7
+[22-Mar-2024 18:48:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php on line 7
+[22-Mar-2024 18:48:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php on line 7
+[22-Mar-2024 18:49:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php on line 6
+[22-Mar-2024 18:49:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php on line 7
+[22-Mar-2024 18:49:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php on line 7
+[22-Mar-2024 18:49:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php on line 7
+[22-Mar-2024 18:49:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php on line 7
+[22-Mar-2024 18:49:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php on line 6
+[22-Mar-2024 18:49:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php on line 7
+[22-Mar-2024 18:49:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php on line 7
+[22-Mar-2024 18:49:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php on line 7
+[22-Mar-2024 18:49:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php on line 7
+[22-Mar-2024 18:49:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php on line 7
+[22-Mar-2024 18:49:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php on line 7
+[22-Mar-2024 18:49:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php on line 7
+[22-Mar-2024 20:47:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php on line 7
+[22-Mar-2024 20:47:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php on line 6
+[22-Mar-2024 20:47:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php on line 7
+[22-Mar-2024 20:47:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php on line 7
+[22-Mar-2024 20:47:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php on line 7
+[22-Mar-2024 20:47:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php on line 7
+[22-Mar-2024 20:48:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php on line 7
+[22-Mar-2024 20:48:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php on line 7
+[22-Mar-2024 20:48:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php on line 7
+[22-Mar-2024 20:48:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php on line 7
+[22-Mar-2024 20:48:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php on line 7
+[22-Mar-2024 20:48:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php on line 7
+[22-Mar-2024 20:48:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php on line 7
+[22-Mar-2024 20:48:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php on line 6
+[22-Mar-2024 20:48:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php on line 7
+[22-Mar-2024 20:48:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php on line 7
+[22-Mar-2024 20:48:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php on line 7
+[28-Mar-2024 02:40:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php on line 7
+[28-Mar-2024 02:52:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php on line 7
+[28-Mar-2024 03:02:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php on line 6
+[28-Mar-2024 03:10:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php on line 7
+[28-Mar-2024 03:34:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php on line 7
+[28-Mar-2024 04:14:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php on line 6
+[30-Mar-2024 03:36:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php on line 7
+[30-Mar-2024 03:49:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php on line 7
+[30-Mar-2024 03:58:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php on line 7
+[30-Mar-2024 04:01:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php on line 7
+[30-Mar-2024 04:08:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php on line 7
+[30-Mar-2024 04:10:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php on line 7
+[30-Mar-2024 04:13:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php on line 7
+[30-Mar-2024 04:39:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php on line 7
+[30-Mar-2024 21:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php on line 7
+[01-Apr-2024 10:03:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Product.php on line 7
+[01-Apr-2024 10:04:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostTag.php on line 7
+[01-Apr-2024 10:04:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php on line 7
+[01-Apr-2024 10:04:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Wishlist.php on line 7
+[01-Apr-2024 10:04:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Shipping.php on line 6
+[01-Apr-2024 10:04:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Settings.php on line 7
+[01-Apr-2024 10:04:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostComment.php on line 7
+[01-Apr-2024 10:04:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Coupon.php on line 7
+[01-Apr-2024 10:04:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Category.php on line 7
+[01-Apr-2024 10:04:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Banner.php on line 7
+[01-Apr-2024 10:04:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/PostCategory.php on line 7
+[01-Apr-2024 10:04:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php on line 7
+[01-Apr-2024 10:04:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/ProductReview.php on line 7
+[01-Apr-2024 10:04:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Order.php on line 6
+[01-Apr-2024 10:04:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Brand.php on line 7
+[01-Apr-2024 10:05:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Cart.php on line 7
+[01-Apr-2024 10:05:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php on line 7
+[02-Apr-2024 14:39:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Notification.php on line 7
+[02-Apr-2024 19:46:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Post.php on line 7
+[03-Apr-2024 13:22:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/app/Models/Message.php on line 7

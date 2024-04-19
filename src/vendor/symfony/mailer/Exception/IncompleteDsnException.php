@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61b0df7548e04162593f906aaac9e93c191f5610ec382a9aa79cc9a2186a2e83
-size 413
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Exception;
+
+/**
+ * @author Konstantin Myakshin <molodchick@gmail.com>
+ */
+class IncompleteDsnException extends InvalidArgumentException
+{
+}

@@ -1,0 +1,16 @@
+[01-Apr-2024 15:18:18 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractStringContainer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/Text.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/Text.php on line 19
+[01-Apr-2024 15:18:20 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/Newline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/Newline.php on line 19
+[01-Apr-2024 15:18:32 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php on line 21
+[01-Apr-2024 15:18:41 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Node" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php on line 21

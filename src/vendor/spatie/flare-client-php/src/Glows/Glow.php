@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57b1ed1063d556804f05e21071be9145987eef6c7487976e1b2d50580f7e43b7
-size 1267
+<?php
+
+namespace Spatie\FlareClient\Glows;
+
+use Spatie\FlareClient\Concerns\UsesTime;
+use Spatie\FlareClient\Enums\MessageLevels;
+
+class Glow
+{
+    use UsesTime;
+
+    protected string $name;
+
+    /** @var array<int, mixed> */
+    protected array $metaData = [];
+
+    protected string $messageLevel;
+
+    protected float $microtime;
+
+    /**
+     * @param string $name
+     * @param string $messageLevel
+     * @param array<int, mixed>  $metaData
+     * @param float|null $microtime
+     */
+    public function __construct(
+        string $name,
+        string $messageLevel = MessageLevels::INFO,
+        array $metaData = [],
+        ?float $microtime = null
+    ) {
+        $this->name = $name;
+        $this->messageLevel = $messageLevel;
+        $this->metaData = $metaData;
+        $this->microtime = $microtime ?? microtime(true);
+    }
+
+    /**
+     * @return array{time: int, name: string, message_level: string, meta_data: array, microtime: float}
+     */
+    public function toArray(): array
+    {
+        return [
+            'time' => $this->getCurrentTime(),
+            'name' => $this->name,
+            'message_level' => $this->messageLevel,
+            'meta_data' => $this->metaData,
+            'microtime' => $this->microtime,
+        ];
+    }
+}

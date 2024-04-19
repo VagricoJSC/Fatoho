@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:744ba8ba60d422f07737a1438a541f843432ca7cbcdd8c57c07a89d73ba552b1
-size 819
+<?php declare(strict_types=1);
+
+namespace PhpParser\Lexer\TokenEmulator;
+
+/** @internal */
+abstract class TokenEmulator
+{
+    abstract public function getPhpVersion(): string;
+
+    abstract public function isEmulationNeeded(string $code): bool;
+
+    /**
+     * @return array Modified Tokens
+     */
+    abstract public function emulate(string $code, array $tokens): array;
+
+    /**
+     * @return array Modified Tokens
+     */
+    abstract public function reverseEmulate(string $code, array $tokens): array;
+
+    public function preprocessCode(string $code, array &$patches): string {
+        return $code;
+    }
+}

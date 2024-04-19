@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c802f69a5319242aa03e3eed4656551ce8c18e535df4905299f0f2ab931aba46
-size 1013
+<?php declare(strict_types=1);
+
+namespace PhpParser\Lexer\TokenEmulator;
+
+/**
+ * Reverses emulation direction of the inner emulator.
+ */
+final class ReverseEmulator extends TokenEmulator
+{
+    /** @var TokenEmulator Inner emulator */
+    private $emulator;
+
+    public function __construct(TokenEmulator $emulator) {
+        $this->emulator = $emulator;
+    }
+
+    public function getPhpVersion(): string {
+        return $this->emulator->getPhpVersion();
+    }
+
+    public function isEmulationNeeded(string $code): bool {
+        return $this->emulator->isEmulationNeeded($code);
+    }
+
+    public function emulate(string $code, array $tokens): array {
+        return $this->emulator->reverseEmulate($code, $tokens);
+    }
+
+    public function reverseEmulate(string $code, array $tokens): array {
+        return $this->emulator->emulate($code, $tokens);
+    }
+
+    public function preprocessCode(string $code, array &$patches): string {
+        return $code;
+    }
+}

@@ -1,0 +1,8 @@
+[23-Mar-2024 14:24:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php on line 28
+[03-Apr-2024 14:02:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php on line 28

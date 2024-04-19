@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c95fbb570acc82b5b42f4173b349950497fc16de3db64b529ce6fc3623ba728
-size 1568
+<?php
+
+namespace Illuminate\Queue\Failed;
+
+class NullFailedJobProvider implements FailedJobProviderInterface
+{
+    /**
+     * Log a failed job into storage.
+     *
+     * @param  string  $connection
+     * @param  string  $queue
+     * @param  string  $payload
+     * @param  \Throwable  $exception
+     * @return int|null
+     */
+    public function log($connection, $queue, $payload, $exception)
+    {
+        //
+    }
+
+    /**
+     * Get a list of all of the failed jobs.
+     *
+     * @return array
+     */
+    public function all()
+    {
+        return [];
+    }
+
+    /**
+     * Get a single failed job.
+     *
+     * @param  mixed  $id
+     * @return object|null
+     */
+    public function find($id)
+    {
+        //
+    }
+
+    /**
+     * Delete a single failed job from storage.
+     *
+     * @param  mixed  $id
+     * @return bool
+     */
+    public function forget($id)
+    {
+        return true;
+    }
+
+    /**
+     * Flush all of the failed jobs from storage.
+     *
+     * @param  int|null  $hours
+     * @return void
+     */
+    public function flush($hours = null)
+    {
+        //
+    }
+}

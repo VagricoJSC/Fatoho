@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39eaf286ecd5ddc18d8b9ff2971018b4dc4606f2d568cb56e372d573a427312e
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Josh Soref
+ * - Azri Jamil
+ * - JD Isaacks
+ */
+return require __DIR__.'/ms.php';

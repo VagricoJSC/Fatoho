@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8767b87d9afff5df156c6e4f6162ec53ca21625dc747730c3b32fc04def2cc0
-size 481
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an UPLOAD_ERR_PARTIAL error occurred with UploadedFile.
+ *
+ * @author Florent Mata <florentmata@gmail.com>
+ */
+class PartialFileException extends FileException
+{
+}

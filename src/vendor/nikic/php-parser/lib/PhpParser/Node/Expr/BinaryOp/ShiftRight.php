@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3a4ed9612c746fed8cd44f8e247b477b84415c74afdc58cc3bf0b691746c735
-size 312
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class ShiftRight extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '>>';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_ShiftRight';
+    }
+}

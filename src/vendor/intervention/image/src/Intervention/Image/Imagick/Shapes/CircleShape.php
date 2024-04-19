@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce18f2ff07b0fbf3efd12bf3cd247698c0edcab3fe2738671746f8d6b8ccfae4
-size 936
+<?php
+
+namespace Intervention\Image\Imagick\Shapes;
+
+use Intervention\Image\Image;
+
+class CircleShape extends EllipseShape
+{
+    /**
+     * Diameter of circle in pixels
+     *
+     * @var int
+     */
+    public $diameter = 100;
+
+    /**
+     * Create new instance of circle
+     *
+     * @param int $diameter
+     */
+    public function __construct($diameter = null)
+    {
+        $this->width = is_numeric($diameter) ? intval($diameter) : $this->diameter;
+        $this->height = is_numeric($diameter) ? intval($diameter) : $this->diameter;
+        $this->diameter = is_numeric($diameter) ? intval($diameter) : $this->diameter;
+    }
+
+    /**
+     * Draw current circle on given image
+     *
+     * @param  Image   $image
+     * @param  int     $x
+     * @param  int     $y
+     * @return boolean
+     */
+    public function applyToImage(Image $image, $x = 0, $y = 0)
+    {
+        return parent::applyToImage($image, $x, $y);
+    }
+}

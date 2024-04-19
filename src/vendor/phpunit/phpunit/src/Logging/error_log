@@ -1,0 +1,16 @@
+[23-Mar-2024 04:01:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/Exception.php on line 17
+[23-Mar-2024 04:01:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Tracer\Tracer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php on line 26
+[03-Apr-2024 09:51:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/Exception.php on line 17
+[03-Apr-2024 09:52:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Tracer\Tracer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php on line 26

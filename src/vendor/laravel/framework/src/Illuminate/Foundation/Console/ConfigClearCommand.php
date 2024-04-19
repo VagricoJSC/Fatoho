@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e223e328e4f35ef89c30eb9fa342c55ad7dd0deb509e45bc430461de3a003ea
-size 1186
+<?php
+
+namespace Illuminate\Foundation\Console;
+
+use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'config:clear')]
+class ConfigClearCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'config:clear';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Remove the configuration cache file';
+
+    /**
+     * The filesystem instance.
+     *
+     * @var \Illuminate\Filesystem\Filesystem
+     */
+    protected $files;
+
+    /**
+     * Create a new config clear command instance.
+     *
+     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @return void
+     */
+    public function __construct(Filesystem $files)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        $this->files->delete($this->laravel->getCachedConfigPath());
+
+        $this->components->info('Configuration cache cleared successfully.');
+    }
+}

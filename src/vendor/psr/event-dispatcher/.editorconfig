@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:933e7602e5c8d5350db8331cd5c2e9cdad19a45b73ca89b36c16b5f388bdd7d4
-size 302
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[Makefile]
+indent_style = tab

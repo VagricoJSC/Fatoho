@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a830d947fee15ccf211e938a5e37fb492c70e41f7cc157adc1024944ec091b4
-size 683
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - kostas
+ * - François B
+ * - Tim Fish
+ * - Chiel Robben
+ * - Claire Coloma
+ * - Steven Heinrich
+ * - JD Isaacks
+ * - Raphael Amorim
+ */
+return array_replace_recursive(require __DIR__.'/es.php', [
+    'diff_before_yesterday' => 'anteayer',
+    'formats' => [
+        'LT' => 'h:mm A',
+        'LTS' => 'h:mm:ss A',
+        'LLL' => 'D [de] MMMM [de] YYYY h:mm A',
+        'LLLL' => 'dddd, D [de] MMMM [de] YYYY h:mm A',
+    ],
+]);

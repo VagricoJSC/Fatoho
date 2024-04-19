@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc4f57ac7e8597418863c9ff7740c57e298615149048abbb3df8ebe473b7ec0c
-size 903
+<?php
+
+namespace Illuminate\View;
+
+use ErrorException;
+use Illuminate\Container\Container;
+use Illuminate\Support\Reflector;
+
+class ViewException extends ErrorException
+{
+    /**
+     * Report the exception.
+     *
+     * @return bool|null
+     */
+    public function report()
+    {
+        $exception = $this->getPrevious();
+
+        if (Reflector::isCallable($reportCallable = [$exception, 'report'])) {
+            return Container::getInstance()->call($reportCallable);
+        }
+
+        return false;
+    }
+
+    /**
+     * Render the exception into an HTTP response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response|null
+     */
+    public function render($request)
+    {
+        $exception = $this->getPrevious();
+
+        if ($exception && method_exists($exception, 'render')) {
+            return $exception->render($request);
+        }
+    }
+}

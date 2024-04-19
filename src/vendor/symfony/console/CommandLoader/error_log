@@ -1,0 +1,8 @@
+[22-Mar-2024 23:39:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php on line 22
+[22-Mar-2024 23:39:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php on line 23

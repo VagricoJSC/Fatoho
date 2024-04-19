@@ -1,0 +1,32 @@
+[03-Apr-2024 16:16:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php on line 13
+[03-Apr-2024 16:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\SymfonyStyle" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php on line 10
+[03-Apr-2024 16:16:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php on line 12
+[03-Apr-2024 16:16:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php on line 10
+[03-Apr-2024 16:16:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Command.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Command.php on line 13
+[03-Apr-2024 16:16:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\CommandMutex" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/CacheCommandMutex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/CacheCommandMutex.php on line 8
+[03-Apr-2024 16:16:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php on line 7
+[03-Apr-2024 16:16:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Application.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Console/Application.php on line 26

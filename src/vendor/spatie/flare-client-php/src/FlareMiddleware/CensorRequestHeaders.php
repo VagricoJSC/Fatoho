@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb047c6662d297b6796a8e259037887a9548475ee979fa8b280aea4c7c085f7e
-size 692
+<?php
+
+namespace Spatie\FlareClient\FlareMiddleware;
+
+use Spatie\FlareClient\Report;
+
+class CensorRequestHeaders implements FlareMiddleware
+{
+    protected array $headers = [];
+
+    public function __construct(array $headers)
+    {
+        $this->headers = $headers;
+    }
+
+    public function handle(Report $report, $next)
+    {
+        $context = $report->allContext();
+
+        foreach ($this->headers as $header) {
+            $header = strtolower($header);
+
+            if (isset($context['headers'][$header])) {
+                $context['headers'][$header] = '<CENSORED>';
+            }
+        }
+
+        $report->userProvidedContext($context);
+
+        return $next($report);
+    }
+}

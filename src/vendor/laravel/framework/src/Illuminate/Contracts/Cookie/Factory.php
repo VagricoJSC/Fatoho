@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db93a02e412c37f94452818c0d22ef8fd7ca9a19547a1ef96ef2fed07ce80340
-size 1435
+<?php
+
+namespace Illuminate\Contracts\Cookie;
+
+interface Factory
+{
+    /**
+     * Create a new cookie instance.
+     *
+     * @param  string  $name
+     * @param  string  $value
+     * @param  int  $minutes
+     * @param  string|null  $path
+     * @param  string|null  $domain
+     * @param  bool|null  $secure
+     * @param  bool  $httpOnly
+     * @param  bool  $raw
+     * @param  string|null  $sameSite
+     * @return \Symfony\Component\HttpFoundation\Cookie
+     */
+    public function make($name, $value, $minutes = 0, $path = null, $domain = null, $secure = null, $httpOnly = true, $raw = false, $sameSite = null);
+
+    /**
+     * Create a cookie that lasts "forever" (five years).
+     *
+     * @param  string  $name
+     * @param  string  $value
+     * @param  string|null  $path
+     * @param  string|null  $domain
+     * @param  bool|null  $secure
+     * @param  bool  $httpOnly
+     * @param  bool  $raw
+     * @param  string|null  $sameSite
+     * @return \Symfony\Component\HttpFoundation\Cookie
+     */
+    public function forever($name, $value, $path = null, $domain = null, $secure = null, $httpOnly = true, $raw = false, $sameSite = null);
+
+    /**
+     * Expire the given cookie.
+     *
+     * @param  string  $name
+     * @param  string|null  $path
+     * @param  string|null  $domain
+     * @return \Symfony\Component\HttpFoundation\Cookie
+     */
+    public function forget($name, $path = null, $domain = null);
+}

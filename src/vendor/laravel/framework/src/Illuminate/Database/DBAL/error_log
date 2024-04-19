@@ -1,0 +1,4 @@
+[03-Apr-2024 18:34:02 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Types\Type" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/DBAL/TimestampType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/DBAL/TimestampType.php on line 21

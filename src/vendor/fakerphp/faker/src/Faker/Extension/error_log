@@ -1,0 +1,104 @@
+[23-Mar-2024 14:25:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/VersionExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/VersionExtension.php on line 8
+[23-Mar-2024 14:26:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/UuidExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/UuidExtension.php on line 8
+[23-Mar-2024 14:34:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PhoneNumberExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PhoneNumberExtension.php on line 8
+[23-Mar-2024 14:34:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PersonExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PersonExtension.php on line 8
+[23-Mar-2024 14:34:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/NumberExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/NumberExtension.php on line 8
+[23-Mar-2024 14:34:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/GeneratorAwareExtension.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/GeneratorAwareExtension.php on line 12
+[23-Mar-2024 14:34:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/FileExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/FileExtension.php on line 8
+[23-Mar-2024 14:34:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CountryExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CountryExtension.php on line 8
+[23-Mar-2024 14:34:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CompanyExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CompanyExtension.php on line 8
+[23-Mar-2024 14:34:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/ColorExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/ColorExtension.php on line 8
+[23-Mar-2024 14:34:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BloodExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BloodExtension.php on line 8
+[23-Mar-2024 14:35:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BarcodeExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BarcodeExtension.php on line 8
+[23-Mar-2024 14:35:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/AddressExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/AddressExtension.php on line 8
+[03-Apr-2024 13:57:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/VersionExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/VersionExtension.php on line 8
+[03-Apr-2024 13:58:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/UuidExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/UuidExtension.php on line 8
+[03-Apr-2024 13:58:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PhoneNumberExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PhoneNumberExtension.php on line 8
+[03-Apr-2024 13:58:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PersonExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/PersonExtension.php on line 8
+[03-Apr-2024 13:58:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/NumberExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/NumberExtension.php on line 8
+[03-Apr-2024 13:58:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/GeneratorAwareExtension.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/GeneratorAwareExtension.php on line 12
+[03-Apr-2024 13:58:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/FileExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/FileExtension.php on line 8
+[03-Apr-2024 13:58:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CountryExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CountryExtension.php on line 8
+[03-Apr-2024 13:58:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CompanyExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/CompanyExtension.php on line 8
+[03-Apr-2024 13:58:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/ColorExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/ColorExtension.php on line 8
+[03-Apr-2024 13:58:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BloodExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BloodExtension.php on line 8
+[03-Apr-2024 13:59:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BarcodeExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/BarcodeExtension.php on line 8
+[03-Apr-2024 13:59:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Extension\Extension" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/AddressExtension.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/fakerphp/faker/src/Faker/Extension/AddressExtension.php on line 8

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e0669a089cf74fbb3410f9174b0115179355aae742f6fad0368f55bbbcc0797
-size 452
+<?php
+
+namespace UniSharp\LaravelFilemanager\Events;
+
+class FileIsMoving
+{
+    private $old_path;
+    private $new_path;
+
+    public function __construct($old_path, $new_path)
+    {
+        $this->old_path = $old_path;
+        $this->new_path = $new_path;
+    }
+
+    /**
+     * @return string
+     */
+    public function oldPath()
+    {
+        return $this->old_path;
+    }
+
+    public function newPath()
+    {
+        return $this->new_path;
+    }
+}

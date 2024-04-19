@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ef0f211bcf00aa83efe62923e0eab865a63ef9d03cf272b81a8cb6a459d20fb
-size 611
+<?php
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+
+class FactoryCall
+{
+    /**
+     * Hamcrest standard is two spaces for each level of indentation.
+     *
+     * @var string
+     */
+    const INDENT = '    ';
+
+    /**
+     * @var FactoryMethod
+     */
+    private $method;
+
+    /**
+     * @var string
+     */
+    private $name;
+
+    public function __construct(FactoryMethod $method, $name)
+    {
+        $this->method = $method;
+        $this->name = $name;
+    }
+
+    public function getMethod()
+    {
+        return $this->method;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+}

@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f917fab59bd9a7665590b54ac4341f5649b3d7920f9851efa6cc5e8095e5bf64
-size 1349
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Util;
+
+use function trim;
+use PHPUnit\Framework\ExpectationFailedException;
+use PHPUnit\Framework\PhptAssertionFailedError;
+use PHPUnit\Framework\SelfDescribing;
+use Throwable;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ThrowableToStringMapper
+{
+    public static function map(Throwable $t): string
+    {
+        if ($t instanceof SelfDescribing) {
+            $buffer = $t->toString();
+
+            if ($t instanceof ExpectationFailedException && $t->getComparisonFailure()) {
+                $buffer .= $t->getComparisonFailure()->getDiff();
+            }
+
+            if ($t instanceof PhptAssertionFailedError) {
+                $buffer .= $t->diff();
+            }
+
+            if (!empty($buffer)) {
+                $buffer = trim($buffer) . "\n";
+            }
+
+            return $buffer;
+        }
+
+        return $t::class . ': ' . $t->getMessage() . "\n";
+    }
+}

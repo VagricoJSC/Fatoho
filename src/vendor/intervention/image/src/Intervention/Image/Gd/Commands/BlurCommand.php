@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17f85f7e5d189694a1b103d30a1b04456827189959684ab0b5fa3f71a5b535c6
-size 541
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class BlurCommand extends AbstractCommand
+{
+    /**
+     * Applies blur effect on image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $amount = $this->argument(0)->between(0, 100)->value(1);
+
+        for ($i=0; $i < intval($amount); $i++) {
+            imagefilter($image->getCore(), IMG_FILTER_GAUSSIAN_BLUR);
+        }
+
+        return true;
+    }
+}

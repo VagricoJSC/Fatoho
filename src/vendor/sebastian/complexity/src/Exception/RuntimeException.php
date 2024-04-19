@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57ecea867992b75d4e42eeab3ba5102411db35a434f8c93f52f0d2c8479284cf
-size 387
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/complexity.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Complexity;
+
+final class RuntimeException extends \RuntimeException implements Exception
+{
+}

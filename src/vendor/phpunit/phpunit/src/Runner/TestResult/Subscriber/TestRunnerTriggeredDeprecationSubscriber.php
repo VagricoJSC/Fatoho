@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de4859b9f66d1b0eca4cbf27af8e99d03e721ee31e6ced7b6869a2a4806377b2
-size 774
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\TestRunner\DeprecationTriggered;
+use PHPUnit\Event\TestRunner\DeprecationTriggeredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestRunnerTriggeredDeprecationSubscriber extends Subscriber implements DeprecationTriggeredSubscriber
+{
+    public function notify(DeprecationTriggered $event): void
+    {
+        $this->collector()->testRunnerTriggeredDeprecation($event);
+    }
+}

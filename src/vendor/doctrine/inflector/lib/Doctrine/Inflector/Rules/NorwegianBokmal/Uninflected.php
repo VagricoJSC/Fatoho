@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca5f4919ebc9a83081bbc1e84247572d1b4dc5a88551ad640aa9eeecfdf7e753
-size 612
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\Inflector\Rules\NorwegianBokmal;
+
+use Doctrine\Inflector\Rules\Pattern;
+
+final class Uninflected
+{
+    /** @return Pattern[] */
+    public static function getSingular(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    public static function getPlural(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    private static function getDefault(): iterable
+    {
+        yield new Pattern('barn');
+        yield new Pattern('fjell');
+        yield new Pattern('hus');
+    }
+}

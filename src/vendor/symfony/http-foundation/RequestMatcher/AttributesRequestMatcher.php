@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dedcb5fa5e799d379ed471dee3215f042d1011fe90dc9d5194ea33205c81fd46
-size 1132
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\RequestMatcher;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestMatcherInterface;
+
+/**
+ * Checks the Request attributes matches all regular expressions.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class AttributesRequestMatcher implements RequestMatcherInterface
+{
+    /**
+     * @param array<string, string> $regexps
+     */
+    public function __construct(private array $regexps)
+    {
+    }
+
+    public function matches(Request $request): bool
+    {
+        foreach ($this->regexps as $key => $regexp) {
+            $attribute = $request->attributes->get($key);
+            if (!\is_string($attribute)) {
+                return false;
+            }
+            if (!preg_match('{'.$regexp.'}', $attribute)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}

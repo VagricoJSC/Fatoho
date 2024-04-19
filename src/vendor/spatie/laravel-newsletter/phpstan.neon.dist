@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fd84622bf50c7b37515f40cbaa200446d2b74cbba3bdc744656ff62bd4c636a
-size 115
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 5
+    paths:
+        - src
+    tmpDir: build/phpstan

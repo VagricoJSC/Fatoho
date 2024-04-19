@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb4a70eebb79b2171033f831217c60817f7f438f90e38ca6d79e8ad6de9af425
-size 552
+<?php
+
+namespace Illuminate\Queue;
+
+use InvalidArgumentException;
+
+class InvalidPayloadException extends InvalidArgumentException
+{
+    /**
+     * Create a new exception instance.
+     *
+     * @param  string|null  $message
+     * @return void
+     */
+    public function __construct($message = null)
+    {
+        parent::__construct($message ?: json_last_error());
+    }
+}

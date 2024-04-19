@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9af71f21e573234bc3b4d9908e73df2a159107b4f895455cf4c159bc743f4336
-size 139
+View the docs at: https://flysystem.thephpleague.com/docs/  
+Changelog at: https://github.com/thephpleague/flysystem/blob/3.x/CHANGELOG.md

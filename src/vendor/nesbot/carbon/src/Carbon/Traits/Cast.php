@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ee15be5f9eec0ce08f68dd102ceb2401dc789b0dc1a5c5383fb5cc89dbae3d7
-size 1142
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Traits;
+
+use Carbon\Exceptions\InvalidCastException;
+use DateTimeInterface;
+
+/**
+ * Trait Cast.
+ *
+ * Utils to cast into an other class.
+ */
+trait Cast
+{
+    /**
+     * Cast the current instance into the given class.
+     *
+     * @param string $className The $className::instance() method will be called to cast the current object.
+     *
+     * @return DateTimeInterface
+     */
+    public function cast(string $className)
+    {
+        if (!method_exists($className, 'instance')) {
+            if (is_a($className, DateTimeInterface::class, true)) {
+                return new $className($this->rawFormat('Y-m-d H:i:s.u'), $this->getTimezone());
+            }
+
+            throw new InvalidCastException("$className has not the instance() method needed to cast the date.");
+        }
+
+        return $className::instance($this);
+    }
+}

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c334452299e7312f92d7c4468226d217219e42da22ee0c95222e22df84697da8
-size 740
+<?php
+
+namespace Illuminate\Hashing;
+
+abstract class AbstractHasher
+{
+    /**
+     * Get information about the given hashed value.
+     *
+     * @param  string  $hashedValue
+     * @return array
+     */
+    public function info($hashedValue)
+    {
+        return password_get_info($hashedValue);
+    }
+
+    /**
+     * Check the given plain value against a hash.
+     *
+     * @param  string  $value
+     * @param  string|null  $hashedValue
+     * @param  array  $options
+     * @return bool
+     */
+    public function check($value, $hashedValue, array $options = [])
+    {
+        if (is_null($hashedValue) || strlen($hashedValue) === 0) {
+            return false;
+        }
+
+        return password_verify($value, $hashedValue);
+    }
+}

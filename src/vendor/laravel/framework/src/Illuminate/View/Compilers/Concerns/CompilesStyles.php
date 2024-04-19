@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e92dd75c33db82a8df3152fc407fc9735cf431846c81ec37b1cabcb4fca238f
-size 443
+<?php
+
+namespace Illuminate\View\Compilers\Concerns;
+
+trait CompilesStyles
+{
+    /**
+     * Compile the conditional style statement into valid PHP.
+     *
+     * @param  string  $expression
+     * @return string
+     */
+    protected function compileStyle($expression)
+    {
+        $expression = is_null($expression) ? '([])' : $expression;
+
+        return "style=\"<?php echo \Illuminate\Support\Arr::toCssStyles{$expression} ?>\"";
+    }
+}

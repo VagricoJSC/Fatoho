@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37546b0ba933341070eab2af87f33d853c97c747e1eb6a9ea484a3a2d38dfc88
-size 675
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\ResultCache;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+abstract class Subscriber
+{
+    private readonly ResultCacheHandler $handler;
+
+    public function __construct(ResultCacheHandler $handler)
+    {
+        $this->handler = $handler;
+    }
+
+    protected function handler(): ResultCacheHandler
+    {
+        return $this->handler;
+    }
+}

@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb34ae79f372d25172b9bea9f89f08911cb8677e30d9e15aecb7f289ddcfcab7
-size 1097
+<?php
+
+namespace Illuminate\Validation\Rules;
+
+use Closure;
+use InvalidArgumentException;
+
+class ProhibitedIf
+{
+    /**
+     * The condition that validates the attribute.
+     *
+     * @var \Closure|bool
+     */
+    public $condition;
+
+    /**
+     * Create a new prohibited validation rule based on a condition.
+     *
+     * @param  \Closure|bool  $condition
+     * @return void
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function __construct($condition)
+    {
+        if ($condition instanceof Closure || is_bool($condition)) {
+            $this->condition = $condition;
+        } else {
+            throw new InvalidArgumentException('The provided condition must be a callable or boolean.');
+        }
+    }
+
+    /**
+     * Convert the rule to a validation string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        if (is_callable($this->condition)) {
+            return call_user_func($this->condition) ? 'prohibited' : '';
+        }
+
+        return $this->condition ? 'prohibited' : '';
+    }
+}

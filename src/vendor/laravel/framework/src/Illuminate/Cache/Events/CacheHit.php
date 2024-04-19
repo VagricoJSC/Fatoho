@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfd461cdb14b49c1e3013dfe21bc4b6996d315d83fc49a9a0f3df411a4926a0e
-size 556
+<?php
+
+namespace Illuminate\Cache\Events;
+
+class CacheHit extends CacheEvent
+{
+    /**
+     * The value that was retrieved.
+     *
+     * @var mixed
+     */
+    public $value;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $tags
+     * @return void
+     */
+    public function __construct($key, $value, array $tags = [])
+    {
+        parent::__construct($key, $tags);
+
+        $this->value = $value;
+    }
+}

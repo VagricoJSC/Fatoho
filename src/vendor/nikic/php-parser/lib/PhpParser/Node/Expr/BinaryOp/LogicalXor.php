@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa1c3a605247652e5b2cc7aef6535e0cc0df286f201df9320fecd335fd50f16a
-size 313
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class LogicalXor extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return 'xor';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_LogicalXor';
+    }
+}

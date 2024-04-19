@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4120376315d1a2ed9d6cf6bf7f6c6e5b1d43c8a8c5c128353d6ccc913a335f3b
-size 970
+<?php
+
+namespace Illuminate\Cookie\Middleware;
+
+use Closure;
+use Illuminate\Contracts\Cookie\QueueingFactory as CookieJar;
+
+class AddQueuedCookiesToResponse
+{
+    /**
+     * The cookie jar instance.
+     *
+     * @var \Illuminate\Contracts\Cookie\QueueingFactory
+     */
+    protected $cookies;
+
+    /**
+     * Create a new CookieQueue instance.
+     *
+     * @param  \Illuminate\Contracts\Cookie\QueueingFactory  $cookies
+     * @return void
+     */
+    public function __construct(CookieJar $cookies)
+    {
+        $this->cookies = $cookies;
+    }
+
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next)
+    {
+        $response = $next($request);
+
+        foreach ($this->cookies->getQueuedCookies() as $cookie) {
+            $response->headers->setCookie($cookie);
+        }
+
+        return $response;
+    }
+}

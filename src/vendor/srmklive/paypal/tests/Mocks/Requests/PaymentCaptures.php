@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bba2da3da2ef1f2c4307de823678ba9be15f408c32235f8d91a13a89235152b6
-size 401
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait PaymentCaptures
+{
+    /**
+     * @return array
+     */
+    private function mockRefundCapturedPaymentParams(): array
+    {
+        return Utils::jsonDecode('{
+  "amount": {
+    "value": "10.99",
+    "currency_code": "USD"
+  },
+  "invoice_id": "INVOICE-123",
+  "note_to_payer": "Defective product"
+}', true);
+    }
+}

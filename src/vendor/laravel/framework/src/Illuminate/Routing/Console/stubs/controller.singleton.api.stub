@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3288b94debf37d220da270dd94fd8eaf0dbf517545829c560f89c118541acae3
-size 656
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    /**
+     * Store the newly created resource in storage.
+     */
+    public function store(Request $request): never
+    {
+        abort(404);
+    }
+
+    /**
+     * Display the resource.
+     */
+    public function show()
+    {
+        //
+    }
+
+    /**
+     * Update the resource in storage.
+     */
+    public function update(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Remove the resource from storage.
+     */
+    public function destroy(): never
+    {
+        abort(404);
+    }
+}

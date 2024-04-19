@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:546a1b572a63b6c016b8b640eae7ac50a76f3b6716820e3586b9a2fe4483e134
-size 892
+<?php
+
+namespace Illuminate\Testing\Exceptions;
+
+use PHPUnit\Framework\Exception;
+
+class InvalidArgumentException extends Exception
+{
+    /**
+     * Creates a new exception for an invalid argument.
+     *
+     * @return static
+     */
+    public static function create(int $argument, string $type): static
+    {
+        $stack = debug_backtrace();
+
+        $function = $stack[1]['function'];
+
+        if (isset($stack[1]['class'])) {
+            $function = sprintf('%s::%s', $stack[1]['class'], $stack[1]['function']);
+        }
+
+        return new static(
+            sprintf(
+                'Argument #%d of %s() must be %s %s',
+                $argument,
+                $function,
+                in_array(lcfirst($type)[0], ['a', 'e', 'i', 'o', 'u'], true) ? 'an' : 'a',
+                $type
+            )
+        );
+    }
+}

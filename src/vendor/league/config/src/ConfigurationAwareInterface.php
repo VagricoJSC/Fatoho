@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8006fa66e80cad4e5a3585e5a3ac377e7a0407e4d69c1c2ae5c355f80c1db41
-size 516
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/config package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\Config;
+
+/**
+ * Implement this class to facilitate setter injection of the configuration where needed
+ */
+interface ConfigurationAwareInterface
+{
+    public function setConfiguration(ConfigurationInterface $configuration): void;
+}

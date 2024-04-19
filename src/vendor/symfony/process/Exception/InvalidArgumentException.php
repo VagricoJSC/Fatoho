@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:804a50e6fddbd347ef2e58ce1e517bb9b5c0e6e85f3e180aa737a309efa275eb
-size 496
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Process\Exception;
+
+/**
+ * InvalidArgumentException for the Process Component.
+ *
+ * @author Romain Neutron <imprec@gmail.com>
+ */
+class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

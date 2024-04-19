@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d65490011bf9a9ba1482b1248ea62125d8a84cca76d03ed7f812dfb4c7d28193
-size 359
+<?php
+
+namespace Faker\Provider\ne_NP;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '01-4######',
+        '01-5######',
+        '01-6######',
+        '9841######',
+        '9849######',
+        '98510#####',
+        '9803######',
+        '9808######',
+        '9813######',
+        '9818######',
+    ];
+}

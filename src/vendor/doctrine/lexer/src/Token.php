@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9054689fc602d02802b991bc8d8ad5c212cd4542a053885c1be8f0813672952e
-size 1021
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\Common\Lexer;
+
+use UnitEnum;
+
+use function in_array;
+
+/**
+ * @template T of UnitEnum|string|int
+ * @template V of string|int
+ */
+final class Token
+{
+    /**
+     * The string value of the token in the input string
+     *
+     * @readonly
+     * @var V
+     */
+    public string|int $value;
+
+    /**
+     * The type of the token (identifier, numeric, string, input parameter, none)
+     *
+     * @readonly
+     * @var T|null
+     */
+    public $type;
+
+    /**
+     * The position of the token in the input string
+     *
+     * @readonly
+     */
+    public int $position;
+
+    /**
+     * @param V      $value
+     * @param T|null $type
+     */
+    public function __construct(string|int $value, $type, int $position)
+    {
+        $this->value    = $value;
+        $this->type     = $type;
+        $this->position = $position;
+    }
+
+    /** @param T ...$types */
+    public function isA(...$types): bool
+    {
+        return in_array($this->type, $types, true);
+    }
+}

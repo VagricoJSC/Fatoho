@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5776c7f3d35cb921c5534cceddbd966aabe50dd3657a60f6ab7896153e8973c3
-size 235
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class ShiftRight extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_ShiftRight';
+    }
+}

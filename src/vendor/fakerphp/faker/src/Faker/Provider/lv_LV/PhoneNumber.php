@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41883893aec999ac439c8013a409af2ed334027e8ffe9a6571b826831d08ff75
-size 295
+<?php
+
+namespace Faker\Provider\lv_LV;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    /**
+     * {@link} https://en.wikipedia.org/wiki/Telephone_numbers_in_Latvia
+     */
+    protected static $formats = [
+        '########',
+        '## ### ###',
+        '+371 ########',
+    ];
+}

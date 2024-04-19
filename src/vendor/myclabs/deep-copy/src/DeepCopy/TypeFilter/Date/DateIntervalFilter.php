@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6cfc6b4cbfe1ec1f6dfde272e4715274dde137fb5c125721d2bda5403d5fac0
-size 639
+<?php
+
+namespace DeepCopy\TypeFilter\Date;
+
+use DateInterval;
+use DeepCopy\TypeFilter\TypeFilter;
+
+/**
+ * @final
+ *
+ * @deprecated Will be removed in 2.0. This filter will no longer be necessary in PHP 7.1+.
+ */
+class DateIntervalFilter implements TypeFilter
+{
+
+    /**
+     * {@inheritdoc}
+     *
+     * @param DateInterval $element
+     *
+     * @see http://news.php.net/php.bugs/205076
+     */
+    public function apply($element)
+    {
+        $copy = new DateInterval('P0D');
+
+        foreach ($element as $propertyName => $propertyValue) {
+            $copy->{$propertyName} = $propertyValue;
+        }
+
+        return $copy;
+    }
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:022c01f9b0e0503404aacf2043949f69bb81144ad59750b23a5d47589fc2789e
-size 617
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Steve Hutchins <hutchinsteve@gmail.com>
+ */
+class UnprocessableEntityHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(422, $message, $previous, $headers, $code);
+    }
+}

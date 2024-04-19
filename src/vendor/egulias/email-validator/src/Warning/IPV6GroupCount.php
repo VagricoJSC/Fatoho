@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:390ceabdf43ccd191a8b41dd9972520f1d0fd4781a40e01562da5b5249fdeb33
-size 257
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class IPV6GroupCount extends Warning
+{
+    public const CODE = 72;
+
+    public function __construct()
+    {
+        $this->message = 'Group count is not IPV6 valid';
+        $this->rfcNumber = 5322;
+    }
+}

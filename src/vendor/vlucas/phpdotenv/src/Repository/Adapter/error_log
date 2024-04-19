@@ -1,0 +1,88 @@
+[23-Mar-2024 11:36:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php on line 10
+[23-Mar-2024 11:36:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php on line 7
+[23-Mar-2024 11:36:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php on line 11
+[23-Mar-2024 11:36:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php on line 7
+[23-Mar-2024 11:36:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php on line 9
+[23-Mar-2024 11:36:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php on line 7
+[23-Mar-2024 11:36:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php on line 7
+[23-Mar-2024 11:36:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php on line 10
+[23-Mar-2024 11:36:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php on line 10
+[23-Mar-2024 11:36:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php on line 11
+[23-Mar-2024 11:36:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php on line 7
+[01-Apr-2024 15:55:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php on line 10
+[01-Apr-2024 15:55:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php on line 7
+[01-Apr-2024 15:55:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php on line 11
+[01-Apr-2024 15:55:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php on line 7
+[01-Apr-2024 15:55:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php on line 9
+[01-Apr-2024 15:55:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php on line 7
+[01-Apr-2024 15:55:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php on line 7
+[01-Apr-2024 15:55:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php on line 10
+[01-Apr-2024 15:55:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php on line 10
+[01-Apr-2024 15:55:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php on line 11
+[01-Apr-2024 15:56:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php on line 7

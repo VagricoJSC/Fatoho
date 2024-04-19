@@ -1,0 +1,64 @@
+[22-Mar-2024 23:43:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\LogicException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php on line 20
+[22-Mar-2024 23:44:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php on line 17
+[22-Mar-2024 23:44:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportException.php on line 17
+[22-Mar-2024 23:44:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/RuntimeException.php on line 17
+[22-Mar-2024 23:44:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/LogicException.php on line 17
+[22-Mar-2024 23:44:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php on line 17
+[22-Mar-2024 23:44:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php on line 17
+[22-Mar-2024 23:44:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/HttpTransportException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/HttpTransportException.php on line 19
+[03-Apr-2024 07:32:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/LogicException.php on line 17
+[03-Apr-2024 08:14:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\LogicException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php on line 20
+[03-Apr-2024 08:14:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php on line 17
+[03-Apr-2024 08:14:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\RuntimeException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/TransportException.php on line 17
+[03-Apr-2024 08:14:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/RuntimeException.php on line 17
+[03-Apr-2024 08:14:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php on line 17
+[03-Apr-2024 08:14:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\InvalidArgumentException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php on line 17
+[03-Apr-2024 08:14:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/HttpTransportException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Exception/HttpTransportException.php on line 19

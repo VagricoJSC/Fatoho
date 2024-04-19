@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a51d087409091b14dfbbf062501d33e2ae9ebd87894d6ceb58654f4f43f1e8c
-size 656
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Extension\FrontMatter\Exception;
+
+class InvalidFrontMatterException extends \RuntimeException
+{
+    public static function wrap(\Throwable $t): self
+    {
+        return new InvalidFrontMatterException('Failed to parse front matter: ' . $t->getMessage(), 0, $t);
+    }
+}

@@ -1,0 +1,16 @@
+[23-Mar-2024 16:34:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\TimeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/SystemTimeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/SystemTimeProvider.php on line 25
+[23-Mar-2024 16:34:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\TimeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/FixedTimeProvider.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/FixedTimeProvider.php on line 27
+[01-Apr-2024 14:16:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\TimeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/SystemTimeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/SystemTimeProvider.php on line 25
+[01-Apr-2024 14:16:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\TimeProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/FixedTimeProvider.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/uuid/src/Provider/Time/FixedTimeProvider.php on line 27

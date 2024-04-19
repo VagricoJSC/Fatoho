@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24cd5c45598f43bbaf42b0ec797298289b6add234df9d9ab93938786ac151dd0
-size 983
+<?php
+
+namespace Spatie\Newsletter\Facades;
+
+use DrewM\MailChimp\MailChimp;
+use Illuminate\Support\Facades\Facade;
+use Spatie\MailcoachSdk\Mailcoach;
+
+/**
+ * Newsletter Facade
+ *
+ * @method static array|bool subscribe(string $email, array $mergeFields = [], string $listName = '', array $options = [])
+ * @method static array|bool subscribeOrUpdate(string $email, array $mergeFields = [], string $listName = '', array $options = [])
+ * @method static array|bool getMember(string $email, string $listName = '')
+ * @method static bool hasMember(string $email, string $listName = '')
+ * @method static bool isSubscribed(string $email, string $listName = '')
+ * @method static array|bool unsubscribe(string $email, string $listName = '')
+ * @method static array|bool delete(string $email, string $listName = '')
+ * @method static Mailcoach|MailChimp getApi()
+ */
+class Newsletter extends Facade
+{
+    public static function getFacadeAccessor()
+    {
+        return 'newsletter';
+    }
+}

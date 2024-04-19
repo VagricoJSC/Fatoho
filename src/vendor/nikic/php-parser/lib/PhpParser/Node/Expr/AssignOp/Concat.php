@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26a76e3a13a7c2dc0518033a942f601b03b6e9505c800ee1536d5b93ce5d1915
-size 227
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class Concat extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_Concat';
+    }
+}

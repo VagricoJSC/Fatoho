@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6cd43e6c4c8334f8477b3ddf04565c9b7ae80c9946eb4b8d971fbbcb772d50c
-size 1179
+<?php
+
+namespace Illuminate\Console\Scheduling;
+
+use Illuminate\Console\Command;
+
+class ScheduleClearCacheCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'schedule:clear-cache';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Delete the cached mutex files created by scheduler';
+
+    /**
+     * Execute the console command.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    public function handle(Schedule $schedule)
+    {
+        $mutexCleared = false;
+
+        foreach ($schedule->events($this->laravel) as $event) {
+            if ($event->mutex->exists($event)) {
+                $this->components->info(sprintf('Deleting mutex for [%s]', $event->command));
+
+                $event->mutex->forget($event);
+
+                $mutexCleared = true;
+            }
+        }
+
+        if (! $mutexCleared) {
+            $this->components->info('No mutex files were found.');
+        }
+    }
+}

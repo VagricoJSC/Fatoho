@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd7c5630c47958f8672fcf8f9f2e68d1fee80c60cfb0d1ab3d1bde999229d581
-size 615
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Driver;
+
+use RuntimeException;
+use SebastianBergmann\CodeCoverage\Exception;
+
+final class XdebugNotEnabledException extends RuntimeException implements Exception
+{
+    public function __construct()
+    {
+        parent::__construct('XDEBUG_MODE=coverage or xdebug.mode=coverage has to be set');
+    }
+}

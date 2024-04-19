@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1ae14656d6bdf6a19a16c7a6a6a19b768218ad9c8d1b12136141e6935c45a7a
-size 799
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use function assert;
+use DOMDocument;
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class RemoveNoInteractionAttribute implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $root = $document->documentElement;
+
+        assert($root instanceof DOMElement);
+
+        if ($root->hasAttribute('noInteraction')) {
+            $root->removeAttribute('noInteraction');
+        }
+    }
+}

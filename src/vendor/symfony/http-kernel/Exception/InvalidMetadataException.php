@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59fc3d67c8533b0d3d40cda0e2758dbe600a911d55ebfe1dc281fd85c6aa9b22
-size 348
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+class InvalidMetadataException extends \LogicException
+{
+}

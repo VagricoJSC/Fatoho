@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df842957ff3e84452e379bd1381311422b99e7a84e9e57ef15cb5b7ed5d66c0b
-size 847
+<?php
+
+namespace Illuminate\Foundation\Bootstrap;
+
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Http\Request;
+
+class SetRequestForConsole
+{
+    /**
+     * Bootstrap the given application.
+     *
+     * @param  \Illuminate\Contracts\Foundation\Application  $app
+     * @return void
+     */
+    public function bootstrap(Application $app)
+    {
+        $uri = $app->make('config')->get('app.url', 'http://localhost');
+
+        $components = parse_url($uri);
+
+        $server = $_SERVER;
+
+        if (isset($components['path'])) {
+            $server = array_merge($server, [
+                'SCRIPT_FILENAME' => $components['path'],
+                'SCRIPT_NAME' => $components['path'],
+            ]);
+        }
+
+        $app->instance('request', Request::create(
+            $uri, 'GET', [], [], [], $server
+        ));
+    }
+}

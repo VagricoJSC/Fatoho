@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4551c2ec67f49ed1f99b33f714085da1007667357fc501f7717d0d2a3ee6847
-size 1361
+<?php
+
+namespace Illuminate\Contracts\Mail;
+
+interface Mailer
+{
+    /**
+     * Begin the process of mailing a mailable class instance.
+     *
+     * @param  mixed  $users
+     * @return \Illuminate\Mail\PendingMail
+     */
+    public function to($users);
+
+    /**
+     * Begin the process of mailing a mailable class instance.
+     *
+     * @param  mixed  $users
+     * @return \Illuminate\Mail\PendingMail
+     */
+    public function bcc($users);
+
+    /**
+     * Send a new message with only a raw text part.
+     *
+     * @param  string  $text
+     * @param  mixed  $callback
+     * @return \Illuminate\Mail\SentMessage|null
+     */
+    public function raw($text, $callback);
+
+    /**
+     * Send a new message using a view.
+     *
+     * @param  \Illuminate\Contracts\Mail\Mailable|string|array  $view
+     * @param  array  $data
+     * @param  \Closure|string|null  $callback
+     * @return \Illuminate\Mail\SentMessage|null
+     */
+    public function send($view, array $data = [], $callback = null);
+}

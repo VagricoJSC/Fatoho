@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b761ff1c1313e7431be9ee9a72052734309fbde439e9620d5d553c63666b1391
-size 477
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Output\OutputInterface;
+
+class Error extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $string
+     * @param  int  $verbosity
+     * @return void
+     */
+    public function render($string, $verbosity = OutputInterface::VERBOSITY_NORMAL)
+    {
+        with(new Line($this->output))->render('error', $string, $verbosity);
+    }
+}

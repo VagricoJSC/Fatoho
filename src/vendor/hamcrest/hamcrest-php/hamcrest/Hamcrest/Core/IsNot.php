@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db12e15d79dac3414f923a3b700908f41d976a535c23c8e9b78d35b354de9802
-size 826
+<?php
+namespace Hamcrest\Core;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+use Hamcrest\BaseMatcher;
+use Hamcrest\Description;
+use Hamcrest\Matcher;
+use Hamcrest\Util;
+
+/**
+ * Calculates the logical negation of a matcher.
+ */
+class IsNot extends BaseMatcher
+{
+
+    private $_matcher;
+
+    public function __construct(Matcher $matcher)
+    {
+        $this->_matcher = $matcher;
+    }
+
+    public function matches($arg)
+    {
+        return !$this->_matcher->matches($arg);
+    }
+
+    public function describeTo(Description $description)
+    {
+        $description->appendText('not ')->appendDescriptionOf($this->_matcher);
+    }
+
+    /**
+     * Matches if value does not match $value.
+     *
+     * @factory
+     */
+    public static function not($value)
+    {
+        return new self(Util::wrapValueWithIsEqual($value));
+    }
+}

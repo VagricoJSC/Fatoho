@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23a7da9fb929e2a2a6fd26591bfaf1fca0d37c4ffb0575cb13c136440fa81a12
-size 695
+<?php
+
+namespace Illuminate\Foundation\Providers;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\Composer;
+use Illuminate\Support\ServiceProvider;
+
+class ComposerServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('composer', function ($app) {
+            return new Composer($app['files'], $app->basePath());
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['composer'];
+    }
+}

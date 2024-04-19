@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fefcef3b90dc4a4c334ea626040d0cb26082bbdf69a3916efe6226b7d9b2cb8
-size 452
+<?php
+
+namespace Spatie\LaravelIgnition\Recorders\DumpRecorder;
+
+use Symfony\Component\VarDumper\Cloner\VarCloner;
+
+class DumpHandler
+{
+    protected DumpRecorder $dumpRecorder;
+
+    public function __construct(DumpRecorder $dumpRecorder)
+    {
+        $this->dumpRecorder = $dumpRecorder;
+    }
+
+    public function dump(mixed $value): void
+    {
+        $data = (new VarCloner)->cloneVar($value);
+
+        $this->dumpRecorder->record($data);
+    }
+}

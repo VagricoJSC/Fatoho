@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e96e911b391e01cde8f93f7142fda7552b9b934c07d7d06e189489748f1fdfa
-size 810
+<?php
+namespace Hamcrest\Text;
+
+/*
+ Copyright (c) 2010 hamcrest.org
+ */
+
+/**
+ * Tests if the argument is a string that contains a substring ignoring case.
+ */
+class StringContainsIgnoringCase extends SubstringMatcher
+{
+
+    public function __construct($substring)
+    {
+        parent::__construct($substring);
+    }
+
+    /**
+     * Matches if value is a string that contains $substring regardless of the case.
+     *
+     * @factory
+     */
+    public static function containsStringIgnoringCase($substring)
+    {
+        return new self($substring);
+    }
+
+    // -- Protected Methods
+
+    protected function evalSubstringOf($item)
+    {
+        return (false !== stripos((string) $item, $this->_substring));
+    }
+
+    protected function relationship()
+    {
+        return 'containing in any case';
+    }
+}

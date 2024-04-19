@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c39255abf7b091ae993e9069dddf77f04b3b3c51297dcd5232910ffe5c10097
-size 462
+<?php
+
+namespace Illuminate\Http\Client\Events;
+
+use Illuminate\Http\Client\Request;
+
+class RequestSending
+{
+    /**
+     * The request instance.
+     *
+     * @var \Illuminate\Http\Client\Request
+     */
+    public $request;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Http\Client\Request  $request
+     * @return void
+     */
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+}

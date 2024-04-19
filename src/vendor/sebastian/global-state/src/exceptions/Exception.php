@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92b98cb7a138505331a9dea30739537a96ace86f59e4bb646c9266b6485d0bbf
-size 368
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/global-state.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\GlobalState;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

@@ -1,0 +1,8 @@
+[23-Mar-2024 16:35:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Inspector\InspectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Exception/Inspector.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Exception/Inspector.php on line 13
+[01-Apr-2024 14:14:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Inspector\InspectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Exception/Inspector.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Exception/Inspector.php on line 13

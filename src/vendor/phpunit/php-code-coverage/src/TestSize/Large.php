@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6dfc2228dd16ba308b9fb693712d3147c875679175817e29cebca6ef1061e89
-size 699
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\Test\TestSize;
+
+/**
+ * @psalm-immutable
+ */
+final class Large extends Known
+{
+    /**
+     * @psalm-assert-if-true Large $this
+     */
+    public function isLarge(): bool
+    {
+        return true;
+    }
+
+    public function isGreaterThan(TestSize $other): bool
+    {
+        return !$other->isLarge();
+    }
+
+    public function asString(): string
+    {
+        return 'large';
+    }
+}

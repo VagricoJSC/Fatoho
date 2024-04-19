@@ -1,0 +1,48 @@
+[22-Mar-2024 20:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php on line 33
+[22-Mar-2024 20:16:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php on line 25
+[22-Mar-2024 20:16:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php on line 26
+[22-Mar-2024 20:16:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php on line 29
+[22-Mar-2024 21:09:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php on line 26
+[22-Mar-2024 21:09:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php on line 33
+[22-Mar-2024 21:09:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php on line 29
+[22-Mar-2024 21:09:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php on line 25
+[01-Apr-2024 09:32:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/UnicodeString.php on line 33
+[01-Apr-2024 09:33:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/ByteString.php on line 26
+[01-Apr-2024 09:59:14 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractUnicodeString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/CodePointString.php on line 25
+[01-Apr-2024 10:27:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\String\AbstractString" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/string/AbstractUnicodeString.php on line 29

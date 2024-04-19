@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:948c16d41ce9ad4e8d65386f62a09282f744ad883e45c92dc7c956ebc7283a58
-size 73
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class DeclareDeclare extends Node\Stmt
+{
+    /** @var Node\Identifier Key */
+    public $key;
+    /** @var Node\Expr Value */
+    public $value;
+
+    /**
+     * Constructs a declare key=>value pair node.
+     *
+     * @param string|Node\Identifier $key        Key
+     * @param Node\Expr              $value      Value
+     * @param array                  $attributes Additional attributes
+     */
+    public function __construct($key, Node\Expr $value, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->key = \is_string($key) ? new Node\Identifier($key) : $key;
+        $this->value = $value;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['key', 'value'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_DeclareDeclare';
+    }
+}

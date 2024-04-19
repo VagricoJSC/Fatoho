@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:181998724ced5dabe322258bf2920434600789de43370fbe4f0f22639e52877a
-size 649
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class DoesNotPerformAssertions extends Metadata
+{
+    public function isDoesNotPerformAssertions(): bool
+    {
+        return true;
+    }
+}

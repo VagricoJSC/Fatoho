@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b32674ef9c0bf6c4f2e95daa32bb146b266650eaa26746a4664948284cb083e
-size 769
+<?php
+namespace Hamcrest\Core;
+
+class IsIdenticalTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Core\IsIdentical::identicalTo('irrelevant');
+    }
+
+    public function testEvaluatesToTrueIfArgumentIsReferenceToASpecifiedObject()
+    {
+        $o1 = new \stdClass();
+        $o2 = new \stdClass();
+
+        assertThat($o1, identicalTo($o1));
+        assertThat($o2, not(identicalTo($o1)));
+    }
+
+    public function testReturnsReadableDescriptionFromToString()
+    {
+        $this->assertDescription('"ARG"', identicalTo('ARG'));
+    }
+
+    public function testReturnsReadableDescriptionFromToStringWhenInitialisedWithNull()
+    {
+        $this->assertDescription('null', identicalTo(null));
+    }
+}

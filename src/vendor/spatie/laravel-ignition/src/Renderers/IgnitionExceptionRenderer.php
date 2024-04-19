@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f71dad146997ea222d3a1e6cba675c2b6cdaf9c33964aadd94af2234ffc6c0ef
-size 517
+<?php
+
+namespace Spatie\LaravelIgnition\Renderers;
+
+use Illuminate\Contracts\Foundation\ExceptionRenderer;
+
+class IgnitionExceptionRenderer implements ExceptionRenderer
+{
+    protected ErrorPageRenderer $errorPageHandler;
+
+    public function __construct(ErrorPageRenderer $errorPageHandler)
+    {
+        $this->errorPageHandler = $errorPageHandler;
+    }
+
+    public function render($throwable)
+    {
+        ob_start();
+
+        $this->errorPageHandler->render($throwable);
+
+        return ob_get_clean();
+    }
+}

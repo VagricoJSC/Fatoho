@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98b03ac545f2a86882c6ddcf5eab910e58a97349d79c0f772f47c5718f2b3a36
-size 534
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\TestSuite;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface SkippedSubscriber extends Subscriber
+{
+    public function notify(Skipped $event): void;
+}

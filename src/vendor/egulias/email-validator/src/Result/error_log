@@ -1,0 +1,16 @@
+[26-Mar-2024 23:54:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Result" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/ValidEmail.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/ValidEmail.php on line 5
+[26-Mar-2024 23:54:55 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\InvalidEmail" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/SpoofEmail.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/SpoofEmail.php on line 6
+[26-Mar-2024 23:55:03 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\InvalidEmail" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/MultipleErrors.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/MultipleErrors.php on line 11
+[26-Mar-2024 23:55:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Result" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/InvalidEmail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Result/InvalidEmail.php on line 7

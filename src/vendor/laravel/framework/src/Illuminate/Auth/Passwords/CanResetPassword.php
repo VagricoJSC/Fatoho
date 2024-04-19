@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc516a6d3b22f41faa840ab740bf2e6893fd5e3667732da5e6f2fd2b3165dd0f
-size 602
+<?php
+
+namespace Illuminate\Auth\Passwords;
+
+use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;
+
+trait CanResetPassword
+{
+    /**
+     * Get the e-mail address where password reset links are sent.
+     *
+     * @return string
+     */
+    public function getEmailForPasswordReset()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:168ea43c777d2afed4d7c794132cf1d31271f7bf0bfbc72cde388f825f5cf6d8
-size 498
+<?php
+
+namespace Illuminate\Broadcasting;
+
+use Illuminate\Contracts\Broadcasting\HasBroadcastChannel;
+
+class PrivateChannel extends Channel
+{
+    /**
+     * Create a new channel instance.
+     *
+     * @param  \Illuminate\Contracts\Broadcasting\HasBroadcastChannel|string  $name
+     * @return void
+     */
+    public function __construct($name)
+    {
+        $name = $name instanceof HasBroadcastChannel ? $name->broadcastChannel() : $name;
+
+        parent::__construct('private-'.$name);
+    }
+}

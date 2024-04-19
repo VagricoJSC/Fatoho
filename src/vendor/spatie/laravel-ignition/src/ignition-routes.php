@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16ad7a41fe61e101187b3bd1297d7f269ddb693a2a6ea43a3618bcd7405d345b
-size 779
+<?php
+
+use Illuminate\Support\Facades\Route;
+use Spatie\LaravelIgnition\Http\Controllers\ExecuteSolutionController;
+use Spatie\LaravelIgnition\Http\Controllers\HealthCheckController;
+use Spatie\LaravelIgnition\Http\Controllers\UpdateConfigController;
+use Spatie\LaravelIgnition\Http\Middleware\RunnableSolutionsEnabled;
+
+Route::group([
+    'as' => 'ignition.',
+    'prefix' => config('ignition.housekeeping_endpoint_prefix'),
+    'middleware' => [RunnableSolutionsEnabled::class],
+], function () {
+    Route::get('health-check', HealthCheckController::class)->name('healthCheck');
+
+    Route::post('execute-solution', ExecuteSolutionController::class)
+        ->name('executeSolution');
+
+    Route::post('update-config', UpdateConfigController::class)->name('updateConfig');
+});

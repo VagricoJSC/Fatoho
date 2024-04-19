@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c338d6c88fb58603c137110a1ae7aa2020ea24a9c2aa581bb745d140173ea59c
-size 92
+/build
+/vendor
+/composer.lock
+/coverage.xml
+/.phpunit.result.cache
+/.php_cs.cache
+.DS_Store

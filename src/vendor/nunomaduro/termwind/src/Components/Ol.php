@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3547dc5635174b732290a9b3e8ddd8e66c13f60e9220ca4d45bbccc77351c87
-size 171
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Components;
+
+final class Ol extends Element
+{
+    protected static array $defaultStyles = ['block', 'list-decimal'];
+}

@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0bb6f371000c9ca66d7e61b9832f26363a053adbf0a5a3a87da5ab98357c5c9
-size 1567
+<?php
+
+namespace Illuminate\Foundation\Exceptions;
+
+use Illuminate\Support\Traits\ReflectsClosures;
+use Throwable;
+
+class ReportableHandler
+{
+    use ReflectsClosures;
+
+    /**
+     * The underlying callback.
+     *
+     * @var callable
+     */
+    protected $callback;
+
+    /**
+     * Indicates if reporting should stop after invoking this handler.
+     *
+     * @var bool
+     */
+    protected $shouldStop = false;
+
+    /**
+     * Create a new reportable handler instance.
+     *
+     * @param  callable  $callback
+     * @return void
+     */
+    public function __construct(callable $callback)
+    {
+        $this->callback = $callback;
+    }
+
+    /**
+     * Invoke the handler.
+     *
+     * @param  \Throwable  $e
+     * @return bool
+     */
+    public function __invoke(Throwable $e)
+    {
+        $result = call_user_func($this->callback, $e);
+
+        if ($result === false) {
+            return false;
+        }
+
+        return ! $this->shouldStop;
+    }
+
+    /**
+     * Determine if the callback handles the given exception.
+     *
+     * @param  \Throwable  $e
+     * @return bool
+     */
+    public function handles(Throwable $e)
+    {
+        foreach ($this->firstClosureParameterTypes($this->callback) as $type) {
+            if (is_a($e, $type)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Indicate that report handling should stop after invoking this callback.
+     *
+     * @return $this
+     */
+    public function stop()
+    {
+        $this->shouldStop = true;
+
+        return $this;
+    }
+}

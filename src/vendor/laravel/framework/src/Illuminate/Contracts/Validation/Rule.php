@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5aefe93c1545bdf1c63894d88d39dafa6149fff38da47e145cad154bcf9a545
-size 438
+<?php
+
+namespace Illuminate\Contracts\Validation;
+
+/**
+ * @deprecated see ValidationRule
+ */
+interface Rule
+{
+    /**
+     * Determine if the validation rule passes.
+     *
+     * @param  string  $attribute
+     * @param  mixed  $value
+     * @return bool
+     */
+    public function passes($attribute, $value);
+
+    /**
+     * Get the validation error message.
+     *
+     * @return string|array
+     */
+    public function message();
+}

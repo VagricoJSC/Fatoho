@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0d1c6ef91155e54d220d12ce09b3d430d12d093cd214ec29d8df780a182a712
-size 623
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * Original code based on the CommonMark JS reference parser (https://bitly.com/commonmark-js)
+ *  - (c) John MacFarlane
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Reference;
+
+/**
+ * Link reference
+ */
+interface ReferenceInterface
+{
+    public function getLabel(): string;
+
+    public function getDestination(): string;
+
+    public function getTitle(): string;
+}

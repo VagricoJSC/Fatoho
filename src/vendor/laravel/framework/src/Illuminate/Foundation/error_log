@@ -1,0 +1,17 @@
+[03-Apr-2024 16:11:56 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php on line 12
+[03-Apr-2024 16:12:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Manager" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/MaintenanceModeManager.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/MaintenanceModeManager.php on line 7
+[03-Apr-2024 16:12:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Container\Container" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 32
+[03-Apr-2024 17:08:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Foundation\MaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/FileBasedMaintenanceMode.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/FileBasedMaintenanceMode.php on line 7
+[03-Apr-2024 17:08:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Foundation\MaintenanceMode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/CacheBasedMaintenanceMode.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/CacheBasedMaintenanceMode.php on line 9

@@ -1,0 +1,32 @@
+[23-Mar-2024 04:26:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php on line 9
+[23-Mar-2024 04:26:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php on line 9
+[23-Mar-2024 04:26:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php on line 9
+[23-Mar-2024 04:26:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php on line 9
+[01-Apr-2024 12:54:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php on line 9
+[01-Apr-2024 12:55:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php on line 9
+[01-Apr-2024 12:55:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php on line 9
+[01-Apr-2024 12:55:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Exception\ExceptionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php on line 9

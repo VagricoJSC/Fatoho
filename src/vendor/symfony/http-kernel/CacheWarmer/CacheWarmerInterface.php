@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48f629a4dfa6ffb2e0f100c95b142944461f3663f00aea26c709c03e8bc0ce1f
-size 751
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\CacheWarmer;
+
+/**
+ * Interface for classes able to warm up the cache.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface CacheWarmerInterface extends WarmableInterface
+{
+    /**
+     * Checks whether this warmer is optional or not.
+     *
+     * Optional warmers can be ignored on certain conditions.
+     *
+     * A warmer should return true if the cache can be
+     * generated incrementally and on-demand.
+     *
+     * @return bool
+     */
+    public function isOptional();
+}

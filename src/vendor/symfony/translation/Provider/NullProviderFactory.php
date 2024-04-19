@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eea594054f2d4382921213fef526f5059ae1842b82954a5cbe01d4d214a2ddf
-size 843
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Provider;
+
+use Symfony\Component\Translation\Exception\UnsupportedSchemeException;
+
+/**
+ * @author Mathieu Santostefano <msantostefano@protonmail.com>
+ */
+final class NullProviderFactory extends AbstractProviderFactory
+{
+    public function create(Dsn $dsn): ProviderInterface
+    {
+        if ('null' === $dsn->getScheme()) {
+            return new NullProvider();
+        }
+
+        throw new UnsupportedSchemeException($dsn, 'null', $this->getSupportedSchemes());
+    }
+
+    protected function getSupportedSchemes(): array
+    {
+        return ['null'];
+    }
+}

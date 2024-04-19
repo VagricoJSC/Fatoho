@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62fe6006804bb52718aa21f1da29d873a1298658a2a9364aa97b18f8651a462d
-size 267
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class IPV6ColonEnd extends Warning
+{
+    public const CODE = 77;
+
+    public function __construct()
+    {
+        $this->message = ':: found at the end of the domain literal';
+        $this->rfcNumber = 5322;
+    }
+}

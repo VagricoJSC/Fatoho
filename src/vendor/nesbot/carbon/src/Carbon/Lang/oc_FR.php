@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:243a1260516ae40a451eb81801e3db581076d60819e4afd36c4cc989feb411a7
-size 267
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return require __DIR__.'/oc.php';

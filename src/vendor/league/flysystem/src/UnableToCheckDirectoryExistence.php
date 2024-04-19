@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9738506e1fc6e06b271a1c13a5f4ce9fbce286a1e5f51b73258e487ec76de491
-size 257
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+class UnableToCheckDirectoryExistence extends UnableToCheckExistence
+{
+    public function operation(): string
+    {
+        return FilesystemOperationFailed::OPERATION_DIRECTORY_EXISTS;
+    }
+}

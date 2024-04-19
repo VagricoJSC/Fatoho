@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf2389722bcdc2e81cbed1415881db3446b8f603c9731b3ad26530ca8cdfb901
-size 331
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Foundation\Bus\Dispatchable;
+
+class {{ class }}
+{
+    use Dispatchable;
+
+    /**
+     * Create a new job instance.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Execute the job.
+     */
+    public function handle(): void
+    {
+        //
+    }
+}

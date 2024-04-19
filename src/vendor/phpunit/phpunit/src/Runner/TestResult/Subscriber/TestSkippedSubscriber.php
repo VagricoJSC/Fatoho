@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52dc862b6b19ac29354ed7366c394a0b591086441fe01f2884b03e95a221a0e2
-size 672
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\Skipped;
+use PHPUnit\Event\Test\SkippedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestSkippedSubscriber extends Subscriber implements SkippedSubscriber
+{
+    public function notify(Skipped $event): void
+    {
+        $this->collector()->testSkipped($event);
+    }
+}

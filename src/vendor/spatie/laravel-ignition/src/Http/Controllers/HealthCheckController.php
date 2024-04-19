@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:155646b54863bebca2d2355b1ed78e8ff39a4470ab6a83403df21dd7943c819c
-size 503
+<?php
+
+namespace Spatie\LaravelIgnition\Http\Controllers;
+
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Str;
+
+class HealthCheckController
+{
+    public function __invoke()
+    {
+        return [
+            'can_execute_commands' => $this->canExecuteCommands(),
+        ];
+    }
+
+    protected function canExecuteCommands(): bool
+    {
+        Artisan::call('help', ['--version']);
+
+        $output = Artisan::output();
+
+        return Str::contains($output, app()->version());
+    }
+}

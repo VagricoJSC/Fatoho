@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efc0d2b713ff72df786cbc3b5a8a642b43e52d019570c68d1e4b9ae167b0ed77
-size 635
+<?php
+
+namespace Illuminate\Contracts\Auth;
+
+interface SupportsBasicAuth
+{
+    /**
+     * Attempt to authenticate using HTTP Basic Auth.
+     *
+     * @param  string  $field
+     * @param  array  $extraConditions
+     * @return \Symfony\Component\HttpFoundation\Response|null
+     */
+    public function basic($field = 'email', $extraConditions = []);
+
+    /**
+     * Perform a stateless HTTP Basic login attempt.
+     *
+     * @param  string  $field
+     * @param  array  $extraConditions
+     * @return \Symfony\Component\HttpFoundation\Response|null
+     */
+    public function onceBasic($field = 'email', $extraConditions = []);
+}

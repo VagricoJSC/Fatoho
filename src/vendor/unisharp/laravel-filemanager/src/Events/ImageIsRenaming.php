@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:591aac372173197c0bab90209a1ae361e36b649cadab2cc2145e5304cd40f6e0
-size 455
+<?php
+
+namespace UniSharp\LaravelFilemanager\Events;
+
+class ImageIsRenaming
+{
+    private $old_path;
+    private $new_path;
+
+    public function __construct($old_path, $new_path)
+    {
+        $this->old_path = $old_path;
+        $this->new_path = $new_path;
+    }
+
+    /**
+     * @return string
+     */
+    public function oldPath()
+    {
+        return $this->old_path;
+    }
+
+    public function newPath()
+    {
+        return $this->new_path;
+    }
+}

@@ -1,0 +1,36 @@
+[01-Apr-2024 11:49:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/ServerTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/ServerTest.php on line 13
+[01-Apr-2024 12:05:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/XingServerTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/XingServerTest.php on line 12
+[01-Apr-2024 12:05:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/TwitterServerTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/TwitterServerTest.php on line 9
+[01-Apr-2024 12:05:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/TrelloServerTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/TrelloServerTest.php on line 12
+[01-Apr-2024 12:05:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/RsaSha1SignatureTest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/RsaSha1SignatureTest.php on line 11
+[01-Apr-2024 12:05:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/RsaClientCredentialsTest.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/RsaClientCredentialsTest.php on line 10
+[01-Apr-2024 12:06:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/PlainTextSignatureTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/PlainTextSignatureTest.php on line 9
+[01-Apr-2024 12:06:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/HmacSha1SignatureTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/HmacSha1SignatureTest.php on line 9
+[01-Apr-2024 12:06:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/ClientCredentialsTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/tests/ClientCredentialsTest.php on line 9

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b88788278767c2c0434232da2b9b410415f03cfa5aa9d1ad5c8e10023adbd3d
-size 644
+<?php declare(strict_types = 1);
+namespace TheSeer\Tokenizer;
+
+class Token {
+
+    /** @var int */
+    private $line;
+
+    /** @var string */
+    private $name;
+
+    /** @var string */
+    private $value;
+
+    /**
+     * Token constructor.
+     */
+    public function __construct(int $line, string $name, string $value) {
+        $this->line  = $line;
+        $this->name  = $name;
+        $this->value = $value;
+    }
+
+    public function getLine(): int {
+        return $this->line;
+    }
+
+    public function getName(): string {
+        return $this->name;
+    }
+
+    public function getValue(): string {
+        return $this->value;
+    }
+}

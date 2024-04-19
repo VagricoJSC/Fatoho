@@ -1,0 +1,8 @@
+[23-Mar-2024 04:16:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Polyfill\Intl\Normalizer\Normalizer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php on line 3
+[01-Apr-2024 14:00:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Polyfill\Intl\Normalizer\Normalizer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php on line 3

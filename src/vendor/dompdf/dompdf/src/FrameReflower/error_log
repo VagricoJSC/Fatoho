@@ -1,0 +1,88 @@
+[23-Mar-2024 03:43:44 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Text.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Text.php on line 20
+[23-Mar-2024 03:43:50 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRowGroup.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRowGroup.php on line 18
+[23-Mar-2024 03:43:51 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRow.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRow.php on line 19
+[23-Mar-2024 03:43:58 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php on line 18
+[23-Mar-2024 03:43:59 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Table.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Table.php on line 18
+[23-Mar-2024 03:44:03 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Page.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Page.php on line 18
+[23-Mar-2024 03:44:09 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/NullFrameReflower.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/NullFrameReflower.php on line 17
+[23-Mar-2024 03:44:11 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/ListBullet.php on line 17
+[23-Mar-2024 03:44:17 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Inline.php on line 18
+[23-Mar-2024 03:44:19 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Image.php on line 18
+[23-Mar-2024 03:44:24 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Block.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Block.php on line 22
+[01-Apr-2024 12:57:48 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Text.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Text.php on line 20
+[01-Apr-2024 12:57:52 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRowGroup.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRowGroup.php on line 18
+[01-Apr-2024 12:57:57 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRow.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableRow.php on line 19
+[01-Apr-2024 12:58:02 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\Block" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php on line 18
+[01-Apr-2024 12:58:04 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Table.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Table.php on line 18
+[01-Apr-2024 12:58:08 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Page.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Page.php on line 18
+[01-Apr-2024 12:58:12 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/NullFrameReflower.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/NullFrameReflower.php on line 17
+[01-Apr-2024 12:58:16 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/ListBullet.php on line 17
+[01-Apr-2024 12:58:20 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Inline.php on line 18
+[01-Apr-2024 12:58:24 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Image.php on line 18
+[01-Apr-2024 12:58:28 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameReflower\AbstractFrameReflower" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Block.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/dompdf/dompdf/src/FrameReflower/Block.php on line 22

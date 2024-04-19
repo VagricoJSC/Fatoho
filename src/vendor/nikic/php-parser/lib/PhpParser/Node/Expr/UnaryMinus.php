@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:675164c34505c649ffb8bf94ece44a8047c4f4ec78b8643f279e718534a25d10
-size 652
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class UnaryMinus extends Expr
+{
+    /** @var Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs a unary minus node.
+     *
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_UnaryMinus';
+    }
+}

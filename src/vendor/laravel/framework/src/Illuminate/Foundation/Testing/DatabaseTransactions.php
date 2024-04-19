@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47b1e6e155d0346ad2b26cb7077e75269e02d720d787f119c153f66769a5ac68
-size 1596
+<?php
+
+namespace Illuminate\Foundation\Testing;
+
+trait DatabaseTransactions
+{
+    /**
+     * Handle database transactions on the specified connections.
+     *
+     * @return void
+     */
+    public function beginDatabaseTransaction()
+    {
+        $database = $this->app->make('db');
+
+        foreach ($this->connectionsToTransact() as $name) {
+            $connection = $database->connection($name);
+            $dispatcher = $connection->getEventDispatcher();
+
+            $connection->unsetEventDispatcher();
+            $connection->beginTransaction();
+            $connection->setEventDispatcher($dispatcher);
+
+            if ($this->app->resolved('db.transactions')) {
+                $this->app->make('db.transactions')->callbacksShouldIgnore(
+                    $this->app->make('db.transactions')->getTransactions()->first()
+                );
+            }
+        }
+
+        $this->beforeApplicationDestroyed(function () use ($database) {
+            foreach ($this->connectionsToTransact() as $name) {
+                $connection = $database->connection($name);
+                $dispatcher = $connection->getEventDispatcher();
+
+                $connection->unsetEventDispatcher();
+                $connection->rollBack();
+                $connection->setEventDispatcher($dispatcher);
+                $connection->disconnect();
+            }
+        });
+    }
+
+    /**
+     * The database connections that should have transactions.
+     *
+     * @return array
+     */
+    protected function connectionsToTransact()
+    {
+        return property_exists($this, 'connectionsToTransact')
+                            ? $this->connectionsToTransact : [null];
+    }
+}

@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31eee9cadb2508560aab851f2c4397a760e25dce5750cdf7686b8928d014cbfc
-size 1395
+<?php
+
+namespace Srmklive\PayPal\Tests\Unit\Adapter;
+
+use PHPUnit\Framework\TestCase;
+use Srmklive\PayPal\Tests\MockClientClasses;
+use Srmklive\PayPal\Tests\MockRequestPayloads;
+use Srmklive\PayPal\Tests\MockResponsePayloads;
+
+class OrdersTest extends TestCase
+{
+    use MockClientClasses;
+    use MockRequestPayloads;
+    use MockResponsePayloads;
+
+    /** @test */
+    public function it_can_create_an_order()
+    {
+        $expectedResponse = $this->mockCreateOrdersResponse();
+
+        $expectedParams = $this->createOrderParams();
+
+        $expectedMethod = 'createOrder';
+
+        $mockClient = $this->mock_client($expectedResponse, $expectedMethod, true);
+
+        $mockClient->setApiCredentials($this->getMockCredentials());
+        $mockClient->getAccessToken();
+
+        $this->assertEquals($expectedResponse, $mockClient->{$expectedMethod}($expectedParams));
+    }
+
+    /** @test */
+    public function it_can_update_an_order()
+    {
+        $expectedResponse = '';
+
+        $expectedParams = $this->updateOrderParams();
+
+        $expectedMethod = 'updateOrder';
+
+        $mockClient = $this->mock_client($expectedResponse, $expectedMethod, true);
+
+        $mockClient->setApiCredentials($this->getMockCredentials());
+        $mockClient->getAccessToken();
+
+        $this->assertEquals($expectedResponse, $mockClient->{$expectedMethod}('5O190127TN364715T', $expectedParams));
+    }
+}

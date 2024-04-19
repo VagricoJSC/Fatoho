@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:422e5fc1838cb255269e2e90203a5968d478f30880434d67897507e954544b5a
-size 362
+<?php
+
+namespace Illuminate\View\Engines;
+
+abstract class Engine
+{
+    /**
+     * The view that was last to be rendered.
+     *
+     * @var string
+     */
+    protected $lastRendered;
+
+    /**
+     * Get the last view that was rendered.
+     *
+     * @return string
+     */
+    public function getLastRendered()
+    {
+        return $this->lastRendered;
+    }
+}

@@ -1,0 +1,24 @@
+[03-Apr-2024 18:48:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SyncConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SyncConnector.php on line 7
+[03-Apr-2024 18:48:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SqsConnector.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SqsConnector.php on line 9
+[03-Apr-2024 18:48:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/RedisConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/RedisConnector.php on line 8
+[03-Apr-2024 18:48:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/NullConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/NullConnector.php on line 7
+[03-Apr-2024 18:48:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/DatabaseConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/DatabaseConnector.php on line 8
+[03-Apr-2024 18:48:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Connectors\ConnectorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/BeanstalkdConnector.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Queue/Connectors/BeanstalkdConnector.php on line 9

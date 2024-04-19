@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74a11a97db8cf6d25387ddf95fb9070eaac4fa7e28dbc42005e389fec6e6bbfa
-size 640
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+
+class Empty_ extends Expr
+{
+    /** @var Expr Expression */
+    public $expr;
+
+    /**
+     * Constructs an empty() node.
+     *
+     * @param Expr  $expr       Expression
+     * @param array $attributes Additional attributes
+     */
+    public function __construct(Expr $expr, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_Empty';
+    }
+}

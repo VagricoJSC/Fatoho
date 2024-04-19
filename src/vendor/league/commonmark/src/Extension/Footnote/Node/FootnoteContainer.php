@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae956d42ed78b2d53e60675164278bcec86570c6b9525ae3dc9a7eea9a3a0d89
-size 467
+<?php
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ * (c) Rezo Zero / Ambroise Maupate
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+namespace League\CommonMark\Extension\Footnote\Node;
+
+use League\CommonMark\Node\Block\AbstractBlock;
+
+final class FootnoteContainer extends AbstractBlock
+{
+}

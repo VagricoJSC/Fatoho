@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee6a021b39463cabfd100f67e126ef075f420c0cf74bc3f951a3fcc92aef0b1e
-size 487
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class ContrastCommand extends AbstractCommand
+{
+    /**
+     * Changes contrast of image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $level = $this->argument(0)->between(-100, 100)->required()->value();
+
+        return imagefilter($image->getCore(), IMG_FILTER_CONTRAST, ($level * -1));
+    }
+}

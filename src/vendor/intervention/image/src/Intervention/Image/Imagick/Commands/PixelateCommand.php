@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:228c320cceb2219ae69e87ff3d67adf9b049973468248c1e26c65ad85f57c72c
-size 671
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class PixelateCommand extends AbstractCommand
+{
+    /**
+     * Applies a pixelation effect to a given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $size = $this->argument(0)->type('digit')->value(10);
+
+        $width = $image->getWidth();
+        $height = $image->getHeight();
+
+        $image->getCore()->scaleImage(max(1, intval($width / $size)), max(1, intval($height / $size)));
+        $image->getCore()->scaleImage($width, $height);
+
+        return true;
+    }
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0719ee212027cabd194b6156d3e68234b6c6a4c2bbf07b63cb53152cf9432d56
-size 904
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use function assert;
+use DOMDocument;
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class RemovePrinterAttributes implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $root = $document->documentElement;
+
+        assert($root instanceof DOMElement);
+
+        if ($root->hasAttribute('printerClass')) {
+            $root->removeAttribute('printerClass');
+        }
+
+        if ($root->hasAttribute('printerFile')) {
+            $root->removeAttribute('printerFile');
+        }
+    }
+}

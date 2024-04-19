@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc2739fd789ef8a804272e7b64805811f53724df040047306c30ceebb4330d22
-size 1129
+<?php
+
+namespace Illuminate\Container;
+
+use Countable;
+use IteratorAggregate;
+use Traversable;
+
+class RewindableGenerator implements Countable, IteratorAggregate
+{
+    /**
+     * The generator callback.
+     *
+     * @var callable
+     */
+    protected $generator;
+
+    /**
+     * The number of tagged services.
+     *
+     * @var callable|int
+     */
+    protected $count;
+
+    /**
+     * Create a new generator instance.
+     *
+     * @param  callable  $generator
+     * @param  callable|int  $count
+     * @return void
+     */
+    public function __construct(callable $generator, $count)
+    {
+        $this->count = $count;
+        $this->generator = $generator;
+    }
+
+    /**
+     * Get an iterator from the generator.
+     *
+     * @return \Traversable
+     */
+    public function getIterator(): Traversable
+    {
+        return ($this->generator)();
+    }
+
+    /**
+     * Get the total number of tagged services.
+     *
+     * @return int
+     */
+    public function count(): int
+    {
+        if (is_callable($count = $this->count)) {
+            $this->count = $count();
+        }
+
+        return $this->count;
+    }
+}

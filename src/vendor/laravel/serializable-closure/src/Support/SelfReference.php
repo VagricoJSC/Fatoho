@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:893fe6ea49c05a95e475735f0044ecde606a4d828f74444e4ef3fadc753e0234
-size 386
+<?php
+
+namespace Laravel\SerializableClosure\Support;
+
+class SelfReference
+{
+    /**
+     * The unique hash representing the object.
+     *
+     * @var string
+     */
+    public $hash;
+
+    /**
+     * Creates a new self reference instance.
+     *
+     * @param  string  $hash
+     * @return void
+     */
+    public function __construct($hash)
+    {
+        $this->hash = $hash;
+    }
+}

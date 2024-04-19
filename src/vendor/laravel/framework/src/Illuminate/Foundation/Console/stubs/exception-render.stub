@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11a6eb7ce13451bdbb7b3e0bf9f9375efade1aae0311e46fe6f15bb0d7f534a4
-size 293
+<?php
+
+namespace {{ namespace }};
+
+use Exception;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+class {{ class }} extends Exception
+{
+    /**
+     * Render the exception as an HTTP response.
+     */
+    public function render(Request $request): Response
+    {
+        //
+    }
+}

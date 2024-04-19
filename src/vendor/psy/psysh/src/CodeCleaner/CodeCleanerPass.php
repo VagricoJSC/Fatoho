@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24599f47b05f14ee655c9079c35f60a48458d0919d9e3724becc2667a4e2edaf
-size 415
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\CodeCleaner;
+
+use PhpParser\NodeVisitorAbstract;
+
+/**
+ * A CodeCleaner pass is a PhpParser Node Visitor.
+ */
+abstract class CodeCleanerPass extends NodeVisitorAbstract
+{
+    // Wheee!
+}

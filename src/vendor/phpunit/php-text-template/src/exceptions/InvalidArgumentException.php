@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ea92a1f55236503f525e4335c98065a96de1cf3c17912aaa3cf63ad57bbe710
-size 406
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-text-template.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Template;
+
+final class InvalidArgumentException extends \InvalidArgumentException implements Exception
+{
+}

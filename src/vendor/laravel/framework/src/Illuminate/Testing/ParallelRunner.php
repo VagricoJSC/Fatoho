@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b408eb01fa7e44ae8b0e6afd0c0e3ef29044a41358e8680d8079ad56550e199
-size 737
+<?php
+
+namespace Illuminate\Testing;
+
+use Illuminate\Testing\Concerns\RunsInParallel;
+
+if (interface_exists(\ParaTest\RunnerInterface::class)) {
+    class ParallelRunner implements \ParaTest\RunnerInterface
+    {
+        use RunsInParallel;
+
+        /**
+         * Runs the test suite.
+         *
+         * @return int
+         */
+        public function run(): int
+        {
+            return $this->execute();
+        }
+    }
+} else {
+    class ParallelRunner implements \ParaTest\Runners\PHPUnit\RunnerInterface
+    {
+        use RunsInParallel;
+
+        /**
+         * Runs the test suite.
+         *
+         * @return void
+         */
+        public function run(): void
+        {
+            $this->execute();
+        }
+    }
+}

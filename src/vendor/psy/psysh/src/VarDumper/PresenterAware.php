@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd1be79264ee4d0da7e4e47c4080afc398b445fa4791f38f7a9d0ffc3ec04e91
-size 527
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\VarDumper;
+
+/**
+ * Presenter injects itself as a dependency to all objects which
+ * implement PresenterAware.
+ */
+interface PresenterAware
+{
+    /**
+     * Set a reference to the Presenter.
+     *
+     * @param Presenter $presenter
+     */
+    public function setPresenter(Presenter $presenter);
+}

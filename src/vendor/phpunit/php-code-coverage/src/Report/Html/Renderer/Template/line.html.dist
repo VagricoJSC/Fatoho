@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fc1881d357cb173ff1c606562999acd3436e7c4d0f4e86542157412f623346b
-size 197
+    <tr class="{{class}} d-flex"><td {{popover}} class="col-1 text-right"><a id="{{lineNumber}}" href="#{{lineNumber}}">{{lineNumber}}</a></td><td class="col-11 codeLine">{{lineContent}}</td></tr>

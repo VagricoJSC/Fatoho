@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db9678399d47bf1e9b357eb37905b75f1ecdee0a01a5327e2f8ed47d45552ff7
-size 442
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+abstract class InvalidArgumentException extends Exception
+{
+}

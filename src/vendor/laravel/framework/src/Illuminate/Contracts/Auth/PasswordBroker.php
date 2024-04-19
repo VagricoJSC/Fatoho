@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:361642c4bc5aab4c32a79ea6b05a7a8d4bb735e12c808b329d20cc285ef77960
-size 1288
+<?php
+
+namespace Illuminate\Contracts\Auth;
+
+use Closure;
+
+interface PasswordBroker
+{
+    /**
+     * Constant representing a successfully sent reminder.
+     *
+     * @var string
+     */
+    const RESET_LINK_SENT = 'passwords.sent';
+
+    /**
+     * Constant representing a successfully reset password.
+     *
+     * @var string
+     */
+    const PASSWORD_RESET = 'passwords.reset';
+
+    /**
+     * Constant representing the user not found response.
+     *
+     * @var string
+     */
+    const INVALID_USER = 'passwords.user';
+
+    /**
+     * Constant representing an invalid token.
+     *
+     * @var string
+     */
+    const INVALID_TOKEN = 'passwords.token';
+
+    /**
+     * Constant representing a throttled reset attempt.
+     *
+     * @var string
+     */
+    const RESET_THROTTLED = 'passwords.throttled';
+
+    /**
+     * Send a password reset link to a user.
+     *
+     * @param  array  $credentials
+     * @param  \Closure|null  $callback
+     * @return string
+     */
+    public function sendResetLink(array $credentials, Closure $callback = null);
+
+    /**
+     * Reset the password for the given token.
+     *
+     * @param  array  $credentials
+     * @param  \Closure  $callback
+     * @return mixed
+     */
+    public function reset(array $credentials, Closure $callback);
+}

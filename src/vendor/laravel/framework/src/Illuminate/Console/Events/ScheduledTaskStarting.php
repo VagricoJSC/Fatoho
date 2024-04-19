@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f588a7718e2ae1e65b8fd96191148c88b304023b08a8c320c4b471623fd6031
-size 472
+<?php
+
+namespace Illuminate\Console\Events;
+
+use Illuminate\Console\Scheduling\Event;
+
+class ScheduledTaskStarting
+{
+    /**
+     * The scheduled event being run.
+     *
+     * @var \Illuminate\Console\Scheduling\Event
+     */
+    public $task;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Console\Scheduling\Event  $task
+     * @return void
+     */
+    public function __construct(Event $task)
+    {
+        $this->task = $task;
+    }
+}

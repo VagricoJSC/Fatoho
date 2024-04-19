@@ -1,0 +1,76 @@
+[30-Mar-2024 06:55:06 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractSet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Set.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Set.php on line 41
+[30-Mar-2024 07:00:09 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Queue.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Queue.php on line 32
+[30-Mar-2024 07:02:11 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Queue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueue.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueue.php on line 32
+[30-Mar-2024 07:07:15 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Collection.php:76
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Collection.php on line 76
+[30-Mar-2024 07:09:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/QueueInterface.php:100
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/QueueInterface.php on line 100
+[30-Mar-2024 07:12:18 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractCollection.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractCollection.php on line 51
+[30-Mar-2024 07:24:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractArray.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractArray.php on line 29
+[30-Mar-2024 07:29:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/CollectionInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/CollectionInterface.php on line 32
+[01-Apr-2024 11:41:02 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Queue.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Queue.php on line 32
+[01-Apr-2024 11:48:40 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractSet" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Set.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Set.php on line 41
+[01-Apr-2024 11:57:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/QueueInterface.php:100
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/QueueInterface.php on line 100
+[01-Apr-2024 11:57:38 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/GenericArray.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/GenericArray.php on line 22
+[01-Apr-2024 11:57:40 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Queue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueue.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueue.php on line 32
+[01-Apr-2024 11:57:44 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Collection.php:76
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/Collection.php on line 76
+[01-Apr-2024 11:57:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractArray.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractArray.php on line 29
+[01-Apr-2024 11:57:56 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractSet.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractSet.php on line 25
+[01-Apr-2024 12:16:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\QueueInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueueInterface.php:166
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/DoubleEndedQueueInterface.php on line 166
+[01-Apr-2024 12:16:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/CollectionInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/CollectionInterface.php on line 32
+[01-Apr-2024 12:16:53 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractCollection.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/ramsey/collection/src/AbstractCollection.php on line 51

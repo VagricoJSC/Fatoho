@@ -1,0 +1,4 @@
+[23-Mar-2024 05:28:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php on line 19

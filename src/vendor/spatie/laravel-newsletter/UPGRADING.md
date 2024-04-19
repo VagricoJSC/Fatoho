@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f224fd7ebe800888c320747ca960e4fe45e39f85f3bae89ee0b209542ada4f6
-size 235
+## From v4 to v5
+
+v5 is a full rewrite. The biggest change is that the package is now driver based. Most methods from v4 were retained. We recommend going through the installation instructions and readme again to get familiar with v5.

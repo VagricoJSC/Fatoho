@@ -1,0 +1,56 @@
+[23-Mar-2024 15:51:59 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php on line 5
+[23-Mar-2024 15:52:14 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php on line 5
+[23-Mar-2024 15:52:18 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php on line 5
+[23-Mar-2024 15:53:19 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php on line 5
+[23-Mar-2024 15:53:26 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php on line 5
+[23-Mar-2024 15:53:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php on line 5
+[23-Mar-2024 15:53:31 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php on line 5
+[03-Apr-2024 19:50:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php on line 5
+[03-Apr-2024 19:50:33 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php on line 5
+[03-Apr-2024 20:05:53 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php on line 5
+[03-Apr-2024 20:05:57 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php on line 5
+[03-Apr-2024 20:06:01 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php on line 5
+[03-Apr-2024 20:06:05 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php on line 5
+[03-Apr-2024 20:06:09 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Exception\ImageException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php on line 5

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:075b52f063627e541894af09f1c387d0d6feeb918a836a5a9707df6597ca739e
-size 591
+<?php
+
+namespace Spatie\LaravelIgnition\FlareMiddleware;
+
+use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
+use Spatie\FlareClient\Report;
+use Spatie\LaravelIgnition\Recorders\JobRecorder\JobRecorder;
+
+class AddJobs implements FlareMiddleware
+{
+    protected JobRecorder $jobRecorder;
+
+    public function __construct()
+    {
+        $this->jobRecorder = app(JobRecorder::class);
+    }
+
+    public function handle(Report $report, $next)
+    {
+        if ($job = $this->jobRecorder->getJob()) {
+            $report->group('job', $job);
+        }
+
+        return $next($report);
+    }
+}

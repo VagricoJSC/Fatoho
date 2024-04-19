@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a26af5132a8f6b2027fa48e85f7b158a2b1ab385c4e09165936648c67b58d10b
-size 423
+<?php
+
+namespace Illuminate\Foundation\Exceptions;
+
+use Illuminate\Support\Facades\View;
+
+class RegisterErrorViewPaths
+{
+    /**
+     * Register the error view paths.
+     *
+     * @return void
+     */
+    public function __invoke()
+    {
+        View::replaceNamespace('errors', collect(config('view.paths'))->map(function ($path) {
+            return "{$path}/errors";
+        })->push(__DIR__.'/views')->all());
+    }
+}

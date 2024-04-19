@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:909a56369f1e355cb00f56f8166f02e9b8965982af9050e74f27a0985b136240
-size 344
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/ses.php', [
+    'meridiem' => ['Subbaahi', 'Zaarikay b'],
+]);

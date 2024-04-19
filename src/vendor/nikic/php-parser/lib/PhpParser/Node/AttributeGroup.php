@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:057986cf63df36ad270b580b8ea4a53503803bd0d0d9e894601d35b0ded0c413
-size 647
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+use PhpParser\Node;
+use PhpParser\NodeAbstract;
+
+class AttributeGroup extends NodeAbstract
+{
+    /** @var Attribute[] Attributes */
+    public $attrs;
+
+    /**
+     * @param Attribute[] $attrs PHP attributes
+     * @param array $attributes Additional node attributes
+     */
+    public function __construct(array $attrs, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->attrs = $attrs;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['attrs'];
+    }
+
+    public function getType() : string {
+        return 'AttributeGroup';
+    }
+}

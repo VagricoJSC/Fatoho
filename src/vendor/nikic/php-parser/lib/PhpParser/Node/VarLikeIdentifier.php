@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2031fa31e4698d611701a553ef46cff711b82a650b997cf57e6df95cee0a6b3b
-size 502
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+/**
+ * Represents a name that is written in source code with a leading dollar,
+ * but is not a proper variable. The leading dollar is not stored as part of the name.
+ *
+ * Examples: Names in property declarations are formatted as variables. Names in static property
+ * lookups are also formatted as variables.
+ */
+class VarLikeIdentifier extends Identifier
+{
+    public function getType() : string {
+        return 'VarLikeIdentifier';
+    }
+}

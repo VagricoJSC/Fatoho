@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68705331d03218efed3fd3a07d92e0c4c7025ebc86b282f55288e0cb78deea2f
-size 574
+<?php
+
+namespace Illuminate\Foundation;
+
+class Precognition
+{
+    /**
+     * Get the "after" validation hook that can be used for precognition requests.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Closure
+     */
+    public static function afterValidationHook($request)
+    {
+        return function ($validator) use ($request) {
+            if ($validator->messages()->isEmpty() && $request->headers->has('Precognition-Validate-Only')) {
+                abort(204);
+            }
+        };
+    }
+}

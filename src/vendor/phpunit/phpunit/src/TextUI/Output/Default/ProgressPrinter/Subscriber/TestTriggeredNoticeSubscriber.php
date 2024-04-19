@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62bfe7e17370fe5b896c59ce90ee824f9d591b5955d3d4b34c35b46d42cf396b
-size 734
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\Output\Default\ProgressPrinter;
+
+use PHPUnit\Event\Test\NoticeTriggered;
+use PHPUnit\Event\Test\NoticeTriggeredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestTriggeredNoticeSubscriber extends Subscriber implements NoticeTriggeredSubscriber
+{
+    public function notify(NoticeTriggered $event): void
+    {
+        $this->printer()->testTriggeredNotice();
+    }
+}

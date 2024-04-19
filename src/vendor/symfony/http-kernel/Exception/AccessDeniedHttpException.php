@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f10bdf6cf4567588587da9e02a5bd825c88a584867057fd86b2298214b79623c
-size 654
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Christophe Coevoet <stof@notk.org>
+ */
+class AccessDeniedHttpException extends HttpException
+{
+    public function __construct(string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        parent::__construct(403, $message, $previous, $headers, $code);
+    }
+}

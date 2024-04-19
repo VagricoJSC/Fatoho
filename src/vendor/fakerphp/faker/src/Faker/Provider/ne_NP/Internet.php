@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13b915c6effa34bdfa846e861f4cb1b706c1577ad8c1670a2aa9f8ab13a964bf
-size 1048
+<?php
+
+namespace Faker\Provider\ne_NP;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com'];
+    protected static $tld = ['com', 'com', 'com', 'net', 'org'];
+
+    protected static $emailFormats = [
+        '{{userName}}@{{domainName}}',
+        '{{userName}}@{{domainName}}',
+        '{{userName}}@{{freeEmailDomain}}',
+        '{{userName}}@{{domainName}}.np',
+        '{{userName}}@{{domainName}}.np',
+        '{{userName}}@{{domainName}}.np',
+    ];
+
+    protected static $urlFormats = [
+        'http://www.{{domainName}}.np/',
+        'http://www.{{domainName}}.np/',
+        'http://{{domainName}}.np/',
+        'http://{{domainName}}.np/',
+        'http://www.{{domainName}}.np/{{slug}}',
+        'http://www.{{domainName}}.np/{{slug}}.html',
+        'http://{{domainName}}.np/{{slug}}',
+        'http://{{domainName}}.np/{{slug}}',
+        'http://{{domainName}}/{{slug}}.html',
+        'http://www.{{domainName}}/',
+        'http://{{domainName}}/',
+    ];
+}

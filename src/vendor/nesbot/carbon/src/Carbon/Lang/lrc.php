@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c26530f8c6479086f69e0d395eac06685280ec02ae9889066fb71077f3abdf71
-size 477
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/en.php', [
+
+    'minute' => ':count هنر', // less reliable
+    'min' => ':count هنر', // less reliable
+    'a_minute' => ':count هنر', // less reliable
+]);

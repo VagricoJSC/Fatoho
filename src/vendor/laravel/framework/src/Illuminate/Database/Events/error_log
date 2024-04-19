@@ -1,0 +1,48 @@
+[03-Apr-2024 18:32:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php on line 5
+[03-Apr-2024 18:32:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php on line 5
+[03-Apr-2024 18:32:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php on line 5
+[03-Apr-2024 18:32:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php on line 5
+[03-Apr-2024 18:33:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php on line 5
+[03-Apr-2024 18:33:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php on line 7
+[03-Apr-2024 18:33:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php on line 5
+[03-Apr-2024 18:33:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php on line 5
+[03-Apr-2024 18:33:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php on line 8
+[03-Apr-2024 18:33:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php on line 5
+[03-Apr-2024 18:33:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php on line 7
+[03-Apr-2024 18:33:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php on line 5

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b8347b6e9a3e645f262e3d895bfdb8a4a4b37d5634383ae7198305722d36212
-size 333
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\ErrorHandler\Error;
+
+class OutOfMemoryError extends FatalError
+{
+}

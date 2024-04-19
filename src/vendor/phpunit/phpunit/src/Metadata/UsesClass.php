@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd62131e2731cd13fabc591a4146cbdffba9e487e07e57b737b8a977a362ae05
-size 1319
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class UsesClass extends Metadata
+{
+    /**
+     * @psalm-var class-string
+     */
+    private readonly string $className;
+
+    /**
+     * @psalm-param class-string $className
+     */
+    protected function __construct(int $level, string $className)
+    {
+        parent::__construct($level);
+
+        $this->className = $className;
+    }
+
+    public function isUsesClass(): bool
+    {
+        return true;
+    }
+
+    /**
+     * @psalm-return class-string
+     */
+    public function className(): string
+    {
+        return $this->className;
+    }
+
+    /**
+     * @psalm-return class-string
+     *
+     * @internal This method is not covered by the backward compatibility promise for PHPUnit
+     */
+    public function asStringForCodeUnitMapper(): string
+    {
+        return $this->className;
+    }
+}

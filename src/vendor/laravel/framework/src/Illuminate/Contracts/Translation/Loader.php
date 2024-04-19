@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccf06e4a2836c3e98b832e444879625e8d0e2da4c6992c659c09dd0a9a9142e7
-size 816
+<?php
+
+namespace Illuminate\Contracts\Translation;
+
+interface Loader
+{
+    /**
+     * Load the messages for the given locale.
+     *
+     * @param  string  $locale
+     * @param  string  $group
+     * @param  string|null  $namespace
+     * @return array
+     */
+    public function load($locale, $group, $namespace = null);
+
+    /**
+     * Add a new namespace to the loader.
+     *
+     * @param  string  $namespace
+     * @param  string  $hint
+     * @return void
+     */
+    public function addNamespace($namespace, $hint);
+
+    /**
+     * Add a new JSON path to the loader.
+     *
+     * @param  string  $path
+     * @return void
+     */
+    public function addJsonPath($path);
+
+    /**
+     * Get an array of all the registered namespaces.
+     *
+     * @return array
+     */
+    public function namespaces();
+}

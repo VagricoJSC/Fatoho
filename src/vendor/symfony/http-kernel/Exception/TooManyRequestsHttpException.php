@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec3626d6b00ea9b85f6d0b1675e101d301f70731a4da2d63373032a07f1024c4
-size 907
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Ben Ramsey <ben@benramsey.com>
+ *
+ * @see http://tools.ietf.org/html/rfc6585
+ */
+class TooManyRequestsHttpException extends HttpException
+{
+    /**
+     * @param int|string|null $retryAfter The number of seconds or HTTP-date after which the request may be retried
+     */
+    public function __construct(int|string $retryAfter = null, string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        if ($retryAfter) {
+            $headers['Retry-After'] = $retryAfter;
+        }
+
+        parent::__construct(429, $message, $previous, $headers, $code);
+    }
+}

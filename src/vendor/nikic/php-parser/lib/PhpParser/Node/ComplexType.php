@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfadc646eda7cd40d4f7875a6d79e0ba9b66db75138eb32efba9592babf27180
-size 323
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+use PhpParser\NodeAbstract;
+
+/**
+ * This is a base class for complex types, including nullable types and union types.
+ *
+ * It does not provide any shared behavior and exists only for type-checking purposes.
+ */
+abstract class ComplexType extends NodeAbstract
+{
+}

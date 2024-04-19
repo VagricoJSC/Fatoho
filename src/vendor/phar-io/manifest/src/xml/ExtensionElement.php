@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1132ee6b215b42ad85314978caceb7cad03e4605942817fe477f4d83001f1fe2
-size 650
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class ExtensionElement extends ManifestElement {
+    public function getFor(): string {
+        return $this->getAttributeValue('for');
+    }
+
+    public function getCompatible(): string {
+        return $this->getAttributeValue('compatible');
+    }
+}

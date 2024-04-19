@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf13d79be1949bf20e4ce94a8f5baa10a39276f1066dcf2e52c87d652010cc2d
-size 1111
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Console\Formatter;
+
+/**
+ * Formatter style interface for defining styles.
+ *
+ * @author Konstantin Kudryashov <ever.zet@gmail.com>
+ */
+interface OutputFormatterStyleInterface
+{
+    /**
+     * Sets style foreground color.
+     */
+    public function setForeground(?string $color);
+
+    /**
+     * Sets style background color.
+     */
+    public function setBackground(?string $color);
+
+    /**
+     * Sets some specific style option.
+     */
+    public function setOption(string $option);
+
+    /**
+     * Unsets some specific style option.
+     */
+    public function unsetOption(string $option);
+
+    /**
+     * Sets multiple style options at once.
+     */
+    public function setOptions(array $options);
+
+    /**
+     * Applies the style to a given text.
+     */
+    public function apply(string $text): string;
+}

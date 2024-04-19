@@ -1,0 +1,12 @@
+[03-Apr-2024 16:07:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php on line 9
+[03-Apr-2024 16:07:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Pipeline\Pipeline" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php on line 11
+[03-Apr-2024 16:07:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Pipeline\Hub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php on line 9

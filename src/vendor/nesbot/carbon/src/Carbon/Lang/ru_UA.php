@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:747e300348d3a1f1b90f49a54f42654871e94231f022ed9be17b457b13c567df
-size 693
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - RFC 2319    bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/ru.php', [
+    'weekdays' => ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+    'weekdays_short' => ['вск', 'пнд', 'вто', 'срд', 'чтв', 'птн', 'суб'],
+    'weekdays_min' => ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'су'],
+]);

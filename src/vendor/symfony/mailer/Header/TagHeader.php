@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4837f1637d2c237829d1e78613e34ac669e72c04b536ede62ef6ab6f4708f326
-size 547
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Header;
+
+use Symfony\Component\Mime\Header\UnstructuredHeader;
+
+/**
+ * @author Kevin Bond <kevinbond@gmail.com>
+ */
+final class TagHeader extends UnstructuredHeader
+{
+    public function __construct(string $value)
+    {
+        parent::__construct('X-Tag', $value);
+    }
+}

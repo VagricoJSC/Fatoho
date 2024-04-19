@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6c12170994bd511ea2d8c95870c62470a7f119626b9acabc6f35afeeceeae1b
-size 598
+---
+name: Bug report
+about: Create a report to help us improve
+
+---
+
+Please check the following instructions before submitting a bug :
+ * Make sure you are using the latest version.
+ * Make sure you read [installation](http://unisharp.github.io/laravel-filemanager/installation), [integration](http://unisharp.github.io/laravel-filemanager/integration), and [upgrade](http://unisharp.github.io/laravel-filemanager/upgrade) document.
+
+And provide the followings :
+ * Operating system :
+ * Laravel version :
+ * Package version :
+ * Steps to reproduce your issue :
+ * Screenshots of browser console :

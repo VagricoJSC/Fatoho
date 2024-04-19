@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b9704ef8c91184b6fea4b4cdf154505dc9908e3573d959c2e6b0756283159db
-size 549
+## Steps to contribute
+1. Fork [unisharp/laravel-filemanager](https://github.com/UniSharp/laravel-filemanager) from GitHub.
+1. Run commands below:
+
+    ```
+    git clone git@github.com:UniSharp/laravel-filemanager-example-5.3.git
+    cd laravel-filemanager-example-5.3
+    composer require unisharp/laravel-filemanager:dev-master
+    make init
+    ```
+1. Edit codes in `vendor/unisharp/laravel-filemanager`
+1. Push your changes to your fork.
+1. Send a pull request to [unisharp/laravel-filemanager](https://github.com/UniSharp/laravel-filemanager).

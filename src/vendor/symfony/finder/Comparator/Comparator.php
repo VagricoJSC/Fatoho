@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f9d78a6b7c0133c0b3cf269add8b2087f51b2c2635961d2c5935e01edca6a44
-size 1447
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Finder\Comparator;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class Comparator
+{
+    private string $target;
+    private string $operator;
+
+    public function __construct(string $target, string $operator = '==')
+    {
+        if (!\in_array($operator, ['>', '<', '>=', '<=', '==', '!='])) {
+            throw new \InvalidArgumentException(sprintf('Invalid operator "%s".', $operator));
+        }
+
+        $this->target = $target;
+        $this->operator = $operator;
+    }
+
+    /**
+     * Gets the target value.
+     */
+    public function getTarget(): string
+    {
+        return $this->target;
+    }
+
+    /**
+     * Gets the comparison operator.
+     */
+    public function getOperator(): string
+    {
+        return $this->operator;
+    }
+
+    /**
+     * Tests against the target.
+     */
+    public function test(mixed $test): bool
+    {
+        return match ($this->operator) {
+            '>' => $test > $this->target,
+            '>=' => $test >= $this->target,
+            '<' => $test < $this->target,
+            '<=' => $test <= $this->target,
+            '!=' => $test != $this->target,
+            default => $test == $this->target,
+        };
+    }
+}

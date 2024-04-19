@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb89f1c8b62f69c9ced5f41d788f746de025b2e186372b592a095c2ff54a21f2
-size 923
+<?php
+namespace Hamcrest\Collection;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+use Hamcrest\FeatureMatcher;
+use Hamcrest\Matcher;
+use Hamcrest\Util;
+
+/**
+ * Matches if traversable size satisfies a nested matcher.
+ */
+class IsTraversableWithSize extends FeatureMatcher
+{
+
+    public function __construct(Matcher $sizeMatcher)
+    {
+        parent::__construct(
+            self::TYPE_OBJECT,
+            'Traversable',
+            $sizeMatcher,
+            'a traversable with size',
+            'traversable size'
+        );
+    }
+
+    protected function featureValueOf($actual)
+    {
+        $size = 0;
+        foreach ($actual as $value) {
+            $size++;
+        }
+
+        return $size;
+    }
+
+    /**
+     * Does traversable size satisfy a given matcher?
+     *
+     * @factory
+     */
+    public static function traversableWithSize($size)
+    {
+        return new self(Util::wrapValueWithIsEqual($size));
+    }
+}

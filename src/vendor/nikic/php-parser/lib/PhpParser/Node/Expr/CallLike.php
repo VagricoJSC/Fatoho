@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fb602dc1a555e7736223ee6accfec95eb567436506038b53fd4a13a9d2e9f27
-size 970
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr;
+use PhpParser\Node\VariadicPlaceholder;
+
+abstract class CallLike extends Expr {
+    /**
+     * Return raw arguments, which may be actual Args, or VariadicPlaceholders for first-class
+     * callables.
+     *
+     * @return array<Arg|VariadicPlaceholder>
+     */
+    abstract public function getRawArgs(): array;
+
+    /**
+     * Returns whether this call expression is actually a first class callable.
+     */
+    public function isFirstClassCallable(): bool {
+        foreach ($this->getRawArgs() as $arg) {
+            if ($arg instanceof VariadicPlaceholder) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Assert that this is not a first-class callable and return only ordinary Args.
+     *
+     * @return Arg[]
+     */
+    public function getArgs(): array {
+        assert(!$this->isFirstClassCallable());
+        return $this->getRawArgs();
+    }
+}

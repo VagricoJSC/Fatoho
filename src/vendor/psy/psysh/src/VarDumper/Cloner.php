@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3306ad8488f35fde5550c2b117d6ff46b5a38e8f10cf43a58418b90380c09df8
-size 935
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\VarDumper;
+
+use Symfony\Component\VarDumper\Caster\Caster;
+use Symfony\Component\VarDumper\Cloner\Data;
+use Symfony\Component\VarDumper\Cloner\Stub;
+use Symfony\Component\VarDumper\Cloner\VarCloner;
+
+/**
+ * A PsySH-specialized VarCloner.
+ */
+class Cloner extends VarCloner
+{
+    private $filter = 0;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function cloneVar($var, $filter = 0): Data
+    {
+        $this->filter = $filter;
+
+        return parent::cloneVar($var, $filter);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function castResource(Stub $stub, $isNested): array
+    {
+        return Caster::EXCLUDE_VERBOSE & $this->filter ? [] : parent::castResource($stub, $isNested);
+    }
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5fecd37bc33a5c0ee3957d45b57e3964f568b07ce76497fa2db3fa7ab2f7dd7
-size 917
+{
+    "name": "symfony/uid",
+    "type": "library",
+    "description": "Provides an object-oriented API to generate and represent UIDs",
+    "keywords": ["uid", "uuid", "ulid"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grégoire Pineau",
+            "email": "lyrixx@lyrixx.info"
+        },
+        {
+            "name": "Nicolas Grekas",
+            "email": "p@tchwork.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/polyfill-uuid": "^1.15"
+    },
+    "require-dev": {
+        "symfony/console": "^5.4|^6.0"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Uid\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}

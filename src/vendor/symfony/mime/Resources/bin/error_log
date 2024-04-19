@@ -1,0 +1,4 @@
+[23-Mar-2024 05:50:19 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Resources/bin/update_mime_types.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Resources/bin/update_mime_types.php on line 13

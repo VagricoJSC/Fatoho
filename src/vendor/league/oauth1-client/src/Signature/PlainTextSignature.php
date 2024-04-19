@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc33d838e33107425b3994a2edc25448640f9c2168a9555f49768299778ed73b
-size 381
+<?php
+
+namespace League\OAuth1\Client\Signature;
+
+class PlainTextSignature extends Signature implements SignatureInterface
+{
+    /**
+     * @inheritDoc
+     */
+    public function method()
+    {
+        return 'PLAINTEXT';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function sign($uri, array $parameters = [], $method = 'POST')
+    {
+        return $this->key();
+    }
+}

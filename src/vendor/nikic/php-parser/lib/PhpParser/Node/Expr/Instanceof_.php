@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a45716153f75efe1f4ff493d9f0cbfaa885e3631022b2bf4d185654374f6d14
-size 860
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+use PhpParser\Node\Name;
+
+class Instanceof_ extends Expr
+{
+    /** @var Expr Expression */
+    public $expr;
+    /** @var Name|Expr Class name */
+    public $class;
+
+    /**
+     * Constructs an instanceof check node.
+     *
+     * @param Expr      $expr       Expression
+     * @param Name|Expr $class      Class name
+     * @param array     $attributes Additional attributes
+     */
+    public function __construct(Expr $expr, $class, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->expr = $expr;
+        $this->class = $class;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['expr', 'class'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_Instanceof';
+    }
+}

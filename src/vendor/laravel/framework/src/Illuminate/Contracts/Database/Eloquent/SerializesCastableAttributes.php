@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cc2192f4a88591e7245b48dcfa9ca7d98f39e4b20135ad30faea7712423379c
-size 497
+<?php
+
+namespace Illuminate\Contracts\Database\Eloquent;
+
+use Illuminate\Database\Eloquent\Model;
+
+interface SerializesCastableAttributes
+{
+    /**
+     * Serialize the attribute when converting the model to an array.
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $attributes
+     * @return mixed
+     */
+    public function serialize(Model $model, string $key, mixed $value, array $attributes);
+}

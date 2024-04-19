@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76ab12c0098c322f0293fa9b402efaafb2c5c2622f56ebb08120606e5b31b4e4
-size 543
+<?php
+
+namespace Intervention\Image\Facades;
+
+use Illuminate\Support\Facades\Facade;
+
+/**
+ * @method static \Intervention\Image\Image make(mixed $data)
+ * @method static self configure(array $config)
+ * @method static \Intervention\Image\Image canvas(int $width, int $height, mixed $background = null)
+ * @method static \Intervention\Image\Image cache(\Closure $callback, int $lifetime = null, boolean $returnObj = false)
+ */
+class Image extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'image';
+    }
+}

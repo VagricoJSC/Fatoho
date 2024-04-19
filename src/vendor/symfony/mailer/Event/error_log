@@ -1,0 +1,24 @@
+[22-Mar-2024 23:44:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/SentMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/SentMessageEvent.php on line 20
+[22-Mar-2024 23:45:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/MessageEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/MessageEvent.php on line 25
+[22-Mar-2024 23:45:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/FailedMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/FailedMessageEvent.php on line 20
+[03-Apr-2024 07:48:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/SentMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/SentMessageEvent.php on line 20
+[03-Apr-2024 07:48:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/MessageEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/MessageEvent.php on line 25
+[03-Apr-2024 07:48:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/FailedMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Event/FailedMessageEvent.php on line 20

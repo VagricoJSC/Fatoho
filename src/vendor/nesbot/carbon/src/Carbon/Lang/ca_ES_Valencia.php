@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dd8b19ae605caf372787f2d4a71f07e361d0a1f2c353145c2963222aea5b55f
-size 593
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+use Symfony\Component\Translation\PluralizationRules;
+
+// @codeCoverageIgnoreStart
+if (class_exists(PluralizationRules::class)) {
+    PluralizationRules::set(static function ($number) {
+        return PluralizationRules::get($number, 'ca');
+    }, 'ca_ES_Valencia');
+}
+// @codeCoverageIgnoreEnd
+
+return array_replace_recursive(require __DIR__.'/ca.php', [
+]);

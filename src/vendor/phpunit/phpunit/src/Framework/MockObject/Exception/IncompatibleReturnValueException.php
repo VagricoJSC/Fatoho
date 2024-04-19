@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b52a66b217bfc62b7ddbd77f09d2bb1c7eed8b85dabaed29ddf845d8c17bb99
-size 930
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\MockObject;
+
+use function get_debug_type;
+use function sprintf;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class IncompatibleReturnValueException extends \PHPUnit\Framework\Exception implements Exception
+{
+    public function __construct(ConfigurableMethod $method, mixed $value)
+    {
+        parent::__construct(
+            sprintf(
+                'Method %s may not return value of type %s, its declared return type is "%s"',
+                $method->name(),
+                get_debug_type($value),
+                $method->returnTypeDeclaration()
+            )
+        );
+    }
+}

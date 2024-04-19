@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10bc182e2a66a57a0e43fb012545e95672fd8c27df82e356b72e505a1d5a3ba3
-size 494
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use DOMDocument;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Migration
+{
+    public function migrate(DOMDocument $document): void;
+}

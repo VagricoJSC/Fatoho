@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a37a4969bef418f13921e5088242963e96f785430abdad4fe172f84897a3fe5
-size 981
+<?php
+
+namespace GuzzleHttp\Exception;
+
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+/**
+ * Exception when an HTTP error occurs (4xx or 5xx error)
+ */
+class BadResponseException extends RequestException
+{
+    public function __construct(
+        string $message,
+        RequestInterface $request,
+        ResponseInterface $response,
+        \Throwable $previous = null,
+        array $handlerContext = []
+    ) {
+        parent::__construct($message, $request, $response, $previous, $handlerContext);
+    }
+
+    /**
+     * Current exception and the ones that extend it will always have a response.
+     */
+    public function hasResponse(): bool
+    {
+        return true;
+    }
+
+    /**
+     * This function narrows the return type from the parent class and does not allow it to be nullable.
+     */
+    public function getResponse(): ResponseInterface
+    {
+        /** @var ResponseInterface */
+        return parent::getResponse();
+    }
+}

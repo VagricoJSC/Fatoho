@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03a956fadd18c015d5126df8e90ce7d141e0e576905fdcc4557e1fa7ed217fe2
-size 444
+<?php
+
+namespace Pusher;
+
+class Webhook
+{
+    /** @var int $time_ms */
+    private $time_ms;
+    /** @var array $events */
+    private $events;
+
+    public function __construct($time_ms, $events)
+    {
+        $this->time_ms = $time_ms;
+        $this->events = $events;
+    }
+
+    public function get_events(): array
+    {
+        return $this->events;
+    }
+
+    public function get_time_ms(): int
+    {
+        return $this->time_ms;
+    }
+}

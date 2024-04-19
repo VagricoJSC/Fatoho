@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c1aa2eb19556f503a8b0a502b8e65e0d40574f1ce5be0095ce3f9c9248a2715
-size 950
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Dumper;
+
+use Symfony\Component\Translation\MessageCatalogue;
+
+/**
+ * IniFileDumper generates an ini formatted string representation of a message catalogue.
+ *
+ * @author Stealth35
+ */
+class IniFileDumper extends FileDumper
+{
+    public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []): string
+    {
+        $output = '';
+
+        foreach ($messages->all($domain) as $source => $target) {
+            $escapeTarget = str_replace('"', '\"', $target);
+            $output .= $source.'="'.$escapeTarget."\"\n";
+        }
+
+        return $output;
+    }
+
+    protected function getExtension(): string
+    {
+        return 'ini';
+    }
+}

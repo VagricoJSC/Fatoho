@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cbe13a59066366ea54cb6d3f0558024f92ffb267fc2bcf014966e348d3d77c4
-size 684
+<?php
+namespace Hamcrest\Core;
+
+class IsAnythingTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Core\IsAnything::anything();
+    }
+
+    public function testAlwaysEvaluatesToTrue()
+    {
+        assertThat(null, anything());
+        assertThat(new \stdClass(), anything());
+        assertThat('hi', anything());
+    }
+
+    public function testHasUsefulDefaultDescription()
+    {
+        $this->assertDescription('ANYTHING', anything());
+    }
+
+    public function testCanOverrideDescription()
+    {
+        $description = 'description';
+        $this->assertDescription($description, anything($description));
+    }
+}

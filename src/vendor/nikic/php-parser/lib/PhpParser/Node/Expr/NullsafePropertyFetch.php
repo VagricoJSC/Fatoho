@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a33ea0c37b4185b2aa17990dfb435608b3a14c35aa4fdf26596a9940e9f0d3ec
-size 971
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
+
+class NullsafePropertyFetch extends Expr
+{
+    /** @var Expr Variable holding object */
+    public $var;
+    /** @var Identifier|Expr Property name */
+    public $name;
+
+    /**
+     * Constructs a nullsafe property fetch node.
+     *
+     * @param Expr                   $var        Variable holding object
+     * @param string|Identifier|Expr $name       Property name
+     * @param array                  $attributes Additional attributes
+     */
+    public function __construct(Expr $var, $name, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+        $this->name = \is_string($name) ? new Identifier($name) : $name;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var', 'name'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_NullsafePropertyFetch';
+    }
+}

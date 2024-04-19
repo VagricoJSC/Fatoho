@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca1f76b047ccb25527bc884925a295aa9f1bdb8129c0c61281021f8c1026a1ff
-size 493
+<?php
+namespace Hamcrest\Type;
+
+/*
+ Copyright (c) 2010 hamcrest.org
+ */
+use Hamcrest\Core\IsTypeOf;
+
+/**
+ * Tests whether the value is a boolean.
+ */
+class IsBoolean extends IsTypeOf
+{
+
+    /**
+     * Creates a new instance of IsBoolean
+     */
+    public function __construct()
+    {
+        parent::__construct('boolean');
+    }
+
+    /**
+     * Is the value a boolean?
+     *
+     * @factory boolValue
+     */
+    public static function booleanValue()
+    {
+        return new self;
+    }
+}

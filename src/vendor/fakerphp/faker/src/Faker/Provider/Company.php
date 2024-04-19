@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:398d97bd2e085c624b0b91a873f0af9a71731b75899347e6a7146b33116678b0
-size 901
+<?php
+
+namespace Faker\Provider;
+
+class Company extends Base
+{
+    protected static $formats = [
+        '{{lastName}} {{companySuffix}}',
+    ];
+
+    protected static $companySuffix = ['Ltd'];
+
+    protected static $jobTitleFormat = [
+        '{{word}}',
+    ];
+
+    /**
+     * @example 'Acme Ltd'
+     *
+     * @return string
+     */
+    public function company()
+    {
+        $format = static::randomElement(static::$formats);
+
+        return $this->generator->parse($format);
+    }
+
+    /**
+     * @example 'Ltd'
+     *
+     * @return string
+     */
+    public static function companySuffix()
+    {
+        return static::randomElement(static::$companySuffix);
+    }
+
+    /**
+     * @example 'Job'
+     *
+     * @return string
+     */
+    public function jobTitle()
+    {
+        $format = static::randomElement(static::$jobTitleFormat);
+
+        return $this->generator->parse($format);
+    }
+}

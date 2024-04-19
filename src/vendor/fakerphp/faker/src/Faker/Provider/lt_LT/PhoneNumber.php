@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d54e31c0809662a5e93477365caa0de869a4df00ee92372104133ce9257e1aaa
-size 342
+<?php
+
+namespace Faker\Provider\lt_LT;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '86#######',
+        '8 6## #####',
+        '+370 6## ## ###',
+        '+3706#######',
+        '(8 5) ### ####',
+        '+370 5 ### ####',
+        '+370 46 ## ## ##',
+        '(8 46) ## ## ##',
+    ];
+}

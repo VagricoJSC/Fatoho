@@ -1,3 +1,102 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce883cf60a19173a4678236eead8f0d85fcc3166f46ada3f26b28bbe1208f3a6
-size 2883
+<?php
+
+namespace Illuminate\Database\Schema;
+
+use Illuminate\Support\Facades\File;
+
+class SQLiteBuilder extends Builder
+{
+    /**
+     * Create a database in the schema.
+     *
+     * @param  string  $name
+     * @return bool
+     */
+    public function createDatabase($name)
+    {
+        return File::put($name, '') !== false;
+    }
+
+    /**
+     * Drop a database from the schema if the database exists.
+     *
+     * @param  string  $name
+     * @return bool
+     */
+    public function dropDatabaseIfExists($name)
+    {
+        return File::exists($name)
+            ? File::delete($name)
+            : true;
+    }
+
+    /**
+     * Drop all tables from the database.
+     *
+     * @return void
+     */
+    public function dropAllTables()
+    {
+        if ($this->connection->getDatabaseName() !== ':memory:') {
+            return $this->refreshDatabaseFile();
+        }
+
+        $this->connection->select($this->grammar->compileEnableWriteableSchema());
+
+        $this->connection->select($this->grammar->compileDropAllTables());
+
+        $this->connection->select($this->grammar->compileDisableWriteableSchema());
+
+        $this->connection->select($this->grammar->compileRebuild());
+    }
+
+    /**
+     * Drop all views from the database.
+     *
+     * @return void
+     */
+    public function dropAllViews()
+    {
+        $this->connection->select($this->grammar->compileEnableWriteableSchema());
+
+        $this->connection->select($this->grammar->compileDropAllViews());
+
+        $this->connection->select($this->grammar->compileDisableWriteableSchema());
+
+        $this->connection->select($this->grammar->compileRebuild());
+    }
+
+    /**
+     * Get all of the table names for the database.
+     *
+     * @return array
+     */
+    public function getAllTables()
+    {
+        return $this->connection->select(
+            $this->grammar->compileGetAllTables()
+        );
+    }
+
+    /**
+     * Get all of the view names for the database.
+     *
+     * @return array
+     */
+    public function getAllViews()
+    {
+        return $this->connection->select(
+            $this->grammar->compileGetAllViews()
+        );
+    }
+
+    /**
+     * Empty the database file.
+     *
+     * @return void
+     */
+    public function refreshDatabaseFile()
+    {
+        file_put_contents($this->connection->getDatabaseName(), '');
+    }
+}

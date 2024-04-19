@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e250cbbfa8051521c53fe48e030a65b97eb39370c5b080320e8ca12f49fcddc6
-size 59
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Load The Cached Routes
+|--------------------------------------------------------------------------
+|
+| Here we will decode and unserialize the RouteCollection instance that
+| holds all of the route information for an application. This allows
+| us to instantaneously load the entire route map into the router.
+|
+*/
+
+app('router')->setCompiledRoutes(
+    {{routes}}
+);

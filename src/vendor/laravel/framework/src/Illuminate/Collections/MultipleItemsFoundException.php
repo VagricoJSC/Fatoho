@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:075e8390f47e7d98be2b0ff39511a0dbfc7e43690e0d33a6bf382e81ecd7d6e1
-size 736
+<?php
+
+namespace Illuminate\Support;
+
+use RuntimeException;
+
+class MultipleItemsFoundException extends RuntimeException
+{
+    /**
+     * The number of items found.
+     *
+     * @var int
+     */
+    public $count;
+
+    /**
+     * Create a new exception instance.
+     *
+     * @param  int  $count
+     * @param  int  $code
+     * @param  \Throwable|null  $previous
+     * @return void
+     */
+    public function __construct($count, $code = 0, $previous = null)
+    {
+        $this->count = $count;
+
+        parent::__construct("$count items were found.", $code, $previous);
+    }
+
+    /**
+     * Get the number of items found.
+     *
+     * @return int
+     */
+    public function getCount()
+    {
+        return $this->count;
+    }
+}

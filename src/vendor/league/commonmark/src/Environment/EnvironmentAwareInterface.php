@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b73458ca2dba707230882b517735e289fc539848687aa848347f85d029ab189
-size 431
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Environment;
+
+interface EnvironmentAwareInterface
+{
+    public function setEnvironment(EnvironmentInterface $environment): void;
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8131c5f82c2077f7e7f798d2334e840e971893c81f6c113ae274b3c084f527e7
-size 708
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Generator;
+
+/**
+ * RandomGeneratorFactory retrieves a default random generator, based on the
+ * environment
+ */
+class RandomGeneratorFactory
+{
+    /**
+     * Returns a default random generator, based on the current environment
+     */
+    public function getGenerator(): RandomGeneratorInterface
+    {
+        return new RandomBytesGenerator();
+    }
+}

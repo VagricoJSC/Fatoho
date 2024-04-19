@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8c07363ae5bfb4f39b50925fb5b56b8b602b4679a04ce35cdba7189ee8facfc
-size 316
+<?php
+
+declare(strict_types=1);
+
+namespace Dotenv\Store;
+
+interface StoreInterface
+{
+    /**
+     * Read the content of the environment file(s).
+     *
+     * @throws \Dotenv\Exception\InvalidEncodingException|\Dotenv\Exception\InvalidPathException
+     *
+     * @return string
+     */
+    public function read();
+}

@@ -1,0 +1,5 @@
+[01-Apr-2024 11:49:08 UTC] PHP Fatal error:  Trait "Psr\Log\LoggerAwareTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/pusher/pusher-php-server/src/Pusher.php on line 15
+[01-Apr-2024 12:04:55 UTC] PHP Fatal error:  Uncaught Error: Class "Pusher\PusherException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/pusher/pusher-php-server/src/ApiErrorException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/pusher/pusher-php-server/src/ApiErrorException.php on line 10

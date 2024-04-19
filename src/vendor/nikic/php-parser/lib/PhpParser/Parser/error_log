@@ -1,0 +1,24 @@
+[23-Mar-2024 14:51:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 18
+[23-Mar-2024 15:03:06 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php on line 18
+[23-Mar-2024 15:03:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php on line 9
+[01-Apr-2024 15:45:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 18
+[01-Apr-2024 15:45:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php on line 18
+[01-Apr-2024 15:45:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Parser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php on line 9

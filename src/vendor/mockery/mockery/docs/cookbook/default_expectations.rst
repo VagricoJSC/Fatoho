@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f631931ae6c0b6b567e7cfeb3fe4e2fa112eeeec132f9a3b69bc9bd1a10d3fd
-size 757
+.. index::
+    single: Cookbook; Default Mock Expectations
+
+Default Mock Expectations
+=========================
+
+Often in unit testing, we end up with sets of tests which use the same object
+dependency over and over again. Rather than mocking this class/object within
+every single unit test (requiring a mountain of duplicate code), we can
+instead define reusable default mocks within the test case's ``setup()``
+method. This even works where unit tests use varying expectations on the same
+or similar mock object.
+
+How this works, is that you can define mocks with default expectations. Then,
+in a later unit test, you can add or fine-tune expectations for that specific
+test. Any expectation can be set as a default using the ``byDefault()``
+declaration.

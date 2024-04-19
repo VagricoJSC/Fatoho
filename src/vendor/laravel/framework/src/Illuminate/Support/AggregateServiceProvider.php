@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9e33a65d5f4e03b24b8c1105c9fd000498985eb4be85f064bfa229211534b34
-size 995
+<?php
+
+namespace Illuminate\Support;
+
+class AggregateServiceProvider extends ServiceProvider
+{
+    /**
+     * The provider class names.
+     *
+     * @var array
+     */
+    protected $providers = [];
+
+    /**
+     * An array of the service provider instances.
+     *
+     * @var array
+     */
+    protected $instances = [];
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->instances = [];
+
+        foreach ($this->providers as $provider) {
+            $this->instances[] = $this->app->register($provider);
+        }
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        $provides = [];
+
+        foreach ($this->providers as $provider) {
+            $instance = $this->app->resolveProvider($provider);
+
+            $provides = array_merge($provides, $instance->provides());
+        }
+
+        return $provides;
+    }
+}

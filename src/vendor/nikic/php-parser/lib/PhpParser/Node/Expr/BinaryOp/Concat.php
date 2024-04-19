@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66959caea66f97099b7ce1d6370fb1c0d4a663403da860eb3ea7af241bd7ae80
-size 303
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class Concat extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return '.';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_Concat';
+    }
+}

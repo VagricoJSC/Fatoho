@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d80b63e2a8c4f80af830e5307683fc73718d15e71db3c5af56e15b56b2a47d63
-size 556
+HTTP Factories
+==============
+
+This repository holds all interfaces related to [PSR-17 (HTTP Message Factories)][psr-17]. 
+Please refer to the specification for a description.
+
+You can find implementations of the specification by looking for packages providing the 
+[psr/http-factory-implementation](https://packagist.org/providers/psr/http-factory-implementation) virtual package.
+
+[psr-17]: https://www.php-fig.org/psr/psr-17/

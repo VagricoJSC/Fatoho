@@ -1,0 +1,8 @@
+[22-Mar-2024 23:34:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Logger/ConsoleLogger.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Logger/ConsoleLogger.php on line 27
+[03-Apr-2024 07:47:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Logger/ConsoleLogger.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Logger/ConsoleLogger.php on line 27

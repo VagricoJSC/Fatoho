@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99c5c16c254199b9389a843e8dc9cb181581139f7aab03678dd4f222258a6a76
-size 446
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class ExceptionFound implements Reason
+{
+    /**
+     * @var \Exception
+     */
+    private $exception;
+
+    public function __construct(\Exception $exception)
+    {
+        $this->exception = $exception;
+        
+    }
+    public function code() : int
+    {
+        return 999;
+    }
+
+    public function description() : string
+    {
+        return $this->exception->getMessage();
+    }
+}

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddd2f87d752a7ba4f69ebe82e8b253fd2831dc3bc4a3b76358707cbc3a131f8d
-size 670
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\TestSize;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Unknown extends TestSize
+{
+    /**
+     * @psalm-assert-if-true Unknown $this
+     */
+    public function isUnknown(): bool
+    {
+        return true;
+    }
+
+    public function asString(): string
+    {
+        return 'unknown';
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c218e36ba923384ad1fc6b7b044d92a58d01458601ad3df8a93d623e159818d
-size 368
+<?php declare(strict_types=1);
+
+namespace PhpParser\ErrorHandler;
+
+use PhpParser\Error;
+use PhpParser\ErrorHandler;
+
+/**
+ * Error handler that handles all errors by throwing them.
+ *
+ * This is the default strategy used by all components.
+ */
+class Throwing implements ErrorHandler
+{
+    public function handleError(Error $error) {
+        throw $error;
+    }
+}

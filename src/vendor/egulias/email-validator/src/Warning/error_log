@@ -1,0 +1,80 @@
+[26-Mar-2024 23:52:51 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/TLD.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/TLD.php on line 5
+[26-Mar-2024 23:52:55 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/QuotedString.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/QuotedString.php on line 5
+[26-Mar-2024 23:52:59 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php on line 5
+[26-Mar-2024 23:53:03 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php on line 5
+[26-Mar-2024 23:53:08 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php on line 5
+[26-Mar-2024 23:53:11 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php on line 5
+[26-Mar-2024 23:53:15 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php on line 5
+[26-Mar-2024 23:53:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php on line 5
+[26-Mar-2024 23:53:23 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php on line 5
+[26-Mar-2024 23:53:27 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php on line 5
+[26-Mar-2024 23:53:31 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php on line 5
+[26-Mar-2024 23:53:35 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php on line 5
+[26-Mar-2024 23:53:39 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php on line 5
+[26-Mar-2024 23:53:43 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php on line 7
+[26-Mar-2024 23:53:47 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php on line 5
+[26-Mar-2024 23:53:51 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php on line 5
+[26-Mar-2024 23:53:55 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/Comment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/Comment.php on line 5
+[26-Mar-2024 23:53:59 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php on line 5
+[26-Mar-2024 23:54:03 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php on line 5
+[26-Mar-2024 23:54:07 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php on line 5

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b43ffaee3bceffd6fbcc3477e35de13629a6d4964310c31bcb7c31a76862e885
-size 346
+<?php
+
+namespace Spatie\LaravelIgnition\Http\Middleware;
+
+use Closure;
+use Spatie\LaravelIgnition\Support\RunnableSolutionsGuard;
+
+class RunnableSolutionsEnabled
+{
+    public function handle($request, Closure $next)
+    {
+        if (! RunnableSolutionsGuard::check()) {
+            abort(404);
+        }
+
+        return $next($request);
+    }
+}

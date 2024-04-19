@@ -1,0 +1,2 @@
+[03-Apr-2024 18:37:13 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 46
+[03-Apr-2024 20:36:17 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/ReportableHandler.php on line 8

@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be02a24bd457383e696c54fcd9942a50af9d4d81f547a892175da2c8a1bdace3
-size 1063
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use BadMethodCallException as BaseBadMethodCallException;
+use Throwable;
+
+class UnknownMethodException extends BaseBadMethodCallException implements BadMethodCallException
+{
+    /**
+     * The method.
+     *
+     * @var string
+     */
+    protected $method;
+
+    /**
+     * Constructor.
+     *
+     * @param string         $method
+     * @param int            $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($method, $code = 0, Throwable $previous = null)
+    {
+        $this->method = $method;
+
+        parent::__construct("Method $method does not exist.", $code, $previous);
+    }
+
+    /**
+     * Get the method.
+     *
+     * @return string
+     */
+    public function getMethod(): string
+    {
+        return $this->method;
+    }
+}

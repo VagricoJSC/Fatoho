@@ -1,0 +1,57 @@
+[03-Apr-2024 21:44:26 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php on line 16
+[03-Apr-2024 21:44:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php on line 8
+[03-Apr-2024 21:44:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsToMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php on line 9
+[03-Apr-2024 21:44:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsTo" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php on line 11
+[03-Apr-2024 21:44:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Pivot" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php on line 5
+[03-Apr-2024 21:44:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php on line 8
+[03-Apr-2024 21:44:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php on line 14
+[03-Apr-2024 21:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php on line 7
+[03-Apr-2024 21:44:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasManyThrough" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php on line 10
+[03-Apr-2024 21:45:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php on line 10
+[03-Apr-2024 21:45:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php on line 14
+[03-Apr-2024 21:45:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php on line 14
+[03-Apr-2024 21:45:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php on line 7
+[03-Apr-2024 21:45:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php on line 17
+[03-Apr-2024 21:45:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php on line 12

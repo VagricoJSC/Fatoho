@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef10872e3e0717b03925915c9ec000b51e64071a723a97cb5c147dc2e364520d
-size 1085
+<?php
+
+namespace Illuminate\Support;
+
+use Illuminate\Contracts\Support\Htmlable;
+
+class HtmlString implements Htmlable
+{
+    /**
+     * The HTML string.
+     *
+     * @var string
+     */
+    protected $html;
+
+    /**
+     * Create a new HTML string instance.
+     *
+     * @param  string  $html
+     * @return void
+     */
+    public function __construct($html = '')
+    {
+        $this->html = $html;
+    }
+
+    /**
+     * Get the HTML string.
+     *
+     * @return string
+     */
+    public function toHtml()
+    {
+        return $this->html;
+    }
+
+    /**
+     * Determine if the given HTML string is empty.
+     *
+     * @return bool
+     */
+    public function isEmpty()
+    {
+        return $this->html === '';
+    }
+
+    /**
+     * Determine if the given HTML string is not empty.
+     *
+     * @return bool
+     */
+    public function isNotEmpty()
+    {
+        return ! $this->isEmpty();
+    }
+
+    /**
+     * Get the HTML string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->toHtml();
+    }
+}

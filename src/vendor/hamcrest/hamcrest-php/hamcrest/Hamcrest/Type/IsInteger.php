@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5fb473ce8763b60bec67c9e1cd8bf256de6acff37a211b6dc54a80c28c9e09b
-size 494
+<?php
+namespace Hamcrest\Type;
+
+/*
+ Copyright (c) 2010 hamcrest.org
+ */
+use Hamcrest\Core\IsTypeOf;
+
+/**
+ * Tests whether the value is an integer.
+ */
+class IsInteger extends IsTypeOf
+{
+
+    /**
+     * Creates a new instance of IsInteger
+     */
+    public function __construct()
+    {
+        parent::__construct('integer');
+    }
+
+    /**
+     * Is the value an integer?
+     *
+     * @factory intValue
+     */
+    public static function integerValue()
+    {
+        return new self;
+    }
+}

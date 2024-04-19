@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b3d5578c11c602bda50e338ef3b04c8cc6a872f6220222eb75913675d86b95c
-size 271
+<?php
+
+namespace Illuminate\Routing\Controllers;
+
+interface HasMiddleware
+{
+    /**
+     * Get the middleware that should be assigned to the controller.
+     *
+     * @return \Illuminate\Routing\Controllers\Middleware|array
+     */
+    public static function middleware();
+}

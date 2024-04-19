@@ -1,0 +1,8 @@
+[23-Mar-2024 01:48:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\RunInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Run.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Run.php on line 22
+[01-Apr-2024 12:35:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\RunInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Run.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/filp/whoops/src/Whoops/Run.php on line 22

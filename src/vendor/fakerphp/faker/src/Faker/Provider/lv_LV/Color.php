@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f97fe01a87996e060bb45d099c8faa3f9e39740dd366c40111fd0bc0bfa0a8b
-size 546
+<?php
+
+namespace Faker\Provider\lv_LV;
+
+class Color extends \Faker\Provider\Color
+{
+    protected static $safeColorNames = [
+
+        'balts', 'melns', 'sarkans', 'zaļš', 'dzeltens', 'zils',
+        'brūns', 'purpurs', 'rozā', 'oranžs', 'pelēks',
+
+    ];
+
+    protected static $allColorNames = [
+        'bēšs', 'palss šatens', 'bordo', 'marengo', 'mēļš', 'sirms', 'ruds', 'rūsgans',
+        'ābolains', 'bērs', 'dūkans', 'loss', 'pāts', 'salns',
+        'zelts', 'sudrabs', 'varš', 'bronza', 'zeltains', 'subrabains',
+    ];
+}

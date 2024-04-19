@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8ef4342fbaa3ab9d864d320407a998ef47f9a59d9b272fbe1cff78d2b4aa99d
-size 1562
+<?php
+
+namespace Illuminate\Database\Schema;
+
+use Illuminate\Support\Str;
+
+class ForeignIdColumnDefinition extends ColumnDefinition
+{
+    /**
+     * The schema builder blueprint instance.
+     *
+     * @var \Illuminate\Database\Schema\Blueprint
+     */
+    protected $blueprint;
+
+    /**
+     * Create a new foreign ID column definition.
+     *
+     * @param  \Illuminate\Database\Schema\Blueprint  $blueprint
+     * @param  array  $attributes
+     * @return void
+     */
+    public function __construct(Blueprint $blueprint, $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->blueprint = $blueprint;
+    }
+
+    /**
+     * Create a foreign key constraint on this column referencing the "id" column of the conventionally related table.
+     *
+     * @param  string|null  $table
+     * @param  string  $column
+     * @return \Illuminate\Database\Schema\ForeignKeyDefinition
+     */
+    public function constrained($table = null, $column = 'id')
+    {
+        return $this->references($column)->on($table ?? Str::of($this->name)->beforeLast('_'.$column)->plural());
+    }
+
+    /**
+     * Specify which column this foreign ID references on another table.
+     *
+     * @param  string  $column
+     * @return \Illuminate\Database\Schema\ForeignKeyDefinition
+     */
+    public function references($column)
+    {
+        return $this->blueprint->foreign($this->name)->references($column);
+    }
+}

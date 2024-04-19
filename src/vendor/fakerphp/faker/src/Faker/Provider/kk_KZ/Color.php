@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ba73d37c516f028270be7d771acb130c73ab453165157a15fbd90226eff9d1c
-size 394
+<?php
+
+namespace Faker\Provider\kk_KZ;
+
+class Color extends \Faker\Provider\Color
+{
+    protected static $safeColorNames = [
+        'қара', 'қою қызыл', 'жасыл', 'қара көк', 'сарғыш түс',
+        'күлгін', 'көк', 'көк', 'күміс',
+        'сұр', 'сары', 'қызылкүрең түс', 'теңіз толқыны түс', 'ақ',
+    ];
+}

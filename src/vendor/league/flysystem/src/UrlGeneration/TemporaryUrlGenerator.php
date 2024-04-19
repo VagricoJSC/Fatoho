@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cf94bec3624bb32fde837020db402212617757214d3cd427b9f94648225a08a
-size 377
+<?php
+declare(strict_types=1);
+
+namespace League\Flysystem\UrlGeneration;
+
+use DateTimeInterface;
+use League\Flysystem\Config;
+use League\Flysystem\UnableToGenerateTemporaryUrl;
+
+interface TemporaryUrlGenerator
+{
+    /**
+     * @throws UnableToGenerateTemporaryUrl
+     */
+    public function temporaryUrl(string $path, DateTimeInterface $expiresAt, Config $config): string;
+}

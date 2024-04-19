@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1433d21ea20fe9e24101361e443b8d57c1be11b9eabe4d4f272973a7d7287b1a
-size 521
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/diff.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Diff\Output;
+
+/**
+ * Defines how an output builder should take a generated
+ * diff array and return a string representation of that diff.
+ */
+interface DiffOutputBuilderInterface
+{
+    public function getDiff(array $diff): string;
+}

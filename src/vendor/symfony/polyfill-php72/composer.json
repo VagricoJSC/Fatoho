@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8daadb0a19e3e288f2c7a98e41449ff3d2ee69d8a17186c53e0b05f488109550
-size 873
+{
+    "name": "symfony/polyfill-php72",
+    "type": "library",
+    "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+    "keywords": ["polyfill", "shim", "compatibility", "portable"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Grekas",
+            "email": "p@tchwork.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Polyfill\\Php72\\": "" },
+        "files": [ "bootstrap.php" ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.27-dev"
+        },
+        "thanks": {
+            "name": "symfony/polyfill",
+            "url": "https://github.com/symfony/polyfill"
+        }
+    }
+}

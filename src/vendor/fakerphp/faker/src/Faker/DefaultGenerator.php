@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a822b9161b0897115fdccd3cc9a3f9644d039ccf61b22b42c089b510642f85d8
-size 1024
+<?php
+
+namespace Faker;
+
+/**
+ * This generator returns a default value for all called properties
+ * and methods.
+ *
+ * @mixin Generator
+ *
+ * @deprecated Use ChanceGenerator instead
+ */
+class DefaultGenerator
+{
+    protected $default;
+
+    public function __construct($default = null)
+    {
+        trigger_deprecation('fakerphp/faker', '1.16', 'Class "%s" is deprecated, use "%s" instead.', __CLASS__, ChanceGenerator::class);
+
+        $this->default = $default;
+    }
+
+    public function ext()
+    {
+        return $this;
+    }
+
+    /**
+     * @param string $attribute
+     *
+     * @deprecated Use a method instead.
+     */
+    public function __get($attribute)
+    {
+        trigger_deprecation('fakerphp/faker', '1.14', 'Accessing property "%s" is deprecated, use "%s()" instead.', $attribute, $attribute);
+
+        return $this->default;
+    }
+
+    /**
+     * @param string $method
+     * @param array  $attributes
+     */
+    public function __call($method, $attributes)
+    {
+        return $this->default;
+    }
+}

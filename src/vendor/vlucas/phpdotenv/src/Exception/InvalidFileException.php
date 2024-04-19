@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a4de7f0025e46460f7e78157133e8fe68848a37e8d96f1c86367c92ce50a079
-size 200
+<?php
+
+declare(strict_types=1);
+
+namespace Dotenv\Exception;
+
+use InvalidArgumentException;
+
+final class InvalidFileException extends InvalidArgumentException implements ExceptionInterface
+{
+    //
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b2c99a0ab4733a2334607f00af44675d694d6841e6544b2749ca07bbc8c079c
-size 499
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem\UrlGeneration;
+
+use League\Flysystem\Config;
+use League\Flysystem\PathPrefixer;
+
+class PrefixPublicUrlGenerator implements PublicUrlGenerator
+{
+    private PathPrefixer $prefixer;
+
+    public function __construct(string $urlPrefix)
+    {
+        $this->prefixer = new PathPrefixer($urlPrefix, '/');
+    }
+
+    public function publicUrl(string $path, Config $config): string
+    {
+        return $this->prefixer->prefixPath($path);
+    }
+}

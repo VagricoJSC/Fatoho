@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81362155fbb9119746d60c87b924751eda7b13ce3e05fcab6eb796e31daf0b04
-size 684
+<?php
+
+namespace Illuminate\Contracts\Queue;
+
+interface QueueableCollection
+{
+    /**
+     * Get the type of the entities being queued.
+     *
+     * @return string|null
+     */
+    public function getQueueableClass();
+
+    /**
+     * Get the identifiers for all of the entities.
+     *
+     * @return array<int, mixed>
+     */
+    public function getQueueableIds();
+
+    /**
+     * Get the relationships of the entities being queued.
+     *
+     * @return array<int, string>
+     */
+    public function getQueueableRelations();
+
+    /**
+     * Get the connection of the entities being queued.
+     *
+     * @return string|null
+     */
+    public function getQueueableConnection();
+}

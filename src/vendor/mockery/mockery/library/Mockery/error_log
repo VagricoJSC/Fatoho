@@ -1,0 +1,48 @@
+[23-Mar-2024 03:52:58 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Expectation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php on line 23
+[23-Mar-2024 03:53:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\LegacyMockInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/MockInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/MockInterface.php on line 25
+[23-Mar-2024 03:53:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\MockInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Mock.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Mock.php on line 30
+[23-Mar-2024 03:53:44 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\HigherOrderMessage" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php on line 23
+[23-Mar-2024 03:53:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Expectation.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Expectation.php on line 30
+[23-Mar-2024 03:54:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php on line 23
+[03-Apr-2024 09:08:52 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Expectation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php on line 23
+[03-Apr-2024 09:09:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\LegacyMockInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/MockInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/MockInterface.php on line 25
+[03-Apr-2024 09:09:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\MockInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Mock.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Mock.php on line 30
+[03-Apr-2024 09:09:40 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\HigherOrderMessage" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php on line 23
+[03-Apr-2024 09:09:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Expectation.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/Expectation.php on line 30
+[03-Apr-2024 09:10:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php on line 23

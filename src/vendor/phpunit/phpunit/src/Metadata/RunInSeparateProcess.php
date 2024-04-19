@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45fe34653066732d0ce1fc4e82be6b969e61600bfb4a4db699a0e77a072a3324
-size 637
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Metadata;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class RunInSeparateProcess extends Metadata
+{
+    public function isRunInSeparateProcess(): bool
+    {
+        return true;
+    }
+}

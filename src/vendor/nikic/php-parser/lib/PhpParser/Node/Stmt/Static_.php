@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:834ff72a03fb6ac625e5a9ce0d0b115adf3644fcd685ab6680940c42e7d2a6e9
-size 721
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node\Stmt;
+
+class Static_ extends Stmt
+{
+    /** @var StaticVar[] Variable definitions */
+    public $vars;
+
+    /**
+     * Constructs a static variables list node.
+     *
+     * @param StaticVar[] $vars       Variable definitions
+     * @param array       $attributes Additional attributes
+     */
+    public function __construct(array $vars, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->vars = $vars;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['vars'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Static';
+    }
+}

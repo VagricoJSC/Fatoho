@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9811d77c7530d64021fcba064766c745e68f07805772f559586b85d89f094c49
-size 418
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface BodyRendererInterface
+{
+    public function render(Message $message): void;
+}

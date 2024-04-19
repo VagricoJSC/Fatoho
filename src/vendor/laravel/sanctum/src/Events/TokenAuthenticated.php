@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:673defe94c8f5fc4e91985a820c6c169d4770b06efa81a8f000bca777d054546
-size 442
+<?php
+
+namespace Laravel\Sanctum\Events;
+
+class TokenAuthenticated
+{
+    /**
+     * The personal access token that was authenticated.
+     *
+     * @var \Laravel\Sanctum\PersonalAccessToken
+     */
+    public $token;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Laravel\Sanctum\PersonalAccessToken  $token
+     * @return void
+     */
+    public function __construct($token)
+    {
+        $this->token = $token;
+    }
+}

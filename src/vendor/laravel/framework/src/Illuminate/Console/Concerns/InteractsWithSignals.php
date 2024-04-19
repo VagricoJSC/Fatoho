@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac5c6ea9c650e28a33f79c373a6b9f91c1f89648aa91e3c2d3739dcbc2438bc6
-size 1257
+<?php
+
+namespace Illuminate\Console\Concerns;
+
+use Illuminate\Console\Signals;
+use Illuminate\Support\Arr;
+
+trait InteractsWithSignals
+{
+    /**
+     * The signal registrar instance.
+     *
+     * @var \Illuminate\Console\Signals|null
+     */
+    protected $signals;
+
+    /**
+     * Define a callback to be run when the given signal(s) occurs.
+     *
+     * @param  iterable<array-key, int>|int  $signals
+     * @param  callable(int $signal): void  $callback
+     * @return void
+     */
+    public function trap($signals, $callback)
+    {
+        Signals::whenAvailable(function () use ($signals, $callback) {
+            $this->signals ??= new Signals(
+                $this->getApplication()->getSignalRegistry(),
+            );
+
+            collect(Arr::wrap($signals))
+                ->each(fn ($signal) => $this->signals->register($signal, $callback));
+        });
+    }
+
+    /**
+     * Untrap signal handlers set within the command's handler.
+     *
+     * @return void
+     *
+     * @internal
+     */
+    public function untrap()
+    {
+        if (! is_null($this->signals)) {
+            $this->signals->unregister();
+
+            $this->signals = null;
+        }
+    }
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77515f3e4a21a93760295deaa2de13180bc91989e52eb259d82d7f1fa2c93297
-size 202
+<?php
+
+namespace Faker\Provider\en_NG;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $tld = ['com.ng', 'com', 'ng', 'net', 'edu.ng', 'org', 'gov.ng', 'org.ng', 'biz', 'co'];
+}

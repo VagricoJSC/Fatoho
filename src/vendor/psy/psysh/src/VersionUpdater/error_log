@@ -1,0 +1,24 @@
+[23-Mar-2024 02:14:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\VersionUpdater\Checker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/NoopChecker.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/NoopChecker.php on line 19
+[23-Mar-2024 02:15:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\VersionUpdater\GitHubChecker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/IntervalChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/IntervalChecker.php on line 14
+[23-Mar-2024 02:15:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\VersionUpdater\Checker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/GitHubChecker.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/GitHubChecker.php on line 16
+[01-Apr-2024 13:04:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\VersionUpdater\Checker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/NoopChecker.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/NoopChecker.php on line 19
+[01-Apr-2024 13:05:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\VersionUpdater\GitHubChecker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/IntervalChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/IntervalChecker.php on line 14
+[01-Apr-2024 13:05:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\VersionUpdater\Checker" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/GitHubChecker.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/VersionUpdater/GitHubChecker.php on line 16

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:180cb0fb74998ad41fdd49d2f0c3f0aacebc9b69cb105944c44ff136dc2e5b72
-size 353
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/type.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Type;
+
+use Throwable;
+
+interface Exception extends Throwable
+{
+}

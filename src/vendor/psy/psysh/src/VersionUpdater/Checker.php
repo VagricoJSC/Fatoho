@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7de1efdac34dc44f44272e59504128b78157da91a2ffdc2c958ccd8b60312e3e
-size 492
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\VersionUpdater;
+
+interface Checker
+{
+    const ALWAYS = 'always';
+    const DAILY = 'daily';
+    const WEEKLY = 'weekly';
+    const MONTHLY = 'monthly';
+    const NEVER = 'never';
+
+    public function isLatest(): bool;
+
+    public function getLatest(): string;
+}

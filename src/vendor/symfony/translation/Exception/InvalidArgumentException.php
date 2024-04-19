@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:875f5271856522c0578a594d80a01989cd8aef2833ba7b3c603326b67e75b442
-size 521
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Exception;
+
+/**
+ * Base InvalidArgumentException for the Translation component.
+ *
+ * @author Abdellatif Ait boudad <a.aitboudad@gmail.com>
+ */
+class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

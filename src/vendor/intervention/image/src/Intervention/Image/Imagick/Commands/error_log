@@ -1,0 +1,124 @@
+[03-Apr-2024 20:55:49 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Imagick\Commands\ResizeCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/WidenCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/WidenCommand.php on line 5
+[03-Apr-2024 20:55:53 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/TrimCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/TrimCommand.php on line 8
+[03-Apr-2024 20:55:59 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/SharpenCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/SharpenCommand.php on line 7
+[03-Apr-2024 20:56:01 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/RotateCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/RotateCommand.php on line 8
+[03-Apr-2024 20:56:07 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCommand.php on line 7
+[03-Apr-2024 20:56:09 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCanvasCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCanvasCommand.php on line 7
+[03-Apr-2024 20:56:13 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResetCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResetCommand.php on line 8
+[03-Apr-2024 20:56:19 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelateCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelateCommand.php on line 7
+[03-Apr-2024 20:56:21 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelCommand.php on line 8
+[03-Apr-2024 20:56:25 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PickColorCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PickColorCommand.php on line 8
+[03-Apr-2024 20:56:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/OpacityCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/OpacityCommand.php on line 7
+[03-Apr-2024 20:56:33 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/MaskCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/MaskCommand.php on line 7
+[03-Apr-2024 20:56:37 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/LimitColorsCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/LimitColorsCommand.php on line 7
+[03-Apr-2024 20:56:42 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InvertCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InvertCommand.php on line 7
+[03-Apr-2024 20:56:46 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InterlaceCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InterlaceCommand.php on line 7
+[03-Apr-2024 20:56:49 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InsertCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InsertCommand.php on line 7
+[03-Apr-2024 20:56:53 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Imagick\Commands\ResizeCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/HeightenCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/HeightenCommand.php on line 5
+[03-Apr-2024 20:56:57 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GreyscaleCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GreyscaleCommand.php on line 7
+[03-Apr-2024 20:57:01 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GetSizeCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GetSizeCommand.php on line 8
+[03-Apr-2024 20:57:05 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GammaCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GammaCommand.php on line 7
+[03-Apr-2024 20:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FlipCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FlipCommand.php on line 7
+[03-Apr-2024 20:57:15 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FitCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FitCommand.php on line 8
+[03-Apr-2024 20:57:17 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FillCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FillCommand.php on line 11
+[03-Apr-2024 20:57:22 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\ExifCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ExifCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ExifCommand.php on line 8
+[03-Apr-2024 20:57:25 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/DestroyCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/DestroyCommand.php on line 7
+[03-Apr-2024 20:57:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/CropCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/CropCommand.php on line 10
+[03-Apr-2024 20:57:33 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ContrastCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ContrastCommand.php on line 7
+[03-Apr-2024 20:57:37 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ColorizeCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ColorizeCommand.php on line 7
+[03-Apr-2024 20:57:41 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BrightnessCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BrightnessCommand.php on line 7
+[03-Apr-2024 20:57:45 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BlurCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BlurCommand.php on line 7
+[03-Apr-2024 20:57:49 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BackupCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BackupCommand.php on line 7

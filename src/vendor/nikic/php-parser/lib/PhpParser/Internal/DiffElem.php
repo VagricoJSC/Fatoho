@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e66978539b72c8f178ea7cc188f19712b96006abb3aee5eb8bf4d3ed890b7d8c
-size 763
+<?php declare(strict_types=1);
+
+namespace PhpParser\Internal;
+
+/**
+ * @internal
+ */
+class DiffElem
+{
+    const TYPE_KEEP = 0;
+    const TYPE_REMOVE = 1;
+    const TYPE_ADD = 2;
+    const TYPE_REPLACE = 3;
+
+    /** @var int One of the TYPE_* constants */
+    public $type;
+    /** @var mixed Is null for add operations */
+    public $old;
+    /** @var mixed Is null for remove operations */
+    public $new;
+
+    public function __construct(int $type, $old, $new) {
+        $this->type = $type;
+        $this->old = $old;
+        $this->new = $new;
+    }
+}

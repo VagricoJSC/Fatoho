@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74d69a0b09700bcc198d9dc585db10e71c6ae4277b71e4935aaff26a2af8238e
-size 782
+<?php
+
+namespace Illuminate\Contracts\Redis;
+
+use Closure;
+
+interface Connection
+{
+    /**
+     * Subscribe to a set of given channels for messages.
+     *
+     * @param  array|string  $channels
+     * @param  \Closure  $callback
+     * @return void
+     */
+    public function subscribe($channels, Closure $callback);
+
+    /**
+     * Subscribe to a set of given channels with wildcards.
+     *
+     * @param  array|string  $channels
+     * @param  \Closure  $callback
+     * @return void
+     */
+    public function psubscribe($channels, Closure $callback);
+
+    /**
+     * Run a command against the Redis database.
+     *
+     * @param  string  $method
+     * @param  array  $parameters
+     * @return mixed
+     */
+    public function command($method, array $parameters = []);
+}

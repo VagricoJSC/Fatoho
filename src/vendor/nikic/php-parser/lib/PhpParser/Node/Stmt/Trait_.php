@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d0493e222a965495178fe8a8b88b85b009d29c25b28db35a523b3e31582f10e
-size 1071
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Trait_ extends ClassLike
+{
+    /**
+     * Constructs a trait node.
+     *
+     * @param string|Node\Identifier $name Name
+     * @param array  $subNodes   Array of the following optional subnodes:
+     *                           'stmts'      => array(): Statements
+     *                           'attrGroups' => array(): PHP attribute groups
+     * @param array  $attributes Additional attributes
+     */
+    public function __construct($name, array $subNodes = [], array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->name = \is_string($name) ? new Node\Identifier($name) : $name;
+        $this->stmts = $subNodes['stmts'] ?? [];
+        $this->attrGroups = $subNodes['attrGroups'] ?? [];
+    }
+
+    public function getSubNodeNames() : array {
+        return ['attrGroups', 'name', 'stmts'];
+    }
+
+    public function getType() : string {
+        return 'Stmt_Trait';
+    }
+}

@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95977d9f930240e73472a4d33a74a88fc6bbcffaa12e995161c04219c2ebcb71
-size 1481
+<?php
+
+namespace Illuminate\Mail\Transport;
+
+use Illuminate\Support\Collection;
+use Symfony\Component\Mailer\Envelope;
+use Symfony\Component\Mailer\SentMessage;
+use Symfony\Component\Mailer\Transport\TransportInterface;
+use Symfony\Component\Mime\RawMessage;
+
+class ArrayTransport implements TransportInterface
+{
+    /**
+     * The collection of Symfony Messages.
+     *
+     * @var \Illuminate\Support\Collection
+     */
+    protected $messages;
+
+    /**
+     * Create a new array transport instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->messages = new Collection;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function send(RawMessage $message, Envelope $envelope = null): ?SentMessage
+    {
+        return $this->messages[] = new SentMessage($message, $envelope ?? Envelope::create($message));
+    }
+
+    /**
+     * Retrieve the collection of messages.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function messages()
+    {
+        return $this->messages;
+    }
+
+    /**
+     * Clear all of the messages from the local collection.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function flush()
+    {
+        return $this->messages = new Collection;
+    }
+
+    /**
+     * Get the string representation of the transport.
+     *
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return 'array';
+    }
+}

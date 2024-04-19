@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0d7cd16a4d8fe612ccc1a443363a955bb9a6395733cf3179ff4af86b6a8bd98
-size 706
+<?php
+/**
+ * @package php-font-lib
+ * @link    https://github.com/PhenX/php-font-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @version $Id: Font_Table_glyf.php 46 2012-04-02 20:22:38Z fabien.menager $
+ */
+
+namespace FontLib\Glyph;
+/**
+ * Glyph outline component
+ *
+ * @package php-font-lib
+ */
+class OutlineComponent {
+  public $flags;
+  public $glyphIndex;
+  public $a, $b, $c, $d, $e, $f;
+  public $point_compound;
+  public $point_component;
+  public $instructions;
+
+  function getMatrix() {
+    return array(
+      $this->a, $this->b,
+      $this->c, $this->d,
+      $this->e, $this->f,
+    );
+  }
+}

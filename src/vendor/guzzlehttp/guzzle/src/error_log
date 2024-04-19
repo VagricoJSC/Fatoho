@@ -1,0 +1,26 @@
+[23-Mar-2024 01:04:43 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Pool.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Pool.php on line 24
+[23-Mar-2024 01:05:00 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\MessageFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php on line 38
+[23-Mar-2024 01:06:28 UTC] PHP Fatal error:  Trait "GuzzleHttp\ClientTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Client.php on line 17
+[23-Mar-2024 01:06:35 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\BodySummarizerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php on line 7
+[03-Apr-2024 07:14:01 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Pool.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Pool.php on line 24
+[03-Apr-2024 07:14:04 UTC] PHP Fatal error:  Trait "GuzzleHttp\ClientTrait" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/Client.php on line 17
+[03-Apr-2024 07:43:57 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\MessageFormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php on line 38
+[03-Apr-2024 07:44:12 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\BodySummarizerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php on line 7

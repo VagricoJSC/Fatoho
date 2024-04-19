@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e192e7f356484c9465260878a95ca1f09dd6f26de584137821b33f1dabeda4ea
-size 472
+<?php
+
+namespace UniSharp\LaravelFilemanager\Controllers;
+
+use Illuminate\Support\Facades\Storage;
+
+class RedirectController extends LfmController
+{
+    public function showFile($file_path)
+    {
+        $storage = Storage::disk($this->helper->config('disk'));
+
+        if (! $storage->exists($file_path)) {
+            abort(404);
+        }
+
+        return response($storage->get($file_path))
+            ->header('Content-Type', $storage->mimeType($file_path));
+    }
+}

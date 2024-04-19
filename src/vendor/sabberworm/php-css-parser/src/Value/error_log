@@ -1,0 +1,48 @@
+[23-Mar-2024 05:28:20 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\Value" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/ValueList.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/ValueList.php on line 7
+[23-Mar-2024 05:29:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Value.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Value.php on line 11
+[23-Mar-2024 05:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\PrimitiveValue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/URL.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/URL.php on line 11
+[23-Mar-2024 05:29:43 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\PrimitiveValue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Size.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Size.php on line 10
+[23-Mar-2024 05:29:46 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\ValueList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/RuleValueList.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/RuleValueList.php on line 5
+[23-Mar-2024 05:29:48 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\Value" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/PrimitiveValue.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/PrimitiveValue.php on line 5
+[23-Mar-2024 05:29:51 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\ValueList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/LineName.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/LineName.php on line 10
+[23-Mar-2024 05:29:56 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\CSSFunction" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Color.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/Color.php on line 10
+[23-Mar-2024 05:30:01 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\RuleValueList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CalcRuleValueList.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CalcRuleValueList.php on line 7
+[23-Mar-2024 05:30:04 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\CSSFunction" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CalcFunction.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CalcFunction.php on line 9
+[23-Mar-2024 05:30:10 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\PrimitiveValue" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CSSString.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CSSString.php on line 11
+[23-Mar-2024 05:30:11 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Value\ValueList" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CSSFunction.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/sabberworm/php-css-parser/src/Value/CSSFunction.php on line 7

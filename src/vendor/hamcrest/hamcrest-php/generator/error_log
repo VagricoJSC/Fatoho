@@ -1,0 +1,31 @@
+[26-Mar-2024 23:39:28 UTC] PHP Warning:  require(/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[26-Mar-2024 23:39:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[26-Mar-2024 23:39:31 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php on line 7
+[26-Mar-2024 23:39:35 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php on line 7
+[28-Mar-2024 17:35:44 UTC] PHP Warning:  require(/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[28-Mar-2024 17:35:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[03-Apr-2024 07:23:13 UTC] PHP Warning:  require(/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[03-Apr-2024 07:23:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[03-Apr-2024 08:04:53 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php on line 7
+[03-Apr-2024 08:04:57 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php on line 7

@@ -1,0 +1,8 @@
+[01-Apr-2024 17:29:38 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Stmt\TraitUseAdaptation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Precedence.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Precedence.php on line 7
+[01-Apr-2024 17:29:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Stmt\TraitUseAdaptation" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Alias.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Alias.php on line 7

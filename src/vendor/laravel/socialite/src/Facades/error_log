@@ -1,0 +1,4 @@
+[03-Apr-2024 09:08:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Facades/Socialite.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Facades/Socialite.php on line 13

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e84855a7a4592058d2d23c3392f4fa0651627f5ab7b7c295c81094a2018048d8
-size 475
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+use Symfony\Component\Console\Output\OutputInterface;
+
+class Info extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $string
+     * @param  int  $verbosity
+     * @return void
+     */
+    public function render($string, $verbosity = OutputInterface::VERBOSITY_NORMAL)
+    {
+        with(new Line($this->output))->render('info', $string, $verbosity);
+    }
+}

@@ -1,0 +1,13 @@
+[03-Apr-2024 18:43:13 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/ResponseSequence.php on line 8
+[03-Apr-2024 18:43:17 UTC] PHP Fatal error:  Trait "Illuminate\Http\Client\Concerns\DeterminesStatusCode" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/Response.php on line 10
+[03-Apr-2024 18:43:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php on line 5
+[03-Apr-2024 18:43:25 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/Request.php on line 10
+[03-Apr-2024 18:43:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php on line 28
+[03-Apr-2024 18:43:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php on line 17
+[03-Apr-2024 18:43:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php on line 5

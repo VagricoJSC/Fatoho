@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2df3e93b1b02ed8b8fae92e8acfa5c136af7bc333be28c909ff87e157a81a042
-size 817
+<?php
+
+namespace Srmklive\PayPal;
+
+use Exception;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
+
+class PayPalFacadeAccessor
+{
+    /**
+     * PayPal API provider object.
+     *
+     * @var
+     */
+    public static $provider;
+
+    /**
+     * Get specific PayPal API provider object to use.
+     *
+     * @throws Exception
+     *
+     * @return \Srmklive\PayPal\Services\PayPal
+     */
+    public static function getProvider()
+    {
+        return self::$provider;
+    }
+
+    /**
+     * Set PayPal API Client to use.
+     *
+     * @throws \Exception
+     *
+     * @return \Srmklive\PayPal\Services\PayPal
+     */
+    public static function setProvider()
+    {
+        // Set default provider. Defaults to ExpressCheckout
+        self::$provider = new PayPalClient();
+
+        return self::getProvider();
+    }
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d73d23a0bede21f361cc63cafebee9d1328f4a705e36ee44df06acc6825f56f
-size 286
+<?php
+
+namespace UniSharp\LaravelFilemanager\Events;
+
+class ImageWasResized
+{
+    private $path;
+
+    public function __construct($path)
+    {
+        $this->path = $path;
+    }
+
+    /**
+     * @return string
+     */
+    public function path()
+    {
+        return $this->path;
+    }
+}

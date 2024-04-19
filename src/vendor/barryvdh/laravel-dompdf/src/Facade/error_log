@@ -1,0 +1,8 @@
+[26-Mar-2024 23:52:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php on line 26
+[03-Apr-2024 10:14:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php on line 26

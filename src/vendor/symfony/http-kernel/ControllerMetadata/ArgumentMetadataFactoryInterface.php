@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b55975c928695c3ee3ecb8efbc65775f3255787b83caca93791448d32f34b7b
-size 619
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\ControllerMetadata;
+
+/**
+ * Builds method argument data.
+ *
+ * @author Iltar van der Berg <kjarli@gmail.com>
+ */
+interface ArgumentMetadataFactoryInterface
+{
+    /**
+     * @param \ReflectionFunctionAbstract|null $reflector
+     *
+     * @return ArgumentMetadata[]
+     */
+    public function createArgumentMetadata(string|object|array $controller/* , \ReflectionFunctionAbstract $reflector = null */): array;
+}

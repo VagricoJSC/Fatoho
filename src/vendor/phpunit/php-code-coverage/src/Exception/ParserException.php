@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bf7638ad904071b99372e1b606d83e799ae3ba6fd026ad1a68f6902e3b7c171
-size 415
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage;
+
+use RuntimeException;
+
+final class ParserException extends RuntimeException implements Exception
+{
+}

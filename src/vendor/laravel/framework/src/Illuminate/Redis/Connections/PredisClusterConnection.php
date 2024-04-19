@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5d6feac876327e99ff49f231a74e157582aa35c1fb3c8e7750b4014f30212bf
-size 600
+<?php
+
+namespace Illuminate\Redis\Connections;
+
+use Predis\Command\Redis\FLUSHDB;
+use Predis\Command\ServerFlushDatabase;
+
+class PredisClusterConnection extends PredisConnection
+{
+    /**
+     * Flush the selected Redis database on all cluster nodes.
+     *
+     * @return void
+     */
+    public function flushdb()
+    {
+        $command = class_exists(ServerFlushDatabase::class)
+            ? ServerFlushDatabase::class
+            : FLUSHDB::class;
+
+        foreach ($this->client as $node) {
+            $node->executeCommand(tap(new $command)->setArguments(func_get_args()));
+        }
+    }
+}

@@ -1,0 +1,8 @@
+[27-Mar-2024 02:04:03 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Inflector\GenericLanguageInflectorFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php on line 10
+[03-Apr-2024 11:00:52 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Inflector\GenericLanguageInflectorFactory" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php on line 10

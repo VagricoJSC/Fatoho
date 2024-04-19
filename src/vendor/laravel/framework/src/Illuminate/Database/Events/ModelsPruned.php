@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:856dbfb36d9b9bffb2555c6e1b00a5b0c884d84b9cb9dbbbeb33ccd26ceb5669
-size 537
+<?php
+
+namespace Illuminate\Database\Events;
+
+class ModelsPruned
+{
+    /**
+     * The class name of the model that was pruned.
+     *
+     * @var string
+     */
+    public $model;
+
+    /**
+     * The number of pruned records.
+     *
+     * @var int
+     */
+    public $count;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $model
+     * @param  int  $count
+     * @return void
+     */
+    public function __construct($model, $count)
+    {
+        $this->model = $model;
+        $this->count = $count;
+    }
+}

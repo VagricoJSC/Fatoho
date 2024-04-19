@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d0863ad25bd6775c5b5ed8a2b65d54c3077b4e066e0c91124e192879d5a6293
-size 394
+<?php
+
+namespace Faker\Provider\en_HK;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = [
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'yahoo.com.hk', 'hotmail.com.hk',
+    ];
+    protected static $tld = [
+        'com', 'com', 'com', 'com.hk', 'com.hk', 'com', 'biz', 'info', 'net', 'org',
+        'com.hk', 'edu.hk', 'org.hk', 'idv.hk',
+    ];
+}

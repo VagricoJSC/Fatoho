@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a5b74e24979edb0fd5f7d4fc6bb1bd2ac1f0dc4066de8b6445fc7e31c219212
-size 613
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class OpacityCommand extends AbstractCommand
+{
+    /**
+     * Defines opacity of an image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $transparency = $this->argument(0)->between(0, 100)->required()->value();
+        
+        $transparency = $transparency > 0 ? (100 / $transparency) : 1000;
+
+        return $image->getCore()->evaluateImage(\Imagick::EVALUATE_DIVIDE, $transparency, \Imagick::CHANNEL_ALPHA);
+    }
+}

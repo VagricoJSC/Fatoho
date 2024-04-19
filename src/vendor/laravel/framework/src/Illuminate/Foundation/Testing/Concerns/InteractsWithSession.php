@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1de5e329aaffd8ae18951a1dca59daeb18a338d04147a70cf7d67e80363d2b6
-size 1150
+<?php
+
+namespace Illuminate\Foundation\Testing\Concerns;
+
+trait InteractsWithSession
+{
+    /**
+     * Set the session to the given array.
+     *
+     * @param  array  $data
+     * @return $this
+     */
+    public function withSession(array $data)
+    {
+        $this->session($data);
+
+        return $this;
+    }
+
+    /**
+     * Set the session to the given array.
+     *
+     * @param  array  $data
+     * @return $this
+     */
+    public function session(array $data)
+    {
+        $this->startSession();
+
+        foreach ($data as $key => $value) {
+            $this->app['session']->put($key, $value);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Start the session for the application.
+     *
+     * @return $this
+     */
+    protected function startSession()
+    {
+        if (! $this->app['session']->isStarted()) {
+            $this->app['session']->start();
+        }
+
+        return $this;
+    }
+
+    /**
+     * Flush all of the current session data.
+     *
+     * @return $this
+     */
+    public function flushSession()
+    {
+        $this->startSession();
+
+        $this->app['session']->flush();
+
+        return $this;
+    }
+}

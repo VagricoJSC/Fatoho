@@ -1,0 +1,8 @@
+[23-Mar-2024 16:23:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Serializer\RulesInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php on line 17
+[03-Apr-2024 16:25:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Serializer\RulesInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php on line 17

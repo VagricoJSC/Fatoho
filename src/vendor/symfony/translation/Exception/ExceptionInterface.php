@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f25d2ac5d11dbc6ac263bbbc6359ee862a08e3fcf063f67de37561c1f8f7575
-size 469
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Exception;
+
+/**
+ * Exception interface for all exceptions thrown by the component.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface ExceptionInterface extends \Throwable
+{
+}

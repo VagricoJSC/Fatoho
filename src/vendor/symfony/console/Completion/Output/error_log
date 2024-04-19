@@ -1,0 +1,12 @@
+[23-Mar-2024 04:18:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Completion\Output\CompletionOutputInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/ZshCompletionOutput.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/ZshCompletionOutput.php on line 20
+[23-Mar-2024 04:18:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Completion\Output\CompletionOutputInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/FishCompletionOutput.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/FishCompletionOutput.php on line 20
+[23-Mar-2024 04:18:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Completion\Output\CompletionOutputInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/BashCompletionOutput.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Completion/Output/BashCompletionOutput.php on line 20

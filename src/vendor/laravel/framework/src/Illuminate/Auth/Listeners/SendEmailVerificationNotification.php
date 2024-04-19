@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:476267aee7165ee6f440a17cbd78c518ad450407a12975055641cd36216b90e8
-size 526
+<?php
+
+namespace Illuminate\Auth\Listeners;
+
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+class SendEmailVerificationNotification
+{
+    /**
+     * Handle the event.
+     *
+     * @param  \Illuminate\Auth\Events\Registered  $event
+     * @return void
+     */
+    public function handle(Registered $event)
+    {
+        if ($event->user instanceof MustVerifyEmail && ! $event->user->hasVerifiedEmail()) {
+            $event->user->sendEmailVerificationNotification();
+        }
+    }
+}

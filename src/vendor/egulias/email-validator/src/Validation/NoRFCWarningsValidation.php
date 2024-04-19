@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7587f16787427392776674e7457f3986e9aa4e216a548707663f9b4a2f38621
-size 845
+<?php
+
+namespace Egulias\EmailValidator\Validation;
+
+use Egulias\EmailValidator\EmailLexer;
+use Egulias\EmailValidator\Result\InvalidEmail;
+use Egulias\EmailValidator\Result\Reason\RFCWarnings;
+
+class NoRFCWarningsValidation extends RFCValidation
+{
+    /**
+     * @var InvalidEmail|null
+     */
+    private $error;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isValid(string $email, EmailLexer $emailLexer) : bool
+    {
+        if (!parent::isValid($email, $emailLexer)) {
+            return false;
+        }
+
+        if (empty($this->getWarnings())) {
+            return true;
+        }
+
+        $this->error = new InvalidEmail(new RFCWarnings(), '');
+
+        return false;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getError() : ?InvalidEmail
+    {
+        return $this->error ?: parent::getError();
+    }
+}

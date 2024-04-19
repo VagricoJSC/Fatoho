@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3afd7ba0480f907b9633d19d9af1eff6faae29c16068867d988217214a3d22f5
-size 1227
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use Carbon\CarbonInterface;
+use InvalidArgumentException as BaseInvalidArgumentException;
+use Throwable;
+
+class NotACarbonClassException extends BaseInvalidArgumentException implements InvalidArgumentException
+{
+    /**
+     * The className.
+     *
+     * @var string
+     */
+    protected $className;
+
+    /**
+     * Constructor.
+     *
+     * @param string         $className
+     * @param int            $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($className, $code = 0, Throwable $previous = null)
+    {
+        $this->className = $className;
+
+        parent::__construct(sprintf('Given class does not implement %s: %s', CarbonInterface::class, $className), $code, $previous);
+    }
+
+    /**
+     * Get the className.
+     *
+     * @return string
+     */
+    public function getClassName(): string
+    {
+        return $this->className;
+    }
+}

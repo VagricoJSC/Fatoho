@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9e71fe6ac0ef79e245fc82ed3ea02a4d981649ff2cc7658104384ba507cad75
-size 665
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node;
+
+use PhpParser\NodeAbstract;
+
+class IntersectionType extends ComplexType
+{
+    /** @var (Identifier|Name)[] Types */
+    public $types;
+
+    /**
+     * Constructs an intersection type.
+     *
+     * @param (Identifier|Name)[] $types      Types
+     * @param array               $attributes Additional attributes
+     */
+    public function __construct(array $types, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->types = $types;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['types'];
+    }
+
+    public function getType() : string {
+        return 'IntersectionType';
+    }
+}

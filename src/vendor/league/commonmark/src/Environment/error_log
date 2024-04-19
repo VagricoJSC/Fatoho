@@ -1,0 +1,12 @@
+[01-Apr-2024 12:51:12 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php on line 26
+[01-Apr-2024 12:51:12 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php on line 27
+[01-Apr-2024 12:51:16 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Environment\EnvironmentInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/Environment.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Environment/Environment.php on line 46

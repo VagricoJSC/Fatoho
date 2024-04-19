@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdddee39a64c32bb923af63c59a916dc32a8ee111bf71e97429380fdde9e2206
-size 713
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Stmt;
+
+use PhpParser\Node;
+
+class Continue_ extends Node\Stmt
+{
+    /** @var null|Node\Expr Number of loops to continue */
+    public $num;
+
+    /**
+     * Constructs a continue node.
+     *
+     * @param null|Node\Expr $num        Number of loops to continue
+     * @param array          $attributes Additional attributes
+     */
+    public function __construct(Node\Expr $num = null, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->num = $num;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['num'];
+    }
+    
+    public function getType() : string {
+        return 'Stmt_Continue';
+    }
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27bd32ca16646631410a83d8f3225580fe58b10e2fd372d44d68fb9813ba7144
-size 417
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface Subscriber
+{
+}

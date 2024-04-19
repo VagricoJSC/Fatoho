@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d57f2ba07d960373a2b0ae1b7261d762e0f2d921f35e5affad65c0df6e379c6f
-size 278
+<?php
+
+namespace Faker\Provider\uk_UA;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $tld = ['ua', 'com.ua', 'org.ua', 'net.ua', 'com', 'net', 'org'];
+    protected static $freeEmailDomain = ['gmail.com', 'mail.ru', 'ukr.net', 'i.ua', 'rambler.ru'];
+}

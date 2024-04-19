@@ -1,0 +1,8 @@
+[23-Mar-2024 03:47:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/tinker/src/Console/TinkerCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/tinker/src/Console/TinkerCommand.php on line 14
+[03-Apr-2024 09:49:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/tinker/src/Console/TinkerCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/tinker/src/Console/TinkerCommand.php on line 14

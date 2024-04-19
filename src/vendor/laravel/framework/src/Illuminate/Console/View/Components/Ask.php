@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7ffa0c2a71b1f5a3f3badf6cdf85407cf9606da8ae43ff8c41d3eefe84ac840
-size 411
+<?php
+
+namespace Illuminate\Console\View\Components;
+
+class Ask extends Component
+{
+    /**
+     * Renders the component using the given arguments.
+     *
+     * @param  string  $question
+     * @param  string  $default
+     * @return mixed
+     */
+    public function render($question, $default = null)
+    {
+        return $this->usingQuestionHelper(fn () => $this->output->ask($question, $default));
+    }
+}

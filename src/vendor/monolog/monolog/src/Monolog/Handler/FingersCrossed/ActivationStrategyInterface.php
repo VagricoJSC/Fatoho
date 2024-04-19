@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d81cb1f7ea0e799e9eb012a86c5d9da564ca2efb25697779b444b6738328eb5e
-size 649
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Handler\FingersCrossed;
+
+use Monolog\LogRecord;
+
+/**
+ * Interface for activation strategies for the FingersCrossedHandler.
+ *
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ */
+interface ActivationStrategyInterface
+{
+    /**
+     * Returns whether the given record activates the handler.
+     */
+    public function isHandlerActivated(LogRecord $record): bool;
+}

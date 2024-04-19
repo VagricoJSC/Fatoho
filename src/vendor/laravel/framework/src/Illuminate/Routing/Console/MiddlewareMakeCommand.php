@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e5973b8401a0131b16514276ef5a7c4b56136e282e2acf603b21a6071ad1a28
-size 1478
+<?php
+
+namespace Illuminate\Routing\Console;
+
+use Illuminate\Console\Concerns\CreatesMatchingTest;
+use Illuminate\Console\GeneratorCommand;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'make:middleware')]
+class MiddlewareMakeCommand extends GeneratorCommand
+{
+    use CreatesMatchingTest;
+
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'make:middleware';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Create a new middleware class';
+
+    /**
+     * The type of class being generated.
+     *
+     * @var string
+     */
+    protected $type = 'Middleware';
+
+    /**
+     * Get the stub file for the generator.
+     *
+     * @return string
+     */
+    protected function getStub()
+    {
+        return $this->resolveStubPath('/stubs/middleware.stub');
+    }
+
+    /**
+     * Resolve the fully-qualified path to the stub.
+     *
+     * @param  string  $stub
+     * @return string
+     */
+    protected function resolveStubPath($stub)
+    {
+        return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
+            ? $customPath
+            : __DIR__.$stub;
+    }
+
+    /**
+     * Get the default namespace for the class.
+     *
+     * @param  string  $rootNamespace
+     * @return string
+     */
+    protected function getDefaultNamespace($rootNamespace)
+    {
+        return $rootNamespace.'\Http\Middleware';
+    }
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d138f57ecc7cdaab502430290024c1737763c8a4dbefe6b32f44ba426a705f8
-size 501
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Exception;
+
+/**
+ * Exception thrown when a route does not exist.
+ *
+ * @author Alexandre Salomé <alexandre.salome@gmail.com>
+ */
+class RouteNotFoundException extends \InvalidArgumentException implements ExceptionInterface
+{
+}

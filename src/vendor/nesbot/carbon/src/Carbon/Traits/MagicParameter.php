@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98143b4ffa7ece214294714719f56630f236274ab14571cb5bac075ef22c9803
-size 747
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Traits;
+
+/**
+ * Trait MagicParameter.
+ *
+ * Allows to retrieve parameter in magic calls by index or name.
+ */
+trait MagicParameter
+{
+    private function getMagicParameter(array $parameters, int $index, string $key, $default)
+    {
+        if (\array_key_exists($index, $parameters)) {
+            return $parameters[$index];
+        }
+
+        if (\array_key_exists($key, $parameters)) {
+            return $parameters[$key];
+        }
+
+        return $default;
+    }
+}

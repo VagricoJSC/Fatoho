@@ -1,0 +1,24 @@
+[22-Mar-2024 23:48:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RequestContextAwareInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGeneratorInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGeneratorInterface.php on line 32
+[22-Mar-2024 23:48:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Generator\UrlGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGenerator.php on line 28
+[22-Mar-2024 23:48:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Generator\UrlGenerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/CompiledUrlGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/CompiledUrlGenerator.php on line 21
+[03-Apr-2024 07:31:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Generator\UrlGeneratorInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGenerator.php on line 28
+[03-Apr-2024 08:12:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RequestContextAwareInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGeneratorInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/UrlGeneratorInterface.php on line 32
+[03-Apr-2024 08:12:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Generator\UrlGenerator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/CompiledUrlGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/routing/Generator/CompiledUrlGenerator.php on line 21

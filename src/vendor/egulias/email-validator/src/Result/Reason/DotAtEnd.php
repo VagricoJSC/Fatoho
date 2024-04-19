@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4899ca8144f10978c3cb3120354927701430c2806d123c06bb0c22be5d64ba04
-size 247
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class DotAtEnd implements Reason
+{
+    public function code() : int
+    {
+        return 142;
+    }
+
+    public function description() : string
+    {
+        return 'Dot at the end';
+    }
+}

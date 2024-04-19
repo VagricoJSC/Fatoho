@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b117182da680fb943d5618646640dea17047e594120a49392d1a0cb6dd3a57bc
-size 300
+<?php
+
+declare(strict_types=1);
+
+namespace Dotenv\Repository\Adapter;
+
+interface ReaderInterface
+{
+    /**
+     * Read an environment variable, if it exists.
+     *
+     * @param non-empty-string $name
+     *
+     * @return \PhpOption\Option<string>
+     */
+    public function read(string $name);
+}

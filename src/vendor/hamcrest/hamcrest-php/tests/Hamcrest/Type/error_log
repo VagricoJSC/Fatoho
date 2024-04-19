@@ -1,0 +1,80 @@
+[27-Mar-2024 00:42:11 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsStringTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsStringTest.php on line 4
+[27-Mar-2024 00:42:15 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsScalarTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsScalarTest.php on line 4
+[27-Mar-2024 00:42:19 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsResourceTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsResourceTest.php on line 4
+[27-Mar-2024 00:42:23 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsObjectTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsObjectTest.php on line 4
+[27-Mar-2024 00:42:27 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsNumericTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsNumericTest.php on line 4
+[27-Mar-2024 00:42:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsIntegerTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsIntegerTest.php on line 4
+[27-Mar-2024 00:42:35 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsDoubleTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsDoubleTest.php on line 4
+[27-Mar-2024 00:42:39 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsCallableTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsCallableTest.php on line 4
+[27-Mar-2024 00:42:43 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsBooleanTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsBooleanTest.php on line 4
+[27-Mar-2024 00:42:47 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsArrayTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsArrayTest.php on line 4
+[03-Apr-2024 15:37:57 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsStringTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsStringTest.php on line 4
+[03-Apr-2024 15:38:00 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsScalarTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsScalarTest.php on line 4
+[03-Apr-2024 15:38:04 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsResourceTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsResourceTest.php on line 4
+[03-Apr-2024 15:38:10 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsObjectTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsObjectTest.php on line 4
+[03-Apr-2024 15:38:12 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsNumericTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsNumericTest.php on line 4
+[03-Apr-2024 15:38:16 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsIntegerTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsIntegerTest.php on line 4
+[03-Apr-2024 15:38:20 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsDoubleTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsDoubleTest.php on line 4
+[03-Apr-2024 15:38:25 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsCallableTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsCallableTest.php on line 4
+[03-Apr-2024 15:38:28 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsBooleanTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsBooleanTest.php on line 4
+[03-Apr-2024 15:38:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsArrayTest.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsArrayTest.php on line 4

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87bd890dee4d153cd793ec4ec426763a83168b1193657288412f21b6b34477cf
-size 297
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/bs.php', [
+]);

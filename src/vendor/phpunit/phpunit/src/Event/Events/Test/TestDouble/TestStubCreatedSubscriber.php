@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eed1a311ce4b708ec142f20019c5f2eda68624deae75b0ff6bab7ba22d49737b
-size 545
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Test;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface TestStubCreatedSubscriber extends Subscriber
+{
+    public function notify(TestStubCreated $event): void;
+}

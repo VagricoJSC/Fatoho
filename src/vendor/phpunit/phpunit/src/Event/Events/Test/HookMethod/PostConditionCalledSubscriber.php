@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:959980b453c3945d6c7661438d10b6cedd6a6eb145ef549ac4027aad37054a46
-size 553
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Test;
+
+use PHPUnit\Event\Subscriber;
+
+/**
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+interface PostConditionCalledSubscriber extends Subscriber
+{
+    public function notify(PostConditionCalled $event): void;
+}

@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6f45c41c78a15109d04c8325760db8485267e1f14189e8996cf7c4aa528acd3
-size 1199
+<?php
+
+declare(strict_types=1);
+
+namespace NunoMaduro\Collision;
+
+/**
+ * @internal
+ *
+ * @see \Tests\Unit\ArgumentFormatterTest
+ */
+final class ArgumentFormatter
+{
+    private const MAX_STRING_LENGTH = 1000;
+
+    public function format(array $arguments, bool $recursive = true): string
+    {
+        $result = [];
+
+        foreach ($arguments as $argument) {
+            switch (true) {
+                case is_string($argument):
+                    $result[] = '"'.(mb_strlen($argument) > self::MAX_STRING_LENGTH ? mb_substr($argument, 0, self::MAX_STRING_LENGTH).'...' : $argument).'"';
+                    break;
+                case is_array($argument):
+                    $associative = array_keys($argument) !== range(0, count($argument) - 1);
+                    if ($recursive && $associative && count($argument) <= 5) {
+                        $result[] = '['.$this->format($argument, false).']';
+                    }
+                    break;
+                case is_object($argument):
+                    $class = get_class($argument);
+                    $result[] = "Object($class)";
+                    break;
+            }
+        }
+
+        return implode(', ', $result);
+    }
+}

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4452063fda9374c0d2a35c6b04fd2c3d37242176f43ca62d5961b2b6196de13e
-size 824
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\TaskList;
+
+use League\CommonMark\Node\Inline\AbstractInline;
+
+final class TaskListItemMarker extends AbstractInline
+{
+    /** @psalm-readonly-allow-private-mutation */
+    private bool $checked;
+
+    public function __construct(bool $isCompleted)
+    {
+        parent::__construct();
+
+        $this->checked = $isCompleted;
+    }
+
+    public function isChecked(): bool
+    {
+        return $this->checked;
+    }
+
+    public function setChecked(bool $checked): void
+    {
+        $this->checked = $checked;
+    }
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f54c2043aee48231d31cddf322c9f8db9d440f99afecab82962e800c4226546d
-size 335
+<?php
+
+namespace Faker\Provider\kk_KZ;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '+7 (701) #######',
+        '+7 (702) #######',
+        '+7 (705) #######',
+        '+7 (707) #######',
+        '+7 (727) 239####',
+        '+7 (747) #######',
+        '+7 (7172) 745###',
+    ];
+}

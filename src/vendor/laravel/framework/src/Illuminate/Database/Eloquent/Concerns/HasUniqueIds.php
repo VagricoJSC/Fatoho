@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c66f346a6b8d205758773d0283bbd33ad5a465d06af8a23f7f05cfd1f6565b66
-size 1012
+<?php
+
+namespace Illuminate\Database\Eloquent\Concerns;
+
+trait HasUniqueIds
+{
+    /**
+     * Indicates if the model uses unique ids.
+     *
+     * @var bool
+     */
+    public $usesUniqueIds = false;
+
+    /**
+     * Determine if the model uses unique ids.
+     *
+     * @return bool
+     */
+    public function usesUniqueIds()
+    {
+        return $this->usesUniqueIds;
+    }
+
+    /**
+     * Generate a unique keys for model.
+     *
+     * @return void
+     */
+    public function setUniqueIds()
+    {
+        foreach ($this->uniqueIds() as $column) {
+            if (empty($this->{$column})) {
+                $this->{$column} = $this->newUniqueId();
+            }
+        }
+    }
+
+    /**
+     * Generate a new key for the model.
+     *
+     * @return string
+     */
+    public function newUniqueId()
+    {
+        return null;
+    }
+
+    /**
+     * Get the columns that should receive a unique identifier.
+     *
+     * @return array
+     */
+    public function uniqueIds()
+    {
+        return [];
+    }
+}

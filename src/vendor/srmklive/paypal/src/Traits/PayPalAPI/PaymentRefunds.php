@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:407ba521155d1fb2535f97264a3a108879d24b628667103c9a8dedb019c3abd5
-size 573
+<?php
+
+namespace Srmklive\PayPal\Traits\PayPalAPI;
+
+trait PaymentRefunds
+{
+    /**
+     * Show details for authorized payment.
+     *
+     * @param string $refund_id
+     *
+     * @throws \Throwable
+     *
+     * @return array|\Psr\Http\Message\StreamInterface|string
+     *
+     * @see https://developer.paypal.com/docs/api/payments/v2/#authorizations_get
+     */
+    public function showRefundDetails(string $refund_id)
+    {
+        $this->apiEndPoint = "v2/payments/refunds/{$refund_id}";
+
+        $this->verb = 'get';
+
+        return $this->doPayPalRequest();
+    }
+}

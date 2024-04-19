@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:310fda9913e15fa2e9e7db8baef087852c3fc74b114a0c5c89f31bc0739185ba
-size 686
+<?php
+
+/**
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+declare(strict_types=1);
+
+namespace Nette\Utils;
+
+use Nette;
+
+if (false) {
+	/** @deprecated use Nette\HtmlStringable */
+	interface IHtmlString extends Nette\HtmlStringable
+	{
+	}
+} elseif (!interface_exists(IHtmlString::class)) {
+	class_alias(Nette\HtmlStringable::class, IHtmlString::class);
+}
+
+namespace Nette\Localization;
+
+if (false) {
+	/** @deprecated use Nette\Localization\Translator */
+	interface ITranslator extends Translator
+	{
+	}
+} elseif (!interface_exists(ITranslator::class)) {
+	class_alias(Translator::class, ITranslator::class);
+}

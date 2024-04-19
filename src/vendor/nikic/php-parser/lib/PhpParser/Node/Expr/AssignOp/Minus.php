@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f602a9df74b2ee400fa1ba7b9b01373f68aa8db280a7ee5426d0edd96eea441f
-size 225
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class Minus extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_Minus';
+    }
+}

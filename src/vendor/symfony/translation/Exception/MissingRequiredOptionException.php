@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cd9bd661597d0944b74c537d465a80957e6ab54a8a682ac6ed2366f31bd9516
-size 670
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Exception;
+
+/**
+ * @author Oskar Stark <oskarstark@googlemail.com>
+ */
+class MissingRequiredOptionException extends IncompleteDsnException
+{
+    public function __construct(string $option, string $dsn = null, \Throwable $previous = null)
+    {
+        $message = sprintf('The option "%s" is required but missing.', $option);
+
+        parent::__construct($message, $dsn, $previous);
+    }
+}

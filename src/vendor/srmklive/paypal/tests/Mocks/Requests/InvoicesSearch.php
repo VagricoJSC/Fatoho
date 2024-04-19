@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de35c4c186c9f20f52c327495cd8da3a168d62c989e281cc5d61d440dc2114a4
-size 721
+<?php
+
+namespace Srmklive\PayPal\Tests\Mocks\Requests;
+
+use GuzzleHttp\Utils;
+
+trait InvoicesSearch
+{
+    /**
+     * @return array
+     */
+    private function invoiceSearchParams(): array
+    {
+        return Utils::jsonDecode('{
+            "total_amount_range": {
+                "lower_amount": {
+                    "currency_code": "USD",
+                    "value": "20.00"
+                },
+                "upper_amount": {
+                    "currency_code": "USD",
+                    "value": "50.00"
+                }
+            },
+                "invoice_date_range": {
+                    "start": "2018-06-01",
+                    "end": "2018-06-21"
+                }
+            }', true);
+    }
+}

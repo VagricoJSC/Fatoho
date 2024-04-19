@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e2f069d5614f7071c6473a5c4ce92a95496bff929e0c20b1427bb6654bace27
-size 450
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\Exception;
+
+/**
+ * Raised when a user sends a malformed request.
+ */
+class BadRequestException extends \UnexpectedValueException implements RequestExceptionInterface
+{
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23b994d449b600bd0ef0328b1e5bfe2078fec03eca40d484b00ccea0a438bb54
-size 768
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\MessageFormatter;
+
+use Symfony\Component\Translation\Formatter\MessageFormatterInterface;
+
+if (!class_exists(LazyMessageFormatter::class, false)) {
+    abstract class LazyMessageFormatter implements MessageFormatterInterface
+    {
+        public function format(string $message, string $locale, array $parameters = []): string
+        {
+            return $this->formatter->format(
+                $message,
+                $this->transformLocale($locale),
+                $parameters
+            );
+        }
+    }
+}

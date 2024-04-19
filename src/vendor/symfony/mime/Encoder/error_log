@@ -1,0 +1,40 @@
+[22-Mar-2024 22:27:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\EncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Rfc2231Encoder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Rfc2231Encoder.php on line 19
+[22-Mar-2024 22:27:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Encoder\QpEncoder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpMimeHeaderEncoder.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpMimeHeaderEncoder.php on line 17
+[22-Mar-2024 22:27:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\EncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpEncoder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpEncoder.php on line 19
+[22-Mar-2024 22:27:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\ContentEncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpContentEncoder.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/QpContentEncoder.php on line 17
+[22-Mar-2024 22:27:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\AddressEncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/IdnAddressEncoder.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/IdnAddressEncoder.php on line 25
+[22-Mar-2024 22:27:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\ContentEncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/EightBitContentEncoder.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/EightBitContentEncoder.php on line 17
+[22-Mar-2024 22:27:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Encoder\Base64Encoder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64MimeHeaderEncoder.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64MimeHeaderEncoder.php on line 17
+[22-Mar-2024 22:27:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\EncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/ContentEncoderInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/ContentEncoderInterface.php on line 17
+[22-Mar-2024 22:28:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Encoder\EncoderInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64Encoder.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64Encoder.php on line 17
+[22-Mar-2024 22:28:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Encoder\Base64Encoder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64ContentEncoder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Encoder/Base64ContentEncoder.php on line 19

@@ -1,0 +1,12 @@
+[23-Mar-2024 12:29:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php on line 24
+[23-Mar-2024 12:29:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php on line 17
+[23-Mar-2024 12:29:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php on line 31

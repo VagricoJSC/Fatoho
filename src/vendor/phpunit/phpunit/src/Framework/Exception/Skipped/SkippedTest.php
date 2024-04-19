@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:896481ae4094578ea83308e5e6be6761c001e41df007c74e8074de1d56811b67
-size 440
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use Throwable;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface SkippedTest extends Throwable
+{
+}

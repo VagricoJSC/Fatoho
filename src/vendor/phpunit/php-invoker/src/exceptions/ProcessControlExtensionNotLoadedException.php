@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e44552f5215835227a8b6f20bb2b649612ce4ceddc427c280a52ed7cc671b9e3
-size 1206
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-invoker.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Invoker;
+
+use RuntimeException;
+
+final class ProcessControlExtensionNotLoadedException extends RuntimeException implements Exception
+{
+}

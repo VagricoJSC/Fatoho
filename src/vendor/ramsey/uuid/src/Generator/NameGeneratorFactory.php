@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b02eb4563f92b05b575f76be15648951afc222922324e391ebb8770e741dd9bd
-size 698
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Generator;
+
+/**
+ * NameGeneratorFactory retrieves a default name generator, based on the
+ * environment
+ */
+class NameGeneratorFactory
+{
+    /**
+     * Returns a default name generator, based on the current environment
+     */
+    public function getGenerator(): NameGeneratorInterface
+    {
+        return new DefaultNameGenerator();
+    }
+}

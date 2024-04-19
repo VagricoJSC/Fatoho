@@ -1,0 +1,56 @@
+[26-Mar-2024 23:57:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php on line 6
+[26-Mar-2024 23:57:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php on line 6
+[26-Mar-2024 23:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php on line 6
+[26-Mar-2024 23:57:43 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php on line 6
+[26-Mar-2024 23:57:47 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php on line 18
+[26-Mar-2024 23:57:51 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php on line 5
+[26-Mar-2024 23:57:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php on line 9
+[03-Apr-2024 13:35:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php on line 6
+[03-Apr-2024 13:35:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php on line 6
+[03-Apr-2024 13:35:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php on line 6
+[03-Apr-2024 13:35:44 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcherTest" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php on line 6
+[03-Apr-2024 13:35:50 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php on line 18
+[03-Apr-2024 13:35:53 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php on line 5
+[03-Apr-2024 13:35:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php on line 9

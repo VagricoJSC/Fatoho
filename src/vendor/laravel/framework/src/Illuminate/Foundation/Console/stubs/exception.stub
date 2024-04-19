@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a94f1716fba6440931a499be4092a7aafbc7c4dcb495661c40be973e2c6d0ed
-size 98
+<?php
+
+namespace {{ namespace }};
+
+use Exception;
+
+class {{ class }} extends Exception
+{
+    //
+}

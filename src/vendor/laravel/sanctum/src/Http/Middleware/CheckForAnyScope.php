@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e5fd0b0730b9b8d58bc343753e5ef54963f0a2ef13fcd27bce594a4562a815e
-size 856
+<?php
+
+namespace Laravel\Sanctum\Http\Middleware;
+
+use Laravel\Sanctum\Exceptions\MissingScopeException;
+
+/**
+ * @deprecated
+ * @see \Laravel\Sanctum\Http\Middleware\CheckForAnyAbility
+ */
+class CheckForAnyScope
+{
+    /**
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @param  mixed  ...$scopes
+     * @return \Illuminate\Http\Response
+     *
+     * @throws \Illuminate\Auth\AuthenticationException|\Laravel\Sanctum\Exceptions\MissingScopeException
+     */
+    public function handle($request, $next, ...$scopes)
+    {
+        try {
+            return (new CheckForAnyAbility())->handle($request, $next, ...$scopes);
+        } catch (\Laravel\Sanctum\Exceptions\MissingAbilityException $e) {
+            throw new MissingScopeException($e->abilities());
+        }
+    }
+}

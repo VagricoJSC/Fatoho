@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c91433ae5e742cfa0ed4d40f7fe3b088fbeb46b5fc74458108bf911a90957093
-size 312
+<?php
+/**
+ * @package php-svg-lib
+ * @link    http://github.com/PhenX/php-svg-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license GNU LGPLv3+ http://www.gnu.org/copyleft/lesser.html
+ */
+
+namespace Svg\Gradient;
+
+class Stop
+{
+    public $offset;
+    public $color;
+    public $opacity = 1.0;
+}

@@ -1,0 +1,8 @@
+[03-Apr-2024 18:36:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php on line 20
+[03-Apr-2024 18:36:29 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php on line 8
+[03-Apr-2024 18:36:34 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTruncation.php on line 9
+[03-Apr-2024 18:36:39 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php on line 8
+[03-Apr-2024 20:37:02 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\RefreshDatabase" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/LazilyRefreshDatabase.php on line 5

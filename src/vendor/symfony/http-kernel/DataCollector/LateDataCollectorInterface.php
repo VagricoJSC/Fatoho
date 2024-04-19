@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d82c1f96930885eb9a76418aa31799e62ac919508813b215040b7af9072ca5e6
-size 545
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\DataCollector;
+
+/**
+ * LateDataCollectorInterface.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface LateDataCollectorInterface
+{
+    /**
+     * Collects data as late as possible.
+     */
+    public function lateCollect();
+}

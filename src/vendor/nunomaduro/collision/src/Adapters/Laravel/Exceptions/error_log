@@ -1,0 +1,8 @@
+[23-Mar-2024 16:27:11 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php on line 14
+[23-Mar-2024 16:27:16 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php on line 14

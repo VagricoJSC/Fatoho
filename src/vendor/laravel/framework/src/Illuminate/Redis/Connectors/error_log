@@ -1,0 +1,8 @@
+[03-Apr-2024 18:50:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php on line 11
+[03-Apr-2024 18:50:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php on line 15

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92eb6c8af8ce56748183443b210a67315382fbaf8c81d8bf827ca767fcc5f7f2
-size 482
+<?php
+namespace Hamcrest\Internal;
+
+/*
+ Copyright (c) 2009 hamcrest.org
+ */
+use Hamcrest\Description;
+use Hamcrest\SelfDescribing;
+
+/**
+ * A wrapper around any value so that it describes itself.
+ */
+class SelfDescribingValue implements SelfDescribing
+{
+
+    private $_value;
+
+    public function __construct($value)
+    {
+        $this->_value = $value;
+    }
+
+    public function describeTo(Description $description)
+    {
+        $description->appendValue($this->_value);
+    }
+}

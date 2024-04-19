@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57dc0bf4c1aa35a1f9b8b156346042f77087cc448e749f880d69413a911310fe
-size 831
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Transport\Smtp\Auth;
+
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
+use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
+
+/**
+ * An Authentication mechanism.
+ *
+ * @author Chris Corbyn
+ */
+interface AuthenticatorInterface
+{
+    /**
+     * Tries to authenticate the user.
+     *
+     * @throws TransportExceptionInterface
+     */
+    public function authenticate(EsmtpTransport $client): void;
+
+    /**
+     * Gets the name of the AUTH mechanism this Authenticator handles.
+     */
+    public function getAuthKeyword(): string;
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cd0ad215f5b753db165e4b1eb638ced0ddadca0c78d966fe61f87acd58262f2
-size 231
+<?php
+
+require_once 'lib/byte_safe_strings.php';
+require_once 'lib/cast_to_int.php';
+require_once 'lib/error_polyfill.php';
+require_once 'other/ide_stubs/libsodium.php';
+require_once 'lib/random.php';
+
+$int = random_int(0, 65536);

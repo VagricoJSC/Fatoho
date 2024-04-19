@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7a65a91f4a75229a77808d103fa16a84059bc125ce51e16bf0ae5134bd8630e
-size 437
+<?php
+
+declare(strict_types=1);
+
+namespace League\MimeTypeDetection;
+
+interface MimeTypeDetector
+{
+    /**
+     * @param string|resource $contents
+     */
+    public function detectMimeType(string $path, $contents): ?string;
+
+    public function detectMimeTypeFromBuffer(string $contents): ?string;
+
+    public function detectMimeTypeFromPath(string $path): ?string;
+
+    public function detectMimeTypeFromFile(string $path): ?string;
+}

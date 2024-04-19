@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3bad6c0a7ab95cbfe173be8a6719c3ba77ce63cd23bc044753c1b91725f69c80
-size 183
+{
+  "providers": [
+    "Intervention\\Image\\ImageServiceProvider"
+  ],
+  "aliases": [
+    {
+      "alias": "Image",
+      "facade": "Intervention\\Image\\Facades\\Image"
+    }
+  ]
+}

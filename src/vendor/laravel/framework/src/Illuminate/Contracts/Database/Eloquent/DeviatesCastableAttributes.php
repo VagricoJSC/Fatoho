@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98fb651b3f1443a790b9222b6e06f2a1886da2dd6fd2d610026bb228df2d6749
-size 710
+<?php
+
+namespace Illuminate\Contracts\Database\Eloquent;
+
+interface DeviatesCastableAttributes
+{
+    /**
+     * Increment the attribute.
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $attributes
+     * @return mixed
+     */
+    public function increment($model, string $key, $value, array $attributes);
+
+    /**
+     * Decrement the attribute.
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $attributes
+     * @return mixed
+     */
+    public function decrement($model, string $key, $value, array $attributes);
+}

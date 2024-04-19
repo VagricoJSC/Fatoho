@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bc126898eececdef3487b8bc0cc68bdbc96fd15140178466feb0273d2052042
-size 648
+<?php
+
+namespace Faker\Provider;
+
+class Medical extends Base
+{
+    protected static $bloodTypes = ['A', 'AB', 'B', 'O'];
+
+    protected static $bloodRhFactors = ['+', '-'];
+
+    /**
+     * @example 'AB'
+     */
+    public static function bloodType(): string
+    {
+        return static::randomElement(static::$bloodTypes);
+    }
+
+    /**
+     * @example '+'
+     */
+    public static function bloodRh(): string
+    {
+        return static::randomElement(static::$bloodRhFactors);
+    }
+
+    /**
+     * @example 'AB+'
+     */
+    public function bloodGroup(): string
+    {
+        return $this->generator->parse('{{bloodType}}{{bloodRh}}');
+    }
+}

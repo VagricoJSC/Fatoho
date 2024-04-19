@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b7b35a59ae2816a54f220fdfe032cf3042b7c42cb49577a55046e5b64c64004
-size 619
+<?php
+
+namespace Srmklive\PayPal\Traits\PayPalAPI;
+
+trait WebHooksVerification
+{
+    /**
+     * Verify a web hook from PayPal.
+     *
+     * @param array $data
+     *
+     * @throws \Throwable
+     *
+     * @return array|\Psr\Http\Message\StreamInterface|string
+     *
+     * @see https://developer.paypal.com/docs/api/webhooks/v1/#verify-webhook-signature_post
+     */
+    public function verifyWebHook(array $data)
+    {
+        $this->apiEndPoint = 'v1/notifications/verify-webhook-signature';
+
+        $this->options['json'] = $data;
+
+        $this->verb = 'post';
+
+        return $this->doPayPalRequest();
+    }
+}

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25003fb8dfb5e742d2e95203e2f1279e60414f147ec7a05cc4b7604b4fe9ca69
-size 1261
+<?php
+
+namespace Mockery\Generator\StringManipulation\Pass;
+
+use Mockery\Generator\MockConfiguration;
+
+class ConstantsPass implements Pass
+{
+    public function apply($code, MockConfiguration $config)
+    {
+        $cm = $config->getConstantsMap();
+        if (empty($cm)) {
+            return $code;
+        }
+
+        if (!isset($cm[$config->getName()])) {
+            return $code;
+        }
+
+        $cm = $cm[$config->getName()];
+
+        $constantsCode = '';
+        foreach ($cm as $constant => $value) {
+            $constantsCode .= sprintf("\n    const %s = %s;\n", $constant, var_export($value, true));
+        }
+
+        $i = strrpos($code, '}');
+        $code = substr_replace($code, $constantsCode, $i);
+        $code .= "}\n";
+
+        return $code;
+    }
+}

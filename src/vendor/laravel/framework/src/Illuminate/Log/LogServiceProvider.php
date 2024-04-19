@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:babc436db498c1f3c78618938af6970f188e4c35e8064583d7e8fdf2f12c217d
-size 325
+<?php
+
+namespace Illuminate\Log;
+
+use Illuminate\Support\ServiceProvider;
+
+class LogServiceProvider extends ServiceProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('log', fn ($app) => new LogManager($app));
+    }
+}

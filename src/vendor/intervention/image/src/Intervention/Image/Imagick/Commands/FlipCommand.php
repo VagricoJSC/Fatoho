@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5a584ad1c8a6934f6f24bebe55d45a8ebd87f0d793b3caf98bd976f360a55c1
-size 628
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class FlipCommand extends AbstractCommand
+{
+    /**
+     * Mirrors an image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $mode = $this->argument(0)->value('h');
+
+        if (in_array(strtolower($mode), [2, 'v', 'vert', 'vertical'])) {
+            // flip vertical
+            return $image->getCore()->flipImage();
+        } else {
+            // flip horizontal
+            return $image->getCore()->flopImage();
+        }
+    }
+}

@@ -1,0 +1,13 @@
+[03-Apr-2024 18:56:57 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Unique.php on line 8
+[03-Apr-2024 18:57:09 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Password.php on line 15
+[03-Apr-2024 18:57:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Validation\Rules\File" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/ImageFile.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/ImageFile.php on line 5
+[03-Apr-2024 18:57:25 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/File.php on line 14
+[03-Apr-2024 18:57:31 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Exists.php on line 7
+[03-Apr-2024 18:57:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Rule" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Enum.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Enum.php on line 8
+[03-Apr-2024 18:57:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Validation/Rules/Dimensions.php on line 7

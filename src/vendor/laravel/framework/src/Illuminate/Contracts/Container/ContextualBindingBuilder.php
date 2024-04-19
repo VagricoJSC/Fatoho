@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2ab8d24f04224ab8b4259ae1b803f7b6a1fbc45c3020e9a84e05b6f666a1795
-size 890
+<?php
+
+namespace Illuminate\Contracts\Container;
+
+interface ContextualBindingBuilder
+{
+    /**
+     * Define the abstract target that depends on the context.
+     *
+     * @param  string  $abstract
+     * @return $this
+     */
+    public function needs($abstract);
+
+    /**
+     * Define the implementation for the contextual binding.
+     *
+     * @param  \Closure|string|array  $implementation
+     * @return void
+     */
+    public function give($implementation);
+
+    /**
+     * Define tagged services to be used as the implementation for the contextual binding.
+     *
+     * @param  string  $tag
+     * @return void
+     */
+    public function giveTagged($tag);
+
+    /**
+     * Specify the configuration item to bind as a primitive.
+     *
+     * @param  string  $key
+     * @param  mixed  $default
+     * @return void
+     */
+    public function giveConfig($key, $default = null);
+}

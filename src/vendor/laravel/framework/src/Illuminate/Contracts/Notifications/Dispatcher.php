@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb54fc8980a00e36d0286a5c586d0a2faadd83ecd40f2620bbb80283f690864c
-size 673
+<?php
+
+namespace Illuminate\Contracts\Notifications;
+
+interface Dispatcher
+{
+    /**
+     * Send the given notification to the given notifiable entities.
+     *
+     * @param  \Illuminate\Support\Collection|array|mixed  $notifiables
+     * @param  mixed  $notification
+     * @return void
+     */
+    public function send($notifiables, $notification);
+
+    /**
+     * Send the given notification immediately.
+     *
+     * @param  \Illuminate\Support\Collection|array|mixed  $notifiables
+     * @param  mixed  $notification
+     * @return void
+     */
+    public function sendNow($notifiables, $notification);
+}

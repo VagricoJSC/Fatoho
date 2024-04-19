@@ -1,0 +1,16 @@
+[03-Apr-2024 21:47:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php on line 9
+[03-Apr-2024 21:47:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php on line 5
+[03-Apr-2024 21:48:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php on line 7
+[03-Apr-2024 21:48:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php on line 5

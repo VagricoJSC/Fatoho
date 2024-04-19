@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14ba18fac27c84784ae8a60f3f56e43b1fecaa4d367642e1b0d6827bbb7eb0ff
-size 559
+<?php
+
+namespace GuzzleHttp;
+
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+interface MessageFormatterInterface
+{
+    /**
+     * Returns a formatted message string.
+     *
+     * @param RequestInterface       $request  Request that was sent
+     * @param ResponseInterface|null $response Response that was received
+     * @param \Throwable|null        $error    Exception that was received
+     */
+    public function format(RequestInterface $request, ?ResponseInterface $response = null, ?\Throwable $error = null): string;
+}

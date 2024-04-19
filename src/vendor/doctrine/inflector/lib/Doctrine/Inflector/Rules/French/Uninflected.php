@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85fa112d868dbe9127c163e2cc959ef657d777a3e91335deba062b321ecf2155
-size 529
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\Inflector\Rules\French;
+
+use Doctrine\Inflector\Rules\Pattern;
+
+final class Uninflected
+{
+    /** @return Pattern[] */
+    public static function getSingular(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    public static function getPlural(): iterable
+    {
+        yield from self::getDefault();
+    }
+
+    /** @return Pattern[] */
+    private static function getDefault(): iterable
+    {
+        yield new Pattern('');
+    }
+}

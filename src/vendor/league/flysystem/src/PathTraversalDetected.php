@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51ca4febaa86548d795ceb612ee2f3996fd8bf70eb17d62b82434c8627a899af
-size 482
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+
+class PathTraversalDetected extends RuntimeException implements FilesystemException
+{
+    private string $path;
+
+    public function path(): string
+    {
+        return $this->path;
+    }
+
+    public static function forPath(string $path): PathTraversalDetected
+    {
+        $e = new PathTraversalDetected("Path traversal detected: {$path}");
+        $e->path = $path;
+
+        return $e;
+    }
+}

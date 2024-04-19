@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5eacd91608e64e123ee75290e8320c30f69ee96107c90897bf4275c541d330f
-size 876
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Fragment;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Controller\ControllerReference;
+
+/**
+ * Interface implemented by all rendering strategies.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface FragmentRendererInterface
+{
+    /**
+     * Renders a URI and returns the Response content.
+     */
+    public function render(string|ControllerReference $uri, Request $request, array $options = []): Response;
+
+    /**
+     * Gets the name of the strategy.
+     */
+    public function getName(): string;
+}

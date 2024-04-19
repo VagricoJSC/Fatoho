@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d253273c5c2e9264c46a4f043caa46afd46653309451a41b3eb0c37ad98c323
-size 1029
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Uid\Factory;
+
+use Symfony\Component\Uid\TimeBasedUidInterface;
+use Symfony\Component\Uid\Uuid;
+
+class TimeBasedUuidFactory
+{
+    private string $class;
+    private ?Uuid $node;
+
+    public function __construct(string $class, Uuid $node = null)
+    {
+        $this->class = $class;
+        $this->node = $node;
+    }
+
+    public function create(\DateTimeInterface $time = null): Uuid&TimeBasedUidInterface
+    {
+        $class = $this->class;
+
+        if (null === $time && null === $this->node) {
+            return new $class();
+        }
+
+        return new $class($class::generate($time, $this->node));
+    }
+}

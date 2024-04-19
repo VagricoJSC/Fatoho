@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0362cca26cb6d95087dac39aa3b374d8c38f42de5e8cb9fcd3fc6353a226dbb4
-size 596
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Exception;
+
+use RuntimeException as PhpRuntimeException;
+
+/**
+ * Thrown to indicate that the PHP DateTime extension encountered an exception/error
+ */
+class DateTimeException extends PhpRuntimeException implements UuidExceptionInterface
+{
+}

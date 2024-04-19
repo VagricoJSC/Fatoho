@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af4aaebb8a63d982ca46d09b4045b9fc48b6eaff6e7acf0c6bf8481a3e4672ee
-size 414
+<?php
+
+namespace Illuminate\Contracts\Auth;
+
+interface CanResetPassword
+{
+    /**
+     * Get the e-mail address where password reset links are sent.
+     *
+     * @return string
+     */
+    public function getEmailForPasswordReset();
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token);
+}

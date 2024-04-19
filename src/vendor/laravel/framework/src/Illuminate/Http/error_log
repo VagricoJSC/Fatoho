@@ -1,0 +1,24 @@
+[03-Apr-2024 16:10:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\UploadedFile" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php on line 13
+[03-Apr-2024 16:10:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Response.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Response.php on line 15
+[03-Apr-2024 16:10:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Request" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Request.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/Request.php on line 23
+[03-Apr-2024 16:10:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RedirectResponse" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php on line 15
+[03-Apr-2024 16:11:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\JsonResponse" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php on line 12
+[03-Apr-2024 16:11:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Http/File.php on line 7

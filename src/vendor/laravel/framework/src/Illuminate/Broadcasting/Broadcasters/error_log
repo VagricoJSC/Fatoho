@@ -1,0 +1,24 @@
+[03-Apr-2024 18:17:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Broadcasting\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php on line 18
+[03-Apr-2024 20:39:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php on line 12
+[03-Apr-2024 20:39:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php on line 12
+[03-Apr-2024 20:39:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php on line 5
+[03-Apr-2024 20:40:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php on line 7
+[03-Apr-2024 20:40:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php on line 16

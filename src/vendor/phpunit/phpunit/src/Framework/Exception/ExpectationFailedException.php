@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a401490de04e45d7249e4686b7f6b2d3e0bc304629a9c8bec7151a982d044c7d
-size 1185
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+use Exception;
+use SebastianBergmann\Comparator\ComparisonFailure;
+
+/**
+ * Exception for expectations which failed their check.
+ *
+ * The exception contains the error message and optionally a
+ * SebastianBergmann\Comparator\ComparisonFailure which is used to
+ * generate diff output of the failed expectations.
+ *
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ExpectationFailedException extends AssertionFailedError
+{
+    protected ?ComparisonFailure $comparisonFailure = null;
+
+    public function __construct(string $message, ComparisonFailure $comparisonFailure = null, Exception $previous = null)
+    {
+        $this->comparisonFailure = $comparisonFailure;
+
+        parent::__construct($message, 0, $previous);
+    }
+
+    public function getComparisonFailure(): ?ComparisonFailure
+    {
+        return $this->comparisonFailure;
+    }
+}

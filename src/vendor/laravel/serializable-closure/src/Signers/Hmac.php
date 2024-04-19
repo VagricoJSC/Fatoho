@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3ccf16d80aab2262c7d657b3f64f7ccfb6cabdea91ac1661d1e7a16b9bdfb04
-size 1073
+<?php
+
+namespace Laravel\SerializableClosure\Signers;
+
+use Laravel\SerializableClosure\Contracts\Signer;
+
+class Hmac implements Signer
+{
+    /**
+     * The secret key.
+     *
+     * @var string
+     */
+    protected $secret;
+
+    /**
+     * Creates a new signer instance.
+     *
+     * @param  string  $secret
+     * @return void
+     */
+    public function __construct($secret)
+    {
+        $this->secret = $secret;
+    }
+
+    /**
+     * Sign the given serializable.
+     *
+     * @param  string  $serialized
+     * @return array
+     */
+    public function sign($serialized)
+    {
+        return [
+            'serializable' => $serialized,
+            'hash' => base64_encode(hash_hmac('sha256', $serialized, $this->secret, true)),
+        ];
+    }
+
+    /**
+     * Verify the given signature.
+     *
+     * @param  array  $signature
+     * @return bool
+     */
+    public function verify($signature)
+    {
+        return hash_equals(base64_encode(
+            hash_hmac('sha256', $signature['serializable'], $this->secret, true)
+        ), $signature['hash']);
+    }
+}

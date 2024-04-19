@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f13fa6195dce2e11b35839e59074afe35f3b0b0b999495eccb1b7b5594184dd
-size 422
+<?php declare(strict_types=1);
+
+namespace PhpParser\Lexer\TokenEmulator;
+
+use PhpParser\Lexer\Emulative;
+
+final class MatchTokenEmulator extends KeywordEmulator
+{
+    public function getPhpVersion(): string
+    {
+        return Emulative::PHP_8_0;
+    }
+
+    public function getKeywordString(): string
+    {
+        return 'match';
+    }
+
+    public function getKeywordToken(): int
+    {
+        return \T_MATCH;
+    }
+}

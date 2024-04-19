@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73be0c9520dc4b4b1c5a517069ee5814cc1bf2acbdc29d6fe9a1526dc662f5e0
-size 334
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Unknown default region, use the first alphabetically.
+ */
+return require __DIR__.'/sm_WS.php';

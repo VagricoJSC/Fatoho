@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f1aaeed7b91807ad567fe89672f63859e9cb02d64b07fa7687145bb9508a18d
-size 439
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI;
+
+use Throwable;
+
+/**
+ * @internal This interface is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Exception extends Throwable
+{
+}

@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9d84dcdb343fdb511cb17f979f3b4a9f93e72b0d961a5657403370283a2e3ca
-size 889
+<?php
+
+namespace Laravel\Sanctum\Exceptions;
+
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Support\Arr;
+
+class MissingScopeException extends AuthorizationException
+{
+    /**
+     * The scopes that the user did not have.
+     *
+     * @var array
+     */
+    protected $scopes;
+
+    /**
+     * Create a new missing scope exception.
+     *
+     * @param  array|string  $scopes
+     * @param  string  $message
+     * @return void
+     */
+    public function __construct($scopes = [], $message = 'Invalid scope(s) provided.')
+    {
+        parent::__construct($message);
+
+        $this->scopes = Arr::wrap($scopes);
+    }
+
+    /**
+     * Get the scopes that the user did not have.
+     *
+     * @return array
+     */
+    public function scopes()
+    {
+        return $this->scopes;
+    }
+}

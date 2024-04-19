@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db5287d5cdb65baea05a33b7bc7491b9e290994c635f2adb01f30abb7781146d
-size 466
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File\Exception;
+
+/**
+ * Thrown when an error occurred in the component File.
+ *
+ * @author Bernhard Schussek <bschussek@gmail.com>
+ */
+class FileException extends \RuntimeException
+{
+}

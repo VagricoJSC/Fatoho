@@ -1,0 +1,24 @@
+[22-Mar-2024 20:19:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\MailerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php on line 26
+[22-Mar-2024 20:19:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Envelope" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php on line 24
+[22-Mar-2024 21:18:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\MailerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php on line 26
+[22-Mar-2024 21:18:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Envelope" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php on line 24
+[01-Apr-2024 08:36:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\MailerInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/Mailer.php on line 26
+[01-Apr-2024 09:59:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Envelope" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mailer/DelayedEnvelope.php on line 24

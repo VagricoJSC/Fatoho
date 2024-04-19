@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12547da1530a92d9f5e388ccf6647a71395f8c1047a76fa95647c3eede5534d4
-size 405
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-invoker.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\Invoker;
+
+use RuntimeException;
+
+final class TimeoutException extends RuntimeException implements Exception
+{
+}

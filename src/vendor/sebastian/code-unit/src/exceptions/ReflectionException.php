@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:386e2cd1055ae66437e8e2df9bc9de40ef082489f05d8701067f0708ff40d2f5
-size 409
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+use RuntimeException;
+
+final class ReflectionException extends RuntimeException implements Exception
+{
+}

@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3e5be66711a3f8e2aaa3e46f2a8c1ca3b91e6588cfd37dc3a25d1809758de9e
-size 1400
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\Part\Multipart;
+
+use Symfony\Component\Mime\Part\AbstractMultipartPart;
+use Symfony\Component\Mime\Part\AbstractPart;
+
+/**
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+final class RelatedPart extends AbstractMultipartPart
+{
+    private $mainPart;
+
+    public function __construct(AbstractPart $mainPart, AbstractPart $part, AbstractPart ...$parts)
+    {
+        $this->mainPart = $mainPart;
+        $this->prepareParts($part, ...$parts);
+
+        parent::__construct($part, ...$parts);
+    }
+
+    public function getParts(): array
+    {
+        return array_merge([$this->mainPart], parent::getParts());
+    }
+
+    public function getMediaSubtype(): string
+    {
+        return 'related';
+    }
+
+    private function generateContentId(): string
+    {
+        return bin2hex(random_bytes(16)).'@symfony';
+    }
+
+    private function prepareParts(AbstractPart ...$parts): void
+    {
+        foreach ($parts as $part) {
+            if (!$part->getHeaders()->has('Content-ID')) {
+                $part->getHeaders()->setHeaderBody('Id', 'Content-ID', $this->generateContentId());
+            }
+        }
+    }
+}

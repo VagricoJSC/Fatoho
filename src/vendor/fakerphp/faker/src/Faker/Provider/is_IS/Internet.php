@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51afee65e5135e4d02e755119cbd55556f7c726c89028c9689aa59d9431da304
-size 431
+<?php
+
+namespace Faker\Provider\is_IS;
+
+class Internet extends \Faker\Provider\Internet
+{
+    /**
+     * @var array Some email domains in Denmark.
+     */
+    protected static $freeEmailDomain = [
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'visir.is', 'simnet.is', 'internet.is',
+    ];
+
+    /**
+     * @var array Some TLD.
+     */
+    protected static $tld = [
+        'com', 'com', 'com', 'net', 'is', 'is', 'is',
+    ];
+}

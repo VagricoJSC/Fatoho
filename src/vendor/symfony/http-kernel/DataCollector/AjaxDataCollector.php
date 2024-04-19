@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a6c8ee25baa07bfd4c65a77e0f281901b143158697dc55698b7b90ce2bf0289
-size 832
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\DataCollector;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+/**
+ * @author Bart van den Burg <bart@burgov.nl>
+ *
+ * @final
+ */
+class AjaxDataCollector extends DataCollector
+{
+    public function collect(Request $request, Response $response, \Throwable $exception = null)
+    {
+        // all collecting is done client side
+    }
+
+    public function reset()
+    {
+        // all collecting is done client side
+    }
+
+    public function getName(): string
+    {
+        return 'ajax';
+    }
+}

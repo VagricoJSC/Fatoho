@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fb64def8cff64d87ecaf0cc4f4d046c7a8431fd45c66f9e1b0ba5cb4455a0a3
-size 1597
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Test;
+
+use const PHP_EOL;
+use function sprintf;
+use PHPUnit\Event\Code;
+use PHPUnit\Event\Code\Throwable;
+use PHPUnit\Event\Event;
+use PHPUnit\Event\Telemetry;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class MarkedIncomplete implements Event
+{
+    private readonly Telemetry\Info $telemetryInfo;
+    private readonly Code\Test $test;
+    private readonly Throwable $throwable;
+
+    public function __construct(Telemetry\Info $telemetryInfo, Code\Test $test, Throwable $throwable)
+    {
+        $this->telemetryInfo = $telemetryInfo;
+        $this->test          = $test;
+        $this->throwable     = $throwable;
+    }
+
+    public function telemetryInfo(): Telemetry\Info
+    {
+        return $this->telemetryInfo;
+    }
+
+    public function test(): Code\Test
+    {
+        return $this->test;
+    }
+
+    public function throwable(): Throwable
+    {
+        return $this->throwable;
+    }
+
+    public function asString(): string
+    {
+        $message = $this->throwable->message();
+
+        if (!empty($message)) {
+            $message = PHP_EOL . $message;
+        }
+
+        return sprintf(
+            'Test Marked Incomplete (%s)%s',
+            $this->test->id(),
+            $message
+        );
+    }
+}

@@ -1,0 +1,12 @@
+[01-Apr-2024 12:53:40 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\DocumentRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/HtmlRenderer.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/HtmlRenderer.php on line 28
+[01-Apr-2024 12:53:44 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/HtmlDecorator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/HtmlDecorator.php on line 19
+[01-Apr-2024 12:53:48 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\MarkdownRendererInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/DocumentRendererInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Renderer/DocumentRendererInterface.php on line 22

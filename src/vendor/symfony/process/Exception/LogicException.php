@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:324d0170880899015dddab3d4bfb41586358c9052b7996bd7e691d5ab7ac7a59
-size 466
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Process\Exception;
+
+/**
+ * LogicException for the Process Component.
+ *
+ * @author Romain Neutron <imprec@gmail.com>
+ */
+class LogicException extends \LogicException implements ExceptionInterface
+{
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08a12b7f52ecf8bcc3ce01e8e7b850e063947fa1967b94abf2603df224a2acf9
-size 477
+<?php
+namespace Hamcrest\Type;
+
+/*
+ Copyright (c) 2010 hamcrest.org
+ */
+use Hamcrest\Core\IsTypeOf;
+
+/**
+ * Tests whether the value is a string.
+ */
+class IsString extends IsTypeOf
+{
+
+    /**
+     * Creates a new instance of IsString
+     */
+    public function __construct()
+    {
+        parent::__construct('string');
+    }
+
+    /**
+     * Is the value a string?
+     *
+     * @factory
+     */
+    public static function stringValue()
+    {
+        return new self;
+    }
+}

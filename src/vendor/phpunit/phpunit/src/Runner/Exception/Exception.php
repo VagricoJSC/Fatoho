@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87ebec025012a7ef00901e563f514140cb2f7b3592698944b984b21093fd2916
-size 428
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+interface Exception extends \PHPUnit\Exception
+{
+}

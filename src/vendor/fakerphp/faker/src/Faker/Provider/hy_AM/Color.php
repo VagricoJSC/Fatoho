@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d48434659f151941c8548c4453c9a285ad76281ba326632d57caf0d3f144c1f
-size 378
+<?php
+
+namespace Faker\Provider\hy_AM;
+
+class Color extends \Faker\Provider\Color
+{
+    protected static $safeColorNames = [
+        'սև', 'դեղին', 'սպիտակ', 'մոխրագույն', 'կարմիր',
+        'կապույտ', 'երկնագույն', 'կանաչ', 'կապտականաչ',
+        'մանուշակագույն', 'շագանակագույն',
+    ];
+}

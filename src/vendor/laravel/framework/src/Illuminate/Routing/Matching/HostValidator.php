@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:736662315b2f788fdf80c9e2b12bca650c1ae019a89faccd141b6b09da056b65
-size 625
+<?php
+
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+
+class HostValidator implements ValidatorInterface
+{
+    /**
+     * Validate a given rule against a route and request.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @param  \Illuminate\Http\Request  $request
+     * @return bool
+     */
+    public function matches(Route $route, Request $request)
+    {
+        $hostRegex = $route->getCompiled()->getHostRegex();
+
+        if (is_null($hostRegex)) {
+            return true;
+        }
+
+        return preg_match($hostRegex, $request->getHost());
+    }
+}

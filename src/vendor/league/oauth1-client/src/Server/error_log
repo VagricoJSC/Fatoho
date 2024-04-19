@@ -1,0 +1,28 @@
+[01-Apr-2024 12:59:52 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Xing.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Xing.php on line 7
+[01-Apr-2024 12:59:52 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Uservoice.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Uservoice.php on line 9
+[01-Apr-2024 13:00:00 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Twitter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Twitter.php on line 7
+[01-Apr-2024 13:00:05 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Tumblr.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Tumblr.php on line 9
+[01-Apr-2024 13:00:08 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Trello.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Trello.php on line 8
+[01-Apr-2024 13:00:17 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Magento.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Magento.php on line 21
+[01-Apr-2024 13:00:24 UTC] PHP Fatal error:  Uncaught Error: Class "League\OAuth1\Client\Server\Server" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Bitbucket.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/oauth1-client/src/Server/Bitbucket.php on line 7

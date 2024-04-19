@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:871824ef0a4f7eb6b7183848b51acc0b2f8036e4e56431c467c3aef2801ab734
-size 1598
+<?php
+namespace Hamcrest\Arrays;
+
+use Hamcrest\AbstractMatcherTest;
+
+class IsArrayContainingKeyTest extends AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return IsArrayContainingKey::hasKeyInArray('irrelevant');
+    }
+
+    public function testMatchesSingleElementArrayContainingKey()
+    {
+        $array = array('a'=>1);
+
+        $this->assertMatches(hasKey('a'), $array, 'Matches single key');
+    }
+
+    public function testMatchesArrayContainingKey()
+    {
+        $array = array('a'=>1, 'b'=>2, 'c'=>3);
+
+        $this->assertMatches(hasKey('a'), $array, 'Matches a');
+        $this->assertMatches(hasKey('c'), $array, 'Matches c');
+    }
+
+    public function testMatchesArrayContainingKeyWithIntegerKeys()
+    {
+        $array = array(1=>'A', 2=>'B');
+
+        assertThat($array, hasKey(1));
+    }
+
+    public function testMatchesArrayContainingKeyWithNumberKeys()
+    {
+        $array = array(1=>'A', 2=>'B');
+
+        assertThat($array, hasKey(1));
+
+        // very ugly version!
+        assertThat($array, IsArrayContainingKey::hasKeyInArray(2));
+    }
+
+    public function testHasReadableDescription()
+    {
+        $this->assertDescription('array with key "a"', hasKey('a'));
+    }
+
+    public function testDoesNotMatchEmptyArray()
+    {
+        $this->assertMismatchDescription('array was []', hasKey('Foo'), array());
+    }
+
+    public function testDoesNotMatchArrayMissingKey()
+    {
+        $array = array('a'=>1, 'b'=>2, 'c'=>3);
+
+        $this->assertMismatchDescription('array was ["a" => <1>, "b" => <2>, "c" => <3>]', hasKey('d'), $array);
+    }
+}

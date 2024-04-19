@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efdb14b8550997ef61a1134b9b365cca5215f28fbca3e1374f7a50323bfe05e0
-size 406
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+use RuntimeException;
+
+final class NoTraitException extends RuntimeException implements Exception
+{
+}

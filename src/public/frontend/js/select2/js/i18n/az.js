@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:849be622c8fa24ce1ccd689e709d1eae25539a09912ac74d40d7097b221c1584
-size 721
+/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
+
+!function(){if(jQuery&&jQuery.fn&&jQuery.fn.select2&&jQuery.fn.select2.amd)var n=jQuery.fn.select2.amd;n.define("select2/i18n/az",[],function(){return{inputTooLong:function(n){return n.input.length-n.maximum+" simvol silin"},inputTooShort:function(n){return n.minimum-n.input.length+" simvol daxil edin"},loadingMore:function(){return"Daha çox nəticə yüklənir…"},maximumSelected:function(n){return"Sadəcə "+n.maximum+" element seçə bilərsiniz"},noResults:function(){return"Nəticə tapılmadı"},searching:function(){return"Axtarılır…"},removeAllItems:function(){return"Bütün elementləri sil"}}}),n.define,n.require}();

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f130616025c6ad2c2dadd53ef85f4e4133ce38e9f3d0a3a6beac64360c4925c
-size 489
+<?php
+
+namespace Faker\Provider\zh_TW;
+
+/**
+ * @deprecated Use {@link \Faker\Provider\Payment} instead
+ * @see \Faker\Provider\Payment
+ */
+class Payment extends \Faker\Provider\Payment
+{
+    /**
+     * @return array
+     *
+     * @deprecated Use {@link \Faker\Provider\Payment::creditCardDetails()} instead
+     * @see \Faker\Provider\Payment::creditCardDetails()
+     */
+    public function creditCardDetails($valid = true)
+    {
+        return parent::creditCardDetails($valid);
+    }
+}

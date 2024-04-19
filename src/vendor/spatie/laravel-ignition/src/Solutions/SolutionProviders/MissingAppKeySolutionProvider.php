@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5329a326e92d4af0c3c981493e76f7a67dddf6bf0b7fe464f4fc698df5673201
-size 682
+<?php
+
+namespace Spatie\LaravelIgnition\Solutions\SolutionProviders;
+
+use RuntimeException;
+use Spatie\Ignition\Contracts\HasSolutionsForThrowable;
+use Spatie\LaravelIgnition\Solutions\GenerateAppKeySolution;
+use Throwable;
+
+class MissingAppKeySolutionProvider implements HasSolutionsForThrowable
+{
+    public function canSolve(Throwable $throwable): bool
+    {
+        if (! $throwable instanceof RuntimeException) {
+            return false;
+        }
+
+        return $throwable->getMessage() === 'No application encryption key has been specified.';
+    }
+
+    public function getSolutions(Throwable $throwable): array
+    {
+        return [new GenerateAppKeySolution()];
+    }
+}

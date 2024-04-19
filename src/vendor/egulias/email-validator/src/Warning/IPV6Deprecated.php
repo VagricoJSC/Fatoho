@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8e39e11db44a87c4dfe909127ecb22d2e22f21a1bf23fb8cad99475c8715b79
-size 251
+<?php
+
+namespace Egulias\EmailValidator\Warning;
+
+class IPV6Deprecated extends Warning
+{
+    public const CODE = 13;
+
+    public function __construct()
+    {
+        $this->message = 'Deprecated form of IPV6';
+        $this->rfcNumber = 5321;
+    }
+}

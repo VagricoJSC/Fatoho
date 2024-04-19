@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c483a69584531349c1bfd15a35459c8c2dfe1699ad91f4f745b029e701d4b670
-size 1062
+<?php
+
+namespace Egulias\EmailValidator\Parser\CommentStrategy;
+
+use Egulias\EmailValidator\EmailLexer;
+use Egulias\EmailValidator\Result\Result;
+use Egulias\EmailValidator\Result\ValidEmail;
+use Egulias\EmailValidator\Warning\CFWSNearAt;
+use Egulias\EmailValidator\Result\InvalidEmail;
+use Egulias\EmailValidator\Result\Reason\ExpectingATEXT;
+
+class LocalComment implements CommentStrategy
+{
+    /**
+     * @var array
+     */
+    private $warnings = [];
+
+    public function exitCondition(EmailLexer $lexer, int $openedParenthesis): bool
+    {
+        return !$lexer->isNextToken(EmailLexer::S_AT);
+    }
+
+    public function endOfLoopValidations(EmailLexer $lexer): Result
+    {
+        if (!$lexer->isNextToken(EmailLexer::S_AT)) {
+            return new InvalidEmail(new ExpectingATEXT('ATEX is not expected after closing comments'), $lexer->current->value);
+        }
+        $this->warnings[CFWSNearAt::CODE] = new CFWSNearAt();
+        return new ValidEmail();
+    }
+
+    public function getWarnings(): array
+    {
+        return $this->warnings;
+    }
+}

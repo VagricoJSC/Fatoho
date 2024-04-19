@@ -1,0 +1,12 @@
+[23-Mar-2024 12:35:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Util\Xml\SchemaDetectionResult" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php on line 17
+[23-Mar-2024 12:35:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Util\Xml\SchemaDetectionResult" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/FailedSchemaDetectionResult.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/FailedSchemaDetectionResult.php on line 17
+[23-Mar-2024 12:35:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Util/Xml/Exception.php on line 17

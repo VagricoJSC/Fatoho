@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:797d4f2ae0a1951774c911fa325c951c1708e17484e3069c0cfde7d0c3c89b47
-size 645
+<?php
+
+namespace Illuminate\Routing\Contracts;
+
+use Illuminate\Routing\Route;
+
+interface ControllerDispatcher
+{
+    /**
+     * Dispatch a request to a given controller and method.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @param  mixed  $controller
+     * @param  string  $method
+     * @return mixed
+     */
+    public function dispatch(Route $route, $controller, $method);
+
+    /**
+     * Get the middleware for the controller instance.
+     *
+     * @param  \Illuminate\Routing\Controller  $controller
+     * @param  string  $method
+     * @return array
+     */
+    public function getMiddleware($controller, $method);
+}

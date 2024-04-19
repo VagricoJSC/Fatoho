@@ -1,0 +1,144 @@
+[22-Mar-2024 17:31:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[22-Mar-2024 17:32:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[22-Mar-2024 17:32:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[22-Mar-2024 17:32:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[22-Mar-2024 18:48:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[22-Mar-2024 18:48:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[22-Mar-2024 18:48:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[22-Mar-2024 18:48:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[28-Mar-2024 03:46:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[28-Mar-2024 03:51:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[28-Mar-2024 04:26:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[28-Mar-2024 06:24:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[28-Mar-2024 12:50:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[30-Mar-2024 04:13:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[30-Mar-2024 04:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[30-Mar-2024 04:43:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[30-Mar-2024 04:45:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[30-Mar-2024 12:12:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[01-Apr-2024 08:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[01-Apr-2024 08:16:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[01-Apr-2024 08:16:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[01-Apr-2024 08:16:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[02-Apr-2024 09:20:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[02-Apr-2024 13:30:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[02-Apr-2024 15:01:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[02-Apr-2024 15:01:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[02-Apr-2024 15:02:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[02-Apr-2024 15:02:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[02-Apr-2024 16:05:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[02-Apr-2024 16:09:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[02-Apr-2024 20:41:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/api.php on line 17
+[02-Apr-2024 21:54:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/channels.php on line 16
+[02-Apr-2024 23:03:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[02-Apr-2024 23:31:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/web.php on line 32
+[03-Apr-2024 00:24:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17
+[03-Apr-2024 03:53:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/routes/console.php on line 17

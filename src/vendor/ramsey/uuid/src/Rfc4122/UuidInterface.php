@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1027b1c2cb0c74843c7f4e0436bd67277d2ad89f17797c6c10b8e548af8cac45
-size 687
+<?php
+
+/**
+ * This file is part of the ramsey/uuid library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Copyright (c) Ben Ramsey <ben@benramsey.com>
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+declare(strict_types=1);
+
+namespace Ramsey\Uuid\Rfc4122;
+
+use Ramsey\Uuid\UuidInterface as BaseUuidInterface;
+
+/**
+ * Also known as a Leach-Salz variant UUID, an RFC 4122 variant UUID is a
+ * universally unique identifier defined by RFC 4122
+ *
+ * @link https://tools.ietf.org/html/rfc4122 RFC 4122
+ *
+ * @psalm-immutable
+ */
+interface UuidInterface extends BaseUuidInterface
+{
+}

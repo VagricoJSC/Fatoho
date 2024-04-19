@@ -1,0 +1,24 @@
+[23-Mar-2024 05:50:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php on line 18
+[23-Mar-2024 05:50:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php on line 18
+[23-Mar-2024 05:51:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php on line 18
+[23-Mar-2024 05:51:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php on line 17
+[23-Mar-2024 05:52:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php on line 18
+[23-Mar-2024 05:52:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php on line 19

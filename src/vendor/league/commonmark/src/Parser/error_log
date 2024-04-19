@@ -1,0 +1,12 @@
+[01-Apr-2024 12:53:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserStateInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php on line 22
+[01-Apr-2024 12:53:14 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/MarkdownParser.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/MarkdownParser.php on line 37
+[01-Apr-2024 12:53:22 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\InlineParserEngineInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php on line 29

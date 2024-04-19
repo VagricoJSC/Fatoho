@@ -1,0 +1,44 @@
+[03-Apr-2024 07:27:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/TraceStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/TraceStub.php on line 21
+[03-Apr-2024 07:28:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\ConstStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/LinkStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/LinkStub.php on line 19
+[03-Apr-2024 07:28:42 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\ConstStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ImgStub.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ImgStub.php on line 17
+[03-Apr-2024 07:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\EnumStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/FrameStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/FrameStub.php on line 19
+[03-Apr-2024 07:29:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/EnumStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/EnumStub.php on line 21
+[03-Apr-2024 07:29:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/DsPairStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/DsPairStub.php on line 19
+[03-Apr-2024 07:29:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/CutStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/CutStub.php on line 21
+[03-Apr-2024 07:29:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\CutStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/CutArrayStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/CutArrayStub.php on line 19
+[03-Apr-2024 07:29:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ConstStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ConstStub.php on line 21
+[03-Apr-2024 07:29:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\ConstStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ClassStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ClassStub.php on line 21
+[03-Apr-2024 07:29:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Caster\EnumStub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ArgsStub.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/var-dumper/Caster/ArgsStub.php on line 21

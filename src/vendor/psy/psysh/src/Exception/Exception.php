@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62dd97caed9cbc60b6b8964c370175b422350d91827c12b5807a54b1e59d15dc
-size 497
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\Exception;
+
+/**
+ * An interface for Psy Exceptions.
+ */
+interface Exception
+{
+    /**
+     * This is the only thing, really...
+     *
+     * Return a raw (unformatted) version of the message.
+     *
+     * @return string
+     */
+    public function getRawMessage();
+}

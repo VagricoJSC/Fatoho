@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7aee9f90997b757248e7648f3c351ee85d1cf7dc7608a78bb4d03b788ab5cda
-size 949
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\InlinesOnly;
+
+use League\CommonMark\Node\Block\Document;
+use League\CommonMark\Node\Node;
+use League\CommonMark\Renderer\ChildNodeRendererInterface;
+use League\CommonMark\Renderer\NodeRendererInterface;
+
+/**
+ * Simply renders child elements as-is, adding newlines as needed.
+ */
+final class ChildRenderer implements NodeRendererInterface
+{
+    public function render(Node $node, ChildNodeRendererInterface $childRenderer): string
+    {
+        $out = $childRenderer->renderNodes($node->children());
+        if (! $node instanceof Document) {
+            $out .= $childRenderer->getBlockSeparator();
+        }
+
+        return $out;
+    }
+}

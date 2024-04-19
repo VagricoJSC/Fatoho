@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1098cd715ae5b0fcdd110f34db21d751cdd587f18e33075ccffb89fb18bcbdd8
-size 732
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\VersionUpdater\Downloader;
+
+use Psy\Exception\ErrorException;
+use Psy\VersionUpdater\Downloader;
+
+class Factory
+{
+    /**
+     * @throws ErrorException If no downloaders can be used
+     */
+    public static function getDownloader(): Downloader
+    {
+        if (\extension_loaded('curl')) {
+            return new CurlDownloader();
+        } elseif (\ini_get('allow_url_fopen')) {
+            return new FileDownloader();
+        }
+        throw new ErrorException('No downloader available.');
+    }
+}

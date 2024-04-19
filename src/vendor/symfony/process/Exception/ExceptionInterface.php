@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:544e59b6d6023f113920c1d6a037e33ff4389350802899ce0b22a4e978262876
-size 450
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Process\Exception;
+
+/**
+ * Marker Interface for the Process Component.
+ *
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ */
+interface ExceptionInterface extends \Throwable
+{
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13cd322701889398f54c76868449b4509dd42884b2cc44467033a4917c94ad35
-size 670
+<?php
+
+namespace Laravel\Ui;
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
+
+class UiServiceProvider extends ServiceProvider
+{
+    /**
+     * Register the package services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                AuthCommand::class,
+                ControllersCommand::class,
+                UiCommand::class,
+            ]);
+        }
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Route::mixin(new AuthRouteMethods);
+    }
+}

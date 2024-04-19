@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53ae387c4b9130e84b558005885e27bdc9feabaccdb2e9e14f6ff222eef1842a
-size 439
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Carbon\Exceptions;
+
+use RuntimeException as BaseRuntimeException;
+
+final class EndLessPeriodException extends BaseRuntimeException implements RuntimeException
+{
+    //
+}

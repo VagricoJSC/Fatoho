@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f610baf90c063c2c537e388f45bb8715a07836b084f8e912525ddec56a25d5f0
-size 802
+<?php
+
+namespace Srmklive\PayPal\Tests;
+
+trait MockRequestPayloads
+{
+    use Mocks\Requests\BillingPlans;
+    use Mocks\Requests\CatalogProducts;
+    use Mocks\Requests\Disputes;
+    use Mocks\Requests\DisputesActions;
+    use Mocks\Requests\Identity;
+    use Mocks\Requests\Invoices;
+    use Mocks\Requests\InvoicesSearch;
+    use Mocks\Requests\InvoicesTemplates;
+    use Mocks\Requests\Orders;
+    use Mocks\Requests\PartnerReferrals;
+    use Mocks\Requests\PaymentExperienceWebProfiles;
+    use Mocks\Requests\PaymentAuthorizations;
+    use Mocks\Requests\PaymentCaptures;
+    use Mocks\Requests\Payouts;
+    use Mocks\Requests\ReferencedPayouts;
+    use Mocks\Requests\Subscriptions;
+    use Mocks\Requests\Trackers;
+    use Mocks\Requests\WebHooks;
+}

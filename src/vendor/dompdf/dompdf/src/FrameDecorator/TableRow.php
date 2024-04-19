@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5091613c614d2676f28b15dd1639cd1e8dcee9c9ccc61aff6e62f85ae53f6f0
-size 571
+<?php
+/**
+ * @package dompdf
+ * @link    https://github.com/dompdf/dompdf
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+namespace Dompdf\FrameDecorator;
+
+use Dompdf\Dompdf;
+use Dompdf\Frame;
+
+/**
+ * Decorates Frames for table row layout
+ *
+ * @package dompdf
+ */
+class TableRow extends AbstractFrameDecorator
+{
+    /**
+     * TableRow constructor.
+     * @param Frame $frame
+     * @param Dompdf $dompdf
+     */
+    function __construct(Frame $frame, Dompdf $dompdf)
+    {
+        parent::__construct($frame, $dompdf);
+    }
+}

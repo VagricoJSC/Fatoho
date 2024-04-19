@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a99e6fb596535e5624da8db7946f12eb1ca1b206d24c0f85dbf8f2f13538b9bc
-size 765
+<?php
+namespace PHPSTORM_META {
+
+    override(
+        \PHPUnit\Framework\TestCase::createMock(0),
+        map([""=>"$0"])
+    );
+
+    override(
+        \PHPUnit\Framework\TestCase::createStub(0),
+        map([""=>"$0"])
+    );
+
+    override(
+        \PHPUnit\Framework\TestCase::createConfiguredMock(0),
+        map([""=>"$0"])
+    );
+
+    override(
+        \PHPUnit\Framework\TestCase::createPartialMock(0),
+        map([""=>"$0"])
+    );
+
+    override(
+        \PHPUnit\Framework\TestCase::createTestProxy(0),
+        map([""=>"$0"])
+    );
+
+    override(
+        \PHPUnit\Framework\TestCase::getMockForAbstractClass(0),
+        map([""=>"$0"])
+    );
+}

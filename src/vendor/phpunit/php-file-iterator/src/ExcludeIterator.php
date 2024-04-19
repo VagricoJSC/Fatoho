@@ -1,3 +1,76 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:108a4486c9b7bce73178d3a44d8502bc0bbc235bdeae03ddcb4ed96457ca6161
-size 1869
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-file-iterator.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\FileIterator;
+
+use function assert;
+use function str_starts_with;
+use RecursiveDirectoryIterator;
+use RecursiveFilterIterator;
+use SplFileInfo;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for phpunit/php-file-iterator
+ */
+final class ExcludeIterator extends RecursiveFilterIterator
+{
+    /**
+     * @psalm-var list<string>
+     */
+    private array $exclude;
+
+    /**
+     * @psalm-param list<string> $exclude
+     */
+    public function __construct(RecursiveDirectoryIterator $iterator, array $exclude)
+    {
+        parent::__construct($iterator);
+
+        $this->exclude = $exclude;
+    }
+
+    public function accept(): bool
+    {
+        $current = $this->current();
+
+        assert($current instanceof SplFileInfo);
+
+        $path = $current->getRealPath();
+
+        foreach ($this->exclude as $exclude) {
+            if (str_starts_with($path, $exclude)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public function hasChildren(): bool
+    {
+        return $this->getInnerIterator()->hasChildren();
+    }
+
+    public function getChildren(): self
+    {
+        return new self(
+            $this->getInnerIterator()->getChildren(),
+            $this->exclude
+        );
+    }
+
+    public function getInnerIterator(): RecursiveDirectoryIterator
+    {
+        $innerIterator = parent::getInnerIterator();
+
+        assert($innerIterator instanceof RecursiveDirectoryIterator);
+
+        return $innerIterator;
+    }
+}

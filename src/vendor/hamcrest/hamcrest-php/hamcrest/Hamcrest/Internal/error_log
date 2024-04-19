@@ -1,0 +1,8 @@
+[27-Mar-2024 00:47:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Internal/SelfDescribingValue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Internal/SelfDescribingValue.php on line 13
+[03-Apr-2024 17:12:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Internal/SelfDescribingValue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Internal/SelfDescribingValue.php on line 13

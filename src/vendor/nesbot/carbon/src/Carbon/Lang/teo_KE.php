@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de96320c40cf5486fc0f773b0c4f9cf6a123091cc9d73cedcc04fb0da9c92b25
-size 328
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+return array_replace_recursive(require __DIR__.'/teo.php', [
+    'first_day_of_week' => 0,
+]);

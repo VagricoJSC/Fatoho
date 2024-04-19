@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26cbe3235929c9391d6cfcbaf66e489312fdddd39d2372bbfaa698147202e7a5
-size 851
+<?php
+
+namespace Illuminate\Foundation\Exceptions\Whoops;
+
+use Illuminate\Contracts\Foundation\ExceptionRenderer;
+use function tap;
+use Whoops\Run as Whoops;
+
+class WhoopsExceptionRenderer implements ExceptionRenderer
+{
+    /**
+     * Renders the given exception as HTML.
+     *
+     * @param  \Throwable  $throwable
+     * @return string
+     */
+    public function render($throwable)
+    {
+        return tap(new Whoops, function ($whoops) {
+            $whoops->appendHandler($this->whoopsHandler());
+
+            $whoops->writeToOutput(false);
+
+            $whoops->allowQuit(false);
+        })->handleException($throwable);
+    }
+
+    /**
+     * Get the Whoops handler for the application.
+     *
+     * @return \Whoops\Handler\Handler
+     */
+    protected function whoopsHandler()
+    {
+        return (new WhoopsHandler)->forDebug();
+    }
+}

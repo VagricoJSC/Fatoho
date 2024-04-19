@@ -1,0 +1,8 @@
+[23-Mar-2024 12:27:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php on line 15
+[23-Mar-2024 12:27:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 30

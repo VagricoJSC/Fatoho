@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f6f71293850141e58a15ba7c7a6b9b312805a5e8365178f937b8b98db4c4059
-size 641
+<?php
+
+namespace Illuminate\Routing;
+
+class RouteFileRegistrar
+{
+    /**
+     * The router instance.
+     *
+     * @var \Illuminate\Routing\Router
+     */
+    protected $router;
+
+    /**
+     * Create a new route file registrar instance.
+     *
+     * @param  \Illuminate\Routing\Router  $router
+     * @return void
+     */
+    public function __construct(Router $router)
+    {
+        $this->router = $router;
+    }
+
+    /**
+     * Require the given routes file.
+     *
+     * @param  string  $routes
+     * @return void
+     */
+    public function register($routes)
+    {
+        $router = $this->router;
+
+        require $routes;
+    }
+}

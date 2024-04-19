@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a04ac612a5b84e64d29e086d3d420116fb9d2e30052038b6ff356c4578bca89
-size 514
+<?php declare(strict_types=1);
+/*
+ * This file is part of sebastian/code-unit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeUnit;
+
+/**
+ * @psalm-immutable
+ */
+final class TraitUnit extends CodeUnit
+{
+    /**
+     * @psalm-assert-if-true TraitUnit $this
+     */
+    public function isTrait(): bool
+    {
+        return true;
+    }
+}

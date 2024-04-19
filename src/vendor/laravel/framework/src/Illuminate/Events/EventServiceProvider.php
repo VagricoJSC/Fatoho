@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcfe706b5f2fae0eba651d603fa3171987e160ffd996aae412233f49d8d5d91d
-size 761
+<?php
+
+namespace Illuminate\Events;
+
+use Illuminate\Contracts\Queue\Factory as QueueFactoryContract;
+use Illuminate\Support\ServiceProvider;
+
+class EventServiceProvider extends ServiceProvider
+{
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('events', function ($app) {
+            return (new Dispatcher($app))->setQueueResolver(function () use ($app) {
+                return $app->make(QueueFactoryContract::class);
+            });
+        });
+    }
+}

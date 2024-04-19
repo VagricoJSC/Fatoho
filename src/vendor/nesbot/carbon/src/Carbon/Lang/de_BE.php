@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8ebbb8534d3a38887338b78f067ff28010cac82af6de0a53e961c6f63704dd0
-size 409
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - RAP    bug-glibc-locales@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/de.php', [
+    'formats' => [
+        'L' => 'YYYY-MM-DD',
+    ],
+]);

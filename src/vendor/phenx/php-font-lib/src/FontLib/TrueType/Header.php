@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:506bcae474f5f6a4b5949f8e69894af0448e184ea10ad825ab0e0f17dc1b0570
-size 761
+<?php
+/**
+ * @package php-font-lib
+ * @link    https://github.com/PhenX/php-font-lib
+ * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ */
+
+namespace FontLib\TrueType;
+
+/**
+ * TrueType font file header.
+ *
+ * @package php-font-lib
+ */
+class Header extends \FontLib\Header {
+  protected $def = array(
+    "format"        => self::uint32,
+    "numTables"     => self::uint16,
+    "searchRange"   => self::uint16,
+    "entrySelector" => self::uint16,
+    "rangeShift"    => self::uint16,
+  );
+
+  public function parse() {
+    parent::parse();
+
+    $format                   = $this->data["format"];
+    $this->data["formatText"] = $this->convertUInt32ToStr($format);
+  }
+}

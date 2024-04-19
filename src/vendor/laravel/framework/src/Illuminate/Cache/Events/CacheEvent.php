@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58077522817b37bce46be181057fe7860e1ce2a44feeb1948e529d97f3fa5e97
-size 938
+<?php
+
+namespace Illuminate\Cache\Events;
+
+abstract class CacheEvent
+{
+    /**
+     * The key of the event.
+     *
+     * @var string
+     */
+    public $key;
+
+    /**
+     * The tags that were assigned to the key.
+     *
+     * @var array
+     */
+    public $tags;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  string  $key
+     * @param  array  $tags
+     * @return void
+     */
+    public function __construct($key, array $tags = [])
+    {
+        $this->key = $key;
+        $this->tags = $tags;
+    }
+
+    /**
+     * Set the tags for the cache event.
+     *
+     * @param  array  $tags
+     * @return $this
+     */
+    public function setTags($tags)
+    {
+        $this->tags = $tags;
+
+        return $this;
+    }
+}

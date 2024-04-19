@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44efbc048f02af66e2c2eafdfef74659fce3ea8c3d4277086bb35ffb081a8b0a
-size 752
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\Attributes;
+
+use Attribute;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+#[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD)]
+final class BackupGlobals
+{
+    private readonly bool $enabled;
+
+    public function __construct(bool $enabled)
+    {
+        $this->enabled = $enabled;
+    }
+
+    public function enabled(): bool
+    {
+        return $this->enabled;
+    }
+}

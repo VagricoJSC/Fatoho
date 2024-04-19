@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca80211b3f92dfbc6cacf386d69ec6bb3a192ad4f570ab1eff6732d219c5f71f
-size 1004
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\Attributes;
+
+use Attribute;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+#[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD)]
+final class RequiresPhpunit
+{
+    /**
+     * @psalm-var non-empty-string
+     */
+    private readonly string $versionRequirement;
+
+    /**
+     * @psalm-param non-empty-string $versionRequirement
+     */
+    public function __construct(string $versionRequirement)
+    {
+        $this->versionRequirement = $versionRequirement;
+    }
+
+    /**
+     * @psalm-return non-empty-string
+     */
+    public function versionRequirement(): string
+    {
+        return $this->versionRequirement;
+    }
+}

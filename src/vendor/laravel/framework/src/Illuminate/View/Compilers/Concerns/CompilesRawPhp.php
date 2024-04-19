@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4acdf5a11ded6566cd12e2e19e39a24ff8d9832c372f83dab8b657ba017e9325
-size 620
+<?php
+
+namespace Illuminate\View\Compilers\Concerns;
+
+trait CompilesRawPhp
+{
+    /**
+     * Compile the raw PHP statements into valid PHP.
+     *
+     * @param  string  $expression
+     * @return string
+     */
+    protected function compilePhp($expression)
+    {
+        if ($expression) {
+            return "<?php {$expression}; ?>";
+        }
+
+        return '@php';
+    }
+
+    /**
+     * Compile the unset statements into valid PHP.
+     *
+     * @param  string  $expression
+     * @return string
+     */
+    protected function compileUnset($expression)
+    {
+        return "<?php unset{$expression}; ?>";
+    }
+}

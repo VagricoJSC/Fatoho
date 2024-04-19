@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44b2ea9c556763aa4efe6d7afbed653e49338c7f3f0b28925d2be1189af35443
-size 400
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - tarunvelli
+ * - Eddie
+ * - KID
+ * - shankesgk2
+ */
+return array_replace_recursive(require __DIR__.'/zh_Hant.php', [
+    'after' => ':time后',
+]);

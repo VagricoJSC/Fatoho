@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55003cfde6d85cfd61dd5ce4a3d87bc13172d14ae5e37d9bc0a0b683bdd58301
-size 519
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\CacheClearer;
+
+/**
+ * CacheClearerInterface.
+ *
+ * @author Dustin Dobervich <ddobervich@gmail.com>
+ */
+interface CacheClearerInterface
+{
+    /**
+     * Clears any caches necessary.
+     */
+    public function clear(string $cacheDir);
+}

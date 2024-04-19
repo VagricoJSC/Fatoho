@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad3d74d8965c8d7ed1b516acd8e3f01edf80b0628b7bfeea5412fead5389e1bb
-size 1696
+<?php
+
+namespace Illuminate\Session\Console;
+
+use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Composer;
+use Symfony\Component\Console\Attribute\AsCommand;
+
+#[AsCommand(name: 'session:table')]
+class SessionTableCommand extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'session:table';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Create a migration for the session database table';
+
+    /**
+     * The filesystem instance.
+     *
+     * @var \Illuminate\Filesystem\Filesystem
+     */
+    protected $files;
+
+    /**
+     * @var \Illuminate\Support\Composer
+     *
+     * @deprecated Will be removed in a future Laravel version.
+     */
+    protected $composer;
+
+    /**
+     * Create a new session table command instance.
+     *
+     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @param  \Illuminate\Support\Composer  $composer
+     * @return void
+     */
+    public function __construct(Filesystem $files, Composer $composer)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+        $this->composer = $composer;
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        $fullPath = $this->createBaseMigration();
+
+        $this->files->put($fullPath, $this->files->get(__DIR__.'/stubs/database.stub'));
+
+        $this->components->info('Migration created successfully.');
+    }
+
+    /**
+     * Create a base migration file for the session.
+     *
+     * @return string
+     */
+    protected function createBaseMigration()
+    {
+        $name = 'create_sessions_table';
+
+        $path = $this->laravel->databasePath().'/migrations';
+
+        return $this->laravel['migration.creator']->create($name, $path);
+    }
+}

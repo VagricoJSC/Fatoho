@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:375fa93668220e1ac9b0a051f69c1cf91cab669da83501aa02e35f393c6dac6b
-size 381
+<?php
+
+namespace Faker\Provider\zh_TW;
+
+class PhoneNumber extends \Faker\Provider\PhoneNumber
+{
+    protected static $formats = [
+        '+8869########',
+        '+886-9##-###-###',
+        '09########',
+        '09##-###-###',
+        '(02)########',
+        '(02)####-####',
+        '(0#)#######',
+        '(0#)###-####',
+        '(0##)######',
+        '(0##)###-###',
+    ];
+}

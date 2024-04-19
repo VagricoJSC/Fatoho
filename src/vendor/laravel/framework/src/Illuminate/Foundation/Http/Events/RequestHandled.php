@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4980b0afc54f44fd5d6d873912e77b9d68fc7a7a25ae49f73237eac9ab3e5e2d
-size 621
+<?php
+
+namespace Illuminate\Foundation\Http\Events;
+
+class RequestHandled
+{
+    /**
+     * The request instance.
+     *
+     * @var \Illuminate\Http\Request
+     */
+    public $request;
+
+    /**
+     * The response instance.
+     *
+     * @var \Illuminate\Http\Response
+     */
+    public $response;
+
+    /**
+     * Create a new event instance.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Response  $response
+     * @return void
+     */
+    public function __construct($request, $response)
+    {
+        $this->request = $request;
+        $this->response = $response;
+    }
+}

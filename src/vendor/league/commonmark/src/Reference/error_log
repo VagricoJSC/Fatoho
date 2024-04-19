@@ -1,0 +1,8 @@
+[01-Apr-2024 12:52:29 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Reference\ReferenceMapInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Reference/ReferenceMap.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Reference/ReferenceMap.php on line 24
+[01-Apr-2024 12:52:37 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Reference\ReferenceInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Reference/Reference.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Reference/Reference.php on line 22

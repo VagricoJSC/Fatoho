@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b657dbf3c95aa72e7bf9e81a92e40f6759837a466c8b447de710ccb0fbd3361
-size 480
+<?php
+
+declare(strict_types=1);
+
+namespace Termwind\Laravel;
+
+use Illuminate\Console\OutputStyle;
+use Illuminate\Support\ServiceProvider;
+use Termwind\Termwind;
+
+final class TermwindServiceProvider extends ServiceProvider
+{
+    /**
+     * Sets the correct renderer to be used.
+     */
+    public function register(): void
+    {
+        $this->app->resolving(OutputStyle::class, function ($style): void {
+            Termwind::renderUsing($style->getOutput());
+        });
+    }
+}

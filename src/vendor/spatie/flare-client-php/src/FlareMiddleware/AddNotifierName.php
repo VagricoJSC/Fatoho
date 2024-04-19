@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:799a6e7e94ff6f87150c3790360996799602fc517258dc6aa4bb70a3e52f2b39
-size 337
+<?php
+
+namespace Spatie\FlareClient\FlareMiddleware;
+
+use Spatie\FlareClient\Report;
+
+class AddNotifierName implements FlareMiddleware
+{
+    public const NOTIFIER_NAME = 'Flare Client';
+
+    public function handle(Report $report, $next)
+    {
+        $report->notifierName(static::NOTIFIER_NAME);
+
+        return $next($report);
+    }
+}

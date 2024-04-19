@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ae309d4f72453067797bbf035e95d4bfc25ddd5895ceea8c185edb8f976a5a3
-size 335
+<?php
+
+namespace Faker\Provider\ru_RU;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['yandex.ru', 'ya.ru', 'narod.ru', 'gmail.com', 'mail.ru', 'list.ru', 'bk.ru', 'inbox.ru', 'rambler.ru', 'hotmail.com'];
+    protected static $tld = ['com', 'com', 'net', 'org', 'ru', 'ru', 'ru', 'ru'];
+}

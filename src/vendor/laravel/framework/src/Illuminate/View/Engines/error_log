@@ -1,0 +1,12 @@
+[03-Apr-2024 18:58:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php on line 9
+[03-Apr-2024 18:58:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php on line 8
+[03-Apr-2024 18:58:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Engines\PhpEngine" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php on line 10

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abffcca4e071e820b0af678d8db171d02c0717ca52c4dcb75b7783164dee3fd0
-size 967
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mailer\Transport;
+
+use Symfony\Component\Mailer\Exception\UnsupportedSchemeException;
+
+/**
+ * @author Konstantin Myakshin <molodchick@gmail.com>
+ */
+final class SendmailTransportFactory extends AbstractTransportFactory
+{
+    public function create(Dsn $dsn): TransportInterface
+    {
+        if ('sendmail+smtp' === $dsn->getScheme() || 'sendmail' === $dsn->getScheme()) {
+            return new SendmailTransport($dsn->getOption('command'), $this->dispatcher, $this->logger);
+        }
+
+        throw new UnsupportedSchemeException($dsn, 'sendmail', $this->getSupportedSchemes());
+    }
+
+    protected function getSupportedSchemes(): array
+    {
+        return ['sendmail', 'sendmail+smtp'];
+    }
+}

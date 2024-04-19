@@ -1,0 +1,4 @@
+[01-Apr-2024 16:04:30 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ExtensionInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/DescriptionList/DescriptionListExtension.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/league/commonmark/src/Extension/DescriptionList/DescriptionListExtension.php on line 29

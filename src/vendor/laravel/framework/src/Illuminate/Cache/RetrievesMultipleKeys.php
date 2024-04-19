@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a93b9ad6d11dec4e7fdd537f12c2392d8676964df327e9348290ce4bc9cd30b
-size 1155
+<?php
+
+namespace Illuminate\Cache;
+
+trait RetrievesMultipleKeys
+{
+    /**
+     * Retrieve multiple items from the cache by key.
+     *
+     * Items not found in the cache will have a null value.
+     *
+     * @param  array  $keys
+     * @return array
+     */
+    public function many(array $keys)
+    {
+        $return = [];
+
+        $keys = collect($keys)->mapWithKeys(function ($value, $key) {
+            return [is_string($key) ? $key : $value => is_string($key) ? $value : null];
+        })->all();
+
+        foreach ($keys as $key => $default) {
+            $return[$key] = $this->get($key, $default);
+        }
+
+        return $return;
+    }
+
+    /**
+     * Store multiple items in the cache for a given number of seconds.
+     *
+     * @param  array  $values
+     * @param  int  $seconds
+     * @return bool
+     */
+    public function putMany(array $values, $seconds)
+    {
+        $manyResult = null;
+
+        foreach ($values as $key => $value) {
+            $result = $this->put($key, $value, $seconds);
+
+            $manyResult = is_null($manyResult) ? $result : $result && $manyResult;
+        }
+
+        return $manyResult ?: false;
+    }
+}

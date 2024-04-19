@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:450acd627f1797c17ad4f016fce3d578114d5f9d74f324f3b08404a9fbdda313
-size 338
+<?php
+
+namespace Faker\Provider\nl_BE;
+
+class Company extends \Faker\Provider\Company
+{
+    protected static $formats = [
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}}',
+    ];
+
+    protected static $companySuffix = ['VZW', 'Comm.V', 'VOF', 'BVBA', 'EBVBA', 'ESV', 'NV', 'Comm.VA', 'CVOA', 'CVBA', '& Zonen', '& Zn'];
+}

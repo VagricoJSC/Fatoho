@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a3b37e32a1dec69051746f250645d86f53af185bab520475582a9b55bc2c5ca
-size 634
+<?php declare(strict_types = 1);
+/*
+ * This file is part of PharIo\Manifest.
+ *
+ * (c) Arne Blankerts <arne@blankerts.de>, Sebastian Heuer <sebastian@phpeople.de>, Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PharIo\Manifest;
+
+class BundlesElement extends ManifestElement {
+    public function getComponentElements(): ComponentElementCollection {
+        return new ComponentElementCollection(
+            $this->getChildrenByName('component')
+        );
+    }
+}

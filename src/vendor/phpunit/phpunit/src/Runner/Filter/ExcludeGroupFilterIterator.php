@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48d0365da76a2fa7e531c7ab7b1fdce661b9444be53d2d42ca457796f574355e
-size 665
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Runner\Filter;
+
+use function in_array;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ExcludeGroupFilterIterator extends GroupFilterIterator
+{
+    protected function doAccept(int $id): bool
+    {
+        return !in_array($id, $this->groupTests, true);
+    }
+}

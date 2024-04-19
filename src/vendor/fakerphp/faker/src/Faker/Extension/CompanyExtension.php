@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97cf31740ae6ff0b89d084a0888e331433aa222c6fe36a718b7c77d85ea59d23
-size 386
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface CompanyExtension extends Extension
+{
+    /**
+     * @example 'Acme Ltd'
+     */
+    public function company(): string;
+
+    /**
+     * @example 'Ltd'
+     */
+    public function companySuffix(): string;
+
+    public function jobTitle(): string;
+}

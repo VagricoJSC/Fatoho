@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec0c5f8ff84ec6488f28bde9027d0e3dcf7ae3307f085a5a5ff5f25091f051e0
-size 609
+<?php
+
+namespace Intervention\Image\Commands;
+
+class ChecksumCommand extends AbstractCommand
+{
+    /**
+     * Calculates checksum of given image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $colors = [];
+
+        $size = $image->getSize();
+
+        for ($x=0; $x <= ($size->width-1); $x++) {
+            for ($y=0; $y <= ($size->height-1); $y++) {
+                $colors[] = $image->pickColor($x, $y, 'array');
+            }
+        }
+
+        $this->setOutput(md5(serialize($colors)));
+
+        return true;
+    }
+}

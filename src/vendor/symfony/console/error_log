@@ -1,0 +1,20 @@
+[22-Mar-2024 20:20:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Application.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Application.php on line 73
+[22-Mar-2024 21:09:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Application.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/Application.php on line 73
+[22-Mar-2024 21:11:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php on line 21
+[22-Mar-2024 21:16:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php on line 21
+[01-Apr-2024 10:52:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/SingleCommandApplication.php on line 21

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ff0ecabad6b0d75961f6147aa1bc7969df52ad77a1e69a991d2faf804f11f2e
-size 753
+<?php
+
+namespace Spatie\FlareClient;
+
+use Spatie\Backtrace\Frame as SpatieFrame;
+
+class Frame
+{
+    protected SpatieFrame $frame;
+
+    public static function fromSpatieFrame(SpatieFrame $frame): self
+    {
+        return new self($frame);
+    }
+
+    public function __construct(SpatieFrame $frame)
+    {
+        $this->frame = $frame;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'file' => $this->frame->file,
+            'line_number' => $this->frame->lineNumber,
+            'method' => $this->frame->method,
+            'class' => $this->frame->class,
+            'code_snippet' => $this->frame->getSnippet(30),
+            'application_frame' => $this->frame->applicationFrame,
+        ];
+    }
+}

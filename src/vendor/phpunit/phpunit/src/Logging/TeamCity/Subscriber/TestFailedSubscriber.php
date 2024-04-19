@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcc93fec87f63df22886c78affba6fcf23965efd17e559b4735adb7cc63e7a13
-size 758
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Logging\TeamCity;
+
+use PHPUnit\Event\InvalidArgumentException;
+use PHPUnit\Event\Test\Failed;
+use PHPUnit\Event\Test\FailedSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestFailedSubscriber extends Subscriber implements FailedSubscriber
+{
+    /**
+     * @throws InvalidArgumentException
+     */
+    public function notify(Failed $event): void
+    {
+        $this->logger()->testFailed($event);
+    }
+}

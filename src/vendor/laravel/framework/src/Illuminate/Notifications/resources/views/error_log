@@ -1,0 +1,1 @@
+[03-Apr-2024 21:36:10 UTC] PHP Warning:  Undefined variable $level in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Notifications/resources/views/email.blade.php on line 22

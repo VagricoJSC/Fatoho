@@ -1,0 +1,8 @@
+[23-Mar-2024 14:52:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Comment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php on line 5
+[01-Apr-2024 15:47:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Comment" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php on line 5

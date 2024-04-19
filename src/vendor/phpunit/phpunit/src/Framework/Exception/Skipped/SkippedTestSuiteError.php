@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:619856bb003582bba25bb0304f5921927add614e1f63b1312e000a0e49bac361
-size 470
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class SkippedTestSuiteError extends AssertionFailedError implements SkippedTest
+{
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7baea65509844fb7282e8000221c67be80637568b9e2a39ba72d02184eab74fd
-size 723
+<?php
+
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use RuntimeException;
+
+class UnableToResolveFilesystemMount extends RuntimeException implements FilesystemException
+{
+    public static function becauseTheSeparatorIsMissing(string $path): UnableToResolveFilesystemMount
+    {
+        return new UnableToResolveFilesystemMount("Unable to resolve the filesystem mount because the path ($path) is missing a separator (://).");
+    }
+
+    public static function becauseTheMountWasNotRegistered(string $mountIdentifier): UnableToResolveFilesystemMount
+    {
+        return new UnableToResolveFilesystemMount("Unable to resolve the filesystem mount because the mount ($mountIdentifier) was not registered.");
+    }
+}

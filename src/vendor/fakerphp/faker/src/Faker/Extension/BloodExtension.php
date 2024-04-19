@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:730e0dd842f4501b303e675e208832ae6a354b9faf295076cd2d00de0d3eafd9
-size 527
+<?php
+
+namespace Faker\Extension;
+
+/**
+ * @experimental This interface is experimental and does not fall under our BC promise
+ */
+interface BloodExtension extends Extension
+{
+    /**
+     * Get an actual blood type
+     *
+     * @example 'AB'
+     */
+    public function bloodType(): string;
+
+    /**
+     * Get a random resis value
+     *
+     * @example '+'
+     */
+    public function bloodRh(): string;
+
+    /**
+     * Get a full blood group
+     *
+     * @example 'AB+'
+     */
+    public function bloodGroup(): string;
+}

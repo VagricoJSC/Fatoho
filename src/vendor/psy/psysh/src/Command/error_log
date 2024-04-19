@@ -1,0 +1,160 @@
+[23-Mar-2024 02:23:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\TraceCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WtfCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WtfCommand.php on line 26
+[23-Mar-2024 02:23:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WhereamiCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WhereamiCommand.php on line 24
+[23-Mar-2024 02:23:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TraceCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TraceCommand.php on line 24
+[23-Mar-2024 02:23:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TimeitCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TimeitCommand.php on line 26
+[23-Mar-2024 02:23:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php on line 32
+[23-Mar-2024 02:23:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/SudoCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/SudoCommand.php on line 26
+[23-Mar-2024 02:23:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ShowCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ShowCommand.php on line 27
+[23-Mar-2024 02:23:47 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ReflectingCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ReflectingCommand.php on line 27
+[23-Mar-2024 02:23:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php on line 20
+[23-Mar-2024 02:23:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ParseCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ParseCommand.php on line 30
+[23-Mar-2024 02:24:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand.php on line 37
+[23-Mar-2024 02:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HistoryCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HistoryCommand.php on line 27
+[23-Mar-2024 02:24:07 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HelpCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HelpCommand.php on line 25
+[23-Mar-2024 02:24:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ExitCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ExitCommand.php on line 23
+[23-Mar-2024 02:24:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/EditCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/EditCommand.php on line 21
+[23-Mar-2024 02:24:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DumpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DumpCommand.php on line 26
+[23-Mar-2024 02:24:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DocCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DocCommand.php on line 28
+[23-Mar-2024 02:24:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/Command.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/Command.php on line 25
+[23-Mar-2024 02:24:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ClearCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ClearCommand.php on line 22
+[23-Mar-2024 02:24:37 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/BufferCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/BufferCommand.php on line 25
+[01-Apr-2024 12:37:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TimeitCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TimeitCommand.php on line 26
+[01-Apr-2024 12:37:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/Command.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/Command.php on line 25
+[01-Apr-2024 12:37:24 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/BufferCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/BufferCommand.php on line 25
+[01-Apr-2024 13:26:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\TraceCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WtfCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WtfCommand.php on line 26
+[01-Apr-2024 13:26:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WhereamiCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/WhereamiCommand.php on line 24
+[01-Apr-2024 13:27:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TraceCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/TraceCommand.php on line 24
+[01-Apr-2024 13:27:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php on line 32
+[01-Apr-2024 13:27:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/SudoCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/SudoCommand.php on line 26
+[01-Apr-2024 13:27:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ShowCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ShowCommand.php on line 27
+[01-Apr-2024 13:27:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ReflectingCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ReflectingCommand.php on line 27
+[01-Apr-2024 13:27:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php on line 20
+[01-Apr-2024 13:27:25 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ParseCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ParseCommand.php on line 30
+[01-Apr-2024 13:27:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ListCommand.php on line 37
+[01-Apr-2024 13:27:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HistoryCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HistoryCommand.php on line 27
+[01-Apr-2024 13:27:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HelpCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/HelpCommand.php on line 25
+[01-Apr-2024 13:27:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ExitCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ExitCommand.php on line 23
+[01-Apr-2024 13:27:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/EditCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/EditCommand.php on line 21
+[01-Apr-2024 13:27:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DumpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DumpCommand.php on line 26
+[01-Apr-2024 13:27:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DocCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/DocCommand.php on line 28
+[01-Apr-2024 13:27:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ClearCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/psy/psysh/src/Command/ClearCommand.php on line 22

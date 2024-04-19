@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:beaf8d02899c74a900b211ffe78dc163853a627e45db91685bff48d2a8ee7cf2
-size 792
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Translation\Dumper;
+
+use Symfony\Component\Translation\MessageCatalogue;
+
+/**
+ * PhpFileDumper generates PHP files from a message catalogue.
+ *
+ * @author Michel Salib <michelsalib@hotmail.com>
+ */
+class PhpFileDumper extends FileDumper
+{
+    public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []): string
+    {
+        return "<?php\n\nreturn ".var_export($messages->all($domain), true).";\n";
+    }
+
+    protected function getExtension(): string
+    {
+        return 'php';
+    }
+}

@@ -1,0 +1,4 @@
+[22-Mar-2024 23:38:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/DependencyInjection/AddConsoleCommandPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/console/DependencyInjection/AddConsoleCommandPass.php on line 30

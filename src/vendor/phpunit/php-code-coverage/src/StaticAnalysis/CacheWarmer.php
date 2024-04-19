@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca94a3696948e1b7423c7c6fd29a046a60f76a8f29402b82decd592c6fa64e4a
-size 953
+<?php declare(strict_types=1);
+/*
+ * This file is part of phpunit/php-code-coverage.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace SebastianBergmann\CodeCoverage\StaticAnalysis;
+
+use SebastianBergmann\CodeCoverage\Filter;
+
+final class CacheWarmer
+{
+    public function warmCache(string $cacheDirectory, bool $useAnnotationsForIgnoringCode, bool $ignoreDeprecatedCode, Filter $filter): void
+    {
+        $analyser = new CachingFileAnalyser(
+            $cacheDirectory,
+            new ParsingFileAnalyser(
+                $useAnnotationsForIgnoringCode,
+                $ignoreDeprecatedCode
+            )
+        );
+
+        foreach ($filter->files() as $file) {
+            $analyser->process($file);
+        }
+    }
+}

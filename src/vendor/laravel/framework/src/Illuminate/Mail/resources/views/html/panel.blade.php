@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09332785c9f08e1bd82da3a18348ddd581a1f604f99fc29557efc8e38c18f2a6
-size 309
+<table class="panel" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+<tr>
+<td class="panel-content">
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+<tr>
+<td class="panel-item">
+{{ Illuminate\Mail\Markdown::parse($slot) }}
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+

@@ -1,0 +1,24 @@
+[23-Mar-2024 16:37:12 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php on line 16
+[23-Mar-2024 16:37:24 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php on line 16
+[23-Mar-2024 16:37:30 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php on line 16
+[01-Apr-2024 14:13:44 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php on line 16
+[01-Apr-2024 14:13:48 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php on line 16
+[01-Apr-2024 14:13:52 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php on line 16

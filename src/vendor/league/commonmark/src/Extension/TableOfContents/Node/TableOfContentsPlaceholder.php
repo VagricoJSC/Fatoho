@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff33ea5dedb713211bc3083c5e2f2972e0ffa32c08d38101d49aa015170d5781
-size 447
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\TableOfContents\Node;
+
+use League\CommonMark\Node\Block\AbstractBlock;
+
+final class TableOfContentsPlaceholder extends AbstractBlock
+{
+}

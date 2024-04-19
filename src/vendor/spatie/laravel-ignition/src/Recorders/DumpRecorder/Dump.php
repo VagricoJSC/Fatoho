@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:118e56b3a64daee118c1f32327d2bcc581d0919951002cb8793f6065aa722902
-size 785
+<?php
+
+namespace Spatie\LaravelIgnition\Recorders\DumpRecorder;
+
+class Dump
+{
+    protected string $htmlDump;
+
+    protected ?string $file;
+
+    protected ?int $lineNumber;
+
+    protected float $microtime;
+
+    public function __construct(string $htmlDump, ?string $file, ?int $lineNumber, ?float $microtime = null)
+    {
+        $this->htmlDump = $htmlDump;
+        $this->file = $file;
+        $this->lineNumber = $lineNumber;
+        $this->microtime = $microtime ?? microtime(true);
+    }
+
+    /** @return array<string, mixed> */
+    public function toArray(): array
+    {
+        return [
+            'html_dump' => $this->htmlDump,
+            'file' => $this->file,
+            'line_number' => $this->lineNumber,
+            'microtime' => $this->microtime,
+        ];
+    }
+}

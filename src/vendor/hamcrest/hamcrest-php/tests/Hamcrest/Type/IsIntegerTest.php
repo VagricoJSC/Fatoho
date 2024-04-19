@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5082199b751636516ecd0ae6ff753475ef8821953a144463bef34c279523c61b
-size 985
+<?php
+namespace Hamcrest\Type;
+
+class IsIntegerTest extends \Hamcrest\AbstractMatcherTest
+{
+
+    protected function createMatcher()
+    {
+        return \Hamcrest\Type\IsInteger::integerValue();
+    }
+
+    public function testEvaluatesToTrueIfArgumentMatchesType()
+    {
+        assertThat(5, integerValue());
+        assertThat(0, integerValue());
+        assertThat(-5, integerValue());
+    }
+
+    public function testEvaluatesToFalseIfArgumentDoesntMatchType()
+    {
+        assertThat(false, not(integerValue()));
+        assertThat(5.2, not(integerValue()));
+        assertThat('foo', not(integerValue()));
+    }
+
+    public function testHasAReadableDescription()
+    {
+        $this->assertDescription('an integer', integerValue());
+    }
+
+    public function testDecribesActualTypeInMismatchMessage()
+    {
+        $this->assertMismatchDescription('was null', integerValue(), null);
+        $this->assertMismatchDescription('was a string "foo"', integerValue(), 'foo');
+    }
+}

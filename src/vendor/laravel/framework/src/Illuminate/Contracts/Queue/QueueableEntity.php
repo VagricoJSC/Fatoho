@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c081e746d19db452e6ba546cb2a9e1efb838fc81f6deeb9cd4d7d892d64a26fb
-size 481
+<?php
+
+namespace Illuminate\Contracts\Queue;
+
+interface QueueableEntity
+{
+    /**
+     * Get the queueable identity for the entity.
+     *
+     * @return mixed
+     */
+    public function getQueueableId();
+
+    /**
+     * Get the relationships for the entity.
+     *
+     * @return array
+     */
+    public function getQueueableRelations();
+
+    /**
+     * Get the connection of the entity.
+     *
+     * @return string|null
+     */
+    public function getQueueableConnection();
+}

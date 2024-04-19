@@ -1,0 +1,20 @@
+[23-Mar-2024 05:49:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php on line 20
+[23-Mar-2024 05:50:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/MixedPart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/MixedPart.php on line 19
+[23-Mar-2024 05:50:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php on line 24
+[23-Mar-2024 05:52:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/DigestPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/DigestPart.php on line 20
+[23-Mar-2024 05:52:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php on line 19

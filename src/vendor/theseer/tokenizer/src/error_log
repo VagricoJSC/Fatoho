@@ -1,0 +1,12 @@
+[30-Mar-2024 07:43:31 UTC] PHP Fatal error:  Uncaught Error: Class "TheSeer\Tokenizer\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/TokenCollectionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/TokenCollectionException.php on line 4
+[03-Apr-2024 08:22:40 UTC] PHP Fatal error:  Uncaught Error: Class "TheSeer\Tokenizer\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/TokenCollectionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/TokenCollectionException.php on line 4
+[03-Apr-2024 08:22:44 UTC] PHP Fatal error:  Uncaught Error: Class "TheSeer\Tokenizer\Exception" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/NamespaceUriException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/theseer/tokenizer/src/NamespaceUriException.php on line 4

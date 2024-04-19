@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ab5313dcc288d311aa118f1960368be6dcac0d3a97e24ae47a0b78c0c463656
-size 292
+<?php
+
+namespace Egulias\EmailValidator\Result\Reason;
+
+class CommentsInIDRight implements Reason
+{
+    public function code() : int
+    {
+        return 400;
+    }
+
+    public function description() : string
+    {
+        return 'Comments are not allowed in IDRight for message-id';
+    }
+}

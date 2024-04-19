@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f407acc27bc7a4828ed8d737a40b2e0d37e5f80dd60dfa0fecd90d6d4da0e5b7
-size 609
+<?php
+
+namespace Pusher;
+
+class PusherInstance
+{
+    private static $instance = null;
+    private static $app_id = '';
+    private static $secret = '';
+    private static $api_key = '';
+
+    /**
+     * Get the pusher singleton instance.
+     *
+     * @return Pusher
+     * @throws PusherException
+     */
+    public static function get_pusher()
+    {
+        if (self::$instance !== null) {
+            return self::$instance;
+        }
+
+        self::$instance = new Pusher(
+            self::$api_key,
+            self::$secret,
+            self::$app_id
+        );
+
+        return self::$instance;
+    }
+}

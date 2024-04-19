@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab356c1ba9a93766dfffe501f660862d8535b74c21d66234aca59b5477da3124
-size 884
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\CacheWarmer;
+
+/**
+ * Abstract cache warmer that knows how to write a file to the cache.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+abstract class CacheWarmer implements CacheWarmerInterface
+{
+    protected function writeCacheFile(string $file, $content)
+    {
+        $tmpFile = @tempnam(\dirname($file), basename($file));
+        if (false !== @file_put_contents($tmpFile, $content) && @rename($tmpFile, $file)) {
+            @chmod($file, 0666 & ~umask());
+
+            return;
+        }
+
+        throw new \RuntimeException(sprintf('Failed to write cache file "%s".', $file));
+    }
+}

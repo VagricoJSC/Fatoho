@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5663bc47544a118d9c9bf9aec10fc91cc1daf234351bd3ab39cc45652d12c1c4
-size 440
+<?php
+
+/**
+ * This file is part of the Carbon package.
+ *
+ * (c) Brian Nesbitt <brian@nesbot.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Authors:
+ * - Greek Debian Translation Team    bug-glibc@gnu.org
+ */
+return array_replace_recursive(require __DIR__.'/el.php', [
+    'first_day_of_week' => 1,
+    'day_of_first_week_of_year' => 1,
+]);

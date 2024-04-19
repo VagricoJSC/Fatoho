@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ca2f513625f0422dcbb2858cb736b58f4bd6874d18d0756b7fcfc79b27b5bc3
-size 945
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr;
+
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
+
+class PropertyFetch extends Expr
+{
+    /** @var Expr Variable holding object */
+    public $var;
+    /** @var Identifier|Expr Property name */
+    public $name;
+
+    /**
+     * Constructs a function call node.
+     *
+     * @param Expr                   $var        Variable holding object
+     * @param string|Identifier|Expr $name       Property name
+     * @param array                  $attributes Additional attributes
+     */
+    public function __construct(Expr $var, $name, array $attributes = []) {
+        $this->attributes = $attributes;
+        $this->var = $var;
+        $this->name = \is_string($name) ? new Identifier($name) : $name;
+    }
+
+    public function getSubNodeNames() : array {
+        return ['var', 'name'];
+    }
+    
+    public function getType() : string {
+        return 'Expr_PropertyFetch';
+    }
+}

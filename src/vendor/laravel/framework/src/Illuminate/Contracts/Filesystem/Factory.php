@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f727869ed61247901681550f999023096a7357606cbd5647d880bb57602095ce
-size 269
+<?php
+
+namespace Illuminate\Contracts\Filesystem;
+
+interface Factory
+{
+    /**
+     * Get a filesystem implementation.
+     *
+     * @param  string|null  $name
+     * @return \Illuminate\Contracts\Filesystem\Filesystem
+     */
+    public function disk($name = null);
+}

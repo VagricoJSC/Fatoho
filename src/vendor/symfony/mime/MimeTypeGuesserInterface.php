@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee61fc17e7eedfb96a1d4b317e33d98f91cbb4ef27ca4a98f367413d1b172d63
-size 826
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime;
+
+/**
+ * Guesses the MIME type of a file.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+interface MimeTypeGuesserInterface
+{
+    /**
+     * Returns true if this guesser is supported.
+     */
+    public function isGuesserSupported(): bool;
+
+    /**
+     * Guesses the MIME type of the file with the given path.
+     *
+     * @throws \LogicException           If the guesser is not supported
+     * @throws \InvalidArgumentException If the file does not exist or is not readable
+     */
+    public function guessMimeType(string $path): ?string;
+}

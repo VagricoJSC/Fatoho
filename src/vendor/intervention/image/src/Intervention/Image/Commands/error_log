@@ -1,0 +1,104 @@
+[23-Mar-2024 15:52:19 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php on line 7
+[23-Mar-2024 15:52:23 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php on line 5
+[23-Mar-2024 15:52:28 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php on line 7
+[23-Mar-2024 15:52:33 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php on line 7
+[23-Mar-2024 15:52:38 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php on line 7
+[23-Mar-2024 15:52:39 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php on line 8
+[23-Mar-2024 15:52:43 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php on line 5
+[23-Mar-2024 15:52:48 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php on line 7
+[23-Mar-2024 15:52:51 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php on line 7
+[23-Mar-2024 15:52:57 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php on line 8
+[23-Mar-2024 15:53:01 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php on line 7
+[23-Mar-2024 15:53:04 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php on line 7
+[23-Mar-2024 15:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php on line 5
+[03-Apr-2024 19:50:45 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php on line 7
+[03-Apr-2024 19:50:49 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php on line 5
+[03-Apr-2024 19:50:53 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php on line 7
+[03-Apr-2024 19:50:57 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php on line 7
+[03-Apr-2024 19:51:04 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php on line 7
+[03-Apr-2024 19:51:06 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php on line 8
+[03-Apr-2024 19:51:10 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php on line 5
+[03-Apr-2024 19:51:14 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php on line 7
+[03-Apr-2024 19:51:17 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php on line 7
+[03-Apr-2024 19:51:21 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php on line 8
+[03-Apr-2024 19:51:25 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php on line 7
+[03-Apr-2024 19:51:29 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php on line 7
+[03-Apr-2024 19:51:33 UTC] PHP Fatal error:  Uncaught Error: Class "Intervention\Image\Commands\AbstractCommand" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php on line 5

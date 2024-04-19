@@ -1,0 +1,24 @@
+[23-Mar-2024 11:54:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php on line 18
+[23-Mar-2024 11:54:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php on line 18
+[23-Mar-2024 11:54:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\MemoryMeter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php on line 18
+[03-Apr-2024 19:55:17 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php on line 18
+[03-Apr-2024 19:55:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php on line 18
+[03-Apr-2024 19:55:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\MemoryMeter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php on line 18

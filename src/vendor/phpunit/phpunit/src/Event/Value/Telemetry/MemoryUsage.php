@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6584a0e3f72f12804c100f6ace7f06a573a6d9c40980bc9f134482329aa3bb5e
-size 870
+<?php
+
+declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Event\Telemetry;
+
+/**
+ * @psalm-immutable
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
+ */
+final class MemoryUsage
+{
+    private readonly int $bytes;
+
+    public static function fromBytes(int $bytes): self
+    {
+        return new self($bytes);
+    }
+
+    private function __construct(int $bytes)
+    {
+        $this->bytes = $bytes;
+    }
+
+    public function bytes(): int
+    {
+        return $this->bytes;
+    }
+
+    public function diff(self $other): self
+    {
+        return self::fromBytes($this->bytes - $other->bytes);
+    }
+}

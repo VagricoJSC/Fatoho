@@ -1,0 +1,192 @@
+[23-Mar-2024 12:22:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredWarningSubscriber.php on line 18
+[23-Mar-2024 12:23:02 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitWarningSubscriber.php on line 18
+[23-Mar-2024 12:23:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitErrorSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitErrorSubscriber.php on line 18
+[23-Mar-2024 12:23:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php on line 18
+[23-Mar-2024 12:23:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpNoticeSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 18
+[23-Mar-2024 12:23:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 18
+[23-Mar-2024 12:23:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 18
+[23-Mar-2024 12:23:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredNoticeSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredNoticeSubscriber.php on line 18
+[23-Mar-2024 12:23:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredErrorSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredErrorSubscriber.php on line 18
+[23-Mar-2024 12:23:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredDeprecationSubscriber.php on line 18
+[23-Mar-2024 12:23:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteStartedSubscriber.php on line 18
+[23-Mar-2024 12:23:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteSkippedSubscriber.php on line 18
+[23-Mar-2024 12:23:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteFinishedSubscriber.php on line 19
+[23-Mar-2024 12:23:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSkippedSubscriber.php on line 18
+[23-Mar-2024 12:23:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredWarningSubscriber.php on line 18
+[23-Mar-2024 12:23:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredDeprecationSubscriber.php on line 18
+[23-Mar-2024 12:24:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestPreparedSubscriber.php on line 18
+[23-Mar-2024 12:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestMarkedIncompleteSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestMarkedIncompleteSubscriber.php on line 18
+[23-Mar-2024 12:24:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFinishedSubscriber.php on line 18
+[23-Mar-2024 12:24:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFailedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFailedSubscriber.php on line 18
+[23-Mar-2024 12:24:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestErroredSubscriber.php on line 18
+[23-Mar-2024 12:24:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestConsideredRiskySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestConsideredRiskySubscriber.php on line 18
+[23-Mar-2024 12:24:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/ExecutionStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/ExecutionStartedSubscriber.php on line 18
+[23-Mar-2024 12:24:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/BeforeTestClassMethodErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/BeforeTestClassMethodErroredSubscriber.php on line 18
+[03-Apr-2024 17:21:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSkippedSubscriber.php on line 18
+[03-Apr-2024 17:21:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestPreparedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestPreparedSubscriber.php on line 18
+[03-Apr-2024 17:21:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFinishedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFinishedSubscriber.php on line 18
+[03-Apr-2024 17:21:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFailedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestFailedSubscriber.php on line 18
+[03-Apr-2024 17:21:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestErroredSubscriber.php on line 18
+[03-Apr-2024 20:45:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredWarningSubscriber.php on line 18
+[03-Apr-2024 20:45:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitWarningSubscriber.php on line 18
+[03-Apr-2024 20:45:14 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitErrorSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitErrorSubscriber.php on line 18
+[03-Apr-2024 20:45:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php on line 18
+[03-Apr-2024 20:45:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 18
+[03-Apr-2024 20:45:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpNoticeSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 18
+[03-Apr-2024 20:45:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 18
+[03-Apr-2024 20:45:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredNoticeSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredNoticeSubscriber.php on line 18
+[03-Apr-2024 20:45:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredErrorSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredErrorSubscriber.php on line 18
+[03-Apr-2024 20:45:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestTriggeredDeprecationSubscriber.php on line 18
+[03-Apr-2024 20:45:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteStartedSubscriber.php on line 18
+[03-Apr-2024 20:45:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteSkippedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteSkippedSubscriber.php on line 18
+[03-Apr-2024 20:45:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteFinishedSubscriber.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestSuiteFinishedSubscriber.php on line 19
+[03-Apr-2024 20:46:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredDeprecationSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredDeprecationSubscriber.php on line 18
+[03-Apr-2024 20:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredWarningSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestRunnerTriggeredWarningSubscriber.php on line 18
+[03-Apr-2024 20:46:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestMarkedIncompleteSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestMarkedIncompleteSubscriber.php on line 18
+[03-Apr-2024 20:46:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestConsideredRiskySubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/TestConsideredRiskySubscriber.php on line 18
+[03-Apr-2024 20:46:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/ExecutionStartedSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/ExecutionStartedSubscriber.php on line 18
+[03-Apr-2024 20:46:18 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TestRunner\TestResult\Subscriber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/BeforeTestClassMethodErroredSubscriber.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Runner/TestResult/Subscriber/BeforeTestClassMethodErroredSubscriber.php on line 18

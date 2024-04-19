@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63b723e3afadc4efba55f3c88820468e178d6f7812a720003f683fe7fc6d0665
-size 944
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration;
+
+use function assert;
+use DOMDocument;
+use DOMElement;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class RemoveTestSuiteLoaderAttributes implements Migration
+{
+    public function migrate(DOMDocument $document): void
+    {
+        $root = $document->documentElement;
+
+        assert($root instanceof DOMElement);
+
+        if ($root->hasAttribute('testSuiteLoaderClass')) {
+            $root->removeAttribute('testSuiteLoaderClass');
+        }
+
+        if ($root->hasAttribute('testSuiteLoaderFile')) {
+            $root->removeAttribute('testSuiteLoaderFile');
+        }
+    }
+}

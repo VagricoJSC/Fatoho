@@ -1,0 +1,32 @@
+[23-Mar-2024 12:04:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Identity" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/Stub.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/Stub.php on line 17
+[23-Mar-2024 12:04:49 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/ParametersMatch.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/ParametersMatch.php on line 15
+[23-Mar-2024 12:04:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\ParametersMatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/MethodNameMatch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/MethodNameMatch.php on line 17
+[23-Mar-2024 12:05:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\InvocationStubber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/InvocationMocker.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/InvocationMocker.php on line 44
+[03-Apr-2024 17:29:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Identity" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/Stub.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/Stub.php on line 17
+[03-Apr-2024 17:29:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Stub" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/ParametersMatch.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/ParametersMatch.php on line 15
+[03-Apr-2024 17:29:48 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\ParametersMatch" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/MethodNameMatch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/MethodNameMatch.php on line 17
+[03-Apr-2024 17:29:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\InvocationStubber" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/InvocationMocker.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/phpunit/phpunit/src/Framework/MockObject/Builder/InvocationMocker.php on line 44

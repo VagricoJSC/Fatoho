@@ -1,0 +1,36 @@
+[03-Apr-2024 08:35:52 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\AbstractUser" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/User.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/User.php on line 7
+[03-Apr-2024 10:16:52 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/TwitterProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/TwitterProvider.php on line 8
+[03-Apr-2024 10:17:00 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/LinkedInProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/LinkedInProvider.php on line 8
+[03-Apr-2024 10:17:09 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GoogleProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GoogleProvider.php on line 8
+[03-Apr-2024 10:17:12 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GitlabProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GitlabProvider.php on line 7
+[03-Apr-2024 10:17:18 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GithubProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/GithubProvider.php on line 9
+[03-Apr-2024 10:17:21 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/FacebookProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/FacebookProvider.php on line 8
+[03-Apr-2024 10:17:24 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Socialite\Two\AbstractProvider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/BitbucketProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/BitbucketProvider.php on line 9
+[03-Apr-2024 10:17:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Socialite\Contracts\Provider" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/AbstractProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/socialite/src/Two/AbstractProvider.php on line 13

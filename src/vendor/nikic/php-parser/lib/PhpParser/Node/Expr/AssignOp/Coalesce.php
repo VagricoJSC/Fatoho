@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c81f170fa6f6b028d2e0eb9cf27e04cb037f492d0552ff2f1e8ac984ce8647e
-size 231
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class Coalesce extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_Coalesce';
+    }
+}

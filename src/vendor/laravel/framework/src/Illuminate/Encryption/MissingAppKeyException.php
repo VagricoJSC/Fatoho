@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d58da4005803078347fbece5c474ed8cc8443390fcf8307327496aafbda8ee51
-size 384
+<?php
+
+namespace Illuminate\Encryption;
+
+use RuntimeException;
+
+class MissingAppKeyException extends RuntimeException
+{
+    /**
+     * Create a new exception instance.
+     *
+     * @param  string  $message
+     * @return void
+     */
+    public function __construct($message = 'No application encryption key has been specified.')
+    {
+        parent::__construct($message);
+    }
+}

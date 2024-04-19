@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c033f5295a83c39279a26db89a93baa0f577ac0a38d5c6d6a2d5acfabee0502
-size 929
+<?php
+
+namespace Srmklive\PayPal\Tests\Unit\Adapter;
+
+use PHPUnit\Framework\TestCase;
+use Srmklive\PayPal\Tests\MockClientClasses;
+use Srmklive\PayPal\Tests\MockRequestPayloads;
+use Srmklive\PayPal\Tests\MockResponsePayloads;
+
+class WebHooksVerificationTest extends TestCase
+{
+    use MockClientClasses;
+    use MockRequestPayloads;
+    use MockResponsePayloads;
+
+    /** @test */
+    public function it_can_verify_web_hook_signature()
+    {
+        $expectedResponse = $this->mockVerifyWebHookSignatureResponse();
+
+        $expectedParams = $this->mockVerifyWebHookSignatureParams();
+
+        $expectedMethod = 'verifyWebHook';
+
+        $mockClient = $this->mock_client($expectedResponse, $expectedMethod, true);
+
+        $mockClient->setApiCredentials($this->getMockCredentials());
+        $mockClient->getAccessToken();
+
+        $this->assertEquals($expectedResponse, $mockClient->{$expectedMethod}($expectedParams));
+    }
+}

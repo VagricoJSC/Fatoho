@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69b0a0f231f4626b10966f9a710fb70b5ef2e1bcf7a116e9581043f1a49b9195
-size 720
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\Autolink;
+
+use League\CommonMark\Environment\EnvironmentBuilderInterface;
+use League\CommonMark\Extension\ExtensionInterface;
+
+final class AutolinkExtension implements ExtensionInterface
+{
+    public function register(EnvironmentBuilderInterface $environment): void
+    {
+        $environment->addInlineParser(new EmailAutolinkParser());
+        $environment->addInlineParser(new UrlAutolinkParser());
+    }
+}

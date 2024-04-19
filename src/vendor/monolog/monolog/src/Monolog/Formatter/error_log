@@ -1,0 +1,168 @@
+[23-Mar-2024 14:17:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php on line 24
+[23-Mar-2024 14:17:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\LineFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php on line 23
+[23-Mar-2024 14:17:15 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php on line 22
+[23-Mar-2024 14:17:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 24
+[23-Mar-2024 14:17:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[23-Mar-2024 14:17:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php on line 24
+[23-Mar-2024 14:17:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php on line 21
+[23-Mar-2024 14:17:35 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php on line 21
+[23-Mar-2024 14:17:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php on line 26
+[23-Mar-2024 14:17:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php on line 25
+[23-Mar-2024 14:17:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php on line 25
+[23-Mar-2024 14:17:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php on line 25
+[23-Mar-2024 14:17:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php on line 25
+[23-Mar-2024 14:18:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php on line 38
+[23-Mar-2024 14:18:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php on line 22
+[23-Mar-2024 14:18:11 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php on line 22
+[23-Mar-2024 14:18:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php on line 22
+[23-Mar-2024 14:18:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php on line 22
+[28-Mar-2024 19:26:41 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php on line 21
+[28-Mar-2024 22:11:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php on line 38
+[28-Mar-2024 23:41:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php on line 21
+[29-Mar-2024 00:43:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php on line 25
+[29-Mar-2024 02:06:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[01-Apr-2024 14:09:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[03-Apr-2024 16:54:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php on line 24
+[03-Apr-2024 16:55:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\LineFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php on line 23
+[03-Apr-2024 16:55:05 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php on line 22
+[03-Apr-2024 16:55:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 24
+[03-Apr-2024 16:55:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[03-Apr-2024 16:55:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php on line 24
+[03-Apr-2024 16:55:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php on line 21
+[03-Apr-2024 16:55:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php on line 21
+[03-Apr-2024 16:55:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php on line 26
+[03-Apr-2024 16:55:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php on line 25
+[03-Apr-2024 16:55:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php on line 25
+[03-Apr-2024 16:55:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php on line 25
+[03-Apr-2024 16:55:45 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php on line 25
+[03-Apr-2024 16:55:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php on line 38
+[03-Apr-2024 16:55:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php on line 22
+[03-Apr-2024 16:56:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php on line 22
+[03-Apr-2024 16:56:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php on line 22
+[03-Apr-2024 16:56:13 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php on line 22

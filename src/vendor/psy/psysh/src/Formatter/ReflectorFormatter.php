@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11802fae27bc55102ecd1006e26ed3b10ef9f6f86a24f12567e99084dfc68630
-size 434
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\Formatter;
+
+/**
+ * Reflector formatter interface.
+ */
+interface ReflectorFormatter
+{
+    /**
+     * @param \Reflector $reflector
+     */
+    public static function format(\Reflector $reflector): string;
+}

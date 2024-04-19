@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f68bb5e3894b18f4b2453f8745c39f86adff1005fcdded369d42b69c573d97b9
-size 313
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class LogicalAnd extends BinaryOp
+{
+    public function getOperatorSigil() : string {
+        return 'and';
+    }
+    
+    public function getType() : string {
+        return 'Expr_BinaryOp_LogicalAnd';
+    }
+}

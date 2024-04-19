@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa579cc1ab9316f0b9d9aa0aa148f0983c129699ce18b0162480a0eb39e5f5be
-size 267
+<?php
+
+namespace Faker\Provider\nl_NL;
+
+class Internet extends \Faker\Provider\Internet
+{
+    protected static $freeEmailDomain = ['gmail.com', 'hotmail.nl', 'live.nl', 'yahoo.nl'];
+    protected static $tld = ['com', 'com', 'com', 'net', 'org', 'nl', 'nl', 'nl'];
+}

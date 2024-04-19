@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:090c7a30ac4573dfd5e686af528eab3b9727a6f6228be8b65f26fd982b138269
-size 235
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\AssignOp;
+
+use PhpParser\Node\Expr\AssignOp;
+
+class BitwiseAnd extends AssignOp
+{
+    public function getType() : string {
+        return 'Expr_AssignOp_BitwiseAnd';
+    }
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d680300f7a02eb3354b3ecc236c8d1ba7237a22fd089b4647ed0885213f7972e
-size 859
+<?php
+
+/*
+ * This file is part of Psy Shell.
+ *
+ * (c) 2012-2023 Justin Hileman
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Psy\CodeCleaner;
+
+use PhpParser\Node;
+use PhpParser\Node\Expr\Exit_;
+use PhpParser\Node\Expr\StaticCall;
+use PhpParser\Node\Name\FullyQualified as FullyQualifiedName;
+use Psy\Exception\BreakException;
+
+class ExitPass extends CodeCleanerPass
+{
+    /**
+     * Converts exit calls to BreakExceptions.
+     *
+     * @param \PhpParser\Node $node
+     *
+     * @return int|Node|Node[]|null Replacement node (or special return value)
+     */
+    public function leaveNode(Node $node)
+    {
+        if ($node instanceof Exit_) {
+            return new StaticCall(new FullyQualifiedName(BreakException::class), 'exitShell');
+        }
+    }
+}

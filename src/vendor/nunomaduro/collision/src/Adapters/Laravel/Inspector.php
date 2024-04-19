@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7038ff2d73086124d993566de7c2bf94cc2697fe9f3d20d587ed0baf7432c3e3
-size 540
+<?php
+
+declare(strict_types=1);
+
+/**
+ * This file is part of Collision.
+ *
+ * (c) Nuno Maduro <enunomaduro@gmail.com>
+ *
+ *  For the full copyright and license information, please view the LICENSE
+ *  file that was distributed with this source code.
+ */
+
+namespace NunoMaduro\Collision\Adapters\Laravel;
+
+use Whoops\Exception\Inspector as BaseInspector;
+
+/**
+ * @internal
+ */
+final class Inspector extends BaseInspector
+{
+    /**
+     * {@inheritdoc}
+     */
+    protected function getTrace($e)
+    {
+        return $e->getTrace();
+    }
+}

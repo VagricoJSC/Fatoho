@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94ffdd2657a5f85f5e5b85fc44d50900c7c1d5b44f2e8a7476a30f7107028930
-size 629
+<?php
+
+namespace Illuminate\Support\Traits;
+
+use Illuminate\Container\Container;
+
+trait Localizable
+{
+    /**
+     * Run the callback with the given locale.
+     *
+     * @param  string  $locale
+     * @param  \Closure  $callback
+     * @return mixed
+     */
+    public function withLocale($locale, $callback)
+    {
+        if (! $locale) {
+            return $callback();
+        }
+
+        $app = Container::getInstance();
+
+        $original = $app->getLocale();
+
+        try {
+            $app->setLocale($locale);
+
+            return $callback();
+        } finally {
+            $app->setLocale($original);
+        }
+    }
+}

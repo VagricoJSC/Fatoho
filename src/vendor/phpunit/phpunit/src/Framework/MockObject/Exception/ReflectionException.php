@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:733ccad1ff60b9dfe1d9123a674af73873aa76c31dbcd77c7d4c534179a81cd1
-size 496
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\Framework\MockObject;
+
+use RuntimeException;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class ReflectionException extends RuntimeException implements Exception
+{
+}

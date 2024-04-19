@@ -1,0 +1,9 @@
+[03-Apr-2024 18:30:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Builder" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php on line 7
+[03-Apr-2024 18:30:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Query\Expression" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php on line 8
+[03-Apr-2024 18:30:58 UTC] PHP Fatal error:  Trait "Illuminate\Database\Concerns\BuildsQueries" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php on line 30

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6254bdfe9d3f74c3d515bb2a011cab05707a54f3d477c19ae5182b584ba4eb4
-size 722
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TextUI\XmlConfiguration\CodeCoverage\Report;
+
+use PHPUnit\TextUI\Configuration\Directory;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ *
+ * @psalm-immutable
+ */
+final class Xml
+{
+    private readonly Directory $target;
+
+    public function __construct(Directory $target)
+    {
+        $this->target = $target;
+    }
+
+    public function target(): Directory
+    {
+        return $this->target;
+    }
+}

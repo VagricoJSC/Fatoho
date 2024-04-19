@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af987a4bb0ab0ad4dc653806bd06d07b65bd4d162bb740485a866904aca7e044
-size 1462
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Event;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+
+/**
+ * Allows to create a response for the return value of a controller.
+ *
+ * Call setResponse() to set the response that will be returned for the
+ * current request. The propagation of this event is stopped as soon as a
+ * response is set.
+ *
+ * @author Bernhard Schussek <bschussek@gmail.com>
+ */
+final class ViewEvent extends RequestEvent
+{
+    public readonly ?ControllerArgumentsEvent $controllerArgumentsEvent;
+    private mixed $controllerResult;
+
+    public function __construct(HttpKernelInterface $kernel, Request $request, int $requestType, mixed $controllerResult, ControllerArgumentsEvent $controllerArgumentsEvent = null)
+    {
+        parent::__construct($kernel, $request, $requestType);
+
+        $this->controllerResult = $controllerResult;
+        $this->controllerArgumentsEvent = $controllerArgumentsEvent;
+    }
+
+    public function getControllerResult(): mixed
+    {
+        return $this->controllerResult;
+    }
+
+    public function setControllerResult(mixed $controllerResult): void
+    {
+        $this->controllerResult = $controllerResult;
+    }
+}

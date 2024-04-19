@@ -1,0 +1,80 @@
+[27-Mar-2024 00:46:00 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php on line 12
+[27-Mar-2024 00:46:03 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php on line 12
+[27-Mar-2024 00:46:07 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php on line 12
+[27-Mar-2024 00:46:11 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php on line 12
+[27-Mar-2024 00:46:15 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php on line 12
+[27-Mar-2024 00:46:22 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php on line 12
+[27-Mar-2024 00:46:23 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php on line 14
+[27-Mar-2024 00:46:27 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php on line 12
+[27-Mar-2024 00:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php on line 12
+[27-Mar-2024 00:46:35 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php on line 12
+[03-Apr-2024 15:41:12 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php on line 12
+[03-Apr-2024 15:41:18 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php on line 12
+[03-Apr-2024 15:41:20 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php on line 12
+[03-Apr-2024 15:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php on line 12
+[03-Apr-2024 15:41:28 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php on line 12
+[03-Apr-2024 15:41:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php on line 12
+[03-Apr-2024 15:41:36 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php on line 14
+[03-Apr-2024 15:41:40 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php on line 12
+[03-Apr-2024 15:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php on line 12
+[03-Apr-2024 15:41:49 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/erpcpanel/public_html/sale.erpcpanel.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php on line 12

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ad6e85b2cbb4a0e46287802d5a50b3e05555d8f1067309a603cc5bf2dfe6017
-size 317
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Scalar\MagicConst;
+
+use PhpParser\Node\Scalar\MagicConst;
+
+class Method extends MagicConst
+{
+    public function getName() : string {
+        return '__METHOD__';
+    }
+    
+    public function getType() : string {
+        return 'Scalar_MagicConst_Method';
+    }
+}

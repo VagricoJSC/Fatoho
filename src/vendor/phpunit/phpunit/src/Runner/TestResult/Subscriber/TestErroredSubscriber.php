@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc9114ccf6e6a1e48308ca8bbc822c75479f1ffa8dc2ce8b6af8c6c6d9b45fdb
-size 672
+<?php declare(strict_types=1);
+/*
+ * This file is part of PHPUnit.
+ *
+ * (c) Sebastian Bergmann <sebastian@phpunit.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPUnit\TestRunner\TestResult;
+
+use PHPUnit\Event\Test\Errored;
+use PHPUnit\Event\Test\ErroredSubscriber;
+
+/**
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ */
+final class TestErroredSubscriber extends Subscriber implements ErroredSubscriber
+{
+    public function notify(Errored $event): void
+    {
+        $this->collector()->testErrored($event);
+    }
+}

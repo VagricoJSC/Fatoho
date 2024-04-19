@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a505d0a79ebf5c7a50827a9df6d411d9c4dfa12fb808dd49b6bd12d62537c139
-size 376
+<?php
+
+namespace Faker\Provider\he_IL;
+
+class Company extends \Faker\Provider\Company
+{
+    protected static $formats = [
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} את {{lastName}} {{companySuffix}}',
+        '{{lastName}} ו{{lastName}}',
+    ];
+
+    protected static $companySuffix = ['בע"מ', 'ובניו', 'סוכנויות', 'משווקים'];
+}

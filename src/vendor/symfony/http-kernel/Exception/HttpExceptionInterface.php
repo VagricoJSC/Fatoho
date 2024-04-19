@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8281ee7a69c37b06ec28b0078aa312d774583e357e614cdae6314677db7da4d2
-size 622
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * Interface for HTTP error exceptions.
+ *
+ * @author Kris Wallsmith <kris@symfony.com>
+ */
+interface HttpExceptionInterface extends \Throwable
+{
+    /**
+     * Returns the status code.
+     */
+    public function getStatusCode(): int;
+
+    /**
+     * Returns response headers.
+     */
+    public function getHeaders(): array;
+}

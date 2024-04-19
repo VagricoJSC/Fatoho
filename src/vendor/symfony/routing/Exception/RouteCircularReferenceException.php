@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e93bcc0fc08bfb35e5b00fbcf7c8397418d2c925590fc6749203cd513aa0dd89
-size 558
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Routing\Exception;
+
+class RouteCircularReferenceException extends RuntimeException
+{
+    public function __construct(string $routeId, array $path)
+    {
+        parent::__construct(sprintf('Circular reference detected for route "%s", path: "%s".', $routeId, implode(' -> ', $path)));
+    }
+}

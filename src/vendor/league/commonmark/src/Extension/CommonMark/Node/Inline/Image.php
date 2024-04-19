@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4582c860d44bbade7817d3e935fc83747b4dff1f0ee5aa87964353e3146b4b40
-size 1109
+<?php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of the league/commonmark package.
+ *
+ * (c) Colin O'Dell <colinodell@gmail.com>
+ *
+ * Original code based on the CommonMark JS reference parser (https://bitly.com/commonmark-js)
+ *  - (c) John MacFarlane
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace League\CommonMark\Extension\CommonMark\Node\Inline;
+
+use League\CommonMark\Node\Inline\Text;
+
+class Image extends AbstractWebResource
+{
+    protected ?string $title = null;
+
+    public function __construct(string $url, ?string $label = null, ?string $title = null)
+    {
+        parent::__construct($url);
+
+        if ($label !== null && $label !== '') {
+            $this->appendChild(new Text($label));
+        }
+
+        $this->title = $title;
+    }
+
+    public function getTitle(): ?string
+    {
+        if ($this->title === '') {
+            return null;
+        }
+
+        return $this->title;
+    }
+
+    public function setTitle(?string $title): void
+    {
+        $this->title = $title;
+    }
+}

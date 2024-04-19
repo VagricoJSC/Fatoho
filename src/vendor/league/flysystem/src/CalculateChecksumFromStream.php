@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee9d4f50f5827c8ee2e227226d6ee2ee1c0d9e943a6be2dd91d31017dc3d7df8
-size 793
+<?php
+declare(strict_types=1);
+
+namespace League\Flysystem;
+
+use function hash_final;
+use function hash_init;
+use function hash_update_stream;
+
+trait CalculateChecksumFromStream
+{
+    private function calculateChecksumFromStream(string $path, Config $config): string
+    {
+        try {
+            $stream = $this->readStream($path);
+            $algo = (string) $config->get('checksum_algo', 'md5');
+            $context = hash_init($algo);
+            hash_update_stream($context, $stream);
+
+            return hash_final($context);
+        } catch (FilesystemException $exception) {
+            throw new UnableToProvideChecksum($exception->getMessage(), $path, $exception);
+        }
+    }
+
+    /**
+     * @return resource
+     */
+    abstract public function readStream(string $path);
+}

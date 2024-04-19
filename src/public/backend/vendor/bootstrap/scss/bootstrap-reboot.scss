@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:698728d5be103a11abf1e9012669ef69503d8917a6d8b338554f013e758b2881
-size 411
+/*!
+ * Bootstrap Reboot v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "reboot";
