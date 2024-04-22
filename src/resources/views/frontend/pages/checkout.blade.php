@@ -230,7 +230,7 @@
                 <div class="single-service">
                     <i class="ti-rocket"></i>
                     <h4>Miễn phí giao hàng</h4>
-                    <p>Đơn hàng trên 10.000.000 vnđ</p>
+                    <p>Đơn hàng trên 10.000.000 VNĐ</p>
                 </div>
                 <!-- End Single Service -->
             </div>

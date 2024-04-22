@@ -147,10 +147,10 @@
                                                     $after_discount=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
 												@if($product->discount > 0)
-                                                <span>{{number_format($after_discount)}} vnđ</span>
-                                                <del style="padding-left:4%;">{{number_format($product->price)}} vnđ</del>
+                                                <span>{{number_format($after_discount)}} VNĐ</span>
+                                                <del style="padding-left:4%;">{{number_format($product->price)}} VNĐ</del>
 												@else
-                                                <span>{{number_format($product->price)}} vnđ</span>
+                                                <span>{{number_format($product->price)}} VNĐ</span>
 												@endif
                                             </div>
                                         </div>
@@ -249,10 +249,10 @@
                                     $after_discount=($product->price-($product->price*$product->discount)/100)
                                     @endphp
 									@if($product->discount > 0)
-                                    <span class="old">{{number_format($product->price)}} vnđ</span>
-                                    <span>{{number_format($after_discount)}} vnđ</span>
+                                    <span class="old">{{number_format($product->price)}} VNĐ</span>
+                                    <span>{{number_format($after_discount)}} VNĐ</span>
 									@else
-                                    <span>{{number_format($product->price)}} vnđ</span>
+                                    <span>{{number_format($product->price)}} VNĐ</span>
 									@endif
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 no-padding">
                                     <div class="content">
                                         <h4 class="title"><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h4>
-                                        <p class="price with-discount">{{number_format($product->discount > 0 ? $product->discount : $product->price)}} vnđ</p>
+                                        <p class="price with-discount">{{number_format($product->discount > 0 ? $product->discount : $product->price)}} VNĐ</p>
                                     </div>
                                 </div>
                                 </div>
@@ -359,7 +359,7 @@
                 <div class="single-service">
                     <i class="ti-rocket"></i>
                     <h4>Miễn phí giao hàng</h4>
-                    <p>Đơn hàng trên 10.000.000 vnđ</p>
+                    <p>Đơn hàng trên 10.000.000 VNĐ</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -462,7 +462,7 @@
                                             $after_discount=($product->price-($product->price*$product->discount)/100);
                                         @endphp
 										
-                                        <h3><small><del class="text-muted">{{number_format($product->price)}} vnđ</del></small>    {{number_format($after_discount)}} vnđ  </h3>
+                                        <h3><small><del class="text-muted">{{number_format($product->price)}} VNĐ</del></small>    {{number_format($after_discount)}} VNĐ  </h3>
                                         <div class="quickview-peragraph">
                                             <p>{!! html_entity_decode($product->summary) !!}</p>
                                         </div>

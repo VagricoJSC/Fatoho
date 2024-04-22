@@ -120,9 +120,9 @@
                                                     $org=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
 												@if($product->discount > 0)
-													<p class="price"><del class="text-muted">{{number_format($product->price,0)}} vnđ</del>   {{number_format($org,0)}} vnđ  </p>                                                
+													<p class="price"><del class="text-muted">{{number_format($product->price,0)}} VNĐ</del>   {{number_format($org,0)}} VNĐ  </p>                                                
 												@else
-													<p class="price">{{number_format($product->price,0)}} vnđ  </p>                                                
+													<p class="price">{{number_format($product->price,0)}} VNĐ  </p>                                                
 												@endif
                                                 
                                             </div>
@@ -218,10 +218,10 @@
 																	$after_discount=($product->price-($product->price*$product->discount)/100);
 																@endphp
 																@if($product->discount > 0)
-																	<span>{{number_format($after_discount,0)}} vnđ</span>
-																	<del>{{number_format($product->price,0)}} vnđ</del>
+																	<span>{{number_format($after_discount,0)}} VNĐ</span>
+																	<del>{{number_format($product->price,0)}} VNĐ</del>
 																@else
-																	<span>{{number_format($product->price,0)}} vnđ</span>
+																	<span>{{number_format($product->price,0)}} VNĐ</span>
 																@endif
 															</div>
 															<h3 class="title"><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h3>
@@ -315,9 +315,9 @@
 													$after_discount=($product->price-($product->price*$product->discount)/100);
 												@endphp
 												@if($product->discount > 0 )
-													<h3><small><del class="text-muted">{{number_format($product->price,0)}} vnđ</del></small>    {{number_format($after_discount,0)}} vnđ  </h3>
+													<h3><small><del class="text-muted">{{number_format($product->price,0)}} VNĐ</del></small>    {{number_format($after_discount,0)}} VNĐ  </h3>
 												@else 
-													<h3>{{number_format($product->price,0)}} vnđ  </h3>
+													<h3>{{number_format($product->price,0)}} VNĐ  </h3>
 												@endif
 												
 												<div class="quickview-peragraph">
