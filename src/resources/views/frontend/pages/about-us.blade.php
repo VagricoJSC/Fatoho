@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','E-SHOP || About Us')
+@section('title','FATOHO || Giới Thiệu')
 
 @section('main-content')
 

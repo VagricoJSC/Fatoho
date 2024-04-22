@@ -27,7 +27,7 @@
 							<div class="form-main">
 								<div class="title">
 									@php
-										$settings=DB::table('settings')->get();
+										$settings=DB::table('settings')->first();
 									@endphp
 									<h4>Thông tin</h4>
 									<h3>Gửi tin nhắn @auth @else<span style="font-size:12px;" class="text-danger">[Bạn cần đăng nhập trước]</span>@endauth</h3>
@@ -80,21 +80,21 @@
 									<i class="fa fa-phone"></i>
 									<h4 class="title">Liên hệ ngay (24/7):</h4>
 									<ul>
-										<li>@foreach($settings as $data) {{$data->phone}} @endforeach</li>
+										<li>{{@$settings->phone}}</li>
 									</ul>
 								</div>
 								<div class="single-info">
 									<i class="fa fa-envelope-open"></i>
 									<h4 class="title">Email:</h4>
 									<ul>
-										<li><a href="mailto:info@yourwebsite.com">@foreach($settings as $data) {{$data->email}} @endforeach</a></li>
+										<li><a href="mailto:{{@$settings->email}}">{{@$settings->email}}</a></li>
 									</ul>
 								</div>
 								<div class="single-info">
 									<i class="fa fa-location-arrow"></i>
 									<h4 class="title">Địa chỉ:</h4>
 									<ul>
-										<li>@foreach($settings as $data) {{$data->address}} @endforeach</li>
+										<li>{{@$settings->address}}</li>
 									</ul>
 								</div>
 							</div>
@@ -108,7 +108,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div id="myMap">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14130.857353934944!2d85.36529494999999!3d27.6952226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sne!2snp!4v1595323330171!5m2!1sne!2snp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe src="{{@$settings->map_location}}" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 	<!--/ End Map Section -->

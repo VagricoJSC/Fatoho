@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','E-SHOP || HOME PAGE')
+@section('title','Fatoho || HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)
@@ -123,7 +123,9 @@
                                                 @elseif($product->condition=='hot')
                                                     <span class="hot">Hot</span>
                                                 @else
+													@if($product->discount > 0)
                                                     <span class="price-dec">{{$product->discount}}% Off</span>
+													@endif
                                                 @endif
 
 
@@ -144,8 +146,12 @@
                                                 @php
                                                     $after_discount=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
-                                                <span>{{number_format($after_discount,2)}} vnđ</span>
-                                                <del style="padding-left:4%;">{{number_format($product->price,2)}} vnđ</del>
+												@if($product->discount > 0)
+                                                <span>{{number_format($after_discount)}} vnđ</span>
+                                                <del style="padding-left:4%;">{{number_format($product->price)}} vnđ</del>
+												@else
+                                                <span>{{number_format($product->price)}} vnđ</span>
+												@endif
                                             </div>
                                         </div>
                                     </div>
@@ -182,7 +188,11 @@
                             <img src="{{$photo[0]}}" alt="{{$photo[0]}}">
                             <div class="content">
                                 <p>{{$data->cat_info['title']}}</p>
+								@if($data->discount > 0)
                                 <h3>{{$data->title}} <br>Up to<span> {{$data->discount}}%</span></h3>
+								@else
+                                <h3>{{$data->title}}</h3>
+								@endif
                                 <a href="{{route('product-detail',$data->slug)}}">Mua ngay</a>
                             </div>
                         </div>
@@ -235,11 +245,15 @@
                             <div class="product-content">
                                 <h3><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h3>
                                 <div class="product-price">
-                                    <span class="old">{{number_format($product->price,2)}} vnđ</span>
                                     @php
                                     $after_discount=($product->price-($product->price*$product->discount)/100)
                                     @endphp
-                                    <span>{{number_format($after_discount,2)}} vnđ</span>
+									@if($product->discount > 0)
+                                    <span class="old">{{number_format($product->price)}} vnđ</span>
+                                    <span>{{number_format($after_discount)}} vnđ</span>
+									@else
+                                    <span>{{number_format($product->price)}} vnđ</span>
+									@endif
                                 </div>
                             </div>
                         </div>
@@ -287,7 +301,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 no-padding">
                                     <div class="content">
                                         <h4 class="title"><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h4>
-                                        <p class="price with-discount">{{number_format($product->discount,2)}} vnđ</p>
+                                        <p class="price with-discount">{{number_format($product->discount > 0 ? $product->discount : $product->price)}} vnđ</p>
                                     </div>
                                 </div>
                                 </div>
@@ -447,7 +461,8 @@
                                         @php
                                             $after_discount=($product->price-($product->price*$product->discount)/100);
                                         @endphp
-                                        <h3><small><del class="text-muted">{{number_format($product->price,2)}} vnđ</del></small>    {{number_format($after_discount,2)}} vnđ  </h3>
+										
+                                        <h3><small><del class="text-muted">{{number_format($product->price)}} vnđ</del></small>    {{number_format($after_discount)}} vnđ  </h3>
                                         <div class="quickview-peragraph">
                                             <p>{!! html_entity_decode($product->summary) !!}</p>
                                         </div>

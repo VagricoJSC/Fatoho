@@ -99,7 +99,7 @@
                                     <label>Quốc Gia<span>*</span></label>
                                     <select name="country" id="country">
                                         @foreach($countries as $code => $name)
-                                        <option value="{{ $code }}">{{ $name }}</option>
+                                        <option value="{{ $code }}" @if($code == 'VN') selected @endif>{{ $name }}</option>
                                         @endforeach
                                     </select>
                                 </div>

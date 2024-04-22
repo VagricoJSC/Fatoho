@@ -87,7 +87,15 @@
           @error('phone')
           <span class="text-danger">{{$message}}</span>
           @enderror
+        </div>        
+	<div class="form-group">
+          <label for="phone" class="col-form-label">Loaction Map <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="map_location" required value="{{$data->map_location}}">
+          @error('map_location')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
         </div>
+
 
         <div class="form-group mb-3">
            <button class="btn btn-success" type="submit">Update</button>

@@ -15,6 +15,13 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
+	<div class="form-group">
+          <label for="summary" class="col-form-label">Sorting</label>
+          <textarea class="form-control" id="sorting" name="sorting">{{$category->sorting}}</textarea>
+          @error('sorting')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div>
 
         <div class="form-group">
           <label for="summary" class="col-form-label">Summary</label>

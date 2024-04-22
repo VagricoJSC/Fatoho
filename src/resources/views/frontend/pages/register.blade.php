@@ -27,7 +27,7 @@
                 <div class="col-lg-6 offset-lg-3 col-12">
                     <div class="login-form">
                         <h2>Đăng ký</h2>
-                        <p>Vui lòng đăng ký để thanh toán nhanh hơn</p>
+                        <!--<p>Vui lòng đăng ký để thanh toán nhanh hơn</p>-->
                         <!-- Form -->
                         <form class="form" method="post" action="{{route('register.submit')}}">
                             @csrf
