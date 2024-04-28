@@ -13,7 +13,7 @@ class MessageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $messages=Message::paginate(20);
+        $messages=Message::orderBy('id', 'desc')->paginate(20);
         return view('backend.message.index')->with('messages',$messages);
     }
     public function messageFive()

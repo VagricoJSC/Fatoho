@@ -131,6 +131,15 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
+	<div class="sidebar-heading">
+      Contact
+    </div>
+	<li class="nav-item">
+        <a class="nav-link" href="/admin/messages">
+            <i class="fas fa-comments"></i>
+            <span>Message</span></a>
+    </li>
+    <hr class="sidebar-divider">
 
     <!-- Heading -->
     <div class="sidebar-heading">

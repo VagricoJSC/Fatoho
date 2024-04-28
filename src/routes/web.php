@@ -149,6 +149,7 @@
         // Message
         Route::resource('/message', 'MessageController');
         Route::get('/message/five', [MessageController::class, 'messageFive'])->name('messages.five');
+        Route::get('/messages', [MessageController::class, 'index']);
 
         // Order
         Route::resource('/order', 'OrderController');

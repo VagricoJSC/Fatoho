@@ -461,8 +461,13 @@
                                         @php
                                             $after_discount=($product->price-($product->price*$product->discount)/100);
                                         @endphp
+										@if($product->discount > 0)
+											<h3><small><del class="text-muted">{{number_format($product->price)}} VNĐ</del></small>    {{number_format($after_discount)}} VNĐ  </h3>
+										@else
+											<h3>{{number_format($product->price)}} VNĐ  </h3>
+										@endif
 										
-                                        <h3><small><del class="text-muted">{{number_format($product->price)}} VNĐ</del></small>    {{number_format($after_discount)}} VNĐ  </h3>
+                                        
                                         <div class="quickview-peragraph">
                                             <p>{!! html_entity_decode($product->summary) !!}</p>
                                         </div>

@@ -69,7 +69,13 @@ $(document).ready(function(){
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $(this).find(':input').attr('disabled', 'disabled');
                             $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
+                            $('#success').fadeIn();
+							$('#name').val('');
+							$('#subject').val('');
+							$('#email').val('');
+							$('#number').val('');
+							$('#message').val('');
+							$('#phone').val('');
                             $('.modal').modal('hide');
 		                	$('#success').modal('show');
                         })
