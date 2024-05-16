@@ -323,7 +323,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Từ Blog của chúng tôi</h2>
+                    <h2>Chính sách của Fatoho</h2>
                 </div>
             </div>
         </div>
@@ -331,9 +331,13 @@
             @if($posts)
                 @foreach($posts as $post)
                     <div class="col-lg-4 col-md-6 col-12">
+						<div align="center">
+							<!-- Start Single Blog  -->
+							<img src="{{$post->photo}}" alt="{{$post->photo}}" style="height: 50px;">
+							<!-- End Single Blog  -->
+						</div>
                         <!-- Start Single Blog  -->
                         <div class="shop-single-blog">
-                            <img src="{{$post->photo}}" alt="{{$post->photo}}">
                             <div class="content">
                                 <p class="date">{{$post->created_at->format('d M , Y. D')}}</p>
                                 <a href="{{route('blog.detail',$post->slug)}}" class="title">{{$post->title}}</a>
@@ -344,7 +348,6 @@
                     </div>
                 @endforeach
             @endif
-
         </div>
     </div>
 </section>
@@ -394,8 +397,6 @@
     </div>
 </section>
 <!-- End Shop Services Area -->
-
-@include('frontend.layouts.newsletter')
 
 <!-- Modal -->
 @if($product_lists)

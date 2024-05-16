@@ -120,10 +120,8 @@
 	</div>
 	<!--/ End Map Section -->
 	
-	<!-- Start Shop Newsletter  -->
-	@include('frontend.layouts.newsletter')
-	<!-- End Shop Newsletter -->
 	<!--================Contact Success  =================-->
+	
 	<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content">

@@ -11,7 +11,7 @@
                     <div class="bread-inner">
                         <ul class="bread-list">
                             <li><a href="{{route('home')}}">Trang Chủ<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="javascript:void(0);">Chi Tiết Tin Tức</a></li>
+                            <li class="active"><a href="javascript:void(0);">{{$post->title}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -21,18 +21,20 @@
     <!-- End Breadcrumbs -->
 
     <!-- Start Blog Single -->
-    <section class="blog-single section">
+    <section class="blog-single section" style="padding: 0px 0px 0px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
-                    <div class="blog-single-main">
+                    <div class="blog-single-main" style="margin-top: 0px;">
                         <div class="row">
                             <div class="col-12">
+                            	<!--
                                 <div class="image">
                                     <img src="{{$post->photo}}" alt="{{$post->photo}}">
                                 </div>
+                                -->
                                 <div class="blog-detail">
-                                    <h2 class="blog-title">{{$post->title}}</h2>
+                                    <h2 class="blog-title" style="margin-top: 20px;">{{$post->title}}</h2>
                                     <div class="blog-meta">
                                         <span class="author"><a href="javascript:void(0);"><i class="fa fa-user"></i>By {{$post->author_info ? $post->author_info->name : 'Admin' }}</a><a href="javascript:void(0);"><i class="fa fa-calendar"></i>{{$post->created_at->format('M d, Y')}}</a><a href="javascript:void(0);"><i class="fa fa-comments"></i>Comment ({{$post->allComments->count()}})</a></span>
                                     </div>
@@ -126,12 +128,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="main-sidebar">
                         <!-- Single Widget -->
+                        <!--
                         <div class="single-widget search">
                             <form class="form" method="GET" action="{{route('blog.search')}}">
                                 <input type="text" placeholder="Search Here..." name="search">
                                 <button class="button" type="sumbit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
+                        -->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget category">
@@ -170,6 +174,7 @@
                         <!-- Single Widget -->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
+                        <!--
                         <div class="single-widget side-tags">
                             <h3 class="title">Tags</h3>
                             <ul class="tag">
@@ -178,8 +183,10 @@
                                 @endforeach
                             </ul>
                         </div>
+                        -->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
+                        <!--
                         <div class="single-widget newsletter">
                             <h3 class="title">Newslatter</h3>
                             <div class="letter-inner">
@@ -193,6 +200,7 @@
                                 </form>
                             </div>
                         </div>
+                        -->
                         <!--/ End Single Widget -->
                     </div>
                 </div>

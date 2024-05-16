@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','FATOHO | TIN TỨC')
+@section('title','FATOHO | CHÍNH SÁCH BÁN HÀNG')
 
 @section('main-content')
     <!-- Breadcrumbs -->
@@ -11,7 +11,7 @@
                     <div class="bread-inner">
                         <ul class="bread-list">
                             <li><a href="{{route('home')}}">Trang chủ<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="javascript:void(0);">Bài viết</a></li>
+                            <li class="active"><a href="javascript:void(0);">Chính sách bán hàng</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,8 +30,10 @@
                         {{-- {{$post}} --}}
                             <div class="col-lg-6 col-md-6 col-12">
                                 <!-- Start Single Blog  -->
+								<div align="center">
+									<img src="{{$post->photo}}" alt="{{$post->photo}}" style="height: 50px;">
+								</div>
                                 <div class="shop-single-blog">
-                                <img src="{{$post->photo}}" alt="{{$post->photo}}">
                                     <div class="content">
                                         <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{$post->created_at->format('d M, Y. D')}}
                                             <span class="float-right">
@@ -112,6 +114,7 @@
                         <!-- Single Widget -->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
+						<!--
                         <div class="single-widget side-tags">
                             <h3 class="title">Tags</h3>
                             <ul class="tag">
@@ -132,19 +135,7 @@
                                 </form>
                             </ul>
                         </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget newsletter">
-                            <h3 class="title">Newslatter</h3>
-                            <div class="letter-inner">
-                                <h4>Nhập đỉa chỉ mail <br> để nhận thông báo bài viết mới.</h4>
-                                <form method="POST" action="{{route('subscribe')}}" class="form-inner">
-                                    @csrf
-                                    <input type="email" name="email" placeholder="example@gmail.com">
-                                    <button type="submit" class="btn " style="width: 100%">Gửi</button>
-                                </form>
-                            </div>
-                        </div>
+						-->
                         <!--/ End Single Widget -->
                     </div>
                 </div>
