@@ -192,7 +192,7 @@
 												<div class="comment-review">
 													<div class="add-review">
 														<h5>Thêm đánh giá</h5>
-														<p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu</p>
+														<!--<p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu</p>-->
 													</div>
 													<h4>Rating <span class="text-danger">*</span></h4>
 													<div class="review-inner">
