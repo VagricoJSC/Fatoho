@@ -30,7 +30,8 @@
 										$settings=DB::table('settings')->first();
 									@endphp
 									<h4>Thông tin</h4>
-									<h3>Gửi tin nhắn @auth @else<span style="font-size:12px;" class="text-danger">[Bạn cần đăng nhập trước]</span>@endauth</h3>
+									<h3>Gửi tin nhắn</h3>
+									<!--  @auth @else<span style="font-size:12px;" class="text-danger">[Bạn cần đăng nhập trước]</span>@endauth -->
 								</div>
 								<form class="form-contact form contact_form" method="post" action="{{route('contact.store')}}" id="contactForm" novalidate="novalidate">
 									@csrf
@@ -38,7 +39,7 @@
 										<div class="col-lg-6 col-12">
 											<div class="form-group">
 												<label>Họ và tên<span>*</span></label>
-												<input name="name" id="name" type="text" placeholder="Ghi đầy đủ họ tên">
+												<input name="name" id="name" type="text" value="{{Auth()->user() ? Auth()->user()->name : ''}}" placeholder="Ghi đầy đủ họ tên">
 											</div>
 										</div>
 										<div class="col-lg-6 col-12">
@@ -50,13 +51,13 @@
 										<div class="col-lg-6 col-12">
 											<div class="form-group">
 												<label>Email<span>*</span></label>
-												<input name="email" type="email" id="email" placeholder="example@gmail.com">
+												<input name="email" type="email" id="email" value="{{Auth()->user() ? Auth()->user()->email : ''}}"  placeholder="example@gmail.com">
 											</div>	
 										</div>
 										<div class="col-lg-6 col-12">
 											<div class="form-group">
 												<label>Số điện thoại<span>*</span></label>
-												<input id="phone" name="phone" type="number" placeholder="+84 977xxx999">
+												<input id="phone" name="phone" type="number"  placeholder="+84 977xxx999">
 											</div>	
 										</div>
 										<div class="col-12">
@@ -65,6 +66,12 @@
 												<textarea name="message" id="message" cols="30" rows="9" placeholder="Nhập nội dung bạn muốn gửi đến chúng tôi"></textarea>
 											</div>
 										</div>
+										<!-- <div class="col-12">
+											<div class="form-group">
+												<div class="g-recaptcha" data-sitekey="6LfdOtwpAAAAALqHCXkjftjR_KvLr8ATWTPDa9JX"></div>
+											</div>
+										</div>-->
+										
 										<div class="col-12">
 											<div class="form-group button">
 												<button type="submit" class="btn ">Gửi</button>

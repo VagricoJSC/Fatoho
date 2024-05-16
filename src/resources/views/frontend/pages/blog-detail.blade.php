@@ -10,8 +10,8 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="{{route('home')}}">Trang Ch?<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="javascript:void(0);">Chi Ti?t Tin T?c</a></li>
+                            <li><a href="{{route('home')}}">Trang Chủ<i class="ti-arrow-right"></i></a></li>
+                            <li class="active"><a href="javascript:void(0);">Chi Tiết Tin Tức</a></li>
                         </ul>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                             <ul class="categor-list">
                                 {{-- {{count(Helper::postCategoryList())}} --}}
                                 @foreach(Helper::postCategoryList('posts') as $cat)
-                                <li><a href="#">{{$cat->title}} </a></li>
+                                <li><a href="/blog-cat/{{$cat->slug}}">{{$cat->title}} </a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -154,7 +154,7 @@
                                         <img src="{{$post->photo}}" alt="{{$post->photo}}">
                                     </div>
                                     <div class="content">
-                                        <h5><a href="#">{{$post->title}}</a></h5>
+                                        <h5><a href="/blog-detail/{{$post->slug}}">{{$post->title}}</a></h5>
                                         <ul class="comment">
                                             <li><i class="fa fa-calendar" aria-hidden="true"></i>{{$post->created_at->format('d M, y')}}</li>
                                             <li><i class="fa fa-user" aria-hidden="true"></i>
@@ -202,7 +202,7 @@
     <!--/ End Blog Single -->
 @endsection
 @push('styles')
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f2e5abf393162001291e431&product=inline-share-buttons' async='async'></script>
+
 @endpush
 @push('scripts')
 <script>

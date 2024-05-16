@@ -24,6 +24,13 @@
           @enderror
         </div>
 
+<div class="form-group">
+          <label for="bank" class="col-form-label">Footer description <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="footer_description" name="footer_description">{{$data->footer_description}}</textarea>
+          @error('footer_description')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div>
         
         <div class="form-group">
           <label for="bank" class="col-form-label">Info Banking Order <span class="text-danger">*</span></label>
@@ -32,7 +39,6 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
-
         <div class="form-group">
           <label for="inputPhoto" class="col-form-label">Logo <span class="text-danger">*</span></label>
           <div class="input-group">
@@ -87,7 +93,28 @@
           @error('phone')
           <span class="text-danger">{{$message}}</span>
           @enderror
-        </div>        
+        </div>   
+<div class="form-group">
+          <label for="facebook" class="col-form-label">Facebook<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="facebook" required value="{{$data->facebook}}">
+          @error('facebook')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div> 
+<div class="form-group">
+          <label for="youtube" class="col-form-label">Youtube<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="youtube" required value="{{$data->youtube}}">
+          @error('youtube')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div> 
+<div class="form-group">
+          <label for="instagram" class="col-form-label">Instagram<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="instagram" required value="{{$data->instagram}}">
+          @error('instagram')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div> 		
 	<div class="form-group">
           <label for="phone" class="col-form-label">Loaction Map <span class="text-danger">*</span></label>
           <input type="text" class="form-control" name="map_location" required value="{{$data->map_location}}">
@@ -144,6 +171,13 @@
     $(document).ready(function() {
       $('#bank').summernote({
         placeholder: "Write detail bank.....",
+          tabsize: 2,
+          height: 150
+      });
+    });
+	$(document).ready(function() {
+      $('#footer_description').summernote({
+        placeholder: "Write detail .....",
           tabsize: 2,
           height: 150
       });

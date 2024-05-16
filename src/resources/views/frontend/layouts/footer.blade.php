@@ -7,16 +7,10 @@
 				<div class="row">
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
-						<div class="single-footer about">
-							<div class="logo">
-								<a href="index.html"><img src="{{asset('backend/img/logo2.png')}}" alt="#"></a>
-							</div>
-							@php
-								$settings=DB::table('settings')->get();
-							@endphp
-							<p class="text">Khám phá sự thanh lịch vượt thời gian với bộ sưu tập quần áo nam và nữ cao cấp của chúng tôi. Từng sản phẩm đều được chế tác tỉ mỉ từ chất liệu vải sang trọng, đảm bảo vừa kiểu dáng vừa thoải mái. Từ những bộ vest cầu kỳ đến những bộ váy giản dị sang trọng, dòng sản phẩm của chúng tôi thể hiện sự linh hoạt và chất lượng. Nâng tầm tủ quần áo của bạn với các thiết kế hiện đại của chúng tôi, được thiết kế riêng để làm nổi bật phong cách thời trang độc đáo của bạn. Trải nghiệm sự pha trộn hoàn hảo giữa sự tinh tế và hợp thời trang, được tuyển chọn dành cho cá nhân yêu thích thời trang.</p>
-							<p class="call">Có câu hỏi? Gọi cho chúng tôi 24/7<span><a href="tel:">@foreach($settings as $data) {{$data->phone}} @endforeach</a></span></p>
-						</div>
+						@php
+				$settings=DB::table('settings')->first();
+			@endphp
+						{!! $settings->footer_description !!}
 						<!-- End Single Widget -->
 					</div>
 					<div class="col-lg-2 col-md-6 col-12">
@@ -25,10 +19,10 @@
 							<h4>Thông Tin</h4>
 							<ul>
 								<li><a href="{{route('about-us')}}">Về chúng tôi</a></li>
-								<li><a href="#">Câu hỏi</a></li>
-								<li><a href="#">Điều khoản và điều kiện</a></li>
+								<li><a href="/blog-detail/cau-hoi">Câu hỏi</a></li>
+								<li><a href="/blog-detail/dieu-khoan-va-dieu-kien">Điều khoản và điều kiện</a></li>
 								<li><a href="{{route('contact')}}">Liên hệ</a></li>
-								<li><a href="#">Hỗ trợ</a></li>
+								<li><a href="/blog-detail/ho-tro-247">Hỗ trợ 24/7</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -38,11 +32,11 @@
 						<div class="single-footer links">
 							<h4>Dịch vụ khách hàng</h4>
 							<ul>
-								<li><a href="#">Phương Thức Thanh Toán</a></li>
-								<li><a href="#">Hoàn tiền</a></li>
-								<li><a href="#">Trả Hàng</a></li>
-								<li><a href="#">Tracking</a></li>
-								<li><a href="#">Chính Sách Bảo Mật</a></li>
+								<li><a href="/blog-detail/payment-type">Phương Thức Thanh Toán</a></li>
+								<li><a href="/blog-detail/hoan-tien">Hoàn tiền</a></li>
+								<li><a href="/blog-detail/tra-hang">Trả Hàng</a></li>
+								<li><a href="/blog-detail/tracking">Tracking</a></li>
+								<li><a href="/blog-detail/chinh-sach-bao-mat">Chính Sách Bảo Mật</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -54,14 +48,49 @@
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
-									<li>@foreach($settings as $data) {{$data->address}} @endforeach</li>
-									<li>@foreach($settings as $data) {{$data->email}} @endforeach</li>
-									<li>@foreach($settings as $data) {{$data->phone}} @endforeach</li>
+									<li>{{$settings->address}}</li>
+									<li>{{$settings->email}}</li>
+									<li>{{$settings->phone}}</li>
 								</ul>
 							</div>
+							<div class="sharethis-inline-follow-buttons st-inline-follow-buttons st-#{action_pos}  st-animated" 
+							id="st-1">
+							<a href="{{$settings->facebook}}" target="_blank"  class="st-btn st-last" data-network="twitter"  >
+							  <i class="fa fa-facebook"></i>
+							</a>
+							<a href="{{$settings->youtube}}" target="_blank"  class="st-btn st-last" data-network="twitter" >
+							  <i class="fa fa-youtube-play"></i>
+							</a>
+							<a href="{{$settings->instagram}}" target="_blank" class="st-btn st-last" data-network="twitter" >
+							  <i class="fa fa-instagram"></i>
+							</a>
+							
+							</div>
+							<style>
+							.sharethis-inline-follow-buttons{
+								display: flex;
+								justify-content: flex-start;
+								align-items: center;
+								gap: 10px;
+								margin-top : 15px
+							}
+							.sharethis-inline-follow-buttons .st-btn {
+								width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+							padding: 5px;}
+							.sharethis-inline-follow-buttons .st-btn i{
+								font-size: 18px;
+    color: #fff;
+    line-height: 14px;
+							}
+							</style>
 							<!-- End Single Widget -->
-							<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=658e0cbd180931001908bd72&product=inline-share-buttons' async='async'></script>
-							<!-- ShareThis BEGIN --><div class="sharethis-inline-follow-buttons"></div><!-- ShareThis END -->
+							
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -75,7 +104,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © {{date('Y')}} <a href="#" target="_blank">Vagrico JSC </a>  -  All Rights Reserved.</p>
+								<p>Copyright © {{date('Y')}} <a href="#" target="_blank">Vagrico JSC</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
