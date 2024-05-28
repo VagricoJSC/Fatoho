@@ -5,6 +5,8 @@ use Auth;
 use Illuminate\Http\Request;
 use App\Models\Message;
 use App\Events\MessageSent;
+use App\Helpers\MailHelper;
+use App\User;
 class MessageController extends Controller
 {
     /**
@@ -48,20 +50,35 @@ class MessageController extends Controller
             'phone'=>'numeric|required'
         ]);
         // return $request->all();
-
+		$admin = User::find(3);
         $message=Message::create($request->all());
+		$schedule_date = time();
+		$result['subject'] = "Liên Hệ Từ Website Fatoho";
+		$result['customer_name'] = "Vagrico JSC";
+		$result['body_text'] = "
+			Có 1 tin liên hệ mới từ website: <br>
+			<b>Người liên hệ :</b> : ".$request->name."<br>
+			<b>Email :</b> : ".$request->email."<br>
+			<b>Số điện thoại :</b> : ".$request->phone."<br>
+			<b>Tiêu Đề :</b> : ".$request->subject."<br>
+			<b>Nội Dung :</b> : ".$request->message."<br>
+		";
+		$result['email_customer'] = $admin->email;
+		$result['email_reply'] = "support@fatoho.com";
+		MailHelper::sendMailVerifyTracker($result);
+
             // return $message;
-        $data=array();
-        $data['url']=route('message.show',$message->id);
-        $data['date']=$message->created_at->format('F d, Y h:i A');
-        $data['name']=$message->name;
-        $data['email']=$message->email;
-        $data['phone']=$message->phone;
-        $data['message']=$message->message;
-        $data['subject']=$message->subject;
-        $data['photo']= "";
+        //$data=array();
+        //$data['url']=route('message.show',$message->id);
+        //$data['date']=$message->created_at->format('F d, Y h:i A');
+        //$data['name']=$message->name;
+        //$data['email']=$message->email;
+        //$data['phone']=$message->phone;
+        //$data['message']=$message->message;
+        //$data['subject']=$message->subject;
+        //$data['photo']= "";
         // return $data;    
-        event(new MessageSent($data));
+        //event(new MessageSent($data));
         exit();
     }
 

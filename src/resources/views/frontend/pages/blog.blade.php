@@ -59,12 +59,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="main-sidebar">
                         <!-- Single Widget -->
+						<!--
                         <div class="single-widget search">
                             <form class="form" method="GET" action="{{route('blog.search')}}">
                                 <input type="text" placeholder="Search Here..." name="search">
                                 <button class="button" type="sumbit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
+						-->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget category">
