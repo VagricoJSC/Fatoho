@@ -15,8 +15,8 @@
                 <div class="carousel-item {{(($key==0)? 'active' : '')}}">
                     <img class="first-slide" src="{{$banner->photo}}" alt="First slide">
                     <div class="carousel-caption d-none d-md-block text-left">
-                        <h1 class="wow fadeInDown">{{$banner->title}}</h1>
-                        <p>{!! html_entity_decode($banner->description) !!}</p>
+                        <!--<h1 class="wow fadeInDown">{{$banner->title}}</h1>
+                        <p>{!! html_entity_decode($banner->description) !!}</p> -->
                         <a class="btn btn-lg ws-btn wow fadeInUpBig" href="{{route('product-grids')}}" role="button">Mua ngay<i class="far fa-arrow-alt-circle-right"></i></i></a>
                     </div>
                 </div>
@@ -546,9 +546,11 @@
         background: #000000;
         color:black;
         }
-
+#Gslider .carousel-item {
+	height: 100% ;
+}
         #Gslider .carousel-inner{
-        height: 550px;
+        
         }
         #Gslider .carousel-inner img{
             width: 100% !important;
@@ -556,7 +558,11 @@
         }
 
         #Gslider .carousel-inner .carousel-caption {
-        bottom: 60%;
+        bottom: 0;
+		    display: flex !important;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
         }
 
         #Gslider .carousel-inner .carousel-caption h1 {

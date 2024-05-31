@@ -7,12 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="online shop, purchase, cart, ecommerce site, best online shopping">
-<meta name="description" content="{{$product_detail->summary}}">
-<meta property="og:url" content="{{route('product-detail',$product_detail->slug)}}">
+<meta name="description" content="{{@$product_detail->summary}}">
+<meta property="og:url" content="{{route('product-detail',$product_detail ? $product_detail->slug : '')}}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{$product_detail->title}}">
-<meta property="og:image" content="{{$product_detail->photo}}">
-<meta property="og:description" content="{{$product_detail->description}}">
+<meta property="og:title" content="{{@$product_detail->title}}">
+<meta property="og:image" content="{{@$product_detail->photo}}">
+<meta property="og:description" content="{{@$product_detail->description}}">
 @endsection
 @section('title','Fatoho || PRODUCT DETAIL')
 @section('main-content')
@@ -383,14 +383,17 @@
 										<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 											<!-- Product Slider -->
 												<div class="product-gallery">
-													@php 
+													<div class="quickview-slider-active">
+														@php 
 															$photo=explode(',',$product->photo);
+														// dd($photo);
 														@endphp
 														@foreach($photo as $data)
 															<div class="single-slider">
 																<img src="{{$data}}" alt="{{$data}}">
 															</div>
 														@endforeach
+													</div>
 												</div>
 											<!-- End Product slider -->
 										</div>

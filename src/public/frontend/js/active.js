@@ -29,7 +29,7 @@ Version:1.0
 	19. Preloader JS
 =========================================
 [End Activation Code]
-=========================================*/ 
+=========================================
 
 window.onload = () => {
 	'use strict';
@@ -38,7 +38,7 @@ window.onload = () => {
 	  navigator.serviceWorker
 			   .register('./sw.js');
 	}
-  }
+  }*/ 
 (function($) {
     "use strict";
      $(document).on('ready', function() {	
@@ -135,7 +135,7 @@ window.onload = () => {
 			animateIn: 'fadeIn',
 			animateOut: 'fadeOut',
 			autoplayHoverPause:true,
-			loop:true,
+			loop:false,
 			nav:true,
 			merge:true,
 			dots:false,
@@ -169,7 +169,7 @@ window.onload = () => {
 			smartSpeed: 400,
 			autoplayHoverPause:true,
 			nav:true,
-			loop:true,
+			loop:false,
 			merge:true,
 			dots:false,
 			navText: ['<i class=" ti-arrow-left"></i>', '<i class=" ti-arrow-right"></i>'],
@@ -185,7 +185,7 @@ window.onload = () => {
 			smartSpeed: 400,
 			autoplayHoverPause:true,
 			nav:true,
-			loop:true,
+			loop:false,
 			merge:true,
 			dots:false,
 			navText: ['<i class=" ti-arrow-left"></i>', '<i class=" ti-arrow-right"></i>'],
