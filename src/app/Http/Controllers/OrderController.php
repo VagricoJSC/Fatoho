@@ -42,114 +42,199 @@ class OrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+	function getAccessToken($url) {
+        // Initialize cURL session
+        $ch = curl_init();
+    
+        // Set the URL
+        curl_setopt($ch, CURLOPT_URL, $url);
+    
+        // Set the HTTP method to POST
+        curl_setopt($ch, CURLOPT_POST, true);
+    
+        // Set the content type to JSON
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Content-Type: application/json'
+        ));
+    
+        // Set the payload
+        $data = json_encode(array(
+            'USERNAME' => env('USERNAME_VIETTELPOST', ''),
+            'PASSWORD' => env('PASSWORD_VIETTELPOST', '')
+        ));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    
+        // Return the response as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    
+        // Execute the request
+        $response = curl_exec($ch);
+    
+        // Check for errors
+        if ($response === false) {
+            $error = curl_error($ch);
+            curl_close($ch);
+            print_r($error);
+
+        }
+    
+        // Close the cURL session
+        curl_close($ch);
+    
+        // Decode the JSON response
+        $responseData = json_decode($response, true);
+    
+        return $responseData;
+    }
+	function getDataMethodPost($url, $data, $token) {
+		
+        // Initialize cURL session
+        $ch = curl_init();
+    
+        // Set the URL
+        curl_setopt($ch, CURLOPT_URL, $url);
+    
+        // Set the HTTP method to POST
+        curl_setopt($ch, CURLOPT_POST, true);
+    
+        // Set the content type to JSON
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+			'Content-Type: application/json',
+			'Token: ' . $token // Corrected syntax here
+		));
+    
+        // Set the payload
+        $data = json_encode($data);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    
+        // Return the response as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    
+        // Execute the request
+        $response = curl_exec($ch);
+    
+        // Check for errors
+        if ($response === false) {
+            $error = curl_error($ch);
+            curl_close($ch);
+            print_r($error);
+
+        }
+    
+        // Close the cURL session
+        curl_close($ch);
+    
+        // Decode the JSON response
+        $responseData = json_decode($response, true);
+    
+        return $responseData;
+    }
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'first_name'=>'string|required',
-            'last_name'=>'string|required',
-            'address1'=>'string|required',
-            'address2'=>'string|nullable',
-            'coupon'=>'nullable|numeric',
-            'phone'=>'numeric|required',
-            'post_code'=>'string|nullable',
-            'email'=>'string|required',
-            'shipping'=>'required'
-        ]);
-        // return $request->all();
+       
 
         if(empty(Cart::where('user_id',auth()->user()->id)->where('order_id',null)->first())){
             request()->session()->flash('error','Cart is Empty !');
             return back();
         }
-        // $cart=Cart::get();
-        // // return $cart;
-        // $cart_index='ORD-'.strtoupper(uniqid());
-        // $sub_total=0;
-        // foreach($cart as $cart_item){
-        //     $sub_total+=$cart_item['amount'];
-        //     $data=array(
-        //         'cart_id'=>$cart_index,
-        //         'user_id'=>$request->user()->id,
-        //         'product_id'=>$cart_item['id'],
-        //         'quantity'=>$cart_item['quantity'],
-        //         'amount'=>$cart_item['amount'],
-        //         'status'=>'new',
-        //         'price'=>$cart_item['price'],
-        //     );
-
-        //     $cart=new Cart();
-        //     $cart->fill($data);
-        //     $cart->save();
-        // }
-
-        // $total_prod=0;
-        // if(session('cart')){
-        //         foreach(session('cart') as $cart_items){
-        //             $total_prod+=$cart_items['quantity'];
-        //         }
-        // }
-
+        
+		
         $order=new Order();
         $order_data=$request->all();
+		
         $order_data['order_number']='ORD-'.strtoupper(Str::random(10));
         $order_data['user_id']=$request->user()->id;
-        $order_data['shipping_id']=$request->shipping;
-        $shipping=Shipping::where('id',$order_data['shipping_id'])->pluck('price');
-        // return session('coupon')['value'];
+		
+		
         $order_data['sub_total']=Helper::totalCartPrice();
         $order_data['quantity']=Helper::cartCount();
-        if(session('coupon')){
-            $order_data['coupon']=session('coupon')['value'];
-        }
-        if($request->shipping){
-            if(session('coupon')){
-                $order_data['total_amount']=Helper::totalCartPrice()+$shipping[0]-session('coupon')['value'];
-            }
-            else{
-                $order_data['total_amount']=Helper::totalCartPrice()+$shipping[0];
-            }
-        }
-        else{
-            if(session('coupon')){
-                $order_data['total_amount']=Helper::totalCartPrice()-session('coupon')['value'];
-            }
-            else{
-                $order_data['total_amount']=Helper::totalCartPrice();
-            }
-        }
-        // return $order_data['total_amount'];
+        $order_data['total_amount']=Helper::totalCartPrice() + $request->inp_total_cart_ship;
+		
+		
         $order_data['status']="new";
         if(request('payment_method')=='paypal'){
             $order_data['payment_method']='paypal';
-            $order_data['payment_status']='paid';
+            $order_data['payment_status']='Unpaid';
         }
         else{
             $order_data['payment_method']='cod';
             $order_data['payment_status']='Unpaid';
         }
+		
         $order->fill($order_data);
         $status=$order->save();
-        if($order)
-        // dd($order->id);
-        $users=User::where('role','admin')->first();
-        $details=[
-            'title'=>'New order created',
-            'actionURL'=>route('order.show',$order->id),
-            'fas'=>'fa-file-alt'
-        ];
-        Notification::send($users, new StatusNotification($details));
-        // if(request('payment_method')=='paypal'){
-        //     return redirect()->route('payment')->with(['id'=>$order->id]);
-        // }
-        // else{
-            
-        // }
-        session()->forget('cart');
-            session()->forget('coupon');
-        Cart::where('user_id', auth()->user()->id)->where('order_id', null)->update(['order_id' => $order->id]);
+        if($order) {
+			$vt_post = $this->getAccessToken(env('URL_VIETTELPOSTPROC', '') . 'v2/user/Login');
+			$token = '';
+			if ($vt_post && $vt_post['data']) {
+				 $token = $vt_post['data']['token'];
+			}
+			
+			$url = env('URL_VIETTELPOSTPROC', '') . "v2/order/createOrderNlp";
+			$data = [
+				"ORDER_NUMBER" => $order->id,
+				"SENDER_FULLNAME" => env('INFO_SENDER_NAME', ''),
+				"SENDER_ADDRESS" => env('INFO_SENDER_ADDRESS', ''),
+				"SENDER_PHONE" => env('INFO_SENDER_PHONE', ''),
+				"RECEIVER_FULLNAME" => $request->first_name . ' ' . $request->last_name,
+				"RECEIVER_ADDRESS" => $request->address2,
+				"RECEIVER_PHONE" => $request->phone,
+				"PRODUCT_NAME" =>  env('INFO_PRODUCT_NAME', ''),
+				"PRODUCT_DESCRIPTION" => "Cho khách xem hàng khi nhận, cho xem hàng",
+				"PRODUCT_QUANTITY" => $order_data['quantity'],
+				"PRODUCT_PRICE" => $order_data['sub_total'],
+				"PRODUCT_WEIGHT" => Helper::totalCartWEIGHT(),
+				"PRODUCT_LENGTH" => 0,
+				"PRODUCT_WIDTH" => 0,
+				"PRODUCT_HEIGHT" => 0,
+				"ORDER_PAYMENT" => $order_data['payment_method'] == 'cod' ? 3 : 1,
+				"ORDER_SERVICE" => $request->shipping_vt,
+				"PRODUCT_TYPE" => "HH",
+				"ORDER_SERVICE_ADD" => null,
+				"ORDER_NOTE" => " Cho khách xem hàng khi nhận, cho xem hàng",
+				"MONEY_COLLECTION" => $order_data['total_amount'],  
+				"EXTRA_MONEY" => 0,  
+				"CHECK_UNIQUE" => true,  
+				"LIST_ITEM" => []
+			];
+			$cart =  Cart::with('product')->where('user_id', auth()->user()->id)->where('order_id', null)->get();
+			
+			$productList = [];
+			foreach($cart as $item) {
+				$productList[] = [
+					"PRODUCT_NAME" => $item->product->title,
+					"PRODUCT_QUANTITY" => $item->quantity,
+					"PRODUCT_PRICE" => $item->product->price,
+					"PRODUCT_WEIGHT" => $item->product->weight
+				];
+			}
+			$data['LIST_ITEM'] = $productList;
+			
+			$resp = $this->getDataMethodPost($url, $data , $token);
+			$order->vit_post_data = json_encode($resp['data']);
+			$order->save();
+			$users=User::where('role','admin')->first();
+			$details=[
+				'title'=>'New order created',
+				'actionURL'=>route('order.show',$order->id),
+				'fas'=>'fa-file-alt'
+			];
+			Notification::send($users, new StatusNotification($details));
+			// if(request('payment_method')=='paypal'){
+			//     return redirect()->route('payment')->with(['id'=>$order->id]);
+			// }
+			// else{
+				
+			// }
+			session()->forget('cart');
+				session()->forget('coupon');
+			Cart::where('user_id', auth()->user()->id)->where('order_id', null)->update(['order_id' => $order->id]);
 
-        // dd($users);        
-        request()->session()->flash('success','Your product successfully placed in order');
+			// dd($users);        
+			request()->session()->flash('success','Your product successfully placed in order');
+		}
+        // dd($order->id);
+       
         return redirect()->route('home');
     }
 
@@ -162,8 +247,10 @@ class OrderController extends Controller
     public function show($id)
     {
         $order=Order::find($id);
+		$order->vit_post_data = json_decode($order->vit_post_data);
+		$carts = Cart::with('product')->where('order_id', $id)->get();
         // return $order;
-        return view('backend.order.show')->with('order',$order);
+        return view('backend.order.show')->with('carts',$carts)->with('order',$order);
     }
 
     /**

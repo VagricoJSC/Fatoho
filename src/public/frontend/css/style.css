@@ -5034,3 +5034,6 @@ Version:1.0
 	border: unset !important;
     background-color: unset !important;
 }
+.hidden {
+	display: none !important;
+}

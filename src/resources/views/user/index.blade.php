@@ -90,7 +90,7 @@
 
 <div class="row">
   @php
-  $orders=DB::table('orders')->where('user_id',auth()->user()->id)->paginate(10);
+  $orders=DB::table('orders')->where('user_id',auth()->user()->id)->orderBy('id','DESC')->paginate(10);
   @endphp
   <!-- Order -->
   <div class="col-xl-12 col-lg-12">
@@ -128,7 +128,7 @@
           <td>{{$order->first_name}} {{$order->last_name}}</td>
           <td>{{$order->email}}</td>
           <td>{{$order->quantity}}</td>
-          <td>${{number_format($order->total_amount,2)}}</td>
+          <td>{{number_format($order->total_amount,0)}} đ</td>
           <td>
             @if($order->status=='new')
             <span class="badge badge-primary">{{$order->status}}</span>

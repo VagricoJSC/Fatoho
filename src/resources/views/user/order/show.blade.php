@@ -16,7 +16,7 @@
             <th>Người nhận hàng</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Hoa hồng</th>
+            <th>Phí Ship</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
             <th>Hành động</th>
@@ -25,12 +25,12 @@
       <tbody>
         <tr>
             <td>{{$order->id}}</td>
-            <td>{{$order->order_number}}</td>
+            <td>{{@$order->vit_post_data->ORDER_NUMBER}}</td>
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>${{$order->shipping->price}}</td>
-            <td>${{number_format($order->total_amount,2)}}</td>
+            <td>{{number_format($order->inp_total_cart_ship,0)}} đ</td>
+            <td>{{number_format($order->total_amount,0)}} đ</td>
             <td>
                 @if($order->status=='new')
                   <span class="badge badge-primary">{{$order->status}}</span>
@@ -46,11 +46,31 @@
                 <form method="POST" action="{{route('order.destroy',[$order->id])}}">
                   @csrf
                   @method('delete')
-                      <button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                      <!--<button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>-->
                 </form>
             </td>
 
         </tr>
+      </tbody>
+    </table>
+	<table class="table table-striped table-hover">
+      <thead>
+        <tr>
+            <th>S.N.</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+			<th>Đơn giá</th>
+        </tr>
+      </thead>
+      <tbody>
+		@foreach($carts as $cart)  
+        <tr>
+            <td>{{$cart->id}}</td>
+            <td>{{@$cart->product->title}}</td>
+            <td>{{$cart->quantity}}</td>
+            <td>{{number_format(@$cart->product->price,0)}} đ</td>
+        </tr>
+		@endforeach
       </tbody>
     </table>
 
@@ -81,12 +101,16 @@
                       @php
                           $shipping_charge=DB::table('shippings')->where('id',$order->shipping_id)->pluck('price');
                       @endphp
-                        <td>Hoa hồng</td>
-                        <td> :${{$order->shipping->price}}</td>
+                        <td>Phí Ship</td>
+                        <td> :{{number_format($order->inp_total_cart_ship,0)}} đ</td>
+                    </tr>
+					 <tr>
+                        <td>Tổng giá sản phẩm</td>
+                        <td> :  {{number_format($order->sub_total,0)}} đ</td>
                     </tr>
                     <tr>
                         <td>Tổng đơn hàng</td>
-                        <td> : $ {{number_format($order->total_amount,2)}}</td>
+                        <td> :  {{number_format($order->total_amount,0)}} đ</td>
                     </tr>
                     <tr>
                       <td>Phương thức thanh toán</td>
@@ -118,15 +142,7 @@
                     </tr>
                     <tr>
                         <td>Địa chỉ</td>
-                        <td> : {{$order->address1}}, {{$order->address2}}</td>
-                    </tr>
-                    <tr>
-                        <td>Quốc gia</td>
-                        <td> : {{$order->country}}</td>
-                    </tr>
-                    <tr>
-                        <td>Mã code</td>
-                        <td> : {{$order->post_code}}</td>
+                        <td> : {{$order->address2}}</td>
                     </tr>
               </table>
             </div>

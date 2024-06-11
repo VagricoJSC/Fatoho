@@ -334,7 +334,11 @@ class FrontendController extends Controller
     public function blogByCategory(Request $request){
         $post=PostCategory::getBlogByCategory($request->slug);
         $rcnt_post=Post::where('status','active')->orderBy('id','DESC')->limit(3)->get();
-        return view('frontend.pages.blog')->with('posts',$post->post)->with('recent_posts',$rcnt_post);
+		$blogs = [];
+		if (isset($post->post)) {
+			$blogs =$post->post;
+		}
+        return view('frontend.pages.blog')->with('posts', $blogs)->with('recent_posts',$rcnt_post);
     }
 
     public function blogByTag(Request $request){

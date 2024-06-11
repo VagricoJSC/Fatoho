@@ -146,11 +146,7 @@
           <th scope="col"><span>-{{$order->coupon->discount(Helper::orderPrice($order->id, $order->user->id))}}{{Helper::base_currency()}}</span></th>
         </tr>
       @endif --}}
-        <tr>
-          <th scope="col" class="empty"></th>
-          <th scope="col" class="text-right ">Shipping:</th>
-          <th><span>${{number_format($order->delivery_charge,2)}}</span></th>
-        </tr>
+        
         <tr>
           <th scope="col" class="empty"></th>
           <th scope="col" class="text-right">Total:</th>

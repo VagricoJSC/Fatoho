@@ -16,6 +16,7 @@
     use App\Http\Controllers\NotificationController;
     use App\Http\Controllers\HomeController;
     use \UniSharp\LaravelFilemanager\Lfm;
+    use App\Http\Controllers\ViettelController;
 
     /*
     |--------------------------------------------------------------------------
@@ -201,4 +202,12 @@
 
     Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
         Lfm::routes();
+    });
+	
+	Route::group(['prefix' => '/viettel', 'middleware' => ['user']], function () {
+        Route::get('/listProvince', [ViettelController::class, 'getListProvince']);
+		Route::get('/listDistrict', [ViettelController::class, 'getListDistrict']);
+		Route::get('/listWards', [ViettelController::class, 'getListWards']);
+		Route::post('/priceAllNlp', [ViettelController::class, 'getPriceAllNlp']);
+
     });

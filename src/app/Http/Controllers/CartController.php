@@ -506,12 +506,80 @@ class CartController extends Controller
             "ZM" => "Zambia",
             "ZW" => "Zimbabwe"
         );
-        $orders = Order::select(DB::raw('COUNT(id) as id_count'), 'first_name', 'last_name', 'email', 'phone', 'country', 'post_code', 'address1', DB::raw('MAX(address2) as address2'))
-    ->where('user_id', auth()->user()->id)
-    ->groupBy('phone', 'email', 'first_name', 'last_name', 'country', 'post_code', 'address1')
+		
+		$userId = auth()->user()->id;
+
+// Group by address2 and count the ids
+$groupedOrders = Order::select(
+        'address2',
+        DB::raw('COUNT(id) as id_count')
+    )
+    ->where('user_id', $userId)
+    ->groupBy('address2')
     ->orderBy('id_count', 'DESC')
+    ->get();
+
+// Get the list of address2
+$address2List = $groupedOrders->pluck('address2')->toArray();
+
+// Fetch the complete order data and paginate
+$orders = Order::where('user_id', $userId)
+    ->whereIn('address2', $address2List)
+    ->orderByRaw("FIELD(address2, '" . implode("','", $address2List) . "')")
     ->paginate(6);
+	
+        
         $data = Settings::first();
-        return view('frontend.pages.checkout')->with('orders', $orders)->with('data', $data)->with('countries', $countries);
+        //$vt_post = $this->getAccessToken(env('URL_VIETTELPOSTPROC', '') . 'v2/user/Login');
+        $token = '';
+         //if ($vt_post && $vt_post['data']) {
+             //$token = $vt_post['data']['token'];
+         //}
+        return view('frontend.pages.checkout')->with('token', $token)->with('orders', $orders)->with('data', $data)->with('countries', $countries);
+    }
+    function getAccessToken($url) {
+        // Initialize cURL session
+        $ch = curl_init();
+    
+        // Set the URL
+        curl_setopt($ch, CURLOPT_URL, $url);
+    
+        // Set the HTTP method to POST
+        curl_setopt($ch, CURLOPT_POST, true);
+    
+        // Set the content type to JSON
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Content-Type: application/json'
+        ));
+    
+        // Set the payload
+        $data = json_encode(array(
+            'USERNAME' => env('USERNAME_VIETTELPOST', ''),
+            'PASSWORD' => env('PASSWORD_VIETTELPOST', '')
+        ));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    
+        // Return the response as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    
+        // Execute the request
+        $response = curl_exec($ch);
+    
+        // Check for errors
+        if ($response === false) {
+            $error = curl_error($ch);
+            curl_close($ch);
+            print_r($error);
+
+        }
+    
+        // Close the cURL session
+        curl_close($ch);
+    
+        // Decode the JSON response
+        $responseData = json_decode($response, true);
+    
+        return $responseData;
     }
 }
+

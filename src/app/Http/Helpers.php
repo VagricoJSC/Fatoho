@@ -115,6 +115,21 @@ class Helper{
             return 0;
         }
     }
+    public static function totalCartWEIGHT($user_id=''){
+        if(Auth::check()){
+            if($user_id=="") $user_id=auth()->user()->id;
+
+            $carts = Cart::where('user_id',$user_id)->where('order_id',null)->with('product')->get();
+            $weight = 0;
+            foreach($carts as $i) {
+                $weight += (@$i->quantity * @$i->product->weight);
+            }
+            return $weight;
+        }
+        else{
+            return 0;
+        }
+    }
     // Wishlist Count
     public static function wishlistCount($user_id=''){
        

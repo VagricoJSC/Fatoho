@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Models\Order;
+use App\Models\Cart;
 use App\Models\ProductReview;
 use App\Models\PostComment;
 use App\Rules\MatchOldPassword;
@@ -55,7 +56,7 @@ class HomeController extends Controller
 
     // Order
     public function orderIndex(){
-        $orders=Order::orderBy('id','DESC')->where('user_id',auth()->user()->id)->paginate(10);
+        $orders=Order::where('user_id',auth()->user()->id)->orderBy('id','DESC')->paginate(10);
         return view('user.order.index')->with('orders',$orders);
     }
     public function userOrderDelete($id)
@@ -85,8 +86,10 @@ class HomeController extends Controller
     public function orderShow($id)
     {
         $order=Order::find($id);
+		$order->vit_post_data = json_decode($order->vit_post_data);
+		$carts = Cart::with('product')->where('order_id', $id)->get();
         // return $order;
-        return view('user.order.show')->with('order',$order);
+        return view('user.order.show')->with('carts',$carts)->with('order',$order);
     }
     // Product Review
     public function productReviewIndex(){

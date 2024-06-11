@@ -16,7 +16,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Quantity</th>
-            <th>Charge</th>
+            <th>Ship</th>
             <th>Total Amount</th>
             <th>Status</th>
             <th>Action</th>
@@ -25,12 +25,12 @@
       <tbody>
         <tr>
             <td>{{$order->id}}</td>
-            <td>{{$order->order_number}}</td>
+            <td>{{@$order->vit_post_data->ORDER_NUMBER}}</td>
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>${{$order->shipping->price}}</td>
-            <td>${{number_format($order->total_amount,2)}}</td>
+            <td>{{number_format($order->inp_total_cart_ship,0)}} đ</td>
+            <td>{{number_format($order->total_amount,0)}} đ</td>
             <td>
                 @if($order->status=='new')
                   <span class="badge badge-primary">{{$order->status}}</span>
@@ -47,11 +47,30 @@
                 <form method="POST" action="{{route('order.destroy',[$order->id])}}">
                   @csrf
                   @method('delete')
-                      <button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                      <!--<button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>-->
                 </form>
             </td>
 
         </tr>
+      </tbody>
+    </table>
+
+	<table class="table table-striped table-hover">
+      <thead>
+        <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+		@foreach($carts as $cart)  
+        <tr>
+            <td>{{$cart->id}}</td>
+            <td>{{@$cart->product->title}}</td>
+            <td>{{$cart->quantity}}</td>
+        </tr>
+		@endforeach
       </tbody>
     </table>
 
@@ -80,19 +99,16 @@
                     </tr>
                     <tr>
                         <td>Shipping Charge</td>
-                        <td> : $ {{$order->shipping->price}}</td>
+                        <td> : {{number_format($order->inp_total_cart_ship,0)}} đ</td>
                     </tr>
-                    <tr>
-                      <td>Coupon</td>
-                      <td> : $ {{number_format($order->coupon,2)}}</td>
-                    </tr>
+                    
                     <tr>
                         <td>Total Amount</td>
-                        <td> : $ {{number_format($order->total_amount,2)}}</td>
+                        <td> :  {{number_format($order->total_amount,0)}} đ</td>
                     </tr>
                     <tr>
                         <td>Payment Method</td>
-                        <td> : @if($order->payment_method=='cod') Cash on Delivery @else Payment transfer @endif</td>
+                        <td> : @if($order->payment_method=='cod') Giao Hàng Lấy Tiền @else Chuyển Khoản Ngân Hàng @endif</td>
                     </tr>
                     <tr>
                         <td>Payment Status</td>
@@ -120,15 +136,7 @@
                     </tr>
                     <tr>
                         <td>Address</td>
-                        <td> : {{$order->address1}}, {{$order->address2}}</td>
-                    </tr>
-                    <tr>
-                        <td>Country</td>
-                        <td> : {{$order->country}}</td>
-                    </tr>
-                    <tr>
-                        <td>Post Code</td>
-                        <td> : {{$order->post_code}}</td>
+                        <td> : {{$order->address2}}</td>
                     </tr>
               </table>
             </div>

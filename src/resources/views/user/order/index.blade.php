@@ -22,7 +22,7 @@
             <th>Tên người nhận</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Hoa hồng</th>
+            <th>Phí Ship</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
             <th>Hành động</th>
@@ -35,7 +35,7 @@
             <th>Tên người nhận</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Hoa hồng</th>
+            <th>Phí ship</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
             <th>Hành động</th>
@@ -49,8 +49,8 @@
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>${{$order->shipping->price}}</td>
-            <td>${{number_format($order->total_amount,2)}}</td>
+            <td>{{ number_format($order->inp_total_cart_ship,0)}} đ</td>
+            <td>{{number_format($order->total_amount,0)}} đ</td>
             <td>
               @if($order->status=='new')
               <span class="badge badge-primary">{{$order->status}}</span>
@@ -67,7 +67,7 @@
               <form method="POST" action="{{route('user.order.delete',[$order->id])}}">
                 @csrf
                 @method('delete')
-                <button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                <!--<button class="btn btn-danger btn-sm dltBtn" data-id={{$order->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>-->
               </form>
             </td>
           </tr>
