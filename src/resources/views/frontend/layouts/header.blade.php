@@ -123,14 +123,14 @@
                                         <a href="{{route('wishlist-delete',$data->id)}}" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
                                         <a class="cart-img" href="#"><img src="{{$photo[0]}}" alt="{{$photo[0]}}"></a>
                                         <h4><a href="{{route('product-detail',$data->product['slug'])}}" target="_blank">{{$data->product['title']}}</a></h4>
-                                        <p class="quantity">{{$data->quantity}} x - <span class="amount">${{number_format($data->price,2)}}</span></p>
+                                        <p class="quantity">{{$data->quantity}} x - <span class="amount">{{number_format($data->price,0)}}VNĐ</span></p>
                                     </li>
                                     @endforeach
                                 </ul>
                                 <div class="bottom">
                                     <div class="total">
                                         <span>Tất cả</span>
-                                        <span class="total-amount">${{number_format(Helper::totalWishlistPrice(),2)}}</span>
+                                        <span class="total-amount">${{number_format(Helper::totalWishlistPrice(),0)}}VNĐ</span>
                                     </div>
                                     <a href="{{route('cart')}}" class="btn animate">Giỏ hàng</a>
                                 </div>
@@ -160,14 +160,14 @@
                                     <a href="{{route('cart-delete',$data->id)}}" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
                                     <a class="cart-img" href="#"><img src="{{$photo[0]}}" alt="{{$photo[0]}}"></a>
                                     <h4><a href="{{route('product-detail',$data->product['slug'])}}" target="_blank">{{$data->product['title']}}</a></h4>
-                                    <p class="quantity">{{$data->quantity}} x - <span class="amount">${{number_format($data->price,2)}}</span></p>
+                                    <p class="quantity">{{$data->quantity}} x - <span class="amount">{{number_format($data->price,0)}}VNĐ</span></p>
                                 </li>
                                 @endforeach
                             </ul>
                             <div class="bottom">
                                 <div class="total">
                                     <span>Tất cả</span>
-                                    <span class="total-amount">${{number_format(Helper::totalCartPrice(),2)}}</span>
+                                    <span class="total-amount">{{number_format(Helper::totalCartPrice(),0)}}VNĐ</span>
                                 </div>
                                 <a href="{{route('checkout')}}" class="btn animate">Thanh toán</a>
                             </div>

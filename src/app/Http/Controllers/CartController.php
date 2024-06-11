@@ -56,7 +56,7 @@ class CartController extends Controller
             $cart->save();
             $wishlist = Wishlist::where('user_id', auth()->user()->id)->where('cart_id', null)->update(['cart_id' => $cart->id]);
         }
-        request()->session()->flash('success', 'Product successfully added to cart');
+        request()->session()->flash('success', 'Sản phẩm đã được thêm vào dỏ hàng của bạn.');
         return back();
     }
 
@@ -102,7 +102,7 @@ class CartController extends Controller
             // return $cart;
             $cart->save();
         }
-        request()->session()->flash('success', 'Product successfully added to cart.');
+        request()->session()->flash('success', 'Sản phẩm đã được thêm vào dỏ hàng của bạn.');
         return back();
     }
 
