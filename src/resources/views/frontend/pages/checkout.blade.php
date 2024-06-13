@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','Checkout page')
+@section('title','Thanh toán')
 
 @section('main-content')
 
@@ -12,7 +12,7 @@
                 <div class="bread-inner">
                     <ul class="bread-list">
                         <li><a href="{{route('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="javascript:void(0)">Checkout</a></li>
+                        <li class="active"><a href="javascript:void(0)">Thanh toán</a></li>
                     </ul>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                             <h2>Tổng Đơn Hàng</h2>
                             <div class="content">
                                 <ul>
-                                    <li class="order_subtotal" data-price="{{Helper::totalCartPrice()}}">Tổng Tiền Sản Phẩm : <span>{{number_format(Helper::totalCartPrice(),0)}}VNĐ</span></li>
+                                    <li class="order_subtotal" data-price="{{Helper::totalCartPrice()}}">Tổng Tiền Sản Phẩm : <span>{{number_format(Helper::totalCartPrice(),0)}} VNĐ</span></li>
                                     <!-- <li class="shipping">Phí Ship : <span class="price_ship"> 0 VNĐ</span></li> -->
                                     <li class="shipping">
                                         <label>Phương Thức Giao Hàng<span class="required">*</span></label>
@@ -182,7 +182,7 @@
                                     @php
                                     $total_amount=Helper::totalCartPrice();
                                     @endphp
-                                    <li class="last" id="order_total_price">Tổng Đơn Hàng : <span class="total_cart">{{number_format($total_amount,0)}}VNĐ</span></li>
+                                    <li class="last" id="order_total_price">Tổng Đơn Hàng : <span class="total_cart">{{number_format($total_amount,0)}} VNĐ</span></li>
 									<input type="hidden" class="inp_total_cart" name="inp_total_cart" value="{{$total_amount}}" />
 									<input type="hidden" class="inp_total_cart_ship"  name="inp_total_cart_ship" value="0" />
                                 </ul>

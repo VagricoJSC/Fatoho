@@ -139,7 +139,7 @@ class CouponController extends Controller
         $coupon=Coupon::where('code',$request->code)->first();
         // dd($coupon);
         if(!$coupon){
-            request()->session()->flash('error','Invalid coupon code, Please try again');
+            request()->session()->flash('error','Mã giảm giá không hợp lệ. Vui lòng thử lại.');
             return back();
         }
         if($coupon){

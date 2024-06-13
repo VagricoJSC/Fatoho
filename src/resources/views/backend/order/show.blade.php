@@ -29,8 +29,8 @@
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>{{number_format($order->inp_total_cart_ship,0)}} đ</td>
-            <td>{{number_format($order->total_amount,0)}} đ</td>
+            <td>{{number_format($order->inp_total_cart_ship,0)}} VNĐ</td>
+            <td>{{number_format($order->total_amount,0)}} VNĐ</td>
             <td>
                 @if($order->status=='new')
                   <span class="badge badge-primary">{{$order->status}}</span>
@@ -99,12 +99,12 @@
                     </tr>
                     <tr>
                         <td>Shipping Charge</td>
-                        <td> : {{number_format($order->inp_total_cart_ship,0)}} đ</td>
+                        <td> : {{number_format($order->inp_total_cart_ship,0)}} VNĐ</td>
                     </tr>
                     
                     <tr>
                         <td>Total Amount</td>
-                        <td> :  {{number_format($order->total_amount,0)}} đ</td>
+                        <td> :  {{number_format($order->total_amount,0)}} VNĐ</td>
                     </tr>
                     <tr>
                         <td>Payment Method</td>

@@ -29,8 +29,8 @@
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>{{number_format($order->inp_total_cart_ship,0)}} đ</td>
-            <td>{{number_format($order->total_amount,0)}} đ</td>
+            <td>{{number_format($order->inp_total_cart_ship,0)}} VNĐ</td>
+            <td>{{number_format($order->total_amount,0)}} VNĐ</td>
             <td>
                 @if($order->status=='new')
                   <span class="badge badge-primary">{{$order->status}}</span>
@@ -68,7 +68,7 @@
             <td>{{$cart->id}}</td>
             <td>{{@$cart->product->title}}</td>
             <td>{{$cart->quantity}}</td>
-            <td>{{number_format(@$cart->product->price,0)}} đ</td>
+            <td>{{number_format(@$cart->product->price,0)}} VNĐ</td>
         </tr>
 		@endforeach
       </tbody>
@@ -102,15 +102,15 @@
                           $shipping_charge=DB::table('shippings')->where('id',$order->shipping_id)->pluck('price');
                       @endphp
                         <td>Phí Ship</td>
-                        <td> :{{number_format($order->inp_total_cart_ship,0)}} đ</td>
+                        <td> :{{number_format($order->inp_total_cart_ship,0)}} VNĐ</td>
                     </tr>
 					 <tr>
                         <td>Tổng giá sản phẩm</td>
-                        <td> :  {{number_format($order->sub_total,0)}} đ</td>
+                        <td> :  {{number_format($order->sub_total,0)}} VNĐ</td>
                     </tr>
                     <tr>
                         <td>Tổng đơn hàng</td>
-                        <td> :  {{number_format($order->total_amount,0)}} đ</td>
+                        <td> :  {{number_format($order->total_amount,0)}} VNĐ</td>
                     </tr>
                     <tr>
                       <td>Phương thức thanh toán</td>

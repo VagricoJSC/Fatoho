@@ -111,10 +111,10 @@ class CartController extends Controller
         $cart = Cart::find($request->id);
         if ($cart) {
             $cart->delete();
-            request()->session()->flash('success', 'Cart successfully removed');
+            request()->session()->flash('success', 'Đã xóa sản phẩm thành công!');
             return back();
         }
-        request()->session()->flash('error', 'Error please try again');
+        request()->session()->flash('error', 'Đã có lỗi xảy ra. Vui lòng thử lại.');
         return back();
     }
 
@@ -146,14 +146,14 @@ class CartController extends Controller
                     $cart->amount = $after_price * $quant;
                     // return $cart->price;
                     $cart->save();
-                    $success = 'Cart successfully updated!';
+                    $success = 'Đơn hàng đã được cập nhật thành công!';
                 } else {
-                    $error[] = 'Cart Invalid!';
+                    $error[] = 'Giỏ hàng không hợp lệ!';
                 }
             }
             return back()->with($error)->with('success', $success);
         } else {
-            return back()->with('Cart Invalid!');
+            return back()->with('Giỏ hàng không hợp lệ!');
         }
     }
 
