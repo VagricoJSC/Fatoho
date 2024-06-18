@@ -122,7 +122,9 @@ class Helper{
             $carts = Cart::where('user_id',$user_id)->where('order_id',null)->with('product')->get();
             $weight = 0;
             foreach($carts as $i) {
-                $weight += (@$i->quantity * @$i->product->weight);
+				$wei_p = (@$i->quantity * @$i->product->weight);
+				$wei_p = $wei_p + ($wei_p * @$i->product->percent / 100);
+                $weight += $wei_p ;
             }
             return $weight;
         }

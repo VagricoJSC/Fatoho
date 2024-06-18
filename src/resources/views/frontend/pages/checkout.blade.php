@@ -396,8 +396,6 @@
             return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
         }
 		function formatVNDPercent(amount) {
-			let percent = {{env('INFO_PERCENNT_PRICE', '10')}};
-			amount = amount + (amount * percent / 100);
             return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
         }
 
@@ -463,8 +461,7 @@
 		$('#shipping_vt').on('change', function(){
 			let val = $(this).val();
 			let val_ship = ptvc[val];
-			let percent = {{env('INFO_PERCENNT_PRICE', '10')}};
-			val_ship = val_ship + (val_ship * percent / 100);
+			val_ship = val_ship;
 			
 			if (val) {
 				let val_totoal = $('.inp_total_cart').val();

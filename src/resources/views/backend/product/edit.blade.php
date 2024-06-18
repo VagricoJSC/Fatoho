@@ -76,6 +76,13 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
+        <div class="form-group">
+          <label for="price" class="col-form-label">Trọng lượng bao bì(Bao bì/Sản phẩm x 100%) <span class="text-danger">*</span></label>
+          <input id="percent" type="number" name="percent" placeholder="Enter percent"  value="{{$product->percent}}" class="form-control">
+          @error('percent')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div>
 
         <div class="form-group">
           <label for="discount" class="col-form-label">Discount(%)</label>

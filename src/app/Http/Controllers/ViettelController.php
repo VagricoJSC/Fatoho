@@ -11,11 +11,32 @@ use App\Models\Settings;
 use App\Models\Order;
 use Illuminate\Support\Str;
 use Helper;
+use App\Models\Tracker;
 use Illuminate\Support\Facades\DB;
 
 class ViettelController extends Controller
 {
 
+	public function updateStatusOrder(Request $request)
+    {
+		$tracker = new Tracker();
+		$token = $request->header('Token');
+		$password = 'Alphacep0000';
+		$hashedPassword = md5($password);
+		if ($token != $hashedPassword) {
+			return $this->hasError('Sai token.', []);
+		}
+		$data = $request->all();
+		if (!isset($data['DATA']['ORDER_NUMBER'])) {
+			return $this->hasError('Dữ liệu đầu vào không đúng định dạng.', []);
+		}
+		$tracker->order_id = $data['DATA']['ORDER_NUMBER'];
+		$tracker->data = json_encode($data['DATA']);
+		$tracker->save();
+		
+		
+		return $this->hasSuccess('update successful.', []);
+    }
     public function getListProvince(Request $request)
     {
 		$url = env('URL_VIETTELPOSTPROC', '') . "v2/categories/listProvince";
