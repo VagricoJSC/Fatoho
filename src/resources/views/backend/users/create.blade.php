@@ -46,21 +46,7 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
-        @php 
-        $roles=DB::table('users')->select('role')->get();
-        @endphp
         <div class="form-group">
-            <label for="role" class="col-form-label">Role</label>
-            <select name="role" class="form-control">
-                <option value="">-----Select Role-----</option>
-                    <option value="admin" >Admin</option>
-                    <option value="user" >User</option>
-            </select>
-          @error('role')
-          <span class="text-danger">{{$message}}</span>
-          @enderror
-          </div>
-          <div class="form-group">
             <label for="status" class="col-form-label">Status</label>
             <select name="status" class="form-control">
                 <option value="active">Active</option>
