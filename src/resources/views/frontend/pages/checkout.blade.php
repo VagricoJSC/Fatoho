@@ -197,7 +197,7 @@
                                     {{-- <label class="checkbox-inline" for="1"><input name="updates" id="1" type="checkbox"> Check Payments</label> --}}
                                     <form-group>
                                         <input name="payment_method" type="radio" value="cod" class="group-checkbox-payment" onclick="showPrice(false)" checked> <label> Thanh toán khi giao hàng</label><br>
-                                        <input name="payment_method" type="radio" value="paypal" class="group-checkbox-payment" onclick="showPrice(true)"> <label> Thanh toán chuyển khoản </label>
+                                        <input name="payment_method" type="radio" value="bank" class="group-checkbox-payment" onclick="showPrice(true)"> <label> Thanh toán chuyển khoản </label>
                                     </form-group>
 
                                 </div>
@@ -413,9 +413,10 @@
             if (!val_ward) {
                 return;
             }
-            if (!val_address1) {
-                return;
-            }
+			// Trường này không ảnh hưởng giá thành vì vậy không cần phải đợi nhập xong mới tính giá
+            //if (!val_address1) {
+            //    return;
+            //}
             let address_2 = val_address1 + ' ' + wards[val_ward] + ' ' + districts[val_district] + ' ' + provinces[val_province];
             $('#address2').val(address_2);
             $.ajax({

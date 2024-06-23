@@ -152,8 +152,8 @@ class OrderController extends Controller
 		
 		
         $order_data['status']="new";
-        if(request('payment_method')=='paypal'){
-            $order_data['payment_method']='paypal';
+        if(request('payment_method')=='bank'){
+            $order_data['payment_method']='bank';
             $order_data['payment_status']='Unpaid';
         }
         else{

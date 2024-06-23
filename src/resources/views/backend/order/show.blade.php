@@ -112,7 +112,7 @@
                     </tr>
                     <tr>
                         <td>Payment Status</td>
-                        <td> : {{$order->payment_status}}</td>
+                        <td> : @if($order->payment_status=='paid') Đã Thanh Toán @else Chưa Thanh Toán @endif</td>
                     </tr>
               </table>
             </div>
@@ -137,6 +137,18 @@
                     <tr>
                         <td>Address</td>
                         <td> : {{$order->address2}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+							@if($order->payment_status=='unpaid')
+								<button type="button" class="btn btn-warning">Xác nhận đã thanh toán</button>
+							@endif
+						</td>
+                        <td>
+							@if($order->status=='new')
+								<button type="button" class="btn btn-warning">Tạo yêu cầu chuyển hàng</button>
+							@endif
+						</td>
                     </tr>
               </table>
             </div>

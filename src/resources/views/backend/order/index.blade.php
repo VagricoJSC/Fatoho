@@ -22,7 +22,8 @@
               <th>Name</th>
               <th>Email</th>
               <th>Quantity</th>
-              <th>Charge</th>
+              <th>Payment Method</th>
+              <th>Payment Status</th>
               <th>Total Amount</th>
               <th>Status</th>
               <th>Action</th>
@@ -35,7 +36,8 @@
               <th>Name</th>
               <th>Email</th>
               <th>Quantity</th>
-              <th>Charge</th>
+              <th>Payment Method</th>
+              <th>Payment Status</th>
               <th>Total Amount</th>
               <th>Status</th>
               <th>Action</th>
@@ -52,7 +54,8 @@
                     <td>{{$order->first_name}} {{$order->last_name}}</td>
                     <td>{{$order->email}}</td>
                     <td>{{$order->quantity}}</td>
-                    <td>@foreach($shipping_charge as $data) {{number_format($data,0)}} VNĐ@endforeach</td>
+                    <td>@if($order->payment_method=='cod') Giao Hàng Lấy Tiền @else Chuyển Khoản Ngân Hàng @endif</td>
+                    <td>@if($order->payment_status=='paid') Đã Thanh Toán @else Chưa Thanh Toán @endif</td>
                     <td>{{number_format($order->total_amount,0)}} VNĐ</td>
                     <td>
                         @if($order->status=='new')
