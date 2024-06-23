@@ -133,7 +133,7 @@
 
                             <div class="col-lg-6 col-md-6 col-12">
                                 <div class="form-group">
-                                    <label>Số nhà / tên đường<span>*</span></label>
+                                    <label>Số nhà / Tên đường / Xóm / Ấp<span>*</span></label>
                                     <input type="text" name="address1" placeholder="" id="address1" required value="{{old('address1')}}">
                                     <input type="hidden" name="address2" placeholder="" id="address2">
                                     @error('address1')
