@@ -85,6 +85,8 @@
     Route::get('wishlist-delete/{id}', [WishlistController::class, 'wishlistDelete'])->name('wishlist-delete');
     Route::post('cart/order', [OrderController::class, 'store'])->name('cart.order');
     Route::get('order/pdf/{id}', [OrderController::class, 'pdf'])->name('order.pdf');
+	Route::get('/order/confirmPaid/{id}', [OrderController::class, 'confirmPaid'])->name('order.paid');
+	Route::get('/order/sendDeliveryRequest/{id}', [OrderController::class, 'createDeliveryRequest'])->name('order.requestdelivery');
     Route::get('/income', [OrderController::class, 'incomeChart'])->name('product.order.income');
 // Route::get('/user/chart',[AdminController::class, 'userPieChart'])->name('user.piechart');
     Route::get('/product-grids', [FrontendController::class, 'productGrids'])->name('product-grids');

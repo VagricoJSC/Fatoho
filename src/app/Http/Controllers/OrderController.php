@@ -131,25 +131,20 @@ class OrderController extends Controller
     }
     public function store(Request $request)
     {
-       
-
         if(empty(Cart::where('user_id',auth()->user()->id)->where('order_id',null)->first())){
             request()->session()->flash('error','Cart is Empty !');
             return back();
         }
         
-		
         $order=new Order();
         $order_data=$request->all();
 		
         $order_data['order_number']='ORD-'.strtoupper(Str::random(10));
         $order_data['user_id']=$request->user()->id;
 		
-		
         $order_data['sub_total']=Helper::totalCartPrice();
         $order_data['quantity']=Helper::cartCount();
         $order_data['total_amount']=Helper::totalCartPrice() + $request->inp_total_cart_ship;
-		
 		
         $order_data['status']="new";
         if(request('payment_method')=='bank'){
@@ -163,56 +158,8 @@ class OrderController extends Controller
 		
         $order->fill($order_data);
         $status=$order->save();
-        if($order) {
-			$vt_post = $this->getAccessToken(env('URL_VIETTELPOSTPROC', '') . 'v2/user/Login');
-			$token = '';
-			if ($vt_post && $vt_post['data']) {
-				 $token = $vt_post['data']['token'];
-			}
-			
-			$url = env('URL_VIETTELPOSTPROC', '') . "v2/order/createOrderNlp";
-			$data = [
-				"ORDER_NUMBER" => $order->id,
-				"SENDER_FULLNAME" => env('INFO_SENDER_NAME', ''),
-				"SENDER_ADDRESS" => env('INFO_SENDER_ADDRESS', ''),
-				"SENDER_PHONE" => env('INFO_SENDER_PHONE', ''),
-				"RECEIVER_FULLNAME" => $request->first_name . ' ' . $request->last_name,
-				"RECEIVER_ADDRESS" => $request->address2,
-				"RECEIVER_PHONE" => $request->phone,
-				"PRODUCT_NAME" =>  env('INFO_PRODUCT_NAME', ''),
-				"PRODUCT_DESCRIPTION" => "Cho khách xem hàng khi nhận, cho xem hàng",
-				"PRODUCT_QUANTITY" => $order_data['quantity'],
-				"PRODUCT_PRICE" => $order_data['sub_total'],
-				"PRODUCT_WEIGHT" => Helper::totalCartWEIGHT(),
-				"PRODUCT_LENGTH" => 0,
-				"PRODUCT_WIDTH" => 0,
-				"PRODUCT_HEIGHT" => 0,
-				"ORDER_PAYMENT" => $order_data['payment_method'] == 'cod' ? 3 : 1,
-				"ORDER_SERVICE" => $request->shipping_vt,
-				"PRODUCT_TYPE" => "HH",
-				"ORDER_SERVICE_ADD" => null,
-				"ORDER_NOTE" => " Cho khách xem hàng khi nhận, cho xem hàng",
-				"MONEY_COLLECTION" => $order_data['total_amount'],  
-				"EXTRA_MONEY" => 0,  
-				"CHECK_UNIQUE" => true,  
-				"LIST_ITEM" => []
-			];
-			$cart =  Cart::with('product')->where('user_id', auth()->user()->id)->where('order_id', null)->get();
-			
-			$productList = [];
-			foreach($cart as $item) {
-				$productList[] = [
-					"PRODUCT_NAME" => $item->product->title,
-					"PRODUCT_QUANTITY" => $item->quantity,
-					"PRODUCT_PRICE" => $item->product->price,
-					"PRODUCT_WEIGHT" => $item->product->weight
-				];
-			}
-			$data['LIST_ITEM'] = $productList;
-			
-			$resp = $this->getDataMethodPost($url, $data , $token);
-			$order->vit_post_data = json_encode($resp['data']);
-			$order->save();
+ 
+		if($order) {
 			$users=User::where('role','admin')->first();
 			$details=[
 				'title'=>'New order created',
@@ -220,23 +167,107 @@ class OrderController extends Controller
 				'fas'=>'fa-file-alt'
 			];
 			Notification::send($users, new StatusNotification($details));
+
 			// if(request('payment_method')=='paypal'){
 			//     return redirect()->route('payment')->with(['id'=>$order->id]);
 			// }
 			// else{
 				
 			// }
+
 			session()->forget('cart');
-				session()->forget('coupon');
+			session()->forget('coupon');
 			Cart::where('user_id', auth()->user()->id)->where('order_id', null)->update(['order_id' => $order->id]);
 
 			// dd($users);        
 			request()->session()->flash('success','Your product successfully placed in order');
 		}
-        // dd($order->id);
+		
+		// dd($order->id);
        
         return redirect()->route('home');
     }
+
+	/**
+	 * Change payment status to paid
+	 */
+	public function confirmPaid($id) {
+        $order=Order::find($id);
+		$order->payment_status = 'paid';
+		$order->save();
+		
+		$carts = Cart::with('product')->where('order_id', $id)->get();
+        return view('backend.order.show')->with('carts',$carts)->with('order',$order);
+	}
+	
+	
+	/**
+	 * Create delivery request
+	 */
+	public function createDeliveryRequest($id) {
+        $order=Order::find($id);
+
+		$vt_post = $this->getAccessToken(env('URL_VIETTELPOSTPROC', '') . 'v2/user/Login');
+		$token = '';
+		if ($vt_post && $vt_post['data']) {
+			 $token = $vt_post['data']['token'];
+		}
+		
+		$url = env('URL_VIETTELPOSTPROC', '') . "v2/order/createOrderNlp";
+		$data = [
+			"ORDER_NUMBER" => $order->id,
+			"SENDER_FULLNAME" => env('INFO_SENDER_NAME', ''),
+			"SENDER_ADDRESS" => env('INFO_SENDER_ADDRESS', ''),
+			"SENDER_PHONE" => env('INFO_SENDER_PHONE', ''),
+			"RECEIVER_FULLNAME" => $order->first_name . ' ' . $order->last_name,
+			"RECEIVER_ADDRESS" => $order->address2,
+			"RECEIVER_PHONE" => $order->phone,
+			"PRODUCT_NAME" =>  env('INFO_PRODUCT_NAME', ''),
+			"PRODUCT_DESCRIPTION" => "Cho khách xem hàng khi nhận, cho xem hàng",
+			"PRODUCT_QUANTITY" => $order->quantity,
+			"PRODUCT_PRICE" => $order->sub_total,
+			"PRODUCT_WEIGHT" => Helper::totalCartWEIGHT(),
+			"PRODUCT_LENGTH" => 0,
+			"PRODUCT_WIDTH" => 0,
+			"PRODUCT_HEIGHT" => 0,
+			"ORDER_PAYMENT" => ($order->payment_method == 'cod') ? 3 : 1,
+			"ORDER_SERVICE" => $order->shipping_vt,
+			"PRODUCT_TYPE" => "HH",
+			"ORDER_SERVICE_ADD" => null,
+			"ORDER_NOTE" => " Cho khách xem hàng khi nhận, cho xem hàng",
+			"MONEY_COLLECTION" => $order->total_amount,  
+			"EXTRA_MONEY" => 0,  
+			"CHECK_UNIQUE" => true,  
+			"LIST_ITEM" => []
+		];
+		$cart =  Cart::with('product')->where('user_id', $order->user_id)->where('order_id', $order->id)->get();
+		
+		$productList = [];
+		foreach($cart as $item) {
+			$productList[] = [
+				"PRODUCT_NAME" => $item->product->title,
+				"PRODUCT_QUANTITY" => $item->quantity,
+				"PRODUCT_PRICE" => $item->product->price,
+				"PRODUCT_WEIGHT" => $item->product->weight
+			];
+		}
+		$data['LIST_ITEM'] = $productList;
+		
+		$resp = $this->getDataMethodPost($url, $data , $token);
+		$order->vit_post_data = json_encode($resp['data']);
+		$order->save();
+
+		$users=User::where('role','admin')->first();
+		$details=[
+			'title'=>'Đã gửi yêu cầu chuyển hàng cho ViettelPost',
+			'actionURL'=>route('order.show', $order->id),
+			'fas'=>'fa-file-alt'
+		];
+		Notification::send($users, new StatusNotification($details));
+
+        return view('backend.order.show')->with('carts',$cart)->with('order',$order);
+	}
+	
 
     /**
      * Display the specified resource.

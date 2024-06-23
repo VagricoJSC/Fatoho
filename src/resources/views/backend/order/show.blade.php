@@ -4,7 +4,7 @@
 
 @section('main-content')
 <div class="card">
-<h5 class="card-header">Order       <a href="{{route('order.pdf',$order->id)}}" class=" btn btn-sm btn-primary shadow-sm float-right"><i class="fas fa-download fa-sm text-white-50"></i> Generate PDF</a>
+<h5 class="card-header">Order       <a href="{{route('order.pdf',$order->id)}}" class=" btn btn-sm btn-primary shadow-sm float-right"><i class="fas fa-download fa-sm text-white-50"></i> In đơn hàng</a>
   </h5>
   <div class="card-body">
     @if($order)
@@ -138,22 +138,26 @@
                         <td>Address</td>
                         <td> : {{$order->address2}}</td>
                     </tr>
+              </table>
+            </div>
+			<div>
+				<table class="table">
                     <tr>
                         <td>
 							@if($order->payment_status=='unpaid')
-								<button type="button" class="btn btn-warning">Xác nhận đã thanh toán</button>
+								<a href="{{route('order.paid',$order->id)}}" class=" btn btn-sm btn-primary shadow-sm float-right">Xác nhận đã thanh toán</a>
 							@endif
 						</td>
                         <td>
 							@if($order->status=='new')
-								<button type="button" class="btn btn-warning">Tạo yêu cầu chuyển hàng</button>
+								<a href="{{route('order.requestdelivery',$order->id)}}" class=" btn btn-sm btn-primary shadow-sm float-right">Gửi yêu cầu chuyển hàng (ViettelPost)</a>
 							@endif
 						</td>
                     </tr>
-              </table>
-            </div>
+				</table>
+			</div>
           </div>
-        </div>
+
       </div>
     </section>
     @endif
