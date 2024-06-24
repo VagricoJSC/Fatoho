@@ -196,8 +196,8 @@ class OrderController extends Controller
 		$order->payment_status = 'paid';
 		$order->save();
 		
-		$carts = Cart::with('product')->where('order_id', $id)->get();
-        return view('backend.order.show')->with('carts',$carts)->with('order',$order);
+        request()->session()->flash('success','Đã cập nhật trạng thái thanh toán thành công!');
+        return redirect()->route('order.show', $order->id);
 	}
 	
 	
@@ -265,7 +265,8 @@ class OrderController extends Controller
 		];
 		Notification::send($users, new StatusNotification($details));
 
-        return view('backend.order.show')->with('carts',$cart)->with('order',$order);
+        request()->session()->flash('success','Đã gửi yêu cầu chuyển hàng hóa!');
+        return redirect()->route('order.show', $order->id);
 	}
 	
 
