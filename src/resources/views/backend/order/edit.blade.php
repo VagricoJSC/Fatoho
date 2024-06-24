@@ -5,6 +5,12 @@
 @section('main-content')
 <div class="card">
   <h5 class="card-header">Order Edit</h5>
+	<div class="row">
+		<div class="col-md-12">
+			@include('backend.layouts.notification')
+		</div>
+	</div>
+
   <div class="card-body">
     <form action="{{route('order.update',$order->id)}}" method="POST">
       @csrf
@@ -12,10 +18,11 @@
       <div class="form-group">
         <label for="status">Status :</label>
         <select name="status" id="" class="form-control">
-          <option value="new" {{($order->status=='delivered' || $order->status=="process" || $order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='new')? 'selected' : '')}}>New</option>
-          <option value="process" {{($order->status=='delivered'|| $order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='process')? 'selected' : '')}}>process</option>
-          <option value="delivered" {{($order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='delivered')? 'selected' : '')}}>Delivered</option>
-          <option value="cancel" {{($order->status=='delivered') ? 'disabled' : ''}}  {{(($order->status=='cancel')? 'selected' : '')}}>Cancel</option>
+          <option value="new" {{($order->status=='delivered' || $order->status=="shipped" || $order->status=="processing" || $order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='new')? 'selected' : '')}}>Đơn hàng mới</option>
+          <option value="processing" {{($order->status=='shipped'|| $order->status=='delivered'|| $order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='processing')? 'selected' : '')}}>Đang xử lý</option>
+          <option value="shipped" {{($order->status=='delivered'|| $order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='shipped') ? 'selected' : '')}}>Đã gửi hàng</option>
+          <option value="delivered" {{($order->status=="cancel") ? 'disabled' : ''}}  {{(($order->status=='delivered')? 'selected' : '')}}>Người mua đã nhận</option>
+          <option value="cancel" {{($order->status=='delivered') ? 'disabled' : ''}}  {{(($order->status=='cancel')? 'selected' : '')}}>Đã hủy</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Update</button>

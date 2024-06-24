@@ -101,7 +101,14 @@
                     </tr>
                     <tr>
                         <td>Order Status</td>
-                        <td> : {{$order->status}}</td>
+                        <td> : 
+							@if($order->status=='new') Đơn hàng mới 
+							@elseif($order->status=='processing') Đang xử lý 
+							@elseif($order->status=='shipped') Đã gửi hàng
+							@elseif($order->status=='delivered') Người mua đã nhận
+							@else Đã hủy
+							@endif
+						</td>
                     </tr>
                     <tr>
                         <td>Shipping Charge</td>
@@ -155,7 +162,7 @@
 							@endif
 						</td>
                         <td>
-							@if($order->status=='new')
+							@if($order->status=='new' || $order->status=='processing')
 								<a href="{{route('order.requestdelivery',$order->id)}}" class=" btn btn-sm btn-primary shadow-sm float-right">Gửi yêu cầu chuyển hàng (ViettelPost)</a>
 							@endif
 						</td>

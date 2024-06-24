@@ -149,11 +149,11 @@ class OrderController extends Controller
         $order_data['status']="new";
         if(request('payment_method')=='bank'){
             $order_data['payment_method']='bank';
-            $order_data['payment_status']='Unpaid';
+            $order_data['payment_status']='unpaid';
         }
         else{
             $order_data['payment_method']='cod';
-            $order_data['payment_status']='Unpaid';
+            $order_data['payment_status']='unpaid';
         }
 		
         $order->fill($order_data);
@@ -205,8 +205,19 @@ class OrderController extends Controller
 	 * Create delivery request
 	 */
 	public function createDeliveryRequest($id) {
-        $order=Order::find($id);
-
+        $order = Order::find($id);
+		if ($order == null) {
+			request()->session()->flash('error', 'Không tìm thấy đơn hàng!');
+			return redirect()->route('order.show', $order->id);
+		}
+		
+		if ($order->payment_method == 'bank') {
+			if ($order->payment_status == 'unpaid') {
+				request()->session()->flash('error', 'Đơn hàng này phương thức thanh toàn bằng Chuyển khoản ngân hàng. Cần xác nhận đã thanh toán trước khi gửi hàng hóa!');
+				return redirect()->route('order.show', $order->id);
+			}
+		}
+		
 		$vt_post = $this->getAccessToken(env('URL_VIETTELPOSTPROC', '') . 'v2/user/Login');
 		$token = '';
 		if ($vt_post && $vt_post['data']) {
@@ -254,6 +265,9 @@ class OrderController extends Controller
 		$data['LIST_ITEM'] = $productList;
 		
 		$resp = $this->getDataMethodPost($url, $data , $token);
+		if ($order->status == 'new' || $order->status == 'processing') {
+			$order->status == 'shipped';
+		}
 		$order->vit_post_data = json_encode($resp['data']);
 		$order->save();
 
@@ -308,10 +322,12 @@ class OrderController extends Controller
     {
         $order=Order::find($id);
         $this->validate($request,[
-            'status'=>'required|in:new,process,delivered,cancel'
+            'status'=>'required|in:new,processing,shipped,delivered,cancel'
         ]);
+		
         $data=$request->all();
-        // return $request->status;
+        
+		// return $request->status;
         if($request->status=='delivered'){
             foreach($order->cart as $cart){
                 $product=$cart->product;
@@ -320,13 +336,16 @@ class OrderController extends Controller
                 $product->save();
             }
         }
-        $status=$order->fill($data)->save();
-        if($status){
+        
+		$status=$order->fill($data)->save();
+        
+		if($status){
             request()->session()->flash('success','Successfully updated order');
         }
         else{
             request()->session()->flash('error','Error while updating order');
         }
+		
         return redirect()->route('order.index');
     }
 
