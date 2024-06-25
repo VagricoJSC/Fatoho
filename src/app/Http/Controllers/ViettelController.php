@@ -13,29 +13,39 @@ use Illuminate\Support\Str;
 use Helper;
 use App\Models\Tracker;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
 
 class ViettelController extends Controller
 {
 
 	public function updateStatusOrder(Request $request)
     {
+		Log::debug('Start ViettelController::updateStatusOrder()');
+		
 		$tracker = new Tracker();
 		$token = $request->header('Token');
 		$password = 'Alphacep0000';
 		$hashedPassword = md5($password);
 		if ($token != $hashedPassword) {
+			Log::debug('Invalid token: ' . $token);
 			return $this->hasError('Sai token.', []);
 		}
+
 		$data = $request->all();
 		if (!isset($data['DATA']['ORDER_NUMBER'])) {
+			Log::debug('Invalid request data: ' . json_encode($data));
 			return $this->hasError('Dữ liệu đầu vào không đúng định dạng.', []);
 		}
 		$tracker->order_id = $data['DATA']['ORDER_NUMBER'];
 		$tracker->data = json_encode($data['DATA']);
 		$tracker->save();
 		
+		$sts = $this->hasSuccess('update successful.', []);
 		
-		return $this->hasSuccess('update successful.', []);
+		Log::debug('End ViettelController::updateStatusOrder()');
+		
+		return $sts;
     }
     public function getListProvince(Request $request)
     {
