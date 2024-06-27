@@ -509,24 +509,24 @@ class CartController extends Controller
 		
 		$userId = auth()->user()->id;
 
-// Group by address2 and count the ids
-$groupedOrders = Order::select(
-        'address2',
-        DB::raw('COUNT(id) as id_count')
-    )
-    ->where('user_id', $userId)
-    ->groupBy('address2')
-    ->orderBy('id_count', 'DESC')
-    ->get();
+		// Group by address2 and count the ids
+		$groupedOrders = Order::select(
+				'address2',
+				DB::raw('COUNT(id) as id_count')
+			)
+			->where('user_id', $userId)
+			->groupBy('address2')
+			->orderBy('id_count', 'DESC')
+			->get();
 
-// Get the list of address2
-$address2List = $groupedOrders->pluck('address2')->toArray();
+		// Get the list of address2
+		$address2List = $groupedOrders->pluck('address2')->toArray();
 
-// Fetch the complete order data and paginate
-$orders = Order::where('user_id', $userId)
-    ->whereIn('address2', $address2List)
-    ->orderByRaw("FIELD(address2, '" . implode("','", $address2List) . "')")
-    ->paginate(6);
+		// Fetch the complete order data and paginate
+		$orders = Order::where('user_id', $userId)
+			->whereIn('address2', $address2List)
+			->orderByRaw("FIELD(address2, '" . implode("','", $address2List) . "')")
+			->paginate(6);
 	
         
         $data = Settings::first();
@@ -537,6 +537,7 @@ $orders = Order::where('user_id', $userId)
          //}
         return view('frontend.pages.checkout')->with('token', $token)->with('orders', $orders)->with('data', $data)->with('countries', $countries);
     }
+	
     function getAccessToken($url) {
         // Initialize cURL session
         $ch = curl_init();

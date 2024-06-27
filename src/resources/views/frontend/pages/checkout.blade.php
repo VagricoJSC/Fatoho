@@ -31,7 +31,7 @@
                 <div class="col-lg-7 col-12">
                     <div class="checkout-form">
 						@if(count($orders) > 0) :
-                        <h2>Địa chỉ giao hàng trước đây :</h2>
+                        <h2>Địa chỉ giao hàng trước:</h2>
                         <div class="address-list">
                             @foreach($orders as $k => $i)
                             <div class="item-address">
@@ -47,6 +47,10 @@
                                 <input type="hidden" class="h_country" value="{{$i->country}}">
                                 <input type="hidden" class="h_address2" value="{{$i->address2}}">
                                 <input type="hidden" class="h_post_code" value="{{$i->post_code}}">
+								
+                                <input type="hidden" class="h_province" value="{{$i->province}}">
+                                <input type="hidden" class="h_district" value="{{$i->district}}">
+                                <input type="hidden" class="h_ward" value="{{$i->wards}}">
                             </div>
                             @endforeach
 
@@ -333,7 +337,10 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <script>
-    $(document).ready(function() {
+	var fixDistrictId = null;
+	var fixWardId = null;
+
+   $(document).ready(function() {
         $('.item-address').on("click", function() {
             $('.item-address').removeClass('active');
             $(this).addClass('active');;
@@ -341,6 +348,14 @@
             $('input[name="last_name"]').val($(this).children('.h_last_name').val());
             $('input[name="email"]').val($(this).children('.h_email').val());
             $('input[name="phone"]').val($(this).children('.h_phone').val());
+			
+            $('#province').val($(this).children('.h_province').val());
+			$('#province').niceSelect('update');
+			$('#province').change();
+
+			fixDistrictId = $(this).children('.h_district').val();
+			fixWardId = $(this).children('.h_ward').val();
+			
             $('input[name="address1"]').val($(this).children('.h_address1').val());
             $('input[name="address2"]').val($(this).children('.h_address2').val());
             $('input[name="post_code"]').val($(this).children('.h_post_code').val());
@@ -391,14 +406,39 @@
         let wards = [];
         let ptvc = [];
         let get_token = "{{$token}}";
-
+		
         function formatVND(amount) {
             return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
         }
+		
 		function formatVNDPercent(amount) {
             return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
         }
 
+		/**
+		 * This method is performed as a post-processing after retrieving the DISTRICTS
+		 */
+		function postFetchDistricts() {
+			if (fixDistrictId != null) {
+				$('#district').val(fixDistrictId);
+				$('#district').niceSelect('update');
+				$('#district').change();
+				fixDistrictId = null;
+			}
+		}
+		
+		/**
+		 * This method is performed as a post-processing after retrieving the WARDS
+		 */
+		function postFetchWards() {
+			if (fixWardId != null) {
+				$('#wards').val(fixWardId);
+				$('#wards').niceSelect('update');
+				$('#wards').change();
+				fixWardId = null;
+			}
+		}
+		
         function checkUpdatePhiVanChuyen() {
             let val_province = $('#province').val();
             let val_district = $('#district').val();
@@ -555,7 +595,6 @@
             }
         });
 
-
         $('#province').on('change', function() {
             if ($(this).val()) {
                 $.ajax({
@@ -569,6 +608,7 @@
                             $('#district').append(new Option(district.DISTRICT_NAME, district.DISTRICT_ID));
                         });
                         $('#district').niceSelect('update');
+						setTimeout(postFetchDistricts, 1);
                     },
                     error: function(error) {
                         console.log('Error fetching provinces:', error);
@@ -591,6 +631,7 @@
                             $('#wards').append(new Option(district.WARDS_NAME, district.WARDS_ID));
                         });
                         $('#wards').niceSelect('update');
+						setTimeout(postFetchWards, 1);
                     },
                     error: function(error) {
                         console.log('Error fetching provinces:', error);
@@ -599,10 +640,12 @@
             }
             checkUpdatePhiVanChuyen();
         });
+		
         $('#wards').on('change', function() {
             checkUpdatePhiVanChuyen();
         });
-        $('#address1').on('change', function() {
+        
+		$('#address1').on('change', function() {
             checkUpdatePhiVanChuyen();
         });
 
