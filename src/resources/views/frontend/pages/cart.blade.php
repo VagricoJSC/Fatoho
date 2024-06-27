@@ -82,7 +82,6 @@
 										<tr>
 											<td class="text-center">
 												Chưa có sản phẩm nào. <a href="{{route('product-grids')}}" style="color:blue;">Tiếp tục mua sắm</a>
-
 											</td>
 										</tr>
 								@endif

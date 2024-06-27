@@ -329,16 +329,20 @@ class OrderController extends Controller
         $data=$request->all();
         
 		// return $request->status;
-        if($request->status=='delivered'){
+        if ($request->status == 'delivered'){
             foreach($order->cart as $cart){
                 $product=$cart->product;
-                // return $product;
                 $product->stock -=$cart->quantity;
                 $product->save();
             }
         }
         
-		$status=$order->fill($data)->save();
+		$order = $order->fill($data);
+        if ($request->status == 'delivered') {
+			$order->deliveried_time = date('Y-m-d H:i:s');
+        }
+		
+		$status = $order->save();
         
 		if($status){
             request()->session()->flash('success','Successfully updated order');
