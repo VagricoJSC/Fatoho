@@ -31,7 +31,7 @@
                 <div class="col-lg-7 col-12">
                     <div class="checkout-form">
 						@if(count($orders) > 0) :
-                        <h2>Địa chỉ giao hàng trước:</h2>
+                        <h2>Địa chỉ giao hàng trước</h2>
                         <div class="address-list">
                             @foreach($orders as $k => $i)
                             <div class="item-address">

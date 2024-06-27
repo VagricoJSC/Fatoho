@@ -124,8 +124,11 @@
                         <td> : @if($order->payment_method=='cod') Giao Hàng Lấy Tiền @else Chuyển Khoản Ngân Hàng @endif</td>
                     </tr>
                     <tr>
+						@php
+							$pay_confirm_usr = $order->getUserConfirmedPayment();
+						@endphp
                         <td>Payment Status</td>
-                        <td> : @if($order->payment_status=='paid') Đã Thanh Toán @else Chưa Thanh Toán @endif</td>
+                        <td> : @if($order->payment_status=='paid') Đã Thanh Toán (xác nhận bởi: {{$pay_confirm_usr != null ? $pay_confirm_usr->name : ''}}) @else Chưa Thanh Toán @endif</td>
                     </tr>
               </table>
             </div>

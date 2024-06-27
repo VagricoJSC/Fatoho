@@ -194,6 +194,7 @@ class OrderController extends Controller
 	public function confirmPaid($id) {
         $order=Order::find($id);
 		$order->payment_status = 'paid';
+		$order->paid_confirmed_by = auth()->user()->id;
 		$order->save();
 		
         request()->session()->flash('success','Đã cập nhật trạng thái thanh toán thành công!');
