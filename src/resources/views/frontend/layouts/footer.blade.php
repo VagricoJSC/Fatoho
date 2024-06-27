@@ -8,8 +8,8 @@
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
 						@php
-				$settings=DB::table('settings')->first();
-			@endphp
+							$settings=DB::table('settings')->first();
+						@endphp
 						{!! $settings->footer_description !!}
 						<!-- End Single Widget -->
 					</div>
@@ -48,9 +48,13 @@
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
+									<li>{{$settings->corp_name}}</li>
 									<li>{{$settings->address}}</li>
 									<li>{{$settings->email}}</li>
 									<li>{{$settings->phone}}</li>
+									<li>&nbsp;</li>
+									<li>Giấy chứng nhận đăng ký doanh nghiệp số {{$settings->corp_num}} do {{$settings->corp_reg_place}} 
+									cấp lần đầu tiên vào ngày {{$settings->corp_reg_date != null ? DateTime::createFromFormat('Y-m-d', $settings->corp_reg_date)->format('d/m/Y') : ''}}</li>
 								</ul>
 							</div>
 							<div class="sharethis-inline-follow-buttons st-inline-follow-buttons st-#{action_pos}  st-animated" 
