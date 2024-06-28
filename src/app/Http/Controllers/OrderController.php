@@ -267,7 +267,7 @@ class OrderController extends Controller
 		
 		$resp = $this->getDataMethodPost($url, $data , $token);
 		if ($order->status == 'new' || $order->status == 'processing') {
-			$order->status == 'shipped';
+			$order->status = 'shipped';
 		}
 		$order->vit_post_data = json_encode($resp['data']);
 		$order->save();
