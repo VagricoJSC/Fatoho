@@ -266,6 +266,8 @@ class OrderController extends Controller
 		$data['LIST_ITEM'] = $productList;
 		
 		$resp = $this->getDataMethodPost($url, $data , $token);
+		
+		// Failed to request ship
 		if (!isset($resp['data']['ORDER_NUMBER'])) {
 			request()->session()->flash('error','Gửi yêu cầu chuyển hàng hóa thất bại. Hãy thử lại sau ít phút!');
 			return redirect()->route('order.show', $order->id);
@@ -383,7 +385,7 @@ class OrderController extends Controller
 
     public function productTrackOrder(Request $request){
         // return $request->all();
-        $order=Order::where('user_id',auth()->user()->id)->where('order_number',$request->order_number)->first();
+        $order = Order::where('user_id',auth()->user()->id)->where('order_number',$request->order_number)->first();
         if($order){
             if($order->status=="new"){
             request()->session()->flash('success','Your order has been placed. please wait.');

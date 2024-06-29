@@ -16,16 +16,19 @@ class Order extends Model
     public function cart_info(){
         return $this->hasMany('App\Models\Cart','order_id','id');
     }
+	
     public static function getAllOrder($id){
         return Order::with('cart_info')->find($id);
     }
-    public static function countActiveOrder(){
+    
+	public static function countActiveOrder(){
         $data=Order::count();
         if($data){
             return $data;
         }
         return 0;
     }
+
     public function cart(){
         return $this->hasMany(Cart::class);
     }
