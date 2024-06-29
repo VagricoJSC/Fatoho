@@ -282,7 +282,7 @@ class FrontendController extends Controller
 
     public function blogDetail($slug){
         $post=Post::getPostBySlug($slug);
-        $rcnt_post=Post::where('status','active')->orderBy('id','DESC')->limit(3)->get();
+        $rcnt_post=Post::where('status','active')->orderBy('id','DESC')->limit(5)->get();
         // return $post;
         return view('frontend.pages.blog-detail')->with('post',$post)->with('recent_posts',$rcnt_post);
     }

@@ -36,14 +36,14 @@
                                 <div class="blog-detail">
                                     <h2 class="blog-title" style="margin-top: 20px;">{{$post->title}}</h2>
                                     <div class="blog-meta">
-                                        <span class="author"><a href="javascript:void(0);"><i class="fa fa-user"></i>By {{$post->author_info ? $post->author_info->name : 'Admin' }}</a><a href="javascript:void(0);"><i class="fa fa-calendar"></i>{{$post->created_at->format('M d, Y')}}</a><a href="javascript:void(0);"><i class="fa fa-comments"></i>Comment ({{$post->allComments->count()}})</a></span>
+                                        <span class="author"><a href="javascript:void(0);"><i class="fa fa-user"></i>By {{$post->author_info ? $post->author_info->name : 'Admin' }}</a><a href="javascript:void(0);"><i class="fa fa-calendar"></i>{{$post->created_at->format('d/m/Y')}}</a><a href="javascript:void(0);"><i class="fa fa-comments"></i>Bình luận ({{$post->allComments->count()}})</a></span>
                                     </div>
                                     <div class="sharethis-inline-reaction-buttons"></div>
                                     <div class="content">
                                         @if($post->quote)
                                         <blockquote> <i class="fa fa-quote-left"></i> {!! ($post->quote) !!}</blockquote>
                                         @endif
-                                        <p>{!! ($post->description) !!}</p>
+                                        <div style="text-align: justify;">{!! ($post->description) !!}</div>
                                     </div>
                                 </div>
                                 <div class="share-social">
@@ -68,7 +68,7 @@
                             <div class="col-12 mt-4">
                                 <div class="reply">
                                     <div class="reply-head comment-form" id="commentFormContainer">
-                                        <h2 class="reply-title">Leave a Comment</h2>
+                                        <h2 class="reply-title">Bình luận</h2>
                                         <!-- Comment Form -->
                                         <form class="form comment_form" id="commentForm" action="{{route('post-comment.store',$post->slug)}}" method="POST">
                                             @csrf
@@ -87,7 +87,7 @@
                                                 </div> --}}
                                                 <div class="col-12">
                                                     <div class="form-group  comment_form_body">
-                                                        <label>Your Message<span>*</span></label>
+                                                        <label>Nội dung<span>*</span></label>
                                                         <textarea name="comment" id="comment" rows="10" placeholder=""></textarea>
                                                         <input type="hidden" name="post_id" value="{{ $post->id }}" />
                                                         <input type="hidden" name="parent_id" id="parent_id" value="" />
@@ -95,7 +95,7 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-group button">
-                                                        <button type="submit" class="btn"><span class="comment_btn comment">Post Comment</span><span class="comment_btn reply" style="display: none;">Reply Comment</span></button>
+                                                        <button type="submit" class="btn"><span class="comment_btn comment">Gửi</span><span class="comment_btn reply" style="display: none;">Trả lời</span></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -107,7 +107,7 @@
 
                             @else
                             <p class="text-center p-5">
-                                You need to <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Login</a> OR <a style="color:blue" href="{{route('register.form')}}">Register</a> for comment.
+                                Bạn cần <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">đăng nhập</a>  hoặc <a style="color:blue" href="{{route('register.form')}}">đăng ký</a> để gửi bình luận.
 
                             </p>
 
@@ -116,7 +116,7 @@
                             @endauth
                             <div class="col-12">
                                 <div class="comments">
-                                    <h3 class="comment-title">Comments ({{$post->allComments->count()}})</h3>
+                                    <h3 class="comment-title">Số bình luận ({{$post->allComments->count()}})</h3>
                                     <!-- Single Comment -->
                                     @include('frontend.pages.comment', ['comments' => $post->comments, 'post_id' => $post->id, 'depth' => 3])
                                     <!-- End Single Comment -->
@@ -138,6 +138,7 @@
                         -->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
+						<!--
                         <div class="single-widget category">
                             <h3 class="title">Blog Categories</h3>
                             <ul class="categor-list">
@@ -147,10 +148,11 @@
                                 @endforeach
                             </ul>
                         </div>
+						-->
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
+                            <h3 class="title">Nội dung khác</h3>
                             @foreach($recent_posts as $post)
                                 <!-- Single Post -->
                                 <div class="single-post">
