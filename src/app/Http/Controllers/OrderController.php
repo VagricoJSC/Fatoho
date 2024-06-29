@@ -273,6 +273,7 @@ class OrderController extends Controller
 			return redirect()->route('order.show', $order->id);
 		}
 		
+		// Update ship info into ORDER
 		$order->ship_order_code = $resp['data']['ORDER_NUMBER'];
 		if ($order->status == 'new' || $order->status == 'processing') {
 			$order->status = 'shipped';
@@ -280,6 +281,7 @@ class OrderController extends Controller
 		$order->vit_post_data = json_encode($resp);
 		$order->save();
 
+		// Notify admin
 		$users=User::where('role','admin')->first();
 		$details=[
 			'title'=>'Đã gửi yêu cầu chuyển hàng cho ViettelPost',
@@ -423,6 +425,7 @@ class OrderController extends Controller
         $pdf=PDF::loadview('backend.order.pdf',compact('order'));
         return $pdf->download($file_name);
     }
+	
     // Income chart
     public function incomeChart(Request $request){
         $year=\Carbon\Carbon::now()->year;
