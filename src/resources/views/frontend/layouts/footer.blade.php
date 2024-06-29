@@ -19,7 +19,6 @@
 							<h4>Thông Tin</h4>
 							<ul>
 								<li><a href="{{route('about-us')}}">Về chúng tôi</a></li>
-								<li><a href="/blog-detail/cau-hoi">Câu hỏi</a></li>
 								<li><a href="/blog-detail/dieu-khoan-va-dieu-kien">Điều khoản và điều kiện</a></li>
 								<li><a href="{{route('contact')}}">Liên hệ</a></li>
 								<li><a href="/blog-detail/ho-tro-247">Hỗ trợ 24/7</a></li>
@@ -79,17 +78,17 @@
 							}
 							.sharethis-inline-follow-buttons .st-btn {
 								width: 30px;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+								height: 30px;
+								border: 1px solid #ccc;
+								border-radius: 5px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
 							padding: 5px;}
 							.sharethis-inline-follow-buttons .st-btn i{
 								font-size: 18px;
-    color: #fff;
-    line-height: 14px;
+								color: #fff;
+								line-height: 14px;
 							}
 							</style>
 							<!-- End Single Widget -->
