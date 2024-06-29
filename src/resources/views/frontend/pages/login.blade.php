@@ -60,9 +60,11 @@
                                         <a href="{{route('login.redirect','google')}}" class="btn btn-google"><i class="ti-google"></i></a> -->
 
                                     </div>
+									<!--
                                     <div class="checkbox">
                                         <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Nhớ tài khoản</label>
                                     </div>
+									-->
                                     @if (Route::has('password.request'))
                                         <a class="lost-pass" href="{{ route('password.reset') }}">
                                             Quên mật khẩu?

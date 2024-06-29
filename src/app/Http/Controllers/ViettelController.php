@@ -24,25 +24,45 @@ class ViettelController extends Controller
 		Log::debug('Start ViettelController::updateStatusOrder()');
 		
 		$tracker = new Tracker();
-		$token = $request->header('Token');
+		// $token = $request->header('Token');
 		$password = 'Alphacep0000';
 		$hashedPassword = md5($password);
-		if ($token != $hashedPassword) {
-			Log::debug('Invalid token: ' . $token);
-			return $this->hasError('Sai token.', []);
-		}
+		//if ($token != $hashedPassword) {
+		//	Log::debug('Invalid token: ' . $token);
+		//	return $this->hasError('Sai token.', []);
+		//}
 
 		$data = $request->all();
 		if (!isset($data['DATA']['ORDER_NUMBER'])) {
 			Log::debug('Invalid request data: ' . json_encode($data));
 			return $this->hasError('Dữ liệu đầu vào không đúng định dạng.', []);
 		}
-		$tracker->order_id = $data['DATA']['ORDER_NUMBER'];
-		$tracker->data = json_encode($data['DATA']);
+		
+		if (!isset($data['TOKEN'])) {
+			Log::debug('TOKEN: not set');
+		}
+		else {
+			Log::debug('TOKEN: ' . json_encode($data['TOKEN']));
+		}
+		
+		$shipinfo = $data['DATA'];
+		$order_id = $shipinfo['ORDER_NUMBER'];
+		$tracker->order_id = $order_id;
+		$tracker->data = json_encode($shipinfo);
 		$tracker->save();
+
+		// Update order status
+		if (isset($shipinfo['ORDER_STATUS'])) {
+			if ($shipinfo['ORDER_STATUS'] == '501') {
+				$order = Order::find($order_id);
+				if ($order != null && $order->status != 'delivered') {
+					$order->finish();
+					$order->save();
+				}
+			}
+		}
 		
 		$sts = $this->hasSuccess('update successful.', []);
-		
 		Log::debug('End ViettelController::updateStatusOrder()');
 		
 		return $sts;

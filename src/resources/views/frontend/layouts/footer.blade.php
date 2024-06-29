@@ -5,7 +5,7 @@
 		<div class="footer-top section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 col-md-6 col-12">
+					<div class="col-lg-5 col-md-6 col-12" style="text-align: justify;">
 						<!-- Single Widget -->
 						@php
 							$settings=DB::table('settings')->first();
@@ -32,11 +32,10 @@
 						<div class="single-footer links">
 							<h4>Dịch vụ khách hàng</h4>
 							<ul>
-								<li><a href="/blog-detail/payment-type">Phương Thức Thanh Toán</a></li>
-								<li><a href="/blog-detail/hoan-tien">Hoàn tiền</a></li>
-								<li><a href="/blog-detail/tra-hang">Trả Hàng</a></li>
-								<li><a href="/blog-detail/tracking">Tracking</a></li>
-								<li><a href="/blog-detail/chinh-sach-bao-mat">Chính Sách Bảo Mật</a></li>
+								<li><a href="/blog-detail/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+								<li><a href="/blog-detail/payment-type">Chính sách thanh toán</a></li>
+								<li><a href="/blog-detail/tracking">Chính sách vận chuyển và kiểm tra hàng</a></li>
+								<li><a href="/blog-detail/tra-hang">Chính bảo hành và đổi trả</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->

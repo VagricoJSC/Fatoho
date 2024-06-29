@@ -266,10 +266,16 @@ class OrderController extends Controller
 		$data['LIST_ITEM'] = $productList;
 		
 		$resp = $this->getDataMethodPost($url, $data , $token);
+		if (!isset($resp['data']['ORDER_NUMBER'])) {
+			request()->session()->flash('error','Gửi yêu cầu chuyển hàng hóa thất bại. Hãy thử lại sau ít phút!');
+			return redirect()->route('order.show', $order->id);
+		}
+		
+		$order->ship_order_code = $resp['data']['ORDER_NUMBER'];
 		if ($order->status == 'new' || $order->status == 'processing') {
 			$order->status = 'shipped';
 		}
-		$order->vit_post_data = json_encode($resp['data']);
+		$order->vit_post_data = json_encode($resp);
 		$order->save();
 
 		$users=User::where('role','admin')->first();
@@ -329,22 +335,14 @@ class OrderController extends Controller
         $data=$request->all();
         
 		// return $request->status;
-        if ($request->status == 'delivered'){
-            foreach($order->cart as $cart){
-                $product=$cart->product;
-                $product->stock -=$cart->quantity;
-                $product->save();
-            }
+        if ($request->status == 'delivered') {
+			$order->finish();
         }
         
 		$order = $order->fill($data);
-        if ($request->status == 'delivered') {
-			$order->deliveried_time = date('Y-m-d H:i:s');
-        }
-		
 		$status = $order->save();
         
-		if($status){
+		if($status) {
             request()->session()->flash('success','Successfully updated order');
         }
         else{

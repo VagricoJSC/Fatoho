@@ -24,7 +24,7 @@
 <!-- About Us -->
 <section class="about-us">
 	<div class="container">
-		<div class="row">
+		<div class="row" style="text-align: justify;">
 			@php
 				$settings=DB::table('settings')->first();
 			@endphp

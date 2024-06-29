@@ -66125,7 +66125,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   key: "dbef79a7681a60303745",
   cluster: "ap2",
   forceTLS: true,
-  authEndpoint: baseURL + '/broadcasting/auth',
+//  authEndpoint: baseURL + '/broadcasting/auth',
   encrypted: true
 });
 

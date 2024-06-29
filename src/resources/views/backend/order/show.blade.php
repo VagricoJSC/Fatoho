@@ -31,7 +31,7 @@
       <tbody>
         <tr>
             <td>{{$order->id}}</td>
-            <td>{{@$order->vit_post_data->ORDER_NUMBER}}</td>
+            <td>{{$order->order_number}}</td>
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>

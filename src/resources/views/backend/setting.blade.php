@@ -4,6 +4,12 @@
 
 <div class="card">
     <h5 class="card-header">Edit Post</h5>
+	<div class="row">
+		<div class="col-md-12">
+			@include('backend.layouts.notification')
+		</div>
+	</div>
+	
     <div class="card-body">
     <form method="post" action="{{route('settings.update')}}">
         @csrf 
@@ -24,7 +30,7 @@
           @enderror
         </div>
 
-<div class="form-group">
+		<div class="form-group">
           <label for="bank" class="col-form-label">Footer description <span class="text-danger">*</span></label>
           <textarea class="form-control" id="footer_description" name="footer_description">{{$data->footer_description}}</textarea>
           @error('footer_description')
