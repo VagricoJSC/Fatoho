@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title','Fatoho || DASHBOARD')
+@section('title','fatoho || DASHBOARD')
 @section('main-content')
 <div class="container-fluid">
     @include('backend.layouts.notification')

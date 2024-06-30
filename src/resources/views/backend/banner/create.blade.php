@@ -1,6 +1,6 @@
 @extends('backend.layouts.master')
 
-@section('title','Fatoho || Banner Create')
+@section('title','fatoho || Banner Create')
 
 @section('main-content')
 

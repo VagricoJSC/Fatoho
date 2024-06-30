@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Fatoho || HOME PAGE')
+@section('title','fatoho || HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)
@@ -324,7 +324,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Chính sách của Fatoho</h2>
+                    <h2>Chính sách của fatoho</h2>
                 </div>
             </div>
         </div>

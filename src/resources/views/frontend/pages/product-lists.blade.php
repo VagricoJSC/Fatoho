@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','Fatoho || PRODUCT PAGE')
+@section('title','fatoho || PRODUCT PAGE')
 
 @section('main-content')
 	

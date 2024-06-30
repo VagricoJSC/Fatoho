@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Fatoho || Login Page</title>
+  <title>fatoho || Login Page</title>
   @include('backend.layouts.head')
 
 </head>
