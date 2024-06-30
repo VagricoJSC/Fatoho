@@ -23,8 +23,6 @@ class ViettelController extends Controller
     {
 		Log::debug('Start ViettelController::updateStatusOrder()');
 		
-		$tracker = new Tracker();
-
 		$data = $request->all();
 		if (!isset($data['DATA']['ORDER_NUMBER'])) {
 			Log::debug('Invalid request data: ' . json_encode($data));
@@ -47,6 +45,8 @@ class ViettelController extends Controller
 		
 		$shipinfo = $data['DATA'];
 		$order_id = $shipinfo['ORDER_NUMBER'];
+
+		$tracker = new Tracker();
 		$tracker->order_id = $order_id;
 		$tracker->data = json_encode($shipinfo);
 		$tracker->save();

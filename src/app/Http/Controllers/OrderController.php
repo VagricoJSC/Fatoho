@@ -131,6 +131,8 @@ class OrderController extends Controller
     
         return $responseData;
     }
+	
+	
     public function store(Request $request)
     {
         if(empty(Cart::where('user_id',auth()->user()->id)->where('order_id',null)->first())){
@@ -148,7 +150,7 @@ class OrderController extends Controller
         $order_data['quantity']=Helper::cartCount();
         $order_data['total_amount']=Helper::totalCartPrice() + $request->inp_total_cart_ship;
 		
-        $order_data['status']="new";
+        $order_data['status'] = "new";
         if(request('payment_method')=='bank'){
             $order_data['payment_method']='bank';
             $order_data['payment_status']='unpaid';
@@ -161,32 +163,34 @@ class OrderController extends Controller
         $order->fill($order_data);
         $status=$order->save();
  
-		if($order) {
-			$users=User::where('role','admin')->first();
+		if ($order) {
+			// Notify to admin
+			$users = User::where('role','admin')->orderBy('id', 'ASC')->first();
 			$details=[
-				'title'=>'New order created',
+				'title'=>'Có đơn hàng mới. Hãy tiến hành kiểm tra và xử lý.',
 				'actionURL'=>route('order.show',$order->id),
 				'fas'=>'fa-file-alt'
 			];
 			Notification::send($users, new StatusNotification($details));
 
-			// if(request('payment_method')=='paypal'){
-			//     return redirect()->route('payment')->with(['id'=>$order->id]);
-			// }
-			// else{
-				
-			// }
-
 			session()->forget('cart');
 			session()->forget('coupon');
+			
+			// Update cart
 			Cart::where('user_id', auth()->user()->id)->where('order_id', null)->update(['order_id' => $order->id]);
 
-			// dd($users);        
-			request()->session()->flash('success','Your product successfully placed in order');
+			// Create order tracking
+			$tracker = new Tracker();
+			$tracker->order_id = $order->id;
+			$shipinfo = [
+				'STATUS' => $order->status
+			];
+			$tracker->data = json_encode($shipinfo);
+			$tracker->save();
+
+			request()->session()->flash('success', 'Đơn hàng đã tạo thành công!');
 		}
 		
-		// dd($order->id);
-       
         return redirect()->route('home');
     }
 
@@ -284,7 +288,7 @@ class OrderController extends Controller
 		$order->save();
 
 		// Notify admin
-		$users=User::where('role','admin')->first();
+		$users=User::where('role','admin')->orderBy('id', 'ASC')->first();
 		$details=[
 			'title'=>'Đã gửi yêu cầu chuyển hàng cho ViettelPost',
 			'actionURL'=>route('order.show', $order->id),

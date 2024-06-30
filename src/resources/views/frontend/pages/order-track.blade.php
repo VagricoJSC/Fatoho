@@ -25,7 +25,7 @@
     <div class="container">
         <div class="tracking_box_inner">
             <p>Hãy nhập mã đơn hàng và click vào nút "Kiểm tra đơn hàng" bên dưới để xem chi tiết tiến độ giao hàng. <br>
-			<i>Nếu bạn không rõ về mã đơn hàng hãy kiểm tra e-mail tại thời điểm đặt hàng hoặc liên hệ với trung tâm chăm sóc khách hàng theo thông tin tại <a href="https://fatoho.com/blog-detail/ho-tro-247"><u>Hỗ trợ 24/7</u></a> để được hỗ trợ.</i></p>
+			<i>Nếu bạn không rõ về mã đơn hàng hãy kiểm tra e-mail tại thời điểm đặt hàng hoặc liên hệ với trung tâm chăm sóc khách hàng theo thông tin tại <a href="https://fatoho.com/blog-detail/ho-tro-247"><u>Hỗ trợ 24/7</u></a> để được hướng dẫn.</i></p>
             <form class="row tracking_form my-4" action="{{route('product.track.order')}}" method="post" novalidate="novalidate">
 				@csrf
                 <div class="col-md-8 form-group">
@@ -53,7 +53,7 @@
 							<path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
 							</svg>
 						</div>
-						<div class="tracking-date"><img src=" /storage/photos/3/Icons/delivery.svg" class="img-responsive" alt="order-placed" /></div>
+						<div class="tracking-date"><img src="/storage/photos/3/Icons/delivery.svg" class="img-responsive" alt="order-placed" /></div>
 						<div class="tracking-content">{{$track->getOrderStatusName()}}<span>{{($track->updated_at != null) ? $track->updated_at->format('d/m/Y h:i:s A') : ''}}</span></div>
 					</div>
 					@endforeach
@@ -66,7 +66,7 @@
 							<path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
 							</svg>
 						</div>
-					<div class="tracking-date"><img src=" /storage/photos/3/Icons/delivery.svg" class="img-responsive" alt="order-placed" /></div>
+					<div class="tracking-date"><img src="/storage/photos/3/Icons/delivery.svg" class="img-responsive" alt="order-placed" /></div>
 					<div class="tracking-content">{{$pendingtrack->getOrderStatusName()}}</div>
 					</div>
 					@endforeach
