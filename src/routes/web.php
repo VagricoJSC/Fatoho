@@ -94,6 +94,7 @@
     Route::match(['get', 'post'], '/filter', [FrontendController::class, 'productFilter'])->name('shop.filter');
 // Order Track
     Route::get('/product/track', [OrderController::class, 'orderTrack'])->name('order.track');
+    Route::get('/product/track/order', [OrderController::class, 'orderTrack'])->name('product.track.order');
     Route::post('product/track/order', [OrderController::class, 'productTrackOrder'])->name('product.track.order');
 // Blog
     Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');

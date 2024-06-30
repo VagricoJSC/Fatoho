@@ -403,10 +403,17 @@ class OrderController extends Controller
 		
 		if ($track_list == null || empty($track_list)) {
             request()->session()->flash('error','Đơn hàng đang đợi nhà sản xuất tiếp nhận. Vui lòng thử lại sau vài giờ sau.');
-            return back();
+			return view('frontend.pages.order-track')->with('tracks', [])->with('order_number', $request->order_number);
 		}
 		
-        return view('frontend.pages.order-track')->with('tracks', $track_list)->with('order_number', $request->order_number);
+		$pending_track_list = Tracker::createPendingStatusList($order->status);
+		
+        request()->session()->flash('success','Đã lấy dữ liệu thành công!');
+
+        return view('frontend.pages.order-track')
+			->with('tracks', $track_list)
+			->with('order_number', $request->order_number)
+			->with('pending_tracks', $pending_track_list);
     }
 
     // PDF generate
