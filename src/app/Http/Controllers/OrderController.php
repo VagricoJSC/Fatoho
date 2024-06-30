@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Shipping;
+use App\Models\Tracker;
 use App\User;
 use PDF;
 use Notification;
 use Helper;
 use Illuminate\Support\Str;
 use App\Notifications\StatusNotification;
+use Illuminate\Support\Facades\Log;
 
 class OrderController extends Controller
 {
@@ -382,38 +384,29 @@ class OrderController extends Controller
     }
 
     public function orderTrack(){
-        return view('frontend.pages.order-track');
+        return view('frontend.pages.order-track')->with('tracks', []);
     }
 
     public function productTrackOrder(Request $request){
-        // return $request->all();
-        $order = Order::where('user_id',auth()->user()->id)->where('order_number',$request->order_number)->first();
-        if($order){
-            if($order->status=="new"){
-            request()->session()->flash('success','Your order has been placed. please wait.');
-            return redirect()->route('home');
-
-            }
-            elseif($order->status=="process"){
-                request()->session()->flash('success','Your order is under processing please wait.');
-                return redirect()->route('home');
-    
-            }
-            elseif($order->status=="delivered"){
-                request()->session()->flash('success','Your order is successfully delivered.');
-                return redirect()->route('home');
-    
-            }
-            else{
-                request()->session()->flash('error','Your order canceled. please try again');
-                return redirect()->route('home');
-    
-            }
-        }
-        else{
-            request()->session()->flash('error','Invalid order numer please try again');
+        $order = Order::where('order_number', $request->order_number)->first();
+        if ($order == null) {
+            request()->session()->flash('error','Không tìm thấy đơn hàng. Vui lòng kiểm tra lại mã đơn hàng.');
+			return view('frontend.pages.order-track')->with('tracks', [])->with('order_number', $request->order_number);
+		}
+		
+		if ($order->ship_order_code == null) {
+            request()->session()->flash('error','Đơn hàng đang đợi nhà sản xuất tiếp nhận. Vui lòng thử lại sau vài giờ sau.');
+			return view('frontend.pages.order-track')->with('tracks', [])->with('order_number', $request->order_number);
+		}
+		
+		$track_list = Tracker::where('order_id', $order->ship_order_code)->orderBy('updated_at','ASC')->get();
+		
+		if ($track_list == null || empty($track_list)) {
+            request()->session()->flash('error','Đơn hàng đang đợi nhà sản xuất tiếp nhận. Vui lòng thử lại sau vài giờ sau.');
             return back();
-        }
+		}
+		
+        return view('frontend.pages.order-track')->with('tracks', $track_list)->with('order_number', $request->order_number);
     }
 
     // PDF generate
