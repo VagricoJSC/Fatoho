@@ -34,6 +34,29 @@ class Tracker extends Model
 		return $stsnm;
 	}
 
+	public function getTrackDetails() {
+		$details = '';
+		$shipinfo = json_decode($this->data);
+
+		if (isset($shipinfo->NOTE)) {
+			$details = $details . $shipinfo->NOTE . '; ';
+		}
+		
+		if (isset($shipinfo->EMPLOYEE_NAME)) {
+			$details = $details . 'Nhân viên giao hàng: ' . $shipinfo->EMPLOYEE_NAME . '; ';
+		}
+		
+		if (isset($shipinfo->EMPLOYEE_PHONE)) {
+			$details = $details . 'Số điện thoại nhân viên giao hàng: ' . $shipinfo->EMPLOYEE_PHONE . '; ';
+		}
+
+		if (isset($shipinfo->LOCATION_CURRENTLY)) {
+			$details = $details . 'Vị trí hiện tại: ' . $shipinfo->LOCATION_CURRENTLY . '; ';
+		}
+		
+		return $details;
+	}
+	
 	/**
 	 * Load order status from DB
 	 */
