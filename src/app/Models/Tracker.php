@@ -58,6 +58,11 @@ class Tracker extends Model
 	 * Get pending statuses
 	 */
 	public static function createPendingStatusList($osts) {
+		// Order cancelled
+		if ($osts == 'cancel') {
+			return [];
+		}
+		
 		$status_array = ['new', 'processing', 'shipped', 'delivered'];
 		$sts_index = array_search($osts, $status_array);
 		if ($sts_index == false) {

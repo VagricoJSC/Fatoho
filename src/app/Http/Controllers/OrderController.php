@@ -407,11 +407,6 @@ class OrderController extends Controller
 			return view('frontend.pages.order-track')->with('tracks', [])->with('order_number', $request->order_number);
 		}
 		
-		if ($order->ship_order_code == null) {
-            request()->session()->flash('error','Đơn hàng đang đợi nhà sản xuất tiếp nhận. Vui lòng thử lại sau vài giờ sau.');
-			return view('frontend.pages.order-track')->with('tracks', [])->with('order_number', $request->order_number);
-		}
-		
 		$track_list = Tracker::where('order_id', $order->id)->orderBy('updated_at','ASC')->get();
 		
 		if ($track_list == null || empty($track_list)) {
