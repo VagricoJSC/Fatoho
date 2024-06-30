@@ -348,15 +348,25 @@ class OrderController extends Controller
         if ($request->status == 'delivered') {
 			$order->finish();
         }
+		else if ($request->status == 'cancel') {
+			// Create order tracking
+			$tracker = new Tracker();
+			$tracker->order_id = $order->id;
+			$shipinfo = [
+				'STATUS' => $order->status
+			];
+			$tracker->data = json_encode($shipinfo);
+			$tracker->save();
+		}
         
 		$order = $order->fill($data);
 		$status = $order->save();
         
 		if($status) {
-            request()->session()->flash('success','Successfully updated order');
+            request()->session()->flash('success','Đơn hàng đã được cập nhật thành công.');
         }
         else{
-            request()->session()->flash('error','Error while updating order');
+            request()->session()->flash('error','Không thể cập nhật đơn hàng. Vui lòng thử lại sau ít phút.');
         }
 		
         return redirect()->route('order.index');
