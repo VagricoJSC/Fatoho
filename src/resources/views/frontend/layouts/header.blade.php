@@ -130,7 +130,7 @@
                                 <div class="bottom">
                                     <div class="total">
                                         <span>Tất cả</span>
-                                        <span class="total-amount">${{number_format(Helper::totalWishlistPrice(),0)}}VNĐ</span>
+                                        <span class="total-amount">{{number_format(Helper::totalWishlistPrice(),0)}}VNĐ</span>
                                     </div>
                                     <a href="{{route('cart')}}" class="btn animate">Giỏ hàng</a>
                                 </div>
