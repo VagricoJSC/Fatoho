@@ -44,18 +44,24 @@ class ViettelController extends Controller
 		}
 		
 		$shipinfo = $data['DATA'];
-		$order_id = $shipinfo['ORDER_NUMBER'];
+		$ship_order_code = $shipinfo['ORDER_NUMBER'];
+
+		$order = Order::where('ship_order_code', $ship_order_code)->first();
+		if ($order == null) {
+			Log::debug('Not found order that ship_order_code is ' . $ship_order_code);
+			$sts = $this->hasSuccess('The order not found.', []);
+			return $sts;
+		}
 
 		$tracker = new Tracker();
-		$tracker->order_id = $order_id;
+		$tracker->order_id = $order->id;
 		$tracker->data = json_encode($shipinfo);
 		$tracker->save();
 
 		// Update order status
 		if (isset($shipinfo['ORDER_STATUS'])) {
 			if ($shipinfo['ORDER_STATUS'] == '501') {
-				$order = Order::where('ship_order_code', $order_id)->first();
-				if ($order != null && $order->status != 'delivered') {
+				if ($order->status != 'delivered') {
 					$order->finish();
 					$order->save();
 				}
