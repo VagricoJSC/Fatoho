@@ -19,7 +19,7 @@ class Tracker extends Model
 			$stsnm = 'Đang chờ tiếp nhận';
 		}
 		elseif ($this->orderStatus == 'processing') {
-			$stsnm = 'Đang chuẩn bị xuất hàng';
+			$stsnm = 'Đang chuẩn bị hàng hóa';
 		}
 		elseif ($this->orderStatus == 'shipped') {
 			$stsnm = 'Đang chuyển hàng';
@@ -57,9 +57,9 @@ class Tracker extends Model
 	/**
 	 * Get pending statuses
 	 */
-	public static function createPendingStatusList($orderStatus) {
+	public static function createPendingStatusList($osts) {
 		$status_array = ['new', 'processing', 'shipped', 'delivered'];
-		$sts_index = array_search($orderStatus, $status_array);
+		$sts_index = array_search($osts, $status_array);
 		if ($sts_index == false) {
 			$sts_index = 0;
 		}

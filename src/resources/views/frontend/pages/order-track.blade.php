@@ -54,7 +54,7 @@
 							</svg>
 						</div>
 						<div class="tracking-date"><img src=" /storage/photos/3/Icons/delivery.svg" class="img-responsive" alt="order-placed" /></div>
-						<div class="tracking-content">{{$track->getOrderStatusName()}}<span>{{$track->updated_at->format('d/m/Y h:i:s A')}}</span></div>
+						<div class="tracking-content">{{$track->getOrderStatusName()}}<span>{{($track->updated_at != null) ? $track->updated_at->format('d/m/Y h:i:s A') : ''}}</span></div>
 					</div>
 					@endforeach
 				
