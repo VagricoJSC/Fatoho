@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','FATOHO | CHÍNH SÁCH BÁN HÀNG')
+@section('title','fatoho | CHÍNH SÁCH BÁN HÀNG')
 
 @section('main-content')
     <!-- Breadcrumbs -->

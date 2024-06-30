@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','FATOHO | ' . $post->title)
+@section('title','fatoho | ' . $post->title)
 
 @section('main-content')
     <!-- Breadcrumbs -->

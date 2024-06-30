@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','FATOHO || Liên Hệ')
+@section('title','fatoho || Liên Hệ')
 @section('main-content')
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
