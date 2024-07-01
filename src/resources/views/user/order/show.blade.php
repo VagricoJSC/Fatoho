@@ -16,10 +16,10 @@
             <th>Người nhận hàng</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Phí Ship</th>
+            <th>Phí vận chuyển</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
-            <th>Hành động</th>
+            <th>Tác vụ</th>
         </tr>
       </thead>
       <tbody>
@@ -95,21 +95,28 @@
                     </tr>
                     <tr>
                         <td>Tình trạng</td>
-                        <td> : {{$order->status}}</td>
+                        <td> : 
+							@if($order->status=='new') Đơn hàng mới 
+							@elseif($order->status=='processing') Đang xử lý 
+							@elseif($order->status=='shipped') Đã gửi hàng
+							@elseif($order->status=='delivered') Người mua đã nhận
+							@else Đã hủy
+							@endif
+						</td>
                     </tr>
                     <tr>
                       @php
                           $shipping_charge=DB::table('shippings')->where('id',$order->shipping_id)->pluck('price');
                       @endphp
-                        <td>Phí Ship</td>
+                        <td>Phí vận chuyển</td>
                         <td> :{{number_format($order->inp_total_cart_ship,0)}} VNĐ</td>
                     </tr>
 					 <tr>
-                        <td>Tổng giá sản phẩm</td>
+                        <td>Giá thành sản phẩm</td>
                         <td> :  {{number_format($order->sub_total,0)}} VNĐ</td>
                     </tr>
                     <tr>
-                        <td>Tổng đơn hàng</td>
+                        <td>Tổng giá trị đơn hàng</td>
                         <td> :  {{number_format($order->total_amount,0)}} VNĐ</td>
                     </tr>
                     <tr>
@@ -118,7 +125,7 @@
                     </tr>
                     <tr>
                         <td>Tình trạng thanh toán</td>
-                        <td> : {{$order->payment_status}}</td>
+                        <td> : @if($order->payment_status=='paid') Đã Thanh Toán @else Chưa Thanh Toán @endif</td>
                     </tr>
               </table>
             </div>

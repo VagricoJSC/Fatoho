@@ -22,10 +22,10 @@
             <th>Tên người nhận</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Phí Ship</th>
+            <th>Phí vận chuyển</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
-            <th>Hành động</th>
+            <th>Tác vụ</th>
           </tr>
         </thead>
         <tfoot>
@@ -35,10 +35,10 @@
             <th>Tên người nhận</th>
             <th>Email</th>
             <th>Số lượng</th>
-            <th>Phí ship</th>
+            <th>Phí vận chuyển</th>
             <th>Tổng đơn hàng</th>
             <th>Tình trạng</th>
-            <th>Hành động</th>
+            <th>Tác vụ</th>
           </tr>
         </tfoot>
         <tbody>
